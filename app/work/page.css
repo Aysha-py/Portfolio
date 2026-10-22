@@ -509,6 +509,11 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .work-card{padding:var(--space-inset) var(--space-cluster);}
 .work-head{flex-direction:column;gap:var(--space-element);}
 }
+/* work type tags and the formats / focus line */
+.home{--type-dot-size:var(--space-tight);}
+.type-tag .dot{display:block;width:var(--type-dot-size);height:var(--type-dot-size);border-radius:var(--radius-round);}
+.work-list-line{margin:var(--space-tight) 0 0;color:var(--color-text-secondary);}
+.work-list-line .t-label{margin-right:var(--space-tight);color:var(--color-text-primary);}
 /* end work cards */
 /* ===== Ripple cursor ===== */
 /* primitive */

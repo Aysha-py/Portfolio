@@ -151,19 +151,34 @@ export default function WorkView() {
                   <a className="org-link" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)"><img src={`${BASE}/images/logo-sereel-glow.png`} alt="" /></a>
                   {" "}
                   <div className="work-id">
-                    <span className="t-label work-num">01</span>
+                    <span className="type-tag">
+                      <span className="dots" aria-hidden="true"><span className="dot dot-content" /></span>
+                      Content
+                    </span>
                     {" "}
                     <h2 className="t-heading-s work-title">Sereel</h2>
-                    <p className="t-caption secondary work-tags">Content marketing · Thought leadership · Educational content · Short-form video</p>
+                    <p className="t-caption secondary work-tags">Content marketing · B2B thought leadership · Newsletter · Educational content · Video</p>
                   </div>
                 </div>
                 <h3 className="t-title work-heading">Making complex ideas clearer</h3>
                 <div className="work-copy">
                   <p className="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
                   <p className="t-body">
-                    I created educational and thought-leadership content on tokenized assets, capital markets, and industry developments. I researched market trends and audience needs to explain complex financial and regulatory ideas, and scripted, filmed, and edited short-form videos for social media.
+                    Led content development across educational and thought-leadership content, helping institutional and financial services audiences understand tokenized assets, capital markets, and industry developments.
+                  </p>
+                  <p className="t-body">
+                    Researched regulatory changes and market challenges to identify relevant topics, then translated those insights into educational social posts, long-form articles, and a monthly newsletter. Extended these themes into short-form videos, adapting complex ideas for different formats and audience touchpoints.
+                  </p>
+                  <p className="t-body">
+                    Grew Sereel’s LinkedIn audience by{" "}
+                    <strong>127.8%, from 245 to 558 followers</strong>
+                    , through consistent content that connected industry developments with the questions and challenges facing institutional audiences.
                   </p>
                 </div>
+                <p className="t-caption work-list-line">
+                  <span className="t-label">Content formats</span>
+                  LinkedIn · Blog · Newsletter · Short-form video
+                </p>
                 {" "}
                 <a className="work-cta" href={`${BASE}/#case-sereel`}>
                   Read the case study{" "}
@@ -180,19 +195,34 @@ export default function WorkView() {
                   <a className="org-link" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
                   {" "}
                   <div className="work-id">
-                    <span className="t-label work-num">02</span>
+                    <span className="type-tag">
+                      <span className="dots" aria-hidden="true"><span className="dot dot-content" /></span>
+                      Content
+                    </span>
                     {" "}
                     <h2 className="t-heading-s work-title">Invisible Garden</h2>
-                    <p className="t-caption secondary work-tags">Content marketing · Social media · Community storytelling</p>
+                    <p className="t-caption secondary work-tags">Content marketing · Social media · Video · Outreach</p>
                   </div>
                 </div>
-                <h3 className="t-title work-heading">Bringing a developer residency to life</h3>
+                <h3 className="t-title work-heading">Turning a developer residency into a story people could follow</h3>
                 <div className="work-copy">
-                  <p className="t-body">Invisible Garden was a three-week Ethereum-focused developer residency in Buenos Aires.</p>
+                  <p className="t-body">Invisible Garden hosted a three-week Ethereum-focused developer residency in Buenos Aires.</p>
                   <p className="t-body">
-                    I wrote social media copy and covered the programme live, turning its activities, milestones, and community moments into content people could follow. I also managed outreach to prospective mentors and project judges, writing follow-up messages and tracking responses until judges were secured.
+                    Owned social media copy and content coverage across the residency, translating technical programmes, partner activities, and community milestones into stories that audiences could follow. Captured and edited on-site footage into short- and long-form videos, extending the coverage across X and YouTube.
+                  </p>
+                  <p className="t-body">
+                    Managed outreach to prospective mentors and project judges, drafting personalised messages, following up, and tracking responses and project evaluations in Excel to help secure judges for the projects.
+                  </p>
+                  <p className="t-body">
+                    Grew Invisible Garden’s X following by{" "}
+                    <strong>64%</strong>
+                    {" "}during the Devcon Buenos Aires period through consistent social copy and event coverage, while launching its Instagram presence to extend the residency’s reach to a new channel.
                   </p>
                 </div>
+                <p className="t-caption work-list-line">
+                  <span className="t-label">Content formats</span>
+                  X · Instagram · YouTube · Short-form video · Outreach
+                </p>
                 {" "}
                 <a className="work-cta" href={`${BASE}/#case-invisible-garden`}>
                   Read the case study{" "}
@@ -209,21 +239,38 @@ export default function WorkView() {
                   <a className="org-link" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)"><img src={`${BASE}/images/logo-onedev.svg`} alt="" /></a>
                   {" "}
                   <div className="work-id">
-                    <span className="t-label work-num">03</span>
+                    <span className="type-tag">
+                      <span className="dots" aria-hidden="true">
+                        <span className="dot dot-content" />
+                        <span className="dot dot-community" />
+                      </span>
+                      Content + community
+                    </span>
                     {" "}
                     <h2 className="t-heading-s work-title">One Dev</h2>
-                    <p className="t-caption secondary work-tags">Community management · Developer education · Content</p>
+                    <p className="t-caption secondary work-tags">Community management · Developer education · Content · Community programmes</p>
                   </div>
                 </div>
-                <h3 className="t-title work-heading">Helping developers find their footing in Web3</h3>
+                <h3 className="t-title work-heading">Connecting developers with the knowledge and people they need to grow</h3>
                 <div className="work-copy">
+                  <p className="t-body">One Dev supports people learning and building in Web3.</p>
                   <p className="t-body">
-                    At One Dev, I helped grow a developer community through educational programmes, community engagement, and content that made Web3 easier to explore.
+                    Managed community engagement and supported developer learning through educational content, bootcamps, and community programmes. Connected content and programme communications with the wider community experience, helping members discover learning opportunities and stay engaged.
                   </p>
                   <p className="t-body">
-                    My work supported a community of more than 8,000 members, a newsletter with 6,300+ subscribers, and bootcamps that reached 200+ learners.
+                    Contributed to a community of{" "}
+                    <strong>8,000+ members</strong>
+                    , a newsletter with{" "}
+                    <strong>6,300+ subscribers</strong>
+                    , and bootcamps that reached{" "}
+                    <strong>200+ learners</strong>
+                    .
                   </p>
                 </div>
+                <p className="t-caption work-list-line">
+                  <span className="t-label">Focus areas</span>
+                  Community engagement · Educational content · Developer programmes · Newsletter
+                </p>
                 {" "}
                 <a className="work-cta" href="#case-one-dev">
                   Read the case study{" "}
@@ -240,19 +287,34 @@ export default function WorkView() {
                   <a className="org-link" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)"><img src={`${BASE}/images/logo-code-africa.png`} alt="" /></a>
                   {" "}
                   <div className="work-id">
-                    <span className="t-label work-num">04</span>
+                    <span className="type-tag">
+                      <span className="dots" aria-hidden="true">
+                        <span className="dot dot-content" />
+                        <span className="dot dot-community" />
+                      </span>
+                      Content + community
+                    </span>
                     {" "}
                     <h2 className="t-heading-s work-title">Code Africa Conference</h2>
-                    <p className="t-caption secondary work-tags">Community operations · Content distribution · Volunteer management</p>
+                    <p className="t-caption secondary work-tags">Content distribution · Community operations · Volunteer management</p>
                   </div>
                 </div>
-                <h3 className="t-title work-heading">Turning campaign activity into conference participation</h3>
+                <h3 className="t-title work-heading">Connecting conference promotion with community participation</h3>
                 <div className="work-copy">
+                  <p className="t-body">Code Africa brought together people across the African Web3 ecosystem.</p>
                   <p className="t-body">
-                    Working with One Dev, I contributed to the promotion and community operations for Code Africa Conference. I wrote and published promotional copy across campaign channels, coordinated volunteers, and supported the ambassador campaign.
+                    Supported conference promotion and community operations through campaign copy, content distribution, volunteer coordination, and the ambassador campaign. Connected promotional messaging with community outreach and on-the-ground coordination to help turn awareness into registrations and support conference delivery.
                   </p>
-                  <p className="t-body">These efforts helped build awareness and drive registrations for the conference.</p>
+                  <p className="t-body">
+                    Contributed to a campaign that generated{" "}
+                    <strong>3,000+ registrations</strong>
+                    , while coordinating volunteers and ambassadors across the conference effort.
+                  </p>
                 </div>
+                <p className="t-caption work-list-line">
+                  <span className="t-label">Focus areas</span>
+                  Campaign content · Community outreach · Volunteer coordination · Ambassador programmes
+                </p>
                 {" "}
                 <a className="work-cta" href="#case-code-africa">
                   Read the case study{" "}
@@ -269,21 +331,34 @@ export default function WorkView() {
                   <a className="org-link" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)"><img src={`${BASE}/images/logo-web3ladies.svg`} alt="" /></a>
                   {" "}
                   <div className="work-id">
-                    <span className="t-label work-num">05</span>
+                    <span className="type-tag">
+                      <span className="dots" aria-hidden="true"><span className="dot dot-community" /></span>
+                      Community
+                    </span>
                     {" "}
                     <h2 className="t-heading-s work-title">Web3Ladies</h2>
-                    <p className="t-caption secondary work-tags">Community leadership · Programmes · Partnerships · Content</p>
+                    <p className="t-caption secondary work-tags">Community leadership · Programme development · Ecosystem partnerships · Community engagement</p>
                   </div>
                 </div>
-                <h3 className="t-title work-heading">Creating more ways for women to learn and build</h3>
+                <h3 className="t-title work-heading">Turning community needs into opportunities to learn and grow</h3>
                 <div className="work-copy">
+                  <p className="t-body">Web3Ladies creates opportunities for women to learn, build, and grow within the Web3 ecosystem.</p>
                   <p className="t-body">
-                    I began contributing to Web3Ladies as a volunteer in 2023 and became Community Lead in November 2025. I help create programmes, partnerships, and community experiences that give women more opportunities to learn, build, and connect.
+                    Having contributed to the community since 2023 and progressed to Community Lead in November 2025, I work across community operations, programme development, and ecosystem engagement. This includes managing member communications, hosting learning experiences, coordinating partnerships, and using member insights to shape initiatives around community needs.
                   </p>
                   <p className="t-body">
-                    One example is Build with AI, a practical programme that brought members together to learn from experts and apply what they learned through projects. I also support community onboarding, events, content, and partnerships with ecosystem organisations.
+                    I designed and led{" "}
+                    <strong>Build with AI</strong>
+                    , turning the programme concept into an executable plan that brought together four expert-led sessions and generated seven project submissions from 100+ registrations. Alongside programme delivery, I support community growth through event representation, programme promotion, and ongoing engagement across digital and in-person channels.
+                  </p>
+                  <p className="t-body">
+                    <strong>15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations</strong>
                   </p>
                 </div>
+                <p className="t-caption work-list-line">
+                  <span className="t-label">Focus areas</span>
+                  Community programmes · Ecosystem partnerships · Member engagement · Community operations
+                </p>
                 {" "}
                 <a className="work-cta" href="#case-web3ladies">
                   Read the case study{" "}
@@ -300,18 +375,34 @@ export default function WorkView() {
                   <a className="org-link" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)"><img src={`${BASE}/images/logo-community-for-africa.png`} alt="" /></a>
                   {" "}
                   <div className="work-id">
-                    <span className="t-label work-num">06</span>
+                    <span className="type-tag">
+                      <span className="dots" aria-hidden="true">
+                        <span className="dot dot-content" />
+                        <span className="dot dot-community" />
+                      </span>
+                      Content + community
+                    </span>
                     {" "}
                     <h2 className="t-heading-s work-title">Community for Africa</h2>
-                    <p className="t-caption secondary work-tags">Community management · Educational content · Resource creation</p>
+                    <p className="t-caption secondary work-tags">Community management · Educational content · Resource development</p>
                   </div>
                 </div>
-                <h3 className="t-title work-heading">Making community knowledge useful beyond the session</h3>
+                <h3 className="t-title work-heading">Turning community learning into practical resources</h3>
                 <div className="work-copy">
+                  <p className="t-body">Community for Africa supports people learning and connecting across the technology ecosystem.</p>
                   <p className="t-body">
-                    I supported community engagement through events, learning sessions, and written and video content. I also created a Skills Audit Sheet to help members assess their skills and identify areas for growth.
+                    Supported community engagement through events, learning sessions, and written and video content. Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.
+                  </p>
+                  <p className="t-body">
+                    The resource reached{" "}
+                    <strong>100+ downloads</strong>
+                    , giving community members a practical tool they could use beyond individual sessions.
                   </p>
                 </div>
+                <p className="t-caption work-list-line">
+                  <span className="t-label">Focus areas</span>
+                  Community engagement · Events · Educational content · Learning resources
+                </p>
                 {" "}
                 <a className="work-cta" href="#case-community-for-africa">
                   Read the case study{" "}
@@ -328,19 +419,29 @@ export default function WorkView() {
                   <a className="org-link" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)"><img src={`${BASE}/images/logo-open-terms-archive.png`} alt="" /></a>
                   {" "}
                   <div className="work-id">
-                    <span className="t-label work-num">07</span>
+                    <span className="type-tag">
+                      <span className="dots" aria-hidden="true"><span className="dot dot-community" /></span>
+                      Community
+                    </span>
                     {" "}
                     <h2 className="t-heading-s work-title">Open Terms Archive</h2>
-                    <p className="t-caption secondary work-tags">Open source community management · Contributor experience</p>
+                    <p className="t-caption secondary work-tags">Open source community management · Contributor experience · Documentation</p>
                   </div>
                 </div>
-                <h3 className="t-title work-heading">Making it easier for contributors to take part</h3>
+                <h3 className="t-title work-heading">Making it easier for contributors to find their way in</h3>
                 <div className="work-copy">
+                  <p className="t-body">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
                   <p className="t-body">
-                    My open-source community work focused on helping people find their way into a project and understand how to contribute. At Open Terms Archive, I supported a community migration to Mattermost and worked on onboarding guides, a contributor page, and community calls.
+                    Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources. Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.
                   </p>
-                  <p className="t-body">The aim was to make the move easier to navigate and give contributors clearer ways to get involved.</p>
+                  <p className="t-body">
+                    Also developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices to support consistent knowledge-sharing.
+                  </p>
                 </div>
+                <p className="t-caption work-list-line">
+                  <span className="t-label">Focus areas</span>
+                  Community migration · Contributor onboarding · Documentation · Community calls
+                </p>
                 {" "}
                 <a className="work-cta" href="#case-open-terms-archive">
                   Read the case study{" "}
