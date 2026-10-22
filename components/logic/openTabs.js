@@ -119,11 +119,21 @@ export class Component extends DCLogic {
     const theme = s.theme || ((stored === 'light' || stored === 'dark') ? stored : null) || this.props.theme || 'light';
     return {
       theme: theme,
-      menu: s.menuOpen ? 'open' : 'closed',
-      menuExpanded: !!s.menuOpen,
-      menuLabel: s.menuOpen ? 'Close menu' : 'Open menu',
-      toggleMenu: () => this.setState({ menuOpen: !(this.state || {}).menuOpen }),
-      closeMenu: () => this.setState({ menuOpen: false }),
+      menu: s.menuOpen ? (s.menuClosing ? 'closing' : 'open') : 'closed',
+      menuExpanded: !!s.menuOpen && !s.menuClosing,
+      menuLabel: s.menuOpen && !s.menuClosing ? 'Close menu' : 'Open menu',
+      toggleMenu: () => {
+        /* opening ripples out from the burger; closing folds back into it before the menu goes */
+        const now = this.state || {};
+        if (now.menuClosing) return;
+        if (!now.menuOpen) { this.setState({ menuOpen: true }); return; }
+        let still = false;
+        try { still = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (e) {}
+        if (still) { this.setState({ menuOpen: false }); return; }
+        this.setState({ menuClosing: true });
+        setTimeout(() => this.setState({ menuOpen: false, menuClosing: false }), 320);
+      },
+      closeMenu: () => this.setState({ menuOpen: false, menuClosing: false }),
       themeLabel: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
       toggleTheme: () => {
         const nextTheme = theme === 'dark' ? 'light' : 'dark';
