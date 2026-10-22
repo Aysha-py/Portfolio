@@ -147,16 +147,17 @@ export default function WorkView() {
           <ul className="work-list">
             <li>
               <article className="work-card reveal">
-                <div className="work-head">
-                  <span className="type-tag">Content</span>
-                  {" "}
-                  <a className="org-link is-mark" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)">
-                    <img className="logo-light" src={`${BASE}/images/logo-sereel-mark.png`} alt="" />
-                    <img className="logo-dark" src={`${BASE}/images/logo-sereel-mark-dark.png`} alt="" />
-                  </a>
-                </div>
+                <span className="type-tag">Content</span>
+                {" "}
                 <div className="work-id">
-                  <h2 className="t-heading-s work-title">Sereel</h2>
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">Sereel</h2>
+                    {" "}
+                    <a className="org-link is-mark" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)">
+                      <img className="logo-light" src={`${BASE}/images/logo-sereel-mark.png`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-sereel-mark-dark.png`} alt="" />
+                    </a>
+                  </div>
                   <ul className="t-caption secondary work-tags dot-list">
                     <li>Content marketing</li>
                     <li>B2B thought leadership</li>
@@ -201,13 +202,14 @@ export default function WorkView() {
             </li>
             <li>
               <article className="work-card reveal">
-                <div className="work-head">
-                  <span className="type-tag">Content</span>
-                  {" "}
-                  <a className="org-link is-mark" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
-                </div>
+                <span className="type-tag">Content</span>
+                {" "}
                 <div className="work-id">
-                  <h2 className="t-heading-s work-title">Invisible Garden</h2>
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">Invisible Garden</h2>
+                    {" "}
+                    <a className="org-link is-mark" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
+                  </div>
                   <ul className="t-caption secondary work-tags dot-list">
                     <li>Content marketing</li>
                     <li>Social media</li>
@@ -252,16 +254,17 @@ export default function WorkView() {
             </li>
             <li>
               <article className="work-card reveal">
-                <div className="work-head">
-                  <span className="type-tag">Content + community</span>
-                  {" "}
-                  <a className="org-link is-wordmark" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)">
-                    <img className="logo-light" src={`${BASE}/images/logo-onedev.svg`} alt="" />
-                    <img className="logo-dark" src={`${BASE}/images/logo-onedev-dark.svg`} alt="" />
-                  </a>
-                </div>
+                <span className="type-tag">Content + community</span>
+                {" "}
                 <div className="work-id">
-                  <h2 className="t-heading-s work-title">One Dev</h2>
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">One Dev</h2>
+                    {" "}
+                    <a className="org-link is-wordmark" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)">
+                      <img className="logo-light" src={`${BASE}/images/logo-onedev.svg`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-onedev-dark.svg`} alt="" />
+                    </a>
+                  </div>
                   <ul className="t-caption secondary work-tags dot-list">
                     <li>Community management</li>
                     <li>Developer education</li>
@@ -306,16 +309,17 @@ export default function WorkView() {
             </li>
             <li>
               <article className="work-card reveal">
-                <div className="work-head">
-                  <span className="type-tag">Content + community</span>
-                  {" "}
-                  <a className="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)">
-                    <img className="logo-light" src={`${BASE}/images/logo-code-africa.png`} alt="" />
-                    <img className="logo-dark" src={`${BASE}/images/logo-code-africa-dark.png`} alt="" />
-                  </a>
-                </div>
+                <span className="type-tag">Content + community</span>
+                {" "}
                 <div className="work-id">
-                  <h2 className="t-heading-s work-title">Code Africa Conference</h2>
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">Code Africa Conference</h2>
+                    {" "}
+                    <a className="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)">
+                      <img className="logo-light" src={`${BASE}/images/logo-code-africa.png`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-code-africa-dark.png`} alt="" />
+                    </a>
+                  </div>
                   <ul className="t-caption secondary work-tags dot-list">
                     <li>Content distribution</li>
                     <li>Community operations</li>
@@ -355,16 +359,17 @@ export default function WorkView() {
             </li>
             <li>
               <article className="work-card reveal">
-                <div className="work-head">
-                  <span className="type-tag">Community</span>
-                  {" "}
-                  <a className="org-link is-stacked" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)">
-                    <img className="logo-light" src={`${BASE}/images/logo-web3ladies.svg`} alt="" />
-                    <img className="logo-dark" src={`${BASE}/images/logo-web3ladies-dark.svg`} alt="" />
-                  </a>
-                </div>
+                <span className="type-tag">Community</span>
+                {" "}
                 <div className="work-id">
-                  <h2 className="t-heading-s work-title">Web3Ladies</h2>
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">Web3Ladies</h2>
+                    {" "}
+                    <a className="org-link is-stacked" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)">
+                      <img className="logo-light" src={`${BASE}/images/logo-web3ladies.svg`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-web3ladies-dark.svg`} alt="" />
+                    </a>
+                  </div>
                   <ul className="t-caption secondary work-tags dot-list">
                     <li>Community leadership</li>
                     <li>Programme development</li>
@@ -408,16 +413,17 @@ export default function WorkView() {
             </li>
             <li>
               <article className="work-card reveal">
-                <div className="work-head">
-                  <span className="type-tag">Content + community</span>
-                  {" "}
-                  <a className="org-link is-stacked" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)">
-                    <img className="logo-light" src={`${BASE}/images/logo-community-for-africa.png`} alt="" />
-                    <img className="logo-dark" src={`${BASE}/images/logo-community-for-africa-dark.png`} alt="" />
-                  </a>
-                </div>
+                <span className="type-tag">Content + community</span>
+                {" "}
                 <div className="work-id">
-                  <h2 className="t-heading-s work-title">Community for Africa</h2>
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">Community for Africa</h2>
+                    {" "}
+                    <a className="org-link is-stacked" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)">
+                      <img className="logo-light" src={`${BASE}/images/logo-community-for-africa.png`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-community-for-africa-dark.png`} alt="" />
+                    </a>
+                  </div>
                   <ul className="t-caption secondary work-tags dot-list">
                     <li>Community management</li>
                     <li>Educational content</li>
@@ -457,16 +463,17 @@ export default function WorkView() {
             </li>
             <li>
               <article className="work-card reveal">
-                <div className="work-head">
-                  <span className="type-tag">Community</span>
-                  {" "}
-                  <a className="org-link is-mark" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)">
-                    <img className="logo-light" src={`${BASE}/images/logo-open-terms-archive.png`} alt="" />
-                    <img className="logo-dark" src={`${BASE}/images/logo-open-terms-archive-dark.png`} alt="" />
-                  </a>
-                </div>
+                <span className="type-tag">Community</span>
+                {" "}
                 <div className="work-id">
-                  <h2 className="t-heading-s work-title">Open Terms Archive</h2>
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">Open Terms Archive</h2>
+                    {" "}
+                    <a className="org-link is-mark" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)">
+                      <img className="logo-light" src={`${BASE}/images/logo-open-terms-archive.png`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-open-terms-archive-dark.png`} alt="" />
+                    </a>
+                  </div>
                   <ul className="t-caption secondary work-tags dot-list">
                     <li>Open source community management</li>
                     <li>Contributor experience</li>

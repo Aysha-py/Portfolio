@@ -477,9 +477,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 /* component: one column per project. A top row with the type tag and the organisation's logo (linked to its site),
    then the name and focus areas, the heading and story, the formats line and the case study link */
 /* primitive: logo heights */
-.home{--primitive-size-20:20px;--primitive-size-32:32px;--primitive-size-36:36px;--primitive-opacity-70:0.7;}
+.home{--primitive-size-20:20px;--primitive-size-24:24px;--primitive-size-28:28px;--primitive-size-32:32px;--primitive-size-36:36px;--primitive-size-40:40px;--primitive-opacity-70:0.7;}
 /* semantic: logos are sized by shape, so a square mark and a long wordmark carry about the same weight */
-.home{--size-logo-mark:var(--primitive-size-36);--size-logo-stacked:var(--primitive-size-32);--size-logo-wordmark:var(--primitive-size-20);--opacity-hover:var(--primitive-opacity-70);}
+.home{--size-logo-mark:var(--primitive-size-40);--size-logo-stacked:var(--primitive-size-36);--size-logo-wordmark:var(--primitive-size-24);--size-logo-mark-sm:var(--primitive-size-32);--size-logo-stacked-sm:var(--primitive-size-28);--size-logo-wordmark-sm:var(--primitive-size-20);--opacity-hover:var(--primitive-opacity-70);}
 /* component */
 .home{
 --work-card-padding:var(--space-group);
@@ -501,8 +501,10 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 }
 .work-card{display:flex;flex-direction:column;padding:var(--work-card-padding);color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
 .work-card:hover{border-color:var(--card-border-hover);}
-.work-head{display:flex;align-items:center;justify-content:space-between;gap:var(--work-head-gap);min-height:var(--logo-height-mark);margin-bottom:var(--work-gap-head);}
-.work-id{display:flex;flex-direction:column;align-items:flex-start;gap:var(--work-gap-name);min-width:0;}
+.work-card > .type-tag{margin-bottom:var(--work-gap-head);}
+.work-head{display:flex;align-items:center;justify-content:space-between;gap:var(--work-head-gap);}
+.work-head .work-title{min-width:0;}
+.work-id{display:flex;flex-direction:column;gap:var(--work-gap-name);min-width:0;}
 .work-card .work-heading{margin:var(--work-gap-story) 0 var(--work-gap-heading);}
 .work-card .work-copy{gap:var(--work-gap-para);max-width:none;}
 .work-card .work-cta{align-self:flex-start;margin-top:var(--work-gap-detail);padding-top:0;text-decoration:none;}
@@ -520,6 +522,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .work-list-line .t-label{color:var(--color-text-primary);}
 @media (max-width: 760px){
 .work-card{padding:var(--work-card-padding-phone);}
+.home{--logo-height-mark:var(--size-logo-mark-sm);--logo-height-stacked:var(--size-logo-stacked-sm);--logo-height-wordmark:var(--size-logo-wordmark-sm);}
 }
 /* end work cards */
 /* ===== Ripple cursor ===== */

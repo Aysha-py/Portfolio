@@ -487,9 +487,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 /* component: one column per project. A top row with the type tag and the organisation's logo (linked to its site),
    then the name and focus areas, the heading and story, the formats line and the case study link */
 /* primitive: logo heights */
-.home{--primitive-size-20:20px;--primitive-size-32:32px;--primitive-size-36:36px;--primitive-opacity-70:0.7;}
+.home{--primitive-size-20:20px;--primitive-size-24:24px;--primitive-size-28:28px;--primitive-size-32:32px;--primitive-size-36:36px;--primitive-size-40:40px;--primitive-opacity-70:0.7;}
 /* semantic: logos are sized by shape, so a square mark and a long wordmark carry about the same weight */
-.home{--size-logo-mark:var(--primitive-size-36);--size-logo-stacked:var(--primitive-size-32);--size-logo-wordmark:var(--primitive-size-20);--opacity-hover:var(--primitive-opacity-70);}
+.home{--size-logo-mark:var(--primitive-size-40);--size-logo-stacked:var(--primitive-size-36);--size-logo-wordmark:var(--primitive-size-24);--size-logo-mark-sm:var(--primitive-size-32);--size-logo-stacked-sm:var(--primitive-size-28);--size-logo-wordmark-sm:var(--primitive-size-20);--opacity-hover:var(--primitive-opacity-70);}
 /* component */
 .home{
 --work-card-padding:var(--space-group);
@@ -511,8 +511,10 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 }
 .work-card{display:flex;flex-direction:column;padding:var(--work-card-padding);color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
 .work-card:hover{border-color:var(--card-border-hover);}
-.work-head{display:flex;align-items:center;justify-content:space-between;gap:var(--work-head-gap);min-height:var(--logo-height-mark);margin-bottom:var(--work-gap-head);}
-.work-id{display:flex;flex-direction:column;align-items:flex-start;gap:var(--work-gap-name);min-width:0;}
+.work-card > .type-tag{margin-bottom:var(--work-gap-head);}
+.work-head{display:flex;align-items:center;justify-content:space-between;gap:var(--work-head-gap);}
+.work-head .work-title{min-width:0;}
+.work-id{display:flex;flex-direction:column;gap:var(--work-gap-name);min-width:0;}
 .work-card .work-heading{margin:var(--work-gap-story) 0 var(--work-gap-heading);}
 .work-card .work-copy{gap:var(--work-gap-para);max-width:none;}
 .work-card .work-cta{align-self:flex-start;margin-top:var(--work-gap-detail);padding-top:0;text-decoration:none;}
@@ -530,6 +532,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .work-list-line .t-label{color:var(--color-text-primary);}
 @media (max-width: 760px){
 .work-card{padding:var(--work-card-padding-phone);}
+.home{--logo-height-mark:var(--size-logo-mark-sm);--logo-height-stacked:var(--size-logo-stacked-sm);--logo-height-wordmark:var(--size-logo-wordmark-sm);}
 }
 /* end work cards */
 /* ===== Ripple cursor ===== */
@@ -600,12 +603,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <ul class="work-list">
 <li>
 <article class="work-card reveal">
-<div class="work-head">
 <span class="type-tag">Content</span>
+<div class="work-id">
+<div class="work-head">
+<h2 class="t-heading-s work-title">Sereel</h2>
 <a class="org-link is-mark" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)"><img class="logo-light" src="/_blob/0486d7b3812853ba0c7eebc14a6c7d05" alt=""><img class="logo-dark" src="/_blob/d924e943ed9ca826ccb5aa0a5a64542a" alt=""></a>
 </div>
-<div class="work-id">
-<h2 class="t-heading-s work-title">Sereel</h2>
 <ul class="t-caption secondary work-tags dot-list"><li>Content marketing</li><li>B2B thought leadership</li><li>Newsletter</li><li>Educational content</li><li>Video</li></ul>
 </div>
 <h3 class="t-title work-heading">Making complex ideas clearer</h3>
@@ -622,12 +625,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <li>
 <article class="work-card reveal">
-<div class="work-head">
 <span class="type-tag">Content</span>
+<div class="work-id">
+<div class="work-head">
+<h2 class="t-heading-s work-title">Invisible Garden</h2>
 <a class="org-link is-mark" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src="/_blob/96c3a7e516768e35abc365aeac405dd2" alt=""></a>
 </div>
-<div class="work-id">
-<h2 class="t-heading-s work-title">Invisible Garden</h2>
 <ul class="t-caption secondary work-tags dot-list"><li>Content marketing</li><li>Social media</li><li>Video</li><li>Outreach</li></ul>
 </div>
 <h3 class="t-title work-heading">Turning a developer residency into a story people could follow</h3>
@@ -644,12 +647,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <li>
 <article class="work-card reveal">
-<div class="work-head">
 <span class="type-tag">Content + community</span>
+<div class="work-id">
+<div class="work-head">
+<h2 class="t-heading-s work-title">One Dev</h2>
 <a class="org-link is-wordmark" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)"><img class="logo-light" src="/_blob/0b1567af669c3a3b8855d71c69b9951f" alt=""><img class="logo-dark" src="/_blob/11c1e453eda45937f34272be84238c9f" alt=""></a>
 </div>
-<div class="work-id">
-<h2 class="t-heading-s work-title">One Dev</h2>
 <ul class="t-caption secondary work-tags dot-list"><li>Community management</li><li>Developer education</li><li>Content</li><li>Community programmes</li></ul>
 </div>
 <h3 class="t-title work-heading">Connecting developers with the knowledge and people they need to grow</h3>
@@ -665,12 +668,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <li>
 <article class="work-card reveal">
-<div class="work-head">
 <span class="type-tag">Content + community</span>
+<div class="work-id">
+<div class="work-head">
+<h2 class="t-heading-s work-title">Code Africa Conference</h2>
 <a class="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)"><img class="logo-light" src="/_blob/ba82c2d6cc5201262edf417fd5dea012" alt=""><img class="logo-dark" src="/_blob/2eea2ce27dc43a935a0588b786bfa290" alt=""></a>
 </div>
-<div class="work-id">
-<h2 class="t-heading-s work-title">Code Africa Conference</h2>
 <ul class="t-caption secondary work-tags dot-list"><li>Content distribution</li><li>Community operations</li><li>Volunteer management</li></ul>
 </div>
 <h3 class="t-title work-heading">Connecting conference promotion with community participation</h3>
@@ -686,12 +689,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <li>
 <article class="work-card reveal">
-<div class="work-head">
 <span class="type-tag">Community</span>
+<div class="work-id">
+<div class="work-head">
+<h2 class="t-heading-s work-title">Web3Ladies</h2>
 <a class="org-link is-stacked" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)"><img class="logo-light" src="/_blob/0f1757c991dc89555a29078ec093d643" alt=""><img class="logo-dark" src="/_blob/e59289452db7707fb9fdeb5983455581" alt=""></a>
 </div>
-<div class="work-id">
-<h2 class="t-heading-s work-title">Web3Ladies</h2>
 <ul class="t-caption secondary work-tags dot-list"><li>Community leadership</li><li>Programme development</li><li>Ecosystem partnerships</li><li>Community engagement</li></ul>
 </div>
 <h3 class="t-title work-heading">Turning community needs into opportunities to learn and grow</h3>
@@ -708,12 +711,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <li>
 <article class="work-card reveal">
-<div class="work-head">
 <span class="type-tag">Content + community</span>
+<div class="work-id">
+<div class="work-head">
+<h2 class="t-heading-s work-title">Community for Africa</h2>
 <a class="org-link is-stacked" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)"><img class="logo-light" src="/_blob/4899177a0dbf67c9cb80264dc0fb7694" alt=""><img class="logo-dark" src="/_blob/614360db2691f9e82f4b6ad395dbf92d" alt=""></a>
 </div>
-<div class="work-id">
-<h2 class="t-heading-s work-title">Community for Africa</h2>
 <ul class="t-caption secondary work-tags dot-list"><li>Community management</li><li>Educational content</li><li>Resource development</li></ul>
 </div>
 <h3 class="t-title work-heading">Turning community learning into practical resources</h3>
@@ -729,12 +732,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <li>
 <article class="work-card reveal">
-<div class="work-head">
 <span class="type-tag">Community</span>
+<div class="work-id">
+<div class="work-head">
+<h2 class="t-heading-s work-title">Open Terms Archive</h2>
 <a class="org-link is-mark" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)"><img class="logo-light" src="/_blob/bfac7decba51c15a0ed5911d700b6dce" alt=""><img class="logo-dark" src="/_blob/eff4615b04eb0d8a673052fc16f9b912" alt=""></a>
 </div>
-<div class="work-id">
-<h2 class="t-heading-s work-title">Open Terms Archive</h2>
 <ul class="t-caption secondary work-tags dot-list"><li>Open source community management</li><li>Contributor experience</li><li>Documentation</li></ul>
 </div>
 <h3 class="t-title work-heading">Making it easier for contributors to find their way in</h3>
