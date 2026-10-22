@@ -174,10 +174,6 @@
 --card-border-hover:var(--color-border-strong);
 --card-radius:var(--radius-card);
 --card-padding:var(--space-inset);
---work-art-min-height:calc(var(--primitive-space-8) * 3);
---work-art-scale:0.45;
---work-art-height-stacked:calc(var(--work-art-min-height) * var(--work-art-scale));
---work-art-bg:var(--color-bg-subtle);
 --logo-tile-bg:var(--primitive-neutral-0);
 --logo-tile-border:var(--color-border-subtle);
 --logo-tile-width:280px;
@@ -296,24 +292,12 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 .dot-community{background:var(--type-dot-community);}
 .type-tag{display:inline-flex;align-items:center;gap:var(--space-tight);align-self:flex-start;min-height:var(--type-tag-height);padding:0 var(--space-tight);box-sizing:border-box;border-radius:var(--type-tag-radius);border:var(--border-width-hairline) solid var(--type-tag-border);color:var(--type-tag-text);font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--weight-ui);}
 .work-list{display:flex;flex-direction:column;gap:var(--space-cluster);margin:0;padding:0;list-style:none;}
-.work-card{display:grid;grid-template-columns:var(--work-art-col) var(--work-body-col);text-decoration:none;color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);overflow:hidden;transition:border-color var(--motion-base) var(--motion-ease);}
-.work-card:hover{color:var(--color-text-primary);border-color:var(--card-border-hover);}
-.work-art{position:relative;min-height:var(--work-art-min-height);overflow:hidden;background:var(--work-art-bg);border-right:var(--border-width-hairline) solid var(--card-border);}
-.work-art-inner{position:absolute;inset:0;}
-.work-art{display:flex;align-items:center;justify-content:center;padding:var(--space-stack);box-sizing:border-box;}
-.org-tile{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-hairline);width:min(var(--logo-tile-width),100%);height:var(--logo-tile-height);padding:var(--space-cluster);box-sizing:border-box;background:var(--logo-tile-bg);border:var(--border-width-hairline) solid var(--logo-tile-border);border-radius:var(--card-radius);}
-.org-tile img{display:block;max-width:100%;max-height:var(--logo-max-height);object-fit:contain;}
-.logo-ph{font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--weight-strong);letter-spacing:var(--type-title-tracking);color:var(--primitive-neutral-600);}
-.logo-ph-note{font-size:var(--type-caption-size);line-height:var(--type-caption-leading);color:var(--primitive-neutral-600);}
-.work-list > li:nth-child(even) .work-card{grid-template-columns:var(--work-body-col) var(--work-art-col);}
-.work-list > li:nth-child(even) .work-art{order:2;border-right:0;border-left:var(--border-width-hairline) solid var(--card-border);}
-.work-body{display:flex;flex-direction:column;gap:var(--space-related);padding:var(--space-group) var(--space-group) var(--space-stack);}
+
 .work-title{transition:color var(--motion-base) var(--motion-ease);}
 .work-card:hover .work-title,.work-card:focus-visible .work-title{color:var(--color-text-emphasis);}
 .results{display:flex;flex-wrap:wrap;gap:var(--space-element) var(--space-group);margin:var(--space-tight) 0 0;padding:var(--space-element) 0 0;border-top:var(--border-width-hairline) solid var(--card-border);list-style:none;}
 .results li{display:flex;flex-direction:column;gap:var(--space-hairline);}
 .work-cta{display:inline-flex;align-items:center;gap:var(--space-tight);margin-top:auto;padding-top:var(--space-element);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-strong);color:var(--link-color);}
-.work-card:hover .work-cta{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 
 .pick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--card-grid-gap-row) var(--card-grid-gap-col);margin:0;padding:0;list-style:none;}
 .pick-grid > li{display:flex;}
@@ -340,8 +324,7 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 @keyframes tile-in-right{from{opacity:0;transform:translateX(var(--work-slide));}to{opacity:1;transform:none;}}
 @supports (animation-timeline: view()){
 @media (prefers-reduced-motion: no-preference){
-.work-card .org-tile{animation:tile-in-left linear both;animation-timeline:view();animation-range:entry 10% cover 35%;}
-.work-list > li:nth-child(even) .work-card .org-tile{animation-name:tile-in-right;}
+
 .work-card .work-body{animation:rise-in linear both;animation-timeline:view();animation-range:entry 10% cover 30%;}
 }
 }
@@ -356,16 +339,11 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 .menu-btn{display:inline-flex;}
 }
 @media (max-width: 760px){
-.work-card,.work-list > li:nth-child(even) .work-card{grid-template-columns:minmax(0,1fr);}
-.work-list > li:nth-child(even) .work-art{order:0;border-left:0;}
-.work-art{padding:var(--space-element);}
+
 .home{--logo-tile-width:240px;--logo-tile-height:88px;--logo-max-height:44px;}
-.org-tile{padding:var(--space-element);}
-.work-art{min-height:0;height:var(--work-art-height-stacked);border-right:0;border-bottom:var(--border-width-hairline) solid var(--card-border);}
+
 .pick-grid{grid-template-columns:minmax(0,1fr);}
 
-.work-art-inner{inset:auto;left:0;top:0;width:calc(100% / var(--work-art-scale));height:var(--work-art-min-height);transform:scale(var(--work-art-scale));transform-origin:0 0;}
-.work-body{padding:var(--space-inset) var(--space-cluster) var(--space-cluster);}
 .footer-grid{grid-template-columns:minmax(0,1fr);}
 .footer-end{align-items:flex-start;text-align:left;}
 }
@@ -474,8 +452,7 @@ html:has(.home:is([data-menu="open"],[data-menu="closing"])){overflow:hidden;}
 @media (prefers-reduced-motion: no-preference){
 html.aishah-io .home :is(.reveal,.work-card .org-tile,.work-card .work-body){transition:opacity var(--motion-enter) var(--motion-ease),transform var(--motion-enter) var(--motion-ease);}
 html.aishah-io .home :is(.reveal,.work-card .work-body):not([data-shown]){opacity:0;transform:translateY(var(--motion-rise));}
-html.aishah-io .home .work-card .org-tile:not([data-shown]){opacity:0;transform:translateX(calc(var(--work-slide) * -1));}
-html.aishah-io .home .work-list > li:nth-child(even) .work-card .org-tile:not([data-shown]){transform:translateX(var(--work-slide));}
+
 }
 }
 @supports not (animation-timeline: scroll()){
@@ -507,7 +484,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 /* end page-intro */
 /* ===== Work copy ===== */
 /* component: project number, focus tags and the line that sums up each project */
-.home{--work-art-col:minmax(0,3fr);--work-body-col:minmax(0,9fr);--work-num-color:var(--color-text-emphasis);--work-copy-measure:600px;--pick-media-ratio:16 / 5;}
+.home{--work-num-color:var(--color-text-emphasis);--work-copy-measure:600px;--pick-media-ratio:16 / 5;}
 .work-num{color:var(--work-num-color);}
 .work-tags{margin:0;}
 .work-heading{margin-top:var(--space-tight);}
@@ -516,6 +493,34 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 /* screen-reader-only text, such as "(opens in a new tab)" */
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 /* end work copy */
+/* ===== Work cards ===== */
+/* component: a compact card. Logo (linked to the organisation's site), number, name and focus areas on the left; the story on the right */
+.home{
+--work-meta-col:minmax(0,4fr);
+--work-story-col:minmax(0,8fr);
+--work-card-padding:var(--space-group);
+--work-card-gap:var(--space-group);
+--logo-chip-width:calc(var(--primitive-space-8) + var(--primitive-space-7));
+--logo-chip-height:var(--space-group);
+--logo-chip-radius:var(--radius-control);
+--logo-chip-bg:var(--logo-tile-bg);
+--logo-chip-border:var(--card-border);
+--logo-chip-border-hover:var(--color-accent-primary);
+}
+.work-card{display:grid;grid-template-columns:var(--work-meta-col) var(--work-story-col);gap:var(--work-card-gap);padding:var(--work-card-padding);color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
+.work-card:hover{border-color:var(--card-border-hover);}
+.work-meta{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-related);min-width:0;}
+.work-body{display:flex;flex-direction:column;gap:var(--space-related);min-width:0;}
+.org-link{display:inline-flex;align-items:center;justify-content:center;width:var(--logo-chip-width);height:var(--logo-chip-height);margin-bottom:var(--space-tight);padding:var(--space-tight) var(--space-related);box-sizing:border-box;background:var(--logo-chip-bg);border:var(--border-width-hairline) solid var(--logo-chip-border);border-radius:var(--logo-chip-radius);transition:border-color var(--motion-fast) var(--motion-ease);}
+.org-link:hover,.org-link:focus-visible{border-color:var(--logo-chip-border-hover);}
+.org-link img{display:block;max-width:100%;max-height:100%;object-fit:contain;}
+.work-card .work-heading{margin-top:0;}
+.work-cta{align-self:flex-start;text-decoration:none;}
+.work-cta:hover{color:var(--link-color);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+@media (max-width: 760px){
+.work-card{grid-template-columns:minmax(0,1fr);gap:var(--space-cluster);padding:var(--space-inset) var(--space-cluster);}
+}
+/* end work cards */
 /* ===== Ripple cursor ===== */
 /* primitive */
 .home{--primitive-duration-640:640ms;--primitive-duration-900:900ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-size-64:64px;--primitive-opacity-45:0.45;}
@@ -583,20 +588,14 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-label reveal"><span class="label-dot" aria-hidden="true"></span>Selected work</p>
 <ul class="work-list">
 <li>
-<a class="work-card attend" href="Home.dc.html#case-sereel">
-<div class="work-art">
-<div class="work-art-inner" aria-hidden="true">
-<div class="shape round sh sh-primary" style="right: -48px; top: -64px; width: 240px; height: 240px"></div>
-<div class="shape sh-ring" style="left: 48px; top: 48px; width: 96px; height: 96px; border-width: 12px"></div>
-<div class="shape round sh sh-primary" style="left: 48px; bottom: 96px; width: 96px; height: 32px"></div>
-<div class="shape round sh sh-primary" style="left: 48px; bottom: 48px; width: 160px; height: 32px"></div>
-</div>
-<div class="org-tile" role="img" aria-label="Sereel logo"><img src="/_blob/2f34c4fe9d9311468927554c55f7c165" alt=""></div>
-</div>
-<div class="work-body">
+<article class="work-card">
+<div class="work-meta">
+<a class="org-link" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)"><img src="/_blob/2f34c4fe9d9311468927554c55f7c165" alt=""></a>
 <span class="t-label work-num">01</span>
 <h2 class="t-heading-s work-title">Sereel</h2>
 <p class="t-caption secondary work-tags">Content marketing · Thought leadership · Educational content · Short-form video</p>
+</div>
+<div class="work-body">
 <h3 class="t-title work-heading">Making complex ideas clearer</h3>
 <div class="work-copy">
 <p class="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
@@ -606,26 +605,20 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li><span class="t-figure-s">127.8%</span><span class="t-caption secondary">LinkedIn follower growth</span></li>
 <li><span class="t-figure-s">245 → 558</span><span class="t-caption secondary">followers</span></li>
 </ul>
-<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+<a class="work-cta" href="Home.dc.html#case-sereel">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </div>
-</a>
+</article>
 </li>
 
 <li>
-<a class="work-card attend" href="Home.dc.html#case-invisible-garden">
-<div class="work-art">
-<div class="work-art-inner" aria-hidden="true">
-<div class="shape half-round sh sh-primary" style="left: 48px; bottom: 0; width: 200px; height: 100px"></div>
-<div class="shape round sh sh-primary" style="right: 64px; top: 48px; width: 88px; height: 88px"></div>
-<div class="shape round sh sh-primary" style="right: 168px; top: 120px; width: 48px; height: 48px"></div>
-<div class="shape sh-ring" style="right: 48px; bottom: 40px; width: 64px; height: 64px; border-width: 8px"></div>
-</div>
-<div class="org-tile" role="img" aria-label="Invisible Garden logo"><img src="/_blob/96c3a7e516768e35abc365aeac405dd2" alt=""></div>
-</div>
-<div class="work-body">
+<article class="work-card">
+<div class="work-meta">
+<a class="org-link" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src="/_blob/96c3a7e516768e35abc365aeac405dd2" alt=""></a>
 <span class="t-label work-num">02</span>
 <h2 class="t-heading-s work-title">Invisible Garden</h2>
 <p class="t-caption secondary work-tags">Content marketing · Social media · Community storytelling</p>
+</div>
+<div class="work-body">
 <h3 class="t-title work-heading">Bringing a developer residency to life</h3>
 <div class="work-copy">
 <p class="t-body">Invisible Garden was a three-week Ethereum-focused developer residency in Buenos Aires.</p>
@@ -635,27 +628,20 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li><span class="t-figure-s">1,025 → 1,900+</span><span class="t-caption secondary">X followers</span></li>
 <li><span class="t-figure-s">0 → 144</span><span class="t-caption secondary">Instagram followers</span></li>
 </ul>
-<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+<a class="work-cta" href="Home.dc.html#case-invisible-garden">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </div>
-</a>
+</article>
 </li>
 
 <li>
-<a class="work-card attend" href="#case-one-dev">
-<div class="work-art">
-<div class="work-art-inner" aria-hidden="true">
-<div class="shape round sh sh-secondary" style="left: 48px; top: 48px; width: 96px; height: 96px"></div>
-<div class="shape round sh sh-secondary" style="left: 152px; top: 112px; width: 64px; height: 64px"></div>
-<div class="shape round sh sh-secondary" style="left: 88px; top: 176px; width: 48px; height: 48px"></div>
-<div class="shape round sh sh-primary" style="right: 48px; top: 48px; width: 120px; height: 120px"></div>
-<div class="shape sh-ring" style="right: 80px; bottom: 40px; width: 64px; height: 64px; border-width: 8px"></div>
-</div>
-<div class="org-tile" role="img" aria-label="One Dev logo"><img src="/_blob/0b1567af669c3a3b8855d71c69b9951f" alt=""></div>
-</div>
-<div class="work-body">
+<article class="work-card">
+<div class="work-meta">
+<a class="org-link" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)"><img src="/_blob/0b1567af669c3a3b8855d71c69b9951f" alt=""></a>
 <span class="t-label work-num">03</span>
 <h2 class="t-heading-s work-title">One Dev</h2>
 <p class="t-caption secondary work-tags">Community management · Developer education · Content</p>
+</div>
+<div class="work-body">
 <h3 class="t-title work-heading">Helping developers find their footing in Web3</h3>
 <div class="work-copy">
 <p class="t-body">At One Dev, I helped grow a developer community through educational programmes, community engagement, and content that made Web3 easier to explore.</p>
@@ -666,26 +652,20 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li><span class="t-figure-s">6,300+</span><span class="t-caption secondary">newsletter subscribers</span></li>
 <li><span class="t-figure-s">200+</span><span class="t-caption secondary">bootcamp learners</span></li>
 </ul>
-<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+<a class="work-cta" href="#case-one-dev">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </div>
-</a>
+</article>
 </li>
 
 <li>
-<a class="work-card attend" href="#case-code-africa">
-<div class="work-art">
-<div class="work-art-inner" aria-hidden="true">
-<div class="shape round sh sh-primary" style="left: 48px; top: 48px; width: 128px; height: 128px"></div>
-<div class="shape round sh sh-secondary" style="left: 48px; bottom: 48px; width: 200px; height: 40px"></div>
-<div class="shape sh-ring" style="right: 48px; top: 56px; width: 112px; height: 112px; border-width: 14px"></div>
-<div class="shape round sh sh-secondary" style="right: 72px; bottom: 48px; width: 48px; height: 48px"></div>
-</div>
-<div class="org-tile" role="img" aria-label="Code Africa logo"><img src="/_blob/ba82c2d6cc5201262edf417fd5dea012" alt=""></div>
-</div>
-<div class="work-body">
+<article class="work-card">
+<div class="work-meta">
+<a class="org-link" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)"><img src="/_blob/ba82c2d6cc5201262edf417fd5dea012" alt=""></a>
 <span class="t-label work-num">04</span>
 <h2 class="t-heading-s work-title">Code Africa Conference</h2>
 <p class="t-caption secondary work-tags">Community operations · Content distribution · Volunteer management</p>
+</div>
+<div class="work-body">
 <h3 class="t-title work-heading">Turning campaign activity into conference participation</h3>
 <div class="work-copy">
 <p class="t-body">Working with One Dev, I contributed to the promotion and community operations for Code Africa Conference. I wrote and published promotional copy across campaign channels, coordinated volunteers, and supported the ambassador campaign.</p>
@@ -695,27 +675,20 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li><span class="t-figure-s">3,000+</span><span class="t-caption secondary">registrations</span></li>
 <li><span class="t-figure-s">40+</span><span class="t-caption secondary">volunteers and ambassadors</span></li>
 </ul>
-<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+<a class="work-cta" href="#case-code-africa">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </div>
-</a>
+</article>
 </li>
 
 <li>
-<a class="work-card attend" href="#case-web3ladies">
-<div class="work-art">
-<div class="work-art-inner" aria-hidden="true">
-<div class="shape round sh sh-secondary" style="left: 48px; top: 56px; width: 88px; height: 88px"></div>
-<div class="shape round sh sh-secondary" style="left: 152px; top: 32px; width: 64px; height: 64px"></div>
-<div class="shape round sh sh-secondary" style="left: 160px; top: 120px; width: 72px; height: 72px"></div>
-<div class="shape round sh sh-secondary" style="left: 72px; top: 168px; width: 56px; height: 56px"></div>
-<div class="shape sh-ring" style="right: 48px; top: 64px; width: 120px; height: 120px; border-width: 15px"></div>
-</div>
-<div class="org-tile" role="img" aria-label="Web3Ladies logo"><img src="/_blob/0f1757c991dc89555a29078ec093d643" alt=""></div>
-</div>
-<div class="work-body">
+<article class="work-card">
+<div class="work-meta">
+<a class="org-link" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)"><img src="/_blob/0f1757c991dc89555a29078ec093d643" alt=""></a>
 <span class="t-label work-num">05</span>
 <h2 class="t-heading-s work-title">Web3Ladies</h2>
 <p class="t-caption secondary work-tags">Community leadership · Programmes · Partnerships · Content</p>
+</div>
+<div class="work-body">
 <h3 class="t-title work-heading">Creating more ways for women to learn and build</h3>
 <div class="work-copy">
 <p class="t-body">I began contributing to Web3Ladies as a volunteer in 2023 and became Community Lead in November 2025. I help create programmes, partnerships, and community experiences that give women more opportunities to learn, build, and connect.</p>
@@ -726,27 +699,20 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li><span class="t-figure-s">20+</span><span class="t-caption secondary">pieces of content</span></li>
 <li><span class="t-figure-s">100+</span><span class="t-caption secondary">registrations for Build with AI</span></li>
 </ul>
-<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+<a class="work-cta" href="#case-web3ladies">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </div>
-</a>
+</article>
 </li>
 
 <li>
-<a class="work-card attend" href="#case-community-for-africa">
-<div class="work-art">
-<div class="work-art-inner" aria-hidden="true">
-<div class="shape round sh sh-secondary" style="left: 48px; top: 48px; width: 112px; height: 112px"></div>
-<div class="shape round sh sh-secondary" style="left: 176px; top: 96px; width: 64px; height: 64px"></div>
-<div class="shape round sh sh-secondary" style="right: 48px; bottom: 96px; width: 160px; height: 32px"></div>
-<div class="shape round sh sh-secondary" style="right: 48px; bottom: 48px; width: 224px; height: 32px"></div>
-<div class="shape sh-ring" style="left: 56px; bottom: 40px; width: 56px; height: 56px; border-width: 7px"></div>
-</div>
-<div class="org-tile" role="img" aria-label="Community for Africa logo"><img src="/_blob/4899177a0dbf67c9cb80264dc0fb7694" alt=""></div>
-</div>
-<div class="work-body">
+<article class="work-card">
+<div class="work-meta">
+<a class="org-link" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)"><img src="/_blob/4899177a0dbf67c9cb80264dc0fb7694" alt=""></a>
 <span class="t-label work-num">06</span>
 <h2 class="t-heading-s work-title">Community for Africa</h2>
 <p class="t-caption secondary work-tags">Community management · Educational content · Resource creation</p>
+</div>
+<div class="work-body">
 <h3 class="t-title work-heading">Making community knowledge useful beyond the session</h3>
 <div class="work-copy">
 <p class="t-body">I supported community engagement through events, learning sessions, and written and video content. I also created a Skills Audit Sheet to help members assess their skills and identify areas for growth.</p>
@@ -754,34 +720,28 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <ul class="results">
 <li><span class="t-figure-s">100+</span><span class="t-caption secondary">downloads of the Skills Audit Sheet</span></li>
 </ul>
-<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+<a class="work-cta" href="#case-community-for-africa">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </div>
-</a>
+</article>
 </li>
 
 <li>
-<a class="work-card attend" href="#case-open-terms-archive">
-<div class="work-art">
-<div class="work-art-inner" aria-hidden="true">
-<div class="shape sh-ring" style="left: 48px; top: 48px; width: 112px; height: 112px; border-width: 14px"></div>
-<div class="shape round sh sh-secondary" style="left: 184px; top: 88px; width: 64px; height: 64px"></div>
-<div class="shape half-round sh sh-secondary" style="right: 48px; bottom: 0; width: 224px; height: 112px"></div>
-<div class="shape round sh sh-primary" style="right: 72px; top: 48px; width: 56px; height: 56px"></div>
-</div>
-<div class="org-tile" role="img" aria-label="Open Terms Archive logo"><img src="/_blob/bfac7decba51c15a0ed5911d700b6dce" alt=""></div>
-</div>
-<div class="work-body">
+<article class="work-card">
+<div class="work-meta">
+<a class="org-link" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)"><img src="/_blob/bfac7decba51c15a0ed5911d700b6dce" alt=""></a>
 <span class="t-label work-num">07</span>
 <h2 class="t-heading-s work-title">Open Terms Archive</h2>
 <p class="t-caption secondary work-tags">Open source community management · Contributor experience</p>
+</div>
+<div class="work-body">
 <h3 class="t-title work-heading">Making it easier for contributors to take part</h3>
 <div class="work-copy">
 <p class="t-body">My open-source community work focused on helping people find their way into a project and understand how to contribute. At Open Terms Archive, I supported a community migration to Mattermost and worked on onboarding guides, a contributor page, and community calls.</p>
 <p class="t-body">The aim was to make the move easier to navigate and give contributors clearer ways to get involved.</p>
 </div>
-<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+<a class="work-cta" href="#case-open-terms-archive">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </div>
-</a>
+</article>
 </li>
 </ul>
 

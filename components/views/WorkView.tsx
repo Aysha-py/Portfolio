@@ -146,21 +146,16 @@ export default function WorkView() {
           </p>
           <ul className="work-list">
             <li>
-              <a className="work-card attend" href={`${BASE}/#case-sereel`}>
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape round sh sh-primary" style={{right: "-48px", top: "-64px", width: "240px", height: "240px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{left: "48px", top: "48px", width: "96px", height: "96px", borderWidth: "12px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{left: "48px", bottom: "96px", width: "96px", height: "32px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{left: "48px", bottom: "48px", width: "160px", height: "32px"} as React.CSSProperties} />
-                  </div>
-                  <div className="org-tile" role="img" aria-label="Sereel logo"><img src={`${BASE}/images/logo-sereel-glow.png`} alt="" /></div>
-                </div>
-                <div className="work-body">
+              <article className="work-card">
+                <div className="work-meta">
+                  <a className="org-link" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)"><img src={`${BASE}/images/logo-sereel-glow.png`} alt="" /></a>
+                  {" "}
                   <span className="t-label work-num">01</span>
                   {" "}
                   <h2 className="t-heading-s work-title">Sereel</h2>
                   <p className="t-caption secondary work-tags">Content marketing · Thought leadership · Educational content · Short-form video</p>
+                </div>
+                <div className="work-body">
                   <h3 className="t-title work-heading">Making complex ideas clearer</h3>
                   <div className="work-copy">
                     <p className="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
@@ -179,32 +174,27 @@ export default function WorkView() {
                     </li>
                   </ul>
                   {" "}
-                  <span className="work-cta">
+                  <a className="work-cta" href={`${BASE}/#case-sereel`}>
                     Read the case study{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M5 12h14" />
                       <path d="m12 5 7 7-7 7" />
                     </svg>
-                  </span>
+                  </a>
                 </div>
-              </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href={`${BASE}/#case-invisible-garden`}>
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape half-round sh sh-primary" style={{left: "48px", bottom: "0", width: "200px", height: "100px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{right: "64px", top: "48px", width: "88px", height: "88px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{right: "168px", top: "120px", width: "48px", height: "48px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{right: "48px", bottom: "40px", width: "64px", height: "64px", borderWidth: "8px"} as React.CSSProperties} />
-                  </div>
-                  <div className="org-tile" role="img" aria-label="Invisible Garden logo"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></div>
-                </div>
-                <div className="work-body">
+              <article className="work-card">
+                <div className="work-meta">
+                  <a className="org-link" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
+                  {" "}
                   <span className="t-label work-num">02</span>
                   {" "}
                   <h2 className="t-heading-s work-title">Invisible Garden</h2>
                   <p className="t-caption secondary work-tags">Content marketing · Social media · Community storytelling</p>
+                </div>
+                <div className="work-body">
                   <h3 className="t-title work-heading">Bringing a developer residency to life</h3>
                   <div className="work-copy">
                     <p className="t-body">Invisible Garden was a three-week Ethereum-focused developer residency in Buenos Aires.</p>
@@ -223,33 +213,27 @@ export default function WorkView() {
                     </li>
                   </ul>
                   {" "}
-                  <span className="work-cta">
+                  <a className="work-cta" href={`${BASE}/#case-invisible-garden`}>
                     Read the case study{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M5 12h14" />
                       <path d="m12 5 7 7-7 7" />
                     </svg>
-                  </span>
+                  </a>
                 </div>
-              </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-one-dev">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape round sh sh-secondary" style={{left: "48px", top: "48px", width: "96px", height: "96px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "152px", top: "112px", width: "64px", height: "64px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "88px", top: "176px", width: "48px", height: "48px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{right: "48px", top: "48px", width: "120px", height: "120px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{right: "80px", bottom: "40px", width: "64px", height: "64px", borderWidth: "8px"} as React.CSSProperties} />
-                  </div>
-                  <div className="org-tile" role="img" aria-label="One Dev logo"><img src={`${BASE}/images/logo-onedev.svg`} alt="" /></div>
-                </div>
-                <div className="work-body">
+              <article className="work-card">
+                <div className="work-meta">
+                  <a className="org-link" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)"><img src={`${BASE}/images/logo-onedev.svg`} alt="" /></a>
+                  {" "}
                   <span className="t-label work-num">03</span>
                   {" "}
                   <h2 className="t-heading-s work-title">One Dev</h2>
                   <p className="t-caption secondary work-tags">Community management · Developer education · Content</p>
+                </div>
+                <div className="work-body">
                   <h3 className="t-title work-heading">Helping developers find their footing in Web3</h3>
                   <div className="work-copy">
                     <p className="t-body">
@@ -274,32 +258,27 @@ export default function WorkView() {
                     </li>
                   </ul>
                   {" "}
-                  <span className="work-cta">
+                  <a className="work-cta" href="#case-one-dev">
                     Read the case study{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M5 12h14" />
                       <path d="m12 5 7 7-7 7" />
                     </svg>
-                  </span>
+                  </a>
                 </div>
-              </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-code-africa">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape round sh sh-primary" style={{left: "48px", top: "48px", width: "128px", height: "128px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "48px", bottom: "48px", width: "200px", height: "40px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{right: "48px", top: "56px", width: "112px", height: "112px", borderWidth: "14px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{right: "72px", bottom: "48px", width: "48px", height: "48px"} as React.CSSProperties} />
-                  </div>
-                  <div className="org-tile" role="img" aria-label="Code Africa logo"><img src={`${BASE}/images/logo-code-africa.png`} alt="" /></div>
-                </div>
-                <div className="work-body">
+              <article className="work-card">
+                <div className="work-meta">
+                  <a className="org-link" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)"><img src={`${BASE}/images/logo-code-africa.png`} alt="" /></a>
+                  {" "}
                   <span className="t-label work-num">04</span>
                   {" "}
                   <h2 className="t-heading-s work-title">Code Africa Conference</h2>
                   <p className="t-caption secondary work-tags">Community operations · Content distribution · Volunteer management</p>
+                </div>
+                <div className="work-body">
                   <h3 className="t-title work-heading">Turning campaign activity into conference participation</h3>
                   <div className="work-copy">
                     <p className="t-body">
@@ -318,33 +297,27 @@ export default function WorkView() {
                     </li>
                   </ul>
                   {" "}
-                  <span className="work-cta">
+                  <a className="work-cta" href="#case-code-africa">
                     Read the case study{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M5 12h14" />
                       <path d="m12 5 7 7-7 7" />
                     </svg>
-                  </span>
+                  </a>
                 </div>
-              </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-web3ladies">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape round sh sh-secondary" style={{left: "48px", top: "56px", width: "88px", height: "88px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "152px", top: "32px", width: "64px", height: "64px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "160px", top: "120px", width: "72px", height: "72px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "72px", top: "168px", width: "56px", height: "56px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{right: "48px", top: "64px", width: "120px", height: "120px", borderWidth: "15px"} as React.CSSProperties} />
-                  </div>
-                  <div className="org-tile" role="img" aria-label="Web3Ladies logo"><img src={`${BASE}/images/logo-web3ladies.svg`} alt="" /></div>
-                </div>
-                <div className="work-body">
+              <article className="work-card">
+                <div className="work-meta">
+                  <a className="org-link" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)"><img src={`${BASE}/images/logo-web3ladies.svg`} alt="" /></a>
+                  {" "}
                   <span className="t-label work-num">05</span>
                   {" "}
                   <h2 className="t-heading-s work-title">Web3Ladies</h2>
                   <p className="t-caption secondary work-tags">Community leadership · Programmes · Partnerships · Content</p>
+                </div>
+                <div className="work-body">
                   <h3 className="t-title work-heading">Creating more ways for women to learn and build</h3>
                   <div className="work-copy">
                     <p className="t-body">
@@ -369,33 +342,27 @@ export default function WorkView() {
                     </li>
                   </ul>
                   {" "}
-                  <span className="work-cta">
+                  <a className="work-cta" href="#case-web3ladies">
                     Read the case study{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M5 12h14" />
                       <path d="m12 5 7 7-7 7" />
                     </svg>
-                  </span>
+                  </a>
                 </div>
-              </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-community-for-africa">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape round sh sh-secondary" style={{left: "48px", top: "48px", width: "112px", height: "112px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "176px", top: "96px", width: "64px", height: "64px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{right: "48px", bottom: "96px", width: "160px", height: "32px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{right: "48px", bottom: "48px", width: "224px", height: "32px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{left: "56px", bottom: "40px", width: "56px", height: "56px", borderWidth: "7px"} as React.CSSProperties} />
-                  </div>
-                  <div className="org-tile" role="img" aria-label="Community for Africa logo"><img src={`${BASE}/images/logo-community-for-africa.png`} alt="" /></div>
-                </div>
-                <div className="work-body">
+              <article className="work-card">
+                <div className="work-meta">
+                  <a className="org-link" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)"><img src={`${BASE}/images/logo-community-for-africa.png`} alt="" /></a>
+                  {" "}
                   <span className="t-label work-num">06</span>
                   {" "}
                   <h2 className="t-heading-s work-title">Community for Africa</h2>
                   <p className="t-caption secondary work-tags">Community management · Educational content · Resource creation</p>
+                </div>
+                <div className="work-body">
                   <h3 className="t-title work-heading">Making community knowledge useful beyond the session</h3>
                   <div className="work-copy">
                     <p className="t-body">
@@ -409,32 +376,27 @@ export default function WorkView() {
                     </li>
                   </ul>
                   {" "}
-                  <span className="work-cta">
+                  <a className="work-cta" href="#case-community-for-africa">
                     Read the case study{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M5 12h14" />
                       <path d="m12 5 7 7-7 7" />
                     </svg>
-                  </span>
+                  </a>
                 </div>
-              </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-open-terms-archive">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape sh-ring" style={{left: "48px", top: "48px", width: "112px", height: "112px", borderWidth: "14px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "184px", top: "88px", width: "64px", height: "64px"} as React.CSSProperties} />
-                    <div className="shape half-round sh sh-secondary" style={{right: "48px", bottom: "0", width: "224px", height: "112px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{right: "72px", top: "48px", width: "56px", height: "56px"} as React.CSSProperties} />
-                  </div>
-                  <div className="org-tile" role="img" aria-label="Open Terms Archive logo"><img src={`${BASE}/images/logo-open-terms-archive.png`} alt="" /></div>
-                </div>
-                <div className="work-body">
+              <article className="work-card">
+                <div className="work-meta">
+                  <a className="org-link" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)"><img src={`${BASE}/images/logo-open-terms-archive.png`} alt="" /></a>
+                  {" "}
                   <span className="t-label work-num">07</span>
                   {" "}
                   <h2 className="t-heading-s work-title">Open Terms Archive</h2>
                   <p className="t-caption secondary work-tags">Open source community management · Contributor experience</p>
+                </div>
+                <div className="work-body">
                   <h3 className="t-title work-heading">Making it easier for contributors to take part</h3>
                   <div className="work-copy">
                     <p className="t-body">
@@ -443,15 +405,15 @@ export default function WorkView() {
                     <p className="t-body">The aim was to make the move easier to navigate and give contributors clearer ways to get involved.</p>
                   </div>
                   {" "}
-                  <span className="work-cta">
+                  <a className="work-cta" href="#case-open-terms-archive">
                     Read the case study{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M5 12h14" />
                       <path d="m12 5 7 7-7 7" />
                     </svg>
-                  </span>
+                  </a>
                 </div>
-              </a>
+              </article>
             </li>
           </ul>
           <div className="section-next is-right">
