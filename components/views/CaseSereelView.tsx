@@ -296,14 +296,10 @@ export default function CaseSereelView() {
                 <figcaption className="t-caption secondary"><span>A newsletter issue</span></figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
-                    <rect x="2" y="6" width="14" height="12" rx="2" />
-                  </svg>
-                  <span className="t-caption">[Add a video still]</span>
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/sereel-blue.jpg`} alt="Aishat explaining tokenized money market funds on camera, in a short-form video for Sereel" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>A short-form video</span></figcaption>
+                <figcaption className="t-caption secondary"><span>A short-form video, on Instagram</span></figcaption>
               </figure>
             </div>
           </div>

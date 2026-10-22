@@ -253,7 +253,7 @@ export default function WorkView() {
                   </ul>
                 </div>
                 {" "}
-                <a className="work-cta" href={`${BASE}/#case-invisible-garden`}>
+                <a className="work-cta" href={`${BASE}/work/invisible-garden/`}>
                   Read the case study{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
@@ -427,7 +427,7 @@ export default function WorkView() {
                   </ul>
                 </div>
                 {" "}
-                <a className="work-cta" href="#case-web3ladies">
+                <a className="work-cta" href={`${BASE}/work/web3ladies/`}>
                   Read the case study{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
@@ -482,7 +482,7 @@ export default function WorkView() {
                   </ul>
                 </div>
                 {" "}
-                <a className="work-cta" href="#case-community-for-africa">
+                <a className="work-cta" href={`${BASE}/work/community-for-africa/`}>
                   Read the case study{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
@@ -535,7 +535,7 @@ export default function WorkView() {
                   </ul>
                 </div>
                 {" "}
-                <a className="work-cta" href="#case-open-terms-archive">
+                <a className="work-cta" href={`${BASE}/work/open-terms-archive/`}>
                   Read the case study{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />

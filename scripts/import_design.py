@@ -29,6 +29,10 @@ PAGES = [
     ("CaseSereel", "CaseSereelView", "caseSereel", "work/sereel"),
     ("CaseOneDev", "CaseOneDevView", "caseOneDev", "work/one-dev"),
     ("CaseCodeAfrica", "CaseCodeAfricaView", "caseCodeAfrica", "work/code-africa"),
+    ("CaseInvisibleGarden", "CaseInvisibleGardenView", "caseInvisibleGarden", "work/invisible-garden"),
+    ("CaseWeb3Ladies", "CaseWeb3LadiesView", "caseWeb3Ladies", "work/web3ladies"),
+    ("CaseCommunityForAfrica", "CaseCommunityForAfricaView", "caseCommunityForAfrica", "work/community-for-africa"),
+    ("CaseOpenTermsArchive", "CaseOpenTermsArchiveView", "caseOpenTermsArchive", "work/open-terms-archive"),
 ]
 ROUTES = {name: ("/" + route + "/" if route else "/") for name, _, _, route in PAGES}
 
@@ -82,7 +86,7 @@ class Tree(HTMLParser):
 
 def map_link(value):
     """Design-canvas file links become site routes; /_blob/ images become /images/ files."""
-    m = re.fullmatch(r"([A-Za-z]+)\.dc\.html(#.*)?", value)
+    m = re.fullmatch(r"([A-Za-z0-9]+)\.dc\.html(#.*)?", value)
     if m and m.group(1) in ROUTES:
         return "${BASE}" + ROUTES[m.group(1)] + (m.group(2) or ""), True
     m = re.fullmatch(r"/_blob/([0-9a-f]{32})", value)
