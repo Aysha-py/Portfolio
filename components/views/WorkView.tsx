@@ -196,7 +196,7 @@ export default function WorkView() {
                   </ul>
                 </div>
                 {" "}
-                <a className="work-cta" href={`${BASE}/#case-sereel`}>
+                <a className="work-cta" href={`${BASE}/work/sereel/`}>
                   Read the case study{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
@@ -313,7 +313,7 @@ export default function WorkView() {
                   </ul>
                 </div>
                 {" "}
-                <a className="work-cta" href="#case-one-dev">
+                <a className="work-cta" href={`${BASE}/work/one-dev/`}>
                   Read the case study{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
@@ -368,7 +368,7 @@ export default function WorkView() {
                   </ul>
                 </div>
                 {" "}
-                <a className="work-cta" href="#case-code-africa">
+                <a className="work-cta" href={`${BASE}/work/code-africa/`}>
                   Read the case study{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
@@ -674,6 +674,214 @@ export default function WorkView() {
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section id="diaries" className="moments-scope" aria-labelledby="diaries-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
+        <div className="container reveal">
+          <div className="section-head">
+            <h2 id="diaries-title" className="t-label">
+              <span className="label-dot" aria-hidden="true" />
+              Work diaries and media
+            </h2>
+            <div className="moment-nav">
+              <button type="button" className="icon-btn" aria-label="Previous entry" onClick={h.momentsPrev}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M19 12H5" />
+                  <path d="m12 19-7-7 7-7" />
+                </svg>
+              </button>
+              {" "}
+              <button type="button" className="icon-btn" aria-label="Next entry" onClick={h.momentsNext}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul className="moment-track reveal" tabIndex={0} aria-label="Work diaries and media, scroll sideways for more">
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-metamask-web3ladies.jpg`} alt="Aishat in a Web3Ladies T-shirt beside a Community Builder Night banner" loading="lazy" />
+            </figure>
+            <p className="t-label">Representing Web3Ladies</p>
+            <div className="diary-title">
+              <h3 className="t-title">MetaMask Community Builder Night</h3>
+              <p className="t-caption secondary">In person · Lagos · [Year]</p>
+            </div>
+            <p className="t-body">I represented Web3Ladies at MetaMask’s Community Builder Night in Lagos.</p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-invisible-garden-recap.jpg`} alt="Title card of the Invisible Garden Buenos Aires recap video" loading="lazy" />
+            </figure>
+            <p className="t-label">Video editing</p>
+            <div className="diary-title">
+              <h3 className="t-title">Invisible Garden Buenos Aires recap</h3>
+              <p className="t-caption secondary">YouTube · Residency, 2025</p>
+            </div>
+            <p className="t-body">I edited this long-form recap of Invisible Garden’s developer residency in Buenos Aires.</p>
+            <a className="moment-link" href="https://www.youtube.com/watch?v=Op3Syvqt_f8" target="_blank" rel="noopener">
+              Watch the video{" "}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+              <span className="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-gitex-web3ladies.jpg`} alt="Aishat at GITEX Nigeria in Lagos, wearing her event badge" loading="lazy" />
+            </figure>
+            <p className="t-label">Representing Web3Ladies</p>
+            <div className="diary-title">
+              <h3 className="t-title">GITEX Nigeria</h3>
+              <p className="t-caption secondary">In person · Lagos · 2025</p>
+            </div>
+            <p className="t-body">
+              I represented Web3Ladies at GITEX Nigeria in Lagos. [What you did there, for example who you met or what you shared.]
+            </p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-stellar-web3ladies.jpg`} alt="Aishat talking with attendees at the DSF x Stellar meetup in Lagos" loading="lazy" />
+            </figure>
+            <p className="t-label">Representing Web3Ladies</p>
+            <div className="diary-title">
+              <h3 className="t-title">DSF x Stellar meetup</h3>
+              <p className="t-caption secondary">In person · Lagos · 2025</p>
+            </div>
+            <p className="t-body">I shared the Web3Ladies vision at the DSF x Stellar meetup in Lagos.</p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-code-africa-onedev.jpg`} alt="Aishat speaking on stage at the Code Africa Conference City Tour in Nigeria" loading="lazy" />
+            </figure>
+            <p className="t-label">Representing One Dev</p>
+            <div className="diary-title">
+              <h3 className="t-title">Code Africa Conference City Tour</h3>
+              <p className="t-caption secondary">In person · Nigeria · 2025</p>
+            </div>
+            <p className="t-body">
+              I shared One Dev’s vision to help African builders upskill in emerging technologies like blockchain and AI.
+            </p>
+            <a className="moment-link" href="https://x.com/this_aishah_/status/1921856166339940569" target="_blank" rel="noopener">
+              See the post{" "}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+              <span className="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-onedev-ama.jpg`} alt="Flyer for One Dev’s community AMA, Road to Code Africa Conference, with Aishat among the speakers" loading="lazy" />
+            </figure>
+            <p className="t-label">Pre-event campaign</p>
+            <div className="diary-title">
+              <h3 className="t-title">Road to Code Africa Conference</h3>
+              <p className="t-caption secondary">X Space · 2 May 2025</p>
+            </div>
+            <p className="t-body">
+              A community AMA in One Dev’s pre-event series for Code Africa Conference, on community potential and impact. I spoke as One Dev’s community manager.
+            </p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-onedev-aiml.jpg`} alt="A live class from One Dev’s AI/ML for Developers Bootcamp" loading="lazy" />
+            </figure>
+            <p className="t-label">Facilitator</p>
+            <div className="diary-title">
+              <h3 className="t-title">AI/ML for Developers Bootcamp</h3>
+              <p className="t-caption secondary">YouTube · 2025</p>
+            </div>
+            <p className="t-body">
+              I facilitated the live class on day one of One Dev’s bootcamp, which introduced the fundamentals of AI and machine learning and Python for AI.
+            </p>
+            <a className="moment-link" href={"https://www.youtube.com/watch?v=yqNm6mAvo0s&t=307s"} target="_blank" rel="noopener">
+              Watch the recording{" "}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+              <span className="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-web3ladies-open-source.jpg`} alt="Event flyer for Contributing to open source in Web3, with Aishat as host" loading="lazy" />
+            </figure>
+            <p className="t-label">Host</p>
+            <div className="diary-title">
+              <h3 className="t-title">Contributing to open source in Web3</h3>
+              <p className="t-caption secondary">YouTube Live · 2024</p>
+            </div>
+            <p className="t-body">I hosted this Web3 Ladies workshop on how to contribute to open-source projects in Web3.</p>
+            <a className="moment-link" href={"https://www.youtube.com/watch?v=klbOztg-Y9Q&t=5s"} target="_blank" rel="noopener">
+              Watch the recording{" "}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+              <span className="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-ota-community-call.jpg`} alt="Aishat with contributors on the first Open Terms Archive community call" loading="lazy" />
+            </figure>
+            <p className="t-label">Host</p>
+            <div className="diary-title">
+              <h3 className="t-title">Open Terms Archive community call</h3>
+              <p className="t-caption secondary">Online · [Year]</p>
+            </div>
+            <p className="t-body">
+              I anchored the first Open Terms Archive community call, following the structure I created for regular community calls.
+            </p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-web3ladies-booth.jpg`} alt="Aishat at the Web3Ladies booth, behind a table of Web3Ladies T-shirts, tote bags and bottles" loading="lazy" />
+            </figure>
+            <p className="t-label">Representing Web3Ladies</p>
+            <div className="diary-title">
+              <h3 className="t-title">[Event name]</h3>
+              <p className="t-caption secondary">In person · [City] · [Year]</p>
+            </div>
+            <p className="t-body">I represented Web3Ladies at the community’s booth. [What you shared or who you met.]</p>
+          </li>
+        </ul>
+        <div className="container">
+          <div className="moment-foot">
+            <div className="moment-hint" aria-hidden="true">
+              <span className="moment-progress" />
+              <span className="t-label moment-hint-text">
+                Swipe to see more
+                <span className="moment-hint-arrow">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+              </span>
+            </div>
+            <div className="diary-more">
+              <span className="t-label">More on YouTube</span>
+              {" "}
+              <a className="email-link t-body" href="https://www.youtube.com/@Web3Ladies/streams" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
+                Web3 Ladies
+                <span className="visually-hidden">(opens in a new tab)</span>
+              </a>
+              {" "}
+              <a className="email-link t-body" href="https://www.youtube.com/@onedevafrica/streams" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
+                One Dev
+                <span className="visually-hidden">(opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>

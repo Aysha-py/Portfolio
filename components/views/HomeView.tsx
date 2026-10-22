@@ -321,7 +321,7 @@ export default function HomeView() {
             </a>
           </div>
           {" "}
-          <a className="story" href="#case-sereel">
+          <a className="story" href={`${BASE}/work/sereel/`}>
             <div className="story-art is-reels">
               <div className="reel-grid" role="img" aria-label="Six of my short-form videos for Sereel on Instagram: four of me explaining tokenized funds on camera, and explainers on NAV and on custody versus self-custody">
                 <img src={`${BASE}/images/sereel-gating.jpg`} alt="" loading="lazy" />

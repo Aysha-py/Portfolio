@@ -15,9 +15,9 @@ Node is installed through Homebrew but may not be on the shell's PATH. If `node`
 
 ## Architecture
 
-A six-page Next.js (App Router) portfolio for Aishat Muhammed, content marketer and community manager. `next.config.ts` sets `output: "export"` and `trailingSlash: true`, so the site must stay fully static: no server actions, route handlers or dynamic server features.
+A Next.js (App Router) portfolio for Aishat Muhammed, content marketer and community manager: six main pages plus case study pages under `/work/<organisation>/`. `next.config.ts` sets `output: "export"` and `trailingSlash: true`, so the site must stay fully static: no server actions, route handlers or dynamic server features.
 
-**The design canvas is the source of truth.** Each page was designed as a design-canvas file, copied into `design/` (`Home`, `About`, `Work`, `TalkShelf`, `OpenTabs`, `Contact`). `scripts/import_design.py` converts each one into three generated files:
+**The design canvas is the source of truth.** Each page was designed as a design-canvas file, copied into `design/` (`Home`, `About`, `Work`, `TalkShelf`, `OpenTabs`, `Contact`, and one `Case<Name>` file per case study, e.g. `CaseSereel` for `/work/sereel/`). Each design file is listed in `PAGES` in the converter with its route; a new case study also needs its hand-written `app/work/<name>/page.tsx`. `scripts/import_design.py` converts each one into three generated files:
 
 - `components/views/<Name>View.tsx`: the page markup as JSX. `{{holes}}` become `h.<name>`, `<sc-if>` becomes `{h.x && (...)}`, `X.dc.html#frag` links become `${BASE}/route/#frag`, `/_blob/<id>` images become `${BASE}/images/<file>` via `design/images.json`.
 - `components/logic/<name>.js`: the page's `class Component extends DCLogic` script, copied unchanged. `renderVals()` returns every hole value and handler (theme toggle, mobile menu, scrollers, talk shelf selection and swipe, copy buttons, ripple cursor).

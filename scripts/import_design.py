@@ -26,6 +26,9 @@ PAGES = [
     ("TalkShelf", "TalkShelfView", "talkShelf", "talk-shelf"),
     ("OpenTabs", "OpenTabsView", "openTabs", "open-tabs"),
     ("Contact", "ContactView", "contact", "contact"),
+    ("CaseSereel", "CaseSereelView", "caseSereel", "work/sereel"),
+    ("CaseOneDev", "CaseOneDevView", "caseOneDev", "work/one-dev"),
+    ("CaseCodeAfrica", "CaseCodeAfricaView", "caseCodeAfrica", "work/code-africa"),
 ]
 ROUTES = {name: ("/" + route + "/" if route else "/") for name, _, _, route in PAGES}
 
