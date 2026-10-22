@@ -363,7 +363,7 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 .org-tile{padding:var(--space-element);}
 .work-art{min-height:0;height:var(--work-art-height-stacked);border-right:0;border-bottom:var(--border-width-hairline) solid var(--card-border);}
 .pick-grid{grid-template-columns:minmax(0,1fr);}
-.pick-media .shape{display:none;}
+
 .work-art-inner{inset:auto;left:0;top:0;width:calc(100% / var(--work-art-scale));height:var(--work-art-min-height);transform:scale(var(--work-art-scale));transform-origin:0 0;}
 .work-body{padding:var(--space-inset) var(--space-cluster) var(--space-cluster);}
 .footer-grid{grid-template-columns:minmax(0,1fr);}
@@ -505,6 +505,17 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .page-intro .about-photos > :nth-child(n+2){--intro-i:3;}
 }
 /* end page-intro */
+/* ===== Work copy ===== */
+/* component: project number, focus tags and the line that sums up each project */
+.home{--work-num-color:var(--color-text-emphasis);--work-copy-measure:600px;--pick-media-ratio:16 / 5;}
+.work-num{color:var(--work-num-color);}
+.work-tags{margin:0;}
+.work-heading{margin-top:var(--space-tight);}
+.work-copy{display:flex;flex-direction:column;gap:var(--space-related);max-width:var(--work-copy-measure);}
+.lets-talk-links{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-element) var(--space-stack);margin-top:var(--space-tight);}
+/* screen-reader-only text, such as "(opens in a new tab)" */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+/* end work copy */
 /* ===== Ripple cursor ===== */
 /* primitive */
 .home{--primitive-duration-640:640ms;--primitive-duration-900:900ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-size-64:64px;--primitive-opacity-45:0.45;}
@@ -558,8 +569,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <section class="page-intro" aria-labelledby="work-title" style="padding-block: var(--space-section) var(--space-group)">
 <div class="container stack reveal" style="gap: var(--space-cluster); max-width: 1280px">
 <p class="t-label"><span class="label-dot" aria-hidden="true"></span>Work</p>
-<h1 id="work-title" class="t-display" style="max-width: 980px">Stories I've told and <span class="hl">communities I've grown</span></h1>
-<p class="t-body-l" style="max-width: 680px">Across fintech, Web3, developer education and open source, I build communities and the content that keeps them coming back.</p>
+<h1 id="work-title" class="t-display" style="max-width: 980px">Content that earns attention. Communities that <span class="hl">keep people coming back</span>.</h1>
+<p class="t-body-l" style="max-width: 680px">From fintech and Web3 to developer education and open source, I create content that makes ideas easier to understand and build communities where people can learn, contribute, and grow.</p>
 <a class="jump-link" href="#work-list" style="align-self: flex-start; margin-top: var(--space-element)">
 <span class="t-label" style="color: var(--color-text-primary)">Browse the work</span>
 <span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span>
@@ -567,11 +578,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </div>
 </section>
 
-<section id="work-list" aria-label="Projects" style="padding-block: var(--space-group) var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<section id="work-list" aria-label="Selected work" style="padding-block: var(--space-group) var(--space-section); border-top: 1px solid var(--color-border-subtle)">
 <div class="container stack" style="gap: var(--space-group)">
+<p class="t-label reveal"><span class="label-dot" aria-hidden="true"></span>Selected work</p>
 <ul class="work-list">
 <li>
-<a class="work-card attend" href="#case-sereel">
+<a class="work-card attend" href="Home.dc.html#case-sereel">
 <div class="work-art">
 <div class="work-art-inner" aria-hidden="true">
 <div class="shape round sh sh-primary" style="right: -48px; top: -64px; width: 240px; height: 240px"></div>
@@ -582,12 +594,17 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="org-tile" role="img" aria-label="Sereel logo"><img src="/_blob/0b7cefd7e1a6e3fa8678af2730d8f3b5" alt=""></div>
 </div>
 <div class="work-body">
-<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-content"></span></span>Content</span>
-<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Sereel</h2>
-<p class="t-caption secondary">[Your role] · [Dates]</p>
-<p class="t-body" style="max-width: 600px">Educational and thought-leadership content on tokenized capital markets, plus scripted short-form video for institutional audiences.</p>
+<span class="t-label work-num">01</span>
+<h2 class="t-heading-s work-title">Sereel</h2>
+<p class="t-caption secondary work-tags">Content marketing · Thought leadership · Educational content · Short-form video</p>
+<h3 class="t-title work-heading">Making complex ideas clearer</h3>
+<div class="work-copy">
+<p class="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
+<p class="t-body">I created educational and thought-leadership content on tokenized assets, capital markets, and industry developments. I researched market trends and audience needs to explain complex financial and regulatory ideas, and scripted, filmed, and edited short-form videos for social media.</p>
+</div>
 <ul class="results">
-<li><span class="t-figure-s">127.8%</span><span class="t-caption secondary">LinkedIn follower growth, 245 to 558</span></li>
+<li><span class="t-figure-s">127.8%</span><span class="t-caption secondary">LinkedIn follower growth</span></li>
+<li><span class="t-figure-s">245 → 558</span><span class="t-caption secondary">followers</span></li>
 </ul>
 <span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
 </div>
@@ -595,7 +612,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </li>
 
 <li>
-<a class="work-card attend" href="#case-invisible-garden">
+<a class="work-card attend" href="Home.dc.html#case-invisible-garden">
 <div class="work-art">
 <div class="work-art-inner" aria-hidden="true">
 <div class="shape half-round sh sh-primary" style="left: 48px; bottom: 0; width: 200px; height: 100px"></div>
@@ -606,10 +623,14 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="org-tile" role="img" aria-label="Invisible Garden logo"><span class="logo-ph" aria-hidden="true">Invisible Garden</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
 </div>
 <div class="work-body">
-<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-content"></span></span>Content</span>
-<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Invisible Garden</h2>
-<p class="t-caption secondary">[Your role] · [Dates]</p>
-<p class="t-body" style="max-width: 600px">Wrote the social content and outreach copy for a three-week Ethereum developer residency in Buenos Aires, turning interest into participation.</p>
+<span class="t-label work-num">02</span>
+<h2 class="t-heading-s work-title">Invisible Garden</h2>
+<p class="t-caption secondary work-tags">Content marketing · Social media · Community storytelling</p>
+<h3 class="t-title work-heading">Bringing a developer residency to life</h3>
+<div class="work-copy">
+<p class="t-body">Invisible Garden was a three-week Ethereum-focused developer residency in Buenos Aires.</p>
+<p class="t-body">I wrote social media copy and covered the programme live, turning its activities, milestones, and community moments into content people could follow. I also managed outreach to prospective mentors and project judges, writing follow-up messages and tracking responses until judges were secured.</p>
+</div>
 <ul class="results">
 <li><span class="t-figure-s">1,025 → 1,900+</span><span class="t-caption secondary">X followers</span></li>
 <li><span class="t-figure-s">0 → 144</span><span class="t-caption secondary">Instagram followers</span></li>
@@ -632,10 +653,14 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="org-tile" role="img" aria-label="One Dev logo"><span class="logo-ph" aria-hidden="true">One Dev</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
 </div>
 <div class="work-body">
-<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-content"></span><span class="dot dot-community"></span></span>Content + community</span>
-<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">One Dev</h2>
-<p class="t-caption secondary">Developer Community Manager · Jan 2024 – present</p>
-<p class="t-body" style="max-width: 600px">Grew a Web3 EdTech community of African developers through bootcamps, workshops, a newsletter and consistent content.</p>
+<span class="t-label work-num">03</span>
+<h2 class="t-heading-s work-title">One Dev</h2>
+<p class="t-caption secondary work-tags">Community management · Developer education · Content</p>
+<h3 class="t-title work-heading">Helping developers find their footing in Web3</h3>
+<div class="work-copy">
+<p class="t-body">At One Dev, I helped grow a developer community through educational programmes, community engagement, and content that made Web3 easier to explore.</p>
+<p class="t-body">My work supported a community of more than 8,000 members, a newsletter with 6,300+ subscribers, and bootcamps that reached 200+ learners.</p>
+</div>
 <ul class="results">
 <li><span class="t-figure-s">8,000+</span><span class="t-caption secondary">community members</span></li>
 <li><span class="t-figure-s">6,300+</span><span class="t-caption secondary">newsletter subscribers</span></li>
@@ -658,10 +683,14 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="org-tile" role="img" aria-label="Code Africa logo"><span class="logo-ph" aria-hidden="true">Code Africa</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
 </div>
 <div class="work-body">
-<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-content"></span><span class="dot dot-community"></span></span>Content + community</span>
-<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Code Africa Conference</h2>
-<p class="t-caption secondary">Led community and content operations · With One Dev</p>
-<p class="t-body" style="max-width: 600px">Ran the volunteer and ambassador programme, the full content calendar and live coverage for a conference connecting developers and founders across Africa.</p>
+<span class="t-label work-num">04</span>
+<h2 class="t-heading-s work-title">Code Africa Conference</h2>
+<p class="t-caption secondary work-tags">Community operations · Content distribution · Volunteer management</p>
+<h3 class="t-title work-heading">Turning campaign activity into conference participation</h3>
+<div class="work-copy">
+<p class="t-body">Working with One Dev, I contributed to the promotion and community operations for Code Africa Conference. I wrote and published promotional copy across campaign channels, coordinated volunteers, and supported the ambassador campaign.</p>
+<p class="t-body">These efforts helped build awareness and drive registrations for the conference.</p>
+</div>
 <ul class="results">
 <li><span class="t-figure-s">3,000+</span><span class="t-caption secondary">registrations</span></li>
 <li><span class="t-figure-s">40+</span><span class="t-caption secondary">volunteers and ambassadors</span></li>
@@ -681,17 +710,21 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="shape round sh sh-secondary" style="left: 72px; top: 168px; width: 56px; height: 56px"></div>
 <div class="shape sh-ring" style="right: 48px; top: 64px; width: 120px; height: 120px; border-width: 15px"></div>
 </div>
-<div class="org-tile" role="img" aria-label="Web3ladies logo"><span class="logo-ph" aria-hidden="true">Web3ladies</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
+<div class="org-tile" role="img" aria-label="Web3Ladies logo"><span class="logo-ph" aria-hidden="true">Web3Ladies</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
 </div>
 <div class="work-body">
-<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-community"></span></span>Community</span>
-<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Web3ladies</h2>
-<p class="t-caption secondary">Community Lead · May 2024 – present</p>
-<p class="t-body" style="max-width: 600px">Onboarded and empowered women in Web3 through workshops, AMAs, bootcamps and hackathons, and revived the YouTube channel as a learning library.</p>
+<span class="t-label work-num">05</span>
+<h2 class="t-heading-s work-title">Web3Ladies</h2>
+<p class="t-caption secondary work-tags">Community leadership · Programmes · Partnerships · Content</p>
+<h3 class="t-title work-heading">Creating more ways for women to learn and build</h3>
+<div class="work-copy">
+<p class="t-body">I began contributing to Web3Ladies as a volunteer in 2023 and became Community Lead in November 2025. I help create programmes, partnerships, and community experiences that give women more opportunities to learn, build, and connect.</p>
+<p class="t-body">One example is Build with AI, a practical programme that brought members together to learn from experts and apply what they learned through projects. I also support community onboarding, events, content, and partnerships with ecosystem organisations.</p>
+</div>
 <ul class="results">
-<li><span class="t-figure-s">3,000+</span><span class="t-caption secondary">women trained</span></li>
-<li><span class="t-figure-s">+50%</span><span class="t-caption secondary">YouTube audience</span></li>
-<li><span class="t-figure-s">+40%</span><span class="t-caption secondary">community engagement</span></li>
+<li><span class="t-figure-s">16,000+</span><span class="t-caption secondary">growth across platforms</span></li>
+<li><span class="t-figure-s">20+</span><span class="t-caption secondary">pieces of content</span></li>
+<li><span class="t-figure-s">100+</span><span class="t-caption secondary">registrations for Build with AI</span></li>
 </ul>
 <span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
 </div>
@@ -711,12 +744,15 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="org-tile" role="img" aria-label="Community for Africa logo"><span class="logo-ph" aria-hidden="true">Community for Africa</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
 </div>
 <div class="work-body">
-<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-community"></span></span>Community</span>
-<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Community for Africa</h2>
-<p class="t-caption secondary">Community Manager · Jul 2024 – present</p>
-<p class="t-body" style="max-width: 600px">Ran events, sessions and written and video content for African community managers and creatives, and built a Skills Audit Sheet members use to track their growth.</p>
+<span class="t-label work-num">06</span>
+<h2 class="t-heading-s work-title">Community for Africa</h2>
+<p class="t-caption secondary work-tags">Community management · Educational content · Resource creation</p>
+<h3 class="t-title work-heading">Making community knowledge useful beyond the session</h3>
+<div class="work-copy">
+<p class="t-body">I supported community engagement through events, learning sessions, and written and video content. I also created a Skills Audit Sheet to help members assess their skills and identify areas for growth.</p>
+</div>
 <ul class="results">
-<li><span class="t-figure-s">100+</span><span class="t-caption secondary">skills audit downloads</span></li>
+<li><span class="t-figure-s">100+</span><span class="t-caption secondary">downloads of the Skills Audit Sheet</span></li>
 </ul>
 <span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
 </div>
@@ -735,13 +771,14 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="org-tile" role="img" aria-label="Open Terms Archive logo"><span class="logo-ph" aria-hidden="true">Open Terms Archive</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
 </div>
 <div class="work-body">
-<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-content"></span><span class="dot dot-community"></span></span>Content + community</span>
-<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Open Terms Archive</h2>
-<p class="t-caption secondary">Open Source Community Manager · Oct 2024 – Feb 2025</p>
-<p class="t-body" style="max-width: 600px">Moved an open-source contributor community to a new Mattermost space, with clear onboarding guides, a contributor page and a structure for community calls.</p>
-<ul class="results">
-<li><span class="t-figure-s">20%</span><span class="t-caption secondary">member retention after migration</span></li>
-</ul>
+<span class="t-label work-num">07</span>
+<h2 class="t-heading-s work-title">Open Terms Archive</h2>
+<p class="t-caption secondary work-tags">Open source community management · Contributor experience</p>
+<h3 class="t-title work-heading">Making it easier for contributors to take part</h3>
+<div class="work-copy">
+<p class="t-body">My open-source community work focused on helping people find their way into a project and understand how to contribute. At Open Terms Archive, I supported a community migration to Mattermost and worked on onboarding guides, a contributor page, and community calls.</p>
+<p class="t-body">The aim was to make the move easier to navigate and give contributors clearer ways to get involved.</p>
+</div>
 <span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
 </div>
 </a>
@@ -761,98 +798,92 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container stack" style="gap: var(--space-group)">
 <div class="stack reveal" style="gap: var(--space-element); max-width: 760px">
 <p class="t-label"><span class="label-dot" aria-hidden="true"></span>Selected content and projects</p>
-<h2 id="selected-title" class="t-heading-s">A few pieces that performed well</h2>
+<h2 id="selected-title" class="t-heading-s">A few pieces that show how I approach research, education, and storytelling across different audiences.</h2>
 </div>
 <ul class="pick-grid">
 <li>
-<a class="pick attend reveal" href="#web3ladies-ai-challenge">
-<div class="pick-media">
+<a class="pick attend reveal" href="https://sereel.com/blog/nigeria-investment-securities-act-2025-tokenized-securities" target="_blank" rel="noopener">
+<div class="pick-media" aria-hidden="true">
 <div class="shape round sh sh-secondary" style="left: -24px; top: -24px; width: 96px; height: 96px"></div>
 <div class="shape round sh sh-secondary" style="right: 32px; bottom: 32px; width: 40px; height: 40px"></div>
 <div class="shape sh-ring" style="right: 88px; bottom: 24px; width: 48px; height: 48px; border-width: 6px"></div>
-<div class="pick-ph"><span class="pick-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg></span><span class="t-caption">[Screenshot of the challenge]</span></div>
 </div>
 <div class="pick-body">
-<span class="type-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>Project</span>
-<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">Web3ladies AI challenge</h3>
-<p class="t-caption secondary">Web3ladies · [Date]</p>
-<p class="t-body">[One line on what the challenge asked of participants and what you ran.]</p>
-<ul class="results">
-<li><span class="t-figure-s">[000+]</span><span class="t-caption secondary">participants</span></li>
-<li><span class="t-figure-s">[00]</span><span class="t-caption secondary">submissions</span></li>
-</ul>
-<span class="work-cta">See the challenge <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+<span class="type-tag">Industry analysis</span>
+<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">Nigeria&#x27;s Investment and Securities Act 2025: Has Nigeria Quietly Gotten Ahead on Tokenized Securities?</h3>
+<p class="t-caption secondary">Sereel</p>
+<p class="t-body">I explored what Nigeria&#x27;s 2025 securities law could mean for tokenized securities, connecting a local regulatory development to the wider evolution of institutional capital markets.</p>
+<span class="work-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
 </div>
 </a>
 </li>
 
 <li>
-<a class="pick attend reveal" href="#long-form">
-<div class="pick-media">
+<a class="pick attend reveal" href="https://sereel.com/blog/21" target="_blank" rel="noopener">
+<div class="pick-media" aria-hidden="true">
 <div class="shape half-round sh sh-primary" style="left: 32px; bottom: 0; width: 120px; height: 60px"></div>
 <div class="shape round sh sh-primary" style="right: -24px; top: -24px; width: 88px; height: 88px"></div>
-<div class="pick-ph"><span class="pick-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></span><span class="t-caption">[Screenshot of the article]</span></div>
 </div>
 <div class="pick-body">
-<span class="type-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Long-form</span>
-<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">[Article title]</h3>
-<p class="t-caption secondary">[Publication or blog] · [Date]</p>
-<p class="t-body">[One line on the topic and who it was for.]</p>
-<ul class="results">
-<li><span class="t-figure-s">[0,000]</span><span class="t-caption secondary">reads</span></li>
-<li><span class="t-figure-s">[00]</span><span class="t-caption secondary">shares</span></li>
-</ul>
-<span class="work-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+<span class="type-tag">Thought leadership</span>
+<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">What the IMF&#x27;s Tokenization Note Reveals About the Future of Digital Finance</h3>
+<p class="t-caption secondary">Sereel</p>
+<p class="t-body">An industry analysis of why tokenization needs more than the ability to put assets on-chain. The piece looks at the infrastructure and services needed to support real financial activity.</p>
+<span class="work-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
 </div>
 </a>
 </li>
 
 <li>
-<a class="pick attend reveal" href="#linkedin-post">
-<div class="pick-media">
+<a class="pick attend reveal" href="https://onedev.club/blog/20-women-inspiring-blockchain-development-in-africa" target="_blank" rel="noopener">
+<div class="pick-media" aria-hidden="true">
 <div class="shape sh-ring" style="left: 32px; top: 32px; width: 56px; height: 56px; border-width: 7px"></div>
 <div class="shape round sh sh-primary" style="right: 32px; bottom: 32px; width: 120px; height: 24px"></div>
 <div class="shape round sh sh-primary" style="right: 32px; bottom: 64px; width: 72px; height: 24px"></div>
-<div class="pick-ph"><span class="pick-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></span><span class="t-caption">[Screenshot of the post]</span></div>
 </div>
 <div class="pick-body">
-<span class="type-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>LinkedIn post</span>
-<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">[The post’s first line]</h3>
-<p class="t-caption secondary">LinkedIn · [Date]</p>
-<p class="t-body">[One line on the idea behind the post.]</p>
-<ul class="results">
-<li><span class="t-figure-s">[00K]</span><span class="t-caption secondary">impressions</span></li>
-<li><span class="t-figure-s">[000]</span><span class="t-caption secondary">reactions</span></li>
-</ul>
-<span class="work-cta">View the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+<span class="type-tag">Community storytelling</span>
+<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">20 Women Inspiring Blockchain Development in Africa</h3>
+<p class="t-caption secondary">One Dev</p>
+<p class="t-body">A feature celebrating women building in African blockchain ecosystems. It shows how content can recognise community members, make their work visible, and give others people to learn from.</p>
+<span class="work-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
 </div>
 </a>
 </li>
 
 <li>
-<a class="pick attend reveal" href="#video">
-<div class="pick-media">
+<a class="pick attend reveal" href="https://onedev.club/blog/how-to-become-a-web3-developer-free-resources-included" target="_blank" rel="noopener">
+<div class="pick-media" aria-hidden="true">
 <div class="shape round sh sh-primary" style="left: -32px; bottom: -32px; width: 112px; height: 112px"></div>
 <div class="shape round sh sh-primary" style="right: 40px; top: 32px; width: 48px; height: 48px"></div>
 <div class="shape sh-ring" style="right: 32px; bottom: 32px; width: 40px; height: 40px; border-width: 5px"></div>
-<div class="pick-ph"><span class="pick-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></span><span class="t-caption">[Screenshot of the video]</span></div>
 </div>
 <div class="pick-body">
-<span class="type-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>Video</span>
-<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">[Video title]</h3>
-<p class="t-caption secondary">[Platform] · [Date]</p>
-<p class="t-body">[One line on what the video explains.]</p>
-<ul class="results">
-<li><span class="t-figure-s">[00K]</span><span class="t-caption secondary">views</span></li>
-<li><span class="t-figure-s">[000]</span><span class="t-caption secondary">comments</span></li>
-</ul>
-<blockquote class="pick-quote"><p class="t-caption secondary">Top comment</p><p class="t-body">“[A favourite comment from a viewer]”</p></blockquote>
-<span class="work-cta">Watch the video <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+<span class="type-tag">Educational content</span>
+<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">How to Become a Web3 Developer: Free Resources Included</h3>
+<p class="t-caption secondary">One Dev</p>
+<p class="t-body">A beginner-focused guide that breaks a broad learning goal into practical steps and resources, helping readers find a starting point in Web3 development.</p>
+<span class="work-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
 </div>
 </a>
 </li>
 </ul>
-<div class="section-next">
+
+</div>
+</section>
+
+<section id="lets-talk" aria-labelledby="lets-talk-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container stack" style="gap: var(--space-group)">
+<div class="stack reveal" style="gap: var(--space-cluster); max-width: 760px">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Let’s talk</p>
+<h2 id="lets-talk-title" class="t-heading-s">Have a project that needs clearer content, a more engaged community, or both? I&#x27;d love to hear about it.</h2>
+<div class="lets-talk-links">
+<a class="jump-link" href="Contact.dc.html"><span class="t-label" style="color: var(--color-text-primary)">Get in touch</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
+<a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: var(--weight-ui); text-underline-offset: 6px">m.aishat9890@gmail.com</a>
+<a class="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style="font-weight: var(--weight-ui); text-underline-offset: 6px">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="section-next is-right">
 <a class="jump-link" href="TalkShelf.dc.html">
 <span class="t-label" style="color: var(--color-text-primary)">See my talk shelf</span>
 <span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>

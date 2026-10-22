@@ -118,11 +118,12 @@ export default function WorkView() {
             Work
           </p>
           <h1 id="work-title" className="t-display" style={{maxWidth: "980px"} as React.CSSProperties}>
-            Stories I've told and{" "}
-            <span className="hl">communities I've grown</span>
+            Content that earns attention. Communities that{" "}
+            <span className="hl">keep people coming back</span>
+            .
           </h1>
           <p className="t-body-l" style={{maxWidth: "680px"} as React.CSSProperties}>
-            Across fintech, Web3, developer education and open source, I build communities and the content that keeps them coming back.
+            From fintech and Web3 to developer education and open source, I create content that makes ideas easier to understand and build communities where people can learn, contribute, and grow.
           </p>
           {" "}
           <a className="jump-link" href="#work-list" style={{alignSelf: "flex-start", marginTop: "var(--space-element)"} as React.CSSProperties}>
@@ -137,11 +138,15 @@ export default function WorkView() {
           </a>
         </div>
       </section>
-      <section id="work-list" aria-label="Projects" style={{paddingBlock: "var(--space-group) var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
+      <section id="work-list" aria-label="Selected work" style={{paddingBlock: "var(--space-group) var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
         <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
+          <p className="t-label reveal">
+            <span className="label-dot" aria-hidden="true" />
+            Selected work
+          </p>
           <ul className="work-list">
             <li>
-              <a className="work-card attend" href="#case-sereel">
+              <a className="work-card attend" href={`${BASE}/#case-sereel`}>
                 <div className="work-art">
                   <div className="work-art-inner" aria-hidden="true">
                     <div className="shape round sh sh-primary" style={{right: "-48px", top: "-64px", width: "240px", height: "240px"} as React.CSSProperties} />
@@ -152,20 +157,25 @@ export default function WorkView() {
                   <div className="org-tile" role="img" aria-label="Sereel logo"><img src={`${BASE}/images/logo-sereel.png`} alt="" /></div>
                 </div>
                 <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true"><span className="dot dot-content" /></span>
-                    Content
-                  </span>
+                  <span className="t-label work-num">01</span>
                   {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Sereel</h2>
-                  <p className="t-caption secondary">[Your role] · [Dates]</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Educational and thought-leadership content on tokenized capital markets, plus scripted short-form video for institutional audiences.
-                  </p>
+                  <h2 className="t-heading-s work-title">Sereel</h2>
+                  <p className="t-caption secondary work-tags">Content marketing · Thought leadership · Educational content · Short-form video</p>
+                  <h3 className="t-title work-heading">Making complex ideas clearer</h3>
+                  <div className="work-copy">
+                    <p className="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
+                    <p className="t-body">
+                      I created educational and thought-leadership content on tokenized assets, capital markets, and industry developments. I researched market trends and audience needs to explain complex financial and regulatory ideas, and scripted, filmed, and edited short-form videos for social media.
+                    </p>
+                  </div>
                   <ul className="results">
                     <li>
                       <span className="t-figure-s">127.8%</span>
-                      <span className="t-caption secondary">LinkedIn follower growth, 245 to 558</span>
+                      <span className="t-caption secondary">LinkedIn follower growth</span>
+                    </li>
+                    <li>
+                      <span className="t-figure-s">245 → 558</span>
+                      <span className="t-caption secondary">followers</span>
                     </li>
                   </ul>
                   {" "}
@@ -180,7 +190,7 @@ export default function WorkView() {
               </a>
             </li>
             <li>
-              <a className="work-card attend" href="#case-invisible-garden">
+              <a className="work-card attend" href={`${BASE}/#case-invisible-garden`}>
                 <div className="work-art">
                   <div className="work-art-inner" aria-hidden="true">
                     <div className="shape half-round sh sh-primary" style={{left: "48px", bottom: "0", width: "200px", height: "100px"} as React.CSSProperties} />
@@ -194,16 +204,17 @@ export default function WorkView() {
                   </div>
                 </div>
                 <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true"><span className="dot dot-content" /></span>
-                    Content
-                  </span>
+                  <span className="t-label work-num">02</span>
                   {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Invisible Garden</h2>
-                  <p className="t-caption secondary">[Your role] · [Dates]</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Wrote the social content and outreach copy for a three-week Ethereum developer residency in Buenos Aires, turning interest into participation.
-                  </p>
+                  <h2 className="t-heading-s work-title">Invisible Garden</h2>
+                  <p className="t-caption secondary work-tags">Content marketing · Social media · Community storytelling</p>
+                  <h3 className="t-title work-heading">Bringing a developer residency to life</h3>
+                  <div className="work-copy">
+                    <p className="t-body">Invisible Garden was a three-week Ethereum-focused developer residency in Buenos Aires.</p>
+                    <p className="t-body">
+                      I wrote social media copy and covered the programme live, turning its activities, milestones, and community moments into content people could follow. I also managed outreach to prospective mentors and project judges, writing follow-up messages and tracking responses until judges were secured.
+                    </p>
+                  </div>
                   <ul className="results">
                     <li>
                       <span className="t-figure-s">1,025 → 1,900+</span>
@@ -241,19 +252,19 @@ export default function WorkView() {
                   </div>
                 </div>
                 <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true">
-                      <span className="dot dot-content" />
-                      <span className="dot dot-community" />
-                    </span>
-                    Content + community
-                  </span>
+                  <span className="t-label work-num">03</span>
                   {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>One Dev</h2>
-                  <p className="t-caption secondary">Developer Community Manager · Jan 2024 – present</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Grew a Web3 EdTech community of African developers through bootcamps, workshops, a newsletter and consistent content.
-                  </p>
+                  <h2 className="t-heading-s work-title">One Dev</h2>
+                  <p className="t-caption secondary work-tags">Community management · Developer education · Content</p>
+                  <h3 className="t-title work-heading">Helping developers find their footing in Web3</h3>
+                  <div className="work-copy">
+                    <p className="t-body">
+                      At One Dev, I helped grow a developer community through educational programmes, community engagement, and content that made Web3 easier to explore.
+                    </p>
+                    <p className="t-body">
+                      My work supported a community of more than 8,000 members, a newsletter with 6,300+ subscribers, and bootcamps that reached 200+ learners.
+                    </p>
+                  </div>
                   <ul className="results">
                     <li>
                       <span className="t-figure-s">8,000+</span>
@@ -294,19 +305,17 @@ export default function WorkView() {
                   </div>
                 </div>
                 <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true">
-                      <span className="dot dot-content" />
-                      <span className="dot dot-community" />
-                    </span>
-                    Content + community
-                  </span>
+                  <span className="t-label work-num">04</span>
                   {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Code Africa Conference</h2>
-                  <p className="t-caption secondary">Led community and content operations · With One Dev</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Ran the volunteer and ambassador programme, the full content calendar and live coverage for a conference connecting developers and founders across Africa.
-                  </p>
+                  <h2 className="t-heading-s work-title">Code Africa Conference</h2>
+                  <p className="t-caption secondary work-tags">Community operations · Content distribution · Volunteer management</p>
+                  <h3 className="t-title work-heading">Turning campaign activity into conference participation</h3>
+                  <div className="work-copy">
+                    <p className="t-body">
+                      Working with One Dev, I contributed to the promotion and community operations for Code Africa Conference. I wrote and published promotional copy across campaign channels, coordinated volunteers, and supported the ambassador campaign.
+                    </p>
+                    <p className="t-body">These efforts helped build awareness and drive registrations for the conference.</p>
+                  </div>
                   <ul className="results">
                     <li>
                       <span className="t-figure-s">3,000+</span>
@@ -338,34 +347,37 @@ export default function WorkView() {
                     <div className="shape round sh sh-secondary" style={{left: "72px", top: "168px", width: "56px", height: "56px"} as React.CSSProperties} />
                     <div className="shape sh-ring" style={{right: "48px", top: "64px", width: "120px", height: "120px", borderWidth: "15px"} as React.CSSProperties} />
                   </div>
-                  <div className="org-tile" role="img" aria-label="Web3ladies logo">
-                    <span className="logo-ph" aria-hidden="true">Web3ladies</span>
+                  <div className="org-tile" role="img" aria-label="Web3Ladies logo">
+                    <span className="logo-ph" aria-hidden="true">Web3Ladies</span>
                     <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
                   </div>
                 </div>
                 <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true"><span className="dot dot-community" /></span>
-                    Community
-                  </span>
+                  <span className="t-label work-num">05</span>
                   {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Web3ladies</h2>
-                  <p className="t-caption secondary">Community Lead · May 2024 – present</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Onboarded and empowered women in Web3 through workshops, AMAs, bootcamps and hackathons, and revived the YouTube channel as a learning library.
-                  </p>
+                  <h2 className="t-heading-s work-title">Web3Ladies</h2>
+                  <p className="t-caption secondary work-tags">Community leadership · Programmes · Partnerships · Content</p>
+                  <h3 className="t-title work-heading">Creating more ways for women to learn and build</h3>
+                  <div className="work-copy">
+                    <p className="t-body">
+                      I began contributing to Web3Ladies as a volunteer in 2023 and became Community Lead in November 2025. I help create programmes, partnerships, and community experiences that give women more opportunities to learn, build, and connect.
+                    </p>
+                    <p className="t-body">
+                      One example is Build with AI, a practical programme that brought members together to learn from experts and apply what they learned through projects. I also support community onboarding, events, content, and partnerships with ecosystem organisations.
+                    </p>
+                  </div>
                   <ul className="results">
                     <li>
-                      <span className="t-figure-s">3,000+</span>
-                      <span className="t-caption secondary">women trained</span>
+                      <span className="t-figure-s">16,000+</span>
+                      <span className="t-caption secondary">growth across platforms</span>
                     </li>
                     <li>
-                      <span className="t-figure-s">+50%</span>
-                      <span className="t-caption secondary">YouTube audience</span>
+                      <span className="t-figure-s">20+</span>
+                      <span className="t-caption secondary">pieces of content</span>
                     </li>
                     <li>
-                      <span className="t-figure-s">+40%</span>
-                      <span className="t-caption secondary">community engagement</span>
+                      <span className="t-figure-s">100+</span>
+                      <span className="t-caption secondary">registrations for Build with AI</span>
                     </li>
                   </ul>
                   {" "}
@@ -395,20 +407,20 @@ export default function WorkView() {
                   </div>
                 </div>
                 <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true"><span className="dot dot-community" /></span>
-                    Community
-                  </span>
+                  <span className="t-label work-num">06</span>
                   {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Community for Africa</h2>
-                  <p className="t-caption secondary">Community Manager · Jul 2024 – present</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Ran events, sessions and written and video content for African community managers and creatives, and built a Skills Audit Sheet members use to track their growth.
-                  </p>
+                  <h2 className="t-heading-s work-title">Community for Africa</h2>
+                  <p className="t-caption secondary work-tags">Community management · Educational content · Resource creation</p>
+                  <h3 className="t-title work-heading">Making community knowledge useful beyond the session</h3>
+                  <div className="work-copy">
+                    <p className="t-body">
+                      I supported community engagement through events, learning sessions, and written and video content. I also created a Skills Audit Sheet to help members assess their skills and identify areas for growth.
+                    </p>
+                  </div>
                   <ul className="results">
                     <li>
                       <span className="t-figure-s">100+</span>
-                      <span className="t-caption secondary">skills audit downloads</span>
+                      <span className="t-caption secondary">downloads of the Skills Audit Sheet</span>
                     </li>
                   </ul>
                   {" "}
@@ -437,25 +449,17 @@ export default function WorkView() {
                   </div>
                 </div>
                 <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true">
-                      <span className="dot dot-content" />
-                      <span className="dot dot-community" />
-                    </span>
-                    Content + community
-                  </span>
+                  <span className="t-label work-num">07</span>
                   {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Open Terms Archive</h2>
-                  <p className="t-caption secondary">Open Source Community Manager · Oct 2024 – Feb 2025</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Moved an open-source contributor community to a new Mattermost space, with clear onboarding guides, a contributor page and a structure for community calls.
-                  </p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">20%</span>
-                      <span className="t-caption secondary">member retention after migration</span>
-                    </li>
-                  </ul>
+                  <h2 className="t-heading-s work-title">Open Terms Archive</h2>
+                  <p className="t-caption secondary work-tags">Open source community management · Contributor experience</p>
+                  <h3 className="t-title work-heading">Making it easier for contributors to take part</h3>
+                  <div className="work-copy">
+                    <p className="t-body">
+                      My open-source community work focused on helping people find their way into a project and understand how to contribute. At Open Terms Archive, I supported a community migration to Mattermost and worked on onboarding guides, a contributor page, and community calls.
+                    </p>
+                    <p className="t-body">The aim was to make the move easier to navigate and give contributors clearer ways to get involved.</p>
+                  </div>
                   {" "}
                   <span className="work-cta">
                     Read the case study{" "}
@@ -489,109 +493,28 @@ export default function WorkView() {
               <span className="label-dot" aria-hidden="true" />
               Selected content and projects
             </p>
-            <h2 id="selected-title" className="t-heading-s">A few pieces that performed well</h2>
+            <h2 id="selected-title" className="t-heading-s">
+              A few pieces that show how I approach research, education, and storytelling across different audiences.
+            </h2>
           </div>
           <ul className="pick-grid">
             <li>
-              <a className="pick attend reveal" href="#web3ladies-ai-challenge">
-                <div className="pick-media">
+              <a className="pick attend reveal" href="https://sereel.com/blog/nigeria-investment-securities-act-2025-tokenized-securities" target="_blank" rel="noopener">
+                <div className="pick-media" aria-hidden="true">
                   <div className="shape round sh sh-secondary" style={{left: "-24px", top: "-24px", width: "96px", height: "96px"} as React.CSSProperties} />
                   <div className="shape round sh sh-secondary" style={{right: "32px", bottom: "32px", width: "40px", height: "40px"} as React.CSSProperties} />
                   <div className="shape sh-ring" style={{right: "88px", bottom: "24px", width: "48px", height: "48px", borderWidth: "6px"} as React.CSSProperties} />
-                  <div className="pick-ph">
-                    <span className="pick-icon">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
-                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
-                        <path d="M4 22h16" />
-                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
-                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
-                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
-                      </svg>
-                    </span>
-                    <span className="t-caption">[Screenshot of the challenge]</span>
-                  </div>
                 </div>
                 <div className="pick-body">
-                  <span className="type-tag">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
-                      <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
-                      <path d="M4 22h16" />
-                      <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
-                      <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
-                      <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
-                    </svg>
-                    Project
-                  </span>
+                  <span className="type-tag">Industry analysis</span>
                   {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Web3ladies AI challenge</h3>
-                  <p className="t-caption secondary">Web3ladies · [Date]</p>
-                  <p className="t-body">[One line on what the challenge asked of participants and what you ran.]</p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">[000+]</span>
-                      <span className="t-caption secondary">participants</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">[00]</span>
-                      <span className="t-caption secondary">submissions</span>
-                    </li>
-                  </ul>
-                  {" "}
-                  <span className="work-cta">
-                    See the challenge{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                  </span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a className="pick attend reveal" href="#long-form">
-                <div className="pick-media">
-                  <div className="shape half-round sh sh-primary" style={{left: "32px", bottom: "0", width: "120px", height: "60px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{right: "-24px", top: "-24px", width: "88px", height: "88px"} as React.CSSProperties} />
-                  <div className="pick-ph">
-                    <span className="pick-icon">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-                        <path d="M10 9H8" />
-                        <path d="M16 13H8" />
-                        <path d="M16 17H8" />
-                      </svg>
-                    </span>
-                    <span className="t-caption">[Screenshot of the article]</span>
-                  </div>
-                </div>
-                <div className="pick-body">
-                  <span className="type-tag">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-                      <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-                      <path d="M10 9H8" />
-                      <path d="M16 13H8" />
-                      <path d="M16 17H8" />
-                    </svg>
-                    Long-form
-                  </span>
-                  {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>[Article title]</h3>
-                  <p className="t-caption secondary">[Publication or blog] · [Date]</p>
-                  <p className="t-body">[One line on the topic and who it was for.]</p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">[0,000]</span>
-                      <span className="t-caption secondary">reads</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">[00]</span>
-                      <span className="t-caption secondary">shares</span>
-                    </li>
-                  </ul>
+                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>
+                    Nigeria's Investment and Securities Act 2025: Has Nigeria Quietly Gotten Ahead on Tokenized Securities?
+                  </h3>
+                  <p className="t-caption secondary">Sereel</p>
+                  <p className="t-body">
+                    I explored what Nigeria's 2025 securities law could mean for tokenized securities, connecting a local regulatory development to the wider evolution of institutional capital markets.
+                  </p>
                   {" "}
                   <span className="work-cta">
                     Read the article{" "}
@@ -600,115 +523,123 @@ export default function WorkView() {
                       <path d="M7 17 17 7" />
                     </svg>
                   </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
               </a>
             </li>
             <li>
-              <a className="pick attend reveal" href="#linkedin-post">
-                <div className="pick-media">
+              <a className="pick attend reveal" href="https://sereel.com/blog/21" target="_blank" rel="noopener">
+                <div className="pick-media" aria-hidden="true">
+                  <div className="shape half-round sh sh-primary" style={{left: "32px", bottom: "0", width: "120px", height: "60px"} as React.CSSProperties} />
+                  <div className="shape round sh sh-primary" style={{right: "-24px", top: "-24px", width: "88px", height: "88px"} as React.CSSProperties} />
+                </div>
+                <div className="pick-body">
+                  <span className="type-tag">Thought leadership</span>
+                  {" "}
+                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>What the IMF's Tokenization Note Reveals About the Future of Digital Finance</h3>
+                  <p className="t-caption secondary">Sereel</p>
+                  <p className="t-body">
+                    An industry analysis of why tokenization needs more than the ability to put assets on-chain. The piece looks at the infrastructure and services needed to support real financial activity.
+                  </p>
+                  {" "}
+                  <span className="work-cta">
+                    Read the article{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a className="pick attend reveal" href="https://onedev.club/blog/20-women-inspiring-blockchain-development-in-africa" target="_blank" rel="noopener">
+                <div className="pick-media" aria-hidden="true">
                   <div className="shape sh-ring" style={{left: "32px", top: "32px", width: "56px", height: "56px", borderWidth: "7px"} as React.CSSProperties} />
                   <div className="shape round sh sh-primary" style={{right: "32px", bottom: "32px", width: "120px", height: "24px"} as React.CSSProperties} />
                   <div className="shape round sh sh-primary" style={{right: "32px", bottom: "64px", width: "72px", height: "24px"} as React.CSSProperties} />
-                  <div className="pick-ph">
-                    <span className="pick-icon">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                        <rect width="4" height="12" x="2" y="9" />
-                        <circle cx="4" cy="4" r="2" />
-                      </svg>
-                    </span>
-                    <span className="t-caption">[Screenshot of the post]</span>
-                  </div>
                 </div>
                 <div className="pick-body">
-                  <span className="type-tag">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                      <rect width="4" height="12" x="2" y="9" />
-                      <circle cx="4" cy="4" r="2" />
-                    </svg>
-                    LinkedIn post
-                  </span>
+                  <span className="type-tag">Community storytelling</span>
                   {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>[The post’s first line]</h3>
-                  <p className="t-caption secondary">LinkedIn · [Date]</p>
-                  <p className="t-body">[One line on the idea behind the post.]</p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">[00K]</span>
-                      <span className="t-caption secondary">impressions</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">[000]</span>
-                      <span className="t-caption secondary">reactions</span>
-                    </li>
-                  </ul>
+                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>20 Women Inspiring Blockchain Development in Africa</h3>
+                  <p className="t-caption secondary">One Dev</p>
+                  <p className="t-body">
+                    A feature celebrating women building in African blockchain ecosystems. It shows how content can recognise community members, make their work visible, and give others people to learn from.
+                  </p>
                   {" "}
                   <span className="work-cta">
-                    View the post{" "}
+                    Read the article{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M7 7h10v10" />
                       <path d="M7 17 17 7" />
                     </svg>
                   </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
               </a>
             </li>
             <li>
-              <a className="pick attend reveal" href="#video">
-                <div className="pick-media">
+              <a className="pick attend reveal" href="https://onedev.club/blog/how-to-become-a-web3-developer-free-resources-included" target="_blank" rel="noopener">
+                <div className="pick-media" aria-hidden="true">
                   <div className="shape round sh sh-primary" style={{left: "-32px", bottom: "-32px", width: "112px", height: "112px"} as React.CSSProperties} />
                   <div className="shape round sh sh-primary" style={{right: "40px", top: "32px", width: "48px", height: "48px"} as React.CSSProperties} />
                   <div className="shape sh-ring" style={{right: "32px", bottom: "32px", width: "40px", height: "40px", borderWidth: "5px"} as React.CSSProperties} />
-                  <div className="pick-ph">
-                    <span className="pick-icon">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10" />
-                        <polygon points="10 8 16 12 10 16 10 8" />
-                      </svg>
-                    </span>
-                    <span className="t-caption">[Screenshot of the video]</span>
-                  </div>
                 </div>
                 <div className="pick-body">
-                  <span className="type-tag">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10" />
-                      <polygon points="10 8 16 12 10 16 10 8" />
-                    </svg>
-                    Video
-                  </span>
+                  <span className="type-tag">Educational content</span>
                   {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>[Video title]</h3>
-                  <p className="t-caption secondary">[Platform] · [Date]</p>
-                  <p className="t-body">[One line on what the video explains.]</p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">[00K]</span>
-                      <span className="t-caption secondary">views</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">[000]</span>
-                      <span className="t-caption secondary">comments</span>
-                    </li>
-                  </ul>
-                  <blockquote className="pick-quote">
-                    <p className="t-caption secondary">Top comment</p>
-                    <p className="t-body">“[A favourite comment from a viewer]”</p>
-                  </blockquote>
+                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>How to Become a Web3 Developer: Free Resources Included</h3>
+                  <p className="t-caption secondary">One Dev</p>
+                  <p className="t-body">
+                    A beginner-focused guide that breaks a broad learning goal into practical steps and resources, helping readers find a starting point in Web3 development.
+                  </p>
                   {" "}
                   <span className="work-cta">
-                    Watch the video{" "}
+                    Read the article{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M7 7h10v10" />
                       <path d="M7 17 17 7" />
                     </svg>
                   </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
               </a>
             </li>
           </ul>
-          <div className="section-next">
+        </div>
+      </section>
+      <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
+        <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
+          <div className="stack reveal" style={{gap: "var(--space-cluster)", maxWidth: "760px"} as React.CSSProperties}>
+            <p className="t-label">
+              <span className="label-dot" aria-hidden="true" />
+              Let’s talk
+            </p>
+            <h2 id="lets-talk-title" className="t-heading-s">
+              Have a project that needs clearer content, a more engaged community, or both? I'd love to hear about it.
+            </h2>
+            <div className="lets-talk-links">
+              <a className="jump-link" href={`${BASE}/contact/`}>
+                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
+                <span className="icon-btn" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+              </a>
+              {" "}
+              <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+              {" "}
+              <a className="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
+                LinkedIn
+                <span className="visually-hidden">(opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
+          <div className="section-next is-right">
             <a className="jump-link" href={`${BASE}/talk-shelf/`}>
               <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See my talk shelf</span>
               {" "}
