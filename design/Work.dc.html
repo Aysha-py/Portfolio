@@ -554,34 +554,48 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .pick{align-items:flex-start;gap:var(--pick-row-gap-phone);padding-block:var(--pick-row-padding-phone);}
 }
 /* end article list */
-/* ===== Hosting and representing ===== */
-/* component: photo cards for the sessions she hosted and the communities she represented. Photo, role tag with where
-   and when, the event, one line and a link to the recording or post */
-.home{
---host-grid-gap-row:var(--space-stack);
---host-grid-gap-col:var(--space-cluster);
---host-media-ratio:4 / 3;
---host-media-bg:var(--color-bg-subtle);
---host-body-padding:var(--space-cluster);
+/* ===== Work diaries and media ===== */
+/* work diaries and media: one scrollable line, the same component as Favourite moments on About */
+.home{--moment-card-width:clamp(248px,24vw,320px);--moment-gap:var(--space-cluster);--moment-inset:max(var(--space-gutter),calc((100% - 1280px) / 2 + var(--space-gutter)));--moment-progress-height:var(--space-hairline);--moment-photo-radius:var(--radius-card);}
+.section-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:var(--space-cluster) var(--space-group);}
+.moments-scope{timeline-scope:--moments;}
+.moment-track{display:flex;align-items:flex-start;gap:var(--moment-gap);margin:var(--space-group) 0 0;padding:var(--space-tight) var(--moment-inset);list-style:none;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--moment-inset);scrollbar-width:none;overscroll-behavior-x:contain;scroll-timeline:--moments x;}
+.moment-track::-webkit-scrollbar{display:none;}
+.moment-track:focus-visible{outline:var(--focus-width) solid var(--color-focus-ring);outline-offset:calc(var(--focus-width) * -1);}
+.moment{flex:0 0 var(--moment-card-width);scroll-snap-align:start;display:flex;flex-direction:column;gap:var(--space-related);margin:0;}
+.moment-photo{position:relative;margin:0 0 var(--space-tight);aspect-ratio:4 / 5;overflow:hidden;border-radius:var(--moment-photo-radius);background:var(--color-bg-subtle);border:var(--border-width-hairline) solid var(--color-border-subtle);}
+.moment-photo img{display:block;width:100%;height:100%;object-fit:cover;}
+.moment-photo.is-empty{display:flex;align-items:center;justify-content:center;}
+.moment-photo .shape{position:absolute;}
+.moment-photo .ph{position:relative;color:var(--color-text-secondary);}
+.moment p{margin:0;}
+.moment-link{display:inline-flex;align-items:center;gap:var(--space-hairline);align-self:flex-start;font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-strong);color:var(--link-color);text-decoration:none;}
+.moment-link:hover{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.moment-link svg{width:16px;height:16px;}
+.moment-nav{display:flex;gap:var(--space-tight);}
+.moment-nav .icon-btn{cursor:pointer;}
+.moment-nav .icon-btn:hover{background:var(--button-hover-bg);border-color:var(--button-hover-bg);color:var(--button-hover-text);}
+.moment-foot{display:flex;align-items:center;justify-content:space-between;gap:var(--space-cluster);margin-top:var(--space-stack);}
+.moment-hint{display:flex;align-items:center;gap:var(--space-element);flex:1 1 auto;min-width:0;}
+.moment-progress{position:relative;flex:0 1 calc(var(--primitive-space-8) * 2);min-width:var(--primitive-space-8);height:var(--moment-progress-height);border-radius:var(--radius-round);background:var(--color-border-subtle);overflow:hidden;visibility:hidden;}
+.moment-progress::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--color-accent-primary);transform-origin:left center;transform:scaleX(0.3);}
+.moment-hint-text{display:inline-flex;align-items:center;gap:var(--space-tight);color:var(--color-text-primary);white-space:nowrap;}
+.moment-hint-arrow{display:inline-flex;color:var(--color-accent-primary);}
+@supports (animation-timeline: scroll()){
+.moment-progress{visibility:visible;}
+.moment-progress::after{animation:moment-fill linear both;animation-timeline:--moments;}
+.moment-hint-text{animation:moment-hint-out linear both;animation-timeline:--moments;animation-range:0% 30%;}
 }
-.host-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--host-grid-gap-row) var(--host-grid-gap-col);margin:0;padding:0;list-style:none;}
-.host-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
-.host-card:hover{border-color:var(--card-border-hover);}
-.host-media{margin:0;aspect-ratio:var(--host-media-ratio);overflow:hidden;background:var(--host-media-bg);border-bottom:var(--border-width-hairline) solid var(--card-border);}
-.host-media img{display:block;width:100%;height:100%;object-fit:cover;}
-.host-body{display:flex;flex-direction:column;flex-grow:1;gap:var(--space-related);padding:var(--host-body-padding);}
-.host-body p{margin:0;}
-.host-body > .type-tag{align-self:flex-start;}
-.host-title{display:flex;flex-direction:column;gap:var(--space-hairline);}
-.host-card .work-cta{align-self:flex-start;padding-top:var(--space-tight);text-decoration:none;}
-.host-more{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-element) var(--space-stack);}
-@media (max-width: 1024px){
-.host-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
-}
-@media (max-width: 760px){
-.host-grid{grid-template-columns:minmax(0,1fr);}
-}
-/* end hosting */
+@media (prefers-reduced-motion: no-preference){.moment-hint-arrow{animation:moment-nudge 1400ms ease-in-out infinite;}}
+@keyframes moment-fill{from{transform:scaleX(0.3);}to{transform:scaleX(1);}}
+@keyframes moment-hint-out{to{opacity:0;}}
+@keyframes moment-nudge{0%,100%{transform:translateX(0);}50%{transform:translateX(var(--space-tight));}}
+@media (max-width: 760px){.moment-nav{display:none;}.moment{flex-basis:72%;}.moment-foot{flex-direction:column;align-items:stretch;}}
+/* work diaries: each entry adds the event and where and when under its label */
+.diary-title{display:flex;flex-direction:column;gap:var(--space-hairline);}
+.moment .diary-title p{margin:0;}
+.diary-more{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-element) var(--space-stack);}
+/* end work diaries */
 /* ===== Ripple cursor ===== */
 /* primitive */
 .home{--primitive-duration-640:640ms;--primitive-duration-900:900ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-size-64:64px;--primitive-opacity-45:0.45;}
@@ -867,74 +881,36 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </div>
 </section>
 
-<section id="hosting" aria-labelledby="hosting-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
-<div class="container stack" style="gap: var(--space-group)">
-<div class="stack reveal" style="gap: var(--space-element); max-width: 760px">
-<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Hosting and representing</p>
-<h2 id="hosting-title" class="t-heading-s">Sessions I’ve hosted, and the communities I’ve represented on stage and online.</h2>
+<section id="diaries" class="moments-scope" aria-labelledby="diaries-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container reveal">
+<div class="section-head">
+<h2 id="diaries-title" class="t-label"><span class="label-dot" aria-hidden="true"></span>Work diaries and media</h2>
+<div class="moment-nav">
+<button type="button" class="icon-btn" aria-label="Previous entry" onClick="{{momentsPrev}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg></button>
+<button type="button" class="icon-btn" aria-label="Next entry" onClick="{{momentsNext}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
 </div>
-<ul class="host-grid">
-<li class="host-card reveal">
-<figure class="host-media"><img src="/_blob/4b28a560d6113c7b77e0d67b9dec3af9" alt="Aishat at GITEX Nigeria in Lagos, wearing her event badge" loading="lazy"></figure>
-<div class="host-body">
-<span class="type-tag">Representing Web3Ladies</span>
-<div class="host-title"><h3 class="t-title">GITEX Nigeria</h3><p class="t-caption secondary">In person · Lagos · 2025</p></div>
-<p class="t-body secondary">I represented Web3Ladies at GITEX Nigeria in Lagos. [What you did there, for example who you met or what you shared.]</p>
 </div>
-</li>
-
-<li class="host-card reveal">
-<figure class="host-media"><img src="/_blob/2dac9de7c3aa4bd4be7af2ab5dda4f3a" alt="Aishat talking with attendees at the DSF x Stellar meetup in Lagos" loading="lazy"></figure>
-<div class="host-body">
-<span class="type-tag">Representing Web3Ladies</span>
-<div class="host-title"><h3 class="t-title">DSF x Stellar meetup</h3><p class="t-caption secondary">In person · Lagos · 2025</p></div>
-<p class="t-body secondary">I shared the Web3Ladies vision at the DSF x Stellar meetup in Lagos.</p>
 </div>
-</li>
-
-<li class="host-card reveal">
-<figure class="host-media"><img src="/_blob/b345115d000e5160b8780be09a27cf9c" alt="Aishat speaking on stage at the Code Africa Conference City Tour in Nigeria" loading="lazy"></figure>
-<div class="host-body">
-<span class="type-tag">Representing One Dev</span>
-<div class="host-title"><h3 class="t-title">Code Africa Conference City Tour</h3><p class="t-caption secondary">In person · Nigeria · 2025</p></div>
-<p class="t-body secondary">I shared One Dev’s vision to help African builders upskill in emerging technologies like blockchain and AI.</p>
-<a class="work-cta" href="https://x.com/this_aishah_/status/1921856166339940569" target="_blank" rel="noopener">See the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
-</div>
-</li>
-
-<li class="host-card reveal">
-<figure class="host-media"><img src="/_blob/f389d26f0dd2408559192a81b88e3b9d" alt="Event flyer for Contributing to open source in Web3, with Aishat as host" loading="lazy"></figure>
-<div class="host-body">
-<span class="type-tag">Host</span>
-<div class="host-title"><h3 class="t-title">Contributing to open source in Web3</h3><p class="t-caption secondary">YouTube Live · 2024</p></div>
-<p class="t-body secondary">I hosted this Web3 Ladies workshop on how to contribute to open-source projects in Web3.</p>
-<a class="work-cta" href="https://www.youtube.com/watch?v=klbOztg-Y9Q&amp;t=5s" target="_blank" rel="noopener">Watch the recording <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
-</div>
-</li>
-
-<li class="host-card reveal">
-<figure class="host-media"><img src="/_blob/ce33fbe505185b81103ba758de8ad83e" alt="A live class from One Dev’s AI/ML for Developers Bootcamp" loading="lazy"></figure>
-<div class="host-body">
-<span class="type-tag">Facilitator</span>
-<div class="host-title"><h3 class="t-title">AI/ML for Developers Bootcamp</h3><p class="t-caption secondary">YouTube · 2025</p></div>
-<p class="t-body secondary">I facilitated the live class on day one of One Dev’s bootcamp, which introduced the fundamentals of AI and machine learning and Python for AI.</p>
-<a class="work-cta" href="https://www.youtube.com/watch?v=yqNm6mAvo0s&amp;t=307s" target="_blank" rel="noopener">Watch the recording <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
-</div>
-</li>
-
-<li class="host-card reveal">
-<figure class="host-media"><img src="/_blob/8638abf3f0360e38a1f82b1536882672" alt="Aishat with contributors on the first Open Terms Archive community call" loading="lazy"></figure>
-<div class="host-body">
-<span class="type-tag">Host</span>
-<div class="host-title"><h3 class="t-title">Open Terms Archive community call</h3><p class="t-caption secondary">Online · [Year]</p></div>
-<p class="t-body secondary">I anchored the first Open Terms Archive community call, following the structure I created for regular community calls.</p>
-</div>
-</li>
+<ul class="moment-track reveal" tabindex="0" aria-label="Work diaries and media, scroll sideways for more">
+<li class="moment"><figure class="moment-photo"><img src="/_blob/e06f26388a0d1bc4f0c695b419ae691d" alt="Aishat in a Web3Ladies T-shirt beside a Community Builder Night banner" loading="lazy"></figure><p class="t-label">Representing Web3Ladies</p><div class="diary-title"><h3 class="t-title">MetaMask Community Builder Night</h3><p class="t-caption secondary">In person · Lagos · [Year]</p></div><p class="t-body">I represented Web3Ladies at MetaMask’s Community Builder Night in Lagos.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/dfed06c659b8a664723f9b1645e01cac" alt="Title card of the Invisible Garden Buenos Aires recap video" loading="lazy"></figure><p class="t-label">Video editing</p><div class="diary-title"><h3 class="t-title">Invisible Garden Buenos Aires recap</h3><p class="t-caption secondary">YouTube · Residency, 2025</p></div><p class="t-body">I edited this long-form recap of Invisible Garden’s developer residency in Buenos Aires.</p><a class="moment-link" href="https://www.youtube.com/watch?v=Op3Syvqt_f8" target="_blank" rel="noopener">Watch the video <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/1a59b5898f6f7172894b52804a1b606c" alt="Aishat at GITEX Nigeria in Lagos, wearing her event badge" loading="lazy"></figure><p class="t-label">Representing Web3Ladies</p><div class="diary-title"><h3 class="t-title">GITEX Nigeria</h3><p class="t-caption secondary">In person · Lagos · 2025</p></div><p class="t-body">I represented Web3Ladies at GITEX Nigeria in Lagos. [What you did there, for example who you met or what you shared.]</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/81bab563daca955916caea2643b4ceb9" alt="Aishat talking with attendees at the DSF x Stellar meetup in Lagos" loading="lazy"></figure><p class="t-label">Representing Web3Ladies</p><div class="diary-title"><h3 class="t-title">DSF x Stellar meetup</h3><p class="t-caption secondary">In person · Lagos · 2025</p></div><p class="t-body">I shared the Web3Ladies vision at the DSF x Stellar meetup in Lagos.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/e4759439aff7fe3eb32a393df9b1d317" alt="Aishat speaking on stage at the Code Africa Conference City Tour in Nigeria" loading="lazy"></figure><p class="t-label">Representing One Dev</p><div class="diary-title"><h3 class="t-title">Code Africa Conference City Tour</h3><p class="t-caption secondary">In person · Nigeria · 2025</p></div><p class="t-body">I shared One Dev’s vision to help African builders upskill in emerging technologies like blockchain and AI.</p><a class="moment-link" href="https://x.com/this_aishah_/status/1921856166339940569" target="_blank" rel="noopener">See the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/f7e54a99c66a988ebf0db8c39cefd4ad" alt="Flyer for One Dev’s community AMA, Road to Code Africa Conference, with Aishat among the speakers" loading="lazy"></figure><p class="t-label">Pre-event campaign</p><div class="diary-title"><h3 class="t-title">Road to Code Africa Conference</h3><p class="t-caption secondary">X Space · 2 May 2025</p></div><p class="t-body">A community AMA in One Dev’s pre-event series for Code Africa Conference, on community potential and impact. I spoke as One Dev’s community manager.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/f37b5e15d552a0d5c8d2574fde0443b2" alt="A live class from One Dev’s AI/ML for Developers Bootcamp" loading="lazy"></figure><p class="t-label">Facilitator</p><div class="diary-title"><h3 class="t-title">AI/ML for Developers Bootcamp</h3><p class="t-caption secondary">YouTube · 2025</p></div><p class="t-body">I facilitated the live class on day one of One Dev’s bootcamp, which introduced the fundamentals of AI and machine learning and Python for AI.</p><a class="moment-link" href="https://www.youtube.com/watch?v=yqNm6mAvo0s&amp;t=307s" target="_blank" rel="noopener">Watch the recording <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/92438ae120d79b25855447dd7610547a" alt="Event flyer for Contributing to open source in Web3, with Aishat as host" loading="lazy"></figure><p class="t-label">Host</p><div class="diary-title"><h3 class="t-title">Contributing to open source in Web3</h3><p class="t-caption secondary">YouTube Live · 2024</p></div><p class="t-body">I hosted this Web3 Ladies workshop on how to contribute to open-source projects in Web3.</p><a class="moment-link" href="https://www.youtube.com/watch?v=klbOztg-Y9Q&amp;t=5s" target="_blank" rel="noopener">Watch the recording <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/13c9fb7385539f1ac1dae9cc3b2b9b85" alt="Aishat with contributors on the first Open Terms Archive community call" loading="lazy"></figure><p class="t-label">Host</p><div class="diary-title"><h3 class="t-title">Open Terms Archive community call</h3><p class="t-caption secondary">Online · [Year]</p></div><p class="t-body">I anchored the first Open Terms Archive community call, following the structure I created for regular community calls.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/45e4ad114584bd05f6581f8c784797a1" alt="Aishat at the Web3Ladies booth, behind a table of Web3Ladies T-shirts, tote bags and bottles" loading="lazy"></figure><p class="t-label">Representing Web3Ladies</p><div class="diary-title"><h3 class="t-title">[Event name]</h3><p class="t-caption secondary">In person · [City] · [Year]</p></div><p class="t-body">I represented Web3Ladies at the community’s booth. [What you shared or who you met.]</p></li>
 </ul>
-<div class="host-more reveal">
-<span class="t-label">More sessions on YouTube</span>
+<div class="container">
+<div class="moment-foot">
+<div class="moment-hint" aria-hidden="true"><span class="moment-progress"></span><span class="t-label moment-hint-text">Swipe to see more<span class="moment-hint-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></span></div>
+<div class="diary-more">
+<span class="t-label">More on YouTube</span>
 <a class="email-link t-body" href="https://www.youtube.com/@Web3Ladies/streams" target="_blank" rel="noopener" style="font-weight: var(--weight-ui); text-underline-offset: 6px">Web3 Ladies<span class="visually-hidden"> (opens in a new tab)</span></a>
 <a class="email-link t-body" href="https://www.youtube.com/@onedevafrica/streams" target="_blank" rel="noopener" style="font-weight: var(--weight-ui); text-underline-offset: 6px">One Dev<span class="visually-hidden"> (opens in a new tab)</span></a>
+</div>
 </div>
 </div>
 </section>
@@ -1173,6 +1149,39 @@ class Component extends DCLogic {
           setTimeout(() => boot(20), 0);
         }
       } catch (err) {}
+      /* autoplay: a row of cards moves on by one card every few seconds and loops back to the start.
+         It waits while someone is touching, hovering, focused on or scrolling the row, while it is off screen,
+         and does nothing when reduced motion is on. */
+      const autoplay = (sel, every, tries) => {
+        try {
+          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+          const track = document.querySelector(sel);
+          if (!track) { if (tries > 0) setTimeout(() => autoplay(sel, every, tries - 1), 150); return; }
+          if (track.__aishahAutoplay) return;
+          track.__aishahAutoplay = true;
+          let seen = !('IntersectionObserver' in window), held = false, quietUntil = 0, ownScroll = 0;
+          const rest = () => { quietUntil = Date.now() + 6000; };
+          track.addEventListener('pointerenter', () => { held = true; });
+          track.addEventListener('pointerleave', () => { held = false; rest(); });
+          track.addEventListener('touchstart', () => { held = true; }, { passive: true });
+          track.addEventListener('touchend', () => { held = false; rest(); }, { passive: true });
+          track.addEventListener('focusin', () => { held = true; });
+          track.addEventListener('focusout', () => { held = false; rest(); });
+          track.addEventListener('scroll', () => { if (Date.now() - ownScroll > 1200) rest(); }, { passive: true });
+          if (!seen) new IntersectionObserver((list) => { seen = list[0].isIntersecting; }, { threshold: 0.4 }).observe(track);
+          setInterval(() => {
+            if (!seen || held || document.hidden || Date.now() < quietUntil) return;
+            const max = track.scrollWidth - track.clientWidth;
+            if (max <= 1) return;
+            const card = track.firstElementChild;
+            const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+            const step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+            ownScroll = Date.now();
+            track.scrollTo({ left: track.scrollLeft >= max - 2 ? 0 : Math.min(max, track.scrollLeft + step), behavior: 'smooth' });
+          }, every);
+        } catch (err) {}
+      };
+      setTimeout(() => autoplay('.moment-track', 3500, 20), 0);
       const sync = (val) => { if ((val === 'light' || val === 'dark') && (this.state || {}).theme !== val) this.setState({ theme: val }); };
       try { window.addEventListener('storage', (e) => { if (e.key === KEY) sync(e.newValue); }); } catch (e) {}
       try { window.addEventListener('aishah-theme', (e) => sync(e.detail)); } catch (e) {}
@@ -1180,8 +1189,22 @@ class Component extends DCLogic {
     let stored = null;
     try { stored = window.localStorage.getItem(KEY); } catch (e) {}
     const theme = s.theme || ((stored === 'light' || stored === 'dark') ? stored : null) || this.props.theme || 'light';
+    const scrollMoments = (e, dir) => {
+      try {
+        const from = e && e.currentTarget && e.currentTarget.closest ? e.currentTarget.closest('section') : null;
+        const track = (from || document).querySelector('.moment-track');
+        if (!track) return;
+        const card = track.querySelector('.moment');
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        const step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+        const still = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+        track.scrollBy({ left: dir * step, behavior: still ? 'auto' : 'smooth' });
+      } catch (err) {}
+    };
     return {
       theme: theme,
+      momentsPrev: (e) => scrollMoments(e, -1),
+      momentsNext: (e) => scrollMoments(e, 1),
       menu: s.menuOpen ? (s.menuClosing ? 'closing' : 'open') : 'closed',
       menuExpanded: !!s.menuOpen && !s.menuClosing,
       menuLabel: s.menuOpen && !s.menuClosing ? 'Close menu' : 'Open menu',

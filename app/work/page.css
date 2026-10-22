@@ -544,34 +544,48 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .pick{align-items:flex-start;gap:var(--pick-row-gap-phone);padding-block:var(--pick-row-padding-phone);}
 }
 /* end article list */
-/* ===== Hosting and representing ===== */
-/* component: photo cards for the sessions she hosted and the communities she represented. Photo, role tag with where
-   and when, the event, one line and a link to the recording or post */
-.home{
---host-grid-gap-row:var(--space-stack);
---host-grid-gap-col:var(--space-cluster);
---host-media-ratio:4 / 3;
---host-media-bg:var(--color-bg-subtle);
---host-body-padding:var(--space-cluster);
+/* ===== Work diaries and media ===== */
+/* work diaries and media: one scrollable line, the same component as Favourite moments on About */
+.home{--moment-card-width:clamp(248px,24vw,320px);--moment-gap:var(--space-cluster);--moment-inset:max(var(--space-gutter),calc((100% - 1280px) / 2 + var(--space-gutter)));--moment-progress-height:var(--space-hairline);--moment-photo-radius:var(--radius-card);}
+.section-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:var(--space-cluster) var(--space-group);}
+.moments-scope{timeline-scope:--moments;}
+.moment-track{display:flex;align-items:flex-start;gap:var(--moment-gap);margin:var(--space-group) 0 0;padding:var(--space-tight) var(--moment-inset);list-style:none;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--moment-inset);scrollbar-width:none;overscroll-behavior-x:contain;scroll-timeline:--moments x;}
+.moment-track::-webkit-scrollbar{display:none;}
+.moment-track:focus-visible{outline:var(--focus-width) solid var(--color-focus-ring);outline-offset:calc(var(--focus-width) * -1);}
+.moment{flex:0 0 var(--moment-card-width);scroll-snap-align:start;display:flex;flex-direction:column;gap:var(--space-related);margin:0;}
+.moment-photo{position:relative;margin:0 0 var(--space-tight);aspect-ratio:4 / 5;overflow:hidden;border-radius:var(--moment-photo-radius);background:var(--color-bg-subtle);border:var(--border-width-hairline) solid var(--color-border-subtle);}
+.moment-photo img{display:block;width:100%;height:100%;object-fit:cover;}
+.moment-photo.is-empty{display:flex;align-items:center;justify-content:center;}
+.moment-photo .shape{position:absolute;}
+.moment-photo .ph{position:relative;color:var(--color-text-secondary);}
+.moment p{margin:0;}
+.moment-link{display:inline-flex;align-items:center;gap:var(--space-hairline);align-self:flex-start;font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-strong);color:var(--link-color);text-decoration:none;}
+.moment-link:hover{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.moment-link svg{width:16px;height:16px;}
+.moment-nav{display:flex;gap:var(--space-tight);}
+.moment-nav .icon-btn{cursor:pointer;}
+.moment-nav .icon-btn:hover{background:var(--button-hover-bg);border-color:var(--button-hover-bg);color:var(--button-hover-text);}
+.moment-foot{display:flex;align-items:center;justify-content:space-between;gap:var(--space-cluster);margin-top:var(--space-stack);}
+.moment-hint{display:flex;align-items:center;gap:var(--space-element);flex:1 1 auto;min-width:0;}
+.moment-progress{position:relative;flex:0 1 calc(var(--primitive-space-8) * 2);min-width:var(--primitive-space-8);height:var(--moment-progress-height);border-radius:var(--radius-round);background:var(--color-border-subtle);overflow:hidden;visibility:hidden;}
+.moment-progress::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--color-accent-primary);transform-origin:left center;transform:scaleX(0.3);}
+.moment-hint-text{display:inline-flex;align-items:center;gap:var(--space-tight);color:var(--color-text-primary);white-space:nowrap;}
+.moment-hint-arrow{display:inline-flex;color:var(--color-accent-primary);}
+@supports (animation-timeline: scroll()){
+.moment-progress{visibility:visible;}
+.moment-progress::after{animation:moment-fill linear both;animation-timeline:--moments;}
+.moment-hint-text{animation:moment-hint-out linear both;animation-timeline:--moments;animation-range:0% 30%;}
 }
-.host-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--host-grid-gap-row) var(--host-grid-gap-col);margin:0;padding:0;list-style:none;}
-.host-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
-.host-card:hover{border-color:var(--card-border-hover);}
-.host-media{margin:0;aspect-ratio:var(--host-media-ratio);overflow:hidden;background:var(--host-media-bg);border-bottom:var(--border-width-hairline) solid var(--card-border);}
-.host-media img{display:block;width:100%;height:100%;object-fit:cover;}
-.host-body{display:flex;flex-direction:column;flex-grow:1;gap:var(--space-related);padding:var(--host-body-padding);}
-.host-body p{margin:0;}
-.host-body > .type-tag{align-self:flex-start;}
-.host-title{display:flex;flex-direction:column;gap:var(--space-hairline);}
-.host-card .work-cta{align-self:flex-start;padding-top:var(--space-tight);text-decoration:none;}
-.host-more{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-element) var(--space-stack);}
-@media (max-width: 1024px){
-.host-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
-}
-@media (max-width: 760px){
-.host-grid{grid-template-columns:minmax(0,1fr);}
-}
-/* end hosting */
+@media (prefers-reduced-motion: no-preference){.moment-hint-arrow{animation:moment-nudge 1400ms ease-in-out infinite;}}
+@keyframes moment-fill{from{transform:scaleX(0.3);}to{transform:scaleX(1);}}
+@keyframes moment-hint-out{to{opacity:0;}}
+@keyframes moment-nudge{0%,100%{transform:translateX(0);}50%{transform:translateX(var(--space-tight));}}
+@media (max-width: 760px){.moment-nav{display:none;}.moment{flex-basis:72%;}.moment-foot{flex-direction:column;align-items:stretch;}}
+/* work diaries: each entry adds the event and where and when under its label */
+.diary-title{display:flex;flex-direction:column;gap:var(--space-hairline);}
+.moment .diary-title p{margin:0;}
+.diary-more{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-element) var(--space-stack);}
+/* end work diaries */
 /* ===== Ripple cursor ===== */
 /* primitive */
 .home{--primitive-duration-640:640ms;--primitive-duration-900:900ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-size-64:64px;--primitive-opacity-45:0.45;}

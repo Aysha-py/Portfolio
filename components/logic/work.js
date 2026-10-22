@@ -191,6 +191,39 @@ export class Component extends DCLogic {
           setTimeout(() => boot(20), 0);
         }
       } catch (err) {}
+      /* autoplay: a row of cards moves on by one card every few seconds and loops back to the start.
+         It waits while someone is touching, hovering, focused on or scrolling the row, while it is off screen,
+         and does nothing when reduced motion is on. */
+      const autoplay = (sel, every, tries) => {
+        try {
+          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+          const track = document.querySelector(sel);
+          if (!track) { if (tries > 0) setTimeout(() => autoplay(sel, every, tries - 1), 150); return; }
+          if (track.__aishahAutoplay) return;
+          track.__aishahAutoplay = true;
+          let seen = !('IntersectionObserver' in window), held = false, quietUntil = 0, ownScroll = 0;
+          const rest = () => { quietUntil = Date.now() + 6000; };
+          track.addEventListener('pointerenter', () => { held = true; });
+          track.addEventListener('pointerleave', () => { held = false; rest(); });
+          track.addEventListener('touchstart', () => { held = true; }, { passive: true });
+          track.addEventListener('touchend', () => { held = false; rest(); }, { passive: true });
+          track.addEventListener('focusin', () => { held = true; });
+          track.addEventListener('focusout', () => { held = false; rest(); });
+          track.addEventListener('scroll', () => { if (Date.now() - ownScroll > 1200) rest(); }, { passive: true });
+          if (!seen) new IntersectionObserver((list) => { seen = list[0].isIntersecting; }, { threshold: 0.4 }).observe(track);
+          setInterval(() => {
+            if (!seen || held || document.hidden || Date.now() < quietUntil) return;
+            const max = track.scrollWidth - track.clientWidth;
+            if (max <= 1) return;
+            const card = track.firstElementChild;
+            const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+            const step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+            ownScroll = Date.now();
+            track.scrollTo({ left: track.scrollLeft >= max - 2 ? 0 : Math.min(max, track.scrollLeft + step), behavior: 'smooth' });
+          }, every);
+        } catch (err) {}
+      };
+      setTimeout(() => autoplay('.moment-track', 3500, 20), 0);
       const sync = (val) => { if ((val === 'light' || val === 'dark') && (this.state || {}).theme !== val) this.setState({ theme: val }); };
       try { window.addEventListener('storage', (e) => { if (e.key === KEY) sync(e.newValue); }); } catch (e) {}
       try { window.addEventListener('aishah-theme', (e) => sync(e.detail)); } catch (e) {}
@@ -198,8 +231,22 @@ export class Component extends DCLogic {
     let stored = null;
     try { stored = window.localStorage.getItem(KEY); } catch (e) {}
     const theme = s.theme || ((stored === 'light' || stored === 'dark') ? stored : null) || this.props.theme || 'light';
+    const scrollMoments = (e, dir) => {
+      try {
+        const from = e && e.currentTarget && e.currentTarget.closest ? e.currentTarget.closest('section') : null;
+        const track = (from || document).querySelector('.moment-track');
+        if (!track) return;
+        const card = track.querySelector('.moment');
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        const step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+        const still = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+        track.scrollBy({ left: dir * step, behavior: still ? 'auto' : 'smooth' });
+      } catch (err) {}
+    };
     return {
       theme: theme,
+      momentsPrev: (e) => scrollMoments(e, -1),
+      momentsNext: (e) => scrollMoments(e, 1),
       menu: s.menuOpen ? (s.menuClosing ? 'closing' : 'open') : 'closed',
       menuExpanded: !!s.menuOpen && !s.menuClosing,
       menuLabel: s.menuOpen && !s.menuClosing ? 'Close menu' : 'Open menu',
