@@ -151,9 +151,14 @@ export default function WorkView() {
                 {" "}
                 <div className="work-id">
                   <div className="work-head">
-                    <h2 className="t-heading-s work-title">Sereel</h2>
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com">
+                        Sereel
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
                     {" "}
-                    <a className="org-link is-mark" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)">
+                    <a className="org-link is-mark" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" tabIndex={-1} aria-hidden="true">
                       <img className="logo-light" src={`${BASE}/images/logo-sereel-mark.png`} alt="" />
                       <img className="logo-dark" src={`${BASE}/images/logo-sereel-mark-dark.png`} alt="" />
                     </a>
@@ -206,9 +211,14 @@ export default function WorkView() {
                 {" "}
                 <div className="work-id">
                   <div className="work-head">
-                    <h2 className="t-heading-s work-title">Invisible Garden</h2>
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden">
+                        Invisible Garden
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
                     {" "}
-                    <a className="org-link is-mark" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
+                    <a className="org-link is-mark" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" tabIndex={-1} aria-hidden="true"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
                   </div>
                   <ul className="t-caption secondary work-tags dot-list">
                     <li>Content marketing</li>
@@ -258,9 +268,14 @@ export default function WorkView() {
                 {" "}
                 <div className="work-id">
                   <div className="work-head">
-                    <h2 className="t-heading-s work-title">One Dev</h2>
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club">
+                        One Dev
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
                     {" "}
-                    <a className="org-link is-wordmark" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)">
+                    <a className="org-link is-wordmark" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" tabIndex={-1} aria-hidden="true">
                       <img className="logo-light" src={`${BASE}/images/logo-onedev.svg`} alt="" />
                       <img className="logo-dark" src={`${BASE}/images/logo-onedev-dark.svg`} alt="" />
                     </a>
@@ -313,9 +328,14 @@ export default function WorkView() {
                 {" "}
                 <div className="work-id">
                   <div className="work-head">
-                    <h2 className="t-heading-s work-title">Code Africa Conference</h2>
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io">
+                        Code Africa Conference
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
                     {" "}
-                    <a className="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)">
+                    <a className="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" tabIndex={-1} aria-hidden="true">
                       <img className="logo-light" src={`${BASE}/images/logo-code-africa.png`} alt="" />
                       <img className="logo-dark" src={`${BASE}/images/logo-code-africa-dark.png`} alt="" />
                     </a>
@@ -363,9 +383,14 @@ export default function WorkView() {
                 {" "}
                 <div className="work-id">
                   <div className="work-head">
-                    <h2 className="t-heading-s work-title">Web3Ladies</h2>
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com">
+                        Web3Ladies
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
                     {" "}
-                    <a className="org-link is-stacked" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)">
+                    <a className="org-link is-stacked" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" tabIndex={-1} aria-hidden="true">
                       <img className="logo-light" src={`${BASE}/images/logo-web3ladies.svg`} alt="" />
                       <img className="logo-dark" src={`${BASE}/images/logo-web3ladies-dark.svg`} alt="" />
                     </a>
@@ -417,9 +442,14 @@ export default function WorkView() {
                 {" "}
                 <div className="work-id">
                   <div className="work-head">
-                    <h2 className="t-heading-s work-title">Community for Africa</h2>
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com">
+                        Community for Africa
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
                     {" "}
-                    <a className="org-link is-stacked" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)">
+                    <a className="org-link is-stacked" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" tabIndex={-1} aria-hidden="true">
                       <img className="logo-light" src={`${BASE}/images/logo-community-for-africa.png`} alt="" />
                       <img className="logo-dark" src={`${BASE}/images/logo-community-for-africa-dark.png`} alt="" />
                     </a>
@@ -467,9 +497,14 @@ export default function WorkView() {
                 {" "}
                 <div className="work-id">
                   <div className="work-head">
-                    <h2 className="t-heading-s work-title">Open Terms Archive</h2>
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org">
+                        Open Terms Archive
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
                     {" "}
-                    <a className="org-link is-mark" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)">
+                    <a className="org-link is-mark" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" tabIndex={-1} aria-hidden="true">
                       <img className="logo-light" src={`${BASE}/images/logo-open-terms-archive.png`} alt="" />
                       <img className="logo-dark" src={`${BASE}/images/logo-open-terms-archive-dark.png`} alt="" />
                     </a>
