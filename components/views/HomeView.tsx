@@ -408,78 +408,13 @@ export default function HomeView() {
           </a>
           {" "}
           <div className="section-next is-right">
-            <a className="jump-link" href="#before-beyond">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get to know me</span>
+            <a className="jump-link" href="#feedback">
+              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See what they say</span>
               {" "}
               <span className="icon-btn" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 5v14" />
                   <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section id="before-beyond" aria-labelledby="bb-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
-        <div className="container stack reveal" style={{gap: "var(--space-group)"} as React.CSSProperties}>
-          <div className="stack" style={{maxWidth: "960px", gap: "var(--space-element)"} as React.CSSProperties}>
-            <p className="t-label">
-              <span className="label-dot" aria-hidden="true" />
-              Before and beyond
-            </p>
-            <h2 id="bb-title" className="t-heading">
-              I learned to{" "}
-              <span className="hl">pay attention</span>
-              {" "}before I learned to chase attention.
-            </h2>
-          </div>
-          <div className="grid-2" style={{gap: "var(--columns-gap)"} as React.CSSProperties}>
-            <div className="stack" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
-              <div className="panel" aria-hidden="true" style={{height: "240px"} as React.CSSProperties}>
-                <div className="shape round fill-secondary" style={{left: "12%", top: "52px", width: "96px", height: "96px"} as React.CSSProperties} />
-                <div className="shape round fill-primary" style={{left: "34%", top: "108px", width: "72px", height: "72px"} as React.CSSProperties} />
-                <div className="shape ring" style={{left: "50%", top: "36px", width: "88px", height: "88px", borderWidth: "10.9px"} as React.CSSProperties} />
-                <div className="shape round fill-secondary" style={{left: "68%", top: "120px", width: "80px", height: "80px"} as React.CSSProperties} />
-                <div className="shape round fill-stroke" style={{left: "22%", top: "172px", width: "32px", height: "32px"} as React.CSSProperties} />
-              </div>
-              <h3 className="t-title">Attention isn't the same as connection.</h3>
-              <p className="t-body">
-                <span className="em">Before</span>
-                {" "}content became my primary focus, I spent years working closely with communities: understanding their needs, creating opportunities for participation, and learning what makes people return.
-              </p>
-            </div>
-            <div className="stack" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
-              <div className="panel" aria-hidden="true" style={{height: "240px"} as React.CSSProperties}>
-                <div className="shape round fill-secondary" style={{left: "10%", top: "48px", width: "46%", height: "40px"} as React.CSSProperties} />
-                <div className="shape round fill-stroke" style={{left: "60%", top: "48px", width: "22%", height: "40px"} as React.CSSProperties} />
-                <div className="shape round fill-primary" style={{left: "10%", top: "104px", width: "28%", height: "40px"} as React.CSSProperties} />
-                <div className="shape round fill-secondary" style={{left: "42%", top: "104px", width: "40%", height: "40px"} as React.CSSProperties} />
-                <div className="shape ring" style={{left: "10%", top: "160px", width: "40px", height: "40px", borderWidth: "5px"} as React.CSSProperties} />
-                <div className="shape round fill-primary" style={{left: "calc(10% + 52px)", top: "160px", width: "30%", height: "40px"} as React.CSSProperties} />
-              </div>
-              <h3 className="t-title">Curiosity with structure.</h3>
-              <p className="t-body">
-                <span className="em">Beyond</span>
-                {" "}content, I'm drawn to ideas that need translating, especially in complex, technical, or fast-moving spaces where clarity makes a difference. I use research to understand the subject and the audience, strategy to find what matters, and storytelling to bridge the gap between what brands want to say and what their audiences need to hear.
-              </p>
-            </div>
-          </div>
-          <div style={{paddingTop: "var(--space-group)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
-            <p className="t-heading-s" style={{maxWidth: "900px"} as React.CSSProperties}>
-              The goal isn't simply to create or publish more. It's to{" "}
-              <span className="em" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>communicate better</span>
-              .
-            </p>
-          </div>
-          <div className="section-next">
-            <a className="jump-link" href={`${BASE}/about/`}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>More about me</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
                 </svg>
               </span>
             </a>
@@ -647,6 +582,83 @@ export default function HomeView() {
                 </span>
               </span>
             </div>
+          </div>
+          <div className="section-next is-right" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
+            <a className="jump-link" href="#before-beyond">
+              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get to know me</span>
+              {" "}
+              <span className="icon-btn" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 5v14" />
+                  <path d="m19 12-7 7-7-7" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="before-beyond" aria-labelledby="bb-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
+        <div className="container stack reveal" style={{gap: "var(--space-group)"} as React.CSSProperties}>
+          <div className="stack" style={{maxWidth: "960px", gap: "var(--space-element)"} as React.CSSProperties}>
+            <p className="t-label">
+              <span className="label-dot" aria-hidden="true" />
+              Before and beyond
+            </p>
+            <h2 id="bb-title" className="t-heading">
+              I learned to{" "}
+              <span className="hl">pay attention</span>
+              {" "}before I learned to chase attention.
+            </h2>
+          </div>
+          <div className="grid-2" style={{gap: "var(--columns-gap)"} as React.CSSProperties}>
+            <div className="stack" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
+              <div className="panel" aria-hidden="true" style={{height: "240px"} as React.CSSProperties}>
+                <div className="shape round fill-secondary" style={{left: "12%", top: "52px", width: "96px", height: "96px"} as React.CSSProperties} />
+                <div className="shape round fill-primary" style={{left: "34%", top: "108px", width: "72px", height: "72px"} as React.CSSProperties} />
+                <div className="shape ring" style={{left: "50%", top: "36px", width: "88px", height: "88px", borderWidth: "10.9px"} as React.CSSProperties} />
+                <div className="shape round fill-secondary" style={{left: "68%", top: "120px", width: "80px", height: "80px"} as React.CSSProperties} />
+                <div className="shape round fill-stroke" style={{left: "22%", top: "172px", width: "32px", height: "32px"} as React.CSSProperties} />
+              </div>
+              <h3 className="t-title">Attention isn't the same as connection.</h3>
+              <p className="t-body">
+                <span className="em">Before</span>
+                {" "}content became my primary focus, I spent years working closely with communities: understanding their needs, creating opportunities for participation, and learning what makes people return.
+              </p>
+            </div>
+            <div className="stack" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
+              <div className="panel" aria-hidden="true" style={{height: "240px"} as React.CSSProperties}>
+                <div className="shape round fill-secondary" style={{left: "10%", top: "48px", width: "46%", height: "40px"} as React.CSSProperties} />
+                <div className="shape round fill-stroke" style={{left: "60%", top: "48px", width: "22%", height: "40px"} as React.CSSProperties} />
+                <div className="shape round fill-primary" style={{left: "10%", top: "104px", width: "28%", height: "40px"} as React.CSSProperties} />
+                <div className="shape round fill-secondary" style={{left: "42%", top: "104px", width: "40%", height: "40px"} as React.CSSProperties} />
+                <div className="shape ring" style={{left: "10%", top: "160px", width: "40px", height: "40px", borderWidth: "5px"} as React.CSSProperties} />
+                <div className="shape round fill-primary" style={{left: "calc(10% + 52px)", top: "160px", width: "30%", height: "40px"} as React.CSSProperties} />
+              </div>
+              <h3 className="t-title">Curiosity with structure.</h3>
+              <p className="t-body">
+                <span className="em">Beyond</span>
+                {" "}content, I'm drawn to ideas that need translating, especially in complex, technical, or fast-moving spaces where clarity makes a difference. I use research to understand the subject and the audience, strategy to find what matters, and storytelling to bridge the gap between what brands want to say and what their audiences need to hear.
+              </p>
+            </div>
+          </div>
+          <div style={{paddingTop: "var(--space-group)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
+            <p className="t-heading-s" style={{maxWidth: "900px"} as React.CSSProperties}>
+              The goal isn't simply to create or publish more. It's to{" "}
+              <span className="em" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>communicate better</span>
+              .
+            </p>
+          </div>
+          <div className="section-next">
+            <a className="jump-link" href={`${BASE}/about/`}>
+              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>More about me</span>
+              {" "}
+              <span className="icon-btn" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </span>
+            </a>
           </div>
         </div>
       </section>
