@@ -21,7 +21,7 @@ export default function TalkShelfView() {
           </a>
           {" "}
           <div style={{display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "var(--space-stack)"} as React.CSSProperties}>
-            <nav aria-label="Main" className="nav-links" style={{display: "flex", alignItems: "center", gap: "var(--nav-gap)", fontSize: "16px", lineHeight: "26px", fontWeight: "500"} as React.CSSProperties}>
+            <nav aria-label="Main" className="nav-links" style={{display: "flex", alignItems: "center", gap: "var(--nav-gap)", fontSize: "var(--type-body-size)", lineHeight: "var(--type-body-leading)", fontWeight: "var(--weight-ui)"} as React.CSSProperties}>
               <a className="nav-link" href={`${BASE}/about/`}>About</a>
               {" "}
               <a className="nav-link" href={`${BASE}/work/`}>Work</a>
@@ -103,7 +103,7 @@ export default function TalkShelfView() {
               <a className="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a>
               <a className="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack</a>
             </div>
-            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "500", textUnderlineOffset: "6px", alignSelf: "flex-start"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px", alignSelf: "flex-start"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
           </div>
         </div>
       </header>
@@ -567,7 +567,7 @@ export default function TalkShelfView() {
               <span className="label-dot" aria-hidden="true" />
               Find me
             </p>
-            <nav aria-labelledby="socials-label" style={{display: "flex", flexWrap: "wrap", gap: "var(--space-tight) var(--space-cluster)", fontSize: "16px", lineHeight: "26px", fontWeight: "500"} as React.CSSProperties}>
+            <nav aria-labelledby="socials-label" style={{display: "flex", flexWrap: "wrap", gap: "var(--space-tight) var(--space-cluster)", fontSize: "var(--type-body-size)", lineHeight: "var(--type-body-leading)", fontWeight: "var(--weight-ui)"} as React.CSSProperties}>
               <a className="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">
                 LinkedIn{" "}
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -599,7 +599,7 @@ export default function TalkShelfView() {
               Contact
             </p>
             {" "}
-            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "500", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
           </div>
         </div>
       </footer>
