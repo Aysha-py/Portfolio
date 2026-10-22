@@ -118,11 +118,12 @@ export default function WorkView() {
             Work
           </p>
           <h1 id="work-title" className="t-display" style={{maxWidth: "980px"} as React.CSSProperties}>
-            Stories I've told and{" "}
-            <span className="hl">communities I've grown</span>
+            Content that earns attention. Communities that{" "}
+            <span className="hl">keep people coming back</span>
+            .
           </h1>
           <p className="t-body-l" style={{maxWidth: "680px"} as React.CSSProperties}>
-            Across fintech, Web3, developer education and open source, I build communities and the content that keeps them coming back.
+            From fintech and Web3 to developer education and open source, I create content that makes ideas easier to understand and build communities where people can learn, contribute, and grow.
           </p>
           {" "}
           <a className="jump-link" href="#work-list" style={{alignSelf: "flex-start", marginTop: "var(--space-element)"} as React.CSSProperties}>
@@ -137,335 +138,411 @@ export default function WorkView() {
           </a>
         </div>
       </section>
-      <section id="work-list" aria-label="Projects" style={{paddingBlock: "var(--space-group) var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
+      <section id="work-list" aria-label="Selected work" style={{paddingBlock: "var(--space-group) var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
         <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
+          <p className="t-label reveal">
+            <span className="label-dot" aria-hidden="true" />
+            Selected work
+          </p>
           <ul className="work-list">
             <li>
-              <a className="work-card attend" href="#case-sereel">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape round sh sh-primary" style={{right: "-48px", top: "-64px", width: "240px", height: "240px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{left: "48px", top: "48px", width: "96px", height: "96px", borderWidth: "12px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{left: "48px", bottom: "96px", width: "96px", height: "32px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{left: "48px", bottom: "48px", width: "160px", height: "32px"} as React.CSSProperties} />
+              <article className="work-card reveal">
+                <span className="type-tag">Content</span>
+                {" "}
+                <div className="work-id">
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com">
+                        Sereel
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
+                    {" "}
+                    <a className="org-link is-mark" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" tabIndex={-1} aria-hidden="true">
+                      <img className="logo-light" src={`${BASE}/images/logo-sereel-mark.png`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-sereel-mark-dark.png`} alt="" />
+                    </a>
                   </div>
-                  <div className="org-tile" role="img" aria-label="Sereel logo"><img src={`${BASE}/images/logo-sereel.png`} alt="" /></div>
-                </div>
-                <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true"><span className="dot dot-content" /></span>
-                    Content
-                  </span>
-                  {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Sereel</h2>
-                  <p className="t-caption secondary">[Your role] · [Dates]</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Educational and thought-leadership content on tokenized capital markets, plus scripted short-form video for institutional audiences.
-                  </p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">127.8%</span>
-                      <span className="t-caption secondary">LinkedIn follower growth, 245 to 558</span>
-                    </li>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Content marketing</li>
+                    <li>B2B thought leadership</li>
+                    <li>Newsletter</li>
+                    <li>Educational content</li>
+                    <li>Video</li>
                   </ul>
-                  {" "}
-                  <span className="work-cta">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </span>
                 </div>
-              </a>
+                <h3 className="t-title work-heading">Making complex ideas clearer</h3>
+                <div className="work-copy">
+                  <p className="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
+                  <p className="t-body">
+                    Led content development across educational and thought-leadership content, helping institutional and financial services audiences understand tokenized assets, capital markets, and industry developments.
+                  </p>
+                  <p className="t-body">
+                    Researched regulatory changes and market challenges to identify relevant topics, then translated those insights into educational social posts, long-form articles, and a monthly newsletter. Extended these themes into short-form videos, adapting complex ideas for different formats and audience touchpoints.
+                  </p>
+                  <p className="t-body">
+                    Grew Sereel’s LinkedIn audience by{" "}
+                    <strong>127.8%, from 245 to 558 followers</strong>
+                    , through consistent content that connected industry developments with the questions and challenges facing institutional audiences.
+                  </p>
+                </div>
+                <div className="t-caption work-list-line">
+                  <span className="t-label">Content formats</span>
+                  <ul className="dot-list">
+                    <li>LinkedIn</li>
+                    <li>Blog</li>
+                    <li>Newsletter</li>
+                    <li>Short-form video</li>
+                  </ul>
+                </div>
+                {" "}
+                <a className="work-cta" href={`${BASE}/#case-sereel`}>
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-invisible-garden">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape half-round sh sh-primary" style={{left: "48px", bottom: "0", width: "200px", height: "100px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{right: "64px", top: "48px", width: "88px", height: "88px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{right: "168px", top: "120px", width: "48px", height: "48px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{right: "48px", bottom: "40px", width: "64px", height: "64px", borderWidth: "8px"} as React.CSSProperties} />
+              <article className="work-card reveal">
+                <span className="type-tag">Content</span>
+                {" "}
+                <div className="work-id">
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden">
+                        Invisible Garden
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
+                    {" "}
+                    <a className="org-link is-mark" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" tabIndex={-1} aria-hidden="true"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
                   </div>
-                  <div className="org-tile" role="img" aria-label="Invisible Garden logo">
-                    <span className="logo-ph" aria-hidden="true">Invisible Garden</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
-                </div>
-                <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true"><span className="dot dot-content" /></span>
-                    Content
-                  </span>
-                  {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Invisible Garden</h2>
-                  <p className="t-caption secondary">[Your role] · [Dates]</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Wrote the social content and outreach copy for a three-week Ethereum developer residency in Buenos Aires, turning interest into participation.
-                  </p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">1,025 → 1,900+</span>
-                      <span className="t-caption secondary">X followers</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">0 → 144</span>
-                      <span className="t-caption secondary">Instagram followers</span>
-                    </li>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Content marketing</li>
+                    <li>Social media</li>
+                    <li>Video</li>
+                    <li>Outreach</li>
                   </ul>
-                  {" "}
-                  <span className="work-cta">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </span>
                 </div>
-              </a>
+                <h3 className="t-title work-heading">Turning a developer residency into a story people could follow</h3>
+                <div className="work-copy">
+                  <p className="t-body">Invisible Garden hosted a three-week Ethereum-focused developer residency in Buenos Aires.</p>
+                  <p className="t-body">
+                    Owned social media copy and content coverage across the residency, translating technical programmes, partner activities, and community milestones into stories that audiences could follow. Captured and edited on-site footage into short- and long-form videos, extending the coverage across X and YouTube.
+                  </p>
+                  <p className="t-body">
+                    Managed outreach to prospective mentors and project judges, drafting personalised messages, following up, and tracking responses and project evaluations in Excel to help secure judges for the projects.
+                  </p>
+                  <p className="t-body">
+                    Grew Invisible Garden’s X following by{" "}
+                    <strong>64%</strong>
+                    {" "}during the Devcon Buenos Aires period through consistent social copy and event coverage, while launching its Instagram presence to extend the residency’s reach to a new channel.
+                  </p>
+                </div>
+                <div className="t-caption work-list-line">
+                  <span className="t-label">Content formats</span>
+                  <ul className="dot-list">
+                    <li>X</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                    <li>Short-form video</li>
+                    <li>Outreach</li>
+                  </ul>
+                </div>
+                {" "}
+                <a className="work-cta" href={`${BASE}/#case-invisible-garden`}>
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-one-dev">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape round sh sh-secondary" style={{left: "48px", top: "48px", width: "96px", height: "96px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "152px", top: "112px", width: "64px", height: "64px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "88px", top: "176px", width: "48px", height: "48px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{right: "48px", top: "48px", width: "120px", height: "120px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{right: "80px", bottom: "40px", width: "64px", height: "64px", borderWidth: "8px"} as React.CSSProperties} />
+              <article className="work-card reveal">
+                <span className="type-tag">Content + community</span>
+                {" "}
+                <div className="work-id">
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club">
+                        One Dev
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
+                    {" "}
+                    <a className="org-link is-wordmark" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" tabIndex={-1} aria-hidden="true">
+                      <img className="logo-light" src={`${BASE}/images/logo-onedev.svg`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-onedev-dark.svg`} alt="" />
+                    </a>
                   </div>
-                  <div className="org-tile" role="img" aria-label="One Dev logo">
-                    <span className="logo-ph" aria-hidden="true">One Dev</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
-                </div>
-                <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true">
-                      <span className="dot dot-content" />
-                      <span className="dot dot-community" />
-                    </span>
-                    Content + community
-                  </span>
-                  {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>One Dev</h2>
-                  <p className="t-caption secondary">Developer Community Manager · Jan 2024 – present</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Grew a Web3 EdTech community of African developers through bootcamps, workshops, a newsletter and consistent content.
-                  </p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">8,000+</span>
-                      <span className="t-caption secondary">community members</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">6,300+</span>
-                      <span className="t-caption secondary">newsletter subscribers</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">200+</span>
-                      <span className="t-caption secondary">bootcamp learners</span>
-                    </li>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Community management</li>
+                    <li>Developer education</li>
+                    <li>Content</li>
+                    <li>Community programmes</li>
                   </ul>
-                  {" "}
-                  <span className="work-cta">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </span>
                 </div>
-              </a>
+                <h3 className="t-title work-heading">Connecting developers with the knowledge and people they need to grow</h3>
+                <div className="work-copy">
+                  <p className="t-body">One Dev supports people learning and building in Web3.</p>
+                  <p className="t-body">
+                    Managed community engagement and supported developer learning through educational content, bootcamps, and community programmes. Connected content and programme communications with the wider community experience, helping members discover learning opportunities and stay engaged.
+                  </p>
+                  <p className="t-body">
+                    Contributed to a community of{" "}
+                    <strong>8,000+ members</strong>
+                    , a newsletter with{" "}
+                    <strong>6,300+ subscribers</strong>
+                    , and bootcamps that reached{" "}
+                    <strong>200+ learners</strong>
+                    .
+                  </p>
+                </div>
+                <div className="t-caption work-list-line">
+                  <span className="t-label">Focus areas</span>
+                  <ul className="dot-list">
+                    <li>Community engagement</li>
+                    <li>Educational content</li>
+                    <li>Developer programmes</li>
+                    <li>Newsletter</li>
+                  </ul>
+                </div>
+                {" "}
+                <a className="work-cta" href="#case-one-dev">
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-code-africa">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape round sh sh-primary" style={{left: "48px", top: "48px", width: "128px", height: "128px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "48px", bottom: "48px", width: "200px", height: "40px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{right: "48px", top: "56px", width: "112px", height: "112px", borderWidth: "14px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{right: "72px", bottom: "48px", width: "48px", height: "48px"} as React.CSSProperties} />
+              <article className="work-card reveal">
+                <span className="type-tag">Content + community</span>
+                {" "}
+                <div className="work-id">
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io">
+                        Code Africa Conference
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
+                    {" "}
+                    <a className="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" tabIndex={-1} aria-hidden="true">
+                      <img className="logo-light" src={`${BASE}/images/logo-code-africa.png`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-code-africa-dark.png`} alt="" />
+                    </a>
                   </div>
-                  <div className="org-tile" role="img" aria-label="Code Africa logo">
-                    <span className="logo-ph" aria-hidden="true">Code Africa</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
-                </div>
-                <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true">
-                      <span className="dot dot-content" />
-                      <span className="dot dot-community" />
-                    </span>
-                    Content + community
-                  </span>
-                  {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Code Africa Conference</h2>
-                  <p className="t-caption secondary">Led community and content operations · With One Dev</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Ran the volunteer and ambassador programme, the full content calendar and live coverage for a conference connecting developers and founders across Africa.
-                  </p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">3,000+</span>
-                      <span className="t-caption secondary">registrations</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">40+</span>
-                      <span className="t-caption secondary">volunteers and ambassadors</span>
-                    </li>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Content distribution</li>
+                    <li>Community operations</li>
+                    <li>Volunteer management</li>
                   </ul>
-                  {" "}
-                  <span className="work-cta">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </span>
                 </div>
-              </a>
+                <h3 className="t-title work-heading">Connecting conference promotion with community participation</h3>
+                <div className="work-copy">
+                  <p className="t-body">Code Africa brought together people across the African Web3 ecosystem.</p>
+                  <p className="t-body">
+                    Supported conference promotion and community operations through campaign copy, content distribution, volunteer coordination, and the ambassador campaign. Connected promotional messaging with community outreach and on-the-ground coordination to help turn awareness into registrations and support conference delivery.
+                  </p>
+                  <p className="t-body">
+                    Contributed to a campaign that generated{" "}
+                    <strong>3,000+ registrations</strong>
+                    , while coordinating volunteers and ambassadors across the conference effort.
+                  </p>
+                </div>
+                <div className="t-caption work-list-line">
+                  <span className="t-label">Focus areas</span>
+                  <ul className="dot-list">
+                    <li>Campaign content</li>
+                    <li>Community outreach</li>
+                    <li>Volunteer coordination</li>
+                    <li>Ambassador programmes</li>
+                  </ul>
+                </div>
+                {" "}
+                <a className="work-cta" href="#case-code-africa">
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-web3ladies">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape round sh sh-secondary" style={{left: "48px", top: "56px", width: "88px", height: "88px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "152px", top: "32px", width: "64px", height: "64px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "160px", top: "120px", width: "72px", height: "72px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "72px", top: "168px", width: "56px", height: "56px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{right: "48px", top: "64px", width: "120px", height: "120px", borderWidth: "15px"} as React.CSSProperties} />
+              <article className="work-card reveal">
+                <span className="type-tag">Community</span>
+                {" "}
+                <div className="work-id">
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com">
+                        Web3Ladies
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
+                    {" "}
+                    <a className="org-link is-stacked" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" tabIndex={-1} aria-hidden="true">
+                      <img className="logo-light" src={`${BASE}/images/logo-web3ladies.svg`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-web3ladies-dark.svg`} alt="" />
+                    </a>
                   </div>
-                  <div className="org-tile" role="img" aria-label="Web3ladies logo">
-                    <span className="logo-ph" aria-hidden="true">Web3ladies</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
-                </div>
-                <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true"><span className="dot dot-community" /></span>
-                    Community
-                  </span>
-                  {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Web3ladies</h2>
-                  <p className="t-caption secondary">Community Lead · May 2024 – present</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Onboarded and empowered women in Web3 through workshops, AMAs, bootcamps and hackathons, and revived the YouTube channel as a learning library.
-                  </p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">3,000+</span>
-                      <span className="t-caption secondary">women trained</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">+50%</span>
-                      <span className="t-caption secondary">YouTube audience</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">+40%</span>
-                      <span className="t-caption secondary">community engagement</span>
-                    </li>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Community leadership</li>
+                    <li>Programme development</li>
+                    <li>Ecosystem partnerships</li>
+                    <li>Community engagement</li>
                   </ul>
-                  {" "}
-                  <span className="work-cta">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </span>
                 </div>
-              </a>
+                <h3 className="t-title work-heading">Turning community needs into opportunities to learn and grow</h3>
+                <div className="work-copy">
+                  <p className="t-body">Web3Ladies creates opportunities for women to learn, build, and grow within the Web3 ecosystem.</p>
+                  <p className="t-body">
+                    Having contributed to the community since 2023 and progressed to Community Lead in November 2025, I work across community operations, programme development, and ecosystem engagement. This includes managing member communications, hosting learning experiences, coordinating partnerships, and using member insights to shape initiatives around community needs.
+                  </p>
+                  <p className="t-body">
+                    I designed and led{" "}
+                    <strong>Build with AI</strong>
+                    , turning the programme concept into an executable plan that brought together four expert-led sessions and generated seven project submissions from 100+ registrations. Alongside programme delivery, I support community growth through event representation, programme promotion, and ongoing engagement across digital and in-person channels.
+                  </p>
+                  <p className="t-body">
+                    <strong>15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations</strong>
+                  </p>
+                </div>
+                <div className="t-caption work-list-line">
+                  <span className="t-label">Focus areas</span>
+                  <ul className="dot-list">
+                    <li>Community programmes</li>
+                    <li>Ecosystem partnerships</li>
+                    <li>Member engagement</li>
+                    <li>Community operations</li>
+                  </ul>
+                </div>
+                {" "}
+                <a className="work-cta" href="#case-web3ladies">
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-community-for-africa">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape round sh sh-secondary" style={{left: "48px", top: "48px", width: "112px", height: "112px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "176px", top: "96px", width: "64px", height: "64px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{right: "48px", bottom: "96px", width: "160px", height: "32px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{right: "48px", bottom: "48px", width: "224px", height: "32px"} as React.CSSProperties} />
-                    <div className="shape sh-ring" style={{left: "56px", bottom: "40px", width: "56px", height: "56px", borderWidth: "7px"} as React.CSSProperties} />
+              <article className="work-card reveal">
+                <span className="type-tag">Content + community</span>
+                {" "}
+                <div className="work-id">
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com">
+                        Community for Africa
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
+                    {" "}
+                    <a className="org-link is-stacked" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" tabIndex={-1} aria-hidden="true">
+                      <img className="logo-light" src={`${BASE}/images/logo-community-for-africa.png`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-community-for-africa-dark.png`} alt="" />
+                    </a>
                   </div>
-                  <div className="org-tile" role="img" aria-label="Community for Africa logo">
-                    <span className="logo-ph" aria-hidden="true">Community for Africa</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
-                </div>
-                <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true"><span className="dot dot-community" /></span>
-                    Community
-                  </span>
-                  {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Community for Africa</h2>
-                  <p className="t-caption secondary">Community Manager · Jul 2024 – present</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Ran events, sessions and written and video content for African community managers and creatives, and built a Skills Audit Sheet members use to track their growth.
-                  </p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">100+</span>
-                      <span className="t-caption secondary">skills audit downloads</span>
-                    </li>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Community management</li>
+                    <li>Educational content</li>
+                    <li>Resource development</li>
                   </ul>
-                  {" "}
-                  <span className="work-cta">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </span>
                 </div>
-              </a>
+                <h3 className="t-title work-heading">Turning community learning into practical resources</h3>
+                <div className="work-copy">
+                  <p className="t-body">Community for Africa supports people learning and connecting across the technology ecosystem.</p>
+                  <p className="t-body">
+                    Supported community engagement through events, learning sessions, and written and video content. Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.
+                  </p>
+                  <p className="t-body">
+                    The resource reached{" "}
+                    <strong>100+ downloads</strong>
+                    , giving community members a practical tool they could use beyond individual sessions.
+                  </p>
+                </div>
+                <div className="t-caption work-list-line">
+                  <span className="t-label">Focus areas</span>
+                  <ul className="dot-list">
+                    <li>Community engagement</li>
+                    <li>Events</li>
+                    <li>Educational content</li>
+                    <li>Learning resources</li>
+                  </ul>
+                </div>
+                {" "}
+                <a className="work-cta" href="#case-community-for-africa">
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </article>
             </li>
             <li>
-              <a className="work-card attend" href="#case-open-terms-archive">
-                <div className="work-art">
-                  <div className="work-art-inner" aria-hidden="true">
-                    <div className="shape sh-ring" style={{left: "48px", top: "48px", width: "112px", height: "112px", borderWidth: "14px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-secondary" style={{left: "184px", top: "88px", width: "64px", height: "64px"} as React.CSSProperties} />
-                    <div className="shape half-round sh sh-secondary" style={{right: "48px", bottom: "0", width: "224px", height: "112px"} as React.CSSProperties} />
-                    <div className="shape round sh sh-primary" style={{right: "72px", top: "48px", width: "56px", height: "56px"} as React.CSSProperties} />
+              <article className="work-card reveal">
+                <span className="type-tag">Community</span>
+                {" "}
+                <div className="work-id">
+                  <div className="work-head">
+                    <h2 className="t-heading-s work-title">
+                      <a href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org">
+                        Open Terms Archive
+                        <span className="visually-hidden">(opens in a new tab)</span>
+                      </a>
+                    </h2>
+                    {" "}
+                    <a className="org-link is-mark" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" tabIndex={-1} aria-hidden="true">
+                      <img className="logo-light" src={`${BASE}/images/logo-open-terms-archive.png`} alt="" />
+                      <img className="logo-dark" src={`${BASE}/images/logo-open-terms-archive-dark.png`} alt="" />
+                    </a>
                   </div>
-                  <div className="org-tile" role="img" aria-label="Open Terms Archive logo">
-                    <span className="logo-ph" aria-hidden="true">Open Terms Archive</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
-                </div>
-                <div className="work-body">
-                  <span className="type-tag">
-                    <span className="dots" aria-hidden="true">
-                      <span className="dot dot-content" />
-                      <span className="dot dot-community" />
-                    </span>
-                    Content + community
-                  </span>
-                  {" "}
-                  <h2 className="t-heading-s work-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Open Terms Archive</h2>
-                  <p className="t-caption secondary">Open Source Community Manager · Oct 2024 – Feb 2025</p>
-                  <p className="t-body" style={{maxWidth: "600px"} as React.CSSProperties}>
-                    Moved an open-source contributor community to a new Mattermost space, with clear onboarding guides, a contributor page and a structure for community calls.
-                  </p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">20%</span>
-                      <span className="t-caption secondary">member retention after migration</span>
-                    </li>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Open source community management</li>
+                    <li>Contributor experience</li>
+                    <li>Documentation</li>
                   </ul>
-                  {" "}
-                  <span className="work-cta">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </span>
                 </div>
-              </a>
+                <h3 className="t-title work-heading">Making it easier for contributors to find their way in</h3>
+                <div className="work-copy">
+                  <p className="t-body">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
+                  <p className="t-body">
+                    Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources. Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.
+                  </p>
+                  <p className="t-body">
+                    Also developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices to support consistent knowledge-sharing.
+                  </p>
+                </div>
+                <div className="t-caption work-list-line">
+                  <span className="t-label">Focus areas</span>
+                  <ul className="dot-list">
+                    <li>Community migration</li>
+                    <li>Contributor onboarding</li>
+                    <li>Documentation</li>
+                    <li>Community calls</li>
+                  </ul>
+                </div>
+                {" "}
+                <a className="work-cta" href="#case-open-terms-archive">
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </article>
             </li>
           </ul>
           <div className="section-next is-right">
@@ -489,109 +566,24 @@ export default function WorkView() {
               <span className="label-dot" aria-hidden="true" />
               Selected content and projects
             </p>
-            <h2 id="selected-title" className="t-heading-s">A few pieces that performed well</h2>
+            <h2 id="selected-title" className="t-heading-s">
+              A few pieces that show how I approach research, education, and storytelling across different audiences.
+            </h2>
           </div>
-          <ul className="pick-grid">
+          <ul className="pick-list">
             <li>
-              <a className="pick attend reveal" href="#web3ladies-ai-challenge">
-                <div className="pick-media">
-                  <div className="shape round sh sh-secondary" style={{left: "-24px", top: "-24px", width: "96px", height: "96px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-secondary" style={{right: "32px", bottom: "32px", width: "40px", height: "40px"} as React.CSSProperties} />
-                  <div className="shape sh-ring" style={{right: "88px", bottom: "24px", width: "48px", height: "48px", borderWidth: "6px"} as React.CSSProperties} />
-                  <div className="pick-ph">
-                    <span className="pick-icon">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
-                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
-                        <path d="M4 22h16" />
-                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
-                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
-                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
-                      </svg>
-                    </span>
-                    <span className="t-caption">[Screenshot of the challenge]</span>
-                  </div>
-                </div>
+              <a className="pick attend reveal" href="https://sereel.com/blog/nigeria-investment-securities-act-2025-tokenized-securities" target="_blank" rel="noopener">
                 <div className="pick-body">
-                  <span className="type-tag">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
-                      <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
-                      <path d="M4 22h16" />
-                      <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
-                      <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
-                      <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
-                    </svg>
-                    Project
-                  </span>
-                  {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>Web3ladies AI challenge</h3>
-                  <p className="t-caption secondary">Web3ladies · [Date]</p>
-                  <p className="t-body">[One line on what the challenge asked of participants and what you ran.]</p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">[000+]</span>
-                      <span className="t-caption secondary">participants</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">[00]</span>
-                      <span className="t-caption secondary">submissions</span>
-                    </li>
-                  </ul>
-                  {" "}
-                  <span className="work-cta">
-                    See the challenge{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                  </span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a className="pick attend reveal" href="#long-form">
-                <div className="pick-media">
-                  <div className="shape half-round sh sh-primary" style={{left: "32px", bottom: "0", width: "120px", height: "60px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{right: "-24px", top: "-24px", width: "88px", height: "88px"} as React.CSSProperties} />
-                  <div className="pick-ph">
-                    <span className="pick-icon">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-                        <path d="M10 9H8" />
-                        <path d="M16 13H8" />
-                        <path d="M16 17H8" />
-                      </svg>
-                    </span>
-                    <span className="t-caption">[Screenshot of the article]</span>
-                  </div>
-                </div>
-                <div className="pick-body">
-                  <span className="type-tag">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-                      <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-                      <path d="M10 9H8" />
-                      <path d="M16 13H8" />
-                      <path d="M16 17H8" />
-                    </svg>
-                    Long-form
-                  </span>
-                  {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>[Article title]</h3>
-                  <p className="t-caption secondary">[Publication or blog] · [Date]</p>
-                  <p className="t-body">[One line on the topic and who it was for.]</p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">[0,000]</span>
-                      <span className="t-caption secondary">reads</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">[00]</span>
-                      <span className="t-caption secondary">shares</span>
-                    </li>
-                  </ul>
+                  <p className="pick-meta">
+                    <span className="type-tag">Industry analysis</span>
+                    <span className="t-caption secondary">Sereel</span>
+                  </p>
+                  <h3 className="t-title pick-title">
+                    Nigeria's Investment and Securities Act 2025: Has Nigeria Quietly Gotten Ahead on Tokenized Securities?
+                  </h3>
+                  <p className="t-body secondary pick-note">
+                    I explored what Nigeria's 2025 securities law could mean for tokenized securities, connecting a local regulatory development to the wider evolution of institutional capital markets.
+                  </p>
                   {" "}
                   <span className="work-cta">
                     Read the article{" "}
@@ -600,115 +592,120 @@ export default function WorkView() {
                       <path d="M7 17 17 7" />
                     </svg>
                   </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
+                {" "}
+                <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-secondary mark-circle" /></span>
               </a>
             </li>
             <li>
-              <a className="pick attend reveal" href="#linkedin-post">
-                <div className="pick-media">
-                  <div className="shape sh-ring" style={{left: "32px", top: "32px", width: "56px", height: "56px", borderWidth: "7px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{right: "32px", bottom: "32px", width: "120px", height: "24px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{right: "32px", bottom: "64px", width: "72px", height: "24px"} as React.CSSProperties} />
-                  <div className="pick-ph">
-                    <span className="pick-icon">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                        <rect width="4" height="12" x="2" y="9" />
-                        <circle cx="4" cy="4" r="2" />
-                      </svg>
-                    </span>
-                    <span className="t-caption">[Screenshot of the post]</span>
-                  </div>
-                </div>
+              <a className="pick attend reveal" href="https://sereel.com/blog/21" target="_blank" rel="noopener">
                 <div className="pick-body">
-                  <span className="type-tag">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                      <rect width="4" height="12" x="2" y="9" />
-                      <circle cx="4" cy="4" r="2" />
-                    </svg>
-                    LinkedIn post
-                  </span>
-                  {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>[The post’s first line]</h3>
-                  <p className="t-caption secondary">LinkedIn · [Date]</p>
-                  <p className="t-body">[One line on the idea behind the post.]</p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">[00K]</span>
-                      <span className="t-caption secondary">impressions</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">[000]</span>
-                      <span className="t-caption secondary">reactions</span>
-                    </li>
-                  </ul>
+                  <p className="pick-meta">
+                    <span className="type-tag">Thought leadership</span>
+                    <span className="t-caption secondary">Sereel</span>
+                  </p>
+                  <h3 className="t-title pick-title">What the IMF's Tokenization Note Reveals About the Future of Digital Finance</h3>
+                  <p className="t-body secondary pick-note">
+                    An industry analysis of why tokenization needs more than the ability to put assets on-chain. The piece looks at the infrastructure and services needed to support real financial activity.
+                  </p>
                   {" "}
                   <span className="work-cta">
-                    View the post{" "}
+                    Read the article{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M7 7h10v10" />
                       <path d="M7 17 17 7" />
                     </svg>
                   </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
+                {" "}
+                <span className="pick-mark" aria-hidden="true"><span className="shape half-round sh sh-primary mark-half" /></span>
               </a>
             </li>
             <li>
-              <a className="pick attend reveal" href="#video">
-                <div className="pick-media">
-                  <div className="shape round sh sh-primary" style={{left: "-32px", bottom: "-32px", width: "112px", height: "112px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{right: "40px", top: "32px", width: "48px", height: "48px"} as React.CSSProperties} />
-                  <div className="shape sh-ring" style={{right: "32px", bottom: "32px", width: "40px", height: "40px", borderWidth: "5px"} as React.CSSProperties} />
-                  <div className="pick-ph">
-                    <span className="pick-icon">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10" />
-                        <polygon points="10 8 16 12 10 16 10 8" />
-                      </svg>
-                    </span>
-                    <span className="t-caption">[Screenshot of the video]</span>
-                  </div>
-                </div>
+              <a className="pick attend reveal" href="https://onedev.club/blog/20-women-inspiring-blockchain-development-in-africa" target="_blank" rel="noopener">
                 <div className="pick-body">
-                  <span className="type-tag">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10" />
-                      <polygon points="10 8 16 12 10 16 10 8" />
-                    </svg>
-                    Video
-                  </span>
-                  {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>[Video title]</h3>
-                  <p className="t-caption secondary">[Platform] · [Date]</p>
-                  <p className="t-body">[One line on what the video explains.]</p>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">[00K]</span>
-                      <span className="t-caption secondary">views</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">[000]</span>
-                      <span className="t-caption secondary">comments</span>
-                    </li>
-                  </ul>
-                  <blockquote className="pick-quote">
-                    <p className="t-caption secondary">Top comment</p>
-                    <p className="t-body">“[A favourite comment from a viewer]”</p>
-                  </blockquote>
+                  <p className="pick-meta">
+                    <span className="type-tag">Community storytelling</span>
+                    <span className="t-caption secondary">One Dev</span>
+                  </p>
+                  <h3 className="t-title pick-title">20 Women Inspiring Blockchain Development in Africa</h3>
+                  <p className="t-body secondary pick-note">
+                    A feature celebrating women building in African blockchain ecosystems. It shows how content can recognise community members, make their work visible, and give others people to learn from.
+                  </p>
                   {" "}
                   <span className="work-cta">
-                    Watch the video{" "}
+                    Read the article{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M7 7h10v10" />
                       <path d="M7 17 17 7" />
                     </svg>
                   </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
+                {" "}
+                <span className="pick-mark" aria-hidden="true"><span className="shape sh-ring mark-ring" /></span>
+              </a>
+            </li>
+            <li>
+              <a className="pick attend reveal" href="https://onedev.club/blog/how-to-become-a-web3-developer-free-resources-included" target="_blank" rel="noopener">
+                <div className="pick-body">
+                  <p className="pick-meta">
+                    <span className="type-tag">Educational content</span>
+                    <span className="t-caption secondary">One Dev</span>
+                  </p>
+                  <h3 className="t-title pick-title">How to Become a Web3 Developer: Free Resources Included</h3>
+                  <p className="t-body secondary pick-note">
+                    A beginner-focused guide that breaks a broad learning goal into practical steps and resources, helping readers find a starting point in Web3 development.
+                  </p>
+                  {" "}
+                  <span className="work-cta">
+                    Read the article{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </div>
+                {" "}
+                <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-pill" /></span>
               </a>
             </li>
           </ul>
-          <div className="section-next">
+        </div>
+      </section>
+      <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
+        <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
+          <div className="stack reveal" style={{gap: "var(--space-cluster)", maxWidth: "760px"} as React.CSSProperties}>
+            <p className="t-label">
+              <span className="label-dot" aria-hidden="true" />
+              Let’s talk
+            </p>
+            <h2 id="lets-talk-title" className="t-heading-s">
+              Have a project that needs clearer content, a more engaged community, or both? I'd love to hear about it.
+            </h2>
+            <div className="lets-talk-links">
+              <a className="jump-link" href={`${BASE}/contact/`}>
+                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
+                <span className="icon-btn" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+              </a>
+              {" "}
+              <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+              {" "}
+              <a className="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
+                LinkedIn
+                <span className="visually-hidden">(opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
+          <div className="section-next is-right">
             <a className="jump-link" href={`${BASE}/talk-shelf/`}>
               <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See my talk shelf</span>
               {" "}
