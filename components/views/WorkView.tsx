@@ -196,7 +196,7 @@ export default function WorkView() {
                   </ul>
                 </div>
                 {" "}
-                <a className="work-cta" href={`${BASE}/#case-sereel`}>
+                <a className="work-cta" href={`${BASE}/work/sereel/`}>
                   Read the case study{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
