@@ -460,6 +460,27 @@ html.aishah-io .home :is(.quote-progress,.moment-progress)::after{transform:scal
 html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - var(--row-progress, 0) * 3.4);}
 }
 /* end reveal-fallback */
+/* page-intro */
+/* opening a page: it ripples in from the click (the site's layout passes the click point in as --vt-x/--vt-y) */
+:root{--page-ripple-duration:1000ms;--page-ripple-ease:cubic-bezier(0.7,0,0.2,1);--page-ripple-reach:150vmax;}
+@view-transition{navigation:auto;}
+@media (prefers-reduced-motion: reduce){@view-transition{navigation:none;}}
+::view-transition-old(root){animation:none;}
+::view-transition-new(root){animation:page-ripple var(--page-ripple-duration) var(--page-ripple-ease) both;}
+@keyframes page-ripple{from{clip-path:circle(0px at var(--vt-x,50%) var(--vt-y,0px));}to{clip-path:circle(var(--page-ripple-reach) at var(--vt-x,50%) var(--vt-y,0px));}}
+/* then the top of the page rises in, one line after another */
+.home{--intro-rise:var(--space-cluster);--intro-duration:var(--primitive-duration-800);--intro-step:var(--primitive-duration-120);--intro-lead:var(--primitive-duration-300);}
+@keyframes intro-in{from{opacity:0;transform:translateY(var(--intro-rise));}to{opacity:1;transform:none;}}
+@media (prefers-reduced-motion: no-preference){
+.page-intro :is(.stack,.about-head) > *,.page-intro :is(.hero-photo,.about-photos > *){animation:intro-in var(--intro-duration) var(--motion-ease-reveal) both;animation-delay:calc(var(--intro-lead) + var(--intro-i, 0) * var(--intro-step));}
+.page-intro :is(.stack,.about-head) > :nth-child(2){--intro-i:1;}
+.page-intro :is(.stack,.about-head) > :nth-child(3){--intro-i:2;}
+.page-intro :is(.stack,.about-head) > :nth-child(4){--intro-i:3;}
+.page-intro :is(.stack,.about-head) > :nth-child(n+5){--intro-i:4;}
+.page-intro .hero-photo,.page-intro .about-photos > :first-child{--intro-i:2;}
+.page-intro .about-photos > :nth-child(n+2){--intro-i:3;}
+}
+/* end page-intro */
 /* ===== Ripple cursor ===== */
 /* primitive */
 .home{--primitive-duration-640:640ms;--primitive-duration-900:900ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-size-64:64px;--primitive-opacity-45:0.45;}

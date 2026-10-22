@@ -111,7 +111,7 @@ export default function OpenTabsView() {
           </div>
         </div>
       </header>
-      <section aria-labelledby="tabs-title" style={{paddingBlock: "var(--space-section) 0"} as React.CSSProperties}>
+      <section className="page-intro" aria-labelledby="tabs-title" style={{paddingBlock: "var(--space-section) 0"} as React.CSSProperties}>
         <div className="container stack reveal" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
           <p className="t-label">
             <span className="label-dot" aria-hidden="true" />

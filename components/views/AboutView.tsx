@@ -111,7 +111,7 @@ export default function AboutView() {
           </div>
         </div>
       </header>
-      <section aria-labelledby="about-title" style={{paddingBlock: "var(--space-section)"} as React.CSSProperties}>
+      <section className="page-intro" aria-labelledby="about-title" style={{paddingBlock: "var(--space-section)"} as React.CSSProperties}>
         <div className="container">
           <header className="about-head reveal">
             <p className="t-label">

@@ -111,7 +111,7 @@ export default function HomeView() {
           </div>
         </div>
       </header>
-      <section aria-labelledby="hero-title" style={{position: "relative", overflow: "hidden", paddingBlock: "var(--space-section)"} as React.CSSProperties}>
+      <section className="page-intro" aria-labelledby="hero-title" style={{position: "relative", overflow: "hidden", paddingBlock: "var(--space-section)"} as React.CSSProperties}>
         <div className="container reveal" style={{display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "var(--space-group)"} as React.CSSProperties}>
           <div className="stack" style={{flex: "1 1 520px", minWidth: "0", maxWidth: "640px", gap: "var(--space-cluster)"} as React.CSSProperties}>
             <p className="t-label">
