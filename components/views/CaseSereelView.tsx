@@ -156,7 +156,7 @@ export default function CaseSereelView() {
               <dd className="t-body">[Month and year you started to month and year you finished]</dd>
             </div>
             <div className="case-fact">
-              <dt className="t-label">Focus</dt>
+              <dt className="t-label">Skills</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
                   <li>Content marketing</li>
@@ -181,11 +181,11 @@ export default function CaseSereelView() {
           </dl>
         </div>
       </section>
-      <section id="brief" className="case-section" aria-labelledby="brief-title">
+      <section id="about" className="case-section" aria-labelledby="about-title">
         <div className="container case-grid reveal">
-          <h2 id="brief-title" className="t-label case-label">
+          <h2 id="about-title" className="t-label case-label">
             <span className="label-dot" aria-hidden="true" />
-            The brief
+            About
           </h2>
           <div className="case-main">
             <p className="t-body-l">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
@@ -283,7 +283,7 @@ export default function CaseSereelView() {
                   </svg>
                   <span className="t-caption">[Add a screenshot]</span>
                 </div>
-                <figcaption className="t-caption secondary">A LinkedIn post</figcaption>
+                <figcaption className="t-caption secondary"><span>A LinkedIn post</span></figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame">
@@ -293,7 +293,7 @@ export default function CaseSereelView() {
                   </svg>
                   <span className="t-caption">[Add a screenshot]</span>
                 </div>
-                <figcaption className="t-caption secondary">A newsletter issue</figcaption>
+                <figcaption className="t-caption secondary"><span>A newsletter issue</span></figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame">
@@ -303,7 +303,7 @@ export default function CaseSereelView() {
                   </svg>
                   <span className="t-caption">[Add a video still]</span>
                 </div>
-                <figcaption className="t-caption secondary">A short-form video</figcaption>
+                <figcaption className="t-caption secondary"><span>A short-form video</span></figcaption>
               </figure>
             </div>
           </div>

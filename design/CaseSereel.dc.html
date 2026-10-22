@@ -556,9 +556,10 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 /* end article list */
 /* ===== Case study ===== */
 /* component: a case study page. Intro (back link, organisation, title, lead and the facts), then sections with the
-   label on the left and the content on the right, results as figure tiles, visuals as placeholder frames */
+   label on the left and the content on the right: About, How I approached it, Results (figure tiles), Visuals
+   (photos, or marked frames for ones still to come), Selected pieces and Feedback */
 /* primitive */
-.home{--primitive-size-12:12px;--primitive-size-56:56px;}
+.home{--primitive-size-12:12px;--primitive-size-56:56px;--primitive-size-200:200px;}
 /* semantic: the figure style from Home's results */
 .home{--type-heading-size:clamp(28px,2.8vw,40px);--type-heading-leading:1.12;--type-heading-tracking:-0.03em;}
 /* component */
@@ -578,6 +579,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 --case-step-mark:var(--primitive-size-12);
 --case-step-ring:var(--color-accent-stroke);
 --case-tile-shape:var(--primitive-size-56);
+--case-tile-min:var(--primitive-size-200);
 --case-shot-ratio:4 / 5;
 --case-shot-bg:var(--color-bg-subtle);
 --case-shot-border:var(--card-border);
@@ -603,7 +605,6 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-label{margin:0;padding-top:var(--space-hairline);}
 .case-main{display:flex;flex-direction:column;gap:var(--space-cluster);min-width:0;}
 .case-main p{margin:0;}
-.case-main .work-list-line{margin:0;}
 .case-todo{color:var(--color-text-secondary);}
 .case-steps{display:flex;flex-direction:column;gap:var(--space-cluster);margin:0;padding:0;list-style:none;}
 .case-step{display:flex;align-items:flex-start;gap:var(--space-element);}
@@ -612,13 +613,16 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-step-mark.is-dot::before{border-radius:var(--radius-round);background:var(--color-accent-primary);}
 .case-step-mark.is-half::before{height:calc(var(--case-step-mark) / 2);border-radius:var(--case-step-mark) var(--case-step-mark) 0 0;background:var(--color-accent-secondary);}
 .case-step-mark.is-ring::before{border-radius:var(--radius-round);border:var(--border-width-strong) solid var(--case-step-ring);}
+.case-step-mark.is-pill::before{height:calc(var(--case-step-mark) / 2);border-radius:var(--radius-round);background:var(--color-accent-primary);}
 .case-step-body{display:flex;flex-direction:column;gap:var(--space-tight);min-width:0;}
-.case-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-element);}
+.case-main .work-cta{align-self:flex-start;padding-top:var(--space-hairline);text-decoration:none;}
+.case-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,var(--case-tile-min)),1fr));gap:var(--space-element);}
 .tile{box-sizing:border-box;display:flex;flex-direction:column;gap:var(--space-related);padding:var(--card-padding);border-radius:var(--card-radius);border:var(--border-width-hairline) solid var(--card-border);background:var(--card-bg);transition:border-color var(--motion-base) var(--motion-ease);}
 .tile:hover{border-color:var(--card-border-hover);}
 .tile-head{display:flex;align-items:center;justify-content:space-between;gap:var(--space-element);min-height:var(--case-tile-shape);}
 .case-tile-shape{flex:none;width:var(--case-tile-shape);height:var(--case-tile-shape);}
 .case-tile-ring{flex:none;width:var(--case-tile-shape);height:var(--case-tile-shape);border-width:calc(var(--case-tile-shape) * 0.124);}
+.case-tile-pill{flex:none;width:var(--case-tile-shape);height:calc(var(--case-tile-shape) / 2);}
 .always-lit .sh-primary{background:var(--color-accent-primary);}
 .always-lit .sh-secondary{background:var(--color-accent-secondary);}
 .always-lit .sh-ring{border-color:var(--shape-ring-color);}
@@ -626,7 +630,13 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-strong{font-weight:var(--weight-strong);color:var(--color-text-primary);}
 .case-shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-element);}
 .case-shot{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;}
-.case-shot-frame{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-tight);aspect-ratio:var(--case-shot-ratio);padding:var(--space-element);box-sizing:border-box;text-align:center;color:var(--case-shot-text);background:var(--case-shot-bg);border:var(--border-width-hairline) solid var(--case-shot-border);border-radius:var(--card-radius);}
+.case-shot figcaption{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
+.case-shot-frame{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-tight);aspect-ratio:var(--case-shot-ratio);padding:var(--space-element);box-sizing:border-box;overflow:hidden;text-align:center;color:var(--case-shot-text);background:var(--case-shot-bg);border:var(--border-width-hairline) solid var(--case-shot-border);border-radius:var(--card-radius);}
+.case-shot-frame.has-image{padding:0;}
+.case-shot-frame img{display:block;width:100%;height:100%;object-fit:cover;}
+.case-shot-link{display:inline-flex;align-items:center;gap:var(--space-hairline);font-weight:var(--weight-strong);color:var(--link-color);text-decoration:none;}
+.case-shot-link:hover{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.case-shot-link svg{width:16px;height:16px;}
 .case-main .pick-list{align-self:stretch;}
 .case-quote{display:flex;flex-direction:column;gap:var(--space-related);margin:0;padding-left:var(--space-cluster);border-left:var(--focus-width) solid var(--case-quote-rule);}
 .case-quote blockquote{margin:0;}
@@ -634,11 +644,51 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .home{--type-heading-size:26px;}
 .case-grid{grid-template-columns:minmax(0,1fr);}
 .case-facts{grid-template-columns:repeat(2,minmax(0,1fr));}
-.case-tiles{grid-template-columns:minmax(0,1fr);}
 .case-shots{grid-template-columns:minmax(0,1fr);}
-.home{--case-shot-ratio:16 / 9;}
 }
 /* end case study */
+/* ===== Work diaries and media ===== */
+/* work diaries and media: one scrollable line, the same component as Favourite moments on About */
+.home{--moment-card-width:clamp(248px,24vw,320px);--moment-gap:var(--space-cluster);--moment-inset:max(var(--space-gutter),calc((100% - 1280px) / 2 + var(--space-gutter)));--moment-progress-height:var(--space-hairline);--moment-photo-radius:var(--radius-card);}
+.section-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:var(--space-cluster) var(--space-group);}
+.moments-scope{timeline-scope:--moments;}
+.moment-track{display:flex;align-items:flex-start;gap:var(--moment-gap);margin:var(--space-group) 0 0;padding:var(--space-tight) var(--moment-inset);list-style:none;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--moment-inset);scrollbar-width:none;overscroll-behavior-x:contain;scroll-timeline:--moments x;}
+.moment-track::-webkit-scrollbar{display:none;}
+.moment-track:focus-visible{outline:var(--focus-width) solid var(--color-focus-ring);outline-offset:calc(var(--focus-width) * -1);}
+.moment{flex:0 0 var(--moment-card-width);scroll-snap-align:start;display:flex;flex-direction:column;gap:var(--space-related);margin:0;}
+.moment-photo{position:relative;margin:0 0 var(--space-tight);aspect-ratio:4 / 5;overflow:hidden;border-radius:var(--moment-photo-radius);background:var(--color-bg-subtle);border:var(--border-width-hairline) solid var(--color-border-subtle);}
+.moment-photo img{display:block;width:100%;height:100%;object-fit:cover;}
+.moment-photo.is-empty{display:flex;align-items:center;justify-content:center;}
+.moment-photo .shape{position:absolute;}
+.moment-photo .ph{position:relative;color:var(--color-text-secondary);}
+.moment p{margin:0;}
+.moment-link{display:inline-flex;align-items:center;gap:var(--space-hairline);align-self:flex-start;font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-strong);color:var(--link-color);text-decoration:none;}
+.moment-link:hover{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.moment-link svg{width:16px;height:16px;}
+.moment-nav{display:flex;gap:var(--space-tight);}
+.moment-nav .icon-btn{cursor:pointer;}
+.moment-nav .icon-btn:hover{background:var(--button-hover-bg);border-color:var(--button-hover-bg);color:var(--button-hover-text);}
+.moment-foot{display:flex;align-items:center;justify-content:space-between;gap:var(--space-cluster);margin-top:var(--space-stack);}
+.moment-hint{display:flex;align-items:center;gap:var(--space-element);flex:1 1 auto;min-width:0;}
+.moment-progress{position:relative;flex:0 1 calc(var(--primitive-space-8) * 2);min-width:var(--primitive-space-8);height:var(--moment-progress-height);border-radius:var(--radius-round);background:var(--color-border-subtle);overflow:hidden;visibility:hidden;}
+.moment-progress::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--color-accent-primary);transform-origin:left center;transform:scaleX(0.3);}
+.moment-hint-text{display:inline-flex;align-items:center;gap:var(--space-tight);color:var(--color-text-primary);white-space:nowrap;}
+.moment-hint-arrow{display:inline-flex;color:var(--color-accent-primary);}
+@supports (animation-timeline: scroll()){
+.moment-progress{visibility:visible;}
+.moment-progress::after{animation:moment-fill linear both;animation-timeline:--moments;}
+.moment-hint-text{animation:moment-hint-out linear both;animation-timeline:--moments;animation-range:0% 30%;}
+}
+@media (prefers-reduced-motion: no-preference){.moment-hint-arrow{animation:moment-nudge 1400ms ease-in-out infinite;}}
+@keyframes moment-fill{from{transform:scaleX(0.3);}to{transform:scaleX(1);}}
+@keyframes moment-hint-out{to{opacity:0;}}
+@keyframes moment-nudge{0%,100%{transform:translateX(0);}50%{transform:translateX(var(--space-tight));}}
+@media (max-width: 760px){.moment-nav{display:none;}.moment{flex-basis:72%;}.moment-foot{flex-direction:column;align-items:stretch;}}
+/* work diaries: each entry adds the event and where and when under its label */
+.diary-title{display:flex;flex-direction:column;gap:var(--space-hairline);}
+.moment .diary-title p{margin:0;}
+.diary-more{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-element) var(--space-stack);}
+/* end work diaries */
 /* ===== Ripple cursor ===== */
 /* primitive */
 .home{--primitive-duration-640:640ms;--primitive-duration-900:900ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-size-64:64px;--primitive-opacity-45:0.45;}
@@ -703,15 +753,15 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <dl class="case-facts">
 <div class="case-fact"><dt class="t-label">Role</dt><dd class="t-body">[Your role, for example content marketer]</dd></div>
 <div class="case-fact"><dt class="t-label">Timeline</dt><dd class="t-body">[Month and year you started to month and year you finished]</dd></div>
-<div class="case-fact"><dt class="t-label">Focus</dt><dd class="t-body"><ul class="case-fact-list"><li>Content marketing</li><li>B2B thought leadership</li><li>Newsletter</li><li>Educational content</li><li>Video</li></ul></dd></div>
+<div class="case-fact"><dt class="t-label">Skills</dt><dd class="t-body"><ul class="case-fact-list"><li>Content marketing</li><li>B2B thought leadership</li><li>Newsletter</li><li>Educational content</li><li>Video</li></ul></dd></div>
 <div class="case-fact"><dt class="t-label">Channels</dt><dd class="t-body"><ul class="case-fact-list"><li>LinkedIn</li><li>Blog</li><li>Newsletter</li><li>Short-form video</li></ul></dd></div>
 </dl>
 </div>
 </section>
 
-<section id="brief" class="case-section" aria-labelledby="brief-title">
+<section id="about" class="case-section" aria-labelledby="about-title">
 <div class="container case-grid reveal">
-<h2 id="brief-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>The brief</h2>
+<h2 id="about-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>About</h2>
 <div class="case-main">
 <p class="t-body-l">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
 <p class="t-body secondary case-todo">[What did Sereel need from content when you joined? For example: awareness, education, or trust with institutional audiences.]</p>
@@ -758,9 +808,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <h2 id="visuals-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Visuals</h2>
 <div class="case-main">
 <div class="case-shots">
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg><span class="t-caption">[Add a screenshot]</span></div><figcaption class="t-caption secondary">A LinkedIn post</figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span class="t-caption">[Add a screenshot]</span></div><figcaption class="t-caption secondary">A newsletter issue</figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg><span class="t-caption">[Add a video still]</span></div><figcaption class="t-caption secondary">A short-form video</figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg><span class="t-caption">[Add a screenshot]</span></div><figcaption class="t-caption secondary"><span>A LinkedIn post</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span class="t-caption">[Add a screenshot]</span></div><figcaption class="t-caption secondary"><span>A newsletter issue</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg><span class="t-caption">[Add a video still]</span></div><figcaption class="t-caption secondary"><span>A short-form video</span></figcaption></figure>
 </div>
 </div>
 </div>
@@ -854,7 +904,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4600}}'>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4800}}'>
 class Component extends DCLogic {
   renderVals() {
     const s = this.state || {};
@@ -1045,6 +1095,39 @@ class Component extends DCLogic {
           setTimeout(() => boot(20), 0);
         }
       } catch (err) {}
+      /* autoplay: a row of cards moves on by one card every few seconds and loops back to the start.
+         It waits while someone is touching, hovering, focused on or scrolling the row, while it is off screen,
+         and does nothing when reduced motion is on. */
+      const autoplay = (sel, every, tries) => {
+        try {
+          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+          const track = document.querySelector(sel);
+          if (!track) { if (tries > 0) setTimeout(() => autoplay(sel, every, tries - 1), 150); return; }
+          if (track.__aishahAutoplay) return;
+          track.__aishahAutoplay = true;
+          let seen = !('IntersectionObserver' in window), held = false, quietUntil = 0, ownScroll = 0;
+          const rest = () => { quietUntil = Date.now() + 6000; };
+          track.addEventListener('pointerenter', () => { held = true; });
+          track.addEventListener('pointerleave', () => { held = false; rest(); });
+          track.addEventListener('touchstart', () => { held = true; }, { passive: true });
+          track.addEventListener('touchend', () => { held = false; rest(); }, { passive: true });
+          track.addEventListener('focusin', () => { held = true; });
+          track.addEventListener('focusout', () => { held = false; rest(); });
+          track.addEventListener('scroll', () => { if (Date.now() - ownScroll > 1200) rest(); }, { passive: true });
+          if (!seen) new IntersectionObserver((list) => { seen = list[0].isIntersecting; }, { threshold: 0.4 }).observe(track);
+          setInterval(() => {
+            if (!seen || held || document.hidden || Date.now() < quietUntil) return;
+            const max = track.scrollWidth - track.clientWidth;
+            if (max <= 1) return;
+            const card = track.firstElementChild;
+            const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+            const step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+            ownScroll = Date.now();
+            track.scrollTo({ left: track.scrollLeft >= max - 2 ? 0 : Math.min(max, track.scrollLeft + step), behavior: 'smooth' });
+          }, every);
+        } catch (err) {}
+      };
+      setTimeout(() => autoplay('.moment-track', 3500, 20), 0);
       const sync = (val) => { if ((val === 'light' || val === 'dark') && (this.state || {}).theme !== val) this.setState({ theme: val }); };
       try { window.addEventListener('storage', (e) => { if (e.key === KEY) sync(e.newValue); }); } catch (e) {}
       try { window.addEventListener('aishah-theme', (e) => sync(e.detail)); } catch (e) {}
@@ -1052,8 +1135,22 @@ class Component extends DCLogic {
     let stored = null;
     try { stored = window.localStorage.getItem(KEY); } catch (e) {}
     const theme = s.theme || ((stored === 'light' || stored === 'dark') ? stored : null) || this.props.theme || 'light';
+    const scrollMoments = (e, dir) => {
+      try {
+        const from = e && e.currentTarget && e.currentTarget.closest ? e.currentTarget.closest('section') : null;
+        const track = (from || document).querySelector('.moment-track');
+        if (!track) return;
+        const card = track.querySelector('.moment');
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        const step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+        const still = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+        track.scrollBy({ left: dir * step, behavior: still ? 'auto' : 'smooth' });
+      } catch (err) {}
+    };
     return {
       theme: theme,
+      momentsPrev: (e) => scrollMoments(e, -1),
+      momentsNext: (e) => scrollMoments(e, 1),
       menu: s.menuOpen ? (s.menuClosing ? 'closing' : 'open') : 'closed',
       menuExpanded: !!s.menuOpen && !s.menuClosing,
       menuLabel: s.menuOpen && !s.menuClosing ? 'Close menu' : 'Open menu',
