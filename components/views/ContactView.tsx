@@ -114,8 +114,8 @@ export default function ContactView() {
             Contact
           </p>
           <h1 id="contact-title" className="t-display" style={{maxWidth: "980px"} as React.CSSProperties}>
-            Let’s make your ideas{" "}
-            <span className="hl">easier to understand</span>
+            Let’s{" "}
+            <span className="hl">work together</span>
             .
           </h1>
           <p className="t-body-l" style={{maxWidth: "680px"} as React.CSSProperties}>
