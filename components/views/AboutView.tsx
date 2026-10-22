@@ -495,12 +495,12 @@ export default function AboutView() {
               </span>
             </div>
             <div className="section-next is-right" style={{margin: "0"} as React.CSSProperties}>
-              <a className="jump-link" href={`${BASE}/contact/`}>
-                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Work with me</span>
+              <a className="jump-link" href={`${BASE}/work/`}>
+                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See my work</span>
                 <span className="icon-btn" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="m7 7 10 10" />
-                    <path d="M17 7v10H7" />
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
                   </svg>
                 </span>
               </a>

@@ -21,8 +21,9 @@ export class Component extends DCLogic {
             const layer = doc.createElement('div');
             layer.setAttribute('aria-hidden', 'true');
             layer.style.cssText = 'position:fixed;left:0;top:0;width:0;height:0;overflow:visible;pointer-events:none;z-index:2147483000;';
-            /* the ripple mark: ring radius, stroke and opacity as fractions of the outer ring, outermost rings trail the most */
-            const ART = [[36, 3, 1, 0.42], [66, 2.6, 0.8, 0.3], [98, 2.2, 0.6, 0.22], [132, 1.8, 0.42, 0.16], [168, 1.4, 0.26, 0.12]];
+            /* the ripple from the site icon (64-unit drawing, 47 units across the outer ring): radius, stroke, outer ring?, trail */
+            const ICON = 47;
+            const ART = [[14, 3.5, false, 0.42], [22, 3, true, 0.3]];
             const rings = ART.map((a) => {
               const wrap = doc.createElement('div');
               wrap.style.cssText = 'position:fixed;left:0;top:0;pointer-events:none;opacity:0;will-change:transform;';
@@ -31,7 +32,7 @@ export class Component extends DCLogic {
               const c = doc.createElementNS(NS, 'circle');
               c.setAttribute('fill', 'none');
               svg.appendChild(c); wrap.appendChild(svg); layer.appendChild(wrap);
-              return { wrap: wrap, svg: svg, c: c, f: a[1] / 3, o: a[2], r: a[0] / 168, k: a[3], x: 0, y: 0 };
+              return { wrap: wrap, svg: svg, c: c, r: a[0], w: a[1], outer: a[2], k: a[3], x: 0, y: 0 };
             });
             const dot = doc.createElement('div');
             dot.style.cssText = 'position:fixed;left:0;top:0;border-radius:50%;pointer-events:none;opacity:0;';
@@ -40,8 +41,8 @@ export class Component extends DCLogic {
             doc.documentElement.classList.add('aishah-ripple');
             let tok = null, home = null, x = 0, y = 0, shown = false, active = false, raf = 0;
             const num = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
-            /* over a link or button the mark settles to its two inner rings, in ink, so the control stays readable */
-            const vis = () => { rings.forEach((g, i) => { g.wrap.style.opacity = shown && !(active && i > 1) ? g.on : '0'; }); dot.style.opacity = shown ? '1' : '0'; };
+            /* over a link or button the mark turns ink, so the control stays readable */
+            const vis = () => { rings.forEach((g) => { g.wrap.style.opacity = shown ? g.on : '0'; }); dot.style.opacity = shown ? '1' : '0'; };
             const paint = () => {
               const col = active ? tok.on : tok.ring;
               rings.forEach((g) => { g.c.style.stroke = col; });
@@ -50,17 +51,17 @@ export class Component extends DCLogic {
             };
             const read = (h) => {
               const cs = getComputedStyle(h); const g = (n) => cs.getPropertyValue(n).trim();
-              tok = { size: num(g('--cursor-size'), 48), dotSize: num(g('--cursor-dot-size'), 4), dot: g('--cursor-dot-color'), ring: g('--cursor-ring-color'), on: g('--cursor-active-color'),
-                stroke: num(g('--cursor-ring-stroke'), 1.5), soft: num(g('--cursor-softness'), 0.7), press: num(g('--cursor-press-duration'), 640), fade: num(g('--cursor-fade-duration'), 200), ease: g('--motion-ease') || 'ease-out' };
-              const D = tok.size, tr = 'opacity ' + tok.fade + 'ms ' + tok.ease;
+              tok = { size: num(g('--cursor-size'), 40), dotSize: num(g('--cursor-dot-size'), 10), dot: g('--cursor-dot-color'), ring: g('--cursor-ring-color'), on: g('--cursor-active-color'),
+                outer: num(g('--cursor-outer-opacity'), 0.45), press: num(g('--cursor-press-duration'), 640), fade: num(g('--cursor-fade-duration'), 200), ease: g('--motion-ease') || 'ease-out' };
+              const D = tok.size, k = D / ICON, tr = 'opacity ' + tok.fade + 'ms ' + tok.ease;
               rings.forEach((g) => {
                 g.svg.setAttribute('width', D); g.svg.setAttribute('height', D); g.svg.setAttribute('viewBox', '0 0 ' + D + ' ' + D);
                 g.c.setAttribute('cx', D / 2); g.c.setAttribute('cy', D / 2);
-                g.c.setAttribute('r', Math.max(0.5, (D / 2) * g.r - (tok.stroke * g.f) / 2));
-                g.c.setAttribute('stroke-width', (tok.stroke * g.f).toFixed(2));
+                g.c.setAttribute('r', (g.r * k).toFixed(2));
+                g.c.setAttribute('stroke-width', (g.w * k).toFixed(2));
                 g.c.style.transition = 'stroke ' + tok.fade + 'ms ' + tok.ease;
                 g.wrap.style.transition = tr;
-                g.on = String(g.o * tok.soft);
+                g.on = String(g.outer ? tok.outer : 1);
               });
               dot.style.width = dot.style.height = tok.dotSize + 'px';
               dot.style.transition = tr + ', background-color ' + tok.fade + 'ms ' + tok.ease;

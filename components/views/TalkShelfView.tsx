@@ -250,13 +250,13 @@ export default function TalkShelfView() {
               {" "}
               <span className="spine-gap" style={{gridColumn: "18"} as React.CSSProperties} aria-hidden="true" />
               {" "}
-              <button type="button" className="spine" style={{gridColumn: "19", height: "200px", "--mix": "94%"} as React.CSSProperties} aria-pressed={h.s15} aria-label="Muslimah Tech Alliance, 2026, [Format]" onClick={h.p15} onMouseEnter={h.p15} onFocus={h.p15}>
-                <span className="spine-name" aria-hidden="true">Muslimah Tech</span>
-                <span className="marker marker-ring" aria-hidden="true" />
+              <button type="button" className="spine is-wide" style={{gridColumn: "19", height: "208px", "--mix": "94%"} as React.CSSProperties} aria-pressed={h.s15} aria-label="Chess in Slums Africa, 2026, In person" onClick={h.p15} onMouseEnter={h.p15} onFocus={h.p15}>
+                <span className="spine-name" aria-hidden="true">Chess in Slums</span>
+                <span className="marker marker-dot" aria-hidden="true" />
               </button>
               {" "}
-              <button type="button" className="spine is-wide is-tilted" style={{gridColumn: "20", height: "208px", "--mix": "100%"} as React.CSSProperties} aria-pressed={h.s16} aria-label="Chess in Slums Africa, 2026, In person" onClick={h.p16} onMouseEnter={h.p16} onFocus={h.p16}>
-                <span className="spine-name" aria-hidden="true">Chess in Slums</span>
+              <button type="button" className="spine is-wide is-tilted" style={{gridColumn: "20", height: "200px", "--mix": "100%"} as React.CSSProperties} aria-pressed={h.s16} aria-label="Muslimah Tech Alliance, 2026, In person" onClick={h.p16} onMouseEnter={h.p16} onFocus={h.p16}>
+                <span className="spine-name" aria-hidden="true">Muslimah Tech</span>
                 <span className="marker marker-dot" aria-hidden="true" />
               </button>
               {" "}
@@ -540,13 +540,13 @@ export default function TalkShelfView() {
             </div>
           </div>
           <div className="section-next is-right">
-            <a className="jump-link" href={`${BASE}/contact/`}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Invite me to speak</span>
+            <a className="jump-link" href={`${BASE}/open-tabs/`}>
+              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See my open tabs</span>
               {" "}
               <span className="icon-btn" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
                 </svg>
               </span>
             </a>
