@@ -139,7 +139,7 @@ export class Component extends DCLogic {
         try { still = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (e) {}
         if (still) { this.setState({ menuOpen: false }); return; }
         this.setState({ menuClosing: true });
-        setTimeout(() => this.setState({ menuOpen: false, menuClosing: false }), 320);
+        setTimeout(() => this.setState({ menuOpen: false, menuClosing: false }), 600);
       },
       closeMenu: () => this.setState({ menuOpen: false, menuClosing: false }),
       themeLabel: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
