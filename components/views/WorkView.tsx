@@ -293,10 +293,7 @@ export default function WorkView() {
                     <div className="shape sh-ring" style={{right: "48px", top: "56px", width: "112px", height: "112px", borderWidth: "14px"} as React.CSSProperties} />
                     <div className="shape round sh sh-secondary" style={{right: "72px", bottom: "48px", width: "48px", height: "48px"} as React.CSSProperties} />
                   </div>
-                  <div className="org-tile" role="img" aria-label="Code Africa logo">
-                    <span className="logo-ph" aria-hidden="true">Code Africa</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
+                  <div className="org-tile" role="img" aria-label="Code Africa logo"><img src={`${BASE}/images/logo-code-africa.png`} alt="" /></div>
                 </div>
                 <div className="work-body">
                   <span className="t-label work-num">04</span>
@@ -392,10 +389,7 @@ export default function WorkView() {
                     <div className="shape round sh sh-secondary" style={{right: "48px", bottom: "48px", width: "224px", height: "32px"} as React.CSSProperties} />
                     <div className="shape sh-ring" style={{left: "56px", bottom: "40px", width: "56px", height: "56px", borderWidth: "7px"} as React.CSSProperties} />
                   </div>
-                  <div className="org-tile" role="img" aria-label="Community for Africa logo">
-                    <span className="logo-ph" aria-hidden="true">Community for Africa</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
+                  <div className="org-tile" role="img" aria-label="Community for Africa logo"><img src={`${BASE}/images/logo-community-for-africa.png`} alt="" /></div>
                 </div>
                 <div className="work-body">
                   <span className="t-label work-num">06</span>

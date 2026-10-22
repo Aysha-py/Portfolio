@@ -175,7 +175,7 @@
 --card-radius:var(--radius-card);
 --card-padding:var(--space-inset);
 --work-art-min-height:calc(var(--primitive-space-8) * 3);
---work-art-scale:0.6;
+--work-art-scale:0.45;
 --work-art-height-stacked:calc(var(--work-art-min-height) * var(--work-art-scale));
 --work-art-bg:var(--color-bg-subtle);
 --logo-tile-bg:var(--primitive-neutral-0);
@@ -296,7 +296,7 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 .dot-community{background:var(--type-dot-community);}
 .type-tag{display:inline-flex;align-items:center;gap:var(--space-tight);align-self:flex-start;min-height:var(--type-tag-height);padding:0 var(--space-tight);box-sizing:border-box;border-radius:var(--type-tag-radius);border:var(--border-width-hairline) solid var(--type-tag-border);color:var(--type-tag-text);font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--weight-ui);}
 .work-list{display:flex;flex-direction:column;gap:var(--space-cluster);margin:0;padding:0;list-style:none;}
-.work-card{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);text-decoration:none;color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);overflow:hidden;transition:border-color var(--motion-base) var(--motion-ease);}
+.work-card{display:grid;grid-template-columns:var(--work-art-col) var(--work-body-col);text-decoration:none;color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);overflow:hidden;transition:border-color var(--motion-base) var(--motion-ease);}
 .work-card:hover{color:var(--color-text-primary);border-color:var(--card-border-hover);}
 .work-art{position:relative;min-height:var(--work-art-min-height);overflow:hidden;background:var(--work-art-bg);border-right:var(--border-width-hairline) solid var(--card-border);}
 .work-art-inner{position:absolute;inset:0;}
@@ -305,7 +305,7 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 .org-tile img{display:block;max-width:100%;max-height:var(--logo-max-height);object-fit:contain;}
 .logo-ph{font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--weight-strong);letter-spacing:var(--type-title-tracking);color:var(--primitive-neutral-600);}
 .logo-ph-note{font-size:var(--type-caption-size);line-height:var(--type-caption-leading);color:var(--primitive-neutral-600);}
-.work-list > li:nth-child(even) .work-card{grid-template-columns:minmax(0,7fr) minmax(0,5fr);}
+.work-list > li:nth-child(even) .work-card{grid-template-columns:var(--work-body-col) var(--work-art-col);}
 .work-list > li:nth-child(even) .work-art{order:2;border-right:0;border-left:var(--border-width-hairline) solid var(--card-border);}
 .work-body{display:flex;flex-direction:column;gap:var(--space-related);padding:var(--space-group) var(--space-group) var(--space-stack);}
 .work-title{transition:color var(--motion-base) var(--motion-ease);}
@@ -507,7 +507,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 /* end page-intro */
 /* ===== Work copy ===== */
 /* component: project number, focus tags and the line that sums up each project */
-.home{--work-num-color:var(--color-text-emphasis);--work-copy-measure:600px;--pick-media-ratio:16 / 5;}
+.home{--work-art-col:minmax(0,3fr);--work-body-col:minmax(0,9fr);--work-num-color:var(--color-text-emphasis);--work-copy-measure:600px;--pick-media-ratio:16 / 5;}
 .work-num{color:var(--work-num-color);}
 .work-tags{margin:0;}
 .work-heading{margin-top:var(--space-tight);}
@@ -680,7 +680,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="shape sh-ring" style="right: 48px; top: 56px; width: 112px; height: 112px; border-width: 14px"></div>
 <div class="shape round sh sh-secondary" style="right: 72px; bottom: 48px; width: 48px; height: 48px"></div>
 </div>
-<div class="org-tile" role="img" aria-label="Code Africa logo"><span class="logo-ph" aria-hidden="true">Code Africa</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
+<div class="org-tile" role="img" aria-label="Code Africa logo"><img src="/_blob/ba82c2d6cc5201262edf417fd5dea012" alt=""></div>
 </div>
 <div class="work-body">
 <span class="t-label work-num">04</span>
@@ -741,7 +741,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="shape round sh sh-secondary" style="right: 48px; bottom: 48px; width: 224px; height: 32px"></div>
 <div class="shape sh-ring" style="left: 56px; bottom: 40px; width: 56px; height: 56px; border-width: 7px"></div>
 </div>
-<div class="org-tile" role="img" aria-label="Community for Africa logo"><span class="logo-ph" aria-hidden="true">Community for Africa</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
+<div class="org-tile" role="img" aria-label="Community for Africa logo"><img src="/_blob/4899177a0dbf67c9cb80264dc0fb7694" alt=""></div>
 </div>
 <div class="work-body">
 <span class="t-label work-num">06</span>
