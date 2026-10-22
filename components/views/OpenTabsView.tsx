@@ -175,8 +175,8 @@ export default function OpenTabsView() {
               <p className="t-body-l secondary">
                 Whether I’m sharing something I’ve learned, documenting my journey, or breaking down an unfamiliar idea, I want people to leave with something useful and a clearer sense of what they can do next.
               </p>
-              <figure className="tab-figure">
-                <img src={`${BASE}/images/open-tabs-instagram.jpg`} alt="My Instagram highlights and latest videos: public speaking, work, tech careers, vlogs, tech tips and freebies" loading="lazy" />
+              <figure className="tab-figure is-natural">
+                <img src={`${BASE}/images/open-tabs-instagram.jpg`} alt="My Instagram bio, Tech CM and tech content creator sharing tech, remote work, skills and opportunities, with my highlights and latest videos" loading="lazy" />
               </figure>
             </div>
             <div className="stack split-aside" style={{gap: "var(--space-stack)"} as React.CSSProperties}>
@@ -287,7 +287,7 @@ export default function OpenTabsView() {
               </span>
             </li>
           </ul>
-          <div className="split is-flipped reveal">
+          <div className="split reveal">
             <div className="stack split-text" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
               <h2 id="rr-title" className="t-heading-s">Some thoughts need somewhere to land.</h2>
               <p className="t-body-l secondary">
@@ -313,7 +313,40 @@ export default function OpenTabsView() {
                 </svg>
                 <span className="visually-hidden">(opens in a new tab)</span>
               </a>
-              {" "}
+            </div>
+            <div className="stack split-aside" style={{gap: "var(--space-stack)"} as React.CSSProperties}>
+              <div>
+                <p className="t-label sub-head">Latest issues</p>
+                <ul className="rows">
+                  <li>
+                    <div className="row">
+                      <span className="row-main">
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
+                        <span className="t-caption secondary">Issue 03 · [Date]</span>
+                      </span>
+                      <span className="t-caption secondary">[Link]</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="row">
+                      <span className="row-main">
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
+                        <span className="t-caption secondary">Issue 02 · [Date]</span>
+                      </span>
+                      <span className="t-caption secondary">[Link]</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="row">
+                      <span className="row-main">
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
+                        <span className="t-caption secondary">Issue 01 · [Date]</span>
+                      </span>
+                      <span className="t-caption secondary">[Link]</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
               <figure className="tab-figure is-art">
                 <svg className="ripple-art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The ripple from my logo, a coral dot inside mint rings spreading outward">
                   <circle className="ring" cx="200" cy="150" r="138" strokeWidth="3" opacity="0.09" />
@@ -324,38 +357,6 @@ export default function OpenTabsView() {
                   <circle className="dot" cx="200" cy="150" r="14.4" />
                 </svg>
               </figure>
-            </div>
-            <div className="split-aside">
-              <p className="t-label sub-head">Latest issues</p>
-              <ul className="rows">
-                <li>
-                  <div className="row">
-                    <span className="row-main">
-                      <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
-                      <span className="t-caption secondary">Issue 03 · [Date]</span>
-                    </span>
-                    <span className="t-caption secondary">[Link]</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="row">
-                    <span className="row-main">
-                      <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
-                      <span className="t-caption secondary">Issue 02 · [Date]</span>
-                    </span>
-                    <span className="t-caption secondary">[Link]</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="row">
-                    <span className="row-main">
-                      <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
-                      <span className="t-caption secondary">Issue 01 · [Date]</span>
-                    </span>
-                    <span className="t-caption secondary">[Link]</span>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
           <div className="section-next" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>

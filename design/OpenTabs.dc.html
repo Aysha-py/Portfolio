@@ -367,7 +367,7 @@ html{scroll-behavior:auto;}
 .menu-social{display:flex;flex-wrap:wrap;gap:var(--space-tight) var(--space-cluster);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-ui);}
 
 /* ===== Tab figures ===== */
-/* component: one picture under each tab's description; tabs alternate sides */
+/* component: one picture in each tab, alternating between the text column and the list column */
 .home{
 --tab-figure-radius:var(--radius-card);
 --tab-figure-bg:var(--color-bg-subtle);
@@ -379,17 +379,12 @@ html{scroll-behavior:auto;}
 }
 .tab-figure{margin:var(--tab-figure-offset) 0 0;aspect-ratio:4 / 3;overflow:hidden;border-radius:var(--tab-figure-radius);border:var(--border-width-hairline) solid var(--tab-figure-border);background:var(--tab-figure-bg);}
 .tab-figure > img{display:block;width:100%;height:100%;object-fit:cover;}
-.tab-figure.is-art{background:var(--ripple-art-bg);border-color:var(--ripple-art-bg);}
+.tab-figure.is-art{aspect-ratio:16 / 9;background:var(--ripple-art-bg);border-color:var(--ripple-art-bg);}
+.tab-figure.is-natural{aspect-ratio:auto;}
+.tab-figure.is-natural > img{height:auto;}
 .ripple-art{display:block;width:100%;height:100%;}
 .ripple-art .ring{fill:none;stroke:var(--ripple-art-ring);}
 .ripple-art .dot{fill:var(--ripple-art-dot);}
-.split.is-flipped{grid-template-columns:minmax(0,7fr) minmax(0,5fr);}
-.split.is-flipped > .split-text{grid-column:2;grid-row:1;}
-.split.is-flipped > .split-aside{grid-column:1;grid-row:1;}
-@media (max-width: 760px){
-.split.is-flipped{grid-template-columns:minmax(0,1fr);}
-.split.is-flipped > .split-text,.split.is-flipped > .split-aside{grid-column:auto;grid-row:auto;}
-}
 /* end tab figures */
 
 /* ===== Ripple cursor ===== */
@@ -460,7 +455,7 @@ html{scroll-behavior:auto;}
 <h2 id="cc-title" class="t-heading-s">I create for the person I used to be.</h2>
 <p class="t-body-l secondary">When I was finding my way into tech, I had plenty of questions and often had to piece together the answers myself. That experience shaped the kind of content I want to create today: the kind that helps someone feel a little less lost at the beginning.</p>
 <p class="t-body-l secondary">Whether I’m sharing something I’ve learned, documenting my journey, or breaking down an unfamiliar idea, I want people to leave with something useful and a clearer sense of what they can do next.</p>
-<figure class="tab-figure"><img src="/_blob/42387cc71bc99f01f70ef8bee89e75da" alt="My Instagram highlights and latest videos: public speaking, work, tech careers, vlogs, tech tips and freebies" loading="lazy"></figure>
+<figure class="tab-figure is-natural"><img src="/_blob/2e73777d09b92093d23c497a95564177" alt="My Instagram bio, Tech CM and tech content creator sharing tech, remote work, skills and opportunities, with my highlights and latest videos" loading="lazy"></figure>
 </div>
 <div class="stack split-aside" style="gap: var(--space-stack)">
 <div><p class="t-label sub-head">Where to find it</p><ul class="rows"><li><a class="row" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">Instagram</span><span class="t-caption secondary">@this_aishah_</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://www.instagram.com/p/DJ1c3phsCXb/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">Featured by She Code Africa</span><span class="t-caption secondary">Instagram feature</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://www.instagram.com/p/DKb0phRNEhY/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">Featured by She Merge Tribe</span><span class="t-caption secondary">Instagram feature</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://www.instagram.com/reel/DJJ-1lbobix/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">Featured by Community for Africa</span><span class="t-caption secondary">Instagram reel</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li></ul></div>
@@ -481,16 +476,18 @@ html{scroll-behavior:auto;}
 <section id="writing" class="tab-section" aria-labelledby="rr-title">
 <div class="container stack" style="gap: var(--space-group)">
 <ul class="tab-rail" aria-hidden="true"><li><span class="tab"><span class="label-dot"></span><span class="t-label">Writing</span></span></li></ul>
-<div class="split is-flipped reveal">
+<div class="split reveal">
 <div class="stack split-text" style="gap: var(--space-cluster)">
 <h2 id="rr-title" class="t-heading-s">Some thoughts need somewhere to land.</h2>
 <p class="t-body-l secondary">I like writing because it gives me room to sit with an idea, ask better questions, and work out what I actually think. Sometimes that means explaining something I’ve been learning; other times, it means reflecting on an experience or noticing a connection I hadn’t seen before.</p>
 <p class="t-body-l secondary">That’s part of why I started <em>Ripples &amp; Reverie</em>, my newsletter about content, community, and clarity in motion. It’s a place to look at what’s happening around me and make sense of what it might mean.</p>
 <p class="t-body-l secondary"><strong>Ripples</strong> explores ideas and developments moving through tech, content, and community. <strong>Reverie</strong> turns inward, making room for reflection and the lessons that emerge along the way.</p>
 <a class="btn" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener" style="margin-top: var(--space-tight)">Subscribe on Substack <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+</div>
+<div class="stack split-aside" style="gap: var(--space-stack)">
+<div><p class="t-label sub-head">Latest issues</p><ul class="rows"><li><div class="row"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">[Issue title]</span><span class="t-caption secondary">Issue 03 · [Date]</span></span><span class="t-caption secondary">[Link]</span></div></li><li><div class="row"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">[Issue title]</span><span class="t-caption secondary">Issue 02 · [Date]</span></span><span class="t-caption secondary">[Link]</span></div></li><li><div class="row"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">[Issue title]</span><span class="t-caption secondary">Issue 01 · [Date]</span></span><span class="t-caption secondary">[Link]</span></div></li></ul></div>
 <figure class="tab-figure is-art"><svg class="ripple-art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The ripple from my logo, a coral dot inside mint rings spreading outward"><circle class="ring" cx="200" cy="150" r="138" stroke-width="3" opacity="0.09"></circle><circle class="ring" cx="200" cy="150" r="108" stroke-width="4" opacity="0.16"></circle><circle class="ring" cx="200" cy="150" r="80" stroke-width="5" opacity="0.28"></circle><circle class="ring" cx="200" cy="150" r="52.8" stroke-width="7.2" opacity="0.45"></circle><circle class="ring" cx="200" cy="150" r="33.6" stroke-width="8.4"></circle><circle class="dot" cx="200" cy="150" r="14.4"></circle></svg></figure>
 </div>
-<div class="split-aside"><p class="t-label sub-head">Latest issues</p><ul class="rows"><li><div class="row"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">[Issue title]</span><span class="t-caption secondary">Issue 03 · [Date]</span></span><span class="t-caption secondary">[Link]</span></div></li><li><div class="row"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">[Issue title]</span><span class="t-caption secondary">Issue 02 · [Date]</span></span><span class="t-caption secondary">[Link]</span></div></li><li><div class="row"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">[Issue title]</span><span class="t-caption secondary">Issue 01 · [Date]</span></span><span class="t-caption secondary">[Link]</span></div></li></ul></div>
 </div>
 <div class="section-next" style="margin-top: var(--space-group)">
 <a class="jump-link" href="#open-source"><span class="t-label" style="color: var(--color-text-primary)">Next tab: Open source</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span></a>
