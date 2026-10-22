@@ -45,15 +45,11 @@ export default function WorkView() {
               </button>
               {" "}
               <button type="button" className="icon-btn menu-btn" aria-label={h.menuLabel} aria-expanded={h.menuExpanded} aria-controls="mobile-menu" onClick={h.toggleMenu}>
-                <svg className="icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <line x1="4" x2="20" y1="7" y2="7" />
-                  <line x1="4" x2="20" y1="12" y2="12" />
-                  <line x1="4" x2="20" y1="17" y2="17" />
-                </svg>
-                <svg className="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M18 6 6 18" />
-                  <path d="m6 6 12 12" />
-                </svg>
+                <span className="burger" aria-hidden="true">
+                  <span className="burger-bar is-top" />
+                  <span className="burger-bar is-bottom" />
+                  <span className="burger-dot" />
+                </span>
               </button>
             </div>
           </div>
@@ -61,43 +57,55 @@ export default function WorkView() {
         <div className="menu-panel" id="mobile-menu">
           <nav aria-label="Menu">
             <ul className="menu-list">
-              <li>
+              <li style={{"--i": "0"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/about/`} onClick={h.closeMenu}>
-                  <span className="label-dot" aria-hidden="true" />
-                  <span>About</span>
+                  <span className="menu-mark is-dot" aria-hidden="true" />
+                  <span className="menu-name">About</span>
+                  <span className="menu-note">My story</span>
                 </a>
               </li>
-              <li>
+              <li style={{"--i": "1"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/work/`} aria-current="page" onClick={h.closeMenu}>
-                  <span className="label-dot" aria-hidden="true" />
-                  <span>Work</span>
+                  <span className="menu-mark is-half" aria-hidden="true" />
+                  <span className="menu-name">Work</span>
+                  <span className="menu-note">Stories and communities</span>
                 </a>
               </li>
-              <li>
+              <li style={{"--i": "2"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/talk-shelf/`} onClick={h.closeMenu}>
-                  <span className="label-dot" aria-hidden="true" />
-                  <span>Talk shelf</span>
+                  <span className="menu-mark is-ring" aria-hidden="true" />
+                  <span className="menu-name">Talk shelf</span>
+                  <span className="menu-note">Talks and media kit</span>
                 </a>
               </li>
-              <li>
+              <li style={{"--i": "3"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/open-tabs/`} onClick={h.closeMenu}>
-                  <span className="label-dot" aria-hidden="true" />
-                  <span>Open tabs</span>
+                  <span className="menu-mark is-pill" aria-hidden="true" />
+                  <span className="menu-name">Open tabs</span>
+                  <span className="menu-note">Everything that makes me, me</span>
                 </a>
               </li>
-              <li>
-                <a className="menu-link is-contact" href={`${BASE}/contact/`} onClick={h.closeMenu}>
-                  <span className="label-dot" aria-hidden="true" />
-                  <span>Contact</span>
+              <li style={{"--i": "4"} as React.CSSProperties}>
+                <a className="menu-link" href={`${BASE}/contact/`} onClick={h.closeMenu}>
+                  <span className="menu-mark is-pill is-coral" aria-hidden="true" />
+                  <span className="menu-name">Contact</span>
+                  <span className="menu-note">Let’s work together</span>
                 </a>
               </li>
             </ul>
           </nav>
           <div className="menu-foot">
-            <p className="t-label">
-              <span className="label-dot" aria-hidden="true" />
-              Find me
-            </p>
+            <div className="menu-foot-head">
+              <p className="t-label">
+                <span className="label-dot" aria-hidden="true" />
+                Find me
+              </p>
+              <svg className="menu-ripple" viewBox="0 0 47 47" aria-hidden="true">
+                <circle className="ring is-outer" cx="23.5" cy="23.5" r="22" strokeWidth="3" />
+                <circle className="ring" cx="23.5" cy="23.5" r="14" strokeWidth="3.5" />
+                <circle className="dot" cx="23.5" cy="23.5" r="6" />
+              </svg>
+            </div>
             <div className="menu-social">
               <a className="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">LinkedIn</a>
               <a className="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a>

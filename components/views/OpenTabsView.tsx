@@ -45,15 +45,11 @@ export default function OpenTabsView() {
               </button>
               {" "}
               <button type="button" className="icon-btn menu-btn" aria-label={h.menuLabel} aria-expanded={h.menuExpanded} aria-controls="mobile-menu" onClick={h.toggleMenu}>
-                <svg className="icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <line x1="4" x2="20" y1="7" y2="7" />
-                  <line x1="4" x2="20" y1="12" y2="12" />
-                  <line x1="4" x2="20" y1="17" y2="17" />
-                </svg>
-                <svg className="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M18 6 6 18" />
-                  <path d="m6 6 12 12" />
-                </svg>
+                <span className="burger" aria-hidden="true">
+                  <span className="burger-bar is-top" />
+                  <span className="burger-bar is-bottom" />
+                  <span className="burger-dot" />
+                </span>
               </button>
             </div>
           </div>
@@ -61,43 +57,55 @@ export default function OpenTabsView() {
         <div className="menu-panel" id="mobile-menu">
           <nav aria-label="Menu">
             <ul className="menu-list">
-              <li>
+              <li style={{"--i": "0"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/about/`} onClick={h.closeMenu}>
-                  <span className="label-dot" aria-hidden="true" />
-                  <span>About</span>
+                  <span className="menu-mark is-dot" aria-hidden="true" />
+                  <span className="menu-name">About</span>
+                  <span className="menu-note">My story</span>
                 </a>
               </li>
-              <li>
+              <li style={{"--i": "1"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/work/`} onClick={h.closeMenu}>
-                  <span className="label-dot" aria-hidden="true" />
-                  <span>Work</span>
+                  <span className="menu-mark is-half" aria-hidden="true" />
+                  <span className="menu-name">Work</span>
+                  <span className="menu-note">Stories and communities</span>
                 </a>
               </li>
-              <li>
+              <li style={{"--i": "2"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/talk-shelf/`} onClick={h.closeMenu}>
-                  <span className="label-dot" aria-hidden="true" />
-                  <span>Talk shelf</span>
+                  <span className="menu-mark is-ring" aria-hidden="true" />
+                  <span className="menu-name">Talk shelf</span>
+                  <span className="menu-note">Talks and media kit</span>
                 </a>
               </li>
-              <li>
+              <li style={{"--i": "3"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/open-tabs/`} aria-current="page" onClick={h.closeMenu}>
-                  <span className="label-dot" aria-hidden="true" />
-                  <span>Open tabs</span>
+                  <span className="menu-mark is-pill" aria-hidden="true" />
+                  <span className="menu-name">Open tabs</span>
+                  <span className="menu-note">Everything that makes me, me</span>
                 </a>
               </li>
-              <li>
-                <a className="menu-link is-contact" href={`${BASE}/contact/`} onClick={h.closeMenu}>
-                  <span className="label-dot" aria-hidden="true" />
-                  <span>Contact</span>
+              <li style={{"--i": "4"} as React.CSSProperties}>
+                <a className="menu-link" href={`${BASE}/contact/`} onClick={h.closeMenu}>
+                  <span className="menu-mark is-pill is-coral" aria-hidden="true" />
+                  <span className="menu-name">Contact</span>
+                  <span className="menu-note">Let’s work together</span>
                 </a>
               </li>
             </ul>
           </nav>
           <div className="menu-foot">
-            <p className="t-label">
-              <span className="label-dot" aria-hidden="true" />
-              Find me
-            </p>
+            <div className="menu-foot-head">
+              <p className="t-label">
+                <span className="label-dot" aria-hidden="true" />
+                Find me
+              </p>
+              <svg className="menu-ripple" viewBox="0 0 47 47" aria-hidden="true">
+                <circle className="ring is-outer" cx="23.5" cy="23.5" r="22" strokeWidth="3" />
+                <circle className="ring" cx="23.5" cy="23.5" r="14" strokeWidth="3.5" />
+                <circle className="dot" cx="23.5" cy="23.5" r="6" />
+              </svg>
+            </div>
             <div className="menu-social">
               <a className="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">LinkedIn</a>
               <a className="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a>
@@ -158,14 +166,6 @@ export default function OpenTabsView() {
       </section>
       <section id="content-creation" className="tab-section" aria-labelledby="cc-title">
         <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
-          <ul className="tab-rail" aria-hidden="true">
-            <li>
-              <span className="tab">
-                <span className="label-dot" />
-                <span className="t-label">Content creation</span>
-              </span>
-            </li>
-          </ul>
           <div className="split reveal">
             <div className="stack split-text" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
               <h2 id="cc-title" className="t-heading-s">I create for the person I used to be.</h2>
@@ -176,7 +176,7 @@ export default function OpenTabsView() {
                 Whether I’m sharing something I’ve learned, documenting my journey, or breaking down an unfamiliar idea, I want people to leave with something useful and a clearer sense of what they can do next.
               </p>
               <figure className="tab-figure is-natural">
-                <img src={`${BASE}/images/open-tabs-instagram.jpg`} alt="My Instagram bio, Tech CM and tech content creator sharing tech, remote work, skills and opportunities, with my highlights and latest videos" loading="lazy" />
+                <img src={`${BASE}/images/open-tabs-instagram.jpg`} alt="My Instagram profile, this_aishah_, with my photo, follower count, bio, highlights and latest videos" loading="lazy" />
               </figure>
             </div>
             <div className="stack split-aside" style={{gap: "var(--space-stack)"} as React.CSSProperties}>
@@ -466,16 +466,7 @@ export default function OpenTabsView() {
                         <img src={`${BASE}/images/cert-github-dpg.jpg`} alt="GitHub Digital Public Goods Open Source Community Manager Program certificate, issued to Aishat Muhammed on 7 January 2025" loading="lazy" />
                       </figure>
                       <p className="t-label">GitHub</p>
-                      <h4 className="t-title">DPG Open Source Community Manager Program</h4>
-                      <p className="t-caption secondary">2025 · Certificate</p>
                       {" "}
-                      <span className="card-cta">
-                        Verify on Credly{" "}
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                          <path d="M7 7h10v10" />
-                          <path d="M7 17 17 7" />
-                        </svg>
-                      </span>
                       <span className="visually-hidden">(opens in a new tab)</span>
                     </a>
                   </li>
@@ -485,8 +476,6 @@ export default function OpenTabsView() {
                         <img src={`${BASE}/images/cert-allinafrica-badge.jpg`} alt="All In Africa Open Source Contributor 2024 badge" loading="lazy" />
                       </figure>
                       <p className="t-label">All In Africa</p>
-                      <h4 className="t-title">Open Source Contributor</h4>
-                      <p className="t-caption secondary">2024 · Certificate</p>
                     </div>
                   </li>
                 </ul>
