@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Aishat Muhammed, about</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* ===== Tier 1: primitive tokens ===== */
+.home{
+--primitive-coral-400:#f38181;
+--primitive-coral-400-a55:rgba(243,129,129,0.55);
+--primitive-coral-700:#b2464a;
+--primitive-mint-300:#95e1d3;
+--primitive-butter-200:#fce38a;
+--primitive-cream-100:#eaffd0;
+--primitive-cream-100-a16:rgba(234,255,208,0.16);
+--primitive-cream-100-a24:rgba(234,255,208,0.24);
+--primitive-ink-900:#173a3a;
+--primitive-ink-900-a16:rgba(23,58,58,0.16);
+--primitive-ink-900-a20:rgba(23,58,58,0.20);
+--primitive-neutral-0:#ffffff;
+--primitive-neutral-25:#eff3f1;
+--primitive-neutral-50:#e3e9e6;
+--primitive-neutral-100:#f1f1f1;
+--primitive-neutral-400:#a6a6a6;
+--primitive-neutral-600:#5e5e5e;
+--primitive-neutral-900:#161616;
+--primitive-neutral-925:#2f3431;
+--primitive-neutral-950:#262a28;
+--primitive-neutral-900-a07:rgba(22,22,22,0.07);
+--primitive-neutral-100-a09:rgba(241,241,241,0.09);
+--primitive-space-1:4px;
+--primitive-space-2:8px;
+--primitive-space-3:12px;
+--primitive-space-4:16px;
+--primitive-space-5:24px;
+--primitive-space-6:32px;
+--primitive-space-7:48px;
+--primitive-space-8:96px;
+--primitive-radius-sm:6px;
+--primitive-radius-md:14px;
+--primitive-radius-full:999px;
+--primitive-stroke-1:1px;
+--primitive-stroke-1-5:1.5px;
+--primitive-stroke-2:2px;
+--primitive-font-sans:Figtree,"Segoe UI",system-ui,sans-serif;
+--primitive-font-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+--primitive-weight-500:500;
+--primitive-weight-600:600;
+--primitive-duration-200:200ms;
+--primitive-duration-240:240ms;
+--primitive-duration-280:280ms;
+--primitive-ease-out:ease-out;
+}
+/* ===== Tier 2: semantic tokens ===== */
+.home{
+--color-bg-page:var(--primitive-neutral-25);
+--color-bg-subtle:var(--primitive-neutral-50);
+--color-text-primary:var(--primitive-neutral-900);
+--color-text-secondary:var(--primitive-neutral-600);
+--color-text-emphasis:var(--primitive-coral-700);
+--color-text-on-accent:var(--primitive-ink-900);
+--color-border-subtle:var(--primitive-ink-900-a16);
+--color-border-strong:var(--primitive-ink-900);
+--color-border-accent:var(--primitive-coral-400-a55);
+--color-focus-ring:var(--primitive-coral-700);
+--color-accent-primary:var(--primitive-coral-400);
+--color-accent-secondary:var(--primitive-mint-300);
+--color-accent-highlight:var(--primitive-butter-200);
+--color-accent-stroke:var(--primitive-ink-900);
+--color-accent-muted:var(--primitive-neutral-900-a07);
+--color-accent-muted-stroke:var(--primitive-ink-900-a20);
+--color-action-primary:var(--primitive-neutral-900);
+--color-action-primary-hover:var(--primitive-coral-400);
+--color-on-action-primary:var(--primitive-neutral-0);
+--color-type-content:var(--primitive-coral-400);
+--color-type-community:var(--primitive-mint-300);
+--space-section:var(--primitive-space-8);
+--space-group:var(--primitive-space-7);
+--space-stack:var(--primitive-space-6);
+--space-inset:var(--primitive-space-6);
+--space-cluster:var(--primitive-space-5);
+--space-element:var(--primitive-space-4);
+--space-related:var(--primitive-space-3);
+--space-tight:var(--primitive-space-2);
+--space-hairline:var(--primitive-space-1);
+--space-gutter:clamp(var(--primitive-space-4),5.5vw,calc(var(--primitive-space-7) + var(--primitive-space-6)));
+--radius-control:var(--primitive-radius-sm);
+--radius-card:var(--primitive-radius-md);
+--radius-round:var(--primitive-radius-full);
+--border-width-hairline:var(--primitive-stroke-1);
+--border-width-strong:var(--primitive-stroke-1-5);
+--focus-width:var(--primitive-stroke-2);
+--font-sans:var(--primitive-font-sans);
+--font-mono:var(--primitive-font-mono);
+--type-display-size:clamp(36px,4.2vw,60px);
+--type-display-leading:1.08;
+--type-display-tracking:-0.035em;
+--type-heading-s-size:clamp(24px,2.4vw,32px);
+--type-heading-s-leading:1.22;
+--type-heading-s-tracking:-0.025em;
+--type-title-size:24px;
+--type-title-leading:30px;
+--type-title-tracking:-0.02em;
+--type-body-l-size:19px;
+--type-body-l-leading:30px;
+--type-body-size:16px;
+--type-body-leading:26px;
+--type-caption-size:13px;
+--type-caption-leading:18px;
+--type-label-size:12px;
+--type-label-leading:16px;
+--type-label-tracking:0.08em;
+--motion-fast:var(--primitive-duration-200);
+--motion-base:var(--primitive-duration-240);
+--motion-slow:var(--primitive-duration-280);
+--motion-ease:var(--primitive-ease-out);
+--motion-rise:8px;
+}
+.home[data-theme="dark"]{
+--color-bg-page:var(--primitive-neutral-950);
+--color-bg-subtle:var(--primitive-neutral-925);
+--color-text-primary:var(--primitive-neutral-100);
+--color-text-secondary:var(--primitive-neutral-400);
+--color-text-emphasis:var(--primitive-coral-400);
+--color-border-subtle:var(--primitive-cream-100-a16);
+--color-border-strong:var(--primitive-cream-100);
+--color-focus-ring:var(--primitive-coral-400);
+--color-accent-stroke:var(--primitive-cream-100);
+--color-accent-muted:var(--primitive-neutral-100-a09);
+--color-accent-muted-stroke:var(--primitive-cream-100-a24);
+--color-action-primary:var(--primitive-neutral-100);
+--color-on-action-primary:var(--primitive-neutral-950);
+}
+/* ===== Tier 3: component tokens ===== */
+.home{
+--header-height:calc(var(--primitive-space-7) + var(--primitive-space-5));
+--header-bg:var(--color-bg-page);
+--nav-gap:var(--space-stack);
+--nav-link-color:var(--color-text-primary);
+--nav-link-color-hover:var(--color-text-emphasis);
+--nav-link-color-current:var(--color-text-emphasis);
+--icon-button-size:44px;
+--icon-button-radius:var(--radius-control);
+--icon-button-border:var(--color-border-subtle);
+--icon-button-border-hover:var(--color-border-strong);
+--toggle-size:44px;
+--toggle-border:var(--color-border-accent);
+--toggle-border-hover:var(--color-accent-primary);
+--toggle-fill:var(--color-accent-primary);
+--label-dot:var(--color-accent-primary);
+--shape-ring-color:var(--color-accent-stroke);
+--card-bg:var(--color-bg-page);
+--card-border:var(--color-border-subtle);
+--card-border-hover:var(--color-border-strong);
+--card-radius:var(--radius-card);
+--card-padding:var(--space-inset);
+--tag-bg:var(--color-accent-secondary);
+--tag-text:var(--color-text-on-accent);
+--tag-radius:var(--radius-control);
+--tag-height:28px;
+--tab-height:calc(var(--primitive-space-6) + var(--primitive-space-2));
+--tab-radius:var(--radius-control) var(--radius-control) 0 0;
+--tab-border:var(--color-border-subtle);
+--tab-bg:var(--color-bg-page);
+--tab-bg-hover:var(--color-bg-subtle);
+--row-border:var(--color-border-subtle);
+--plate-size:calc(var(--primitive-space-8) * 2);
+--photo-size:460px;
+--photo-radius:var(--radius-card);
+--photo-bg:var(--color-bg-subtle);
+--colour-in-duration:1200ms;
+--colour-in-delay:400ms;
+--chapter-mark:var(--primitive-space-6);
+--type-heading-size:clamp(30px,3.2vw,44px);
+--radius-feature:24px;
+--type-heading-leading:1.12;
+--type-heading-tracking:-0.03em;
+--essay-measure:680px;
+--path-col:var(--primitive-space-8);
+--path-stroke:var(--border-width-strong);
+--path-dot:var(--space-related);
+--path-end:calc(var(--primitive-space-7) - var(--primitive-space-2));
+--gallery-row:calc(var(--primitive-space-8) * 2 + var(--primitive-space-6));
+--shot-pop:1.03;
+--spotlight-dim:0.5;
+--fact-key:calc(var(--primitive-space-8) + var(--primitive-space-6));
+--quote-rule:var(--color-accent-primary);
+--highlight-color:var(--color-accent-highlight);
+--link-color:var(--color-text-emphasis);
+--link-underline-offset:6px;
+--button-hover-bg:var(--color-action-primary-hover);
+--button-hover-text:var(--color-text-on-accent);
+--footer-bg:var(--color-bg-subtle);
+}
+
+/* ===== Base ===== */
+body{margin:0;background:#eff3f1;}
+body:has(.home[data-theme="dark"]){background:#262a28;}
+html{scroll-behavior:smooth;}
+a{color:var(--link-color);}
+a:hover{color:var(--color-text-primary);}
+section,footer,#contact-details{scroll-margin-top:calc(var(--header-height) + var(--space-element));}
+a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--color-focus-ring);outline-offset:var(--focus-width);}
+.container{max-width:1280px;margin:0 auto;padding-inline:var(--space-gutter);box-sizing:border-box;}
+.stack{display:flex;flex-direction:column;}
+
+/* ===== Type ===== */
+.t-display{margin:0;font-size:var(--type-display-size);line-height:var(--type-display-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-display-tracking);text-wrap:balance;}
+.t-heading-s{margin:0;font-size:var(--type-heading-s-size);line-height:var(--type-heading-s-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-heading-s-tracking);text-wrap:balance;}
+.t-title{margin:0;font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--primitive-weight-600);letter-spacing:var(--type-title-tracking);}
+.t-body-l{margin:0;font-size:var(--type-body-l-size);line-height:var(--type-body-l-leading);}
+.t-body{margin:0;font-size:var(--type-body-size);line-height:var(--type-body-leading);}
+.t-caption{margin:0;font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--primitive-weight-500);}
+.t-label{display:inline-flex;align-items:center;gap:var(--space-tight);margin:0;font-family:var(--font-mono);font-size:var(--type-label-size);line-height:var(--type-label-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-label-tracking);text-transform:uppercase;color:var(--color-text-secondary);}
+.t-figure-s{margin:0;font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-title-tracking);font-variant-numeric:tabular-nums;}
+.secondary{color:var(--color-text-secondary);}
+.label-dot{display:inline-block;width:6px;height:6px;border-radius:var(--radius-round);background:var(--label-dot);flex:none;}
+.hl{background-image:linear-gradient(180deg,transparent 60%,var(--highlight-color) 60%,var(--highlight-color) 94%,transparent 94%);color:inherit;padding:0 0.04em;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+.home[data-theme="dark"] .hl{background-image:linear-gradient(var(--highlight-color),var(--highlight-color));background-repeat:no-repeat;background-position:0 98%;background-size:100% 0.14em;}
+
+/* ===== Shared components ===== */
+.nav-link{color:var(--nav-link-color);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
+.nav-link:hover{color:var(--nav-link-color-hover);}
+.nav-link[aria-current="page"]{color:var(--nav-link-color-current);font-weight:var(--primitive-weight-600);}
+.nav-contact{text-decoration:underline;text-decoration-thickness:var(--border-width-hairline);text-underline-offset:var(--link-underline-offset);text-decoration-color:var(--color-border-strong);}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;width:var(--icon-button-size);height:var(--icon-button-size);border-radius:var(--icon-button-radius);border:var(--border-width-hairline) solid var(--icon-button-border);background:transparent;color:var(--color-text-primary);cursor:pointer;text-decoration:none;transition:border-color var(--motion-fast) var(--motion-ease),background-color var(--motion-base) var(--motion-ease),color var(--motion-base) var(--motion-ease);}
+.icon-btn:hover{border-color:var(--icon-button-border-hover);}
+.menu-btn{display:none;}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:var(--toggle-size);height:var(--toggle-size);padding:0;border-radius:var(--radius-round);border:var(--border-width-hairline) solid var(--toggle-border);background:transparent;cursor:pointer;transition:border-color var(--motion-fast) var(--motion-ease);}
+.theme-toggle:hover{border-color:var(--toggle-border-hover);}
+.tg-disc{position:relative;display:block;width:20px;height:20px;border-radius:var(--radius-round);background:var(--toggle-fill);overflow:hidden;}
+.wave{position:absolute;left:0;top:0;display:block;transition:transform 420ms var(--motion-ease);}
+.home[data-theme="dark"] .wave{transform:translateY(5px);}
+.logo-dark{display:none;}
+.home[data-theme="dark"] .logo-dark{display:block;}
+.home[data-theme="dark"] .logo-light{display:none;}
+.jump-link{display:inline-flex;align-items:center;gap:var(--space-related);color:var(--color-text-primary);text-decoration:none;}
+.jump-link:hover{color:var(--color-text-primary);}
+.jump-link:hover .icon-btn{background:var(--button-hover-bg);border-color:var(--button-hover-bg);color:var(--button-hover-text);}
+.section-next{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:var(--space-cluster) var(--space-stack);}
+.section-next.is-right{justify-content:flex-end;}
+.foot-link{display:inline-flex;align-items:center;gap:var(--space-hairline);color:var(--color-text-primary);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
+.foot-link:hover{color:var(--color-text-emphasis);}
+.email-link{color:var(--color-text-primary);text-decoration:underline;text-decoration-thickness:var(--border-width-strong);text-decoration-color:var(--color-border-subtle);overflow-wrap:anywhere;transition:color var(--motion-fast) var(--motion-ease),text-decoration-color var(--motion-fast) var(--motion-ease);}
+.email-link:hover{color:var(--color-text-emphasis);text-decoration-color:var(--color-text-emphasis);}
+.footer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-stack);align-items:start;}
+.footer-end{align-items:flex-end;text-align:right;}
+.shape{position:absolute;}
+.round{border-radius:var(--radius-round);}
+.half-round{border-radius:999px 999px 0 0;}
+.sh{background:var(--color-accent-muted);transition:background-color var(--motion-slow) var(--motion-ease);}
+.sh-ring{border-style:solid;border-color:var(--color-accent-muted-stroke);border-radius:var(--radius-round);box-sizing:border-box;transition:border-color var(--motion-slow) var(--motion-ease);}
+.attend:hover .sh-primary,.attend:focus-visible .sh-primary{background:var(--color-accent-primary);}
+.attend:hover .sh-secondary,.attend:focus-visible .sh-secondary{background:var(--color-accent-secondary);}
+.attend:hover .sh-ring,.attend:focus-visible .sh-ring{border-color:var(--shape-ring-color);}
+
+/* ===== About components ===== */
+.tag{display:inline-flex;align-items:center;min-height:var(--tag-height);padding:0 var(--space-tight);border-radius:var(--tag-radius);background:var(--tag-bg);color:var(--tag-text);font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--primitive-weight-500);}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-tight);min-height:var(--icon-button-size);padding:0 var(--space-cluster);border-radius:var(--radius-control);background:var(--color-action-primary);color:var(--color-on-action-primary);font:inherit;font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-600);text-decoration:none;border:0;cursor:pointer;transition:background-color var(--motion-base) var(--motion-ease),color var(--motion-base) var(--motion-ease);}
+.btn:hover{background:var(--button-hover-bg);color:var(--button-hover-text);}
+.btn-secondary{background:transparent;color:var(--color-text-primary);border:var(--border-width-hairline) solid var(--color-border-subtle);}
+.btn-secondary:hover{background:transparent;color:var(--color-text-primary);border-color:var(--color-border-strong);}
+.btn-sm{min-height:calc(var(--primitive-space-6) + var(--primitive-space-2));padding:0 var(--space-element);font-size:var(--type-caption-size);line-height:var(--type-caption-leading);}
+/* about */
+.about-head{display:flex;flex-direction:column;gap:var(--space-cluster);padding-bottom:var(--space-group);border-bottom:var(--border-width-hairline) solid var(--color-border-subtle);}
+.t-heading{margin:0;font-size:var(--type-heading-size);line-height:var(--type-heading-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-heading-tracking);text-wrap:balance;}
+.about-intro{margin:0;max-width:440px;font-size:var(--type-title-size);line-height:var(--type-heading-s-leading);font-weight:400;letter-spacing:var(--type-title-tracking);}
+.about-body{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:var(--space-section);align-items:start;margin-top:var(--space-group);}
+.about-text{max-width:var(--essay-measure);}
+.about-text > p{margin:0;}
+.about-text > p + p{margin-top:var(--space-cluster);}
+.about-text strong{font-weight:var(--primitive-weight-600);}
+.about-text > .belief{margin:var(--space-stack) 0;padding:var(--space-cluster) 0;border-top:var(--border-width-hairline) solid var(--color-border-subtle);border-bottom:var(--border-width-hairline) solid var(--color-border-subtle);}
+.about-text > .belief + p{margin-top:0;}
+.belief p{margin:0;}
+.about-text > .about-sub{margin:var(--space-group) 0 0;}
+.about-text > .about-sub + p{margin-top:var(--space-element);}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-group) var(--space-stack);align-items:center;justify-items:center;margin:0;padding:var(--space-element) 0;list-style:none;}
+.gallery li{position:relative;margin:0;width:100%;}
+.gallery .frame{display:block;overflow:hidden;background:var(--color-bg-subtle);}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;object-position:var(--focus,50% 50%);}
+.gallery .arch .frame{aspect-ratio:4 / 5;border-radius:var(--radius-round) var(--radius-round) var(--radius-card) var(--radius-card);}
+.gallery .circle{width:86%;}
+.gallery .circle .frame{aspect-ratio:1;border-radius:var(--radius-round);}
+.gallery .pill{width:68%;}
+.gallery .pill .frame{aspect-ratio:9 / 16;border-radius:var(--radius-round);}
+.gallery .wide{grid-column:span 2;}
+.gallery .wide .frame{aspect-ratio:16 / 9;border-radius:var(--radius-feature);}
+.gallery .deco{position:absolute;z-index:1;pointer-events:none;}
+.about-photos{display:flex;flex-direction:column;gap:var(--space-stack);}
+.about-photo{margin:0;aspect-ratio:4 / 5;border-radius:var(--photo-radius);overflow:hidden;background:var(--photo-bg);}
+.about-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+@media (prefers-reduced-motion: reduce){.about-photo img{animation:none;}}
+/* research and writing */
+.writing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-cluster);margin:var(--space-group) 0 0;padding:0;list-style:none;}
+.writing-card{display:flex;flex-direction:column;gap:var(--space-related);height:100%;box-sizing:border-box;padding:var(--card-padding);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);background:var(--card-bg);color:var(--color-text-primary);text-decoration:none;transition:border-color var(--motion-base) var(--motion-ease);}
+.writing-card:hover{color:var(--color-text-primary);border-color:var(--card-border-hover);}
+.writing-art{position:relative;height:var(--primitive-space-7);margin-bottom:var(--space-tight);}
+.writing-tags{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-tight) var(--space-related);}
+.writing-card .sh-primary{background:var(--color-accent-primary);}
+.writing-card .sh-secondary{background:var(--color-accent-secondary);}
+.writing-card .sh-ring{border-color:var(--shape-ring-color);}
+.writing-card .t-title{transition:color var(--motion-base) var(--motion-ease);}
+.writing-card:hover .t-title{color:var(--color-text-emphasis);}
+.writing-cta{display:inline-flex;align-items:center;gap:var(--space-hairline);margin-top:auto;padding-top:var(--space-tight);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-600);color:var(--link-color);}
+.writing-card:hover .writing-cta{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.writing-more{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-tight) var(--space-cluster);margin-top:var(--space-stack);}
+.writing-more a{display:inline-flex;align-items:center;gap:var(--space-hairline);color:var(--color-text-primary);font-weight:var(--primitive-weight-500);text-decoration:underline;text-decoration-thickness:var(--border-width-hairline);text-underline-offset:var(--link-underline-offset);transition:color var(--motion-fast) var(--motion-ease);}
+.writing-more a:hover{color:var(--color-text-emphasis);}
+@media (max-width: 1000px){.writing-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width: 760px){.writing-grid{grid-template-columns:minmax(0,1fr);}}
+/* favourite moments: one scrollable line */
+.home{--moment-card-width:clamp(248px,24vw,320px);--moment-gap:var(--space-cluster);--moment-inset:max(var(--space-gutter),calc((100% - 1280px) / 2 + var(--space-gutter)));--moment-progress-height:var(--space-hairline);--moment-photo-radius:var(--radius-card);}
+.section-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:var(--space-cluster) var(--space-group);}
+.moments-scope{timeline-scope:--moments;}
+.moment-track{display:flex;align-items:flex-start;gap:var(--moment-gap);margin:var(--space-group) 0 0;padding:var(--space-tight) var(--moment-inset);list-style:none;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--moment-inset);scrollbar-width:none;overscroll-behavior-x:contain;scroll-timeline:--moments x;}
+.moment-track::-webkit-scrollbar{display:none;}
+.moment-track:focus-visible{outline:var(--focus-width) solid var(--color-focus-ring);outline-offset:calc(var(--focus-width) * -1);}
+.moment{flex:0 0 var(--moment-card-width);scroll-snap-align:start;display:flex;flex-direction:column;gap:var(--space-related);margin:0;}
+.moment-photo{position:relative;margin:0 0 var(--space-tight);aspect-ratio:4 / 5;overflow:hidden;border-radius:var(--moment-photo-radius);background:var(--color-bg-subtle);border:var(--border-width-hairline) solid var(--color-border-subtle);}
+.moment-photo img{display:block;width:100%;height:100%;object-fit:cover;}
+.moment-photo.is-empty{display:flex;align-items:center;justify-content:center;}
+.moment-photo .shape{position:absolute;}
+.moment-photo .ph{position:relative;color:var(--color-text-secondary);}
+.moment p{margin:0;}
+.moment-link{display:inline-flex;align-items:center;gap:var(--space-hairline);align-self:flex-start;font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-600);color:var(--link-color);text-decoration:none;}
+.moment-link:hover{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.moment-link svg{width:16px;height:16px;}
+.moment-nav{display:flex;gap:var(--space-tight);}
+.moment-nav .icon-btn{cursor:pointer;}
+.moment-nav .icon-btn:hover{background:var(--button-primary-bg-hover);border-color:var(--button-primary-bg-hover);color:var(--button-primary-text-hover);}
+.moment-foot{display:flex;align-items:center;justify-content:space-between;gap:var(--space-cluster);margin-top:var(--space-stack);}
+.moment-hint{display:flex;align-items:center;gap:var(--space-element);flex:1 1 auto;min-width:0;}
+.moment-progress{position:relative;flex:0 1 calc(var(--primitive-space-8) * 2);min-width:var(--primitive-space-8);height:var(--moment-progress-height);border-radius:var(--radius-round);background:var(--color-border-subtle);overflow:hidden;visibility:hidden;}
+.moment-progress::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--color-accent-primary);transform-origin:left center;transform:scaleX(0.3);}
+.moment-hint-text{display:inline-flex;align-items:center;gap:var(--space-tight);color:var(--color-text-primary);white-space:nowrap;}
+.moment-hint-arrow{display:inline-flex;color:var(--color-accent-primary);}
+@supports (animation-timeline: scroll()){
+.moment-progress{visibility:visible;}
+.moment-progress::after{animation:moment-fill linear both;animation-timeline:--moments;}
+.moment-hint-text{animation:moment-hint-out linear both;animation-timeline:--moments;animation-range:0% 30%;}
+}
+@media (prefers-reduced-motion: no-preference){.moment-hint-arrow{animation:moment-nudge 1400ms ease-in-out infinite;}}
+@keyframes moment-fill{from{transform:scaleX(0.3);}to{transform:scaleX(1);}}
+@keyframes moment-hint-out{to{opacity:0;}}
+@keyframes moment-nudge{0%,100%{transform:translateX(0);}50%{transform:translateX(var(--space-tight));}}
+@media (max-width: 760px){.moment-nav{display:none;}.moment{flex-basis:72%;}.moment-foot{flex-direction:column;align-items:stretch;}}
+
+@keyframes rise-in{from{opacity:0;transform:translateY(var(--motion-rise));}to{opacity:1;transform:none;}}
+@supports (animation-timeline: view()){
+@media (prefers-reduced-motion: no-preference){
+.reveal{animation:rise-in linear both;animation-timeline:view();animation-range:entry 0% entry 40%;}
+}
+}
+@media (hover: none){
+.sh-primary{background:var(--color-accent-primary);}
+.sh-secondary{background:var(--color-accent-secondary);}
+.sh-ring{border-color:var(--shape-ring-color);}
+}
+@media (max-width: 860px){
+.nav-links{display:none !important;}
+.nav-divider{display:none !important;}
+.menu-btn{display:inline-flex;}
+}
+@media (max-width: 760px){
+.about-body{grid-template-columns:minmax(0,1fr);gap:var(--space-stack);}
+.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:dense;gap:var(--space-stack) var(--space-element);}
+.about-photos{order:-1;flex-direction:row;gap:var(--space-element);}
+.about-photos .about-photo{flex:1 1 0;min-width:0;}
+.fact{grid-template-columns:minmax(0,1fr);gap:var(--space-hairline);}
+.footer-grid{grid-template-columns:minmax(0,1fr);}
+.footer-end{align-items:flex-start;text-align:left;}
+}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+*{transition:none !important;}
+}
+
+/* ===== Background texture: fine grain ===== */
+.home{--grain-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23n)'/%3E%3C/svg%3E");--grain-size:200px;--grain-strength:0.10;--grain-blend:multiply;position:relative;}
+.home[data-theme="dark"]{--grain-strength:0.12;--grain-blend:screen;}
+.home::after{content:"";position:absolute;inset:0;z-index:30;pointer-events:none;background-image:var(--grain-image);background-size:var(--grain-size);opacity:var(--grain-strength);mix-blend-mode:var(--grain-blend);}
+
+/* ===== Mobile menu ===== */
+.home{--menu-link-size:clamp(32px,9vw,44px);--menu-link-leading:1.15;--menu-panel-bg:var(--color-bg-page);}
+.menu-btn .icon-close{display:none;}
+.home[data-menu="open"] .menu-btn .icon-open{display:none;}
+.home[data-menu="open"] .menu-btn .icon-close{display:block;}
+.menu-panel{display:none;}
+@media (max-width: 860px){
+.home[data-menu="open"] .menu-panel{display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-group);position:fixed;left:0;right:0;top:var(--header-height);bottom:0;z-index:25;padding:var(--space-stack) var(--space-gutter) var(--space-group);box-sizing:border-box;overflow-y:auto;background:var(--menu-panel-bg);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+}
+.menu-list{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;padding:0;list-style:none;}
+.menu-link{display:inline-flex;align-items:center;gap:var(--space-related);padding:var(--space-tight) 0;color:var(--color-text-primary);text-decoration:none;font-size:var(--menu-link-size);line-height:var(--menu-link-leading);font-weight:var(--primitive-weight-500);letter-spacing:-0.03em;transition:color var(--motion-fast) var(--motion-ease);}
+.menu-link:hover{color:var(--color-text-emphasis);}
+.menu-link{position:relative;}
+.menu-link .label-dot{position:absolute;left:calc(var(--space-related) * -1);width:var(--space-tight);height:var(--space-tight);visibility:hidden;}
+.menu-link[aria-current="page"]{color:var(--color-text-emphasis);}
+.menu-link[aria-current="page"] .label-dot{visibility:visible;}
+.menu-link.is-contact span:last-child{text-decoration:underline;text-decoration-thickness:var(--border-width-strong);text-underline-offset:8px;}
+.menu-foot{display:flex;flex-direction:column;gap:var(--space-related);padding-top:var(--space-cluster);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.menu-social{display:flex;flex-wrap:wrap;gap:var(--space-tight) var(--space-cluster);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-500);}
+
+/* ===== Ripple cursor ===== */
+/* primitive */
+.home{--primitive-duration-640:640ms;--primitive-opacity-70:0.7;}
+/* semantic */
+.home{--motion-ripple:var(--primitive-duration-640);--opacity-soft:var(--primitive-opacity-70);}
+/* component: the cursor is the ripple mark, five mint rings round a coral dot */
+.home{
+--cursor-size:var(--space-group);
+--cursor-dot-size:var(--space-hairline);
+--cursor-dot-color:var(--color-accent-primary);
+--cursor-ring-color:var(--color-accent-secondary);
+--cursor-ring-stroke:var(--border-width-strong);
+--cursor-active-color:var(--color-accent-stroke);
+--cursor-softness:var(--opacity-soft);
+--cursor-press-duration:var(--motion-ripple);
+--cursor-fade-duration:var(--motion-fast);
+}
+/* end ripple cursor */
+</style>
+</helmet>
+<div id="top" class="home" data-theme="{{theme}}" data-cursor="ripple" data-menu="{{menu}}" style="font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-bg-page); min-height: 100vh; transition: background-color 240ms ease-out, color 240ms ease-out">
+
+<header style="position: sticky; top: 0; z-index: 20; background: var(--header-bg); border-bottom: 1px solid var(--color-border-subtle)">
+<div class="container" style="height: var(--header-height); display: flex; align-items: center; justify-content: space-between; gap: var(--space-cluster)">
+<a href="Home.dc.html" aria-label="Aishat Muhammed, home" style="display: flex; align-items: center; text-decoration: none">
+<img class="logo-light" src="/_blob/b5d266cab6acb3304831769b7f8aa26b" alt="aishah" style="height: 32px; width: auto">
+<img class="logo-dark" src="/_blob/9bc4602900c58c540b9d16b88bd92bbc" alt="aishah" style="height: 32px; width: auto">
+</a>
+<div style="display: flex; align-items: center; justify-content: flex-end; gap: var(--space-stack)">
+<nav aria-label="Main" class="nav-links" style="display: flex; align-items: center; gap: var(--nav-gap); font-size: 16px; line-height: 26px; font-weight: 500">
+<a class="nav-link" href="About.dc.html" aria-current="page">About</a>
+<a class="nav-link" href="Work.dc.html">Work</a>
+<a class="nav-link" href="TalkShelf.dc.html">Talk shelf</a>
+<a class="nav-link" href="OpenTabs.dc.html">Open tabs</a>
+<a class="nav-link nav-contact" href="Contact.dc.html">Contact</a>
+</nav>
+<span class="nav-divider" aria-hidden="true" style="width: 1px; height: 20px; background: var(--color-border-subtle)"></span>
+<div style="display: flex; align-items: center; gap: var(--space-tight)">
+<button type="button" class="theme-toggle" aria-label="{{themeLabel}}" title="{{themeLabel}}" onClick="{{toggleTheme}}">
+<span class="tg-disc" aria-hidden="true"><svg class="wave" width="20" height="20" viewBox="0 0 20 20"><path d="M-1 -1 H21 V7.5 C17 5.5 14 10 10 8 C6 6 3 9.5 -1 7.5 Z" style="fill: var(--header-bg)"></path></svg></span>
+</button>
+<button type="button" class="icon-btn menu-btn" aria-label="{{menuLabel}}" aria-expanded="{{menuExpanded}}" aria-controls="mobile-menu" onClick="{{toggleMenu}}"><svg class="icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="7" y2="7"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="17" y2="17"></line></svg><svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+</div>
+</div>
+</div>
+
+<div class="menu-panel" id="mobile-menu"><nav aria-label="Menu"><ul class="menu-list"><li><a class="menu-link" href="About.dc.html" aria-current="page" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>About</span></a></li><li><a class="menu-link" href="Work.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Work</span></a></li><li><a class="menu-link" href="TalkShelf.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Talk shelf</span></a></li><li><a class="menu-link" href="OpenTabs.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Open tabs</span></a></li><li><a class="menu-link is-contact" href="Contact.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Contact</span></a></li></ul></nav><div class="menu-foot"><p class="t-label"><span class="label-dot" aria-hidden="true"></span>Find me</p><div class="menu-social"><a class="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">LinkedIn</a><a class="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a><a class="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack</a></div><a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: 500; text-underline-offset: 6px; align-self: flex-start">m.aishat9890@gmail.com</a></div></div>
+</header>
+
+<section aria-labelledby="about-title" style="padding-block: var(--space-section)">
+<div class="container">
+<header class="about-head reveal">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>About</p>
+<h1 id="about-title" class="t-display" style="max-width: 980px">I’m still <span class="hl">becoming</span>.</h1>
+<p class="t-body-l" style="max-width: 680px">I don’t believe you need to have everything figured out before you begin.</p>
+</header>
+<div id="story" class="about-body">
+<article class="about-text">
+<p class="t-label about-sub" style="margin-top: 0"><span class="label-dot" aria-hidden="true"></span>My story</p>
+<p class="t-body-l">My name is Aishah and it means <em>she who is living</em>. I like that it describes something in progress, not a finished state. It reminds me that life isn’t a destination you arrive at once you have all the answers. It’s something you keep discovering as you go.</p><blockquote class="belief"><p class="t-label" style="color: var(--color-text-primary)">That’s where my belief, clarity happens in motion, comes from.</p></blockquote><p class="t-body-l">Sometimes, you find clarity by taking the first step. Sometimes, it’s in asking a better question, trying something that doesn’t work, or realising that the path you imagined isn’t the one you want anymore. Progress isn’t always a straight line. Sometimes, you have to move in a different direction to understand where you were meant to go.</p><p class="t-body-l">I’ve always loved the feeling of something that once seemed unclear finally clicking into place. I love finding clarity for myself, but I also love helping other people find it.</p><p class="t-body-l">I believe understanding shouldn’t be reserved for a few people. Ideas become more meaningful when they’re shared, when people feel welcome enough to ask questions, and when there’s room for others to contribute.</p><p class="t-body-l">Perhaps that’s what draws me to content marketing, too. I get to explore ideas, make sense of them, and share them in ways that help other people understand. It’s another way to follow my curiosity while making room for someone else’s aha! moment.</p>
+<p class="t-body-l">Beyond any particular role or title, I want to keep becoming someone who stays curious, makes room for others, and leaves a little more clarity and possibility behind her.</p><p class="t-body-l">I’m not trying to become someone who has all the answers. I’d rather keep asking better questions, keep learning, and keep moving with intention.</p><p class="t-body-l">I’m still becoming. And that’s the point.</p>
+<div style="margin-top: var(--space-group)"><div class="section-next" style="margin-top: var(--space-group)">
+<a class="jump-link" href="#writing"><span class="t-label" style="color: var(--color-text-primary)">Selected writings</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span></a>
+</div></div>
+</article>
+<div class="about-photos">
+<figure class="about-photo"><img src="/_blob/85889cd92bc209e0eaf44a1ebac54b57" alt="Aishat Muhammed smiling at a tech event, wearing glasses, a teal hijab and a teal embroidered abaya"></figure>
+<figure class="about-photo"><img src="/_blob/df5170107f5513270030d1cb74992eb5" alt="Aishat Muhammed in a mustard outfit and white hijab, standing in front of planet sculptures at a festival" loading="lazy"></figure>
+</div>
+</div>
+</div>
+</section>
+
+<section id="writing" aria-labelledby="writing-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container">
+<div class="stack reveal" style="gap: var(--space-element); max-width: 760px">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Writing</p>
+<h2 id="writing-title" class="t-heading">Selected <span class="hl">writings</span></h2>
+<p class="t-body-l secondary">When a technical idea catches my attention, I research it until it makes sense, then write it down for the next person. Here are a few pieces on open source, Web3 and developer fundamentals.</p>
+</div>
+<ul class="writing-grid reveal">
+<li><a class="writing-card" href="https://dev.to/aysha/understanding-open-source-licenses-3144" target="_blank" rel="noopener">
+<div class="writing-art" aria-hidden="true"><span class="shape sh-ring" aria-hidden="true" style="left: 0; top: 0; width: 48px; height: 48px; border-width: 6px"></span><span class="shape round sh sh-secondary" aria-hidden="true" style="left: 56px; top: 8px; width: 32px; height: 32px"></span></div>
+<div class="writing-tags"><span class="tag">Explainer</span><span class="t-label">Open source</span></div>
+<h3 class="t-title">Understanding Open-Source Licenses</h3>
+<p class="t-caption secondary">DEV · 6 min read</p>
+<span class="writing-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
+</a></li>
+<li><a class="writing-card" href="https://medium.com/@this_aishah_/layer-2-solutions-explained-163d99d18189" target="_blank" rel="noopener">
+<div class="writing-art" aria-hidden="true"><span class="shape half-round sh sh-primary" aria-hidden="true" style="left: 0; bottom: 0; width: 80px; height: 40px"></span><span class="shape round sh sh-secondary" aria-hidden="true" style="left: 88px; top: 4px; width: 28px; height: 28px"></span></div>
+<div class="writing-tags"><span class="tag">Explainer</span><span class="t-label">Web3</span></div>
+<h3 class="t-title">Layer 2 Solutions Explained</h3>
+<p class="t-caption secondary">Medium</p>
+<span class="writing-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
+</a></li>
+<li><a class="writing-card" href="https://dev.to/aysha/breaking-down-defi-the-simplest-guide-to-understanding-decentralized-finance-3hpd" target="_blank" rel="noopener">
+<div class="writing-art" aria-hidden="true"><span class="shape half-round sh sh-secondary" aria-hidden="true" style="left: 0; bottom: 0; width: 80px; height: 40px"></span><span class="shape round sh sh-primary" aria-hidden="true" style="left: 88px; top: 4px; width: 28px; height: 28px"></span></div>
+<div class="writing-tags"><span class="tag">Beginner’s guide</span><span class="t-label">Web3</span></div>
+<h3 class="t-title">Breaking Down DeFi: The Simplest Guide to Understanding Decentralized Finance</h3>
+<p class="t-caption secondary">DEV · 5 min read</p>
+<span class="writing-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
+</a></li>
+<li><a class="writing-card" href="https://dev.to/aysha/a-beginner-friendly-guide-to-understanding-the-cli-and-its-fundamentals-2imk" target="_blank" rel="noopener">
+<div class="writing-art" aria-hidden="true"><span class="shape round sh sh-secondary" aria-hidden="true" style="left: 0; top: 8px; width: 36px; height: 36px"></span><span class="shape round sh sh-primary" aria-hidden="true" style="left: 44px; top: 14px; width: 72px; height: 24px"></span></div>
+<div class="writing-tags"><span class="tag">Beginner’s guide</span><span class="t-label">Developer tools</span></div>
+<h3 class="t-title">A Beginner-Friendly Guide to Understanding the CLI and its Fundamentals</h3>
+<p class="t-caption secondary">DEV · 5 min read</p>
+<span class="writing-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
+</a></li>
+<li><a class="writing-card" href="https://dev.to/aysha/javascript-before-framework-iterating-through-a-multidimensional-array-using-javascript-22gp" target="_blank" rel="noopener">
+<div class="writing-art" aria-hidden="true"><span class="shape round sh sh-primary" aria-hidden="true" style="left: 0; top: 8px; width: 36px; height: 36px"></span><span class="shape round sh sh-secondary" aria-hidden="true" style="left: 44px; top: 14px; width: 72px; height: 24px"></span></div>
+<div class="writing-tags"><span class="tag">Tutorial</span><span class="t-label">JavaScript</span></div>
+<h3 class="t-title">Iterating through a multidimensional array in JavaScript</h3>
+<p class="t-caption secondary">DEV · 4 min read</p>
+<span class="writing-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
+</a></li>
+<li><a class="writing-card" href="https://dev.to/aysha/a-simple-guide-to-identifying-your-open-source-contributions-on-github-goj" target="_blank" rel="noopener">
+<div class="writing-art" aria-hidden="true"><span class="shape round sh sh-primary" aria-hidden="true" style="left: 0; top: 0; width: 48px; height: 48px"></span><span class="shape sh-ring" aria-hidden="true" style="left: 56px; top: 8px; width: 36px; height: 36px; border-width: 4px"></span></div>
+<div class="writing-tags"><span class="tag">How-to</span><span class="t-label">Open source</span></div>
+<h3 class="t-title">Unlocking Your Open Source Impact: How to Easily Retrieve and Share Your GitHub Contribution Link</h3>
+<p class="t-caption secondary">DEV · 4 min read</p>
+<span class="writing-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
+</a></li>
+</ul>
+<div class="writing-more">
+<p class="t-label">More of my writing</p>
+<a href="https://dev.to/aysha" target="_blank" rel="noopener">DEV <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+<a href="https://medium.com/@this_aishah_" target="_blank" rel="noopener">Medium <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+<a href="https://ayeesh.hashnode.dev" target="_blank" rel="noopener">Hashnode <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+</div>
+<div class="section-next is-right" style="margin-top: var(--space-group)">
+<a class="jump-link" href="#moments"><span class="t-label" style="color: var(--color-text-primary)">Some favourite moments</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span></a>
+</div>
+</div>
+</section>
+
+<section id="moments" class="moments-scope" aria-labelledby="moments-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container reveal">
+<div class="section-head">
+<div class="stack" style="gap: var(--space-element)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Favourite moments</p>
+<h2 id="moments-title" class="t-heading">Some of my <span class="hl">favourite moments</span></h2>
+</div>
+<div class="moment-nav">
+<button type="button" class="icon-btn" aria-label="Previous moment" onClick="{{momentsPrev}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg></button>
+<button type="button" class="icon-btn" aria-label="Next moment" onClick="{{momentsNext}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+</div>
+</div>
+</div>
+<ul class="moment-track reveal" tabindex="0" aria-label="Favourite moments, scroll sideways for more">
+<li class="moment"><figure class="moment-photo"><img src="/_blob/d2257062c8701e9425444a36b4a38e6e" alt="Aishat speaking on stage at OSCAFEST, in front of a screen that reads Open Source" loading="lazy"></figure><p class="t-label">Speaking</p><p class="t-body">My first in-person talk, on the OSCAFEST stage.</p><a class="moment-link" href="https://festival.oscafrica.org/" target="_blank" rel="noopener">Visit OSCAFEST <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/f9bf826d01f250b366b2c8f64af9c83c" alt="A plate of beans with boiled eggs, sliced tomatoes, carrots, cucumber and cabbage" loading="lazy"></figure><p class="t-label">Cooking</p><p class="t-body">A balanced plate I put together myself.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/e7dcc06846bcee51caaa6131d1e83a6e" alt="Aishat smiling and holding up her painting of a sunset with birds" loading="lazy"></figure><p class="t-label">Art</p><p class="t-body">My first ever painting, signed and all.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/770567cef06592dcc072253d2953f97a" alt="Aishat hugging a fellow open source contributor at an event" loading="lazy"></figure><p class="t-label">Open source</p><p class="t-body">From virtual chats to a real-life hug.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/bd4ca54eccb2f18ac35677ba8c203e34" alt="Aishat in a red hijab and delegate badge, standing in front of a colourful mural" loading="lazy"></figure><p class="t-label">Events</p><p class="t-body">One of my favourite pictures from an event I attended.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/e094e52d064b0c0c2e757095c2f3e421" alt="Aishat speaking with a microphone at a Google Women Techmakers event" loading="lazy"></figure><p class="t-label">Speaking</p><p class="t-body">Talking open source at Google Women Techmakers.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/80ed6d502ef72d5a3904f9a9769f8a57" alt="Aishat in a blue abaya holding a cup of ice cream beside a pink planter" loading="lazy"></figure><p class="t-label">Life</p><p class="t-body">A sweet little ice cream date.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/81a9cb809fb82cb602d1246ab5829449" alt="Aishat smiling inside a Muslim Tech Expo photo frame that reads Empowering the Ummah through Innovation" loading="lazy"></figure><p class="t-label">Events</p><p class="t-body">Smiling through the frame at the Muslim Tech Expo.</p></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/4b5096df6f63d213e1e2820c7a38553f" alt="A screen listing CHAOSS course contributors, showing Aishat Muhammad for Popular Open Source Projects and Open Source Licensing" loading="lazy"></figure><p class="t-label">Open source</p><p class="t-body">My CHAOSS course on open source and licensing.</p></li>
+</ul>
+<div class="container">
+<div class="moment-foot">
+<div class="moment-hint" aria-hidden="true"><span class="moment-progress"></span><span class="t-label moment-hint-text">Swipe to see more<span class="moment-hint-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></span></div>
+<div class="section-next is-right" style="margin: 0"><a class="jump-link" href="Contact.dc.html"><span class="t-label" style="color: var(--color-text-primary)">Work with me</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg></span></a></div>
+</div>
+</div>
+</section>
+
+<footer id="contact" style="background: var(--footer-bg); color: var(--color-text-primary); border-top: 1px solid var(--color-border-subtle); padding-block: var(--space-group)">
+<div class="container footer-grid">
+<div class="stack" style="gap: var(--space-related)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Aishat Muhammed</p>
+<p class="t-body secondary">© 2026</p>
+</div>
+<div class="stack" style="gap: var(--space-related)">
+<p class="t-label" id="socials-label"><span class="label-dot" aria-hidden="true"></span>Find me</p>
+<nav aria-labelledby="socials-label" style="display: flex; flex-wrap: wrap; gap: var(--space-tight) var(--space-cluster); font-size: 16px; line-height: 26px; font-weight: 500">
+<a class="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">LinkedIn <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+<a class="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+<a class="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</nav>
+</div>
+<div id="contact-details" class="stack footer-end" style="gap: var(--space-related)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Contact</p>
+<a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: 500; text-underline-offset: 6px">m.aishat9890@gmail.com</a>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4300}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const s = this.state || {};
+    const KEY = 'aishah-theme';
+    if (!this._themeBound) {
+      this._themeBound = true;
+      /* ripple-cursor */
+      if (!window.__aishahRipple) {
+        window.__aishahRipple = true;
+        const startRipple = () => {
+          try {
+            const mq = (q) => !!(window.matchMedia && window.matchMedia(q).matches);
+            if (!mq('(hover: hover) and (pointer: fine)') || mq('(prefers-reduced-motion: reduce)')) return;
+            const doc = document, NS = 'http://www.w3.org/2000/svg';
+            const st = doc.createElement('style');
+            st.textContent = 'html.aishah-ripple .home[data-cursor="ripple"], html.aishah-ripple .home[data-cursor="ripple"] *{cursor:none !important;}';
+            doc.head.appendChild(st);
+            const layer = doc.createElement('div');
+            layer.setAttribute('aria-hidden', 'true');
+            layer.style.cssText = 'position:fixed;left:0;top:0;width:0;height:0;overflow:visible;pointer-events:none;z-index:2147483000;';
+            /* the ripple mark: ring radius, stroke and opacity as fractions of the outer ring, outermost rings trail the most */
+            const ART = [[36, 3, 1, 0.42], [66, 2.6, 0.8, 0.3], [98, 2.2, 0.6, 0.22], [132, 1.8, 0.42, 0.16], [168, 1.4, 0.26, 0.12]];
+            const rings = ART.map((a) => {
+              const wrap = doc.createElement('div');
+              wrap.style.cssText = 'position:fixed;left:0;top:0;pointer-events:none;opacity:0;will-change:transform;';
+              const svg = doc.createElementNS(NS, 'svg');
+              svg.style.cssText = 'display:block;overflow:visible;transform-origin:50% 50%;';
+              const c = doc.createElementNS(NS, 'circle');
+              c.setAttribute('fill', 'none');
+              svg.appendChild(c); wrap.appendChild(svg); layer.appendChild(wrap);
+              return { wrap: wrap, svg: svg, c: c, f: a[1] / 3, o: a[2], r: a[0] / 168, k: a[3], x: 0, y: 0 };
+            });
+            const dot = doc.createElement('div');
+            dot.style.cssText = 'position:fixed;left:0;top:0;border-radius:50%;pointer-events:none;opacity:0;';
+            layer.appendChild(dot);
+            doc.body.appendChild(layer);
+            doc.documentElement.classList.add('aishah-ripple');
+            let tok = null, home = null, x = 0, y = 0, shown = false, active = false, raf = 0;
+            const num = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
+            /* over a link or button the mark settles to its two inner rings, in ink, so the control stays readable */
+            const vis = () => { rings.forEach((g, i) => { g.wrap.style.opacity = shown && !(active && i > 1) ? g.on : '0'; }); dot.style.opacity = shown ? '1' : '0'; };
+            const paint = () => {
+              const col = active ? tok.on : tok.ring;
+              rings.forEach((g) => { g.c.style.stroke = col; });
+              dot.style.background = active ? tok.on : tok.dot;
+              vis();
+            };
+            const read = (h) => {
+              const cs = getComputedStyle(h); const g = (n) => cs.getPropertyValue(n).trim();
+              tok = { size: num(g('--cursor-size'), 48), dotSize: num(g('--cursor-dot-size'), 4), dot: g('--cursor-dot-color'), ring: g('--cursor-ring-color'), on: g('--cursor-active-color'),
+                stroke: num(g('--cursor-ring-stroke'), 1.5), soft: num(g('--cursor-softness'), 0.7), press: num(g('--cursor-press-duration'), 640), fade: num(g('--cursor-fade-duration'), 200), ease: g('--motion-ease') || 'ease-out' };
+              const D = tok.size, tr = 'opacity ' + tok.fade + 'ms ' + tok.ease;
+              rings.forEach((g) => {
+                g.svg.setAttribute('width', D); g.svg.setAttribute('height', D); g.svg.setAttribute('viewBox', '0 0 ' + D + ' ' + D);
+                g.c.setAttribute('cx', D / 2); g.c.setAttribute('cy', D / 2);
+                g.c.setAttribute('r', Math.max(0.5, (D / 2) * g.r - (tok.stroke * g.f) / 2));
+                g.c.setAttribute('stroke-width', (tok.stroke * g.f).toFixed(2));
+                g.c.style.transition = 'stroke ' + tok.fade + 'ms ' + tok.ease;
+                g.wrap.style.transition = tr;
+                g.on = String(g.o * tok.soft);
+              });
+              dot.style.width = dot.style.height = tok.dotSize + 'px';
+              dot.style.transition = tr + ', background-color ' + tok.fade + 'ms ' + tok.ease;
+              paint();
+            };
+            const place = () => {
+              const h = tok.size / 2, d = tok.dotSize / 2;
+              dot.style.transform = 'translate3d(' + (x - d) + 'px,' + (y - d) + 'px,0)';
+              rings.forEach((g) => { g.wrap.style.transform = 'translate3d(' + (g.x - h) + 'px,' + (g.y - h) + 'px,0)'; });
+            };
+            const tick = () => {
+              raf = 0; let moving = false;
+              rings.forEach((g) => { g.x += (x - g.x) * g.k; g.y += (y - g.y) * g.k; if (Math.abs(x - g.x) > 0.2 || Math.abs(y - g.y) > 0.2) moving = true; });
+              place();
+              if (moving) raf = requestAnimationFrame(tick);
+            };
+            const show = (v) => { if (v === shown) return; shown = v; vis(); };
+            const pulse = () => {
+              rings.forEach((g, i) => {
+                if (!g.svg.animate) return;
+                g.svg.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.28)' }, { transform: 'scale(1)' }],
+                  { duration: tok.press, delay: i * 36, easing: tok.ease });
+              });
+            };
+            const refresh = () => setTimeout(() => { if (home) read(home); }, 80);
+            const SEL = 'a,button,[role="button"],summary,label,select,input,textarea';
+            doc.addEventListener('pointermove', (e) => {
+              if (e.pointerType && e.pointerType !== 'mouse') return;
+              x = e.clientX; y = e.clientY;
+              const t = e.target && e.target.closest ? e.target : null;
+              const h = t ? t.closest('.home[data-cursor="ripple"]') : null;
+              if (h !== home) { home = h; if (h) read(h); }
+              if (!h) { show(false); return; }
+              const a = !!t.closest(SEL);
+              if (a !== active) { active = a; paint(); }
+              if (!shown) { rings.forEach((g) => { g.x = x; g.y = y; }); place(); show(true); }
+              if (!raf) raf = requestAnimationFrame(tick);
+            }, { passive: true });
+            doc.addEventListener('pointerdown', (e) => { if (shown && (!e.pointerType || e.pointerType === 'mouse')) pulse(); }, { passive: true });
+            doc.addEventListener('click', refresh, { passive: true });
+            doc.documentElement.addEventListener('mouseleave', () => show(false));
+            window.addEventListener('blur', () => show(false));
+            window.addEventListener('aishah-theme', refresh);
+            window.addEventListener('storage', refresh);
+          } catch (err) {}
+        };
+        if (document.body) startRipple(); else document.addEventListener('DOMContentLoaded', startRipple);
+      }
+      const sync = (val) => { if ((val === 'light' || val === 'dark') && (this.state || {}).theme !== val) this.setState({ theme: val }); };
+      try { window.addEventListener('storage', (e) => { if (e.key === KEY) sync(e.newValue); }); } catch (e) {}
+      try { window.addEventListener('aishah-theme', (e) => sync(e.detail)); } catch (e) {}
+    }
+    let stored = null;
+    try { stored = window.localStorage.getItem(KEY); } catch (e) {}
+    const theme = s.theme || ((stored === 'light' || stored === 'dark') ? stored : null) || this.props.theme || 'light';
+    const scrollMoments = (e, dir) => {
+      try {
+        const from = e && e.currentTarget && e.currentTarget.closest ? e.currentTarget.closest('section') : null;
+        const track = (from || document).querySelector('.moment-track');
+        if (!track) return;
+        const card = track.querySelector('.moment');
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        const step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+        const still = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+        track.scrollBy({ left: dir * step, behavior: still ? 'auto' : 'smooth' });
+      } catch (err) {}
+    };
+    return {
+      theme: theme,
+      momentsPrev: (e) => scrollMoments(e, -1),
+      momentsNext: (e) => scrollMoments(e, 1),
+      menu: s.menuOpen ? 'open' : 'closed',
+      menuExpanded: !!s.menuOpen,
+      menuLabel: s.menuOpen ? 'Close menu' : 'Open menu',
+      toggleMenu: () => this.setState({ menuOpen: !(this.state || {}).menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      themeLabel: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
+      toggleTheme: () => {
+        const nextTheme = theme === 'dark' ? 'light' : 'dark';
+        try { window.localStorage.setItem(KEY, nextTheme); } catch (e) {}
+        this.setState({ theme: nextTheme });
+        try { window.dispatchEvent(new CustomEvent('aishah-theme', { detail: nextTheme })); } catch (e) {}
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

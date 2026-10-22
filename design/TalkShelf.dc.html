@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Aishat Muhammed, talk shelf</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* ===== Tier 1: primitive tokens ===== */
+.home{
+--primitive-coral-400:#f38181;
+--primitive-coral-400-a55:rgba(243,129,129,0.55);
+--primitive-coral-700:#b2464a;
+--primitive-mint-300:#95e1d3;
+--primitive-butter-200:#fce38a;
+--primitive-cream-100:#eaffd0;
+--primitive-cream-100-a16:rgba(234,255,208,0.16);
+--primitive-cream-100-a24:rgba(234,255,208,0.24);
+--primitive-ink-900:#173a3a;
+--primitive-ink-900-a16:rgba(23,58,58,0.16);
+--primitive-ink-900-a20:rgba(23,58,58,0.20);
+--primitive-neutral-0:#ffffff;
+--primitive-neutral-25:#eff3f1;
+--primitive-neutral-50:#e3e9e6;
+--primitive-neutral-100:#f1f1f1;
+--primitive-neutral-400:#a6a6a6;
+--primitive-neutral-600:#5e5e5e;
+--primitive-neutral-900:#161616;
+--primitive-neutral-925:#2f3431;
+--primitive-neutral-950:#262a28;
+--primitive-neutral-900-a07:rgba(22,22,22,0.07);
+--primitive-neutral-100-a09:rgba(241,241,241,0.09);
+--primitive-space-1:4px;
+--primitive-space-2:8px;
+--primitive-space-3:12px;
+--primitive-space-4:16px;
+--primitive-space-5:24px;
+--primitive-space-6:32px;
+--primitive-space-7:48px;
+--primitive-space-8:96px;
+--primitive-radius-sm:6px;
+--primitive-radius-md:14px;
+--primitive-radius-full:999px;
+--primitive-stroke-1:1px;
+--primitive-stroke-1-5:1.5px;
+--primitive-stroke-2:2px;
+--primitive-font-sans:Figtree,"Segoe UI",system-ui,sans-serif;
+--primitive-font-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+--primitive-weight-500:500;
+--primitive-weight-600:600;
+--primitive-duration-200:200ms;
+--primitive-duration-240:240ms;
+--primitive-duration-280:280ms;
+--primitive-ease-out:ease-out;
+}
+/* ===== Tier 2: semantic tokens ===== */
+.home{
+--color-bg-page:var(--primitive-neutral-25);
+--color-bg-subtle:var(--primitive-neutral-50);
+--color-text-primary:var(--primitive-neutral-900);
+--color-text-secondary:var(--primitive-neutral-600);
+--color-text-emphasis:var(--primitive-coral-700);
+--color-text-on-accent:var(--primitive-ink-900);
+--color-border-subtle:var(--primitive-ink-900-a16);
+--color-border-strong:var(--primitive-ink-900);
+--color-border-accent:var(--primitive-coral-400-a55);
+--color-focus-ring:var(--primitive-coral-700);
+--color-accent-primary:var(--primitive-coral-400);
+--color-accent-secondary:var(--primitive-mint-300);
+--color-accent-highlight:var(--primitive-butter-200);
+--color-accent-stroke:var(--primitive-ink-900);
+--color-accent-muted:var(--primitive-neutral-900-a07);
+--color-accent-muted-stroke:var(--primitive-ink-900-a20);
+--color-action-primary:var(--primitive-neutral-900);
+--color-action-primary-hover:var(--primitive-coral-400);
+--color-on-action-primary:var(--primitive-neutral-0);
+--color-type-content:var(--primitive-coral-400);
+--color-type-community:var(--primitive-mint-300);
+--space-section:var(--primitive-space-8);
+--space-group:var(--primitive-space-7);
+--space-stack:var(--primitive-space-6);
+--space-inset:var(--primitive-space-6);
+--space-cluster:var(--primitive-space-5);
+--space-element:var(--primitive-space-4);
+--space-related:var(--primitive-space-3);
+--space-tight:var(--primitive-space-2);
+--space-hairline:var(--primitive-space-1);
+--space-gutter:clamp(var(--primitive-space-4),5.5vw,calc(var(--primitive-space-7) + var(--primitive-space-6)));
+--radius-control:var(--primitive-radius-sm);
+--radius-card:var(--primitive-radius-md);
+--radius-round:var(--primitive-radius-full);
+--border-width-hairline:var(--primitive-stroke-1);
+--border-width-strong:var(--primitive-stroke-1-5);
+--focus-width:var(--primitive-stroke-2);
+--font-sans:var(--primitive-font-sans);
+--font-mono:var(--primitive-font-mono);
+--type-display-size:clamp(36px,4.2vw,60px);
+--type-display-leading:1.08;
+--type-display-tracking:-0.035em;
+--type-heading-s-size:clamp(24px,2.4vw,32px);
+--type-heading-s-leading:1.22;
+--type-heading-s-tracking:-0.025em;
+--type-title-size:24px;
+--type-title-leading:30px;
+--type-title-tracking:-0.02em;
+--type-body-l-size:19px;
+--type-body-l-leading:30px;
+--type-body-size:16px;
+--type-body-leading:26px;
+--type-caption-size:13px;
+--type-caption-leading:18px;
+--type-label-size:12px;
+--type-label-leading:16px;
+--type-label-tracking:0.08em;
+--motion-fast:var(--primitive-duration-200);
+--motion-base:var(--primitive-duration-240);
+--motion-slow:var(--primitive-duration-280);
+--motion-ease:var(--primitive-ease-out);
+--motion-rise:8px;
+}
+.home[data-theme="dark"]{
+--color-bg-page:var(--primitive-neutral-950);
+--color-bg-subtle:var(--primitive-neutral-925);
+--color-text-primary:var(--primitive-neutral-100);
+--color-text-secondary:var(--primitive-neutral-400);
+--color-text-emphasis:var(--primitive-coral-400);
+--color-border-subtle:var(--primitive-cream-100-a16);
+--color-border-strong:var(--primitive-cream-100);
+--color-focus-ring:var(--primitive-coral-400);
+--color-accent-stroke:var(--primitive-cream-100);
+--color-accent-muted:var(--primitive-neutral-100-a09);
+--color-accent-muted-stroke:var(--primitive-cream-100-a24);
+--color-action-primary:var(--primitive-neutral-100);
+--color-on-action-primary:var(--primitive-neutral-950);
+}
+/* ===== Tier 3: component tokens ===== */
+.home{
+--header-height:calc(var(--primitive-space-7) + var(--primitive-space-5));
+--header-bg:var(--color-bg-page);
+--nav-gap:var(--space-stack);
+--nav-link-color:var(--color-text-primary);
+--nav-link-color-hover:var(--color-text-emphasis);
+--nav-link-color-current:var(--color-text-emphasis);
+--icon-button-size:44px;
+--icon-button-radius:var(--radius-control);
+--icon-button-border:var(--color-border-subtle);
+--icon-button-border-hover:var(--color-border-strong);
+--toggle-size:44px;
+--toggle-border:var(--color-border-accent);
+--toggle-border-hover:var(--color-accent-primary);
+--toggle-fill:var(--color-accent-primary);
+--label-dot:var(--color-accent-primary);
+--shape-ring-color:var(--color-accent-stroke);
+--card-bg:var(--color-bg-page);
+--card-border:var(--color-border-subtle);
+--card-border-hover:var(--color-border-strong);
+--card-radius:var(--radius-card);
+--card-padding:var(--space-inset);
+--tag-bg:var(--color-accent-secondary);
+--tag-text:var(--color-text-on-accent);
+--tag-radius:var(--radius-control);
+--tag-height:28px;
+--format-icon-size:32px;
+--year-col:calc(var(--primitive-space-8) * 2);
+--shelf-gutter:var(--space-related);
+--shelf-row-gap:var(--space-group);
+--shelf-line:var(--color-border-strong);
+--shelf-line-width:var(--focus-width);
+--book-radius:var(--radius-card) var(--radius-card) 0 0;
+--spotlight-dim:0.5;
+--topic-art-height:calc(var(--primitive-space-8) + var(--primitive-space-2));
+--sticky-top:calc(var(--header-height) + var(--space-cluster));
+--fact-key:calc(var(--primitive-space-8) + var(--primitive-space-6));
+--row-border:var(--color-border-subtle);
+--spine-from:var(--color-type-content);
+--spine-to:var(--color-type-community);
+--spine-gap:var(--space-tight);
+--spine-width:44px;
+--spine-width-wide:54px;
+--spine-radius:var(--radius-control);
+--spine-border-width:var(--border-width-strong);
+--spine-tint:24%;
+--spine-text-mix:42%;
+--spine-tilt:5deg;
+--year-gap:calc(var(--primitive-space-6) + var(--primitive-space-1));
+--board-height:var(--space-related);
+--board-bg:var(--color-bg-subtle);
+--board-line:var(--color-border-strong);
+--marker-size:var(--space-tight);
+--highlight-color:var(--color-accent-highlight);
+--link-color:var(--color-text-emphasis);
+--link-underline-offset:6px;
+--button-hover-bg:var(--color-action-primary-hover);
+--button-hover-text:var(--color-text-on-accent);
+--footer-bg:var(--color-bg-subtle);
+}
+
+/* ===== Base ===== */
+body{margin:0;background:#eff3f1;}
+body:has(.home[data-theme="dark"]){background:#262a28;}
+html{scroll-behavior:smooth;}
+a{color:var(--link-color);}
+a:hover{color:var(--color-text-primary);}
+section,footer,#contact-details{scroll-margin-top:calc(var(--header-height) + var(--space-element));}
+a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--color-focus-ring);outline-offset:var(--focus-width);}
+.container{max-width:1280px;margin:0 auto;padding-inline:var(--space-gutter);box-sizing:border-box;}
+.stack{display:flex;flex-direction:column;}
+
+/* ===== Type ===== */
+.t-display{margin:0;font-size:var(--type-display-size);line-height:var(--type-display-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-display-tracking);text-wrap:balance;}
+.t-heading-s{margin:0;font-size:var(--type-heading-s-size);line-height:var(--type-heading-s-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-heading-s-tracking);text-wrap:balance;}
+.t-title{margin:0;font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--primitive-weight-600);letter-spacing:var(--type-title-tracking);}
+.t-body-l{margin:0;font-size:var(--type-body-l-size);line-height:var(--type-body-l-leading);}
+.t-body{margin:0;font-size:var(--type-body-size);line-height:var(--type-body-leading);}
+.t-caption{margin:0;font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--primitive-weight-500);}
+.t-label{display:inline-flex;align-items:center;gap:var(--space-tight);margin:0;font-family:var(--font-mono);font-size:var(--type-label-size);line-height:var(--type-label-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-label-tracking);text-transform:uppercase;color:var(--color-text-secondary);}
+.t-figure-s{margin:0;font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-title-tracking);font-variant-numeric:tabular-nums;}
+.secondary{color:var(--color-text-secondary);}
+.label-dot{display:inline-block;width:6px;height:6px;border-radius:var(--radius-round);background:var(--label-dot);flex:none;}
+.hl{background-image:linear-gradient(180deg,transparent 60%,var(--highlight-color) 60%,var(--highlight-color) 94%,transparent 94%);color:inherit;padding:0 0.04em;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+.home[data-theme="dark"] .hl{background-image:linear-gradient(var(--highlight-color),var(--highlight-color));background-repeat:no-repeat;background-position:0 98%;background-size:100% 0.14em;}
+
+/* ===== Shared components ===== */
+.nav-link{color:var(--nav-link-color);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
+.nav-link:hover{color:var(--nav-link-color-hover);}
+.nav-link[aria-current="page"]{color:var(--nav-link-color-current);font-weight:var(--primitive-weight-600);}
+.nav-contact{text-decoration:underline;text-decoration-thickness:var(--border-width-hairline);text-underline-offset:var(--link-underline-offset);text-decoration-color:var(--color-border-strong);}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;width:var(--icon-button-size);height:var(--icon-button-size);border-radius:var(--icon-button-radius);border:var(--border-width-hairline) solid var(--icon-button-border);background:transparent;color:var(--color-text-primary);cursor:pointer;text-decoration:none;transition:border-color var(--motion-fast) var(--motion-ease),background-color var(--motion-base) var(--motion-ease),color var(--motion-base) var(--motion-ease);}
+.icon-btn:hover{border-color:var(--icon-button-border-hover);}
+.menu-btn{display:none;}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:var(--toggle-size);height:var(--toggle-size);padding:0;border-radius:var(--radius-round);border:var(--border-width-hairline) solid var(--toggle-border);background:transparent;cursor:pointer;transition:border-color var(--motion-fast) var(--motion-ease);}
+.theme-toggle:hover{border-color:var(--toggle-border-hover);}
+.tg-disc{position:relative;display:block;width:20px;height:20px;border-radius:var(--radius-round);background:var(--toggle-fill);overflow:hidden;}
+.wave{position:absolute;left:0;top:0;display:block;transition:transform 420ms var(--motion-ease);}
+.home[data-theme="dark"] .wave{transform:translateY(5px);}
+.logo-dark{display:none;}
+.home[data-theme="dark"] .logo-dark{display:block;}
+.home[data-theme="dark"] .logo-light{display:none;}
+.jump-link{display:inline-flex;align-items:center;gap:var(--space-related);color:var(--color-text-primary);text-decoration:none;}
+.jump-link:hover{color:var(--color-text-primary);}
+.jump-link:hover .icon-btn{background:var(--button-hover-bg);border-color:var(--button-hover-bg);color:var(--button-hover-text);}
+.section-next{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:var(--space-cluster) var(--space-stack);}
+.section-next.is-right{justify-content:flex-end;}
+.foot-link{display:inline-flex;align-items:center;gap:var(--space-hairline);color:var(--color-text-primary);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
+.foot-link:hover{color:var(--color-text-emphasis);}
+.email-link{color:var(--color-text-primary);text-decoration:underline;text-decoration-thickness:var(--border-width-strong);text-decoration-color:var(--color-border-subtle);overflow-wrap:anywhere;transition:color var(--motion-fast) var(--motion-ease),text-decoration-color var(--motion-fast) var(--motion-ease);}
+.email-link:hover{color:var(--color-text-emphasis);text-decoration-color:var(--color-text-emphasis);}
+.footer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-stack);align-items:start;}
+.footer-end{align-items:flex-end;text-align:right;}
+.shape{position:absolute;}
+.round{border-radius:var(--radius-round);}
+.half-round{border-radius:999px 999px 0 0;}
+.sh{background:var(--color-accent-muted);transition:background-color var(--motion-slow) var(--motion-ease);}
+.sh-ring{border-style:solid;border-color:var(--color-accent-muted-stroke);border-radius:var(--radius-round);box-sizing:border-box;transition:border-color var(--motion-slow) var(--motion-ease);}
+.attend:hover .sh-primary,.attend:focus-visible .sh-primary{background:var(--color-accent-primary);}
+.attend:hover .sh-secondary,.attend:focus-visible .sh-secondary{background:var(--color-accent-secondary);}
+.attend:hover .sh-ring,.attend:focus-visible .sh-ring{border-color:var(--shape-ring-color);}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-tight);min-height:var(--icon-button-size);padding:0 var(--space-cluster);border-radius:var(--radius-control);background:var(--color-action-primary);color:var(--color-on-action-primary);font:inherit;font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-600);text-decoration:none;border:0;cursor:pointer;transition:background-color var(--motion-base) var(--motion-ease),color var(--motion-base) var(--motion-ease);}
+.btn:hover{background:var(--button-hover-bg);color:var(--button-hover-text);}
+.btn-secondary{background:transparent;color:var(--color-text-primary);border:var(--border-width-hairline) solid var(--color-border-subtle);}
+.btn-secondary:hover{background:transparent;color:var(--color-text-primary);border-color:var(--color-border-strong);}
+.btn-sm{min-height:calc(var(--primitive-space-6) + var(--primitive-space-2));padding:0 var(--space-element);font-size:var(--type-caption-size);line-height:var(--type-caption-leading);}
+/* media kit */
+.kit{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--space-group);align-items:start;}
+.bio-card{display:flex;flex-direction:column;gap:var(--space-element);padding:var(--card-padding);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);background:var(--card-bg);}
+.bio-head{display:flex;align-items:center;justify-content:space-between;gap:var(--space-element);}
+.facts{margin:0;padding:0;list-style:none;border-top:var(--border-width-hairline) solid var(--row-border);}
+.fact{display:grid;grid-template-columns:var(--fact-key) minmax(0,1fr);gap:var(--space-element);padding:var(--space-related) 0;border-bottom:var(--border-width-hairline) solid var(--row-border);}
+.assets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-related);margin:0;padding:0;list-style:none;}
+.asset{display:flex;flex-direction:column;gap:var(--space-tight);}
+.asset-thumb{aspect-ratio:1;border-radius:var(--radius-card);overflow:hidden;background:var(--color-bg-subtle);border:var(--border-width-hairline) solid var(--card-border);display:flex;align-items:center;justify-content:center;padding:var(--space-element);box-sizing:border-box;}
+.asset-thumb img{max-width:100%;max-height:100%;object-fit:contain;display:block;}
+.asset-thumb.is-photo{padding:0;}
+.asset-thumb.is-photo img{width:100%;height:100%;object-fit:cover;max-width:none;max-height:none;}
+.asset-thumb.is-dark{background:var(--primitive-neutral-950);}
+.dl{display:inline-flex;align-items:center;gap:var(--space-hairline);font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--primitive-weight-600);color:var(--link-color);text-decoration:none;}
+.dl:hover{color:var(--color-text-primary);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+/* ===== Talk shelf components ===== */
+.tag{display:inline-flex;align-items:center;min-height:var(--tag-height);padding:0 var(--space-tight);border-radius:var(--tag-radius);background:var(--tag-bg);color:var(--tag-text);font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--primitive-weight-500);}
+.tags{display:flex;flex-wrap:wrap;gap:var(--space-tight);}
+.topic-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-cluster);margin:0;padding:0;list-style:none;}
+.topic{display:flex;flex-direction:column;gap:var(--space-related);height:100%;box-sizing:border-box;padding:var(--card-padding);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);background:var(--card-bg);transition:border-color var(--motion-base) var(--motion-ease);}
+.topic:hover{border-color:var(--card-border-hover);}
+.always-lit .sh-primary{background:var(--color-accent-primary);}
+.always-lit .sh-secondary{background:var(--color-accent-secondary);}
+.always-lit .sh-ring{border-color:var(--shape-ring-color);}
+.topic-art{position:relative;height:var(--topic-art-height);margin-bottom:var(--space-tight);}
+.year{display:grid;grid-template-columns:var(--year-col) minmax(0,1fr);gap:var(--space-stack);align-items:start;}
+.year + .year{margin-top:var(--space-section);}
+.year-head{position:sticky;top:var(--sticky-top);display:flex;flex-direction:column;gap:var(--space-hairline);}
+.shelf{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));row-gap:var(--shelf-row-gap);margin:0;padding:0;list-style:none;}
+.shelf > li{display:flex;padding:0 var(--shelf-gutter);border-bottom:var(--shelf-line-width) solid var(--shelf-line);}
+.talk{position:relative;display:flex;flex-direction:column;gap:var(--space-related);width:100%;box-sizing:border-box;padding:var(--space-cluster);border:var(--border-width-hairline) solid var(--card-border);border-bottom:0;border-radius:var(--book-radius);background:var(--card-bg);color:var(--color-text-primary);text-decoration:none;transition:border-color var(--motion-base) var(--motion-ease),opacity var(--motion-slow) var(--motion-ease),filter var(--motion-slow) var(--motion-ease);}
+.talk:hover{color:var(--color-text-primary);border-color:var(--card-border-hover);}
+.talk-format{display:flex;align-items:center;gap:var(--space-tight);min-height:var(--format-icon-size);}
+.format-icon{display:inline-flex;align-items:center;justify-content:center;width:var(--format-icon-size);height:var(--format-icon-size);border-radius:var(--radius-round);border:var(--border-width-hairline) solid var(--color-border-subtle);color:var(--color-text-primary);flex:none;}
+.talk-shapes{position:absolute;top:var(--space-element);right:var(--space-element);width:calc(var(--primitive-space-7) + var(--primitive-space-2));height:var(--primitive-space-6);}
+.talk-title{transition:color var(--motion-base) var(--motion-ease);}
+.talk:hover .talk-title,.talk:focus-visible .talk-title{color:var(--color-text-emphasis);}
+.talk-cta{display:inline-flex;align-items:center;gap:var(--space-hairline);margin-top:auto;padding-top:var(--space-tight);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-600);color:var(--link-color);}
+.talk:hover .talk-cta{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.talk-cta.is-missing{color:var(--color-text-secondary);font-weight:var(--primitive-weight-500);}
+@media (hover: hover){
+.shelf:has(.talk:hover) .talk:not(:hover){opacity:var(--spotlight-dim);filter:grayscale(1);}
+}
+.bookcase{overflow-x:auto;overflow-y:hidden;margin-inline:calc(var(--space-tight) * -1);padding:var(--space-element) var(--space-tight) var(--space-tight);scrollbar-width:thin;}
+.spines{display:grid;grid-auto-columns:max-content;grid-template-rows:auto var(--board-height) auto;column-gap:var(--spine-gap);align-items:end;min-width:max-content;}
+.spine-gap{grid-row:1;width:var(--year-gap);}
+.spine{--spine:color-mix(in oklch shorter hue, var(--spine-from), var(--spine-to) var(--mix));--spine-ink:color-mix(in oklch, var(--spine) var(--spine-text-mix), var(--color-text-primary));grid-row:1;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:space-between;width:var(--spine-width);padding:var(--space-element) 0;box-sizing:border-box;border:var(--spine-border-width) solid var(--spine);border-bottom:0;border-radius:var(--spine-radius) var(--spine-radius) 0 0;background:transparent;color:var(--spine-ink);font:inherit;cursor:pointer;transition:background-color var(--motion-base) var(--motion-ease),color var(--motion-base) var(--motion-ease);}
+.spine.is-wide{width:var(--spine-width-wide);background:color-mix(in srgb, var(--spine) var(--spine-tint), var(--color-bg-page));}
+.spine.is-tilted{transform:rotate(var(--spine-tilt));transform-origin:0 100%;}
+.spine-name{writing-mode:vertical-rl;font-family:var(--font-mono);font-size:var(--type-label-size);line-height:var(--type-label-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-label-tracking);text-transform:uppercase;white-space:nowrap;}
+.spine:hover,.spine[aria-pressed="true"]{background:var(--spine);color:var(--color-text-on-accent);}
+.spine:focus-visible{outline:var(--focus-width) solid var(--color-focus-ring);outline-offset:var(--focus-width);}
+.marker{display:block;width:var(--marker-size);height:var(--marker-size);border-radius:var(--radius-round);flex:none;}
+.marker-dot{background:currentColor;}
+.marker-ring{border:var(--border-width-strong) solid currentColor;box-sizing:border-box;}
+.marker-bars{display:block;flex:none;}
+.board{grid-row:2;height:var(--board-height);background:var(--board-bg);border-top:var(--focus-width) solid var(--board-line);}
+.year-mark{grid-row:3;padding-top:var(--space-related);white-space:nowrap;}
+.talk-panel{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:var(--space-group);align-items:start;padding-top:var(--space-stack);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.talk-detail{touch-action:pan-y;display:flex;flex-direction:column;gap:var(--space-related);min-height:calc(var(--primitive-space-8) * 2 + var(--primitive-space-7));}
+.detail-meta{display:flex;align-items:center;gap:var(--space-tight);}
+.detail-swatch{display:inline-block;width:var(--space-related);height:var(--space-related);border-radius:var(--radius-round);background:var(--detail-colour);flex:none;}
+.detail-nav{display:flex;align-items:center;gap:var(--space-tight);margin-top:var(--space-tight);}
+.legend{display:flex;flex-direction:column;gap:var(--space-related);margin:0;padding:0;list-style:none;}
+.legend li{display:flex;align-items:center;gap:var(--space-related);color:var(--color-text-primary);}
+.legend .marker,.legend .marker-bars{color:var(--color-text-primary);}
+.detail-link{text-decoration:none;}
+.detail-link:hover{color:var(--color-text-primary);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+@keyframes rise-in{from{opacity:0;transform:translateY(var(--motion-rise));}to{opacity:1;transform:none;}}
+@supports (animation-timeline: view()){
+@media (prefers-reduced-motion: no-preference){
+.reveal{animation:rise-in linear both;animation-timeline:view();animation-range:entry 0% entry 40%;}
+}
+}
+@media (hover: none){
+.sh-primary{background:var(--color-accent-primary);}
+.sh-secondary{background:var(--color-accent-secondary);}
+.sh-ring{border-color:var(--shape-ring-color);}
+}
+@media (max-width: 860px){
+.nav-links{display:none !important;}
+.nav-divider{display:none !important;}
+.menu-btn{display:inline-flex;}
+}
+@media (max-width: 1100px){
+.topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+.shelf{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width: 760px){
+.topic-grid{grid-template-columns:minmax(0,1fr);}
+.talk-panel{grid-template-columns:minmax(0,1fr);gap:var(--space-stack);}
+.kit{grid-template-columns:minmax(0,1fr);gap:var(--space-stack);}
+.fact{grid-template-columns:minmax(0,1fr);gap:var(--space-hairline);}
+.home{--spine-width:44px;--spine-width-wide:52px;}
+.year{grid-template-columns:minmax(0,1fr);gap:var(--space-cluster);}
+.year-head{position:static;flex-direction:row;align-items:baseline;gap:var(--space-related);}
+.shelf{grid-template-columns:minmax(0,1fr);}
+.shelf > li{padding:0;}
+.footer-grid{grid-template-columns:minmax(0,1fr);}
+.footer-end{align-items:flex-start;text-align:left;}
+}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+*{transition:none !important;}
+}
+
+/* ===== Background texture: fine grain ===== */
+.home{--grain-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23n)'/%3E%3C/svg%3E");--grain-size:200px;--grain-strength:0.10;--grain-blend:multiply;position:relative;}
+.home[data-theme="dark"]{--grain-strength:0.12;--grain-blend:screen;}
+.home::after{content:"";position:absolute;inset:0;z-index:30;pointer-events:none;background-image:var(--grain-image);background-size:var(--grain-size);opacity:var(--grain-strength);mix-blend-mode:var(--grain-blend);}
+
+/* ===== Mobile menu ===== */
+.home{--menu-link-size:clamp(32px,9vw,44px);--menu-link-leading:1.15;--menu-panel-bg:var(--color-bg-page);}
+.menu-btn .icon-close{display:none;}
+.home[data-menu="open"] .menu-btn .icon-open{display:none;}
+.home[data-menu="open"] .menu-btn .icon-close{display:block;}
+.menu-panel{display:none;}
+@media (max-width: 860px){
+.home[data-menu="open"] .menu-panel{display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-group);position:fixed;left:0;right:0;top:var(--header-height);bottom:0;z-index:25;padding:var(--space-stack) var(--space-gutter) var(--space-group);box-sizing:border-box;overflow-y:auto;background:var(--menu-panel-bg);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+}
+.menu-list{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;padding:0;list-style:none;}
+.menu-link{display:inline-flex;align-items:center;gap:var(--space-related);padding:var(--space-tight) 0;color:var(--color-text-primary);text-decoration:none;font-size:var(--menu-link-size);line-height:var(--menu-link-leading);font-weight:var(--primitive-weight-500);letter-spacing:-0.03em;transition:color var(--motion-fast) var(--motion-ease);}
+.menu-link:hover{color:var(--color-text-emphasis);}
+.menu-link{position:relative;}
+.menu-link .label-dot{position:absolute;left:calc(var(--space-related) * -1);width:var(--space-tight);height:var(--space-tight);visibility:hidden;}
+.menu-link[aria-current="page"]{color:var(--color-text-emphasis);}
+.menu-link[aria-current="page"] .label-dot{visibility:visible;}
+.menu-link.is-contact span:last-child{text-decoration:underline;text-decoration-thickness:var(--border-width-strong);text-underline-offset:8px;}
+.menu-foot{display:flex;flex-direction:column;gap:var(--space-related);padding-top:var(--space-cluster);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.menu-social{display:flex;flex-wrap:wrap;gap:var(--space-tight) var(--space-cluster);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-500);}
+
+/* ===== Ripple cursor ===== */
+/* primitive */
+.home{--primitive-duration-640:640ms;--primitive-opacity-70:0.7;}
+/* semantic */
+.home{--motion-ripple:var(--primitive-duration-640);--opacity-soft:var(--primitive-opacity-70);}
+/* component: the cursor is the ripple mark, five mint rings round a coral dot */
+.home{
+--cursor-size:var(--space-group);
+--cursor-dot-size:var(--space-hairline);
+--cursor-dot-color:var(--color-accent-primary);
+--cursor-ring-color:var(--color-accent-secondary);
+--cursor-ring-stroke:var(--border-width-strong);
+--cursor-active-color:var(--color-accent-stroke);
+--cursor-softness:var(--opacity-soft);
+--cursor-press-duration:var(--motion-ripple);
+--cursor-fade-duration:var(--motion-fast);
+}
+/* end ripple cursor */
+</style>
+</helmet>
+<div id="top" class="home" data-theme="{{theme}}" data-cursor="ripple" data-menu="{{menu}}" style="font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-bg-page); min-height: 100vh; transition: background-color 240ms ease-out, color 240ms ease-out">
+
+<header style="position: sticky; top: 0; z-index: 20; background: var(--header-bg); border-bottom: 1px solid var(--color-border-subtle)">
+<div class="container" style="height: var(--header-height); display: flex; align-items: center; justify-content: space-between; gap: var(--space-cluster)">
+<a href="Home.dc.html" aria-label="Aishat Muhammed, home" style="display: flex; align-items: center; text-decoration: none">
+<img class="logo-light" src="/_blob/b5d266cab6acb3304831769b7f8aa26b" alt="aishah" style="height: 32px; width: auto">
+<img class="logo-dark" src="/_blob/9bc4602900c58c540b9d16b88bd92bbc" alt="aishah" style="height: 32px; width: auto">
+</a>
+<div style="display: flex; align-items: center; justify-content: flex-end; gap: var(--space-stack)">
+<nav aria-label="Main" class="nav-links" style="display: flex; align-items: center; gap: var(--nav-gap); font-size: 16px; line-height: 26px; font-weight: 500">
+<a class="nav-link" href="About.dc.html">About</a>
+<a class="nav-link" href="Work.dc.html">Work</a>
+<a class="nav-link" href="TalkShelf.dc.html" aria-current="page">Talk shelf</a>
+<a class="nav-link" href="OpenTabs.dc.html">Open tabs</a>
+<a class="nav-link nav-contact" href="Contact.dc.html">Contact</a>
+</nav>
+<span class="nav-divider" aria-hidden="true" style="width: 1px; height: 20px; background: var(--color-border-subtle)"></span>
+<div style="display: flex; align-items: center; gap: var(--space-tight)">
+<button type="button" class="theme-toggle" aria-label="{{themeLabel}}" title="{{themeLabel}}" onClick="{{toggleTheme}}">
+<span class="tg-disc" aria-hidden="true"><svg class="wave" width="20" height="20" viewBox="0 0 20 20"><path d="M-1 -1 H21 V7.5 C17 5.5 14 10 10 8 C6 6 3 9.5 -1 7.5 Z" style="fill: var(--header-bg)"></path></svg></span>
+</button>
+<button type="button" class="icon-btn menu-btn" aria-label="{{menuLabel}}" aria-expanded="{{menuExpanded}}" aria-controls="mobile-menu" onClick="{{toggleMenu}}"><svg class="icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="7" y2="7"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="17" y2="17"></line></svg><svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+</div>
+</div>
+</div>
+
+<div class="menu-panel" id="mobile-menu"><nav aria-label="Menu"><ul class="menu-list"><li><a class="menu-link" href="About.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>About</span></a></li><li><a class="menu-link" href="Work.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Work</span></a></li><li><a class="menu-link" href="TalkShelf.dc.html" aria-current="page" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Talk shelf</span></a></li><li><a class="menu-link" href="OpenTabs.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Open tabs</span></a></li><li><a class="menu-link is-contact" href="Contact.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Contact</span></a></li></ul></nav><div class="menu-foot"><p class="t-label"><span class="label-dot" aria-hidden="true"></span>Find me</p><div class="menu-social"><a class="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">LinkedIn</a><a class="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a><a class="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack</a></div><a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: 500; text-underline-offset: 6px; align-self: flex-start">m.aishat9890@gmail.com</a></div></div>
+</header>
+
+<section aria-labelledby="talk-title" style="padding-block: var(--space-section) var(--space-group)">
+<div class="container stack reveal" style="gap: var(--space-cluster)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Talk shelf</p>
+<h1 id="talk-title" class="t-display" style="max-width: 980px">Some ideas are <span class="hl">better when shared</span>.</h1>
+<div class="stack" style="max-width: 680px; gap: var(--space-element)">
+<p class="t-body-l">I’ve always enjoyed helping people find clarity and making knowledge easier to access, especially for those finding their way into something new.</p>
+<p class="t-body-l">Speaking became another way to do that through my community management work, from conversations about breaking into tech to discussions about community building, open source, and Web3.</p>
+<p class="t-body-l">Since 2023, I’ve spoken at 17 events through a mix of in-person gatherings, online sessions, and X Spaces. Here’s where I’ve gathered some of those conversations.</p>
+</div>
+<a class="jump-link" href="#shelf" style="align-self: flex-start; margin-top: var(--space-element)">
+<span class="t-label" style="color: var(--color-text-primary)">Browse the shelf</span>
+<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span>
+</a>
+</div>
+</section>
+
+<section id="shelf" aria-labelledby="shelf-title" style="padding-block: var(--space-group) var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container stack" style="gap: var(--space-stack)">
+<div class="stack reveal" style="gap: var(--space-element); max-width: 760px">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>The shelf</p>
+<h2 id="shelf-title" class="t-heading-s">17 talks since 2023, and counting</h2>
+</div>
+<div class="bookcase" role="group" aria-label="Talks, oldest to newest">
+<div class="spines">
+<button type="button" class="spine is-wide" style="grid-column: 1; height: 200px; --mix: 0%" aria-pressed="{{s0}}" aria-label="Consensys, 2023, In person" onClick="{{p0}}" onMouseEnter="{{p0}}" onFocus="{{p0}}"><span class="spine-name" aria-hidden="true">Consensys</span><span class="marker marker-dot" aria-hidden="true"></span></button>
+<button type="button" class="spine is-wide" style="grid-column: 2; height: 217px; --mix: 6%" aria-pressed="{{s1}}" aria-label="Oscafest Africa, 2023, In person" onClick="{{p1}}" onMouseEnter="{{p1}}" onFocus="{{p1}}"><span class="spine-name" aria-hidden="true">Oscafest Africa</span><span class="marker marker-dot" aria-hidden="true"></span></button>
+<span class="spine-gap" style="grid-column: 3" aria-hidden="true"></span>
+<button type="button" class="spine" style="grid-column: 4; height: 200px; --mix: 12%" aria-pressed="{{s2}}" aria-label="Hack 51, 2024, Virtual" onClick="{{p2}}" onMouseEnter="{{p2}}" onFocus="{{p2}}"><span class="spine-name" aria-hidden="true">Hack 51</span><span class="marker marker-ring" aria-hidden="true"></span></button>
+<button type="button" class="spine" style="grid-column: 5; height: 294px; --mix: 19%" aria-pressed="{{s3}}" aria-label="She Code Africa (Abeokuta), 2024, X Space" onClick="{{p3}}" onMouseEnter="{{p3}}" onFocus="{{p3}}"><span class="spine-name" aria-hidden="true">She Code Africa Abeokuta</span><svg class="marker-bars" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M2 4.5v3"></path><path d="M6 2v8"></path><path d="M10 4.5v3"></path></svg></button>
+<button type="button" class="spine" style="grid-column: 6; height: 200px; --mix: 25%" aria-pressed="{{s4}}" aria-label="NucleusDAO, 2024, X Space" onClick="{{p4}}" onMouseEnter="{{p4}}" onFocus="{{p4}}"><span class="spine-name" aria-hidden="true">NucleusDAO</span><svg class="marker-bars" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M2 4.5v3"></path><path d="M6 2v8"></path><path d="M10 4.5v3"></path></svg></button>
+<button type="button" class="spine" style="grid-column: 7; height: 355px; --mix: 31%" aria-pressed="{{s5}}" aria-label="LinkedIn event with GlobalDebby, 2024, LinkedIn event" onClick="{{p5}}" onMouseEnter="{{p5}}" onFocus="{{p5}}"><span class="spine-name" aria-hidden="true">LinkedIn event with GlobalDebby</span><span class="marker marker-ring" aria-hidden="true"></span></button>
+<button type="button" class="spine is-wide" style="grid-column: 8; height: 303px; --mix: 38%" aria-pressed="{{s6}}" aria-label="Muslim Youthpreneur Forum, 2024, In person" onClick="{{p6}}" onMouseEnter="{{p6}}" onFocus="{{p6}}"><span class="spine-name" aria-hidden="true">Muslim Youthpreneur Forum</span><span class="marker marker-dot" aria-hidden="true"></span></button>
+<button type="button" class="spine" style="grid-column: 9; height: 226px; --mix: 44%" aria-pressed="{{s7}}" aria-label="Ethereum Nigeria, 2024, X Space" onClick="{{p7}}" onMouseEnter="{{p7}}" onFocus="{{p7}}"><span class="spine-name" aria-hidden="true">Ethereum Nigeria</span><svg class="marker-bars" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M2 4.5v3"></path><path d="M6 2v8"></path><path d="M10 4.5v3"></path></svg></button>
+<button type="button" class="spine is-wide" style="grid-column: 10; height: 286px; --mix: 50%" aria-pressed="{{s8}}" aria-label="Google Women Techmakers, 2024, In person" onClick="{{p8}}" onMouseEnter="{{p8}}" onFocus="{{p8}}"><span class="spine-name" aria-hidden="true">Google Women Techmakers</span><span class="marker marker-dot" aria-hidden="true"></span></button>
+<button type="button" class="spine" style="grid-column: 11; height: 200px; --mix: 56%" aria-pressed="{{s9}}" aria-label="Lisk Africa, 2024, X Space" onClick="{{p9}}" onMouseEnter="{{p9}}" onFocus="{{p9}}"><span class="spine-name" aria-hidden="true">Lisk Africa</span><svg class="marker-bars" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M2 4.5v3"></path><path d="M6 2v8"></path><path d="M10 4.5v3"></path></svg></button>
+<button type="button" class="spine is-wide" style="grid-column: 12; height: 200px; --mix: 62%" aria-pressed="{{s10}}" aria-label="Paint &amp; Chill, 2024, In person" onClick="{{p10}}" onMouseEnter="{{p10}}" onFocus="{{p10}}"><span class="spine-name" aria-hidden="true">Paint &amp; Chill</span><span class="marker marker-dot" aria-hidden="true"></span></button>
+<span class="spine-gap" style="grid-column: 13" aria-hidden="true"></span>
+<button type="button" class="spine is-wide" style="grid-column: 14; height: 269px; --mix: 69%" aria-pressed="{{s11}}" aria-label="Code Africa Conference City Tour (Nigeria), 2025, In person" onClick="{{p11}}" onMouseEnter="{{p11}}" onFocus="{{p11}}"><span class="spine-name" aria-hidden="true">Code Africa City Tour</span><span class="marker marker-dot" aria-hidden="true"></span></button>
+<button type="button" class="spine" style="grid-column: 15; height: 200px; --mix: 75%" aria-pressed="{{s12}}" aria-label="CMX Uyo, 2025, Virtual" onClick="{{p12}}" onMouseEnter="{{p12}}" onFocus="{{p12}}"><span class="spine-name" aria-hidden="true">CMX Uyo</span><span class="marker marker-ring" aria-hidden="true"></span></button>
+<button type="button" class="spine" style="grid-column: 16; height: 200px; --mix: 81%" aria-pressed="{{s13}}" aria-label="CMX Enugu, 2025, Virtual" onClick="{{p13}}" onMouseEnter="{{p13}}" onFocus="{{p13}}"><span class="spine-name" aria-hidden="true">CMX Enugu</span><span class="marker marker-ring" aria-hidden="true"></span></button>
+<button type="button" class="spine" style="grid-column: 17; height: 200px; --mix: 88%" aria-pressed="{{s14}}" aria-label="Stecs, 2025, Virtual" onClick="{{p14}}" onMouseEnter="{{p14}}" onFocus="{{p14}}"><span class="spine-name" aria-hidden="true">Stecs</span><span class="marker marker-ring" aria-hidden="true"></span></button>
+<span class="spine-gap" style="grid-column: 18" aria-hidden="true"></span>
+<button type="button" class="spine" style="grid-column: 19; height: 200px; --mix: 94%" aria-pressed="{{s15}}" aria-label="Muslimah Tech Alliance, 2026, [Format]" onClick="{{p15}}" onMouseEnter="{{p15}}" onFocus="{{p15}}"><span class="spine-name" aria-hidden="true">Muslimah Tech</span><span class="marker marker-ring" aria-hidden="true"></span></button>
+<button type="button" class="spine is-wide is-tilted" style="grid-column: 20; height: 208px; --mix: 100%" aria-pressed="{{s16}}" aria-label="Chess in Slums Africa, 2026, In person" onClick="{{p16}}" onMouseEnter="{{p16}}" onFocus="{{p16}}"><span class="spine-name" aria-hidden="true">Chess in Slums</span><span class="marker marker-dot" aria-hidden="true"></span></button>
+<span class="board" style="grid-column: 1 / span 20" aria-hidden="true"></span>
+<span class="t-label year-mark" style="grid-column: 1 / span 3">2023</span>
+<span class="t-label year-mark" style="grid-column: 4 / span 3">2024</span>
+<span class="t-label year-mark" style="grid-column: 14 / span 3">2025</span>
+<span class="t-label year-mark" style="grid-column: 19 / span 3">2026</span>
+</div>
+</div>
+<div class="talk-panel">
+<div class="talk-detail" aria-live="polite" onPointerDown="{{down}}" onPointerUp="{{up}}" onPointerCancel="{{cancel}}">
+<p class="detail-meta t-label" style="--detail-colour: {{dColour}}"><span class="detail-swatch" aria-hidden="true"></span>{{dMeta}}</p>
+<h3 class="t-heading-s">{{dTitle}}</h3>
+<p class="t-body-l secondary" style="max-width: 640px">{{dLine}}</p>
+<div class="tags"><span class="tag">{{dTag1}}</span><sc-if value="{{hasTag2}}" hint-placeholder-val="{{ true }}"><span class="tag">{{dTag2}}</span></sc-if></div>
+<div class="detail-nav">
+<sc-if value="{{hasUrl}}" hint-placeholder-val="{{ true }}"><a class="talk-cta detail-link" href="{{dUrl}}" target="_blank" rel="noopener" style="margin-top: 0; padding-top: 0">See event <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></sc-if>
+<sc-if value="{{noUrl}}" hint-placeholder-val="{{ false }}"><span class="t-body secondary">[Link to the event]</span></sc-if>
+</div>
+</div>
+<div class="stack" style="gap: var(--space-cluster)">
+<ul class="legend" aria-label="Key">
+<li><span class="marker marker-dot" aria-hidden="true"></span><span class="t-label" style="color: inherit">In person</span></li>
+<li><span class="marker marker-ring" aria-hidden="true"></span><span class="t-label" style="color: inherit">Online</span></li>
+<li><svg class="marker-bars" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M2 4.5v3"></path><path d="M6 2v8"></path><path d="M10 4.5v3"></path></svg><span class="t-label" style="color: inherit">X Space</span></li>
+</ul>
+<p class="t-body secondary">Hover or tap a spine to see the year, the room and what I spoke about.</p>
+<div class="detail-nav">
+<button type="button" class="icon-btn" aria-label="Previous talk" onClick="{{prev}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+<button type="button" class="icon-btn" aria-label="Next talk" onClick="{{next}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
+<span class="t-caption secondary">{{dPos}}</span>
+</div>
+</div>
+</div>
+<div class="section-next is-right" style="margin-top: var(--space-stack)">
+<a class="jump-link" href="#topics">
+<span class="t-label" style="color: var(--color-text-primary)">What I talk about</span>
+<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span>
+</a>
+</div>
+</div>
+</section>
+
+<section id="topics" class="always-lit" aria-labelledby="topics-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container stack" style="gap: var(--space-group)">
+<div class="stack reveal" style="gap: var(--space-element); max-width: 760px">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Topics</p>
+<h2 id="topics-title" class="t-heading-s">What I’m always happy to talk about</h2>
+</div>
+<ul class="topic-grid reveal">
+<li><div class="topic attend">
+<div class="topic-art" aria-hidden="true"><div class="shape round sh sh-secondary" style="left: 0; top: 16px; width: 56px; height: 56px"></div><div class="shape round sh sh-secondary" style="left: 44px; top: 48px; width: 40px; height: 40px"></div><div class="shape round sh sh-secondary" style="left: 88px; top: 8px; width: 32px; height: 32px"></div><div class="shape sh-ring" style="right: 0; top: 24px; width: 56px; height: 56px; border-width: 7px"></div></div>
+<h3 class="t-title">Community building</h3>
+<p class="t-body secondary">Getting started in community management, and keeping members active and engaged.</p>
+</div></li>
+<li><div class="topic attend">
+<div class="topic-art" aria-hidden="true"><div class="shape sh-ring" style="left: 0; top: 8px; width: 72px; height: 72px; border-width: 9px"></div><div class="shape round sh sh-primary" style="left: 88px; top: 32px; width: 40px; height: 40px"></div><div class="shape half-round sh sh-secondary" style="right: 0; bottom: 0; width: 96px; height: 48px"></div></div>
+<h3 class="t-title">Open source</h3>
+<p class="t-body secondary">Making open source approachable, so beginners and women can contribute with confidence.</p>
+</div></li>
+<li><div class="topic attend">
+<div class="topic-art" aria-hidden="true"><div class="shape round sh sh-primary" style="left: 0; top: 8px; width: 80px; height: 80px"></div><div class="shape round sh sh-secondary" style="left: 96px; top: 56px; width: 96px; height: 24px"></div><div class="shape sh-ring" style="right: 0; top: 8px; width: 40px; height: 40px; border-width: 5px"></div></div>
+<h3 class="t-title">Web3 education</h3>
+<p class="t-body secondary">Explaining Web3 in simple terms, and helping newcomers find their way in.</p>
+</div></li>
+<li><div class="topic attend">
+<div class="topic-art" aria-hidden="true"><div class="shape half-round sh sh-primary" style="left: 0; bottom: 0; width: 96px; height: 48px"></div><div class="shape round sh sh-secondary" style="left: 112px; top: 24px; width: 32px; height: 32px"></div><div class="shape round sh sh-primary" style="right: 0; top: 0; width: 64px; height: 24px"></div></div>
+<h3 class="t-title">Career growth for beginners</h3>
+<p class="t-body secondary">Practical steps for breaking into tech, with or without a computer science degree.</p>
+</div></li>
+</ul>
+<div class="section-next">
+<a class="jump-link" href="#media-kit">
+<span class="t-label" style="color: var(--color-text-primary)">Get the media kit</span>
+<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span>
+</a>
+</div>
+</div>
+</section>
+
+<section id="media-kit" aria-labelledby="kit-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container stack" style="gap: var(--space-group)">
+<div class="stack reveal" style="gap: var(--space-element); max-width: 760px">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Media kit</p>
+<h2 id="kit-title" class="t-heading-s">Everything you need to introduce me</h2>
+<p class="t-body-l secondary">Planning an event, panel, workshop, or podcast? Here’s the information and imagery you need to introduce me to your audience.</p>
+</div>
+<div class="kit reveal">
+<div class="stack" style="gap: var(--space-cluster)">
+<div class="bio-card">
+<div class="bio-head"><p class="t-label">Short bio</p><button type="button" class="btn btn-secondary btn-sm" onClick="{{copyShort}}" aria-live="polite"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>{{shortLabel}}</button></div>
+<p class="t-body-l">Aishat Muhammed is a content marketer and community manager who helps brands make complex ideas easier to understand through audience-focused content, research, and storytelling. She has spoken at several events since 2023 on community building, open source, Web3 education, and career growth for beginners.</p>
+</div>
+<div class="bio-card">
+<div class="bio-head"><p class="t-label">Long bio</p><button type="button" class="btn btn-secondary btn-sm" onClick="{{copyLong}}" aria-live="polite"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>{{longLabel}}</button></div>
+<p class="t-body-l">Aishat Muhammed is a content marketer and community manager whose work sits at the intersection of storytelling, technology, and audience understanding. With a background in software development and community management, she brings a people-first perspective to communicating complex ideas and creating opportunities for participation. Her experience spans content marketing, developer education, and community programmes across Web3, institutional tokenization, and open source. Since 2023, she has spoken at several events, sharing practical knowledge about community building, open source, Web3 education, and navigating early careers in tech.</p>
+</div>
+</div>
+<div class="stack" style="gap: var(--space-stack)">
+<div><p class="t-label" style="margin-bottom: var(--space-related)">Fast facts</p><ul class="facts"><li class="fact"><span class="t-label">Based in</span><span class="t-body">[City, country]</span></li><li class="fact"><span class="t-label">Pronouns</span><span class="t-body">[She/her]</span></li><li class="fact"><span class="t-label">Speaks on</span><span class="t-body">Community building, open source, Web3 education, and career growth for beginners</span></li><li class="fact"><span class="t-label">Formats</span><span class="t-body">Keynotes, panels, workshops, online talks and X Spaces</span></li><li class="fact"><span class="t-label">Talks</span><span class="t-body">17 since 2023</span></li><li class="fact"><span class="t-label">Bookings</span><span class="t-body">m.aishat9890@gmail.com</span></li></ul></div>
+<div><p class="t-label" style="margin-bottom: var(--space-related)">Photo and logos</p><ul class="assets"><li class="asset"><div class="asset-thumb is-photo"><img src="/_blob/6ab3399dc8f5a360d9d694b5b55aae52" alt=""></div><a class="dl" href="/_blob/6ab3399dc8f5a360d9d694b5b55aae52" download="aishat-muhammed-headshot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>Headshot<span class="visually-hidden"> (download)</span></a></li><li class="asset"><div class="asset-thumb "><img src="/_blob/b5d266cab6acb3304831769b7f8aa26b" alt=""></div><a class="dl" href="/_blob/b5d266cab6acb3304831769b7f8aa26b" download="aishah-logo-light"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>Logo, light<span class="visually-hidden"> (download)</span></a></li><li class="asset"><div class="asset-thumb is-dark"><img src="/_blob/9bc4602900c58c540b9d16b88bd92bbc" alt=""></div><a class="dl" href="/_blob/9bc4602900c58c540b9d16b88bd92bbc" download="aishah-logo-dark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>Logo, dark<span class="visually-hidden"> (download)</span></a></li></ul><p class="t-body secondary" style="margin: var(--space-element) 0 0">Download my headshot and available brand assets for event pages, speaker announcements, and promotional materials.</p></div>
+</div>
+</div>
+<div class="section-next is-right">
+<a class="jump-link" href="Contact.dc.html">
+<span class="t-label" style="color: var(--color-text-primary)">Invite me to speak</span>
+<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span>
+</a>
+</div>
+</div>
+</section>
+
+<footer id="contact" style="background: var(--footer-bg); color: var(--color-text-primary); border-top: 1px solid var(--color-border-subtle); padding-block: var(--space-group)">
+<div class="container footer-grid">
+<div class="stack" style="gap: var(--space-related)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Aishat Muhammed</p>
+<p class="t-body secondary">© 2026</p>
+</div>
+<div class="stack" style="gap: var(--space-related)">
+<p class="t-label" id="socials-label"><span class="label-dot" aria-hidden="true"></span>Find me</p>
+<nav aria-labelledby="socials-label" style="display: flex; flex-wrap: wrap; gap: var(--space-tight) var(--space-cluster); font-size: 16px; line-height: 26px; font-weight: 500">
+<a class="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">LinkedIn <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+<a class="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+<a class="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</nav>
+</div>
+<div id="contact-details" class="stack footer-end" style="gap: var(--space-related)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Contact</p>
+<a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: 500; text-underline-offset: 6px">m.aishat9890@gmail.com</a>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4000}}'>
+class Component extends DCLogic {
+  copyText(text, which) {
+    try { if (navigator.clipboard) navigator.clipboard.writeText(text).catch(function () {}); } catch (e) {}
+    this.setState({ copied: which });
+  }
+  renderVals() {
+    const TALKS = [{"y": "2023", "name": "Consensys", "fmt": "In person", "line": "A panel on how community shapes the future of Web3 development and opportunities in Africa.", "tags": ["Community building", "Web3 education"], "url": "https://www.linkedin.com/posts/aishat-muhammed_web3journey-community-collaboration-ugcPost-7094236087673397249-8mmP", "mix": 0}, {"y": "2023", "name": "Oscafest Africa", "fmt": "In person", "line": "My first public talk: the challenges of my first open-source contribution, and how beginners can start.", "tags": ["Open source"], "url": "https://www.linkedin.com/feed/update/urn:li:activity:7076480899957035008/", "mix": 6}, {"y": "2024", "name": "Hack 51", "fmt": "Virtual", "line": "Practical steps for starting, and staying consistent, in tech without a computer science degree.", "tags": ["Career growth"], "url": "https://www.linkedin.com/posts/hack51africa_hack51africa-techcareers-nodegreenoproblem-activity-7244962658376970241-5WpI", "mix": 12}, {"y": "2024", "name": "She Code Africa (Abeokuta)", "fmt": "X Space", "line": "How to use tech events and communities for personal and professional growth.", "tags": ["Career growth", "Community building"], "url": "https://x.com/this_aishah_/status/1825459271603048953", "mix": 19}, {"y": "2024", "name": "NucleusDAO", "fmt": "X Space", "line": "I introduced newcomers to Web3 concepts in simple, easy-to-digest terms.", "tags": ["Web3 education"], "url": "https://www.linkedin.com/posts/aishat-muhammed_earlier-this-week-i-had-an-exciting-and-activity-7207328877071761408-ph-w/", "mix": 25}, {"y": "2024", "name": "LinkedIn event with GlobalDebby", "fmt": "LinkedIn event", "line": "Practical steps for navigating Web3 as a newbie, from the foundations to finding your career path.", "tags": ["Web3 education", "Career growth"], "url": "https://www.linkedin.com/posts/toyin-afolabi-_web3-linkedin-innovation-ugcPost-7270294349119172608-BOD3", "mix": 31}, {"y": "2024", "name": "Muslim Youthpreneur Forum", "fmt": "In person", "line": "A panel with the Muslim Youth Support Foundation on blockchain technology and how AI is changing job roles in Web3.", "tags": ["Web3 education", "Career growth"], "url": "https://www.linkedin.com/posts/aishat-muhammed_publicspeaking-web3-blockchain-ugcPost-7261700685363113984-PePh/", "mix": 38}, {"y": "2024", "name": "Ethereum Nigeria", "fmt": "X Space", "line": "How to break into Web3, from my own experience.", "tags": ["Web3 education"], "url": null, "mix": 44}, {"y": "2024", "name": "Google Women Techmakers", "fmt": "In person", "line": "Why open source matters, and how women can confidently contribute to it.", "tags": ["Open source"], "url": "https://x.com/WTMAjah/status/1778407298479591576", "mix": 50}, {"y": "2024", "name": "Lisk Africa", "fmt": "X Space", "line": "How Web3 has grown more inclusive, and how Web3ladies is helping more women thrive in it.", "tags": ["Web3 education"], "url": "https://x.com/officialpope_h/status/1869453230520066242", "mix": 56}, {"y": "2024", "name": "Paint & Chill", "fmt": "In person", "line": "[One line on what you spoke about]", "tags": ["[Topic]"], "url": "https://www.instagram.com/reel/DEPV15yomel/", "mix": 62}, {"y": "2025", "name": "Code Africa Conference City Tour (Nigeria)", "fmt": "In person", "line": "I shared One Dev’s vision to help African builders upskill in emerging technologies like blockchain and AI.", "tags": ["Web3 education"], "url": "https://x.com/this_aishah_/status/1921856166339940569", "mix": 69}, {"y": "2025", "name": "CMX Uyo", "fmt": "Virtual", "line": "How to get started in community management: finding your why, the types of communities, and the core skills you need.", "tags": ["Community building"], "url": null, "mix": 75}, {"y": "2025", "name": "CMX Enugu", "fmt": "Virtual", "line": "Practical ways to keep a community active and engaged, and to handle low participation and burnout.", "tags": ["Community building"], "url": null, "mix": 81}, {"y": "2025", "name": "Stecs", "fmt": "Virtual", "line": "[One line on what you spoke about]", "tags": ["[Topic]"], "url": null, "mix": 88}, {"y": "2026", "name": "Muslimah Tech Alliance", "fmt": "[Format]", "line": "[One line on what you spoke about]", "tags": ["[Topic]"], "url": null, "mix": 94}, {"y": "2026", "name": "Chess in Slums Africa", "fmt": "In person", "line": "Public speaking and presentation skills for the young people in the scholarship and child development programme.", "tags": ["Career growth"], "url": "https://www.linkedin.com/posts/aishat-muhammed_chess-in-slum-speaking-session-ugcPost-7490025332129914880-SIrf/", "mix": 100}];
+    const s = this.state || {};
+    const KEY = 'aishah-theme';
+    if (!this._themeBound) {
+      this._themeBound = true;
+      /* ripple-cursor */
+      if (!window.__aishahRipple) {
+        window.__aishahRipple = true;
+        const startRipple = () => {
+          try {
+            const mq = (q) => !!(window.matchMedia && window.matchMedia(q).matches);
+            if (!mq('(hover: hover) and (pointer: fine)') || mq('(prefers-reduced-motion: reduce)')) return;
+            const doc = document, NS = 'http://www.w3.org/2000/svg';
+            const st = doc.createElement('style');
+            st.textContent = 'html.aishah-ripple .home[data-cursor="ripple"], html.aishah-ripple .home[data-cursor="ripple"] *{cursor:none !important;}';
+            doc.head.appendChild(st);
+            const layer = doc.createElement('div');
+            layer.setAttribute('aria-hidden', 'true');
+            layer.style.cssText = 'position:fixed;left:0;top:0;width:0;height:0;overflow:visible;pointer-events:none;z-index:2147483000;';
+            /* the ripple mark: ring radius, stroke and opacity as fractions of the outer ring, outermost rings trail the most */
+            const ART = [[36, 3, 1, 0.42], [66, 2.6, 0.8, 0.3], [98, 2.2, 0.6, 0.22], [132, 1.8, 0.42, 0.16], [168, 1.4, 0.26, 0.12]];
+            const rings = ART.map((a) => {
+              const wrap = doc.createElement('div');
+              wrap.style.cssText = 'position:fixed;left:0;top:0;pointer-events:none;opacity:0;will-change:transform;';
+              const svg = doc.createElementNS(NS, 'svg');
+              svg.style.cssText = 'display:block;overflow:visible;transform-origin:50% 50%;';
+              const c = doc.createElementNS(NS, 'circle');
+              c.setAttribute('fill', 'none');
+              svg.appendChild(c); wrap.appendChild(svg); layer.appendChild(wrap);
+              return { wrap: wrap, svg: svg, c: c, f: a[1] / 3, o: a[2], r: a[0] / 168, k: a[3], x: 0, y: 0 };
+            });
+            const dot = doc.createElement('div');
+            dot.style.cssText = 'position:fixed;left:0;top:0;border-radius:50%;pointer-events:none;opacity:0;';
+            layer.appendChild(dot);
+            doc.body.appendChild(layer);
+            doc.documentElement.classList.add('aishah-ripple');
+            let tok = null, home = null, x = 0, y = 0, shown = false, active = false, raf = 0;
+            const num = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
+            /* over a link or button the mark settles to its two inner rings, in ink, so the control stays readable */
+            const vis = () => { rings.forEach((g, i) => { g.wrap.style.opacity = shown && !(active && i > 1) ? g.on : '0'; }); dot.style.opacity = shown ? '1' : '0'; };
+            const paint = () => {
+              const col = active ? tok.on : tok.ring;
+              rings.forEach((g) => { g.c.style.stroke = col; });
+              dot.style.background = active ? tok.on : tok.dot;
+              vis();
+            };
+            const read = (h) => {
+              const cs = getComputedStyle(h); const g = (n) => cs.getPropertyValue(n).trim();
+              tok = { size: num(g('--cursor-size'), 48), dotSize: num(g('--cursor-dot-size'), 4), dot: g('--cursor-dot-color'), ring: g('--cursor-ring-color'), on: g('--cursor-active-color'),
+                stroke: num(g('--cursor-ring-stroke'), 1.5), soft: num(g('--cursor-softness'), 0.7), press: num(g('--cursor-press-duration'), 640), fade: num(g('--cursor-fade-duration'), 200), ease: g('--motion-ease') || 'ease-out' };
+              const D = tok.size, tr = 'opacity ' + tok.fade + 'ms ' + tok.ease;
+              rings.forEach((g) => {
+                g.svg.setAttribute('width', D); g.svg.setAttribute('height', D); g.svg.setAttribute('viewBox', '0 0 ' + D + ' ' + D);
+                g.c.setAttribute('cx', D / 2); g.c.setAttribute('cy', D / 2);
+                g.c.setAttribute('r', Math.max(0.5, (D / 2) * g.r - (tok.stroke * g.f) / 2));
+                g.c.setAttribute('stroke-width', (tok.stroke * g.f).toFixed(2));
+                g.c.style.transition = 'stroke ' + tok.fade + 'ms ' + tok.ease;
+                g.wrap.style.transition = tr;
+                g.on = String(g.o * tok.soft);
+              });
+              dot.style.width = dot.style.height = tok.dotSize + 'px';
+              dot.style.transition = tr + ', background-color ' + tok.fade + 'ms ' + tok.ease;
+              paint();
+            };
+            const place = () => {
+              const h = tok.size / 2, d = tok.dotSize / 2;
+              dot.style.transform = 'translate3d(' + (x - d) + 'px,' + (y - d) + 'px,0)';
+              rings.forEach((g) => { g.wrap.style.transform = 'translate3d(' + (g.x - h) + 'px,' + (g.y - h) + 'px,0)'; });
+            };
+            const tick = () => {
+              raf = 0; let moving = false;
+              rings.forEach((g) => { g.x += (x - g.x) * g.k; g.y += (y - g.y) * g.k; if (Math.abs(x - g.x) > 0.2 || Math.abs(y - g.y) > 0.2) moving = true; });
+              place();
+              if (moving) raf = requestAnimationFrame(tick);
+            };
+            const show = (v) => { if (v === shown) return; shown = v; vis(); };
+            const pulse = () => {
+              rings.forEach((g, i) => {
+                if (!g.svg.animate) return;
+                g.svg.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.28)' }, { transform: 'scale(1)' }],
+                  { duration: tok.press, delay: i * 36, easing: tok.ease });
+              });
+            };
+            const refresh = () => setTimeout(() => { if (home) read(home); }, 80);
+            const SEL = 'a,button,[role="button"],summary,label,select,input,textarea';
+            doc.addEventListener('pointermove', (e) => {
+              if (e.pointerType && e.pointerType !== 'mouse') return;
+              x = e.clientX; y = e.clientY;
+              const t = e.target && e.target.closest ? e.target : null;
+              const h = t ? t.closest('.home[data-cursor="ripple"]') : null;
+              if (h !== home) { home = h; if (h) read(h); }
+              if (!h) { show(false); return; }
+              const a = !!t.closest(SEL);
+              if (a !== active) { active = a; paint(); }
+              if (!shown) { rings.forEach((g) => { g.x = x; g.y = y; }); place(); show(true); }
+              if (!raf) raf = requestAnimationFrame(tick);
+            }, { passive: true });
+            doc.addEventListener('pointerdown', (e) => { if (shown && (!e.pointerType || e.pointerType === 'mouse')) pulse(); }, { passive: true });
+            doc.addEventListener('click', refresh, { passive: true });
+            doc.documentElement.addEventListener('mouseleave', () => show(false));
+            window.addEventListener('blur', () => show(false));
+            window.addEventListener('aishah-theme', refresh);
+            window.addEventListener('storage', refresh);
+          } catch (err) {}
+        };
+        if (document.body) startRipple(); else document.addEventListener('DOMContentLoaded', startRipple);
+      }
+      const sync = (val) => { if ((val === 'light' || val === 'dark') && (this.state || {}).theme !== val) this.setState({ theme: val }); };
+      try { window.addEventListener('storage', (e) => { if (e.key === KEY) sync(e.newValue); }); } catch (e) {}
+      try { window.addEventListener('aishah-theme', (e) => sync(e.detail)); } catch (e) {}
+      /* when the shelf is wider than the screen, open it on the newest talks */
+      const toNewest = (tries) => {
+        try {
+          const bc = document.querySelector('.bookcase');
+          if (!bc) { if (tries > 0) setTimeout(() => toNewest(tries - 1), 150); return; }
+          if (bc.scrollWidth > bc.clientWidth + 1) bc.scrollLeft = bc.scrollWidth;
+        } catch (e) {}
+      };
+      setTimeout(() => toNewest(20), 0);
+    }
+    let stored = null;
+    try { stored = window.localStorage.getItem(KEY); } catch (e) {}
+    const theme = s.theme || ((stored === 'light' || stored === 'dark') ? stored : null) || this.props.theme || 'light';
+    const n = TALKS.length;
+    const i = (s.sel === undefined) ? 16 : s.sel;
+    const t = TALKS[i];
+    const v = {
+      theme: theme,
+      menu: s.menuOpen ? 'open' : 'closed',
+      menuExpanded: !!s.menuOpen,
+      menuLabel: s.menuOpen ? 'Close menu' : 'Open menu',
+      toggleMenu: () => this.setState({ menuOpen: !(this.state || {}).menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      themeLabel: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
+      copyShort: () => this.copyText("Aishat Muhammed is a content marketer and community manager who helps brands make complex ideas easier to understand through audience-focused content, research, and storytelling. She has spoken at several events since 2023 on community building, open source, Web3 education, and career growth for beginners.", 'short'),
+      copyLong: () => this.copyText("Aishat Muhammed is a content marketer and community manager whose work sits at the intersection of storytelling, technology, and audience understanding. With a background in software development and community management, she brings a people-first perspective to communicating complex ideas and creating opportunities for participation. Her experience spans content marketing, developer education, and community programmes across Web3, institutional tokenization, and open source. Since 2023, she has spoken at several events, sharing practical knowledge about community building, open source, Web3 education, and navigating early careers in tech.", 'long'),
+      shortLabel: s.copied === 'short' ? 'Copied' : 'Copy',
+      longLabel: s.copied === 'long' ? 'Copied' : 'Copy',
+      toggleTheme: () => {
+        const nextTheme = theme === 'dark' ? 'light' : 'dark';
+        try { window.localStorage.setItem(KEY, nextTheme); } catch (e) {}
+        this.setState({ theme: nextTheme });
+        try { window.dispatchEvent(new CustomEvent('aishah-theme', { detail: nextTheme })); } catch (e) {}
+      },
+      dMeta: t.y + ' · ' + t.fmt,
+      dColour: 'color-mix(in oklch shorter hue, var(--spine-from), var(--spine-to) ' + t.mix + '%)',
+      dTitle: t.name,
+      dLine: t.line,
+      dTag1: t.tags[0],
+      dTag2: t.tags[1] || '',
+      hasTag2: t.tags.length > 1,
+      dUrl: t.url || '#',
+      hasUrl: !!t.url,
+      noUrl: !t.url,
+      dPos: (i + 1) + ' of ' + n,
+      prev: () => this.setState({ sel: (i - 1 + n) % n }),
+      next: () => this.setState({ sel: (i + 1) % n }),
+      down: (e) => { this._x = (e.pointerType === 'touch') ? e.clientX : null; },
+      cancel: () => { this._x = null; },
+      up: (e) => {
+        if (this._x == null) return;
+        const dx = e.clientX - this._x; this._x = null;
+        if (dx < -40) this.setState({ sel: (i + 1) % n });
+        else if (dx > 40) this.setState({ sel: (i - 1 + n) % n });
+      }
+    };
+    for (let k = 0; k < n; k++) {
+      v['s' + k] = k === i;
+      v['p' + k] = () => { if ((this.state || {}).sel !== k) this.setState({ sel: k }); };
+    }
+    return v;
+  }
+}
+</script>
+</body>
+</html>

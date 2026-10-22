@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import "@fontsource/ibm-plex-sans/400.css";
-import "@fontsource/ibm-plex-sans/500.css";
-import "@fontsource/ibm-plex-sans/600.css";
-import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource-variable/figtree";
 import "@fontsource/ibm-plex-mono/500.css";
-import "./globals.css";
-import { site } from "@/content/site";
+
+const description =
+  "Aishat Muhammed is a content marketer and community manager who helps brands make complex ideas easier to understand through audience-focused content, research, and storytelling.";
 
 export const metadata: Metadata = {
-  title: site.seo.title,
-  description: site.seo.description,
+  title: {
+    default: "Aishat Muhammed · Content marketer",
+    template: "%s · Aishat Muhammed",
+  },
+  description,
   openGraph: {
-    title: site.seo.title,
-    description: site.seo.description,
+    title: "Aishat Muhammed · Content marketer",
+    description,
     type: "website",
   },
 };

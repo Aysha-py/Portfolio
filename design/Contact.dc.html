@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Aishat Muhammed, contact</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* ===== Tier 1: primitive tokens ===== */
+.home{
+--primitive-coral-400:#f38181;
+--primitive-coral-400-a55:rgba(243,129,129,0.55);
+--primitive-coral-700:#b2464a;
+--primitive-mint-300:#95e1d3;
+--primitive-butter-200:#fce38a;
+--primitive-cream-100:#eaffd0;
+--primitive-cream-100-a16:rgba(234,255,208,0.16);
+--primitive-cream-100-a24:rgba(234,255,208,0.24);
+--primitive-ink-900:#173a3a;
+--primitive-ink-900-a16:rgba(23,58,58,0.16);
+--primitive-ink-900-a20:rgba(23,58,58,0.20);
+--primitive-neutral-0:#ffffff;
+--primitive-neutral-25:#eff3f1;
+--primitive-neutral-50:#e3e9e6;
+--primitive-neutral-100:#f1f1f1;
+--primitive-neutral-400:#a6a6a6;
+--primitive-neutral-600:#5e5e5e;
+--primitive-neutral-900:#161616;
+--primitive-neutral-925:#2f3431;
+--primitive-neutral-950:#262a28;
+--primitive-neutral-900-a07:rgba(22,22,22,0.07);
+--primitive-neutral-100-a09:rgba(241,241,241,0.09);
+--primitive-space-1:4px;
+--primitive-space-2:8px;
+--primitive-space-3:12px;
+--primitive-space-4:16px;
+--primitive-space-5:24px;
+--primitive-space-6:32px;
+--primitive-space-7:48px;
+--primitive-space-8:96px;
+--primitive-radius-sm:6px;
+--primitive-radius-md:14px;
+--primitive-radius-full:999px;
+--primitive-stroke-1:1px;
+--primitive-stroke-1-5:1.5px;
+--primitive-stroke-2:2px;
+--primitive-font-sans:Figtree,"Segoe UI",system-ui,sans-serif;
+--primitive-font-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+--primitive-weight-500:500;
+--primitive-weight-600:600;
+--primitive-duration-200:200ms;
+--primitive-duration-240:240ms;
+--primitive-duration-280:280ms;
+--primitive-ease-out:ease-out;
+}
+/* ===== Tier 2: semantic tokens ===== */
+.home{
+--color-bg-page:var(--primitive-neutral-25);
+--color-bg-subtle:var(--primitive-neutral-50);
+--color-text-primary:var(--primitive-neutral-900);
+--color-text-secondary:var(--primitive-neutral-600);
+--color-text-emphasis:var(--primitive-coral-700);
+--color-text-on-accent:var(--primitive-ink-900);
+--color-border-subtle:var(--primitive-ink-900-a16);
+--color-border-strong:var(--primitive-ink-900);
+--color-border-accent:var(--primitive-coral-400-a55);
+--color-focus-ring:var(--primitive-coral-700);
+--color-accent-primary:var(--primitive-coral-400);
+--color-accent-secondary:var(--primitive-mint-300);
+--color-accent-highlight:var(--primitive-butter-200);
+--color-accent-stroke:var(--primitive-ink-900);
+--color-accent-muted:var(--primitive-neutral-900-a07);
+--color-accent-muted-stroke:var(--primitive-ink-900-a20);
+--color-action-primary:var(--primitive-neutral-900);
+--color-action-primary-hover:var(--primitive-coral-400);
+--color-on-action-primary:var(--primitive-neutral-0);
+--color-type-content:var(--primitive-coral-400);
+--color-type-community:var(--primitive-mint-300);
+--space-section:var(--primitive-space-8);
+--space-group:var(--primitive-space-7);
+--space-stack:var(--primitive-space-6);
+--space-inset:var(--primitive-space-6);
+--space-cluster:var(--primitive-space-5);
+--space-element:var(--primitive-space-4);
+--space-related:var(--primitive-space-3);
+--space-tight:var(--primitive-space-2);
+--space-hairline:var(--primitive-space-1);
+--space-gutter:clamp(var(--primitive-space-4),5.5vw,calc(var(--primitive-space-7) + var(--primitive-space-6)));
+--radius-control:var(--primitive-radius-sm);
+--radius-card:var(--primitive-radius-md);
+--radius-round:var(--primitive-radius-full);
+--border-width-hairline:var(--primitive-stroke-1);
+--border-width-strong:var(--primitive-stroke-1-5);
+--focus-width:var(--primitive-stroke-2);
+--font-sans:var(--primitive-font-sans);
+--font-mono:var(--primitive-font-mono);
+--type-display-size:clamp(36px,4.2vw,60px);
+--type-display-leading:1.08;
+--type-display-tracking:-0.035em;
+--type-heading-s-size:clamp(24px,2.4vw,32px);
+--type-heading-s-leading:1.22;
+--type-heading-s-tracking:-0.025em;
+--type-title-size:24px;
+--type-title-leading:30px;
+--type-title-tracking:-0.02em;
+--type-body-l-size:19px;
+--type-body-l-leading:30px;
+--type-body-size:16px;
+--type-body-leading:26px;
+--type-caption-size:13px;
+--type-caption-leading:18px;
+--type-label-size:12px;
+--type-label-leading:16px;
+--type-label-tracking:0.08em;
+--motion-fast:var(--primitive-duration-200);
+--motion-base:var(--primitive-duration-240);
+--motion-slow:var(--primitive-duration-280);
+--motion-ease:var(--primitive-ease-out);
+--motion-rise:8px;
+}
+.home[data-theme="dark"]{
+--color-bg-page:var(--primitive-neutral-950);
+--color-bg-subtle:var(--primitive-neutral-925);
+--color-text-primary:var(--primitive-neutral-100);
+--color-text-secondary:var(--primitive-neutral-400);
+--color-text-emphasis:var(--primitive-coral-400);
+--color-border-subtle:var(--primitive-cream-100-a16);
+--color-border-strong:var(--primitive-cream-100);
+--color-focus-ring:var(--primitive-coral-400);
+--color-accent-stroke:var(--primitive-cream-100);
+--color-accent-muted:var(--primitive-neutral-100-a09);
+--color-accent-muted-stroke:var(--primitive-cream-100-a24);
+--color-action-primary:var(--primitive-neutral-100);
+--color-on-action-primary:var(--primitive-neutral-950);
+}
+/* ===== Tier 3: component tokens ===== */
+.home{
+--header-height:calc(var(--primitive-space-7) + var(--primitive-space-5));
+--header-bg:var(--color-bg-page);
+--nav-gap:var(--space-stack);
+--nav-link-color:var(--color-text-primary);
+--nav-link-color-hover:var(--color-text-emphasis);
+--nav-link-color-current:var(--color-text-emphasis);
+--icon-button-size:44px;
+--icon-button-radius:var(--radius-control);
+--icon-button-border:var(--color-border-subtle);
+--icon-button-border-hover:var(--color-border-strong);
+--toggle-size:44px;
+--toggle-border:var(--color-border-accent);
+--toggle-border-hover:var(--color-accent-primary);
+--toggle-fill:var(--color-accent-primary);
+--label-dot:var(--color-accent-primary);
+--shape-ring-color:var(--color-accent-stroke);
+--card-bg:var(--color-bg-page);
+--card-border:var(--color-border-subtle);
+--card-border-hover:var(--color-border-strong);
+--card-radius:var(--radius-card);
+--card-padding:var(--space-inset);
+--type-heading-size:clamp(30px,3.2vw,44px);
+--type-heading-leading:1.12;
+--type-heading-tracking:-0.03em;
+--reach-measure:560px;
+--highlight-color:var(--color-accent-highlight);
+--link-color:var(--color-text-emphasis);
+--link-underline-offset:6px;
+--button-hover-bg:var(--color-action-primary-hover);
+--button-hover-text:var(--color-text-on-accent);
+--footer-bg:var(--color-bg-subtle);
+}
+
+/* ===== Base ===== */
+body{margin:0;background:#eff3f1;}
+body:has(.home[data-theme="dark"]){background:#262a28;}
+html{scroll-behavior:smooth;}
+a{color:var(--link-color);}
+a:hover{color:var(--color-text-primary);}
+section,footer,#contact-details{scroll-margin-top:calc(var(--header-height) + var(--space-element));}
+a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--color-focus-ring);outline-offset:var(--focus-width);}
+.container{max-width:1280px;margin:0 auto;padding-inline:var(--space-gutter);box-sizing:border-box;}
+.stack{display:flex;flex-direction:column;}
+
+/* ===== Type ===== */
+.t-display{margin:0;font-size:var(--type-display-size);line-height:var(--type-display-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-display-tracking);text-wrap:balance;}
+.t-heading-s{margin:0;font-size:var(--type-heading-s-size);line-height:var(--type-heading-s-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-heading-s-tracking);text-wrap:balance;}
+.t-title{margin:0;font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--primitive-weight-600);letter-spacing:var(--type-title-tracking);}
+.t-body-l{margin:0;font-size:var(--type-body-l-size);line-height:var(--type-body-l-leading);}
+.t-body{margin:0;font-size:var(--type-body-size);line-height:var(--type-body-leading);}
+.t-caption{margin:0;font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--primitive-weight-500);}
+.t-label{display:inline-flex;align-items:center;gap:var(--space-tight);margin:0;font-family:var(--font-mono);font-size:var(--type-label-size);line-height:var(--type-label-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-label-tracking);text-transform:uppercase;color:var(--color-text-secondary);}
+.t-figure-s{margin:0;font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-title-tracking);font-variant-numeric:tabular-nums;}
+.secondary{color:var(--color-text-secondary);}
+.label-dot{display:inline-block;width:6px;height:6px;border-radius:var(--radius-round);background:var(--label-dot);flex:none;}
+.hl{background-image:linear-gradient(180deg,transparent 60%,var(--highlight-color) 60%,var(--highlight-color) 94%,transparent 94%);color:inherit;padding:0 0.04em;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+.home[data-theme="dark"] .hl{background-image:linear-gradient(var(--highlight-color),var(--highlight-color));background-repeat:no-repeat;background-position:0 98%;background-size:100% 0.14em;}
+
+/* ===== Shared components ===== */
+.nav-link{color:var(--nav-link-color);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
+.nav-link:hover{color:var(--nav-link-color-hover);}
+.nav-link[aria-current="page"]{color:var(--nav-link-color-current);font-weight:var(--primitive-weight-600);}
+.nav-contact{text-decoration:underline;text-decoration-thickness:var(--border-width-hairline);text-underline-offset:var(--link-underline-offset);text-decoration-color:var(--color-border-strong);}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;width:var(--icon-button-size);height:var(--icon-button-size);border-radius:var(--icon-button-radius);border:var(--border-width-hairline) solid var(--icon-button-border);background:transparent;color:var(--color-text-primary);cursor:pointer;text-decoration:none;transition:border-color var(--motion-fast) var(--motion-ease),background-color var(--motion-base) var(--motion-ease),color var(--motion-base) var(--motion-ease);}
+.icon-btn:hover{border-color:var(--icon-button-border-hover);}
+.menu-btn{display:none;}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:var(--toggle-size);height:var(--toggle-size);padding:0;border-radius:var(--radius-round);border:var(--border-width-hairline) solid var(--toggle-border);background:transparent;cursor:pointer;transition:border-color var(--motion-fast) var(--motion-ease);}
+.theme-toggle:hover{border-color:var(--toggle-border-hover);}
+.tg-disc{position:relative;display:block;width:20px;height:20px;border-radius:var(--radius-round);background:var(--toggle-fill);overflow:hidden;}
+.wave{position:absolute;left:0;top:0;display:block;transition:transform 420ms var(--motion-ease);}
+.home[data-theme="dark"] .wave{transform:translateY(5px);}
+.logo-dark{display:none;}
+.home[data-theme="dark"] .logo-dark{display:block;}
+.home[data-theme="dark"] .logo-light{display:none;}
+.jump-link{display:inline-flex;align-items:center;gap:var(--space-related);color:var(--color-text-primary);text-decoration:none;}
+.jump-link:hover{color:var(--color-text-primary);}
+.jump-link:hover .icon-btn{background:var(--button-hover-bg);border-color:var(--button-hover-bg);color:var(--button-hover-text);}
+.section-next{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:var(--space-cluster) var(--space-stack);}
+.section-next.is-right{justify-content:flex-end;}
+.foot-link{display:inline-flex;align-items:center;gap:var(--space-hairline);color:var(--color-text-primary);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
+.foot-link:hover{color:var(--color-text-emphasis);}
+.email-link{color:var(--color-text-primary);text-decoration:underline;text-decoration-thickness:var(--border-width-strong);text-decoration-color:var(--color-border-subtle);overflow-wrap:anywhere;transition:color var(--motion-fast) var(--motion-ease),text-decoration-color var(--motion-fast) var(--motion-ease);}
+.email-link:hover{color:var(--color-text-emphasis);text-decoration-color:var(--color-text-emphasis);}
+.footer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-stack);align-items:start;}
+.footer-end{align-items:flex-end;text-align:right;}
+.shape{position:absolute;}
+.round{border-radius:var(--radius-round);}
+.half-round{border-radius:999px 999px 0 0;}
+.sh{background:var(--color-accent-muted);transition:background-color var(--motion-slow) var(--motion-ease);}
+.sh-ring{border-style:solid;border-color:var(--color-accent-muted-stroke);border-radius:var(--radius-round);box-sizing:border-box;transition:border-color var(--motion-slow) var(--motion-ease);}
+.attend:hover .sh-primary,.attend:focus-visible .sh-primary{background:var(--color-accent-primary);}
+.attend:hover .sh-secondary,.attend:focus-visible .sh-secondary{background:var(--color-accent-secondary);}
+.attend:hover .sh-ring,.attend:focus-visible .sh-ring{border-color:var(--shape-ring-color);}
+
+/* ===== Contact components ===== */
+.t-heading{margin:0;font-size:var(--type-heading-size);line-height:var(--type-heading-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-heading-tracking);text-wrap:balance;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-tight);min-height:var(--icon-button-size);padding:0 var(--space-cluster);border-radius:var(--radius-control);background:var(--color-action-primary);color:var(--color-on-action-primary);font:inherit;font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-600);text-decoration:none;border:0;cursor:pointer;transition:background-color var(--motion-base) var(--motion-ease),color var(--motion-base) var(--motion-ease),border-color var(--motion-base) var(--motion-ease);}
+.btn:hover{background:var(--button-hover-bg);color:var(--button-hover-text);}
+.btn-secondary{background:transparent;color:var(--color-text-primary);border:var(--border-width-hairline) solid var(--color-border-subtle);}
+.btn-secondary:hover{background:transparent;color:var(--color-text-primary);border-color:var(--color-border-strong);}
+.actions{display:flex;flex-wrap:wrap;gap:var(--space-related);margin-top:var(--space-element);}
+.service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-stack);margin:0;padding:0;list-style:none;}
+.service{display:flex;flex-direction:column;gap:var(--space-related);height:100%;box-sizing:border-box;padding:var(--card-padding);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);background:var(--card-bg);transition:border-color var(--motion-base) var(--motion-ease);}
+.service:hover{border-color:var(--card-border-hover);}
+.service{padding:var(--space-element) var(--space-element) var(--space-inset);}
+.service > :not(.service-photo){margin-inline:var(--space-element);}
+.service-photo{margin:0 0 var(--space-related);aspect-ratio:4 / 3;overflow:hidden;border-radius:var(--radius-control);background:var(--color-bg-subtle);}
+.service-photo img{display:block;width:100%;height:100%;object-fit:cover;}
+.service-photo{position:relative;}
+.home{--post-stats-bg:var(--primitive-neutral-0);--post-stats-text:var(--primitive-neutral-900);--post-stats-border:var(--primitive-ink-900-a16);--post-stats-icon:var(--color-accent-primary);}
+.post-stats{position:absolute;left:0;right:0;bottom:0;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-tight) var(--space-cluster);padding:var(--space-related) var(--space-element);background:var(--post-stats-bg);border-top:var(--border-width-hairline) solid var(--post-stats-border);color:var(--post-stats-text);font-size:var(--type-caption-size);line-height:var(--type-caption-leading);}
+.post-stats .stat{display:inline-flex;align-items:center;gap:var(--space-hairline);white-space:nowrap;}
+.post-stats .stat svg{color:var(--post-stats-icon);flex:none;}
+.post-stats strong{font-weight:var(--primitive-weight-600);}
+@media (max-width: 760px){.post-stats{gap:var(--space-element);}.post-stats .stat-word{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}}
+.service-cta{display:inline-flex;align-items:center;gap:var(--space-hairline);margin-top:auto;padding-top:var(--space-tight);align-self:flex-start;font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-600);color:var(--link-color);text-decoration:none;}
+.service-cta:hover{color:var(--link-color);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.reach{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--space-section);align-items:start;}
+.reach-email{display:inline-block;margin:0;font-size:var(--type-heading-s-size);line-height:var(--type-heading-s-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-heading-s-tracking);color:var(--color-text-primary);text-decoration:underline;text-decoration-thickness:var(--border-width-hairline);text-underline-offset:var(--space-tight);word-break:break-word;transition:color var(--motion-fast) var(--motion-ease);}
+.reach-email:hover{color:var(--color-text-emphasis);}
+.reach-note{display:flex;flex-direction:column;gap:var(--space-cluster);max-width:var(--reach-measure);margin-top:var(--space-element);}
+.reach-note p{margin:0;}
+.rows{margin:0;padding:0;list-style:none;border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.row{display:flex;align-items:center;justify-content:space-between;gap:var(--space-cluster);padding:var(--space-element) 0;border-bottom:var(--border-width-hairline) solid var(--color-border-subtle);color:var(--color-text-primary);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
+.row:hover{color:var(--color-text-emphasis);}
+.row-main{display:flex;flex-direction:column;gap:var(--space-hairline);min-width:0;}
+.row-icon{flex:none;color:var(--color-text-secondary);transition:color var(--motion-fast) var(--motion-ease);}
+.row:hover .row-icon{color:var(--color-text-emphasis);}
+.sub-head{margin:0 0 var(--space-related);}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+
+@keyframes rise-in{from{opacity:0;transform:translateY(var(--motion-rise));}to{opacity:1;transform:none;}}
+@supports (animation-timeline: view()){
+@media (prefers-reduced-motion: no-preference){
+.reveal{animation:rise-in linear both;animation-timeline:view();animation-range:entry 0% entry 40%;}
+}
+}
+@media (hover: none){
+.sh-primary{background:var(--color-accent-primary);}
+.sh-secondary{background:var(--color-accent-secondary);}
+.sh-ring{border-color:var(--shape-ring-color);}
+}
+@media (max-width: 860px){
+.nav-links{display:none !important;}
+.nav-divider{display:none !important;}
+.menu-btn{display:inline-flex;}
+}
+@media (max-width: 1000px){
+.reach{grid-template-columns:minmax(0,1fr);gap:var(--space-group);}
+}
+@media (max-width: 760px){
+.service-grid{grid-template-columns:minmax(0,1fr);}
+.footer-grid{grid-template-columns:minmax(0,1fr);}
+.footer-end{align-items:flex-start;text-align:left;}
+}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+*{transition:none !important;}
+}
+
+/* ===== Background texture: fine grain ===== */
+.home{--grain-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23n)'/%3E%3C/svg%3E");--grain-size:200px;--grain-strength:0.10;--grain-blend:multiply;position:relative;}
+.home[data-theme="dark"]{--grain-strength:0.12;--grain-blend:screen;}
+.home::after{content:"";position:absolute;inset:0;z-index:30;pointer-events:none;background-image:var(--grain-image);background-size:var(--grain-size);opacity:var(--grain-strength);mix-blend-mode:var(--grain-blend);}
+
+/* ===== Mobile menu ===== */
+.home{--menu-link-size:clamp(32px,9vw,44px);--menu-link-leading:1.15;--menu-panel-bg:var(--color-bg-page);}
+.menu-btn .icon-close{display:none;}
+.home[data-menu="open"] .menu-btn .icon-open{display:none;}
+.home[data-menu="open"] .menu-btn .icon-close{display:block;}
+.menu-panel{display:none;}
+@media (max-width: 860px){
+.home[data-menu="open"] .menu-panel{display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-group);position:fixed;left:0;right:0;top:var(--header-height);bottom:0;z-index:25;padding:var(--space-stack) var(--space-gutter) var(--space-group);box-sizing:border-box;overflow-y:auto;background:var(--menu-panel-bg);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+}
+.menu-list{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;padding:0;list-style:none;}
+.menu-link{display:inline-flex;align-items:center;gap:var(--space-related);padding:var(--space-tight) 0;color:var(--color-text-primary);text-decoration:none;font-size:var(--menu-link-size);line-height:var(--menu-link-leading);font-weight:var(--primitive-weight-500);letter-spacing:-0.03em;transition:color var(--motion-fast) var(--motion-ease);}
+.menu-link:hover{color:var(--color-text-emphasis);}
+.menu-link{position:relative;}
+.menu-link .label-dot{position:absolute;left:calc(var(--space-related) * -1);width:var(--space-tight);height:var(--space-tight);visibility:hidden;}
+.menu-link[aria-current="page"]{color:var(--color-text-emphasis);}
+.menu-link[aria-current="page"] .label-dot{visibility:visible;}
+.menu-link.is-contact span:last-child{text-decoration:underline;text-decoration-thickness:var(--border-width-strong);text-underline-offset:8px;}
+.menu-foot{display:flex;flex-direction:column;gap:var(--space-related);padding-top:var(--space-cluster);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.menu-social{display:flex;flex-wrap:wrap;gap:var(--space-tight) var(--space-cluster);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-500);}
+
+/* ===== Ripple cursor ===== */
+/* primitive */
+.home{--primitive-duration-640:640ms;--primitive-opacity-70:0.7;}
+/* semantic */
+.home{--motion-ripple:var(--primitive-duration-640);--opacity-soft:var(--primitive-opacity-70);}
+/* component: the cursor is the ripple mark, five mint rings round a coral dot */
+.home{
+--cursor-size:var(--space-group);
+--cursor-dot-size:var(--space-hairline);
+--cursor-dot-color:var(--color-accent-primary);
+--cursor-ring-color:var(--color-accent-secondary);
+--cursor-ring-stroke:var(--border-width-strong);
+--cursor-active-color:var(--color-accent-stroke);
+--cursor-softness:var(--opacity-soft);
+--cursor-press-duration:var(--motion-ripple);
+--cursor-fade-duration:var(--motion-fast);
+}
+/* end ripple cursor */
+</style>
+</helmet>
+<div id="top" class="home" data-theme="{{theme}}" data-cursor="ripple" data-menu="{{menu}}" style="font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-bg-page); min-height: 100vh; transition: background-color 240ms ease-out, color 240ms ease-out">
+
+<header style="position: sticky; top: 0; z-index: 20; background: var(--header-bg); border-bottom: 1px solid var(--color-border-subtle)">
+<div class="container" style="height: var(--header-height); display: flex; align-items: center; justify-content: space-between; gap: var(--space-cluster)">
+<a href="Home.dc.html" aria-label="Aishat Muhammed, home" style="display: flex; align-items: center; text-decoration: none">
+<img class="logo-light" src="/_blob/b5d266cab6acb3304831769b7f8aa26b" alt="aishah" style="height: 32px; width: auto">
+<img class="logo-dark" src="/_blob/9bc4602900c58c540b9d16b88bd92bbc" alt="aishah" style="height: 32px; width: auto">
+</a>
+<div style="display: flex; align-items: center; justify-content: flex-end; gap: var(--space-stack)">
+<nav aria-label="Main" class="nav-links" style="display: flex; align-items: center; gap: var(--nav-gap); font-size: 16px; line-height: 26px; font-weight: 500">
+<a class="nav-link" href="About.dc.html">About</a>
+<a class="nav-link" href="Work.dc.html">Work</a>
+<a class="nav-link" href="TalkShelf.dc.html">Talk shelf</a>
+<a class="nav-link" href="OpenTabs.dc.html">Open tabs</a>
+<a class="nav-link nav-contact" href="Contact.dc.html" aria-current="page">Contact</a>
+</nav>
+<span class="nav-divider" aria-hidden="true" style="width: 1px; height: 20px; background: var(--color-border-subtle)"></span>
+<div style="display: flex; align-items: center; gap: var(--space-tight)">
+<button type="button" class="theme-toggle" aria-label="{{themeLabel}}" title="{{themeLabel}}" onClick="{{toggleTheme}}">
+<span class="tg-disc" aria-hidden="true"><svg class="wave" width="20" height="20" viewBox="0 0 20 20"><path d="M-1 -1 H21 V7.5 C17 5.5 14 10 10 8 C6 6 3 9.5 -1 7.5 Z" style="fill: var(--header-bg)"></path></svg></span>
+</button>
+<button type="button" class="icon-btn menu-btn" aria-label="{{menuLabel}}" aria-expanded="{{menuExpanded}}" aria-controls="mobile-menu" onClick="{{toggleMenu}}"><svg class="icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="7" y2="7"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="17" y2="17"></line></svg><svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+</div>
+</div>
+</div>
+
+<div class="menu-panel" id="mobile-menu"><nav aria-label="Menu"><ul class="menu-list"><li><a class="menu-link" href="About.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>About</span></a></li><li><a class="menu-link" href="Work.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Work</span></a></li><li><a class="menu-link" href="TalkShelf.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Talk shelf</span></a></li><li><a class="menu-link" href="OpenTabs.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Open tabs</span></a></li><li><a class="menu-link is-contact" href="Contact.dc.html" aria-current="page" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Contact</span></a></li></ul></nav><div class="menu-foot"><p class="t-label"><span class="label-dot" aria-hidden="true"></span>Find me</p><div class="menu-social"><a class="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">LinkedIn</a><a class="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a><a class="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack</a></div><a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: 500; text-underline-offset: 6px; align-self: flex-start">m.aishat9890@gmail.com</a></div></div>
+</header>
+
+<section aria-labelledby="contact-title" style="padding-block: var(--space-section) var(--space-group)">
+<div class="container stack reveal" style="gap: var(--space-cluster)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Contact</p>
+<h1 id="contact-title" class="t-display" style="max-width: 980px">Let’s make your ideas <span class="hl">easier to understand</span>.</h1>
+<p class="t-body-l" style="max-width: 680px">Whether you’re launching something new, planning an event, or looking for someone to help tell your story, I’d love to hear what you’re working on.</p>
+<div class="actions">
+<a class="btn" href="mailto:m.aishat9890@gmail.com">Email me <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a>
+<button type="button" class="btn btn-secondary" onClick="{{copyEmail}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg><span>{{emailLabel}}</span></button>
+</div>
+<span class="visually-hidden" role="status">{{emailStatus}}</span>
+</div>
+</section>
+
+<section id="services" aria-labelledby="services-title" style="padding-block: var(--space-group) var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container stack" style="gap: var(--space-group)">
+<div class="stack reveal" style="gap: var(--space-element); max-width: 760px">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>What I can do for you</p>
+<h2 id="services-title" class="t-heading">Ways we can work together</h2>
+</div>
+<ul class="service-grid reveal">
+<li><div class="service attend">
+<figure class="service-photo has-stats"><img src="/_blob/3fb8e4ae5329a7996b9f0f687ac55e5c" alt="A Sereel LinkedIn post graphic on ABSA and Ripple, from my content marketing work" loading="lazy"><figcaption class="post-stats"><span class="visually-hidden">Engagement on this LinkedIn post: </span><span class="stat"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10v12"></path><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"></path></svg><strong>115</strong><span class="stat-word"> reactions</span></span><span class="stat"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg><strong>3</strong><span class="stat-word"> comments</span></span><span class="stat"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg><strong>22</strong><span class="stat-word"> reposts</span></span></figcaption></figure>
+<h3 class="t-title">Content marketing</h3>
+<p class="t-body secondary">Content strategy and campaigns that help your audience understand what you do, and why it matters to them.</p>
+<a class="service-cta" href="mailto:m.aishat9890@gmail.com?subject=Content%20marketing">Ask about this <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="visually-hidden"> (Content marketing, opens your email)</span></a>
+</div></li>
+<li><div class="service attend">
+<figure class="service-photo"><img src="/_blob/96a87b03c38706102d67eb9a664d05e6" alt="Aishat in a yellow hijab working on her phone at an event" loading="lazy"></figure>
+<h3 class="t-title">Content creation</h3>
+<p class="t-body secondary">Educational posts, articles and explainers that turn complex topics into something people can learn from and share.</p>
+<a class="service-cta" href="mailto:m.aishat9890@gmail.com?subject=Content%20creation">Ask about this <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="visually-hidden"> (Content creation, opens your email)</span></a>
+</div></li>
+<li><div class="service attend">
+<figure class="service-photo"><img src="/_blob/20ebc9ee3157e6961b3a4141555066e3" alt="Aishat speaking into a microphone at the Code Africa Conference City Tour" loading="lazy"></figure>
+<h3 class="t-title">Speaking gigs</h3>
+<p class="t-body secondary">Talks, panels, workshops and X Spaces on community building, open source, Web3 and starting out in tech.</p>
+<a class="service-cta" href="mailto:m.aishat9890@gmail.com?subject=Speaking%20invitation">Ask about this <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="visually-hidden"> (Speaking gigs, opens your email)</span></a>
+</div></li>
+<li><div class="service attend">
+<figure class="service-photo"><img src="/_blob/e99b3487913a1ab487f5764987eec2af" alt="Six of Aishat’s Instagram reels, including collaborations with Devcareer x Coursera and HerVest" loading="lazy"></figure>
+<h3 class="t-title">Collaboration &amp; partnership</h3>
+<p class="t-body secondary">Co-created content, programmes and campaigns with brands and communities who share an audience.</p>
+<a class="service-cta" href="mailto:m.aishat9890@gmail.com?subject=Collaboration%20and%20partnership">Ask about this <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="visually-hidden"> (Collaboration &amp; partnership, opens your email)</span></a>
+</div></li>
+</ul>
+</div>
+</section>
+
+<section id="reach" aria-labelledby="reach-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container reach reveal">
+<div class="stack" style="gap: var(--space-cluster)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Get in touch</p>
+<h2 id="reach-title" class="t-heading">The best way to reach me is by email</h2>
+<a class="reach-email" href="mailto:m.aishat9890@gmail.com">m.aishat9890@gmail.com</a>
+<div class="reach-note">
+<p class="t-body-l secondary">Not sure which of these fits? Send me a few lines about what you’re working on, and we’ll figure out the best way to work together.</p>
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Based in Lagos, Nigeria · Working remotely with teams anywhere</p>
+</div>
+</div>
+<div>
+<p class="t-label sub-head">Find me elsewhere</p>
+<ul class="rows"><li><a class="row" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: 500">LinkedIn</span><span class="t-caption secondary">Aishat Muhammed</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: 500">Instagram</span><span class="t-caption secondary">@this_aishah_</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://x.com/this_aishah_" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: 500">X</span><span class="t-caption secondary">@this_aishah_</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: 500">Substack</span><span class="t-caption secondary">Ripples &amp; Reverie, my newsletter</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="TalkShelf.dc.html#media-kit"><span class="row-main"><span class="t-body" style="font-weight: 500">Media kit</span><span class="t-caption secondary">Bios, headshot and logos for event organisers</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a></li></ul>
+</div>
+</div>
+</section>
+
+<footer id="contact" style="background: var(--footer-bg); color: var(--color-text-primary); border-top: 1px solid var(--color-border-subtle); padding-block: var(--space-group)">
+<div class="container footer-grid">
+<div class="stack" style="gap: var(--space-related)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Aishat Muhammed</p>
+<p class="t-body secondary">© 2026</p>
+</div>
+<div class="stack" style="gap: var(--space-related)">
+<p class="t-label" id="socials-label"><span class="label-dot" aria-hidden="true"></span>Find me</p>
+<nav aria-labelledby="socials-label" style="display: flex; flex-wrap: wrap; gap: var(--space-tight) var(--space-cluster); font-size: 16px; line-height: 26px; font-weight: 500">
+<a class="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">LinkedIn <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+<a class="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+<a class="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</nav>
+</div>
+<div id="contact-details" class="stack footer-end" style="gap: var(--space-related)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Contact</p>
+<a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: 500; text-underline-offset: 6px">m.aishat9890@gmail.com</a>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":2900}}'>
+class Component extends DCLogic {
+  copyEmail() {
+    try { if (navigator.clipboard) navigator.clipboard.writeText("m.aishat9890@gmail.com").catch(function () {}); } catch (e) {}
+    this.setState({ copied: true });
+    clearTimeout(this._copiedT);
+    this._copiedT = setTimeout(() => this.setState({ copied: false }), 2400);
+  }
+  renderVals() {
+    const s = this.state || {};
+    const KEY = 'aishah-theme';
+    if (!this._themeBound) {
+      this._themeBound = true;
+      /* ripple-cursor */
+      if (!window.__aishahRipple) {
+        window.__aishahRipple = true;
+        const startRipple = () => {
+          try {
+            const mq = (q) => !!(window.matchMedia && window.matchMedia(q).matches);
+            if (!mq('(hover: hover) and (pointer: fine)') || mq('(prefers-reduced-motion: reduce)')) return;
+            const doc = document, NS = 'http://www.w3.org/2000/svg';
+            const st = doc.createElement('style');
+            st.textContent = 'html.aishah-ripple .home[data-cursor="ripple"], html.aishah-ripple .home[data-cursor="ripple"] *{cursor:none !important;}';
+            doc.head.appendChild(st);
+            const layer = doc.createElement('div');
+            layer.setAttribute('aria-hidden', 'true');
+            layer.style.cssText = 'position:fixed;left:0;top:0;width:0;height:0;overflow:visible;pointer-events:none;z-index:2147483000;';
+            /* the ripple mark: ring radius, stroke and opacity as fractions of the outer ring, outermost rings trail the most */
+            const ART = [[36, 3, 1, 0.42], [66, 2.6, 0.8, 0.3], [98, 2.2, 0.6, 0.22], [132, 1.8, 0.42, 0.16], [168, 1.4, 0.26, 0.12]];
+            const rings = ART.map((a) => {
+              const wrap = doc.createElement('div');
+              wrap.style.cssText = 'position:fixed;left:0;top:0;pointer-events:none;opacity:0;will-change:transform;';
+              const svg = doc.createElementNS(NS, 'svg');
+              svg.style.cssText = 'display:block;overflow:visible;transform-origin:50% 50%;';
+              const c = doc.createElementNS(NS, 'circle');
+              c.setAttribute('fill', 'none');
+              svg.appendChild(c); wrap.appendChild(svg); layer.appendChild(wrap);
+              return { wrap: wrap, svg: svg, c: c, f: a[1] / 3, o: a[2], r: a[0] / 168, k: a[3], x: 0, y: 0 };
+            });
+            const dot = doc.createElement('div');
+            dot.style.cssText = 'position:fixed;left:0;top:0;border-radius:50%;pointer-events:none;opacity:0;';
+            layer.appendChild(dot);
+            doc.body.appendChild(layer);
+            doc.documentElement.classList.add('aishah-ripple');
+            let tok = null, home = null, x = 0, y = 0, shown = false, active = false, raf = 0;
+            const num = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
+            /* over a link or button the mark settles to its two inner rings, in ink, so the control stays readable */
+            const vis = () => { rings.forEach((g, i) => { g.wrap.style.opacity = shown && !(active && i > 1) ? g.on : '0'; }); dot.style.opacity = shown ? '1' : '0'; };
+            const paint = () => {
+              const col = active ? tok.on : tok.ring;
+              rings.forEach((g) => { g.c.style.stroke = col; });
+              dot.style.background = active ? tok.on : tok.dot;
+              vis();
+            };
+            const read = (h) => {
+              const cs = getComputedStyle(h); const g = (n) => cs.getPropertyValue(n).trim();
+              tok = { size: num(g('--cursor-size'), 48), dotSize: num(g('--cursor-dot-size'), 4), dot: g('--cursor-dot-color'), ring: g('--cursor-ring-color'), on: g('--cursor-active-color'),
+                stroke: num(g('--cursor-ring-stroke'), 1.5), soft: num(g('--cursor-softness'), 0.7), press: num(g('--cursor-press-duration'), 640), fade: num(g('--cursor-fade-duration'), 200), ease: g('--motion-ease') || 'ease-out' };
+              const D = tok.size, tr = 'opacity ' + tok.fade + 'ms ' + tok.ease;
+              rings.forEach((g) => {
+                g.svg.setAttribute('width', D); g.svg.setAttribute('height', D); g.svg.setAttribute('viewBox', '0 0 ' + D + ' ' + D);
+                g.c.setAttribute('cx', D / 2); g.c.setAttribute('cy', D / 2);
+                g.c.setAttribute('r', Math.max(0.5, (D / 2) * g.r - (tok.stroke * g.f) / 2));
+                g.c.setAttribute('stroke-width', (tok.stroke * g.f).toFixed(2));
+                g.c.style.transition = 'stroke ' + tok.fade + 'ms ' + tok.ease;
+                g.wrap.style.transition = tr;
+                g.on = String(g.o * tok.soft);
+              });
+              dot.style.width = dot.style.height = tok.dotSize + 'px';
+              dot.style.transition = tr + ', background-color ' + tok.fade + 'ms ' + tok.ease;
+              paint();
+            };
+            const place = () => {
+              const h = tok.size / 2, d = tok.dotSize / 2;
+              dot.style.transform = 'translate3d(' + (x - d) + 'px,' + (y - d) + 'px,0)';
+              rings.forEach((g) => { g.wrap.style.transform = 'translate3d(' + (g.x - h) + 'px,' + (g.y - h) + 'px,0)'; });
+            };
+            const tick = () => {
+              raf = 0; let moving = false;
+              rings.forEach((g) => { g.x += (x - g.x) * g.k; g.y += (y - g.y) * g.k; if (Math.abs(x - g.x) > 0.2 || Math.abs(y - g.y) > 0.2) moving = true; });
+              place();
+              if (moving) raf = requestAnimationFrame(tick);
+            };
+            const show = (v) => { if (v === shown) return; shown = v; vis(); };
+            const pulse = () => {
+              rings.forEach((g, i) => {
+                if (!g.svg.animate) return;
+                g.svg.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.28)' }, { transform: 'scale(1)' }],
+                  { duration: tok.press, delay: i * 36, easing: tok.ease });
+              });
+            };
+            const refresh = () => setTimeout(() => { if (home) read(home); }, 80);
+            const SEL = 'a,button,[role="button"],summary,label,select,input,textarea';
+            doc.addEventListener('pointermove', (e) => {
+              if (e.pointerType && e.pointerType !== 'mouse') return;
+              x = e.clientX; y = e.clientY;
+              const t = e.target && e.target.closest ? e.target : null;
+              const h = t ? t.closest('.home[data-cursor="ripple"]') : null;
+              if (h !== home) { home = h; if (h) read(h); }
+              if (!h) { show(false); return; }
+              const a = !!t.closest(SEL);
+              if (a !== active) { active = a; paint(); }
+              if (!shown) { rings.forEach((g) => { g.x = x; g.y = y; }); place(); show(true); }
+              if (!raf) raf = requestAnimationFrame(tick);
+            }, { passive: true });
+            doc.addEventListener('pointerdown', (e) => { if (shown && (!e.pointerType || e.pointerType === 'mouse')) pulse(); }, { passive: true });
+            doc.addEventListener('click', refresh, { passive: true });
+            doc.documentElement.addEventListener('mouseleave', () => show(false));
+            window.addEventListener('blur', () => show(false));
+            window.addEventListener('aishah-theme', refresh);
+            window.addEventListener('storage', refresh);
+          } catch (err) {}
+        };
+        if (document.body) startRipple(); else document.addEventListener('DOMContentLoaded', startRipple);
+      }
+      const sync = (val) => { if ((val === 'light' || val === 'dark') && (this.state || {}).theme !== val) this.setState({ theme: val }); };
+      try { window.addEventListener('storage', (e) => { if (e.key === KEY) sync(e.newValue); }); } catch (e) {}
+      try { window.addEventListener('aishah-theme', (e) => sync(e.detail)); } catch (e) {}
+    }
+    let stored = null;
+    try { stored = window.localStorage.getItem(KEY); } catch (e) {}
+    const theme = s.theme || ((stored === 'light' || stored === 'dark') ? stored : null) || this.props.theme || 'light';
+    return {
+      theme: theme,
+      menu: s.menuOpen ? 'open' : 'closed',
+      menuExpanded: !!s.menuOpen,
+      menuLabel: s.menuOpen ? 'Close menu' : 'Open menu',
+      toggleMenu: () => this.setState({ menuOpen: !(this.state || {}).menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      themeLabel: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
+      copyEmail: () => this.copyEmail(),
+      emailLabel: s.copied ? 'Copied' : 'Copy email',
+      emailStatus: s.copied ? 'Email address copied' : '',
+      toggleTheme: () => {
+        const nextTheme = theme === 'dark' ? 'light' : 'dark';
+        try { window.localStorage.setItem(KEY, nextTheme); } catch (e) {}
+        this.setState({ theme: nextTheme });
+        try { window.dispatchEvent(new CustomEvent('aishah-theme', { detail: nextTheme })); } catch (e) {}
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
