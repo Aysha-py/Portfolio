@@ -366,7 +366,7 @@ export default function HomeView() {
             </div>
           </a>
           {" "}
-          <a className="story" href="#case-invisible-garden">
+          <a className="story" href={`${BASE}/work/invisible-garden/`}>
             <div className="story-art is-reels">
               <div className="reel-grid" role="img" aria-label="Six posts from Invisible Garden's Instagram during the Buenos Aires residency: the closing recap, a Buenos Aires 2025 recap, residency moments, a community dinner, a talk on stage and a panel on the future of Ethereum">
                 <img src={`${BASE}/images/invisible-garden-closing.jpg`} alt="" loading="lazy" />
