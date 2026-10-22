@@ -554,6 +554,34 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .pick{align-items:flex-start;gap:var(--pick-row-gap-phone);padding-block:var(--pick-row-padding-phone);}
 }
 /* end article list */
+/* ===== Hosting and representing ===== */
+/* component: photo cards for the sessions she hosted and the communities she represented. Photo, role tag with where
+   and when, the event, one line and a link to the recording or post */
+.home{
+--host-grid-gap-row:var(--space-stack);
+--host-grid-gap-col:var(--space-cluster);
+--host-media-ratio:4 / 3;
+--host-media-bg:var(--color-bg-subtle);
+--host-body-padding:var(--space-cluster);
+}
+.host-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--host-grid-gap-row) var(--host-grid-gap-col);margin:0;padding:0;list-style:none;}
+.host-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
+.host-card:hover{border-color:var(--card-border-hover);}
+.host-media{margin:0;aspect-ratio:var(--host-media-ratio);overflow:hidden;background:var(--host-media-bg);border-bottom:var(--border-width-hairline) solid var(--card-border);}
+.host-media img{display:block;width:100%;height:100%;object-fit:cover;}
+.host-body{display:flex;flex-direction:column;flex-grow:1;gap:var(--space-related);padding:var(--host-body-padding);}
+.host-body p{margin:0;}
+.host-body > .type-tag{align-self:flex-start;}
+.host-title{display:flex;flex-direction:column;gap:var(--space-hairline);}
+.host-card .work-cta{align-self:flex-start;padding-top:var(--space-tight);text-decoration:none;}
+.host-more{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-element) var(--space-stack);}
+@media (max-width: 1024px){
+.host-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width: 760px){
+.host-grid{grid-template-columns:minmax(0,1fr);}
+}
+/* end hosting */
 /* ===== Ripple cursor ===== */
 /* primitive */
 .home{--primitive-duration-640:640ms;--primitive-duration-900:900ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-size-64:64px;--primitive-opacity-45:0.45;}
@@ -638,7 +666,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body">Grew Sereel’s LinkedIn audience by <strong>127.8%, from 245 to 558 followers</strong>, through consistent content that connected industry developments with the questions and challenges facing institutional audiences.</p>
 </div>
 <div class="t-caption work-list-line"><span class="t-label">Content formats</span><ul class="dot-list"><li>LinkedIn</li><li>Blog</li><li>Newsletter</li><li>Short-form video</li></ul></div>
-<a class="work-cta" href="Home.dc.html#case-sereel">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<a class="work-cta" href="CaseSereel.dc.html">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </article>
 </li>
 
@@ -836,6 +864,78 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </li>
 </ul>
 
+</div>
+</section>
+
+<section id="hosting" aria-labelledby="hosting-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container stack" style="gap: var(--space-group)">
+<div class="stack reveal" style="gap: var(--space-element); max-width: 760px">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Hosting and representing</p>
+<h2 id="hosting-title" class="t-heading-s">Sessions I’ve hosted, and the communities I’ve represented on stage and online.</h2>
+</div>
+<ul class="host-grid">
+<li class="host-card reveal">
+<figure class="host-media"><img src="/_blob/4b28a560d6113c7b77e0d67b9dec3af9" alt="Aishat at GITEX Nigeria in Lagos, wearing her event badge" loading="lazy"></figure>
+<div class="host-body">
+<span class="type-tag">Representing Web3Ladies</span>
+<div class="host-title"><h3 class="t-title">GITEX Nigeria</h3><p class="t-caption secondary">In person · Lagos · 2025</p></div>
+<p class="t-body secondary">I represented Web3Ladies at GITEX Nigeria in Lagos. [What you did there, for example who you met or what you shared.]</p>
+</div>
+</li>
+
+<li class="host-card reveal">
+<figure class="host-media"><img src="/_blob/2dac9de7c3aa4bd4be7af2ab5dda4f3a" alt="Aishat talking with attendees at the DSF x Stellar meetup in Lagos" loading="lazy"></figure>
+<div class="host-body">
+<span class="type-tag">Representing Web3Ladies</span>
+<div class="host-title"><h3 class="t-title">DSF x Stellar meetup</h3><p class="t-caption secondary">In person · Lagos · 2025</p></div>
+<p class="t-body secondary">I shared the Web3Ladies vision at the DSF x Stellar meetup in Lagos.</p>
+</div>
+</li>
+
+<li class="host-card reveal">
+<figure class="host-media"><img src="/_blob/b345115d000e5160b8780be09a27cf9c" alt="Aishat speaking on stage at the Code Africa Conference City Tour in Nigeria" loading="lazy"></figure>
+<div class="host-body">
+<span class="type-tag">Representing One Dev</span>
+<div class="host-title"><h3 class="t-title">Code Africa Conference City Tour</h3><p class="t-caption secondary">In person · Nigeria · 2025</p></div>
+<p class="t-body secondary">I shared One Dev’s vision to help African builders upskill in emerging technologies like blockchain and AI.</p>
+<a class="work-cta" href="https://x.com/this_aishah_/status/1921856166339940569" target="_blank" rel="noopener">See the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+</div>
+</li>
+
+<li class="host-card reveal">
+<figure class="host-media"><img src="/_blob/f389d26f0dd2408559192a81b88e3b9d" alt="Event flyer for Contributing to open source in Web3, with Aishat as host" loading="lazy"></figure>
+<div class="host-body">
+<span class="type-tag">Host</span>
+<div class="host-title"><h3 class="t-title">Contributing to open source in Web3</h3><p class="t-caption secondary">YouTube Live · 2024</p></div>
+<p class="t-body secondary">I hosted this Web3 Ladies workshop on how to contribute to open-source projects in Web3.</p>
+<a class="work-cta" href="https://www.youtube.com/watch?v=klbOztg-Y9Q&amp;t=5s" target="_blank" rel="noopener">Watch the recording <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+</div>
+</li>
+
+<li class="host-card reveal">
+<figure class="host-media"><img src="/_blob/ce33fbe505185b81103ba758de8ad83e" alt="A live class from One Dev’s AI/ML for Developers Bootcamp" loading="lazy"></figure>
+<div class="host-body">
+<span class="type-tag">Facilitator</span>
+<div class="host-title"><h3 class="t-title">AI/ML for Developers Bootcamp</h3><p class="t-caption secondary">YouTube · 2025</p></div>
+<p class="t-body secondary">I facilitated the live class on day one of One Dev’s bootcamp, which introduced the fundamentals of AI and machine learning and Python for AI.</p>
+<a class="work-cta" href="https://www.youtube.com/watch?v=yqNm6mAvo0s&amp;t=307s" target="_blank" rel="noopener">Watch the recording <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+</div>
+</li>
+
+<li class="host-card reveal">
+<figure class="host-media"><img src="/_blob/8638abf3f0360e38a1f82b1536882672" alt="Aishat with contributors on the first Open Terms Archive community call" loading="lazy"></figure>
+<div class="host-body">
+<span class="type-tag">Host</span>
+<div class="host-title"><h3 class="t-title">Open Terms Archive community call</h3><p class="t-caption secondary">Online · [Year]</p></div>
+<p class="t-body secondary">I anchored the first Open Terms Archive community call, following the structure I created for regular community calls.</p>
+</div>
+</li>
+</ul>
+<div class="host-more reveal">
+<span class="t-label">More sessions on YouTube</span>
+<a class="email-link t-body" href="https://www.youtube.com/@Web3Ladies/streams" target="_blank" rel="noopener" style="font-weight: var(--weight-ui); text-underline-offset: 6px">Web3 Ladies<span class="visually-hidden"> (opens in a new tab)</span></a>
+<a class="email-link t-body" href="https://www.youtube.com/@onedevafrica/streams" target="_blank" rel="noopener" style="font-weight: var(--weight-ui); text-underline-offset: 6px">One Dev<span class="visually-hidden"> (opens in a new tab)</span></a>
+</div>
 </div>
 </section>
 
