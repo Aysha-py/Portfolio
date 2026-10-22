@@ -148,15 +148,14 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)"><img src={`${BASE}/images/logo-sereel-glow.png`} alt="" /></a>
+                  <a className="org-link" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)">
+                    <img className="logo-light" src={`${BASE}/images/logo-sereel-mark.png`} alt="" />
+                    <img className="logo-dark" src={`${BASE}/images/logo-sereel-mark-dark.png`} alt="" />
+                  </a>
                   {" "}
                   <div className="work-id">
-                    <span className="type-tag">
-                      <span className="dots" aria-hidden="true"><span className="dot dot-content" /></span>
-                      Content
-                    </span>
-                    {" "}
                     <h2 className="t-heading-s work-title">Sereel</h2>
+                    <p className="work-stamps"><span className="stamp stamp-content">Content</span></p>
                     <p className="t-caption secondary work-tags">Content marketing · B2B thought leadership · Newsletter · Educational content · Video</p>
                   </div>
                 </div>
@@ -195,12 +194,8 @@ export default function WorkView() {
                   <a className="org-link" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
                   {" "}
                   <div className="work-id">
-                    <span className="type-tag">
-                      <span className="dots" aria-hidden="true"><span className="dot dot-content" /></span>
-                      Content
-                    </span>
-                    {" "}
                     <h2 className="t-heading-s work-title">Invisible Garden</h2>
+                    <p className="work-stamps"><span className="stamp stamp-content">Content</span></p>
                     <p className="t-caption secondary work-tags">Content marketing · Social media · Video · Outreach</p>
                   </div>
                 </div>
@@ -236,18 +231,18 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)"><img src={`${BASE}/images/logo-onedev.svg`} alt="" /></a>
+                  <a className="org-link" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)">
+                    <img className="logo-light" src={`${BASE}/images/logo-onedev.svg`} alt="" />
+                    <img className="logo-dark" src={`${BASE}/images/logo-onedev-dark.svg`} alt="" />
+                  </a>
                   {" "}
                   <div className="work-id">
-                    <span className="type-tag">
-                      <span className="dots" aria-hidden="true">
-                        <span className="dot dot-content" />
-                        <span className="dot dot-community" />
-                      </span>
-                      Content + community
-                    </span>
-                    {" "}
                     <h2 className="t-heading-s work-title">One Dev</h2>
+                    <p className="work-stamps">
+                      <span className="stamp stamp-content">Content</span>
+                      <span className="visually-hidden">and</span>
+                      <span className="stamp stamp-community">Community</span>
+                    </p>
                     <p className="t-caption secondary work-tags">Community management · Developer education · Content · Community programmes</p>
                   </div>
                 </div>
@@ -284,18 +279,18 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)"><img src={`${BASE}/images/logo-code-africa.png`} alt="" /></a>
+                  <a className="org-link" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)">
+                    <img className="logo-light" src={`${BASE}/images/logo-code-africa.png`} alt="" />
+                    <img className="logo-dark" src={`${BASE}/images/logo-code-africa-dark.png`} alt="" />
+                  </a>
                   {" "}
                   <div className="work-id">
-                    <span className="type-tag">
-                      <span className="dots" aria-hidden="true">
-                        <span className="dot dot-content" />
-                        <span className="dot dot-community" />
-                      </span>
-                      Content + community
-                    </span>
-                    {" "}
                     <h2 className="t-heading-s work-title">Code Africa Conference</h2>
+                    <p className="work-stamps">
+                      <span className="stamp stamp-content">Content</span>
+                      <span className="visually-hidden">and</span>
+                      <span className="stamp stamp-community">Community</span>
+                    </p>
                     <p className="t-caption secondary work-tags">Content distribution · Community operations · Volunteer management</p>
                   </div>
                 </div>
@@ -328,15 +323,14 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)"><img src={`${BASE}/images/logo-web3ladies.svg`} alt="" /></a>
+                  <a className="org-link" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)">
+                    <img className="logo-light" src={`${BASE}/images/logo-web3ladies.svg`} alt="" />
+                    <img className="logo-dark" src={`${BASE}/images/logo-web3ladies-dark.svg`} alt="" />
+                  </a>
                   {" "}
                   <div className="work-id">
-                    <span className="type-tag">
-                      <span className="dots" aria-hidden="true"><span className="dot dot-community" /></span>
-                      Community
-                    </span>
-                    {" "}
                     <h2 className="t-heading-s work-title">Web3Ladies</h2>
+                    <p className="work-stamps"><span className="stamp stamp-community">Community</span></p>
                     <p className="t-caption secondary work-tags">Community leadership · Programme development · Ecosystem partnerships · Community engagement</p>
                   </div>
                 </div>
@@ -372,18 +366,18 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)"><img src={`${BASE}/images/logo-community-for-africa.png`} alt="" /></a>
+                  <a className="org-link" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)">
+                    <img className="logo-light" src={`${BASE}/images/logo-community-for-africa.png`} alt="" />
+                    <img className="logo-dark" src={`${BASE}/images/logo-community-for-africa-dark.png`} alt="" />
+                  </a>
                   {" "}
                   <div className="work-id">
-                    <span className="type-tag">
-                      <span className="dots" aria-hidden="true">
-                        <span className="dot dot-content" />
-                        <span className="dot dot-community" />
-                      </span>
-                      Content + community
-                    </span>
-                    {" "}
                     <h2 className="t-heading-s work-title">Community for Africa</h2>
+                    <p className="work-stamps">
+                      <span className="stamp stamp-content">Content</span>
+                      <span className="visually-hidden">and</span>
+                      <span className="stamp stamp-community">Community</span>
+                    </p>
                     <p className="t-caption secondary work-tags">Community management · Educational content · Resource development</p>
                   </div>
                 </div>
@@ -416,15 +410,14 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)"><img src={`${BASE}/images/logo-open-terms-archive.png`} alt="" /></a>
+                  <a className="org-link" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)">
+                    <img className="logo-light" src={`${BASE}/images/logo-open-terms-archive.png`} alt="" />
+                    <img className="logo-dark" src={`${BASE}/images/logo-open-terms-archive-dark.png`} alt="" />
+                  </a>
                   {" "}
                   <div className="work-id">
-                    <span className="type-tag">
-                      <span className="dots" aria-hidden="true"><span className="dot dot-community" /></span>
-                      Community
-                    </span>
-                    {" "}
                     <h2 className="t-heading-s work-title">Open Terms Archive</h2>
+                    <p className="work-stamps"><span className="stamp stamp-community">Community</span></p>
                     <p className="t-caption secondary work-tags">Open source community management · Contributor experience · Documentation</p>
                   </div>
                 </div>
