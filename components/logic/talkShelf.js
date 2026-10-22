@@ -118,15 +118,6 @@ export class Component extends DCLogic {
       const sync = (val) => { if ((val === 'light' || val === 'dark') && (this.state || {}).theme !== val) this.setState({ theme: val }); };
       try { window.addEventListener('storage', (e) => { if (e.key === KEY) sync(e.newValue); }); } catch (e) {}
       try { window.addEventListener('aishah-theme', (e) => sync(e.detail)); } catch (e) {}
-      /* when the shelf is wider than the screen, open it on the newest talks */
-      const toNewest = (tries) => {
-        try {
-          const bc = document.querySelector('.bookcase');
-          if (!bc) { if (tries > 0) setTimeout(() => toNewest(tries - 1), 150); return; }
-          if (bc.scrollWidth > bc.clientWidth + 1) bc.scrollLeft = bc.scrollWidth;
-        } catch (e) {}
-      };
-      setTimeout(() => toNewest(20), 0);
     }
     let stored = null;
     try { stored = window.localStorage.getItem(KEY); } catch (e) {}
