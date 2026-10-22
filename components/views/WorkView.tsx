@@ -570,22 +570,18 @@ export default function WorkView() {
               A few pieces that show how I approach research, education, and storytelling across different audiences.
             </h2>
           </div>
-          <ul className="pick-grid">
+          <ul className="pick-list">
             <li>
               <a className="pick attend reveal" href="https://sereel.com/blog/nigeria-investment-securities-act-2025-tokenized-securities" target="_blank" rel="noopener">
-                <div className="pick-media" aria-hidden="true">
-                  <div className="shape round sh sh-secondary" style={{left: "-24px", top: "-24px", width: "96px", height: "96px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-secondary" style={{right: "32px", bottom: "32px", width: "40px", height: "40px"} as React.CSSProperties} />
-                  <div className="shape sh-ring" style={{right: "88px", bottom: "24px", width: "48px", height: "48px", borderWidth: "6px"} as React.CSSProperties} />
-                </div>
                 <div className="pick-body">
-                  <span className="type-tag">Industry analysis</span>
-                  {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>
+                  <p className="pick-meta">
+                    <span className="type-tag">Industry analysis</span>
+                    <span className="t-caption secondary">Sereel</span>
+                  </p>
+                  <h3 className="t-title pick-title">
                     Nigeria's Investment and Securities Act 2025: Has Nigeria Quietly Gotten Ahead on Tokenized Securities?
                   </h3>
-                  <p className="t-caption secondary">Sereel</p>
-                  <p className="t-body">
+                  <p className="t-body secondary pick-note">
                     I explored what Nigeria's 2025 securities law could mean for tokenized securities, connecting a local regulatory development to the wider evolution of institutional capital markets.
                   </p>
                   {" "}
@@ -598,20 +594,19 @@ export default function WorkView() {
                   </span>
                   <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
+                {" "}
+                <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-secondary mark-circle" /></span>
               </a>
             </li>
             <li>
               <a className="pick attend reveal" href="https://sereel.com/blog/21" target="_blank" rel="noopener">
-                <div className="pick-media" aria-hidden="true">
-                  <div className="shape half-round sh sh-primary" style={{left: "32px", bottom: "0", width: "120px", height: "60px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{right: "-24px", top: "-24px", width: "88px", height: "88px"} as React.CSSProperties} />
-                </div>
                 <div className="pick-body">
-                  <span className="type-tag">Thought leadership</span>
-                  {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>What the IMF's Tokenization Note Reveals About the Future of Digital Finance</h3>
-                  <p className="t-caption secondary">Sereel</p>
-                  <p className="t-body">
+                  <p className="pick-meta">
+                    <span className="type-tag">Thought leadership</span>
+                    <span className="t-caption secondary">Sereel</span>
+                  </p>
+                  <h3 className="t-title pick-title">What the IMF's Tokenization Note Reveals About the Future of Digital Finance</h3>
+                  <p className="t-body secondary pick-note">
                     An industry analysis of why tokenization needs more than the ability to put assets on-chain. The piece looks at the infrastructure and services needed to support real financial activity.
                   </p>
                   {" "}
@@ -624,21 +619,19 @@ export default function WorkView() {
                   </span>
                   <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
+                {" "}
+                <span className="pick-mark" aria-hidden="true"><span className="shape half-round sh sh-primary mark-half" /></span>
               </a>
             </li>
             <li>
               <a className="pick attend reveal" href="https://onedev.club/blog/20-women-inspiring-blockchain-development-in-africa" target="_blank" rel="noopener">
-                <div className="pick-media" aria-hidden="true">
-                  <div className="shape sh-ring" style={{left: "32px", top: "32px", width: "56px", height: "56px", borderWidth: "7px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{right: "32px", bottom: "32px", width: "120px", height: "24px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{right: "32px", bottom: "64px", width: "72px", height: "24px"} as React.CSSProperties} />
-                </div>
                 <div className="pick-body">
-                  <span className="type-tag">Community storytelling</span>
-                  {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>20 Women Inspiring Blockchain Development in Africa</h3>
-                  <p className="t-caption secondary">One Dev</p>
-                  <p className="t-body">
+                  <p className="pick-meta">
+                    <span className="type-tag">Community storytelling</span>
+                    <span className="t-caption secondary">One Dev</span>
+                  </p>
+                  <h3 className="t-title pick-title">20 Women Inspiring Blockchain Development in Africa</h3>
+                  <p className="t-body secondary pick-note">
                     A feature celebrating women building in African blockchain ecosystems. It shows how content can recognise community members, make their work visible, and give others people to learn from.
                   </p>
                   {" "}
@@ -651,21 +644,19 @@ export default function WorkView() {
                   </span>
                   <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
+                {" "}
+                <span className="pick-mark" aria-hidden="true"><span className="shape sh-ring mark-ring" /></span>
               </a>
             </li>
             <li>
               <a className="pick attend reveal" href="https://onedev.club/blog/how-to-become-a-web3-developer-free-resources-included" target="_blank" rel="noopener">
-                <div className="pick-media" aria-hidden="true">
-                  <div className="shape round sh sh-primary" style={{left: "-32px", bottom: "-32px", width: "112px", height: "112px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{right: "40px", top: "32px", width: "48px", height: "48px"} as React.CSSProperties} />
-                  <div className="shape sh-ring" style={{right: "32px", bottom: "32px", width: "40px", height: "40px", borderWidth: "5px"} as React.CSSProperties} />
-                </div>
                 <div className="pick-body">
-                  <span className="type-tag">Educational content</span>
-                  {" "}
-                  <h3 className="t-title pick-title" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>How to Become a Web3 Developer: Free Resources Included</h3>
-                  <p className="t-caption secondary">One Dev</p>
-                  <p className="t-body">
+                  <p className="pick-meta">
+                    <span className="type-tag">Educational content</span>
+                    <span className="t-caption secondary">One Dev</span>
+                  </p>
+                  <h3 className="t-title pick-title">How to Become a Web3 Developer: Free Resources Included</h3>
+                  <p className="t-body secondary pick-note">
                     A beginner-focused guide that breaks a broad learning goal into practical steps and resources, helping readers find a starting point in Web3 development.
                   </p>
                   {" "}
@@ -678,6 +669,8 @@ export default function WorkView() {
                   </span>
                   <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
+                {" "}
+                <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-pill" /></span>
               </a>
             </li>
           </ul>
