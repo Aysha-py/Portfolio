@@ -153,16 +153,19 @@ export default function ContactView() {
           </div>
           <ul className="service-list reveal">
             <li>
-              <a className="service-row" href="mailto:m.aishat9890@gmail.com?subject=Content%20marketing">
+              <a className="service-row" href="mailto:m.aishat9890@gmail.com?subject=CV%20request">
                 <span className="service-name">
                   <span className="service-mark is-dot" aria-hidden="true" />
-                  <h3 className="t-title">Content marketing</h3>
+                  <span className="service-title">
+                    <h3 className="t-title">Content marketing</h3>
+                    <span className="t-caption secondary">(Content strategy, research-led thought leadership, educational content, short-form video)</span>
+                  </span>
                 </span>
                 <p className="t-body secondary">
                   Content strategy and campaigns that help your audience understand what you do, and why it matters to them.
                 </p>
                 <span className="service-ask">
-                  Ask about this{" "}
+                  Request CV{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -181,7 +184,7 @@ export default function ContactView() {
                   Educational posts, articles and explainers that turn complex topics into something people can learn from and share.
                 </p>
                 <span className="service-ask">
-                  Ask about this{" "}
+                  Send an email{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -200,7 +203,7 @@ export default function ContactView() {
                   Talks, panels, workshops and X Spaces on community building, open source, Web3 and starting out in tech.
                 </p>
                 <span className="service-ask">
-                  Ask about this{" "}
+                  Send an email{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -217,7 +220,7 @@ export default function ContactView() {
                 </span>
                 <p className="t-body secondary">Co-created content, programmes and campaigns with brands and communities who share an audience.</p>
                 <span className="service-ask">
-                  Ask about this{" "}
+                  Send an email{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -241,9 +244,10 @@ export default function ContactView() {
             <a className="reach-email" href="mailto:m.aishat9890@gmail.com">m.aishat9890@gmail.com</a>
             {" "}
             <div className="reach-note">
-              <p className="t-body-l secondary">
-                Not sure which of these fits? Send me a few lines about what you’re working on, and we’ll figure out the best way to work together.
-              </p>
+              <div className="stack" style={{gap: "var(--space-related)"} as React.CSSProperties}>
+                <p className="t-label">My availability</p>
+                <p className="t-body-l">Full-time roles, freelance projects, or both.</p>
+              </div>
               <p className="t-label">
                 <span className="label-dot" aria-hidden="true" />
                 Based in Lagos, Nigeria · Working remotely with teams anywhere
