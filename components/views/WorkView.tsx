@@ -676,6 +676,151 @@ export default function WorkView() {
           </ul>
         </div>
       </section>
+      <section id="hosting" aria-labelledby="hosting-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
+        <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
+          <div className="stack reveal" style={{gap: "var(--space-element)", maxWidth: "760px"} as React.CSSProperties}>
+            <p className="t-label">
+              <span className="label-dot" aria-hidden="true" />
+              Hosting and representing
+            </p>
+            <h2 id="hosting-title" className="t-heading-s">Sessions I’ve hosted, and the communities I’ve represented on stage and online.</h2>
+          </div>
+          <ul className="host-grid">
+            <li className="host-card reveal">
+              <figure className="host-media">
+                <img src={`${BASE}/images/host-gitex-web3ladies.jpg`} alt="Aishat at GITEX Nigeria in Lagos, wearing her event badge" loading="lazy" />
+              </figure>
+              <div className="host-body">
+                <span className="type-tag">Representing Web3Ladies</span>
+                {" "}
+                <div className="host-title">
+                  <h3 className="t-title">GITEX Nigeria</h3>
+                  <p className="t-caption secondary">In person · Lagos · 2025</p>
+                </div>
+                <p className="t-body secondary">
+                  I represented Web3Ladies at GITEX Nigeria in Lagos. [What you did there, for example who you met or what you shared.]
+                </p>
+              </div>
+            </li>
+            <li className="host-card reveal">
+              <figure className="host-media">
+                <img src={`${BASE}/images/host-stellar-web3ladies.jpg`} alt="Aishat talking with attendees at the DSF x Stellar meetup in Lagos" loading="lazy" />
+              </figure>
+              <div className="host-body">
+                <span className="type-tag">Representing Web3Ladies</span>
+                {" "}
+                <div className="host-title">
+                  <h3 className="t-title">DSF x Stellar meetup</h3>
+                  <p className="t-caption secondary">In person · Lagos · 2025</p>
+                </div>
+                <p className="t-body secondary">I shared the Web3Ladies vision at the DSF x Stellar meetup in Lagos.</p>
+              </div>
+            </li>
+            <li className="host-card reveal">
+              <figure className="host-media">
+                <img src={`${BASE}/images/host-code-africa-onedev.jpg`} alt="Aishat speaking on stage at the Code Africa Conference City Tour in Nigeria" loading="lazy" />
+              </figure>
+              <div className="host-body">
+                <span className="type-tag">Representing One Dev</span>
+                {" "}
+                <div className="host-title">
+                  <h3 className="t-title">Code Africa Conference City Tour</h3>
+                  <p className="t-caption secondary">In person · Nigeria · 2025</p>
+                </div>
+                <p className="t-body secondary">
+                  I shared One Dev’s vision to help African builders upskill in emerging technologies like blockchain and AI.
+                </p>
+                {" "}
+                <a className="work-cta" href="https://x.com/this_aishah_/status/1921856166339940569" target="_blank" rel="noopener">
+                  See the post{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </li>
+            <li className="host-card reveal">
+              <figure className="host-media">
+                <img src={`${BASE}/images/host-web3ladies-open-source.jpg`} alt="Event flyer for Contributing to open source in Web3, with Aishat as host" loading="lazy" />
+              </figure>
+              <div className="host-body">
+                <span className="type-tag">Host</span>
+                {" "}
+                <div className="host-title">
+                  <h3 className="t-title">Contributing to open source in Web3</h3>
+                  <p className="t-caption secondary">YouTube Live · 2024</p>
+                </div>
+                <p className="t-body secondary">I hosted this Web3 Ladies workshop on how to contribute to open-source projects in Web3.</p>
+                {" "}
+                <a className="work-cta" href={"https://www.youtube.com/watch?v=klbOztg-Y9Q&t=5s"} target="_blank" rel="noopener">
+                  Watch the recording{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </li>
+            <li className="host-card reveal">
+              <figure className="host-media">
+                <img src={`${BASE}/images/host-onedev-aiml.jpg`} alt="A live class from One Dev’s AI/ML for Developers Bootcamp" loading="lazy" />
+              </figure>
+              <div className="host-body">
+                <span className="type-tag">Facilitator</span>
+                {" "}
+                <div className="host-title">
+                  <h3 className="t-title">AI/ML for Developers Bootcamp</h3>
+                  <p className="t-caption secondary">YouTube · 2025</p>
+                </div>
+                <p className="t-body secondary">
+                  I facilitated the live class on day one of One Dev’s bootcamp, which introduced the fundamentals of AI and machine learning and Python for AI.
+                </p>
+                {" "}
+                <a className="work-cta" href={"https://www.youtube.com/watch?v=yqNm6mAvo0s&t=307s"} target="_blank" rel="noopener">
+                  Watch the recording{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </li>
+            <li className="host-card reveal">
+              <figure className="host-media">
+                <img src={`${BASE}/images/host-ota-community-call.jpg`} alt="Aishat with contributors on the first Open Terms Archive community call" loading="lazy" />
+              </figure>
+              <div className="host-body">
+                <span className="type-tag">Host</span>
+                {" "}
+                <div className="host-title">
+                  <h3 className="t-title">Open Terms Archive community call</h3>
+                  <p className="t-caption secondary">Online · [Year]</p>
+                </div>
+                <p className="t-body secondary">
+                  I anchored the first Open Terms Archive community call, following the structure I created for regular community calls.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div className="host-more reveal">
+            <span className="t-label">More sessions on YouTube</span>
+            {" "}
+            <a className="email-link t-body" href="https://www.youtube.com/@Web3Ladies/streams" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
+              Web3 Ladies
+              <span className="visually-hidden">(opens in a new tab)</span>
+            </a>
+            {" "}
+            <a className="email-link t-body" href="https://www.youtube.com/@onedevafrica/streams" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
+              One Dev
+              <span className="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </div>
+        </div>
+      </section>
       <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
         <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
           <div className="stack reveal" style={{gap: "var(--space-cluster)", maxWidth: "760px"} as React.CSSProperties}>
