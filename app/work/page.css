@@ -474,72 +474,56 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 /* end work copy */
 /* ===== Work cards ===== */
-/* component: one column per project. Number, name and focus areas, with the logo (linked to the organisation's site) on the right */
-.home{
---work-card-padding:var(--space-group);
---work-head-gap:var(--space-cluster);
---work-measure:680px;
-}
-.work-card{display:flex;flex-direction:column;gap:var(--space-related);padding:var(--work-card-padding);color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
-.work-card:hover{border-color:var(--card-border-hover);}
-.work-head{display:flex;flex-direction:row-reverse;align-items:flex-start;justify-content:space-between;gap:var(--work-head-gap);margin-bottom:var(--space-tight);}
-.work-id{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-related);min-width:0;max-width:var(--work-measure);}
-.work-card > :not(.work-head){max-width:var(--work-measure);}
-.work-card .work-heading{margin-top:0;}
-.work-cta{align-self:flex-start;text-decoration:none;}
-.work-cta:hover{color:var(--link-color);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
-@media (max-width: 760px){
-.work-card{padding:var(--space-inset) var(--space-cluster);}
-.work-head{flex-direction:column;gap:var(--space-element);}
-}
-/* the formats / focus line */
-.work-list-line{margin:var(--space-tight) 0 0;color:var(--color-text-secondary);}
-.work-list-line .t-label{margin-right:var(--space-tight);color:var(--color-text-primary);}
-/* end work cards */
-/* ===== Work type stamps ===== */
-/* component: the project's type as a small tilted stamp sitting on the card's top edge, and the logo straight on the card */
-/* primitive */
-.home{--primitive-mint-700:#1f7366;--primitive-tilt-4:-4deg;--primitive-tilt-3:3deg;--primitive-size-128:128px;}
-/* semantic: type colours that read as text (coral on Content, mint on Community) */
-.home{--color-type-content:var(--primitive-coral-700);--color-type-community:var(--primitive-mint-700);}
-.home[data-theme="dark"]{--color-type-content:var(--primitive-coral-400);--color-type-community:var(--primitive-mint-300);}
+/* component: one column per project. A top row with the type tag and the organisation's logo (linked to its site),
+   then the name and focus areas, the heading and story, the formats line and the case study link */
+/* primitive: logo heights */
+.home{--primitive-size-20:20px;--primitive-size-32:32px;--primitive-size-36:36px;--primitive-opacity-70:0.7;}
+/* semantic: logos are sized by shape, so a square mark and a long wordmark carry about the same weight */
+.home{--size-logo-mark:var(--primitive-size-36);--size-logo-stacked:var(--primitive-size-32);--size-logo-wordmark:var(--primitive-size-20);--opacity-hover:var(--primitive-opacity-70);}
 /* component */
 .home{
---stamp-bg:var(--card-bg);
---stamp-border-width:var(--border-width-strong);
---stamp-radius:var(--radius-control);
---stamp-pad-block:var(--space-hairline);
---stamp-pad-inline:var(--space-tight);
---stamp-gap:var(--space-hairline);
---stamp-tilt:var(--primitive-tilt-4);
---stamp-tilt-second:var(--primitive-tilt-3);
---stamp-content:var(--color-type-content);
---stamp-community:var(--color-type-community);
---logo-height:var(--primitive-size-40);
---logo-height-phone:var(--space-stack);
---logo-max-width:var(--primitive-size-128);
---logo-lift:calc(var(--space-hairline) * -0.5);
+--work-card-padding:var(--space-group);
+--work-card-padding-phone:var(--space-inset) var(--space-cluster);
+--work-measure:680px;
+--work-head-gap:var(--space-element);
+--work-gap-head:var(--space-cluster);
+--work-gap-name:var(--space-tight);
+--work-gap-story:var(--space-stack);
+--work-gap-heading:var(--space-related);
+--work-gap-para:var(--space-element);
+--work-gap-detail:var(--space-cluster);
+--dot-list-gap:var(--space-related);
+--dot-list-dot-size:var(--space-hairline);
+--dot-list-dot-color:var(--color-text-secondary);
+--logo-height-mark:var(--size-logo-mark);
+--logo-height-stacked:var(--size-logo-stacked);
+--logo-height-wordmark:var(--size-logo-wordmark);
+--logo-opacity-hover:var(--opacity-hover);
 }
-.work-card{position:relative;}
-.work-stamps{position:absolute;top:0;left:var(--work-card-padding);display:flex;align-items:center;gap:var(--stamp-gap);margin:0;transform:translateY(-50%);pointer-events:none;}
-.stamp{display:inline-block;padding:var(--stamp-pad-block) var(--stamp-pad-inline);background:var(--stamp-bg);border:var(--stamp-border-width) solid currentColor;border-radius:var(--stamp-radius);font-family:var(--font-mono);font-size:var(--type-label-size);line-height:var(--type-label-leading);font-weight:var(--weight-ui);letter-spacing:var(--type-label-tracking);text-transform:uppercase;white-space:nowrap;transform:rotate(var(--stamp-tilt));}
-.stamp ~ .stamp{transform:rotate(var(--stamp-tilt-second));}
-.stamp-content{color:var(--stamp-content);}
-.stamp-community{color:var(--stamp-community);}
-.org-link{flex:none;display:inline-flex;align-items:center;justify-content:flex-end;height:var(--logo-height);max-width:var(--logo-max-width);border-radius:var(--radius-control);}
-.org-link:focus-visible{outline:var(--border-width-strong) solid var(--color-focus-ring);outline-offset:var(--space-hairline);}
-.org-link img{max-width:100%;max-height:100%;object-fit:contain;}
-@media (prefers-reduced-motion: no-preference){
-.stamp{transition:transform var(--motion-base) var(--motion-ease);}
-.work-card:hover .stamp{transform:none;}
-.org-link{transition:transform var(--motion-fast) var(--motion-ease);}
-.org-link:hover{transform:translateY(var(--logo-lift));}
-}
+.work-card{display:flex;flex-direction:column;padding:var(--work-card-padding);color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
+.work-card:hover{border-color:var(--card-border-hover);}
+.work-card > :not(.work-head){max-width:var(--work-measure);}
+.work-head{display:flex;align-items:center;justify-content:space-between;gap:var(--work-head-gap);min-height:var(--logo-height-mark);margin-bottom:var(--work-gap-head);}
+.work-id{display:flex;flex-direction:column;align-items:flex-start;gap:var(--work-gap-name);min-width:0;}
+.work-card .work-heading{margin:var(--work-gap-story) 0 var(--work-gap-heading);}
+.work-card .work-copy{gap:var(--work-gap-para);}
+.work-card .work-cta{align-self:flex-start;margin-top:var(--work-gap-detail);padding-top:0;text-decoration:none;}
+.work-cta:hover{color:var(--link-color);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.org-link{flex:none;display:inline-flex;align-items:center;transition:opacity var(--motion-fast) var(--motion-ease);}
+.org-link img{width:auto;height:var(--logo-height-wordmark);}
+.org-link.is-mark img{height:var(--logo-height-mark);}
+.org-link.is-stacked img{height:var(--logo-height-stacked);}
+.org-link:hover{opacity:var(--logo-opacity-hover);}
+/* focus areas and formats: a list with a small dot and room between each point */
+.dot-list{display:flex;flex-wrap:wrap;align-items:center;margin:0;padding:0;list-style:none;}
+.dot-list li{display:inline-flex;align-items:center;}
+.dot-list li:not(:last-child)::after{content:"";flex:none;width:var(--dot-list-dot-size);height:var(--dot-list-dot-size);margin-inline:var(--dot-list-gap);border-radius:var(--radius-round);background:var(--dot-list-dot-color);}
+.work-list-line{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-tight) var(--dot-list-gap);margin:var(--work-gap-detail) 0 0;color:var(--color-text-secondary);}
+.work-list-line .t-label{color:var(--color-text-primary);}
 @media (max-width: 760px){
-.work-stamps{left:var(--space-cluster);}
-.org-link{height:var(--logo-height-phone);justify-content:flex-start;}
+.work-card{padding:var(--work-card-padding-phone);}
 }
-/* end work type stamps */
+/* end work cards */
 /* ===== Ripple cursor ===== */
 /* primitive */
 .home{--primitive-duration-640:640ms;--primitive-duration-900:900ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-size-64:64px;--primitive-opacity-45:0.45;}

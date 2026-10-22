@@ -484,72 +484,56 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 /* end work copy */
 /* ===== Work cards ===== */
-/* component: one column per project. Number, name and focus areas, with the logo (linked to the organisation's site) on the right */
-.home{
---work-card-padding:var(--space-group);
---work-head-gap:var(--space-cluster);
---work-measure:680px;
-}
-.work-card{display:flex;flex-direction:column;gap:var(--space-related);padding:var(--work-card-padding);color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
-.work-card:hover{border-color:var(--card-border-hover);}
-.work-head{display:flex;flex-direction:row-reverse;align-items:flex-start;justify-content:space-between;gap:var(--work-head-gap);margin-bottom:var(--space-tight);}
-.work-id{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-related);min-width:0;max-width:var(--work-measure);}
-.work-card > :not(.work-head){max-width:var(--work-measure);}
-.work-card .work-heading{margin-top:0;}
-.work-cta{align-self:flex-start;text-decoration:none;}
-.work-cta:hover{color:var(--link-color);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
-@media (max-width: 760px){
-.work-card{padding:var(--space-inset) var(--space-cluster);}
-.work-head{flex-direction:column;gap:var(--space-element);}
-}
-/* the formats / focus line */
-.work-list-line{margin:var(--space-tight) 0 0;color:var(--color-text-secondary);}
-.work-list-line .t-label{margin-right:var(--space-tight);color:var(--color-text-primary);}
-/* end work cards */
-/* ===== Work type stamps ===== */
-/* component: the project's type as a small tilted stamp sitting on the card's top edge, and the logo straight on the card */
-/* primitive */
-.home{--primitive-mint-700:#1f7366;--primitive-tilt-4:-4deg;--primitive-tilt-3:3deg;--primitive-size-128:128px;}
-/* semantic: type colours that read as text (coral on Content, mint on Community) */
-.home{--color-type-content:var(--primitive-coral-700);--color-type-community:var(--primitive-mint-700);}
-.home[data-theme="dark"]{--color-type-content:var(--primitive-coral-400);--color-type-community:var(--primitive-mint-300);}
+/* component: one column per project. A top row with the type tag and the organisation's logo (linked to its site),
+   then the name and focus areas, the heading and story, the formats line and the case study link */
+/* primitive: logo heights */
+.home{--primitive-size-20:20px;--primitive-size-32:32px;--primitive-size-36:36px;--primitive-opacity-70:0.7;}
+/* semantic: logos are sized by shape, so a square mark and a long wordmark carry about the same weight */
+.home{--size-logo-mark:var(--primitive-size-36);--size-logo-stacked:var(--primitive-size-32);--size-logo-wordmark:var(--primitive-size-20);--opacity-hover:var(--primitive-opacity-70);}
 /* component */
 .home{
---stamp-bg:var(--card-bg);
---stamp-border-width:var(--border-width-strong);
---stamp-radius:var(--radius-control);
---stamp-pad-block:var(--space-hairline);
---stamp-pad-inline:var(--space-tight);
---stamp-gap:var(--space-hairline);
---stamp-tilt:var(--primitive-tilt-4);
---stamp-tilt-second:var(--primitive-tilt-3);
---stamp-content:var(--color-type-content);
---stamp-community:var(--color-type-community);
---logo-height:var(--primitive-size-40);
---logo-height-phone:var(--space-stack);
---logo-max-width:var(--primitive-size-128);
---logo-lift:calc(var(--space-hairline) * -0.5);
+--work-card-padding:var(--space-group);
+--work-card-padding-phone:var(--space-inset) var(--space-cluster);
+--work-measure:680px;
+--work-head-gap:var(--space-element);
+--work-gap-head:var(--space-cluster);
+--work-gap-name:var(--space-tight);
+--work-gap-story:var(--space-stack);
+--work-gap-heading:var(--space-related);
+--work-gap-para:var(--space-element);
+--work-gap-detail:var(--space-cluster);
+--dot-list-gap:var(--space-related);
+--dot-list-dot-size:var(--space-hairline);
+--dot-list-dot-color:var(--color-text-secondary);
+--logo-height-mark:var(--size-logo-mark);
+--logo-height-stacked:var(--size-logo-stacked);
+--logo-height-wordmark:var(--size-logo-wordmark);
+--logo-opacity-hover:var(--opacity-hover);
 }
-.work-card{position:relative;}
-.work-stamps{position:absolute;top:0;left:var(--work-card-padding);display:flex;align-items:center;gap:var(--stamp-gap);margin:0;transform:translateY(-50%);pointer-events:none;}
-.stamp{display:inline-block;padding:var(--stamp-pad-block) var(--stamp-pad-inline);background:var(--stamp-bg);border:var(--stamp-border-width) solid currentColor;border-radius:var(--stamp-radius);font-family:var(--font-mono);font-size:var(--type-label-size);line-height:var(--type-label-leading);font-weight:var(--weight-ui);letter-spacing:var(--type-label-tracking);text-transform:uppercase;white-space:nowrap;transform:rotate(var(--stamp-tilt));}
-.stamp ~ .stamp{transform:rotate(var(--stamp-tilt-second));}
-.stamp-content{color:var(--stamp-content);}
-.stamp-community{color:var(--stamp-community);}
-.org-link{flex:none;display:inline-flex;align-items:center;justify-content:flex-end;height:var(--logo-height);max-width:var(--logo-max-width);border-radius:var(--radius-control);}
-.org-link:focus-visible{outline:var(--border-width-strong) solid var(--color-focus-ring);outline-offset:var(--space-hairline);}
-.org-link img{max-width:100%;max-height:100%;object-fit:contain;}
-@media (prefers-reduced-motion: no-preference){
-.stamp{transition:transform var(--motion-base) var(--motion-ease);}
-.work-card:hover .stamp{transform:none;}
-.org-link{transition:transform var(--motion-fast) var(--motion-ease);}
-.org-link:hover{transform:translateY(var(--logo-lift));}
-}
+.work-card{display:flex;flex-direction:column;padding:var(--work-card-padding);color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
+.work-card:hover{border-color:var(--card-border-hover);}
+.work-card > :not(.work-head){max-width:var(--work-measure);}
+.work-head{display:flex;align-items:center;justify-content:space-between;gap:var(--work-head-gap);min-height:var(--logo-height-mark);margin-bottom:var(--work-gap-head);}
+.work-id{display:flex;flex-direction:column;align-items:flex-start;gap:var(--work-gap-name);min-width:0;}
+.work-card .work-heading{margin:var(--work-gap-story) 0 var(--work-gap-heading);}
+.work-card .work-copy{gap:var(--work-gap-para);}
+.work-card .work-cta{align-self:flex-start;margin-top:var(--work-gap-detail);padding-top:0;text-decoration:none;}
+.work-cta:hover{color:var(--link-color);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.org-link{flex:none;display:inline-flex;align-items:center;transition:opacity var(--motion-fast) var(--motion-ease);}
+.org-link img{width:auto;height:var(--logo-height-wordmark);}
+.org-link.is-mark img{height:var(--logo-height-mark);}
+.org-link.is-stacked img{height:var(--logo-height-stacked);}
+.org-link:hover{opacity:var(--logo-opacity-hover);}
+/* focus areas and formats: a list with a small dot and room between each point */
+.dot-list{display:flex;flex-wrap:wrap;align-items:center;margin:0;padding:0;list-style:none;}
+.dot-list li{display:inline-flex;align-items:center;}
+.dot-list li:not(:last-child)::after{content:"";flex:none;width:var(--dot-list-dot-size);height:var(--dot-list-dot-size);margin-inline:var(--dot-list-gap);border-radius:var(--radius-round);background:var(--dot-list-dot-color);}
+.work-list-line{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-tight) var(--dot-list-gap);margin:var(--work-gap-detail) 0 0;color:var(--color-text-secondary);}
+.work-list-line .t-label{color:var(--color-text-primary);}
 @media (max-width: 760px){
-.work-stamps{left:var(--space-cluster);}
-.org-link{height:var(--logo-height-phone);justify-content:flex-start;}
+.work-card{padding:var(--work-card-padding-phone);}
 }
-/* end work type stamps */
+/* end work cards */
 /* ===== Ripple cursor ===== */
 /* primitive */
 .home{--primitive-duration-640:640ms;--primitive-duration-900:900ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-size-64:64px;--primitive-opacity-45:0.45;}
@@ -619,12 +603,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li>
 <article class="work-card reveal">
 <div class="work-head">
-<a class="org-link" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)"><img class="logo-light" src="/_blob/0486d7b3812853ba0c7eebc14a6c7d05" alt=""><img class="logo-dark" src="/_blob/d924e943ed9ca826ccb5aa0a5a64542a" alt=""></a>
+<span class="type-tag">Content</span>
+<a class="org-link is-mark" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)"><img class="logo-light" src="/_blob/0486d7b3812853ba0c7eebc14a6c7d05" alt=""><img class="logo-dark" src="/_blob/d924e943ed9ca826ccb5aa0a5a64542a" alt=""></a>
+</div>
 <div class="work-id">
 <h2 class="t-heading-s work-title">Sereel</h2>
-<p class="work-stamps"><span class="stamp stamp-content">Content</span></p>
-<p class="t-caption secondary work-tags">Content marketing · B2B thought leadership · Newsletter · Educational content · Video</p>
-</div>
+<ul class="t-caption secondary work-tags dot-list"><li>Content marketing</li><li>B2B thought leadership</li><li>Newsletter</li><li>Educational content</li><li>Video</li></ul>
 </div>
 <h3 class="t-title work-heading">Making complex ideas clearer</h3>
 <div class="work-copy">
@@ -633,7 +617,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body">Researched regulatory changes and market challenges to identify relevant topics, then translated those insights into educational social posts, long-form articles, and a monthly newsletter. Extended these themes into short-form videos, adapting complex ideas for different formats and audience touchpoints.</p>
 <p class="t-body">Grew Sereel’s LinkedIn audience by <strong>127.8%, from 245 to 558 followers</strong>, through consistent content that connected industry developments with the questions and challenges facing institutional audiences.</p>
 </div>
-<p class="t-caption work-list-line"><span class="t-label">Content formats</span>LinkedIn · Blog · Newsletter · Short-form video</p>
+<div class="t-caption work-list-line"><span class="t-label">Content formats</span><ul class="dot-list"><li>LinkedIn</li><li>Blog</li><li>Newsletter</li><li>Short-form video</li></ul></div>
 <a class="work-cta" href="Home.dc.html#case-sereel">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </article>
 </li>
@@ -641,12 +625,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li>
 <article class="work-card reveal">
 <div class="work-head">
-<a class="org-link" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src="/_blob/96c3a7e516768e35abc365aeac405dd2" alt=""></a>
+<span class="type-tag">Content</span>
+<a class="org-link is-mark" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src="/_blob/96c3a7e516768e35abc365aeac405dd2" alt=""></a>
+</div>
 <div class="work-id">
 <h2 class="t-heading-s work-title">Invisible Garden</h2>
-<p class="work-stamps"><span class="stamp stamp-content">Content</span></p>
-<p class="t-caption secondary work-tags">Content marketing · Social media · Video · Outreach</p>
-</div>
+<ul class="t-caption secondary work-tags dot-list"><li>Content marketing</li><li>Social media</li><li>Video</li><li>Outreach</li></ul>
 </div>
 <h3 class="t-title work-heading">Turning a developer residency into a story people could follow</h3>
 <div class="work-copy">
@@ -655,7 +639,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body">Managed outreach to prospective mentors and project judges, drafting personalised messages, following up, and tracking responses and project evaluations in Excel to help secure judges for the projects.</p>
 <p class="t-body">Grew Invisible Garden’s X following by <strong>64%</strong> during the Devcon Buenos Aires period through consistent social copy and event coverage, while launching its Instagram presence to extend the residency’s reach to a new channel.</p>
 </div>
-<p class="t-caption work-list-line"><span class="t-label">Content formats</span>X · Instagram · YouTube · Short-form video · Outreach</p>
+<div class="t-caption work-list-line"><span class="t-label">Content formats</span><ul class="dot-list"><li>X</li><li>Instagram</li><li>YouTube</li><li>Short-form video</li><li>Outreach</li></ul></div>
 <a class="work-cta" href="Home.dc.html#case-invisible-garden">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </article>
 </li>
@@ -663,12 +647,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li>
 <article class="work-card reveal">
 <div class="work-head">
-<a class="org-link" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)"><img class="logo-light" src="/_blob/0b1567af669c3a3b8855d71c69b9951f" alt=""><img class="logo-dark" src="/_blob/11c1e453eda45937f34272be84238c9f" alt=""></a>
+<span class="type-tag">Content + community</span>
+<a class="org-link is-wordmark" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)"><img class="logo-light" src="/_blob/0b1567af669c3a3b8855d71c69b9951f" alt=""><img class="logo-dark" src="/_blob/11c1e453eda45937f34272be84238c9f" alt=""></a>
+</div>
 <div class="work-id">
 <h2 class="t-heading-s work-title">One Dev</h2>
-<p class="work-stamps"><span class="stamp stamp-content">Content</span><span class="visually-hidden"> and </span><span class="stamp stamp-community">Community</span></p>
-<p class="t-caption secondary work-tags">Community management · Developer education · Content · Community programmes</p>
-</div>
+<ul class="t-caption secondary work-tags dot-list"><li>Community management</li><li>Developer education</li><li>Content</li><li>Community programmes</li></ul>
 </div>
 <h3 class="t-title work-heading">Connecting developers with the knowledge and people they need to grow</h3>
 <div class="work-copy">
@@ -676,7 +660,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body">Managed community engagement and supported developer learning through educational content, bootcamps, and community programmes. Connected content and programme communications with the wider community experience, helping members discover learning opportunities and stay engaged.</p>
 <p class="t-body">Contributed to a community of <strong>8,000+ members</strong>, a newsletter with <strong>6,300+ subscribers</strong>, and bootcamps that reached <strong>200+ learners</strong>.</p>
 </div>
-<p class="t-caption work-list-line"><span class="t-label">Focus areas</span>Community engagement · Educational content · Developer programmes · Newsletter</p>
+<div class="t-caption work-list-line"><span class="t-label">Focus areas</span><ul class="dot-list"><li>Community engagement</li><li>Educational content</li><li>Developer programmes</li><li>Newsletter</li></ul></div>
 <a class="work-cta" href="#case-one-dev">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </article>
 </li>
@@ -684,12 +668,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li>
 <article class="work-card reveal">
 <div class="work-head">
-<a class="org-link" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)"><img class="logo-light" src="/_blob/ba82c2d6cc5201262edf417fd5dea012" alt=""><img class="logo-dark" src="/_blob/2eea2ce27dc43a935a0588b786bfa290" alt=""></a>
+<span class="type-tag">Content + community</span>
+<a class="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)"><img class="logo-light" src="/_blob/ba82c2d6cc5201262edf417fd5dea012" alt=""><img class="logo-dark" src="/_blob/2eea2ce27dc43a935a0588b786bfa290" alt=""></a>
+</div>
 <div class="work-id">
 <h2 class="t-heading-s work-title">Code Africa Conference</h2>
-<p class="work-stamps"><span class="stamp stamp-content">Content</span><span class="visually-hidden"> and </span><span class="stamp stamp-community">Community</span></p>
-<p class="t-caption secondary work-tags">Content distribution · Community operations · Volunteer management</p>
-</div>
+<ul class="t-caption secondary work-tags dot-list"><li>Content distribution</li><li>Community operations</li><li>Volunteer management</li></ul>
 </div>
 <h3 class="t-title work-heading">Connecting conference promotion with community participation</h3>
 <div class="work-copy">
@@ -697,7 +681,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body">Supported conference promotion and community operations through campaign copy, content distribution, volunteer coordination, and the ambassador campaign. Connected promotional messaging with community outreach and on-the-ground coordination to help turn awareness into registrations and support conference delivery.</p>
 <p class="t-body">Contributed to a campaign that generated <strong>3,000+ registrations</strong>, while coordinating volunteers and ambassadors across the conference effort.</p>
 </div>
-<p class="t-caption work-list-line"><span class="t-label">Focus areas</span>Campaign content · Community outreach · Volunteer coordination · Ambassador programmes</p>
+<div class="t-caption work-list-line"><span class="t-label">Focus areas</span><ul class="dot-list"><li>Campaign content</li><li>Community outreach</li><li>Volunteer coordination</li><li>Ambassador programmes</li></ul></div>
 <a class="work-cta" href="#case-code-africa">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </article>
 </li>
@@ -705,12 +689,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li>
 <article class="work-card reveal">
 <div class="work-head">
-<a class="org-link" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)"><img class="logo-light" src="/_blob/0f1757c991dc89555a29078ec093d643" alt=""><img class="logo-dark" src="/_blob/e59289452db7707fb9fdeb5983455581" alt=""></a>
+<span class="type-tag">Community</span>
+<a class="org-link is-stacked" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)"><img class="logo-light" src="/_blob/0f1757c991dc89555a29078ec093d643" alt=""><img class="logo-dark" src="/_blob/e59289452db7707fb9fdeb5983455581" alt=""></a>
+</div>
 <div class="work-id">
 <h2 class="t-heading-s work-title">Web3Ladies</h2>
-<p class="work-stamps"><span class="stamp stamp-community">Community</span></p>
-<p class="t-caption secondary work-tags">Community leadership · Programme development · Ecosystem partnerships · Community engagement</p>
-</div>
+<ul class="t-caption secondary work-tags dot-list"><li>Community leadership</li><li>Programme development</li><li>Ecosystem partnerships</li><li>Community engagement</li></ul>
 </div>
 <h3 class="t-title work-heading">Turning community needs into opportunities to learn and grow</h3>
 <div class="work-copy">
@@ -719,7 +703,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body">I designed and led <strong>Build with AI</strong>, turning the programme concept into an executable plan that brought together four expert-led sessions and generated seven project submissions from 100+ registrations. Alongside programme delivery, I support community growth through event representation, programme promotion, and ongoing engagement across digital and in-person channels.</p>
 <p class="t-body"><strong>15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations</strong></p>
 </div>
-<p class="t-caption work-list-line"><span class="t-label">Focus areas</span>Community programmes · Ecosystem partnerships · Member engagement · Community operations</p>
+<div class="t-caption work-list-line"><span class="t-label">Focus areas</span><ul class="dot-list"><li>Community programmes</li><li>Ecosystem partnerships</li><li>Member engagement</li><li>Community operations</li></ul></div>
 <a class="work-cta" href="#case-web3ladies">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </article>
 </li>
@@ -727,12 +711,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li>
 <article class="work-card reveal">
 <div class="work-head">
-<a class="org-link" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)"><img class="logo-light" src="/_blob/4899177a0dbf67c9cb80264dc0fb7694" alt=""><img class="logo-dark" src="/_blob/614360db2691f9e82f4b6ad395dbf92d" alt=""></a>
+<span class="type-tag">Content + community</span>
+<a class="org-link is-stacked" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)"><img class="logo-light" src="/_blob/4899177a0dbf67c9cb80264dc0fb7694" alt=""><img class="logo-dark" src="/_blob/614360db2691f9e82f4b6ad395dbf92d" alt=""></a>
+</div>
 <div class="work-id">
 <h2 class="t-heading-s work-title">Community for Africa</h2>
-<p class="work-stamps"><span class="stamp stamp-content">Content</span><span class="visually-hidden"> and </span><span class="stamp stamp-community">Community</span></p>
-<p class="t-caption secondary work-tags">Community management · Educational content · Resource development</p>
-</div>
+<ul class="t-caption secondary work-tags dot-list"><li>Community management</li><li>Educational content</li><li>Resource development</li></ul>
 </div>
 <h3 class="t-title work-heading">Turning community learning into practical resources</h3>
 <div class="work-copy">
@@ -740,7 +724,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body">Supported community engagement through events, learning sessions, and written and video content. Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.</p>
 <p class="t-body">The resource reached <strong>100+ downloads</strong>, giving community members a practical tool they could use beyond individual sessions.</p>
 </div>
-<p class="t-caption work-list-line"><span class="t-label">Focus areas</span>Community engagement · Events · Educational content · Learning resources</p>
+<div class="t-caption work-list-line"><span class="t-label">Focus areas</span><ul class="dot-list"><li>Community engagement</li><li>Events</li><li>Educational content</li><li>Learning resources</li></ul></div>
 <a class="work-cta" href="#case-community-for-africa">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </article>
 </li>
@@ -748,12 +732,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li>
 <article class="work-card reveal">
 <div class="work-head">
-<a class="org-link" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)"><img class="logo-light" src="/_blob/bfac7decba51c15a0ed5911d700b6dce" alt=""><img class="logo-dark" src="/_blob/eff4615b04eb0d8a673052fc16f9b912" alt=""></a>
+<span class="type-tag">Community</span>
+<a class="org-link is-mark" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)"><img class="logo-light" src="/_blob/bfac7decba51c15a0ed5911d700b6dce" alt=""><img class="logo-dark" src="/_blob/eff4615b04eb0d8a673052fc16f9b912" alt=""></a>
+</div>
 <div class="work-id">
 <h2 class="t-heading-s work-title">Open Terms Archive</h2>
-<p class="work-stamps"><span class="stamp stamp-community">Community</span></p>
-<p class="t-caption secondary work-tags">Open source community management · Contributor experience · Documentation</p>
-</div>
+<ul class="t-caption secondary work-tags dot-list"><li>Open source community management</li><li>Contributor experience</li><li>Documentation</li></ul>
 </div>
 <h3 class="t-title work-heading">Making it easier for contributors to find their way in</h3>
 <div class="work-copy">
@@ -761,7 +745,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body">Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources. Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.</p>
 <p class="t-body">Also developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices to support consistent knowledge-sharing.</p>
 </div>
-<p class="t-caption work-list-line"><span class="t-label">Focus areas</span>Community migration · Contributor onboarding · Documentation · Community calls</p>
+<div class="t-caption work-list-line"><span class="t-label">Focus areas</span><ul class="dot-list"><li>Community migration</li><li>Contributor onboarding</li><li>Documentation</li><li>Community calls</li></ul></div>
 <a class="work-cta" href="#case-open-terms-archive">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </article>
 </li>

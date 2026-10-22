@@ -148,16 +148,22 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)">
+                  <span className="type-tag">Content</span>
+                  {" "}
+                  <a className="org-link is-mark" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)">
                     <img className="logo-light" src={`${BASE}/images/logo-sereel-mark.png`} alt="" />
                     <img className="logo-dark" src={`${BASE}/images/logo-sereel-mark-dark.png`} alt="" />
                   </a>
-                  {" "}
-                  <div className="work-id">
-                    <h2 className="t-heading-s work-title">Sereel</h2>
-                    <p className="work-stamps"><span className="stamp stamp-content">Content</span></p>
-                    <p className="t-caption secondary work-tags">Content marketing · B2B thought leadership · Newsletter · Educational content · Video</p>
-                  </div>
+                </div>
+                <div className="work-id">
+                  <h2 className="t-heading-s work-title">Sereel</h2>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Content marketing</li>
+                    <li>B2B thought leadership</li>
+                    <li>Newsletter</li>
+                    <li>Educational content</li>
+                    <li>Video</li>
+                  </ul>
                 </div>
                 <h3 className="t-title work-heading">Making complex ideas clearer</h3>
                 <div className="work-copy">
@@ -174,10 +180,15 @@ export default function WorkView() {
                     , through consistent content that connected industry developments with the questions and challenges facing institutional audiences.
                   </p>
                 </div>
-                <p className="t-caption work-list-line">
+                <div className="t-caption work-list-line">
                   <span className="t-label">Content formats</span>
-                  LinkedIn · Blog · Newsletter · Short-form video
-                </p>
+                  <ul className="dot-list">
+                    <li>LinkedIn</li>
+                    <li>Blog</li>
+                    <li>Newsletter</li>
+                    <li>Short-form video</li>
+                  </ul>
+                </div>
                 {" "}
                 <a className="work-cta" href={`${BASE}/#case-sereel`}>
                   Read the case study{" "}
@@ -191,13 +202,18 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
+                  <span className="type-tag">Content</span>
                   {" "}
-                  <div className="work-id">
-                    <h2 className="t-heading-s work-title">Invisible Garden</h2>
-                    <p className="work-stamps"><span className="stamp stamp-content">Content</span></p>
-                    <p className="t-caption secondary work-tags">Content marketing · Social media · Video · Outreach</p>
-                  </div>
+                  <a className="org-link is-mark" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
+                </div>
+                <div className="work-id">
+                  <h2 className="t-heading-s work-title">Invisible Garden</h2>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Content marketing</li>
+                    <li>Social media</li>
+                    <li>Video</li>
+                    <li>Outreach</li>
+                  </ul>
                 </div>
                 <h3 className="t-title work-heading">Turning a developer residency into a story people could follow</h3>
                 <div className="work-copy">
@@ -214,10 +230,16 @@ export default function WorkView() {
                     {" "}during the Devcon Buenos Aires period through consistent social copy and event coverage, while launching its Instagram presence to extend the residency’s reach to a new channel.
                   </p>
                 </div>
-                <p className="t-caption work-list-line">
+                <div className="t-caption work-list-line">
                   <span className="t-label">Content formats</span>
-                  X · Instagram · YouTube · Short-form video · Outreach
-                </p>
+                  <ul className="dot-list">
+                    <li>X</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                    <li>Short-form video</li>
+                    <li>Outreach</li>
+                  </ul>
+                </div>
                 {" "}
                 <a className="work-cta" href={`${BASE}/#case-invisible-garden`}>
                   Read the case study{" "}
@@ -231,20 +253,21 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)">
+                  <span className="type-tag">Content + community</span>
+                  {" "}
+                  <a className="org-link is-wordmark" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)">
                     <img className="logo-light" src={`${BASE}/images/logo-onedev.svg`} alt="" />
                     <img className="logo-dark" src={`${BASE}/images/logo-onedev-dark.svg`} alt="" />
                   </a>
-                  {" "}
-                  <div className="work-id">
-                    <h2 className="t-heading-s work-title">One Dev</h2>
-                    <p className="work-stamps">
-                      <span className="stamp stamp-content">Content</span>
-                      <span className="visually-hidden">and</span>
-                      <span className="stamp stamp-community">Community</span>
-                    </p>
-                    <p className="t-caption secondary work-tags">Community management · Developer education · Content · Community programmes</p>
-                  </div>
+                </div>
+                <div className="work-id">
+                  <h2 className="t-heading-s work-title">One Dev</h2>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Community management</li>
+                    <li>Developer education</li>
+                    <li>Content</li>
+                    <li>Community programmes</li>
+                  </ul>
                 </div>
                 <h3 className="t-title work-heading">Connecting developers with the knowledge and people they need to grow</h3>
                 <div className="work-copy">
@@ -262,10 +285,15 @@ export default function WorkView() {
                     .
                   </p>
                 </div>
-                <p className="t-caption work-list-line">
+                <div className="t-caption work-list-line">
                   <span className="t-label">Focus areas</span>
-                  Community engagement · Educational content · Developer programmes · Newsletter
-                </p>
+                  <ul className="dot-list">
+                    <li>Community engagement</li>
+                    <li>Educational content</li>
+                    <li>Developer programmes</li>
+                    <li>Newsletter</li>
+                  </ul>
+                </div>
                 {" "}
                 <a className="work-cta" href="#case-one-dev">
                   Read the case study{" "}
@@ -279,20 +307,20 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)">
+                  <span className="type-tag">Content + community</span>
+                  {" "}
+                  <a className="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)">
                     <img className="logo-light" src={`${BASE}/images/logo-code-africa.png`} alt="" />
                     <img className="logo-dark" src={`${BASE}/images/logo-code-africa-dark.png`} alt="" />
                   </a>
-                  {" "}
-                  <div className="work-id">
-                    <h2 className="t-heading-s work-title">Code Africa Conference</h2>
-                    <p className="work-stamps">
-                      <span className="stamp stamp-content">Content</span>
-                      <span className="visually-hidden">and</span>
-                      <span className="stamp stamp-community">Community</span>
-                    </p>
-                    <p className="t-caption secondary work-tags">Content distribution · Community operations · Volunteer management</p>
-                  </div>
+                </div>
+                <div className="work-id">
+                  <h2 className="t-heading-s work-title">Code Africa Conference</h2>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Content distribution</li>
+                    <li>Community operations</li>
+                    <li>Volunteer management</li>
+                  </ul>
                 </div>
                 <h3 className="t-title work-heading">Connecting conference promotion with community participation</h3>
                 <div className="work-copy">
@@ -306,10 +334,15 @@ export default function WorkView() {
                     , while coordinating volunteers and ambassadors across the conference effort.
                   </p>
                 </div>
-                <p className="t-caption work-list-line">
+                <div className="t-caption work-list-line">
                   <span className="t-label">Focus areas</span>
-                  Campaign content · Community outreach · Volunteer coordination · Ambassador programmes
-                </p>
+                  <ul className="dot-list">
+                    <li>Campaign content</li>
+                    <li>Community outreach</li>
+                    <li>Volunteer coordination</li>
+                    <li>Ambassador programmes</li>
+                  </ul>
+                </div>
                 {" "}
                 <a className="work-cta" href="#case-code-africa">
                   Read the case study{" "}
@@ -323,16 +356,21 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)">
+                  <span className="type-tag">Community</span>
+                  {" "}
+                  <a className="org-link is-stacked" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)">
                     <img className="logo-light" src={`${BASE}/images/logo-web3ladies.svg`} alt="" />
                     <img className="logo-dark" src={`${BASE}/images/logo-web3ladies-dark.svg`} alt="" />
                   </a>
-                  {" "}
-                  <div className="work-id">
-                    <h2 className="t-heading-s work-title">Web3Ladies</h2>
-                    <p className="work-stamps"><span className="stamp stamp-community">Community</span></p>
-                    <p className="t-caption secondary work-tags">Community leadership · Programme development · Ecosystem partnerships · Community engagement</p>
-                  </div>
+                </div>
+                <div className="work-id">
+                  <h2 className="t-heading-s work-title">Web3Ladies</h2>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Community leadership</li>
+                    <li>Programme development</li>
+                    <li>Ecosystem partnerships</li>
+                    <li>Community engagement</li>
+                  </ul>
                 </div>
                 <h3 className="t-title work-heading">Turning community needs into opportunities to learn and grow</h3>
                 <div className="work-copy">
@@ -349,10 +387,15 @@ export default function WorkView() {
                     <strong>15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations</strong>
                   </p>
                 </div>
-                <p className="t-caption work-list-line">
+                <div className="t-caption work-list-line">
                   <span className="t-label">Focus areas</span>
-                  Community programmes · Ecosystem partnerships · Member engagement · Community operations
-                </p>
+                  <ul className="dot-list">
+                    <li>Community programmes</li>
+                    <li>Ecosystem partnerships</li>
+                    <li>Member engagement</li>
+                    <li>Community operations</li>
+                  </ul>
+                </div>
                 {" "}
                 <a className="work-cta" href="#case-web3ladies">
                   Read the case study{" "}
@@ -366,20 +409,20 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)">
+                  <span className="type-tag">Content + community</span>
+                  {" "}
+                  <a className="org-link is-stacked" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)">
                     <img className="logo-light" src={`${BASE}/images/logo-community-for-africa.png`} alt="" />
                     <img className="logo-dark" src={`${BASE}/images/logo-community-for-africa-dark.png`} alt="" />
                   </a>
-                  {" "}
-                  <div className="work-id">
-                    <h2 className="t-heading-s work-title">Community for Africa</h2>
-                    <p className="work-stamps">
-                      <span className="stamp stamp-content">Content</span>
-                      <span className="visually-hidden">and</span>
-                      <span className="stamp stamp-community">Community</span>
-                    </p>
-                    <p className="t-caption secondary work-tags">Community management · Educational content · Resource development</p>
-                  </div>
+                </div>
+                <div className="work-id">
+                  <h2 className="t-heading-s work-title">Community for Africa</h2>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Community management</li>
+                    <li>Educational content</li>
+                    <li>Resource development</li>
+                  </ul>
                 </div>
                 <h3 className="t-title work-heading">Turning community learning into practical resources</h3>
                 <div className="work-copy">
@@ -393,10 +436,15 @@ export default function WorkView() {
                     , giving community members a practical tool they could use beyond individual sessions.
                   </p>
                 </div>
-                <p className="t-caption work-list-line">
+                <div className="t-caption work-list-line">
                   <span className="t-label">Focus areas</span>
-                  Community engagement · Events · Educational content · Learning resources
-                </p>
+                  <ul className="dot-list">
+                    <li>Community engagement</li>
+                    <li>Events</li>
+                    <li>Educational content</li>
+                    <li>Learning resources</li>
+                  </ul>
+                </div>
                 {" "}
                 <a className="work-cta" href="#case-community-for-africa">
                   Read the case study{" "}
@@ -410,16 +458,20 @@ export default function WorkView() {
             <li>
               <article className="work-card reveal">
                 <div className="work-head">
-                  <a className="org-link" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)">
+                  <span className="type-tag">Community</span>
+                  {" "}
+                  <a className="org-link is-mark" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)">
                     <img className="logo-light" src={`${BASE}/images/logo-open-terms-archive.png`} alt="" />
                     <img className="logo-dark" src={`${BASE}/images/logo-open-terms-archive-dark.png`} alt="" />
                   </a>
-                  {" "}
-                  <div className="work-id">
-                    <h2 className="t-heading-s work-title">Open Terms Archive</h2>
-                    <p className="work-stamps"><span className="stamp stamp-community">Community</span></p>
-                    <p className="t-caption secondary work-tags">Open source community management · Contributor experience · Documentation</p>
-                  </div>
+                </div>
+                <div className="work-id">
+                  <h2 className="t-heading-s work-title">Open Terms Archive</h2>
+                  <ul className="t-caption secondary work-tags dot-list">
+                    <li>Open source community management</li>
+                    <li>Contributor experience</li>
+                    <li>Documentation</li>
+                  </ul>
                 </div>
                 <h3 className="t-title work-heading">Making it easier for contributors to find their way in</h3>
                 <div className="work-copy">
@@ -431,10 +483,15 @@ export default function WorkView() {
                     Also developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices to support consistent knowledge-sharing.
                   </p>
                 </div>
-                <p className="t-caption work-list-line">
+                <div className="t-caption work-list-line">
                   <span className="t-label">Focus areas</span>
-                  Community migration · Contributor onboarding · Documentation · Community calls
-                </p>
+                  <ul className="dot-list">
+                    <li>Community migration</li>
+                    <li>Contributor onboarding</li>
+                    <li>Documentation</li>
+                    <li>Community calls</li>
+                  </ul>
+                </div>
                 {" "}
                 <a className="work-cta" href="#case-open-terms-archive">
                   Read the case study{" "}
