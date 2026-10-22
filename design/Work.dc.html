@@ -295,8 +295,6 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 
 .work-title{transition:color var(--motion-base) var(--motion-ease);}
 .work-card:hover .work-title,.work-card:focus-visible .work-title{color:var(--color-text-emphasis);}
-.results{display:flex;flex-wrap:wrap;gap:var(--space-element) var(--space-group);margin:var(--space-tight) 0 0;padding:var(--space-element) 0 0;border-top:var(--border-width-hairline) solid var(--card-border);list-style:none;}
-.results li{display:flex;flex-direction:column;gap:var(--space-hairline);}
 .work-cta{display:inline-flex;align-items:center;gap:var(--space-tight);margin-top:auto;padding-top:var(--space-element);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-strong);color:var(--link-color);}
 
 .pick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--card-grid-gap-row) var(--card-grid-gap-col);margin:0;padding:0;list-style:none;}
@@ -494,12 +492,11 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 /* end work copy */
 /* ===== Work cards ===== */
-/* component: a compact card. Logo (linked to the organisation's site), number, name and focus areas on the left; the story on the right */
+/* component: one column per project. Number, name and focus areas, with the logo (linked to the organisation's site) on the right */
 .home{
---work-meta-col:minmax(0,4fr);
---work-story-col:minmax(0,8fr);
 --work-card-padding:var(--space-group);
---work-card-gap:var(--space-group);
+--work-head-gap:var(--space-cluster);
+--work-measure:680px;
 --logo-chip-width:calc(var(--primitive-space-8) + var(--primitive-space-7));
 --logo-chip-height:var(--space-group);
 --logo-chip-radius:var(--radius-control);
@@ -507,18 +504,20 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 --logo-chip-border:var(--card-border);
 --logo-chip-border-hover:var(--color-accent-primary);
 }
-.work-card{display:grid;grid-template-columns:var(--work-meta-col) var(--work-story-col);gap:var(--work-card-gap);padding:var(--work-card-padding);color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
+.work-card{display:flex;flex-direction:column;gap:var(--space-related);padding:var(--work-card-padding);color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);transition:border-color var(--motion-base) var(--motion-ease);}
 .work-card:hover{border-color:var(--card-border-hover);}
-.work-meta{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-related);min-width:0;}
-.work-body{display:flex;flex-direction:column;gap:var(--space-related);min-width:0;}
-.org-link{display:inline-flex;align-items:center;justify-content:center;width:var(--logo-chip-width);height:var(--logo-chip-height);margin-bottom:var(--space-tight);padding:var(--space-tight) var(--space-related);box-sizing:border-box;background:var(--logo-chip-bg);border:var(--border-width-hairline) solid var(--logo-chip-border);border-radius:var(--logo-chip-radius);transition:border-color var(--motion-fast) var(--motion-ease);}
+.work-head{display:flex;flex-direction:row-reverse;align-items:flex-start;justify-content:space-between;gap:var(--work-head-gap);margin-bottom:var(--space-tight);}
+.work-id{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-related);min-width:0;max-width:var(--work-measure);}
+.work-card > :not(.work-head){max-width:var(--work-measure);}
+.org-link{flex:none;display:inline-flex;align-items:center;justify-content:center;width:var(--logo-chip-width);height:var(--logo-chip-height);padding:var(--space-tight) var(--space-related);box-sizing:border-box;background:var(--logo-chip-bg);border:var(--border-width-hairline) solid var(--logo-chip-border);border-radius:var(--logo-chip-radius);transition:border-color var(--motion-fast) var(--motion-ease);}
 .org-link:hover,.org-link:focus-visible{border-color:var(--logo-chip-border-hover);}
 .org-link img{display:block;max-width:100%;max-height:100%;object-fit:contain;}
 .work-card .work-heading{margin-top:0;}
 .work-cta{align-self:flex-start;text-decoration:none;}
 .work-cta:hover{color:var(--link-color);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 @media (max-width: 760px){
-.work-card{grid-template-columns:minmax(0,1fr);gap:var(--space-cluster);padding:var(--space-inset) var(--space-cluster);}
+.work-card{padding:var(--space-inset) var(--space-cluster);}
+.work-head{flex-direction:column;gap:var(--space-element);}
 }
 /* end work cards */
 /* ===== Ripple cursor ===== */
@@ -588,159 +587,134 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-label reveal"><span class="label-dot" aria-hidden="true"></span>Selected work</p>
 <ul class="work-list">
 <li>
-<article class="work-card">
-<div class="work-meta">
+<article class="work-card reveal">
+<div class="work-head">
 <a class="org-link" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)"><img src="/_blob/2f34c4fe9d9311468927554c55f7c165" alt=""></a>
+<div class="work-id">
 <span class="t-label work-num">01</span>
 <h2 class="t-heading-s work-title">Sereel</h2>
 <p class="t-caption secondary work-tags">Content marketing · Thought leadership · Educational content · Short-form video</p>
 </div>
-<div class="work-body">
+</div>
 <h3 class="t-title work-heading">Making complex ideas clearer</h3>
 <div class="work-copy">
 <p class="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
 <p class="t-body">I created educational and thought-leadership content on tokenized assets, capital markets, and industry developments. I researched market trends and audience needs to explain complex financial and regulatory ideas, and scripted, filmed, and edited short-form videos for social media.</p>
 </div>
-<ul class="results">
-<li><span class="t-figure-s">127.8%</span><span class="t-caption secondary">LinkedIn follower growth</span></li>
-<li><span class="t-figure-s">245 → 558</span><span class="t-caption secondary">followers</span></li>
-</ul>
 <a class="work-cta" href="Home.dc.html#case-sereel">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
-</div>
 </article>
 </li>
 
 <li>
-<article class="work-card">
-<div class="work-meta">
+<article class="work-card reveal">
+<div class="work-head">
 <a class="org-link" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src="/_blob/96c3a7e516768e35abc365aeac405dd2" alt=""></a>
+<div class="work-id">
 <span class="t-label work-num">02</span>
 <h2 class="t-heading-s work-title">Invisible Garden</h2>
 <p class="t-caption secondary work-tags">Content marketing · Social media · Community storytelling</p>
 </div>
-<div class="work-body">
+</div>
 <h3 class="t-title work-heading">Bringing a developer residency to life</h3>
 <div class="work-copy">
 <p class="t-body">Invisible Garden was a three-week Ethereum-focused developer residency in Buenos Aires.</p>
 <p class="t-body">I wrote social media copy and covered the programme live, turning its activities, milestones, and community moments into content people could follow. I also managed outreach to prospective mentors and project judges, writing follow-up messages and tracking responses until judges were secured.</p>
 </div>
-<ul class="results">
-<li><span class="t-figure-s">1,025 → 1,900+</span><span class="t-caption secondary">X followers</span></li>
-<li><span class="t-figure-s">0 → 144</span><span class="t-caption secondary">Instagram followers</span></li>
-</ul>
 <a class="work-cta" href="Home.dc.html#case-invisible-garden">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
-</div>
 </article>
 </li>
 
 <li>
-<article class="work-card">
-<div class="work-meta">
+<article class="work-card reveal">
+<div class="work-head">
 <a class="org-link" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)"><img src="/_blob/0b1567af669c3a3b8855d71c69b9951f" alt=""></a>
+<div class="work-id">
 <span class="t-label work-num">03</span>
 <h2 class="t-heading-s work-title">One Dev</h2>
 <p class="t-caption secondary work-tags">Community management · Developer education · Content</p>
 </div>
-<div class="work-body">
+</div>
 <h3 class="t-title work-heading">Helping developers find their footing in Web3</h3>
 <div class="work-copy">
 <p class="t-body">At One Dev, I helped grow a developer community through educational programmes, community engagement, and content that made Web3 easier to explore.</p>
 <p class="t-body">My work supported a community of more than 8,000 members, a newsletter with 6,300+ subscribers, and bootcamps that reached 200+ learners.</p>
 </div>
-<ul class="results">
-<li><span class="t-figure-s">8,000+</span><span class="t-caption secondary">community members</span></li>
-<li><span class="t-figure-s">6,300+</span><span class="t-caption secondary">newsletter subscribers</span></li>
-<li><span class="t-figure-s">200+</span><span class="t-caption secondary">bootcamp learners</span></li>
-</ul>
 <a class="work-cta" href="#case-one-dev">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
-</div>
 </article>
 </li>
 
 <li>
-<article class="work-card">
-<div class="work-meta">
+<article class="work-card reveal">
+<div class="work-head">
 <a class="org-link" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)"><img src="/_blob/ba82c2d6cc5201262edf417fd5dea012" alt=""></a>
+<div class="work-id">
 <span class="t-label work-num">04</span>
 <h2 class="t-heading-s work-title">Code Africa Conference</h2>
 <p class="t-caption secondary work-tags">Community operations · Content distribution · Volunteer management</p>
 </div>
-<div class="work-body">
+</div>
 <h3 class="t-title work-heading">Turning campaign activity into conference participation</h3>
 <div class="work-copy">
 <p class="t-body">Working with One Dev, I contributed to the promotion and community operations for Code Africa Conference. I wrote and published promotional copy across campaign channels, coordinated volunteers, and supported the ambassador campaign.</p>
 <p class="t-body">These efforts helped build awareness and drive registrations for the conference.</p>
 </div>
-<ul class="results">
-<li><span class="t-figure-s">3,000+</span><span class="t-caption secondary">registrations</span></li>
-<li><span class="t-figure-s">40+</span><span class="t-caption secondary">volunteers and ambassadors</span></li>
-</ul>
 <a class="work-cta" href="#case-code-africa">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
-</div>
 </article>
 </li>
 
 <li>
-<article class="work-card">
-<div class="work-meta">
+<article class="work-card reveal">
+<div class="work-head">
 <a class="org-link" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)"><img src="/_blob/0f1757c991dc89555a29078ec093d643" alt=""></a>
+<div class="work-id">
 <span class="t-label work-num">05</span>
 <h2 class="t-heading-s work-title">Web3Ladies</h2>
 <p class="t-caption secondary work-tags">Community leadership · Programmes · Partnerships · Content</p>
 </div>
-<div class="work-body">
+</div>
 <h3 class="t-title work-heading">Creating more ways for women to learn and build</h3>
 <div class="work-copy">
 <p class="t-body">I began contributing to Web3Ladies as a volunteer in 2023 and became Community Lead in November 2025. I help create programmes, partnerships, and community experiences that give women more opportunities to learn, build, and connect.</p>
 <p class="t-body">One example is Build with AI, a practical programme that brought members together to learn from experts and apply what they learned through projects. I also support community onboarding, events, content, and partnerships with ecosystem organisations.</p>
 </div>
-<ul class="results">
-<li><span class="t-figure-s">16,000+</span><span class="t-caption secondary">growth across platforms</span></li>
-<li><span class="t-figure-s">20+</span><span class="t-caption secondary">pieces of content</span></li>
-<li><span class="t-figure-s">100+</span><span class="t-caption secondary">registrations for Build with AI</span></li>
-</ul>
 <a class="work-cta" href="#case-web3ladies">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
-</div>
 </article>
 </li>
 
 <li>
-<article class="work-card">
-<div class="work-meta">
+<article class="work-card reveal">
+<div class="work-head">
 <a class="org-link" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)"><img src="/_blob/4899177a0dbf67c9cb80264dc0fb7694" alt=""></a>
+<div class="work-id">
 <span class="t-label work-num">06</span>
 <h2 class="t-heading-s work-title">Community for Africa</h2>
 <p class="t-caption secondary work-tags">Community management · Educational content · Resource creation</p>
 </div>
-<div class="work-body">
+</div>
 <h3 class="t-title work-heading">Making community knowledge useful beyond the session</h3>
 <div class="work-copy">
 <p class="t-body">I supported community engagement through events, learning sessions, and written and video content. I also created a Skills Audit Sheet to help members assess their skills and identify areas for growth.</p>
 </div>
-<ul class="results">
-<li><span class="t-figure-s">100+</span><span class="t-caption secondary">downloads of the Skills Audit Sheet</span></li>
-</ul>
 <a class="work-cta" href="#case-community-for-africa">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
-</div>
 </article>
 </li>
 
 <li>
-<article class="work-card">
-<div class="work-meta">
+<article class="work-card reveal">
+<div class="work-head">
 <a class="org-link" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)"><img src="/_blob/bfac7decba51c15a0ed5911d700b6dce" alt=""></a>
+<div class="work-id">
 <span class="t-label work-num">07</span>
 <h2 class="t-heading-s work-title">Open Terms Archive</h2>
 <p class="t-caption secondary work-tags">Open source community management · Contributor experience</p>
 </div>
-<div class="work-body">
+</div>
 <h3 class="t-title work-heading">Making it easier for contributors to take part</h3>
 <div class="work-copy">
 <p class="t-body">My open-source community work focused on helping people find their way into a project and understand how to contribute. At Open Terms Archive, I supported a community migration to Mattermost and worked on onboarding guides, a contributor page, and community calls.</p>
 <p class="t-body">The aim was to make the move easier to navigate and give contributors clearer ways to get involved.</p>
 </div>
 <a class="work-cta" href="#case-open-terms-archive">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
-</div>
 </article>
 </li>
 </ul>

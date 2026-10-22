@@ -146,273 +146,209 @@ export default function WorkView() {
           </p>
           <ul className="work-list">
             <li>
-              <article className="work-card">
-                <div className="work-meta">
+              <article className="work-card reveal">
+                <div className="work-head">
                   <a className="org-link" href="https://sereel.com/" target="_blank" rel="noopener" title="Visit sereel.com" aria-label="Sereel website (opens in a new tab)"><img src={`${BASE}/images/logo-sereel-glow.png`} alt="" /></a>
                   {" "}
-                  <span className="t-label work-num">01</span>
-                  {" "}
-                  <h2 className="t-heading-s work-title">Sereel</h2>
-                  <p className="t-caption secondary work-tags">Content marketing · Thought leadership · Educational content · Short-form video</p>
-                </div>
-                <div className="work-body">
-                  <h3 className="t-title work-heading">Making complex ideas clearer</h3>
-                  <div className="work-copy">
-                    <p className="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
-                    <p className="t-body">
-                      I created educational and thought-leadership content on tokenized assets, capital markets, and industry developments. I researched market trends and audience needs to explain complex financial and regulatory ideas, and scripted, filmed, and edited short-form videos for social media.
-                    </p>
+                  <div className="work-id">
+                    <span className="t-label work-num">01</span>
+                    {" "}
+                    <h2 className="t-heading-s work-title">Sereel</h2>
+                    <p className="t-caption secondary work-tags">Content marketing · Thought leadership · Educational content · Short-form video</p>
                   </div>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">127.8%</span>
-                      <span className="t-caption secondary">LinkedIn follower growth</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">245 → 558</span>
-                      <span className="t-caption secondary">followers</span>
-                    </li>
-                  </ul>
-                  {" "}
-                  <a className="work-cta" href={`${BASE}/#case-sereel`}>
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </a>
                 </div>
+                <h3 className="t-title work-heading">Making complex ideas clearer</h3>
+                <div className="work-copy">
+                  <p className="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
+                  <p className="t-body">
+                    I created educational and thought-leadership content on tokenized assets, capital markets, and industry developments. I researched market trends and audience needs to explain complex financial and regulatory ideas, and scripted, filmed, and edited short-form videos for social media.
+                  </p>
+                </div>
+                {" "}
+                <a className="work-cta" href={`${BASE}/#case-sereel`}>
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
               </article>
             </li>
             <li>
-              <article className="work-card">
-                <div className="work-meta">
+              <article className="work-card reveal">
+                <div className="work-head">
                   <a className="org-link" href="https://invisible.garden/" target="_blank" rel="noopener" title="Visit invisible.garden" aria-label="Invisible Garden website (opens in a new tab)"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></a>
                   {" "}
-                  <span className="t-label work-num">02</span>
-                  {" "}
-                  <h2 className="t-heading-s work-title">Invisible Garden</h2>
-                  <p className="t-caption secondary work-tags">Content marketing · Social media · Community storytelling</p>
-                </div>
-                <div className="work-body">
-                  <h3 className="t-title work-heading">Bringing a developer residency to life</h3>
-                  <div className="work-copy">
-                    <p className="t-body">Invisible Garden was a three-week Ethereum-focused developer residency in Buenos Aires.</p>
-                    <p className="t-body">
-                      I wrote social media copy and covered the programme live, turning its activities, milestones, and community moments into content people could follow. I also managed outreach to prospective mentors and project judges, writing follow-up messages and tracking responses until judges were secured.
-                    </p>
+                  <div className="work-id">
+                    <span className="t-label work-num">02</span>
+                    {" "}
+                    <h2 className="t-heading-s work-title">Invisible Garden</h2>
+                    <p className="t-caption secondary work-tags">Content marketing · Social media · Community storytelling</p>
                   </div>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">1,025 → 1,900+</span>
-                      <span className="t-caption secondary">X followers</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">0 → 144</span>
-                      <span className="t-caption secondary">Instagram followers</span>
-                    </li>
-                  </ul>
-                  {" "}
-                  <a className="work-cta" href={`${BASE}/#case-invisible-garden`}>
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </a>
                 </div>
+                <h3 className="t-title work-heading">Bringing a developer residency to life</h3>
+                <div className="work-copy">
+                  <p className="t-body">Invisible Garden was a three-week Ethereum-focused developer residency in Buenos Aires.</p>
+                  <p className="t-body">
+                    I wrote social media copy and covered the programme live, turning its activities, milestones, and community moments into content people could follow. I also managed outreach to prospective mentors and project judges, writing follow-up messages and tracking responses until judges were secured.
+                  </p>
+                </div>
+                {" "}
+                <a className="work-cta" href={`${BASE}/#case-invisible-garden`}>
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
               </article>
             </li>
             <li>
-              <article className="work-card">
-                <div className="work-meta">
+              <article className="work-card reveal">
+                <div className="work-head">
                   <a className="org-link" href="https://onedev.club/" target="_blank" rel="noopener" title="Visit onedev.club" aria-label="One Dev website (opens in a new tab)"><img src={`${BASE}/images/logo-onedev.svg`} alt="" /></a>
                   {" "}
-                  <span className="t-label work-num">03</span>
-                  {" "}
-                  <h2 className="t-heading-s work-title">One Dev</h2>
-                  <p className="t-caption secondary work-tags">Community management · Developer education · Content</p>
-                </div>
-                <div className="work-body">
-                  <h3 className="t-title work-heading">Helping developers find their footing in Web3</h3>
-                  <div className="work-copy">
-                    <p className="t-body">
-                      At One Dev, I helped grow a developer community through educational programmes, community engagement, and content that made Web3 easier to explore.
-                    </p>
-                    <p className="t-body">
-                      My work supported a community of more than 8,000 members, a newsletter with 6,300+ subscribers, and bootcamps that reached 200+ learners.
-                    </p>
+                  <div className="work-id">
+                    <span className="t-label work-num">03</span>
+                    {" "}
+                    <h2 className="t-heading-s work-title">One Dev</h2>
+                    <p className="t-caption secondary work-tags">Community management · Developer education · Content</p>
                   </div>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">8,000+</span>
-                      <span className="t-caption secondary">community members</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">6,300+</span>
-                      <span className="t-caption secondary">newsletter subscribers</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">200+</span>
-                      <span className="t-caption secondary">bootcamp learners</span>
-                    </li>
-                  </ul>
-                  {" "}
-                  <a className="work-cta" href="#case-one-dev">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </a>
                 </div>
+                <h3 className="t-title work-heading">Helping developers find their footing in Web3</h3>
+                <div className="work-copy">
+                  <p className="t-body">
+                    At One Dev, I helped grow a developer community through educational programmes, community engagement, and content that made Web3 easier to explore.
+                  </p>
+                  <p className="t-body">
+                    My work supported a community of more than 8,000 members, a newsletter with 6,300+ subscribers, and bootcamps that reached 200+ learners.
+                  </p>
+                </div>
+                {" "}
+                <a className="work-cta" href="#case-one-dev">
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
               </article>
             </li>
             <li>
-              <article className="work-card">
-                <div className="work-meta">
+              <article className="work-card reveal">
+                <div className="work-head">
                   <a className="org-link" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" aria-label="Code Africa website (opens in a new tab)"><img src={`${BASE}/images/logo-code-africa.png`} alt="" /></a>
                   {" "}
-                  <span className="t-label work-num">04</span>
-                  {" "}
-                  <h2 className="t-heading-s work-title">Code Africa Conference</h2>
-                  <p className="t-caption secondary work-tags">Community operations · Content distribution · Volunteer management</p>
-                </div>
-                <div className="work-body">
-                  <h3 className="t-title work-heading">Turning campaign activity into conference participation</h3>
-                  <div className="work-copy">
-                    <p className="t-body">
-                      Working with One Dev, I contributed to the promotion and community operations for Code Africa Conference. I wrote and published promotional copy across campaign channels, coordinated volunteers, and supported the ambassador campaign.
-                    </p>
-                    <p className="t-body">These efforts helped build awareness and drive registrations for the conference.</p>
+                  <div className="work-id">
+                    <span className="t-label work-num">04</span>
+                    {" "}
+                    <h2 className="t-heading-s work-title">Code Africa Conference</h2>
+                    <p className="t-caption secondary work-tags">Community operations · Content distribution · Volunteer management</p>
                   </div>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">3,000+</span>
-                      <span className="t-caption secondary">registrations</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">40+</span>
-                      <span className="t-caption secondary">volunteers and ambassadors</span>
-                    </li>
-                  </ul>
-                  {" "}
-                  <a className="work-cta" href="#case-code-africa">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </a>
                 </div>
+                <h3 className="t-title work-heading">Turning campaign activity into conference participation</h3>
+                <div className="work-copy">
+                  <p className="t-body">
+                    Working with One Dev, I contributed to the promotion and community operations for Code Africa Conference. I wrote and published promotional copy across campaign channels, coordinated volunteers, and supported the ambassador campaign.
+                  </p>
+                  <p className="t-body">These efforts helped build awareness and drive registrations for the conference.</p>
+                </div>
+                {" "}
+                <a className="work-cta" href="#case-code-africa">
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
               </article>
             </li>
             <li>
-              <article className="work-card">
-                <div className="work-meta">
+              <article className="work-card reveal">
+                <div className="work-head">
                   <a className="org-link" href="https://www.web3ladies.com/" target="_blank" rel="noopener" title="Visit web3ladies.com" aria-label="Web3Ladies website (opens in a new tab)"><img src={`${BASE}/images/logo-web3ladies.svg`} alt="" /></a>
                   {" "}
-                  <span className="t-label work-num">05</span>
-                  {" "}
-                  <h2 className="t-heading-s work-title">Web3Ladies</h2>
-                  <p className="t-caption secondary work-tags">Community leadership · Programmes · Partnerships · Content</p>
-                </div>
-                <div className="work-body">
-                  <h3 className="t-title work-heading">Creating more ways for women to learn and build</h3>
-                  <div className="work-copy">
-                    <p className="t-body">
-                      I began contributing to Web3Ladies as a volunteer in 2023 and became Community Lead in November 2025. I help create programmes, partnerships, and community experiences that give women more opportunities to learn, build, and connect.
-                    </p>
-                    <p className="t-body">
-                      One example is Build with AI, a practical programme that brought members together to learn from experts and apply what they learned through projects. I also support community onboarding, events, content, and partnerships with ecosystem organisations.
-                    </p>
+                  <div className="work-id">
+                    <span className="t-label work-num">05</span>
+                    {" "}
+                    <h2 className="t-heading-s work-title">Web3Ladies</h2>
+                    <p className="t-caption secondary work-tags">Community leadership · Programmes · Partnerships · Content</p>
                   </div>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">16,000+</span>
-                      <span className="t-caption secondary">growth across platforms</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">20+</span>
-                      <span className="t-caption secondary">pieces of content</span>
-                    </li>
-                    <li>
-                      <span className="t-figure-s">100+</span>
-                      <span className="t-caption secondary">registrations for Build with AI</span>
-                    </li>
-                  </ul>
-                  {" "}
-                  <a className="work-cta" href="#case-web3ladies">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </a>
                 </div>
+                <h3 className="t-title work-heading">Creating more ways for women to learn and build</h3>
+                <div className="work-copy">
+                  <p className="t-body">
+                    I began contributing to Web3Ladies as a volunteer in 2023 and became Community Lead in November 2025. I help create programmes, partnerships, and community experiences that give women more opportunities to learn, build, and connect.
+                  </p>
+                  <p className="t-body">
+                    One example is Build with AI, a practical programme that brought members together to learn from experts and apply what they learned through projects. I also support community onboarding, events, content, and partnerships with ecosystem organisations.
+                  </p>
+                </div>
+                {" "}
+                <a className="work-cta" href="#case-web3ladies">
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
               </article>
             </li>
             <li>
-              <article className="work-card">
-                <div className="work-meta">
+              <article className="work-card reveal">
+                <div className="work-head">
                   <a className="org-link" href="https://communityforafrica.com/" target="_blank" rel="noopener" title="Visit communityforafrica.com" aria-label="Community for Africa website (opens in a new tab)"><img src={`${BASE}/images/logo-community-for-africa.png`} alt="" /></a>
                   {" "}
-                  <span className="t-label work-num">06</span>
-                  {" "}
-                  <h2 className="t-heading-s work-title">Community for Africa</h2>
-                  <p className="t-caption secondary work-tags">Community management · Educational content · Resource creation</p>
-                </div>
-                <div className="work-body">
-                  <h3 className="t-title work-heading">Making community knowledge useful beyond the session</h3>
-                  <div className="work-copy">
-                    <p className="t-body">
-                      I supported community engagement through events, learning sessions, and written and video content. I also created a Skills Audit Sheet to help members assess their skills and identify areas for growth.
-                    </p>
+                  <div className="work-id">
+                    <span className="t-label work-num">06</span>
+                    {" "}
+                    <h2 className="t-heading-s work-title">Community for Africa</h2>
+                    <p className="t-caption secondary work-tags">Community management · Educational content · Resource creation</p>
                   </div>
-                  <ul className="results">
-                    <li>
-                      <span className="t-figure-s">100+</span>
-                      <span className="t-caption secondary">downloads of the Skills Audit Sheet</span>
-                    </li>
-                  </ul>
-                  {" "}
-                  <a className="work-cta" href="#case-community-for-africa">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </a>
                 </div>
+                <h3 className="t-title work-heading">Making community knowledge useful beyond the session</h3>
+                <div className="work-copy">
+                  <p className="t-body">
+                    I supported community engagement through events, learning sessions, and written and video content. I also created a Skills Audit Sheet to help members assess their skills and identify areas for growth.
+                  </p>
+                </div>
+                {" "}
+                <a className="work-cta" href="#case-community-for-africa">
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
               </article>
             </li>
             <li>
-              <article className="work-card">
-                <div className="work-meta">
+              <article className="work-card reveal">
+                <div className="work-head">
                   <a className="org-link" href="https://opentermsarchive.org/" target="_blank" rel="noopener" title="Visit opentermsarchive.org" aria-label="Open Terms Archive website (opens in a new tab)"><img src={`${BASE}/images/logo-open-terms-archive.png`} alt="" /></a>
                   {" "}
-                  <span className="t-label work-num">07</span>
-                  {" "}
-                  <h2 className="t-heading-s work-title">Open Terms Archive</h2>
-                  <p className="t-caption secondary work-tags">Open source community management · Contributor experience</p>
-                </div>
-                <div className="work-body">
-                  <h3 className="t-title work-heading">Making it easier for contributors to take part</h3>
-                  <div className="work-copy">
-                    <p className="t-body">
-                      My open-source community work focused on helping people find their way into a project and understand how to contribute. At Open Terms Archive, I supported a community migration to Mattermost and worked on onboarding guides, a contributor page, and community calls.
-                    </p>
-                    <p className="t-body">The aim was to make the move easier to navigate and give contributors clearer ways to get involved.</p>
+                  <div className="work-id">
+                    <span className="t-label work-num">07</span>
+                    {" "}
+                    <h2 className="t-heading-s work-title">Open Terms Archive</h2>
+                    <p className="t-caption secondary work-tags">Open source community management · Contributor experience</p>
                   </div>
-                  {" "}
-                  <a className="work-cta" href="#case-open-terms-archive">
-                    Read the case study{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </a>
                 </div>
+                <h3 className="t-title work-heading">Making it easier for contributors to take part</h3>
+                <div className="work-copy">
+                  <p className="t-body">
+                    My open-source community work focused on helping people find their way into a project and understand how to contribute. At Open Terms Archive, I supported a community migration to Mattermost and worked on onboarding guides, a contributor page, and community calls.
+                  </p>
+                  <p className="t-body">The aim was to make the move easier to navigate and give contributors clearer ways to get involved.</p>
+                </div>
+                {" "}
+                <a className="work-cta" href="#case-open-terms-archive">
+                  Read the case study{" "}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
               </article>
             </li>
           </ul>
