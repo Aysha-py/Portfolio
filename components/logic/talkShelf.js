@@ -127,11 +127,21 @@ export class Component extends DCLogic {
     const t = TALKS[i];
     const v = {
       theme: theme,
-      menu: s.menuOpen ? 'open' : 'closed',
-      menuExpanded: !!s.menuOpen,
-      menuLabel: s.menuOpen ? 'Close menu' : 'Open menu',
-      toggleMenu: () => this.setState({ menuOpen: !(this.state || {}).menuOpen }),
-      closeMenu: () => this.setState({ menuOpen: false }),
+      menu: s.menuOpen ? (s.menuClosing ? 'closing' : 'open') : 'closed',
+      menuExpanded: !!s.menuOpen && !s.menuClosing,
+      menuLabel: s.menuOpen && !s.menuClosing ? 'Close menu' : 'Open menu',
+      toggleMenu: () => {
+        /* opening ripples out from the burger; closing folds back into it before the menu goes */
+        const now = this.state || {};
+        if (now.menuClosing) return;
+        if (!now.menuOpen) { this.setState({ menuOpen: true }); return; }
+        let still = false;
+        try { still = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (e) {}
+        if (still) { this.setState({ menuOpen: false }); return; }
+        this.setState({ menuClosing: true });
+        setTimeout(() => this.setState({ menuOpen: false, menuClosing: false }), 320);
+      },
+      closeMenu: () => this.setState({ menuOpen: false, menuClosing: false }),
       themeLabel: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
       copyShort: () => this.copyText("Aishat Muhammed is a content marketer and community manager who helps brands make complex ideas easier to understand through audience-focused content, research, and storytelling. She has spoken at several events since 2023 on community building, open source, Web3 education, and career growth for beginners.", 'short'),
       copyLong: () => this.copyText("Aishat Muhammed is a content marketer and community manager whose work sits at the intersection of storytelling, technology, and audience understanding. With a background in software development and community management, she brings a people-first perspective to communicating complex ideas and creating opportunities for participation. Her experience spans content marketing, developer education, and community programmes across Web3, institutional tokenization, and open source. Since 2023, she has spoken at several events, sharing practical knowledge about community building, open source, Web3 education, and navigating early careers in tech.", 'long'),

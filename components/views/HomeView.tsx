@@ -55,41 +55,37 @@ export default function HomeView() {
           </div>
         </div>
         <div className="menu-panel" id="mobile-menu">
+          <span className="menu-waves" aria-hidden="true" />
           <nav aria-label="Menu">
             <ul className="menu-list">
               <li style={{"--i": "0"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/about/`} onClick={h.closeMenu}>
                   <span className="menu-mark is-dot" aria-hidden="true" />
                   <span className="menu-name">About</span>
-                  <span className="menu-note">My story</span>
                 </a>
               </li>
               <li style={{"--i": "1"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/work/`} onClick={h.closeMenu}>
                   <span className="menu-mark is-half" aria-hidden="true" />
                   <span className="menu-name">Work</span>
-                  <span className="menu-note">Stories and communities</span>
                 </a>
               </li>
               <li style={{"--i": "2"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/talk-shelf/`} onClick={h.closeMenu}>
                   <span className="menu-mark is-ring" aria-hidden="true" />
                   <span className="menu-name">Talk shelf</span>
-                  <span className="menu-note">Talks and media kit</span>
                 </a>
               </li>
               <li style={{"--i": "3"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/open-tabs/`} onClick={h.closeMenu}>
                   <span className="menu-mark is-pill" aria-hidden="true" />
                   <span className="menu-name">Open tabs</span>
-                  <span className="menu-note">Everything that makes me, me</span>
                 </a>
               </li>
               <li style={{"--i": "4"} as React.CSSProperties}>
                 <a className="menu-link" href={`${BASE}/contact/`} onClick={h.closeMenu}>
                   <span className="menu-mark is-pill is-coral" aria-hidden="true" />
                   <span className="menu-name">Contact</span>
-                  <span className="menu-note">Let’s work together</span>
                 </a>
               </li>
             </ul>
