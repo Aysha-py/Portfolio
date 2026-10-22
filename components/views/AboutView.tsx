@@ -21,7 +21,7 @@ export default function AboutView() {
           </a>
           {" "}
           <div style={{display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "var(--space-stack)"} as React.CSSProperties}>
-            <nav aria-label="Main" className="nav-links" style={{display: "flex", alignItems: "center", gap: "var(--nav-gap)", fontSize: "16px", lineHeight: "26px", fontWeight: "500"} as React.CSSProperties}>
+            <nav aria-label="Main" className="nav-links" style={{display: "flex", alignItems: "center", gap: "var(--nav-gap)", fontSize: "var(--type-body-size)", lineHeight: "var(--type-body-leading)", fontWeight: "var(--weight-ui)"} as React.CSSProperties}>
               <a className="nav-link" href={`${BASE}/about/`} aria-current="page">About</a>
               {" "}
               <a className="nav-link" href={`${BASE}/work/`}>Work</a>
@@ -103,7 +103,7 @@ export default function AboutView() {
               <a className="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a>
               <a className="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack</a>
             </div>
-            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "500", textUnderlineOffset: "6px", alignSelf: "flex-start"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px", alignSelf: "flex-start"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
           </div>
         </div>
       </header>
@@ -495,12 +495,12 @@ export default function AboutView() {
               </span>
             </div>
             <div className="section-next is-right" style={{margin: "0"} as React.CSSProperties}>
-              <a className="jump-link" href={`${BASE}/contact/`}>
-                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Work with me</span>
+              <a className="jump-link" href={`${BASE}/work/`}>
+                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See my work</span>
                 <span className="icon-btn" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="m7 7 10 10" />
-                    <path d="M17 7v10H7" />
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
                   </svg>
                 </span>
               </a>
@@ -522,7 +522,7 @@ export default function AboutView() {
               <span className="label-dot" aria-hidden="true" />
               Find me
             </p>
-            <nav aria-labelledby="socials-label" style={{display: "flex", flexWrap: "wrap", gap: "var(--space-tight) var(--space-cluster)", fontSize: "16px", lineHeight: "26px", fontWeight: "500"} as React.CSSProperties}>
+            <nav aria-labelledby="socials-label" style={{display: "flex", flexWrap: "wrap", gap: "var(--space-tight) var(--space-cluster)", fontSize: "var(--type-body-size)", lineHeight: "var(--type-body-leading)", fontWeight: "var(--weight-ui)"} as React.CSSProperties}>
               <a className="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">
                 LinkedIn{" "}
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -554,7 +554,7 @@ export default function AboutView() {
               Contact
             </p>
             {" "}
-            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "500", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
           </div>
         </div>
       </footer>

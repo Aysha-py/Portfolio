@@ -21,7 +21,7 @@ export default function TalkShelfView() {
           </a>
           {" "}
           <div style={{display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "var(--space-stack)"} as React.CSSProperties}>
-            <nav aria-label="Main" className="nav-links" style={{display: "flex", alignItems: "center", gap: "var(--nav-gap)", fontSize: "16px", lineHeight: "26px", fontWeight: "500"} as React.CSSProperties}>
+            <nav aria-label="Main" className="nav-links" style={{display: "flex", alignItems: "center", gap: "var(--nav-gap)", fontSize: "var(--type-body-size)", lineHeight: "var(--type-body-leading)", fontWeight: "var(--weight-ui)"} as React.CSSProperties}>
               <a className="nav-link" href={`${BASE}/about/`}>About</a>
               {" "}
               <a className="nav-link" href={`${BASE}/work/`}>Work</a>
@@ -103,7 +103,7 @@ export default function TalkShelfView() {
               <a className="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a>
               <a className="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack</a>
             </div>
-            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "500", textUnderlineOffset: "6px", alignSelf: "flex-start"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px", alignSelf: "flex-start"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
           </div>
         </div>
       </header>
@@ -250,13 +250,13 @@ export default function TalkShelfView() {
               {" "}
               <span className="spine-gap" style={{gridColumn: "18"} as React.CSSProperties} aria-hidden="true" />
               {" "}
-              <button type="button" className="spine" style={{gridColumn: "19", height: "200px", "--mix": "94%"} as React.CSSProperties} aria-pressed={h.s15} aria-label="Muslimah Tech Alliance, 2026, [Format]" onClick={h.p15} onMouseEnter={h.p15} onFocus={h.p15}>
-                <span className="spine-name" aria-hidden="true">Muslimah Tech</span>
-                <span className="marker marker-ring" aria-hidden="true" />
+              <button type="button" className="spine is-wide" style={{gridColumn: "19", height: "208px", "--mix": "94%"} as React.CSSProperties} aria-pressed={h.s15} aria-label="Chess in Slums Africa, 2026, In person" onClick={h.p15} onMouseEnter={h.p15} onFocus={h.p15}>
+                <span className="spine-name" aria-hidden="true">Chess in Slums</span>
+                <span className="marker marker-dot" aria-hidden="true" />
               </button>
               {" "}
-              <button type="button" className="spine is-wide is-tilted" style={{gridColumn: "20", height: "208px", "--mix": "100%"} as React.CSSProperties} aria-pressed={h.s16} aria-label="Chess in Slums Africa, 2026, In person" onClick={h.p16} onMouseEnter={h.p16} onFocus={h.p16}>
-                <span className="spine-name" aria-hidden="true">Chess in Slums</span>
+              <button type="button" className="spine is-wide is-tilted" style={{gridColumn: "20", height: "200px", "--mix": "100%"} as React.CSSProperties} aria-pressed={h.s16} aria-label="Muslimah Tech Alliance, 2026, In person" onClick={h.p16} onMouseEnter={h.p16} onFocus={h.p16}>
+                <span className="spine-name" aria-hidden="true">Muslimah Tech</span>
                 <span className="marker marker-dot" aria-hidden="true" />
               </button>
               {" "}
@@ -540,13 +540,13 @@ export default function TalkShelfView() {
             </div>
           </div>
           <div className="section-next is-right">
-            <a className="jump-link" href={`${BASE}/contact/`}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Invite me to speak</span>
+            <a className="jump-link" href={`${BASE}/open-tabs/`}>
+              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See my open tabs</span>
               {" "}
               <span className="icon-btn" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
                 </svg>
               </span>
             </a>
@@ -567,7 +567,7 @@ export default function TalkShelfView() {
               <span className="label-dot" aria-hidden="true" />
               Find me
             </p>
-            <nav aria-labelledby="socials-label" style={{display: "flex", flexWrap: "wrap", gap: "var(--space-tight) var(--space-cluster)", fontSize: "16px", lineHeight: "26px", fontWeight: "500"} as React.CSSProperties}>
+            <nav aria-labelledby="socials-label" style={{display: "flex", flexWrap: "wrap", gap: "var(--space-tight) var(--space-cluster)", fontSize: "var(--type-body-size)", lineHeight: "var(--type-body-leading)", fontWeight: "var(--weight-ui)"} as React.CSSProperties}>
               <a className="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">
                 LinkedIn{" "}
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -599,7 +599,7 @@ export default function TalkShelfView() {
               Contact
             </p>
             {" "}
-            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "500", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
           </div>
         </div>
       </footer>

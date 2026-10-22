@@ -21,7 +21,7 @@ export default function HomeView() {
           </a>
           {" "}
           <div style={{display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "var(--space-stack)"} as React.CSSProperties}>
-            <nav aria-label="Main" className="nav-links" style={{display: "flex", alignItems: "center", gap: "var(--nav-gap)", fontSize: "16px", lineHeight: "26px", fontWeight: "500"} as React.CSSProperties}>
+            <nav aria-label="Main" className="nav-links" style={{display: "flex", alignItems: "center", gap: "var(--nav-gap)", fontSize: "var(--type-body-size)", lineHeight: "var(--type-body-leading)", fontWeight: "var(--weight-ui)"} as React.CSSProperties}>
               <a className="nav-link" href={`${BASE}/about/`}>About</a>
               {" "}
               <a className="nav-link" href={`${BASE}/work/`}>Work</a>
@@ -103,7 +103,7 @@ export default function HomeView() {
               <a className="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a>
               <a className="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack</a>
             </div>
-            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "500", textUnderlineOffset: "6px", alignSelf: "flex-start"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px", alignSelf: "flex-start"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
           </div>
         </div>
       </header>
@@ -205,7 +205,7 @@ export default function HomeView() {
             </p>
             <h2 id="numbers-title" className="t-heading">Numbers behind the work</h2>
           </div>
-          <div className="grid-2" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
+          <div className="grid-2" style={{gap: "var(--card-grid-gap-row) var(--card-grid-gap-col)"} as React.CSSProperties}>
             <div className="tile attend" style={{gridColumn: "1 / -1"} as React.CSSProperties}>
               <div className="tile-head">
                 <p className="t-label">Experience</p>
@@ -213,7 +213,7 @@ export default function HomeView() {
               </div>
               <p className="t-figure">3+ yrs</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "600", color: "var(--color-text-primary)"} as React.CSSProperties}>Growing audiences</strong>
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Growing audiences</strong>
                 {" "}through content marketing, community management, and audience engagement.
               </p>
             </div>
@@ -224,7 +224,7 @@ export default function HomeView() {
               </div>
               <p className="t-figure">30+</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "600", color: "var(--color-text-primary)"} as React.CSSProperties}>Educational, explanatory and industry-focused articles</strong>
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Educational, explanatory and industry-focused articles</strong>
               </p>
             </div>
             <div className="tile attend">
@@ -234,7 +234,7 @@ export default function HomeView() {
               </div>
               <p className="t-figure">100%+</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "600", color: "var(--color-text-primary)"} as React.CSSProperties}>LinkedIn audience growth</strong>
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>LinkedIn audience growth</strong>
                 {" "}through consistent, audience-focused content explaining tokenization and institutional digital assets.
               </p>
             </div>
@@ -245,7 +245,7 @@ export default function HomeView() {
               </div>
               <p className="t-figure">64%</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "600", color: "var(--color-text-primary)"} as React.CSSProperties}>Growth in X audience</strong>
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Growth in X audience</strong>
                 {" "}during an Ethereum-focused developer residency through targeted and audience-focused content.
               </p>
             </div>
@@ -256,7 +256,7 @@ export default function HomeView() {
               </div>
               <p className="t-figure">15+</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "600", color: "var(--color-text-primary)"} as React.CSSProperties}>Video content produced</strong>
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Video content produced</strong>
                 {" "}from scripting and shooting, through editing, extending how brands communicate ideas across digital channels.
               </p>
             </div>
@@ -267,7 +267,7 @@ export default function HomeView() {
               </div>
               <p className="t-figure">3,000+</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "600", color: "var(--color-text-primary)"} as React.CSSProperties}>Registrations for Code Africa 2025.</strong>
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Registrations for Code Africa 2025.</strong>
                 {" "}Contributed to 3,000+ registrations for a pan-African Web3 conference by managing promotional content and channels, coordinating volunteers, and supporting the ambassador campaign.
               </p>
             </div>
@@ -278,7 +278,7 @@ export default function HomeView() {
               </div>
               <p className="t-figure">16K+</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "600", color: "var(--color-text-primary)"} as React.CSSProperties}>Web3Ladies community members across platforms.</strong>
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Web3Ladies community members across platforms.</strong>
                 {" "}Contributed to content, onboarding, and programmes supporting a growing community of women exploring blockchain, AI, and emerging technologies.
               </p>
             </div>
@@ -434,7 +434,7 @@ export default function HomeView() {
               {" "}before I learned to chase attention.
             </h2>
           </div>
-          <div className="grid-2" style={{gap: "var(--space-stack)"} as React.CSSProperties}>
+          <div className="grid-2" style={{gap: "var(--columns-gap)"} as React.CSSProperties}>
             <div className="stack" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
               <div className="panel" aria-hidden="true" style={{height: "240px"} as React.CSSProperties}>
                 <div className="shape round fill-secondary" style={{left: "12%", top: "52px", width: "96px", height: "96px"} as React.CSSProperties} />
@@ -468,7 +468,7 @@ export default function HomeView() {
           <div style={{paddingTop: "var(--space-group)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
             <p className="t-heading-s" style={{maxWidth: "900px"} as React.CSSProperties}>
               The goal isn't simply to create or publish more. It's to{" "}
-              <span className="em" style={{fontWeight: "500"} as React.CSSProperties}>communicate better</span>
+              <span className="em" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>communicate better</span>
               .
             </p>
           </div>
@@ -664,7 +664,7 @@ export default function HomeView() {
               <span className="label-dot" aria-hidden="true" />
               Find me
             </p>
-            <nav aria-labelledby="socials-label" style={{display: "flex", flexWrap: "wrap", gap: "var(--space-tight) var(--space-cluster)", fontSize: "16px", lineHeight: "26px", fontWeight: "500"} as React.CSSProperties}>
+            <nav aria-labelledby="socials-label" style={{display: "flex", flexWrap: "wrap", gap: "var(--space-tight) var(--space-cluster)", fontSize: "var(--type-body-size)", lineHeight: "var(--type-body-leading)", fontWeight: "var(--weight-ui)"} as React.CSSProperties}>
               <a className="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">
                 LinkedIn{" "}
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -696,7 +696,7 @@ export default function HomeView() {
               Contact
             </p>
             {" "}
-            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "500", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
           </div>
         </div>
       </footer>

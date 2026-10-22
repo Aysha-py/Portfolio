@@ -21,7 +21,7 @@ export default function OpenTabsView() {
           </a>
           {" "}
           <div style={{display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "var(--space-stack)"} as React.CSSProperties}>
-            <nav aria-label="Main" className="nav-links" style={{display: "flex", alignItems: "center", gap: "var(--nav-gap)", fontSize: "16px", lineHeight: "26px", fontWeight: "500"} as React.CSSProperties}>
+            <nav aria-label="Main" className="nav-links" style={{display: "flex", alignItems: "center", gap: "var(--nav-gap)", fontSize: "var(--type-body-size)", lineHeight: "var(--type-body-leading)", fontWeight: "var(--weight-ui)"} as React.CSSProperties}>
               <a className="nav-link" href={`${BASE}/about/`}>About</a>
               {" "}
               <a className="nav-link" href={`${BASE}/work/`}>Work</a>
@@ -103,7 +103,7 @@ export default function OpenTabsView() {
               <a className="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a>
               <a className="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack</a>
             </div>
-            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "500", textUnderlineOffset: "6px", alignSelf: "flex-start"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px", alignSelf: "flex-start"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
           </div>
         </div>
       </header>
@@ -183,7 +183,7 @@ export default function OpenTabsView() {
                   <li>
                     <a className="row" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">
                       <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>Instagram</span>
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>Instagram</span>
                         <span className="t-caption secondary">@this_aishah_</span>
                       </span>
                       <span className="row-icon">
@@ -198,7 +198,7 @@ export default function OpenTabsView() {
                   <li>
                     <a className="row" href="https://www.instagram.com/p/DJ1c3phsCXb/" target="_blank" rel="noopener">
                       <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>Featured by She Code Africa</span>
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>Featured by She Code Africa</span>
                         <span className="t-caption secondary">Instagram feature</span>
                       </span>
                       <span className="row-icon">
@@ -213,7 +213,7 @@ export default function OpenTabsView() {
                   <li>
                     <a className="row" href="https://www.instagram.com/p/DKb0phRNEhY/" target="_blank" rel="noopener">
                       <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>Featured by She Merge Tribe</span>
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>Featured by She Merge Tribe</span>
                         <span className="t-caption secondary">Instagram feature</span>
                       </span>
                       <span className="row-icon">
@@ -228,7 +228,7 @@ export default function OpenTabsView() {
                   <li>
                     <a className="row" href="https://www.instagram.com/reel/DJJ-1lbobix/" target="_blank" rel="noopener">
                       <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>Featured by Community for Africa</span>
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>Featured by Community for Africa</span>
                         <span className="t-caption secondary">Instagram reel</span>
                       </span>
                       <span className="row-icon">
@@ -317,7 +317,7 @@ export default function OpenTabsView() {
                 <li>
                   <div className="row">
                     <span className="row-main">
-                      <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>[Issue title]</span>
+                      <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
                       <span className="t-caption secondary">Issue 03 · [Date]</span>
                     </span>
                     <span className="t-caption secondary">[Link]</span>
@@ -326,7 +326,7 @@ export default function OpenTabsView() {
                 <li>
                   <div className="row">
                     <span className="row-main">
-                      <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>[Issue title]</span>
+                      <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
                       <span className="t-caption secondary">Issue 02 · [Date]</span>
                     </span>
                     <span className="t-caption secondary">[Link]</span>
@@ -335,7 +335,7 @@ export default function OpenTabsView() {
                 <li>
                   <div className="row">
                     <span className="row-main">
-                      <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>[Issue title]</span>
+                      <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
                       <span className="t-caption secondary">Issue 01 · [Date]</span>
                     </span>
                     <span className="t-caption secondary">[Link]</span>
@@ -387,7 +387,7 @@ export default function OpenTabsView() {
                   <li>
                     <a className="row" href="https://www.linkedin.com/posts/aishat-muhammed_oscafest23-oscafest24-oscafest23-activity-7076480899957035008-W1F7" target="_blank" rel="noopener">
                       <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>My first public talk at OSCafest</span>
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>My first public talk at OSCafest</span>
                         <span className="t-caption secondary">Sharing the story of my first open-source contribution</span>
                       </span>
                       <span className="row-icon">
@@ -402,7 +402,7 @@ export default function OpenTabsView() {
                   <li>
                     <a className="row" href="https://www.linkedin.com/posts/aishat-muhammed_sustainafricasummit-opensource-communitymanagement-activity-7223659433275363328-U80O" target="_blank" rel="noopener">
                       <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>Sustain Africa Summit</span>
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>Sustain Africa Summit</span>
                         <span className="t-caption secondary">Participating in conversations around open source and sustainability</span>
                       </span>
                       <span className="row-icon">
@@ -417,7 +417,7 @@ export default function OpenTabsView() {
                   <li>
                     <a className="row" href="https://podcast.chaoss.community/111" target="_blank" rel="noopener">
                       <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>CHAOSS podcast, Episode 111</span>
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>CHAOSS podcast, Episode 111</span>
                         <span className="t-caption secondary">Joining a conversation about open source communities</span>
                       </span>
                       <span className="row-icon">
@@ -432,7 +432,7 @@ export default function OpenTabsView() {
                   <li>
                     <div className="row">
                       <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "500"} as React.CSSProperties}>CHAOSS course on popular open-source projects</span>
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>CHAOSS course on popular open-source projects</span>
                         <span className="t-caption secondary">Currently unavailable</span>
                       </span>
                     </div>
@@ -609,11 +609,11 @@ export default function OpenTabsView() {
             </p>
             {" "}
             <a className="jump-link" href={`${BASE}/contact/`} style={{alignSelf: "flex-start", marginTop: "var(--space-tight)"} as React.CSSProperties}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Say hello</span>
+              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Work with me</span>
               <span className="icon-btn" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="m7 7 10 10" />
-                  <path d="M17 7v10H7" />
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
                 </svg>
               </span>
             </a>
@@ -634,7 +634,7 @@ export default function OpenTabsView() {
               <span className="label-dot" aria-hidden="true" />
               Find me
             </p>
-            <nav aria-labelledby="socials-label" style={{display: "flex", flexWrap: "wrap", gap: "var(--space-tight) var(--space-cluster)", fontSize: "16px", lineHeight: "26px", fontWeight: "500"} as React.CSSProperties}>
+            <nav aria-labelledby="socials-label" style={{display: "flex", flexWrap: "wrap", gap: "var(--space-tight) var(--space-cluster)", fontSize: "var(--type-body-size)", lineHeight: "var(--type-body-leading)", fontWeight: "var(--weight-ui)"} as React.CSSProperties}>
               <a className="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">
                 LinkedIn{" "}
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -666,7 +666,7 @@ export default function OpenTabsView() {
               Contact
             </p>
             {" "}
-            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "500", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
+            <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
           </div>
         </div>
       </footer>
