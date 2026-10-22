@@ -111,7 +111,7 @@ export default function ContactView() {
           </div>
         </div>
       </header>
-      <section aria-labelledby="contact-title" style={{paddingBlock: "var(--space-section) var(--space-group)"} as React.CSSProperties}>
+      <section className="page-intro" aria-labelledby="contact-title" style={{paddingBlock: "var(--space-section) var(--space-group)"} as React.CSSProperties}>
         <div className="container stack reveal" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
           <p className="t-label">
             <span className="label-dot" aria-hidden="true" />
