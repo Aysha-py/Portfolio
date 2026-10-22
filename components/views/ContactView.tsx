@@ -157,79 +157,79 @@ export default function ContactView() {
           </div>
           <ul className="service-list reveal">
             <li>
-              <a className="service-row" href="mailto:m.aishat9890@gmail.com?subject=CV%20request">
-                <span className="service-name">
-                  <span className="service-mark is-dot" aria-hidden="true" />
+              <a className="service-row attend" href="mailto:m.aishat9890@gmail.com?subject=CV%20request">
+                <div className="service-body">
                   <span className="service-title">
                     <h3 className="t-title">Content marketing</h3>
                     <span className="t-caption secondary">(Content strategy, research-led thought leadership, educational content, short-form video)</span>
                   </span>
-                </span>
-                <p className="t-body secondary">
-                  Content strategy and campaigns that help your audience understand what you do, and why it matters to them.
-                </p>
-                <span className="service-ask">
-                  Request CV{" "}
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
+                  <p className="t-body secondary">
+                    Content strategy and campaigns that help your audience understand what you do, and why it matters to them.
+                  </p>
+                  <span className="service-ask">
+                    Request CV{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+                <span className="service-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-circle" /></span>
                 <span className="visually-hidden">(opens your email)</span>
               </a>
             </li>
             <li>
-              <a className="service-row" href="mailto:m.aishat9890@gmail.com?subject=Content%20creation">
-                <span className="service-name">
-                  <span className="service-mark is-half" aria-hidden="true" />
+              <a className="service-row attend" href="mailto:m.aishat9890@gmail.com?subject=Content%20creation">
+                <div className="service-body">
                   <h3 className="t-title">Content creation</h3>
-                </span>
-                <p className="t-body secondary">
-                  Educational posts, articles and explainers that turn complex topics into something people can learn from and share.
-                </p>
-                <span className="service-ask">
-                  Send an email{" "}
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
+                  <p className="t-body secondary">
+                    Educational posts, articles and explainers that turn complex topics into something people can learn from and share.
+                  </p>
+                  <span className="service-ask">
+                    Send an email{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+                <span className="service-mark" aria-hidden="true"><span className="shape half-round sh sh-secondary mark-half" /></span>
                 <span className="visually-hidden">(opens your email)</span>
               </a>
             </li>
             <li>
-              <a className="service-row" href="mailto:m.aishat9890@gmail.com?subject=Speaking%20invitation">
-                <span className="service-name">
-                  <span className="service-mark is-ring" aria-hidden="true" />
+              <a className="service-row attend" href="mailto:m.aishat9890@gmail.com?subject=Speaking%20invitation">
+                <div className="service-body">
                   <h3 className="t-title">Speaking gigs</h3>
-                </span>
-                <p className="t-body secondary">
-                  Talks, panels, workshops and X Spaces on community building, open source, Web3 and starting out in tech.
-                </p>
-                <span className="service-ask">
-                  Send an email{" "}
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
+                  <p className="t-body secondary">
+                    Talks, panels, workshops and X Spaces on community building, open source, Web3 and starting out in tech.
+                  </p>
+                  <span className="service-ask">
+                    Send an email{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+                <span className="service-mark" aria-hidden="true"><span className="shape sh-ring mark-ring" /></span>
                 <span className="visually-hidden">(opens your email)</span>
               </a>
             </li>
             <li>
-              <a className="service-row" href="mailto:m.aishat9890@gmail.com?subject=Collaboration%20and%20partnership">
-                <span className="service-name">
-                  <span className="service-mark is-pill" aria-hidden="true" />
+              <a className="service-row attend" href="mailto:m.aishat9890@gmail.com?subject=Collaboration%20and%20partnership">
+                <div className="service-body">
                   <h3 className="t-title">Collaboration {"&"} partnership</h3>
-                </span>
-                <p className="t-body secondary">Co-created content, programmes and campaigns with brands and communities who share an audience.</p>
-                <span className="service-ask">
-                  Send an email{" "}
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
+                  <p className="t-body secondary">Co-created content, programmes and campaigns with brands and communities who share an audience.</p>
+                  <span className="service-ask">
+                    Send an email{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+                <span className="service-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-pill" /></span>
                 <span className="visually-hidden">(opens your email)</span>
               </a>
             </li>
