@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Aishat Muhammed, work</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* ===== Tier 1: primitive tokens ===== */
+.home{
+--primitive-coral-400:#f38181;
+--primitive-coral-400-a55:rgba(243,129,129,0.55);
+--primitive-coral-700:#b2464a;
+--primitive-mint-300:#95e1d3;
+--primitive-butter-200:#fce38a;
+--primitive-cream-100:#eaffd0;
+--primitive-cream-100-a16:rgba(234,255,208,0.16);
+--primitive-cream-100-a24:rgba(234,255,208,0.24);
+--primitive-ink-900:#173a3a;
+--primitive-ink-900-a16:rgba(23,58,58,0.16);
+--primitive-ink-900-a20:rgba(23,58,58,0.20);
+--primitive-neutral-0:#ffffff;
+--primitive-neutral-25:#eff3f1;
+--primitive-neutral-50:#e3e9e6;
+--primitive-neutral-100:#f1f1f1;
+--primitive-neutral-400:#a6a6a6;
+--primitive-neutral-600:#5e5e5e;
+--primitive-neutral-900:#161616;
+--primitive-neutral-925:#2f3431;
+--primitive-neutral-950:#262a28;
+--primitive-neutral-900-a07:rgba(22,22,22,0.07);
+--primitive-neutral-100-a09:rgba(241,241,241,0.09);
+--primitive-space-1:4px;
+--primitive-space-2:8px;
+--primitive-space-3:12px;
+--primitive-space-4:16px;
+--primitive-space-5:24px;
+--primitive-space-6:32px;
+--primitive-space-7:48px;
+--primitive-space-8:96px;
+--primitive-radius-sm:6px;
+--primitive-radius-md:14px;
+--primitive-radius-full:999px;
+--primitive-stroke-1:1px;
+--primitive-stroke-1-5:1.5px;
+--primitive-stroke-2:2px;
+--primitive-font-sans:Figtree,"Segoe UI",system-ui,sans-serif;
+--primitive-font-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+--primitive-weight-500:500;
+--primitive-weight-600:600;
+--primitive-duration-200:200ms;
+--primitive-duration-240:240ms;
+--primitive-duration-280:280ms;
+--primitive-ease-out:ease-out;
+}
+/* ===== Tier 2: semantic tokens ===== */
+.home{
+--color-bg-page:var(--primitive-neutral-25);
+--color-bg-subtle:var(--primitive-neutral-50);
+--color-text-primary:var(--primitive-neutral-900);
+--color-text-secondary:var(--primitive-neutral-600);
+--color-text-emphasis:var(--primitive-coral-700);
+--color-text-on-accent:var(--primitive-ink-900);
+--color-border-subtle:var(--primitive-ink-900-a16);
+--color-border-strong:var(--primitive-ink-900);
+--color-border-accent:var(--primitive-coral-400-a55);
+--color-focus-ring:var(--primitive-coral-700);
+--color-accent-primary:var(--primitive-coral-400);
+--color-accent-secondary:var(--primitive-mint-300);
+--color-accent-highlight:var(--primitive-butter-200);
+--color-accent-stroke:var(--primitive-ink-900);
+--color-accent-muted:var(--primitive-neutral-900-a07);
+--color-accent-muted-stroke:var(--primitive-ink-900-a20);
+--color-action-primary:var(--primitive-neutral-900);
+--color-action-primary-hover:var(--primitive-coral-400);
+--color-on-action-primary:var(--primitive-neutral-0);
+--color-type-content:var(--primitive-coral-400);
+--color-type-community:var(--primitive-mint-300);
+--space-section:var(--primitive-space-8);
+--space-group:var(--primitive-space-7);
+--space-stack:var(--primitive-space-6);
+--space-inset:var(--primitive-space-6);
+--space-cluster:var(--primitive-space-5);
+--space-element:var(--primitive-space-4);
+--space-related:var(--primitive-space-3);
+--space-tight:var(--primitive-space-2);
+--space-hairline:var(--primitive-space-1);
+--space-gutter:clamp(var(--primitive-space-4),5.5vw,calc(var(--primitive-space-7) + var(--primitive-space-6)));
+--radius-control:var(--primitive-radius-sm);
+--radius-card:var(--primitive-radius-md);
+--radius-round:var(--primitive-radius-full);
+--border-width-hairline:var(--primitive-stroke-1);
+--border-width-strong:var(--primitive-stroke-1-5);
+--focus-width:var(--primitive-stroke-2);
+--font-sans:var(--primitive-font-sans);
+--font-mono:var(--primitive-font-mono);
+--type-display-size:clamp(36px,4.2vw,60px);
+--type-display-leading:1.08;
+--type-display-tracking:-0.035em;
+--type-heading-s-size:clamp(24px,2.4vw,32px);
+--type-heading-s-leading:1.22;
+--type-heading-s-tracking:-0.025em;
+--type-title-size:24px;
+--type-title-leading:30px;
+--type-title-tracking:-0.02em;
+--type-body-l-size:19px;
+--type-body-l-leading:30px;
+--type-body-size:16px;
+--type-body-leading:26px;
+--type-caption-size:13px;
+--type-caption-leading:18px;
+--type-label-size:12px;
+--type-label-leading:16px;
+--type-label-tracking:0.08em;
+--motion-fast:var(--primitive-duration-200);
+--motion-base:var(--primitive-duration-240);
+--motion-slow:var(--primitive-duration-280);
+--motion-ease:var(--primitive-ease-out);
+--motion-rise:8px;
+}
+.home[data-theme="dark"]{
+--color-bg-page:var(--primitive-neutral-950);
+--color-bg-subtle:var(--primitive-neutral-925);
+--color-text-primary:var(--primitive-neutral-100);
+--color-text-secondary:var(--primitive-neutral-400);
+--color-text-emphasis:var(--primitive-coral-400);
+--color-border-subtle:var(--primitive-cream-100-a16);
+--color-border-strong:var(--primitive-cream-100);
+--color-focus-ring:var(--primitive-coral-400);
+--color-accent-stroke:var(--primitive-cream-100);
+--color-accent-muted:var(--primitive-neutral-100-a09);
+--color-accent-muted-stroke:var(--primitive-cream-100-a24);
+--color-action-primary:var(--primitive-neutral-100);
+--color-on-action-primary:var(--primitive-neutral-950);
+}
+/* ===== Tier 3: component tokens ===== */
+.home{
+--header-height:calc(var(--primitive-space-7) + var(--primitive-space-5));
+--header-bg:var(--color-bg-page);
+--nav-gap:var(--space-stack);
+--nav-link-color:var(--color-text-primary);
+--nav-link-color-hover:var(--color-text-emphasis);
+--nav-link-color-current:var(--color-text-emphasis);
+--icon-button-size:44px;
+--icon-button-radius:var(--radius-control);
+--icon-button-border:var(--color-border-subtle);
+--icon-button-border-hover:var(--color-border-strong);
+--toggle-size:44px;
+--toggle-border:var(--color-border-accent);
+--toggle-border-hover:var(--color-accent-primary);
+--toggle-fill:var(--color-accent-primary);
+--label-dot:var(--color-accent-primary);
+--type-tag-height:28px;
+--type-tag-radius:var(--radius-control);
+--type-tag-border:var(--color-border-subtle);
+--type-tag-text:var(--color-text-primary);
+--type-dot-content:var(--color-type-content);
+--type-dot-community:var(--color-type-community);
+--card-bg:var(--color-bg-page);
+--card-border:var(--color-border-subtle);
+--card-border-hover:var(--color-border-strong);
+--card-radius:var(--radius-card);
+--card-padding:var(--space-inset);
+--work-art-min-height:calc(var(--primitive-space-8) * 3);
+--work-art-scale:0.6;
+--work-art-height-stacked:calc(var(--work-art-min-height) * var(--work-art-scale));
+--work-art-bg:var(--color-bg-subtle);
+--logo-tile-bg:var(--primitive-neutral-0);
+--logo-tile-border:var(--color-border-subtle);
+--logo-tile-width:280px;
+--logo-tile-height:112px;
+--logo-max-height:56px;
+--work-slide:24px;
+--pick-media-ratio:16 / 9;
+--pick-media-bg:var(--color-bg-subtle);
+--pick-icon-size:56px;
+--quote-rule:var(--color-accent-secondary);
+--shape-ring-color:var(--color-accent-stroke);
+--highlight-color:var(--color-accent-highlight);
+--link-color:var(--color-text-emphasis);
+--link-underline-offset:6px;
+--button-hover-bg:var(--color-action-primary-hover);
+--button-hover-text:var(--color-text-on-accent);
+--footer-bg:var(--color-bg-subtle);
+}
+
+/* ===== Base ===== */
+body{margin:0;background:#eff3f1;}
+body:has(.home[data-theme="dark"]){background:#262a28;}
+html{scroll-behavior:smooth;}
+a{color:var(--link-color);}
+a:hover{color:var(--color-text-primary);}
+section,footer,#contact-details{scroll-margin-top:calc(var(--header-height) + var(--space-element));}
+a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--color-focus-ring);outline-offset:var(--focus-width);}
+.container{max-width:1280px;margin:0 auto;padding-inline:var(--space-gutter);box-sizing:border-box;}
+.stack{display:flex;flex-direction:column;}
+
+/* ===== Type ===== */
+.t-display{margin:0;font-size:var(--type-display-size);line-height:var(--type-display-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-display-tracking);text-wrap:balance;}
+.t-heading-s{margin:0;font-size:var(--type-heading-s-size);line-height:var(--type-heading-s-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-heading-s-tracking);text-wrap:balance;}
+.t-title{margin:0;font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--primitive-weight-600);letter-spacing:var(--type-title-tracking);}
+.t-body-l{margin:0;font-size:var(--type-body-l-size);line-height:var(--type-body-l-leading);}
+.t-body{margin:0;font-size:var(--type-body-size);line-height:var(--type-body-leading);}
+.t-caption{margin:0;font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--primitive-weight-500);}
+.t-label{display:inline-flex;align-items:center;gap:var(--space-tight);margin:0;font-family:var(--font-mono);font-size:var(--type-label-size);line-height:var(--type-label-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-label-tracking);text-transform:uppercase;color:var(--color-text-secondary);}
+.t-figure-s{margin:0;font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--primitive-weight-500);letter-spacing:var(--type-title-tracking);font-variant-numeric:tabular-nums;}
+.secondary{color:var(--color-text-secondary);}
+.label-dot{display:inline-block;width:6px;height:6px;border-radius:var(--radius-round);background:var(--label-dot);flex:none;}
+.hl{background-image:linear-gradient(180deg,transparent 60%,var(--highlight-color) 60%,var(--highlight-color) 94%,transparent 94%);color:inherit;padding:0 0.04em;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+.home[data-theme="dark"] .hl{background-image:linear-gradient(var(--highlight-color),var(--highlight-color));background-repeat:no-repeat;background-position:0 98%;background-size:100% 0.14em;}
+
+/* ===== Shared components ===== */
+.nav-link{color:var(--nav-link-color);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
+.nav-link:hover{color:var(--nav-link-color-hover);}
+.nav-link[aria-current="page"]{color:var(--nav-link-color-current);font-weight:var(--primitive-weight-600);}
+.nav-contact{text-decoration:underline;text-decoration-thickness:var(--border-width-hairline);text-underline-offset:var(--link-underline-offset);text-decoration-color:var(--color-border-strong);}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;width:var(--icon-button-size);height:var(--icon-button-size);border-radius:var(--icon-button-radius);border:var(--border-width-hairline) solid var(--icon-button-border);background:transparent;color:var(--color-text-primary);cursor:pointer;text-decoration:none;transition:border-color var(--motion-fast) var(--motion-ease),background-color var(--motion-base) var(--motion-ease),color var(--motion-base) var(--motion-ease);}
+.icon-btn:hover{border-color:var(--icon-button-border-hover);}
+.menu-btn{display:none;}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:var(--toggle-size);height:var(--toggle-size);padding:0;border-radius:var(--radius-round);border:var(--border-width-hairline) solid var(--toggle-border);background:transparent;cursor:pointer;transition:border-color var(--motion-fast) var(--motion-ease);}
+.theme-toggle:hover{border-color:var(--toggle-border-hover);}
+.tg-disc{position:relative;display:block;width:20px;height:20px;border-radius:var(--radius-round);background:var(--toggle-fill);overflow:hidden;}
+.wave{position:absolute;left:0;top:0;display:block;transition:transform 420ms var(--motion-ease);}
+.home[data-theme="dark"] .wave{transform:translateY(5px);}
+.logo-dark{display:none;}
+.home[data-theme="dark"] .logo-dark{display:block;}
+.home[data-theme="dark"] .logo-light{display:none;}
+.jump-link{display:inline-flex;align-items:center;gap:var(--space-related);color:var(--color-text-primary);text-decoration:none;}
+.jump-link:hover{color:var(--color-text-primary);}
+.jump-link:hover .icon-btn{background:var(--button-hover-bg);border-color:var(--button-hover-bg);color:var(--button-hover-text);}
+.section-next{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:var(--space-cluster) var(--space-stack);}
+.section-next.is-right{justify-content:flex-end;}
+.foot-link{display:inline-flex;align-items:center;gap:var(--space-hairline);color:var(--color-text-primary);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
+.foot-link:hover{color:var(--color-text-emphasis);}
+.email-link{color:var(--color-text-primary);text-decoration:underline;text-decoration-thickness:var(--border-width-strong);text-decoration-color:var(--color-border-subtle);overflow-wrap:anywhere;transition:color var(--motion-fast) var(--motion-ease),text-decoration-color var(--motion-fast) var(--motion-ease);}
+.email-link:hover{color:var(--color-text-emphasis);text-decoration-color:var(--color-text-emphasis);}
+.footer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-stack);align-items:start;}
+.footer-end{align-items:flex-end;text-align:right;}
+.shape{position:absolute;}
+.round{border-radius:var(--radius-round);}
+.half-round{border-radius:999px 999px 0 0;}
+.sh{background:var(--color-accent-muted);transition:background-color var(--motion-slow) var(--motion-ease);}
+.sh-ring{border-style:solid;border-color:var(--color-accent-muted-stroke);border-radius:var(--radius-round);box-sizing:border-box;transition:border-color var(--motion-slow) var(--motion-ease);}
+.attend:hover .sh-primary,.attend:focus-visible .sh-primary{background:var(--color-accent-primary);}
+.attend:hover .sh-secondary,.attend:focus-visible .sh-secondary{background:var(--color-accent-secondary);}
+.attend:hover .sh-ring,.attend:focus-visible .sh-ring{border-color:var(--shape-ring-color);}
+
+/* ===== Work page components ===== */
+.dots{display:inline-flex;gap:var(--space-hairline);}
+.dot{display:inline-block;width:8px;height:8px;border-radius:var(--radius-round);flex:none;}
+.dot-content{background:var(--type-dot-content);}
+.dot-community{background:var(--type-dot-community);}
+.type-tag{display:inline-flex;align-items:center;gap:var(--space-tight);align-self:flex-start;min-height:var(--type-tag-height);padding:0 var(--space-tight);box-sizing:border-box;border-radius:var(--type-tag-radius);border:var(--border-width-hairline) solid var(--type-tag-border);color:var(--type-tag-text);font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--primitive-weight-500);}
+.work-list{display:flex;flex-direction:column;gap:var(--space-cluster);margin:0;padding:0;list-style:none;}
+.work-card{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);text-decoration:none;color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);overflow:hidden;transition:border-color var(--motion-base) var(--motion-ease);}
+.work-card:hover{color:var(--color-text-primary);border-color:var(--card-border-hover);}
+.work-art{position:relative;min-height:var(--work-art-min-height);overflow:hidden;background:var(--work-art-bg);border-right:var(--border-width-hairline) solid var(--card-border);}
+.work-art-inner{position:absolute;inset:0;}
+.work-art{display:flex;align-items:center;justify-content:center;padding:var(--space-stack);box-sizing:border-box;}
+.org-tile{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-hairline);width:min(var(--logo-tile-width),100%);height:var(--logo-tile-height);padding:var(--space-cluster);box-sizing:border-box;background:var(--logo-tile-bg);border:var(--border-width-hairline) solid var(--logo-tile-border);border-radius:var(--card-radius);}
+.org-tile img{display:block;max-width:100%;max-height:var(--logo-max-height);object-fit:contain;}
+.logo-ph{font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--primitive-weight-600);letter-spacing:var(--type-title-tracking);color:var(--primitive-neutral-600);}
+.logo-ph-note{font-size:var(--type-caption-size);line-height:var(--type-caption-leading);color:var(--primitive-neutral-600);}
+.work-list > li:nth-child(even) .work-card{grid-template-columns:minmax(0,7fr) minmax(0,5fr);}
+.work-list > li:nth-child(even) .work-art{order:2;border-right:0;border-left:var(--border-width-hairline) solid var(--card-border);}
+.work-body{display:flex;flex-direction:column;gap:var(--space-related);padding:var(--space-group) var(--space-group) var(--space-stack);}
+.work-title{transition:color var(--motion-base) var(--motion-ease);}
+.work-card:hover .work-title,.work-card:focus-visible .work-title{color:var(--color-text-emphasis);}
+.results{display:flex;flex-wrap:wrap;gap:var(--space-element) var(--space-group);margin:var(--space-tight) 0 0;padding:var(--space-element) 0 0;border-top:var(--border-width-hairline) solid var(--card-border);list-style:none;}
+.results li{display:flex;flex-direction:column;gap:var(--space-hairline);}
+.work-cta{display:inline-flex;align-items:center;gap:var(--space-tight);margin-top:auto;padding-top:var(--space-element);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-600);color:var(--link-color);}
+.work-card:hover .work-cta{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+
+.pick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-cluster);margin:0;padding:0;list-style:none;}
+.pick-grid > li{display:flex;}
+.pick{display:flex;flex-direction:column;width:100%;text-decoration:none;color:var(--color-text-primary);background:var(--card-bg);border:var(--border-width-hairline) solid var(--card-border);border-radius:var(--card-radius);overflow:hidden;transition:border-color var(--motion-base) var(--motion-ease);}
+.pick:hover{color:var(--color-text-primary);border-color:var(--card-border-hover);}
+.pick-media{position:relative;aspect-ratio:var(--pick-media-ratio);overflow:hidden;background:var(--pick-media-bg);border-bottom:var(--border-width-hairline) solid var(--card-border);}
+.pick-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;}
+.pick-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-related);color:var(--color-text-secondary);}
+.pick-icon{display:inline-flex;align-items:center;justify-content:center;width:var(--pick-icon-size);height:var(--pick-icon-size);border-radius:var(--radius-round);border:var(--border-width-strong) solid var(--color-accent-muted-stroke);background:var(--card-bg);color:var(--color-text-primary);transition:border-color var(--motion-slow) var(--motion-ease);}
+.pick:hover .pick-icon,.pick:focus-visible .pick-icon{border-color:var(--shape-ring-color);}
+.pick-body{display:flex;flex-direction:column;gap:var(--space-related);padding:var(--space-inset);flex-grow:1;}
+.pick-title{transition:color var(--motion-base) var(--motion-ease);}
+.pick:hover .pick-title,.pick:focus-visible .pick-title{color:var(--color-text-emphasis);}
+.pick:hover .work-cta{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.pick-quote{margin:var(--space-tight) 0 0;padding-left:var(--space-element);border-left:var(--focus-width) solid var(--quote-rule);}
+
+@keyframes rise-in{from{opacity:0;transform:translateY(var(--motion-rise));}to{opacity:1;transform:none;}}
+@supports (animation-timeline: view()){
+@media (prefers-reduced-motion: no-preference){
+.reveal{animation:rise-in linear both;animation-timeline:view();animation-range:entry 0% entry 40%;}
+}
+}
+@keyframes tile-in-left{from{opacity:0;transform:translateX(calc(var(--work-slide) * -1));}to{opacity:1;transform:none;}}
+@keyframes tile-in-right{from{opacity:0;transform:translateX(var(--work-slide));}to{opacity:1;transform:none;}}
+@supports (animation-timeline: view()){
+@media (prefers-reduced-motion: no-preference){
+.work-card .org-tile{animation:tile-in-left linear both;animation-timeline:view();animation-range:entry 10% cover 35%;}
+.work-list > li:nth-child(even) .work-card .org-tile{animation-name:tile-in-right;}
+.work-card .work-body{animation:rise-in linear both;animation-timeline:view();animation-range:entry 10% cover 30%;}
+}
+}
+@media (hover: none){
+.sh-primary{background:var(--color-accent-primary);}
+.sh-secondary{background:var(--color-accent-secondary);}
+.sh-ring{border-color:var(--shape-ring-color);}
+}
+@media (max-width: 860px){
+.nav-links{display:none !important;}
+.nav-divider{display:none !important;}
+.menu-btn{display:inline-flex;}
+}
+@media (max-width: 760px){
+.work-card,.work-list > li:nth-child(even) .work-card{grid-template-columns:minmax(0,1fr);}
+.work-list > li:nth-child(even) .work-art{order:0;border-left:0;}
+.work-art{padding:var(--space-element);}
+.home{--logo-tile-width:240px;--logo-tile-height:88px;--logo-max-height:44px;}
+.org-tile{padding:var(--space-element);}
+.work-art{min-height:0;height:var(--work-art-height-stacked);border-right:0;border-bottom:var(--border-width-hairline) solid var(--card-border);}
+.pick-grid{grid-template-columns:minmax(0,1fr);}
+.pick-media .shape{display:none;}
+.work-art-inner{inset:auto;left:0;top:0;width:calc(100% / var(--work-art-scale));height:var(--work-art-min-height);transform:scale(var(--work-art-scale));transform-origin:0 0;}
+.work-body{padding:var(--space-inset) var(--space-cluster) var(--space-cluster);}
+.footer-grid{grid-template-columns:minmax(0,1fr);}
+.footer-end{align-items:flex-start;text-align:left;}
+}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+*{transition:none !important;}
+}
+
+/* ===== Background texture: fine grain ===== */
+.home{--grain-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23n)'/%3E%3C/svg%3E");--grain-size:200px;--grain-strength:0.10;--grain-blend:multiply;position:relative;}
+.home[data-theme="dark"]{--grain-strength:0.12;--grain-blend:screen;}
+.home::after{content:"";position:absolute;inset:0;z-index:30;pointer-events:none;background-image:var(--grain-image);background-size:var(--grain-size);opacity:var(--grain-strength);mix-blend-mode:var(--grain-blend);}
+
+/* ===== Mobile menu ===== */
+.home{--menu-link-size:clamp(32px,9vw,44px);--menu-link-leading:1.15;--menu-panel-bg:var(--color-bg-page);}
+.menu-btn .icon-close{display:none;}
+.home[data-menu="open"] .menu-btn .icon-open{display:none;}
+.home[data-menu="open"] .menu-btn .icon-close{display:block;}
+.menu-panel{display:none;}
+@media (max-width: 860px){
+.home[data-menu="open"] .menu-panel{display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-group);position:fixed;left:0;right:0;top:var(--header-height);bottom:0;z-index:25;padding:var(--space-stack) var(--space-gutter) var(--space-group);box-sizing:border-box;overflow-y:auto;background:var(--menu-panel-bg);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+}
+.menu-list{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;padding:0;list-style:none;}
+.menu-link{display:inline-flex;align-items:center;gap:var(--space-related);padding:var(--space-tight) 0;color:var(--color-text-primary);text-decoration:none;font-size:var(--menu-link-size);line-height:var(--menu-link-leading);font-weight:var(--primitive-weight-500);letter-spacing:-0.03em;transition:color var(--motion-fast) var(--motion-ease);}
+.menu-link:hover{color:var(--color-text-emphasis);}
+.menu-link{position:relative;}
+.menu-link .label-dot{position:absolute;left:calc(var(--space-related) * -1);width:var(--space-tight);height:var(--space-tight);visibility:hidden;}
+.menu-link[aria-current="page"]{color:var(--color-text-emphasis);}
+.menu-link[aria-current="page"] .label-dot{visibility:visible;}
+.menu-link.is-contact span:last-child{text-decoration:underline;text-decoration-thickness:var(--border-width-strong);text-underline-offset:8px;}
+.menu-foot{display:flex;flex-direction:column;gap:var(--space-related);padding-top:var(--space-cluster);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.menu-social{display:flex;flex-wrap:wrap;gap:var(--space-tight) var(--space-cluster);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--primitive-weight-500);}
+
+/* ===== Ripple cursor ===== */
+/* primitive */
+.home{--primitive-duration-640:640ms;--primitive-opacity-70:0.7;}
+/* semantic */
+.home{--motion-ripple:var(--primitive-duration-640);--opacity-soft:var(--primitive-opacity-70);}
+/* component: the cursor is the ripple mark, five mint rings round a coral dot */
+.home{
+--cursor-size:var(--space-group);
+--cursor-dot-size:var(--space-hairline);
+--cursor-dot-color:var(--color-accent-primary);
+--cursor-ring-color:var(--color-accent-secondary);
+--cursor-ring-stroke:var(--border-width-strong);
+--cursor-active-color:var(--color-accent-stroke);
+--cursor-softness:var(--opacity-soft);
+--cursor-press-duration:var(--motion-ripple);
+--cursor-fade-duration:var(--motion-fast);
+}
+/* end ripple cursor */
+</style>
+</helmet>
+<div id="top" class="home" data-theme="{{theme}}" data-cursor="ripple" data-menu="{{menu}}" style="font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-bg-page); min-height: 100vh; transition: background-color 240ms ease-out, color 240ms ease-out">
+
+<header style="position: sticky; top: 0; z-index: 20; background: var(--header-bg); border-bottom: 1px solid var(--color-border-subtle)">
+<div class="container" style="height: var(--header-height); display: flex; align-items: center; justify-content: space-between; gap: var(--space-cluster)">
+<a href="Home.dc.html" aria-label="Aishat Muhammed, home" style="display: flex; align-items: center; text-decoration: none">
+<img class="logo-light" src="/_blob/b5d266cab6acb3304831769b7f8aa26b" alt="aishah" style="height: 32px; width: auto">
+<img class="logo-dark" src="/_blob/9bc4602900c58c540b9d16b88bd92bbc" alt="aishah" style="height: 32px; width: auto">
+</a>
+<div style="display: flex; align-items: center; justify-content: flex-end; gap: var(--space-stack)">
+<nav aria-label="Main" class="nav-links" style="display: flex; align-items: center; gap: var(--nav-gap); font-size: 16px; line-height: 26px; font-weight: 500">
+<a class="nav-link" href="About.dc.html">About</a>
+<a class="nav-link" href="Work.dc.html" aria-current="page">Work</a>
+<a class="nav-link" href="TalkShelf.dc.html">Talk shelf</a>
+<a class="nav-link" href="OpenTabs.dc.html">Open tabs</a>
+<a class="nav-link nav-contact" href="Contact.dc.html">Contact</a>
+</nav>
+<span class="nav-divider" aria-hidden="true" style="width: 1px; height: 20px; background: var(--color-border-subtle)"></span>
+<div style="display: flex; align-items: center; gap: var(--space-tight)">
+<button type="button" class="theme-toggle" aria-label="{{themeLabel}}" title="{{themeLabel}}" onClick="{{toggleTheme}}">
+<span class="tg-disc" aria-hidden="true"><svg class="wave" width="20" height="20" viewBox="0 0 20 20"><path d="M-1 -1 H21 V7.5 C17 5.5 14 10 10 8 C6 6 3 9.5 -1 7.5 Z" style="fill: var(--header-bg)"></path></svg></span>
+</button>
+<button type="button" class="icon-btn menu-btn" aria-label="{{menuLabel}}" aria-expanded="{{menuExpanded}}" aria-controls="mobile-menu" onClick="{{toggleMenu}}"><svg class="icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="7" y2="7"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="17" y2="17"></line></svg><svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+</div>
+</div>
+</div>
+
+<div class="menu-panel" id="mobile-menu"><nav aria-label="Menu"><ul class="menu-list"><li><a class="menu-link" href="About.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>About</span></a></li><li><a class="menu-link" href="Work.dc.html" aria-current="page" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Work</span></a></li><li><a class="menu-link" href="TalkShelf.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Talk shelf</span></a></li><li><a class="menu-link" href="OpenTabs.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Open tabs</span></a></li><li><a class="menu-link is-contact" href="Contact.dc.html" onClick="{{closeMenu}}"><span class="label-dot" aria-hidden="true"></span><span>Contact</span></a></li></ul></nav><div class="menu-foot"><p class="t-label"><span class="label-dot" aria-hidden="true"></span>Find me</p><div class="menu-social"><a class="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">LinkedIn</a><a class="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram</a><a class="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack</a></div><a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: 500; text-underline-offset: 6px; align-self: flex-start">m.aishat9890@gmail.com</a></div></div>
+</header>
+
+<section aria-labelledby="work-title" style="padding-block: var(--space-section) var(--space-group)">
+<div class="container stack reveal" style="gap: var(--space-cluster); max-width: 1280px">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Work</p>
+<h1 id="work-title" class="t-display" style="max-width: 980px">Stories I've told and <span class="hl">communities I've grown</span></h1>
+<p class="t-body-l" style="max-width: 680px">Across fintech, Web3, developer education and open source, I build communities and the content that keeps them coming back.</p>
+<a class="jump-link" href="#work-list" style="align-self: flex-start; margin-top: var(--space-element)">
+<span class="t-label" style="color: var(--color-text-primary)">Browse the work</span>
+<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span>
+</a>
+</div>
+</section>
+
+<section id="work-list" aria-label="Projects" style="padding-block: var(--space-group) var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container stack" style="gap: var(--space-group)">
+<ul class="work-list">
+<li>
+<a class="work-card attend" href="#case-sereel">
+<div class="work-art">
+<div class="work-art-inner" aria-hidden="true">
+<div class="shape round sh sh-primary" style="right: -48px; top: -64px; width: 240px; height: 240px"></div>
+<div class="shape sh-ring" style="left: 48px; top: 48px; width: 96px; height: 96px; border-width: 12px"></div>
+<div class="shape round sh sh-primary" style="left: 48px; bottom: 96px; width: 96px; height: 32px"></div>
+<div class="shape round sh sh-primary" style="left: 48px; bottom: 48px; width: 160px; height: 32px"></div>
+</div>
+<div class="org-tile" role="img" aria-label="Sereel logo"><img src="/_blob/0b7cefd7e1a6e3fa8678af2730d8f3b5" alt=""></div>
+</div>
+<div class="work-body">
+<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-content"></span></span>Content</span>
+<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Sereel</h2>
+<p class="t-caption secondary">[Your role] · [Dates]</p>
+<p class="t-body" style="max-width: 600px">Educational and thought-leadership content on tokenized capital markets, plus scripted short-form video for institutional audiences.</p>
+<ul class="results">
+<li><span class="t-figure-s">127.8%</span><span class="t-caption secondary">LinkedIn follower growth, 245 to 558</span></li>
+</ul>
+<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</div>
+</a>
+</li>
+
+<li>
+<a class="work-card attend" href="#case-invisible-garden">
+<div class="work-art">
+<div class="work-art-inner" aria-hidden="true">
+<div class="shape half-round sh sh-primary" style="left: 48px; bottom: 0; width: 200px; height: 100px"></div>
+<div class="shape round sh sh-primary" style="right: 64px; top: 48px; width: 88px; height: 88px"></div>
+<div class="shape round sh sh-primary" style="right: 168px; top: 120px; width: 48px; height: 48px"></div>
+<div class="shape sh-ring" style="right: 48px; bottom: 40px; width: 64px; height: 64px; border-width: 8px"></div>
+</div>
+<div class="org-tile" role="img" aria-label="Invisible Garden logo"><span class="logo-ph" aria-hidden="true">Invisible Garden</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
+</div>
+<div class="work-body">
+<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-content"></span></span>Content</span>
+<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Invisible Garden</h2>
+<p class="t-caption secondary">[Your role] · [Dates]</p>
+<p class="t-body" style="max-width: 600px">Wrote the social content and outreach copy for a three-week Ethereum developer residency in Buenos Aires, turning interest into participation.</p>
+<ul class="results">
+<li><span class="t-figure-s">1,025 → 1,900+</span><span class="t-caption secondary">X followers</span></li>
+<li><span class="t-figure-s">0 → 144</span><span class="t-caption secondary">Instagram followers</span></li>
+</ul>
+<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</div>
+</a>
+</li>
+
+<li>
+<a class="work-card attend" href="#case-one-dev">
+<div class="work-art">
+<div class="work-art-inner" aria-hidden="true">
+<div class="shape round sh sh-secondary" style="left: 48px; top: 48px; width: 96px; height: 96px"></div>
+<div class="shape round sh sh-secondary" style="left: 152px; top: 112px; width: 64px; height: 64px"></div>
+<div class="shape round sh sh-secondary" style="left: 88px; top: 176px; width: 48px; height: 48px"></div>
+<div class="shape round sh sh-primary" style="right: 48px; top: 48px; width: 120px; height: 120px"></div>
+<div class="shape sh-ring" style="right: 80px; bottom: 40px; width: 64px; height: 64px; border-width: 8px"></div>
+</div>
+<div class="org-tile" role="img" aria-label="One Dev logo"><span class="logo-ph" aria-hidden="true">One Dev</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
+</div>
+<div class="work-body">
+<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-content"></span><span class="dot dot-community"></span></span>Content + community</span>
+<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">One Dev</h2>
+<p class="t-caption secondary">Developer Community Manager · Jan 2024 – present</p>
+<p class="t-body" style="max-width: 600px">Grew a Web3 EdTech community of African developers through bootcamps, workshops, a newsletter and consistent content.</p>
+<ul class="results">
+<li><span class="t-figure-s">8,000+</span><span class="t-caption secondary">community members</span></li>
+<li><span class="t-figure-s">6,300+</span><span class="t-caption secondary">newsletter subscribers</span></li>
+<li><span class="t-figure-s">200+</span><span class="t-caption secondary">bootcamp learners</span></li>
+</ul>
+<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</div>
+</a>
+</li>
+
+<li>
+<a class="work-card attend" href="#case-code-africa">
+<div class="work-art">
+<div class="work-art-inner" aria-hidden="true">
+<div class="shape round sh sh-primary" style="left: 48px; top: 48px; width: 128px; height: 128px"></div>
+<div class="shape round sh sh-secondary" style="left: 48px; bottom: 48px; width: 200px; height: 40px"></div>
+<div class="shape sh-ring" style="right: 48px; top: 56px; width: 112px; height: 112px; border-width: 14px"></div>
+<div class="shape round sh sh-secondary" style="right: 72px; bottom: 48px; width: 48px; height: 48px"></div>
+</div>
+<div class="org-tile" role="img" aria-label="Code Africa logo"><span class="logo-ph" aria-hidden="true">Code Africa</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
+</div>
+<div class="work-body">
+<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-content"></span><span class="dot dot-community"></span></span>Content + community</span>
+<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Code Africa Conference</h2>
+<p class="t-caption secondary">Led community and content operations · With One Dev</p>
+<p class="t-body" style="max-width: 600px">Ran the volunteer and ambassador programme, the full content calendar and live coverage for a conference connecting developers and founders across Africa.</p>
+<ul class="results">
+<li><span class="t-figure-s">3,000+</span><span class="t-caption secondary">registrations</span></li>
+<li><span class="t-figure-s">40+</span><span class="t-caption secondary">volunteers and ambassadors</span></li>
+</ul>
+<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</div>
+</a>
+</li>
+
+<li>
+<a class="work-card attend" href="#case-web3ladies">
+<div class="work-art">
+<div class="work-art-inner" aria-hidden="true">
+<div class="shape round sh sh-secondary" style="left: 48px; top: 56px; width: 88px; height: 88px"></div>
+<div class="shape round sh sh-secondary" style="left: 152px; top: 32px; width: 64px; height: 64px"></div>
+<div class="shape round sh sh-secondary" style="left: 160px; top: 120px; width: 72px; height: 72px"></div>
+<div class="shape round sh sh-secondary" style="left: 72px; top: 168px; width: 56px; height: 56px"></div>
+<div class="shape sh-ring" style="right: 48px; top: 64px; width: 120px; height: 120px; border-width: 15px"></div>
+</div>
+<div class="org-tile" role="img" aria-label="Web3ladies logo"><span class="logo-ph" aria-hidden="true">Web3ladies</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
+</div>
+<div class="work-body">
+<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-community"></span></span>Community</span>
+<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Web3ladies</h2>
+<p class="t-caption secondary">Community Lead · May 2024 – present</p>
+<p class="t-body" style="max-width: 600px">Onboarded and empowered women in Web3 through workshops, AMAs, bootcamps and hackathons, and revived the YouTube channel as a learning library.</p>
+<ul class="results">
+<li><span class="t-figure-s">3,000+</span><span class="t-caption secondary">women trained</span></li>
+<li><span class="t-figure-s">+50%</span><span class="t-caption secondary">YouTube audience</span></li>
+<li><span class="t-figure-s">+40%</span><span class="t-caption secondary">community engagement</span></li>
+</ul>
+<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</div>
+</a>
+</li>
+
+<li>
+<a class="work-card attend" href="#case-community-for-africa">
+<div class="work-art">
+<div class="work-art-inner" aria-hidden="true">
+<div class="shape round sh sh-secondary" style="left: 48px; top: 48px; width: 112px; height: 112px"></div>
+<div class="shape round sh sh-secondary" style="left: 176px; top: 96px; width: 64px; height: 64px"></div>
+<div class="shape round sh sh-secondary" style="right: 48px; bottom: 96px; width: 160px; height: 32px"></div>
+<div class="shape round sh sh-secondary" style="right: 48px; bottom: 48px; width: 224px; height: 32px"></div>
+<div class="shape sh-ring" style="left: 56px; bottom: 40px; width: 56px; height: 56px; border-width: 7px"></div>
+</div>
+<div class="org-tile" role="img" aria-label="Community for Africa logo"><span class="logo-ph" aria-hidden="true">Community for Africa</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
+</div>
+<div class="work-body">
+<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-community"></span></span>Community</span>
+<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Community for Africa</h2>
+<p class="t-caption secondary">Community Manager · Jul 2024 – present</p>
+<p class="t-body" style="max-width: 600px">Ran events, sessions and written and video content for African community managers and creatives, and built a Skills Audit Sheet members use to track their growth.</p>
+<ul class="results">
+<li><span class="t-figure-s">100+</span><span class="t-caption secondary">skills audit downloads</span></li>
+</ul>
+<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</div>
+</a>
+</li>
+
+<li>
+<a class="work-card attend" href="#case-open-terms-archive">
+<div class="work-art">
+<div class="work-art-inner" aria-hidden="true">
+<div class="shape sh-ring" style="left: 48px; top: 48px; width: 112px; height: 112px; border-width: 14px"></div>
+<div class="shape round sh sh-secondary" style="left: 184px; top: 88px; width: 64px; height: 64px"></div>
+<div class="shape half-round sh sh-secondary" style="right: 48px; bottom: 0; width: 224px; height: 112px"></div>
+<div class="shape round sh sh-primary" style="right: 72px; top: 48px; width: 56px; height: 56px"></div>
+</div>
+<div class="org-tile" role="img" aria-label="Open Terms Archive logo"><span class="logo-ph" aria-hidden="true">Open Terms Archive</span><span class="logo-ph-note" aria-hidden="true">[Logo]</span></div>
+</div>
+<div class="work-body">
+<span class="type-tag"><span class="dots" aria-hidden="true"><span class="dot dot-content"></span><span class="dot dot-community"></span></span>Content + community</span>
+<h2 class="t-heading-s work-title" style="margin-top: var(--space-tight)">Open Terms Archive</h2>
+<p class="t-caption secondary">Open Source Community Manager · Oct 2024 – Feb 2025</p>
+<p class="t-body" style="max-width: 600px">Moved an open-source contributor community to a new Mattermost space, with clear onboarding guides, a contributor page and a structure for community calls.</p>
+<ul class="results">
+<li><span class="t-figure-s">20%</span><span class="t-caption secondary">member retention after migration</span></li>
+</ul>
+<span class="work-cta">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</div>
+</a>
+</li>
+</ul>
+
+<div class="section-next is-right">
+<a class="jump-link" href="#selected">
+<span class="t-label" style="color: var(--color-text-primary)">See selected content</span>
+<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span>
+</a>
+</div>
+</div>
+</section>
+
+<section id="selected" aria-labelledby="selected-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
+<div class="container stack" style="gap: var(--space-group)">
+<div class="stack reveal" style="gap: var(--space-element); max-width: 760px">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Selected content and projects</p>
+<h2 id="selected-title" class="t-heading-s">A few pieces that performed well</h2>
+</div>
+<ul class="pick-grid">
+<li>
+<a class="pick attend reveal" href="#web3ladies-ai-challenge">
+<div class="pick-media">
+<div class="shape round sh sh-secondary" style="left: -24px; top: -24px; width: 96px; height: 96px"></div>
+<div class="shape round sh sh-secondary" style="right: 32px; bottom: 32px; width: 40px; height: 40px"></div>
+<div class="shape sh-ring" style="right: 88px; bottom: 24px; width: 48px; height: 48px; border-width: 6px"></div>
+<div class="pick-ph"><span class="pick-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg></span><span class="t-caption">[Screenshot of the challenge]</span></div>
+</div>
+<div class="pick-body">
+<span class="type-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>Project</span>
+<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">Web3ladies AI challenge</h3>
+<p class="t-caption secondary">Web3ladies · [Date]</p>
+<p class="t-body">[One line on what the challenge asked of participants and what you ran.]</p>
+<ul class="results">
+<li><span class="t-figure-s">[000+]</span><span class="t-caption secondary">participants</span></li>
+<li><span class="t-figure-s">[00]</span><span class="t-caption secondary">submissions</span></li>
+</ul>
+<span class="work-cta">See the challenge <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+</div>
+</a>
+</li>
+
+<li>
+<a class="pick attend reveal" href="#long-form">
+<div class="pick-media">
+<div class="shape half-round sh sh-primary" style="left: 32px; bottom: 0; width: 120px; height: 60px"></div>
+<div class="shape round sh sh-primary" style="right: -24px; top: -24px; width: 88px; height: 88px"></div>
+<div class="pick-ph"><span class="pick-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></span><span class="t-caption">[Screenshot of the article]</span></div>
+</div>
+<div class="pick-body">
+<span class="type-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Long-form</span>
+<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">[Article title]</h3>
+<p class="t-caption secondary">[Publication or blog] · [Date]</p>
+<p class="t-body">[One line on the topic and who it was for.]</p>
+<ul class="results">
+<li><span class="t-figure-s">[0,000]</span><span class="t-caption secondary">reads</span></li>
+<li><span class="t-figure-s">[00]</span><span class="t-caption secondary">shares</span></li>
+</ul>
+<span class="work-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+</div>
+</a>
+</li>
+
+<li>
+<a class="pick attend reveal" href="#linkedin-post">
+<div class="pick-media">
+<div class="shape sh-ring" style="left: 32px; top: 32px; width: 56px; height: 56px; border-width: 7px"></div>
+<div class="shape round sh sh-primary" style="right: 32px; bottom: 32px; width: 120px; height: 24px"></div>
+<div class="shape round sh sh-primary" style="right: 32px; bottom: 64px; width: 72px; height: 24px"></div>
+<div class="pick-ph"><span class="pick-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></span><span class="t-caption">[Screenshot of the post]</span></div>
+</div>
+<div class="pick-body">
+<span class="type-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>LinkedIn post</span>
+<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">[The post’s first line]</h3>
+<p class="t-caption secondary">LinkedIn · [Date]</p>
+<p class="t-body">[One line on the idea behind the post.]</p>
+<ul class="results">
+<li><span class="t-figure-s">[00K]</span><span class="t-caption secondary">impressions</span></li>
+<li><span class="t-figure-s">[000]</span><span class="t-caption secondary">reactions</span></li>
+</ul>
+<span class="work-cta">View the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+</div>
+</a>
+</li>
+
+<li>
+<a class="pick attend reveal" href="#video">
+<div class="pick-media">
+<div class="shape round sh sh-primary" style="left: -32px; bottom: -32px; width: 112px; height: 112px"></div>
+<div class="shape round sh sh-primary" style="right: 40px; top: 32px; width: 48px; height: 48px"></div>
+<div class="shape sh-ring" style="right: 32px; bottom: 32px; width: 40px; height: 40px; border-width: 5px"></div>
+<div class="pick-ph"><span class="pick-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></span><span class="t-caption">[Screenshot of the video]</span></div>
+</div>
+<div class="pick-body">
+<span class="type-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>Video</span>
+<h3 class="t-title pick-title" style="margin-top: var(--space-tight)">[Video title]</h3>
+<p class="t-caption secondary">[Platform] · [Date]</p>
+<p class="t-body">[One line on what the video explains.]</p>
+<ul class="results">
+<li><span class="t-figure-s">[00K]</span><span class="t-caption secondary">views</span></li>
+<li><span class="t-figure-s">[000]</span><span class="t-caption secondary">comments</span></li>
+</ul>
+<blockquote class="pick-quote"><p class="t-caption secondary">Top comment</p><p class="t-body">“[A favourite comment from a viewer]”</p></blockquote>
+<span class="work-cta">Watch the video <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+</div>
+</a>
+</li>
+</ul>
+<div class="section-next">
+<a class="jump-link" href="Contact.dc.html">
+<span class="t-label" style="color: var(--color-text-primary)">Work with me</span>
+<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg></span>
+</a>
+</div>
+</div>
+</section>
+
+<footer id="contact" style="background: var(--footer-bg); color: var(--color-text-primary); border-top: 1px solid var(--color-border-subtle); padding-block: var(--space-group)">
+<div class="container footer-grid">
+<div class="stack" style="gap: var(--space-related)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Aishat Muhammed</p>
+<p class="t-body secondary">© 2026</p>
+</div>
+<div class="stack" style="gap: var(--space-related)">
+<p class="t-label" id="socials-label"><span class="label-dot" aria-hidden="true"></span>Find me</p>
+<nav aria-labelledby="socials-label" style="display: flex; flex-wrap: wrap; gap: var(--space-tight) var(--space-cluster); font-size: 16px; line-height: 26px; font-weight: 500">
+<a class="foot-link" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener">LinkedIn <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+<a class="foot-link" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">Instagram <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+<a class="foot-link" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener">Substack <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</nav>
+</div>
+<div id="contact-details" class="stack footer-end" style="gap: var(--space-related)">
+<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Contact</p>
+<a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: 500; text-underline-offset: 6px">m.aishat9890@gmail.com</a>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":5900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const s = this.state || {};
+    const KEY = 'aishah-theme';
+    if (!this._themeBound) {
+      this._themeBound = true;
+      /* ripple-cursor */
+      if (!window.__aishahRipple) {
+        window.__aishahRipple = true;
+        const startRipple = () => {
+          try {
+            const mq = (q) => !!(window.matchMedia && window.matchMedia(q).matches);
+            if (!mq('(hover: hover) and (pointer: fine)') || mq('(prefers-reduced-motion: reduce)')) return;
+            const doc = document, NS = 'http://www.w3.org/2000/svg';
+            const st = doc.createElement('style');
+            st.textContent = 'html.aishah-ripple .home[data-cursor="ripple"], html.aishah-ripple .home[data-cursor="ripple"] *{cursor:none !important;}';
+            doc.head.appendChild(st);
+            const layer = doc.createElement('div');
+            layer.setAttribute('aria-hidden', 'true');
+            layer.style.cssText = 'position:fixed;left:0;top:0;width:0;height:0;overflow:visible;pointer-events:none;z-index:2147483000;';
+            /* the ripple mark: ring radius, stroke and opacity as fractions of the outer ring, outermost rings trail the most */
+            const ART = [[36, 3, 1, 0.42], [66, 2.6, 0.8, 0.3], [98, 2.2, 0.6, 0.22], [132, 1.8, 0.42, 0.16], [168, 1.4, 0.26, 0.12]];
+            const rings = ART.map((a) => {
+              const wrap = doc.createElement('div');
+              wrap.style.cssText = 'position:fixed;left:0;top:0;pointer-events:none;opacity:0;will-change:transform;';
+              const svg = doc.createElementNS(NS, 'svg');
+              svg.style.cssText = 'display:block;overflow:visible;transform-origin:50% 50%;';
+              const c = doc.createElementNS(NS, 'circle');
+              c.setAttribute('fill', 'none');
+              svg.appendChild(c); wrap.appendChild(svg); layer.appendChild(wrap);
+              return { wrap: wrap, svg: svg, c: c, f: a[1] / 3, o: a[2], r: a[0] / 168, k: a[3], x: 0, y: 0 };
+            });
+            const dot = doc.createElement('div');
+            dot.style.cssText = 'position:fixed;left:0;top:0;border-radius:50%;pointer-events:none;opacity:0;';
+            layer.appendChild(dot);
+            doc.body.appendChild(layer);
+            doc.documentElement.classList.add('aishah-ripple');
+            let tok = null, home = null, x = 0, y = 0, shown = false, active = false, raf = 0;
+            const num = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
+            /* over a link or button the mark settles to its two inner rings, in ink, so the control stays readable */
+            const vis = () => { rings.forEach((g, i) => { g.wrap.style.opacity = shown && !(active && i > 1) ? g.on : '0'; }); dot.style.opacity = shown ? '1' : '0'; };
+            const paint = () => {
+              const col = active ? tok.on : tok.ring;
+              rings.forEach((g) => { g.c.style.stroke = col; });
+              dot.style.background = active ? tok.on : tok.dot;
+              vis();
+            };
+            const read = (h) => {
+              const cs = getComputedStyle(h); const g = (n) => cs.getPropertyValue(n).trim();
+              tok = { size: num(g('--cursor-size'), 48), dotSize: num(g('--cursor-dot-size'), 4), dot: g('--cursor-dot-color'), ring: g('--cursor-ring-color'), on: g('--cursor-active-color'),
+                stroke: num(g('--cursor-ring-stroke'), 1.5), soft: num(g('--cursor-softness'), 0.7), press: num(g('--cursor-press-duration'), 640), fade: num(g('--cursor-fade-duration'), 200), ease: g('--motion-ease') || 'ease-out' };
+              const D = tok.size, tr = 'opacity ' + tok.fade + 'ms ' + tok.ease;
+              rings.forEach((g) => {
+                g.svg.setAttribute('width', D); g.svg.setAttribute('height', D); g.svg.setAttribute('viewBox', '0 0 ' + D + ' ' + D);
+                g.c.setAttribute('cx', D / 2); g.c.setAttribute('cy', D / 2);
+                g.c.setAttribute('r', Math.max(0.5, (D / 2) * g.r - (tok.stroke * g.f) / 2));
+                g.c.setAttribute('stroke-width', (tok.stroke * g.f).toFixed(2));
+                g.c.style.transition = 'stroke ' + tok.fade + 'ms ' + tok.ease;
+                g.wrap.style.transition = tr;
+                g.on = String(g.o * tok.soft);
+              });
+              dot.style.width = dot.style.height = tok.dotSize + 'px';
+              dot.style.transition = tr + ', background-color ' + tok.fade + 'ms ' + tok.ease;
+              paint();
+            };
+            const place = () => {
+              const h = tok.size / 2, d = tok.dotSize / 2;
+              dot.style.transform = 'translate3d(' + (x - d) + 'px,' + (y - d) + 'px,0)';
+              rings.forEach((g) => { g.wrap.style.transform = 'translate3d(' + (g.x - h) + 'px,' + (g.y - h) + 'px,0)'; });
+            };
+            const tick = () => {
+              raf = 0; let moving = false;
+              rings.forEach((g) => { g.x += (x - g.x) * g.k; g.y += (y - g.y) * g.k; if (Math.abs(x - g.x) > 0.2 || Math.abs(y - g.y) > 0.2) moving = true; });
+              place();
+              if (moving) raf = requestAnimationFrame(tick);
+            };
+            const show = (v) => { if (v === shown) return; shown = v; vis(); };
+            const pulse = () => {
+              rings.forEach((g, i) => {
+                if (!g.svg.animate) return;
+                g.svg.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.28)' }, { transform: 'scale(1)' }],
+                  { duration: tok.press, delay: i * 36, easing: tok.ease });
+              });
+            };
+            const refresh = () => setTimeout(() => { if (home) read(home); }, 80);
+            const SEL = 'a,button,[role="button"],summary,label,select,input,textarea';
+            doc.addEventListener('pointermove', (e) => {
+              if (e.pointerType && e.pointerType !== 'mouse') return;
+              x = e.clientX; y = e.clientY;
+              const t = e.target && e.target.closest ? e.target : null;
+              const h = t ? t.closest('.home[data-cursor="ripple"]') : null;
+              if (h !== home) { home = h; if (h) read(h); }
+              if (!h) { show(false); return; }
+              const a = !!t.closest(SEL);
+              if (a !== active) { active = a; paint(); }
+              if (!shown) { rings.forEach((g) => { g.x = x; g.y = y; }); place(); show(true); }
+              if (!raf) raf = requestAnimationFrame(tick);
+            }, { passive: true });
+            doc.addEventListener('pointerdown', (e) => { if (shown && (!e.pointerType || e.pointerType === 'mouse')) pulse(); }, { passive: true });
+            doc.addEventListener('click', refresh, { passive: true });
+            doc.documentElement.addEventListener('mouseleave', () => show(false));
+            window.addEventListener('blur', () => show(false));
+            window.addEventListener('aishah-theme', refresh);
+            window.addEventListener('storage', refresh);
+          } catch (err) {}
+        };
+        if (document.body) startRipple(); else document.addEventListener('DOMContentLoaded', startRipple);
+      }
+      const sync = (val) => { if ((val === 'light' || val === 'dark') && (this.state || {}).theme !== val) this.setState({ theme: val }); };
+      try { window.addEventListener('storage', (e) => { if (e.key === KEY) sync(e.newValue); }); } catch (e) {}
+      try { window.addEventListener('aishah-theme', (e) => sync(e.detail)); } catch (e) {}
+    }
+    let stored = null;
+    try { stored = window.localStorage.getItem(KEY); } catch (e) {}
+    const theme = s.theme || ((stored === 'light' || stored === 'dark') ? stored : null) || this.props.theme || 'light';
+    return {
+      theme: theme,
+      menu: s.menuOpen ? 'open' : 'closed',
+      menuExpanded: !!s.menuOpen,
+      menuLabel: s.menuOpen ? 'Close menu' : 'Open menu',
+      toggleMenu: () => this.setState({ menuOpen: !(this.state || {}).menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      themeLabel: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
+      toggleTheme: () => {
+        const nextTheme = theme === 'dark' ? 'light' : 'dark';
+        try { window.localStorage.setItem(KEY, nextTheme); } catch (e) {}
+        this.setState({ theme: nextTheme });
+        try { window.dispatchEvent(new CustomEvent('aishah-theme', { detail: nextTheme })); } catch (e) {}
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
