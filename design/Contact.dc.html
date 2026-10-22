@@ -334,7 +334,7 @@ html{scroll-behavior:auto;}
 /* primitive */
 .home{--primitive-duration-120:120ms;--primitive-duration-300:300ms;--primitive-duration-450:450ms;--primitive-duration-600:600ms;--primitive-duration-800:800ms;--primitive-duration-1100:1100ms;--primitive-duration-1600:1600ms;--primitive-ease-reveal:cubic-bezier(0.2,0.8,0.2,1);--primitive-ease-in:cubic-bezier(0.4,0,1,1);--primitive-ease-sweep:cubic-bezier(0.7,0,0.2,1);}
 /* semantic */
-.home{--motion-reveal:var(--primitive-duration-1100);--motion-rise:var(--primitive-duration-800);--motion-wave:var(--primitive-duration-1600);--motion-hide:var(--primitive-duration-600);--motion-burger:var(--primitive-duration-450);--motion-ease-reveal:var(--primitive-ease-reveal);--motion-ease-in:var(--primitive-ease-in);--motion-ease-sweep:var(--primitive-ease-sweep);}
+.home{--motion-reveal:var(--primitive-duration-1100);--motion-row:var(--primitive-duration-800);--motion-wave:var(--primitive-duration-1600);--motion-hide:var(--primitive-duration-600);--motion-burger:var(--primitive-duration-450);--motion-ease-reveal:var(--primitive-ease-reveal);--motion-ease-in:var(--primitive-ease-in);--motion-ease-sweep:var(--primitive-ease-sweep);}
 /* component: the burger is two lines and the coral dot from the logo; the menu ripples out from it */
 .home{
 --burger-size:calc(var(--space-element) + var(--space-hairline));
@@ -392,25 +392,25 @@ html:has(.home:is([data-menu="open"],[data-menu="closing"])){overflow:hidden;}
 .menu-panel > nav,.menu-panel > .menu-foot{position:relative;}
 .menu-list{margin:0;padding:0;list-style:none;}
 .menu-list > li{border-bottom:var(--border-width-hairline) solid var(--menu-row-border);}
-.home[data-menu="open"] .menu-list > li{animation:menu-row-in var(--motion-rise) var(--motion-ease-reveal) both;animation-delay:calc(var(--menu-lead) + var(--i) * var(--menu-stagger));}
+.home[data-menu="open"] .menu-list > li{animation:menu-row-in var(--motion-row) var(--motion-ease-reveal) both;animation-delay:calc(var(--menu-lead) + var(--i) * var(--menu-stagger));}
 .menu-link{display:grid;grid-template-columns:var(--menu-mark-size) minmax(0,1fr);align-items:center;gap:var(--space-element);padding:var(--menu-row-padding) 0;color:var(--color-text-primary);text-decoration:none;}
 .menu-name{font-size:var(--menu-link-size);line-height:var(--menu-link-leading);font-weight:var(--weight-heading);letter-spacing:-0.03em;transition:color var(--motion-fast) var(--motion-ease);}
 .menu-link:hover .menu-name,.menu-link[aria-current="page"] .menu-name{color:var(--color-text-emphasis);}
 .menu-mark{display:block;box-sizing:border-box;width:var(--menu-mark-size);height:var(--menu-mark-size);}
-.home[data-menu="open"] .menu-mark{animation:menu-mark-pop var(--motion-rise) var(--motion-ease-reveal) both;animation-delay:calc(var(--menu-lead) + (var(--i) + 2) * var(--menu-stagger));}
+.home[data-menu="open"] .menu-mark{animation:menu-mark-pop var(--motion-row) var(--motion-ease-reveal) both;animation-delay:calc(var(--menu-lead) + (var(--i) + 2) * var(--menu-stagger));}
 .menu-mark.is-dot{border-radius:var(--radius-round);background:var(--color-accent-primary);}
 .menu-mark.is-half{height:calc(var(--menu-mark-size) / 2);border-radius:var(--menu-mark-size) var(--menu-mark-size) 0 0;background:var(--color-accent-secondary);}
 .menu-mark.is-ring{border-radius:var(--radius-round);border:var(--border-width-strong) solid var(--menu-mark-ring);}
 .menu-mark.is-pill{height:calc(var(--menu-mark-size) / 2);border-radius:var(--radius-round);background:var(--color-accent-secondary);}
 .menu-mark.is-pill.is-coral{background:var(--color-accent-primary);}
 .menu-foot{display:flex;flex-direction:column;gap:var(--space-related);padding-top:var(--space-cluster);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
-.home[data-menu="open"] .menu-foot{animation:menu-row-in var(--motion-rise) var(--motion-ease-reveal) both;animation-delay:calc(var(--menu-lead) + 5 * var(--menu-stagger));}
+.home[data-menu="open"] .menu-foot{animation:menu-row-in var(--motion-row) var(--motion-ease-reveal) both;animation-delay:calc(var(--menu-lead) + 5 * var(--menu-stagger));}
 .menu-foot-head{display:flex;align-items:center;justify-content:space-between;gap:var(--space-element);}
 .menu-ripple{display:block;width:var(--menu-ripple-size);height:var(--menu-ripple-size);flex:none;}
 .menu-ripple .ring{fill:none;stroke:var(--color-accent-secondary);}
 .menu-ripple .dot{fill:var(--color-accent-primary);}
 .menu-ripple .is-outer{opacity:var(--opacity-faint);transform-origin:50% 50%;}
-.home[data-menu="open"] .menu-ripple .is-outer{animation:menu-ripple-out var(--motion-rise) var(--motion-ease-reveal) both;animation-delay:calc(var(--menu-lead) + 7 * var(--menu-stagger));}
+.home[data-menu="open"] .menu-ripple .is-outer{animation:menu-ripple-out var(--motion-row) var(--motion-ease-reveal) both;animation-delay:calc(var(--menu-lead) + 7 * var(--menu-stagger));}
 .menu-social{display:flex;flex-wrap:wrap;gap:var(--space-tight) var(--space-cluster);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-ui);}
 @media (prefers-reduced-motion: reduce){
 .burger-bar,.burger-dot{transition:none;}
@@ -453,9 +453,26 @@ html:has(.home:is([data-menu="open"],[data-menu="closing"])){overflow:hidden;}
 }
 /* end service list */
 
+/* reveal-fallback */
+/* where the browser can't tie animations to scrolling (iPhone Safari before 26), the same rise-ins play as each part scrolls into view */
+.home{--motion-enter:var(--primitive-duration-640);}
+@supports not (animation-timeline: view()){
+@media (prefers-reduced-motion: no-preference){
+html.aishah-io .home :is(.reveal,.work-card .org-tile,.work-card .work-body){transition:opacity var(--motion-enter) var(--motion-ease),transform var(--motion-enter) var(--motion-ease);}
+html.aishah-io .home :is(.reveal,.work-card .work-body):not([data-shown]){opacity:0;transform:translateY(var(--motion-rise));}
+html.aishah-io .home .work-card .org-tile:not([data-shown]){opacity:0;transform:translateX(calc(var(--work-slide) * -1));}
+html.aishah-io .home .work-list > li:nth-child(even) .work-card .org-tile:not([data-shown]){transform:translateX(var(--work-slide));}
+}
+}
+@supports not (animation-timeline: scroll()){
+html.aishah-io .home :is(.quote-progress,.moment-progress){visibility:visible;}
+html.aishah-io .home :is(.quote-progress,.moment-progress)::after{transform:scaleX(calc(0.3 + 0.7 * var(--row-progress, 0)));transition:transform var(--motion-fast) var(--motion-ease);}
+html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - var(--row-progress, 0) * 3.4);}
+}
+/* end reveal-fallback */
 /* ===== Ripple cursor ===== */
 /* primitive */
-.home{--primitive-duration-640:640ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-opacity-45:0.45;}
+.home{--primitive-duration-640:640ms;--primitive-duration-900:900ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-size-64:64px;--primitive-opacity-45:0.45;}
 /* semantic */
 .home{--motion-ripple:var(--primitive-duration-640);--opacity-faint:var(--primitive-opacity-45);}
 /* component: the cursor is the ripple from the site icon, a coral dot inside two mint rings with the outer ring fainter */
@@ -468,6 +485,8 @@ html:has(.home:is([data-menu="open"],[data-menu="closing"])){overflow:hidden;}
 --cursor-active-color:var(--color-accent-stroke);
 --cursor-press-duration:var(--motion-ripple);
 --cursor-fade-duration:var(--motion-fast);
+--tap-ripple-size:var(--primitive-size-64);
+--tap-ripple-duration:var(--primitive-duration-900);
 }
 /* end ripple cursor */
 </style>
@@ -586,10 +605,59 @@ class Component extends DCLogic {
       /* ripple-cursor */
       if (!window.__aishahRipple) {
         window.__aishahRipple = true;
+        /* on touch screens there is no cursor, so each tap sends out the same ripple: the logo's two rings
+           and coral dot grow from the finger and fade */
+        const tapRipple = () => {
+          try {
+            const doc = document, NS = 'http://www.w3.org/2000/svg';
+            const num = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
+            /* times can come back as 900ms or .9s once the CSS is minified */
+            const ms = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : (/ms$/.test(v) ? n : (/s$/.test(v) ? n * 1000 : n)); };
+            const layer = doc.createElement('div');
+            layer.setAttribute('aria-hidden', 'true');
+            layer.style.cssText = 'position:fixed;left:0;top:0;width:0;height:0;overflow:visible;pointer-events:none;z-index:2147483000;';
+            doc.body.appendChild(layer);
+            /* only a tap ripples: a finger that moves to scroll, or is held down, does not */
+            let down = null;
+            doc.addEventListener('pointerdown', (e) => { down = e.pointerType === 'mouse' ? null : { x: e.clientX, y: e.clientY, t: Date.now() }; }, { passive: true });
+            doc.addEventListener('pointercancel', () => { down = null; }, { passive: true });
+            doc.addEventListener('pointerup', (e) => {
+              try {
+                if (e.pointerType === 'mouse' || !down) return;
+                const moved = Math.abs(e.clientX - down.x) + Math.abs(e.clientY - down.y), held = Date.now() - down.t;
+                down = null;
+                if (moved > 12 || held > 600) return;
+                const t = e.target && e.target.closest ? e.target : null;
+                const h = t ? t.closest('.home[data-cursor="ripple"]') : null;
+                if (!h) return;
+                const cs = getComputedStyle(h); const g = (n) => cs.getPropertyValue(n).trim();
+                const D = num(g('--tap-ripple-size'), 64), k = D / 47, dur = ms(g('--tap-ripple-duration'), 900);
+                const ring = g('--cursor-ring-color'), dot = g('--cursor-dot-color'), outer = num(g('--cursor-outer-opacity'), 0.45);
+                const svg = doc.createElementNS(NS, 'svg');
+                svg.setAttribute('width', D); svg.setAttribute('height', D); svg.setAttribute('viewBox', '0 0 ' + D + ' ' + D);
+                svg.style.cssText = 'position:fixed;left:' + (e.clientX - D / 2) + 'px;top:' + (e.clientY - D / 2) + 'px;overflow:visible;pointer-events:none;transform-origin:50% 50%;';
+                [[22, 3, outer], [14, 3.5, 1]].forEach((a) => {
+                  const c = doc.createElementNS(NS, 'circle');
+                  c.setAttribute('cx', D / 2); c.setAttribute('cy', D / 2); c.setAttribute('r', (a[0] * k).toFixed(2));
+                  c.setAttribute('fill', 'none'); c.setAttribute('stroke', ring); c.setAttribute('stroke-width', (a[1] * k).toFixed(2)); c.setAttribute('opacity', a[2]);
+                  svg.appendChild(c);
+                });
+                const d = doc.createElementNS(NS, 'circle');
+                d.setAttribute('cx', D / 2); d.setAttribute('cy', D / 2); d.setAttribute('r', (6 * k).toFixed(2)); d.setAttribute('fill', dot);
+                svg.appendChild(d);
+                layer.appendChild(svg);
+                if (!svg.animate) { setTimeout(() => svg.remove(), dur); return; }
+                const run = svg.animate([{ transform: 'scale(0.3)', opacity: 1 }, { transform: 'scale(1)', opacity: 0.9, offset: 0.45 }, { transform: 'scale(1.6)', opacity: 0 }], { duration: dur, easing: 'cubic-bezier(0.2,0.8,0.2,1)' });
+                run.onfinish = () => svg.remove();
+              } catch (err) {}
+            }, { passive: true });
+          } catch (err) {}
+        };
         const startRipple = () => {
           try {
             const mq = (q) => !!(window.matchMedia && window.matchMedia(q).matches);
-            if (!mq('(hover: hover) and (pointer: fine)') || mq('(prefers-reduced-motion: reduce)')) return;
+            if (mq('(prefers-reduced-motion: reduce)')) return;
+            if (!mq('(hover: hover) and (pointer: fine)')) { tapRipple(); return; }
             const doc = document, NS = 'http://www.w3.org/2000/svg';
             const st = doc.createElement('style');
             st.textContent = 'html.aishah-ripple .home[data-cursor="ripple"], html.aishah-ripple .home[data-cursor="ripple"] *{cursor:none !important;}';
@@ -617,6 +685,7 @@ class Component extends DCLogic {
             doc.documentElement.classList.add('aishah-ripple');
             let tok = null, home = null, x = 0, y = 0, shown = false, active = false, raf = 0;
             const num = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
+            const ms = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : (/ms$/.test(v) ? n : (/s$/.test(v) ? n * 1000 : n)); };
             /* over a link or button the mark turns ink, so the control stays readable */
             const vis = () => { rings.forEach((g) => { g.wrap.style.opacity = shown ? g.on : '0'; }); dot.style.opacity = shown ? '1' : '0'; };
             const paint = () => {
@@ -628,7 +697,7 @@ class Component extends DCLogic {
             const read = (h) => {
               const cs = getComputedStyle(h); const g = (n) => cs.getPropertyValue(n).trim();
               tok = { size: num(g('--cursor-size'), 40), dotSize: num(g('--cursor-dot-size'), 10), dot: g('--cursor-dot-color'), ring: g('--cursor-ring-color'), on: g('--cursor-active-color'),
-                outer: num(g('--cursor-outer-opacity'), 0.45), press: num(g('--cursor-press-duration'), 640), fade: num(g('--cursor-fade-duration'), 200), ease: g('--motion-ease') || 'ease-out' };
+                outer: num(g('--cursor-outer-opacity'), 0.45), press: ms(g('--cursor-press-duration'), 640), fade: ms(g('--cursor-fade-duration'), 200), ease: g('--motion-ease') || 'ease-out' };
               const D = tok.size, k = D / ICON, tr = 'opacity ' + tok.fade + 'ms ' + tok.ease;
               rings.forEach((g) => {
                 g.svg.setAttribute('width', D); g.svg.setAttribute('height', D); g.svg.setAttribute('viewBox', '0 0 ' + D + ' ' + D);
@@ -686,6 +755,37 @@ class Component extends DCLogic {
         };
         if (document.body) startRipple(); else document.addEventListener('DOMContentLoaded', startRipple);
       }
+      /* reveal-fallback: without scroll-linked animations (iPhone Safari before 26), parts rise in as they scroll
+         into view and the progress bars under the card rows follow the scroll */
+      try {
+        const can = (q) => { try { return !!(window.CSS && CSS.supports && CSS.supports(q)); } catch (e) { return false; } };
+        const noView = !can('animation-timeline: view()'), noScroll = !can('animation-timeline: scroll()');
+        if ((noView || noScroll) && 'IntersectionObserver' in window) {
+          const boot = (tries) => {
+            const root = document.querySelector('.home');
+            if (!root) { if (tries > 0) setTimeout(() => boot(tries - 1), 150); return; }
+            if (noView) {
+              const parts = Array.prototype.slice.call(root.querySelectorAll('.reveal, .work-card .org-tile, .work-card .work-body'));
+              /* whatever is already on screen stays put; the rest waits below the fold */
+              parts.forEach((el) => { const r = el.getBoundingClientRect(); if (r.top < window.innerHeight && r.bottom > 0) el.setAttribute('data-shown', ''); });
+              const io = new IntersectionObserver((list) => {
+                list.forEach((en) => { if (en.isIntersecting) { en.target.setAttribute('data-shown', ''); io.unobserve(en.target); } });
+              }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+              parts.forEach((el) => { if (!el.hasAttribute('data-shown')) io.observe(el); });
+            }
+            if (noScroll) {
+              root.querySelectorAll('.quote-track, .moment-track').forEach((track) => {
+                const host = track.closest('section') || track.parentNode;
+                const sync = () => { const max = track.scrollWidth - track.clientWidth; host.style.setProperty('--row-progress', max > 1 ? String(Math.min(1, Math.max(0, track.scrollLeft / max))) : '1'); };
+                track.addEventListener('scroll', sync, { passive: true });
+                sync();
+              });
+            }
+            document.documentElement.classList.add('aishah-io');
+          };
+          setTimeout(() => boot(20), 0);
+        }
+      } catch (err) {}
       const sync = (val) => { if ((val === 'light' || val === 'dark') && (this.state || {}).theme !== val) this.setState({ theme: val }); };
       try { window.addEventListener('storage', (e) => { if (e.key === KEY) sync(e.newValue); }); } catch (e) {}
       try { window.addEventListener('aishah-theme', (e) => sync(e.detail)); } catch (e) {}

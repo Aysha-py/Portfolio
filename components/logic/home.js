@@ -7,46 +7,62 @@ export class Component extends DCLogic {
     const KEY = 'aishah-theme';
     if (!this._themeBound) {
       this._themeBound = true;
-      /* autoplay: a row of cards moves on by one card every few seconds and loops back to the start.
-         It waits while someone is touching, hovering, focused on or scrolling the row, while it is off screen,
-         and does nothing when reduced motion is on. */
-      const autoplay = (sel, every, tries) => {
-        try {
-          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-          const track = document.querySelector(sel);
-          if (!track) { if (tries > 0) setTimeout(() => autoplay(sel, every, tries - 1), 150); return; }
-          if (track.__aishahAutoplay) return;
-          track.__aishahAutoplay = true;
-          let seen = !('IntersectionObserver' in window), held = false, quietUntil = 0, ownScroll = 0;
-          const rest = () => { quietUntil = Date.now() + 6000; };
-          track.addEventListener('pointerenter', () => { held = true; });
-          track.addEventListener('pointerleave', () => { held = false; rest(); });
-          track.addEventListener('touchstart', () => { held = true; }, { passive: true });
-          track.addEventListener('touchend', () => { held = false; rest(); }, { passive: true });
-          track.addEventListener('focusin', () => { held = true; });
-          track.addEventListener('focusout', () => { held = false; rest(); });
-          track.addEventListener('scroll', () => { if (Date.now() - ownScroll > 1200) rest(); }, { passive: true });
-          if (!seen) new IntersectionObserver((list) => { seen = list[0].isIntersecting; }, { threshold: 0.4 }).observe(track);
-          setInterval(() => {
-            if (!seen || held || document.hidden || Date.now() < quietUntil) return;
-            const max = track.scrollWidth - track.clientWidth;
-            if (max <= 1) return;
-            const card = track.firstElementChild;
-            const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-            const step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
-            ownScroll = Date.now();
-            track.scrollTo({ left: track.scrollLeft >= max - 2 ? 0 : Math.min(max, track.scrollLeft + step), behavior: 'smooth' });
-          }, every);
-        } catch (err) {}
-      };
-      setTimeout(() => autoplay('.quote-track', 3500, 20), 0);
       /* ripple-cursor */
       if (!window.__aishahRipple) {
         window.__aishahRipple = true;
+        /* on touch screens there is no cursor, so each tap sends out the same ripple: the logo's two rings
+           and coral dot grow from the finger and fade */
+        const tapRipple = () => {
+          try {
+            const doc = document, NS = 'http://www.w3.org/2000/svg';
+            const num = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
+            /* times can come back as 900ms or .9s once the CSS is minified */
+            const ms = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : (/ms$/.test(v) ? n : (/s$/.test(v) ? n * 1000 : n)); };
+            const layer = doc.createElement('div');
+            layer.setAttribute('aria-hidden', 'true');
+            layer.style.cssText = 'position:fixed;left:0;top:0;width:0;height:0;overflow:visible;pointer-events:none;z-index:2147483000;';
+            doc.body.appendChild(layer);
+            /* only a tap ripples: a finger that moves to scroll, or is held down, does not */
+            let down = null;
+            doc.addEventListener('pointerdown', (e) => { down = e.pointerType === 'mouse' ? null : { x: e.clientX, y: e.clientY, t: Date.now() }; }, { passive: true });
+            doc.addEventListener('pointercancel', () => { down = null; }, { passive: true });
+            doc.addEventListener('pointerup', (e) => {
+              try {
+                if (e.pointerType === 'mouse' || !down) return;
+                const moved = Math.abs(e.clientX - down.x) + Math.abs(e.clientY - down.y), held = Date.now() - down.t;
+                down = null;
+                if (moved > 12 || held > 600) return;
+                const t = e.target && e.target.closest ? e.target : null;
+                const h = t ? t.closest('.home[data-cursor="ripple"]') : null;
+                if (!h) return;
+                const cs = getComputedStyle(h); const g = (n) => cs.getPropertyValue(n).trim();
+                const D = num(g('--tap-ripple-size'), 64), k = D / 47, dur = ms(g('--tap-ripple-duration'), 900);
+                const ring = g('--cursor-ring-color'), dot = g('--cursor-dot-color'), outer = num(g('--cursor-outer-opacity'), 0.45);
+                const svg = doc.createElementNS(NS, 'svg');
+                svg.setAttribute('width', D); svg.setAttribute('height', D); svg.setAttribute('viewBox', '0 0 ' + D + ' ' + D);
+                svg.style.cssText = 'position:fixed;left:' + (e.clientX - D / 2) + 'px;top:' + (e.clientY - D / 2) + 'px;overflow:visible;pointer-events:none;transform-origin:50% 50%;';
+                [[22, 3, outer], [14, 3.5, 1]].forEach((a) => {
+                  const c = doc.createElementNS(NS, 'circle');
+                  c.setAttribute('cx', D / 2); c.setAttribute('cy', D / 2); c.setAttribute('r', (a[0] * k).toFixed(2));
+                  c.setAttribute('fill', 'none'); c.setAttribute('stroke', ring); c.setAttribute('stroke-width', (a[1] * k).toFixed(2)); c.setAttribute('opacity', a[2]);
+                  svg.appendChild(c);
+                });
+                const d = doc.createElementNS(NS, 'circle');
+                d.setAttribute('cx', D / 2); d.setAttribute('cy', D / 2); d.setAttribute('r', (6 * k).toFixed(2)); d.setAttribute('fill', dot);
+                svg.appendChild(d);
+                layer.appendChild(svg);
+                if (!svg.animate) { setTimeout(() => svg.remove(), dur); return; }
+                const run = svg.animate([{ transform: 'scale(0.3)', opacity: 1 }, { transform: 'scale(1)', opacity: 0.9, offset: 0.45 }, { transform: 'scale(1.6)', opacity: 0 }], { duration: dur, easing: 'cubic-bezier(0.2,0.8,0.2,1)' });
+                run.onfinish = () => svg.remove();
+              } catch (err) {}
+            }, { passive: true });
+          } catch (err) {}
+        };
         const startRipple = () => {
           try {
             const mq = (q) => !!(window.matchMedia && window.matchMedia(q).matches);
-            if (!mq('(hover: hover) and (pointer: fine)') || mq('(prefers-reduced-motion: reduce)')) return;
+            if (mq('(prefers-reduced-motion: reduce)')) return;
+            if (!mq('(hover: hover) and (pointer: fine)')) { tapRipple(); return; }
             const doc = document, NS = 'http://www.w3.org/2000/svg';
             const st = doc.createElement('style');
             st.textContent = 'html.aishah-ripple .home[data-cursor="ripple"], html.aishah-ripple .home[data-cursor="ripple"] *{cursor:none !important;}';
@@ -74,6 +90,7 @@ export class Component extends DCLogic {
             doc.documentElement.classList.add('aishah-ripple');
             let tok = null, home = null, x = 0, y = 0, shown = false, active = false, raf = 0;
             const num = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
+            const ms = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : (/ms$/.test(v) ? n : (/s$/.test(v) ? n * 1000 : n)); };
             /* over a link or button the mark turns ink, so the control stays readable */
             const vis = () => { rings.forEach((g) => { g.wrap.style.opacity = shown ? g.on : '0'; }); dot.style.opacity = shown ? '1' : '0'; };
             const paint = () => {
@@ -85,7 +102,7 @@ export class Component extends DCLogic {
             const read = (h) => {
               const cs = getComputedStyle(h); const g = (n) => cs.getPropertyValue(n).trim();
               tok = { size: num(g('--cursor-size'), 40), dotSize: num(g('--cursor-dot-size'), 10), dot: g('--cursor-dot-color'), ring: g('--cursor-ring-color'), on: g('--cursor-active-color'),
-                outer: num(g('--cursor-outer-opacity'), 0.45), press: num(g('--cursor-press-duration'), 640), fade: num(g('--cursor-fade-duration'), 200), ease: g('--motion-ease') || 'ease-out' };
+                outer: num(g('--cursor-outer-opacity'), 0.45), press: ms(g('--cursor-press-duration'), 640), fade: ms(g('--cursor-fade-duration'), 200), ease: g('--motion-ease') || 'ease-out' };
               const D = tok.size, k = D / ICON, tr = 'opacity ' + tok.fade + 'ms ' + tok.ease;
               rings.forEach((g) => {
                 g.svg.setAttribute('width', D); g.svg.setAttribute('height', D); g.svg.setAttribute('viewBox', '0 0 ' + D + ' ' + D);
@@ -143,6 +160,70 @@ export class Component extends DCLogic {
         };
         if (document.body) startRipple(); else document.addEventListener('DOMContentLoaded', startRipple);
       }
+      /* reveal-fallback: without scroll-linked animations (iPhone Safari before 26), parts rise in as they scroll
+         into view and the progress bars under the card rows follow the scroll */
+      try {
+        const can = (q) => { try { return !!(window.CSS && CSS.supports && CSS.supports(q)); } catch (e) { return false; } };
+        const noView = !can('animation-timeline: view()'), noScroll = !can('animation-timeline: scroll()');
+        if ((noView || noScroll) && 'IntersectionObserver' in window) {
+          const boot = (tries) => {
+            const root = document.querySelector('.home');
+            if (!root) { if (tries > 0) setTimeout(() => boot(tries - 1), 150); return; }
+            if (noView) {
+              const parts = Array.prototype.slice.call(root.querySelectorAll('.reveal, .work-card .org-tile, .work-card .work-body'));
+              /* whatever is already on screen stays put; the rest waits below the fold */
+              parts.forEach((el) => { const r = el.getBoundingClientRect(); if (r.top < window.innerHeight && r.bottom > 0) el.setAttribute('data-shown', ''); });
+              const io = new IntersectionObserver((list) => {
+                list.forEach((en) => { if (en.isIntersecting) { en.target.setAttribute('data-shown', ''); io.unobserve(en.target); } });
+              }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+              parts.forEach((el) => { if (!el.hasAttribute('data-shown')) io.observe(el); });
+            }
+            if (noScroll) {
+              root.querySelectorAll('.quote-track, .moment-track').forEach((track) => {
+                const host = track.closest('section') || track.parentNode;
+                const sync = () => { const max = track.scrollWidth - track.clientWidth; host.style.setProperty('--row-progress', max > 1 ? String(Math.min(1, Math.max(0, track.scrollLeft / max))) : '1'); };
+                track.addEventListener('scroll', sync, { passive: true });
+                sync();
+              });
+            }
+            document.documentElement.classList.add('aishah-io');
+          };
+          setTimeout(() => boot(20), 0);
+        }
+      } catch (err) {}
+      /* autoplay: a row of cards moves on by one card every few seconds and loops back to the start.
+         It waits while someone is touching, hovering, focused on or scrolling the row, while it is off screen,
+         and does nothing when reduced motion is on. */
+      const autoplay = (sel, every, tries) => {
+        try {
+          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+          const track = document.querySelector(sel);
+          if (!track) { if (tries > 0) setTimeout(() => autoplay(sel, every, tries - 1), 150); return; }
+          if (track.__aishahAutoplay) return;
+          track.__aishahAutoplay = true;
+          let seen = !('IntersectionObserver' in window), held = false, quietUntil = 0, ownScroll = 0;
+          const rest = () => { quietUntil = Date.now() + 6000; };
+          track.addEventListener('pointerenter', () => { held = true; });
+          track.addEventListener('pointerleave', () => { held = false; rest(); });
+          track.addEventListener('touchstart', () => { held = true; }, { passive: true });
+          track.addEventListener('touchend', () => { held = false; rest(); }, { passive: true });
+          track.addEventListener('focusin', () => { held = true; });
+          track.addEventListener('focusout', () => { held = false; rest(); });
+          track.addEventListener('scroll', () => { if (Date.now() - ownScroll > 1200) rest(); }, { passive: true });
+          if (!seen) new IntersectionObserver((list) => { seen = list[0].isIntersecting; }, { threshold: 0.4 }).observe(track);
+          setInterval(() => {
+            if (!seen || held || document.hidden || Date.now() < quietUntil) return;
+            const max = track.scrollWidth - track.clientWidth;
+            if (max <= 1) return;
+            const card = track.firstElementChild;
+            const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+            const step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+            ownScroll = Date.now();
+            track.scrollTo({ left: track.scrollLeft >= max - 2 ? 0 : Math.min(max, track.scrollLeft + step), behavior: 'smooth' });
+          }, every);
+        } catch (err) {}
+      };
+      setTimeout(() => autoplay('.quote-track', 3500, 20), 0);
       /* quote-emphasis */
       if (!window.__aishahQuotes) {
         window.__aishahQuotes = true;
