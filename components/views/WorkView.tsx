@@ -154,7 +154,7 @@ export default function WorkView() {
                     <div className="shape round sh sh-primary" style={{left: "48px", bottom: "96px", width: "96px", height: "32px"} as React.CSSProperties} />
                     <div className="shape round sh sh-primary" style={{left: "48px", bottom: "48px", width: "160px", height: "32px"} as React.CSSProperties} />
                   </div>
-                  <div className="org-tile" role="img" aria-label="Sereel logo"><img src={`${BASE}/images/logo-sereel.png`} alt="" /></div>
+                  <div className="org-tile" role="img" aria-label="Sereel logo"><img src={`${BASE}/images/logo-sereel-glow.png`} alt="" /></div>
                 </div>
                 <div className="work-body">
                   <span className="t-label work-num">01</span>
@@ -198,10 +198,7 @@ export default function WorkView() {
                     <div className="shape round sh sh-primary" style={{right: "168px", top: "120px", width: "48px", height: "48px"} as React.CSSProperties} />
                     <div className="shape sh-ring" style={{right: "48px", bottom: "40px", width: "64px", height: "64px", borderWidth: "8px"} as React.CSSProperties} />
                   </div>
-                  <div className="org-tile" role="img" aria-label="Invisible Garden logo">
-                    <span className="logo-ph" aria-hidden="true">Invisible Garden</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
+                  <div className="org-tile" role="img" aria-label="Invisible Garden logo"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" /></div>
                 </div>
                 <div className="work-body">
                   <span className="t-label work-num">02</span>
@@ -246,10 +243,7 @@ export default function WorkView() {
                     <div className="shape round sh sh-primary" style={{right: "48px", top: "48px", width: "120px", height: "120px"} as React.CSSProperties} />
                     <div className="shape sh-ring" style={{right: "80px", bottom: "40px", width: "64px", height: "64px", borderWidth: "8px"} as React.CSSProperties} />
                   </div>
-                  <div className="org-tile" role="img" aria-label="One Dev logo">
-                    <span className="logo-ph" aria-hidden="true">One Dev</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
+                  <div className="org-tile" role="img" aria-label="One Dev logo"><img src={`${BASE}/images/logo-onedev.svg`} alt="" /></div>
                 </div>
                 <div className="work-body">
                   <span className="t-label work-num">03</span>
@@ -347,10 +341,7 @@ export default function WorkView() {
                     <div className="shape round sh sh-secondary" style={{left: "72px", top: "168px", width: "56px", height: "56px"} as React.CSSProperties} />
                     <div className="shape sh-ring" style={{right: "48px", top: "64px", width: "120px", height: "120px", borderWidth: "15px"} as React.CSSProperties} />
                   </div>
-                  <div className="org-tile" role="img" aria-label="Web3Ladies logo">
-                    <span className="logo-ph" aria-hidden="true">Web3Ladies</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
+                  <div className="org-tile" role="img" aria-label="Web3Ladies logo"><img src={`${BASE}/images/logo-web3ladies.svg`} alt="" /></div>
                 </div>
                 <div className="work-body">
                   <span className="t-label work-num">05</span>
@@ -443,10 +434,7 @@ export default function WorkView() {
                     <div className="shape half-round sh sh-secondary" style={{right: "48px", bottom: "0", width: "224px", height: "112px"} as React.CSSProperties} />
                     <div className="shape round sh sh-primary" style={{right: "72px", top: "48px", width: "56px", height: "56px"} as React.CSSProperties} />
                   </div>
-                  <div className="org-tile" role="img" aria-label="Open Terms Archive logo">
-                    <span className="logo-ph" aria-hidden="true">Open Terms Archive</span>
-                    <span className="logo-ph-note" aria-hidden="true">[Logo]</span>
-                  </div>
+                  <div className="org-tile" role="img" aria-label="Open Terms Archive logo"><img src={`${BASE}/images/logo-open-terms-archive.png`} alt="" /></div>
                 </div>
                 <div className="work-body">
                   <span className="t-label work-num">07</span>
