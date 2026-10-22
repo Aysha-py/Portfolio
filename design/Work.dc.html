@@ -285,8 +285,6 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 .type-tag{display:inline-flex;align-items:center;gap:var(--space-tight);align-self:flex-start;min-height:var(--type-tag-height);padding:0 var(--space-tight);box-sizing:border-box;border-radius:var(--type-tag-radius);border:var(--border-width-hairline) solid var(--type-tag-border);color:var(--type-tag-text);font-size:var(--type-caption-size);line-height:var(--type-caption-leading);font-weight:var(--weight-ui);}
 .work-list{display:flex;flex-direction:column;gap:var(--space-stack);margin:0;padding:0;list-style:none;}
 
-.work-title{transition:color var(--motion-base) var(--motion-ease);}
-.work-card:hover .work-title,.work-card:focus-visible .work-title{color:var(--color-text-emphasis);}
 .work-cta{display:inline-flex;align-items:center;gap:var(--space-tight);margin-top:auto;padding-top:var(--space-element);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-strong);color:var(--link-color);}
 
 .pick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--card-grid-gap-row) var(--card-grid-gap-col);margin:0;padding:0;list-style:none;}
@@ -487,12 +485,13 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 /* component: one column per project. A top row with the type tag and the organisation's logo (linked to its site),
    then the name and focus areas, the heading and story, the formats line and the case study link */
 /* primitive: logo heights */
-.home{--primitive-size-20:20px;--primitive-size-24:24px;--primitive-size-28:28px;--primitive-size-32:32px;--primitive-size-36:36px;--primitive-size-40:40px;--primitive-opacity-70:0.7;}
+.home{--primitive-size-24:24px;--primitive-size-28:28px;--primitive-size-36:36px;--primitive-size-40:40px;--primitive-size-44:44px;--primitive-size-48:48px;--primitive-opacity-70:0.7;}
 /* semantic: logos are sized by shape, so a square mark and a long wordmark carry about the same weight */
-.home{--size-logo-mark:var(--primitive-size-40);--size-logo-stacked:var(--primitive-size-36);--size-logo-wordmark:var(--primitive-size-24);--size-logo-mark-sm:var(--primitive-size-32);--size-logo-stacked-sm:var(--primitive-size-28);--size-logo-wordmark-sm:var(--primitive-size-20);--opacity-hover:var(--primitive-opacity-70);}
+.home{--size-logo-mark:var(--primitive-size-48);--size-logo-stacked:var(--primitive-size-44);--size-logo-wordmark:var(--primitive-size-28);--size-logo-mark-sm:var(--primitive-size-40);--size-logo-stacked-sm:var(--primitive-size-36);--size-logo-wordmark-sm:var(--primitive-size-24);--opacity-hover:var(--primitive-opacity-70);}
 /* component */
 .home{
 --work-card-padding:var(--space-group);
+--work-title-color:var(--color-text-emphasis);
 --work-card-padding-phone:var(--space-inset) var(--space-cluster);
 --work-head-gap:var(--space-element);
 --work-gap-head:var(--space-element);
@@ -513,7 +512,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .work-card:hover{border-color:var(--card-border-hover);}
 .work-card > .type-tag{margin-bottom:var(--work-gap-head);}
 .work-head{display:flex;align-items:center;justify-content:space-between;gap:var(--work-head-gap);}
-.work-head .work-title{min-width:0;}
+.work-head .work-title{min-width:0;color:var(--work-title-color);}
 .work-id{display:flex;flex-direction:column;gap:var(--work-gap-name);min-width:0;}
 .work-card .work-heading{margin:var(--work-gap-story) 0 var(--work-gap-heading);}
 .work-card .work-copy{gap:var(--work-gap-para);max-width:none;}
