@@ -366,6 +366,27 @@ html{scroll-behavior:auto;}
 .menu-foot{display:flex;flex-direction:column;gap:var(--space-related);padding-top:var(--space-cluster);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
 .menu-social{display:flex;flex-wrap:wrap;gap:var(--space-tight) var(--space-cluster);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-ui);}
 
+/* ===== Tab figures ===== */
+/* component: one picture in each tab, alternating between the text column and the list column */
+.home{
+--tab-figure-radius:var(--radius-card);
+--tab-figure-bg:var(--color-bg-subtle);
+--tab-figure-border:var(--card-border);
+--tab-figure-offset:var(--space-tight);
+--ripple-art-bg:var(--primitive-ink-900);
+--ripple-art-ring:var(--color-accent-secondary);
+--ripple-art-dot:var(--color-accent-primary);
+}
+.tab-figure{margin:var(--tab-figure-offset) 0 0;aspect-ratio:4 / 3;overflow:hidden;border-radius:var(--tab-figure-radius);border:var(--border-width-hairline) solid var(--tab-figure-border);background:var(--tab-figure-bg);}
+.tab-figure > img{display:block;width:100%;height:100%;object-fit:cover;}
+.tab-figure.is-art{aspect-ratio:16 / 9;background:var(--ripple-art-bg);border-color:var(--ripple-art-bg);}
+.tab-figure.is-natural{aspect-ratio:auto;}
+.tab-figure.is-natural > img{height:auto;}
+.ripple-art{display:block;width:100%;height:100%;}
+.ripple-art .ring{fill:none;stroke:var(--ripple-art-ring);}
+.ripple-art .dot{fill:var(--ripple-art-dot);}
+/* end tab figures */
+
 /* ===== Ripple cursor ===== */
 /* primitive */
 .home{--primitive-duration-640:640ms;--primitive-size-10:10px;--primitive-size-40:40px;--primitive-opacity-45:0.45;}
@@ -430,12 +451,13 @@ html{scroll-behavior:auto;}
 <div class="container stack" style="gap: var(--space-group)">
 <ul class="tab-rail" aria-hidden="true"><li><span class="tab"><span class="label-dot"></span><span class="t-label">Content creation</span></span></li></ul>
 <div class="split reveal">
-<div class="stack" style="gap: var(--space-cluster)">
+<div class="stack split-text" style="gap: var(--space-cluster)">
 <h2 id="cc-title" class="t-heading-s">I create for the person I used to be.</h2>
 <p class="t-body-l secondary">When I was finding my way into tech, I had plenty of questions and often had to piece together the answers myself. That experience shaped the kind of content I want to create today: the kind that helps someone feel a little less lost at the beginning.</p>
 <p class="t-body-l secondary">Whether I’m sharing something I’ve learned, documenting my journey, or breaking down an unfamiliar idea, I want people to leave with something useful and a clearer sense of what they can do next.</p>
+<figure class="tab-figure is-natural"><img src="/_blob/2e73777d09b92093d23c497a95564177" alt="My Instagram bio, Tech CM and tech content creator sharing tech, remote work, skills and opportunities, with my highlights and latest videos" loading="lazy"></figure>
 </div>
-<div class="stack" style="gap: var(--space-stack)">
+<div class="stack split-aside" style="gap: var(--space-stack)">
 <div><p class="t-label sub-head">Where to find it</p><ul class="rows"><li><a class="row" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">Instagram</span><span class="t-caption secondary">@this_aishah_</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://www.instagram.com/p/DJ1c3phsCXb/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">Featured by She Code Africa</span><span class="t-caption secondary">Instagram feature</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://www.instagram.com/p/DKb0phRNEhY/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">Featured by She Merge Tribe</span><span class="t-caption secondary">Instagram feature</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://www.instagram.com/reel/DJJ-1lbobix/" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">Featured by Community for Africa</span><span class="t-caption secondary">Instagram reel</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li></ul></div>
 <a class="resource attend" href="https://app.notion.com/p/Learning-Momentum-Planner-1e2548dd58e080159903c35a9af45dd0" target="_blank" rel="noopener">
 <p class="t-label">A resource I made</p>
@@ -455,14 +477,17 @@ html{scroll-behavior:auto;}
 <div class="container stack" style="gap: var(--space-group)">
 <ul class="tab-rail" aria-hidden="true"><li><span class="tab"><span class="label-dot"></span><span class="t-label">Writing</span></span></li></ul>
 <div class="split reveal">
-<div class="stack" style="gap: var(--space-cluster)">
+<div class="stack split-text" style="gap: var(--space-cluster)">
 <h2 id="rr-title" class="t-heading-s">Some thoughts need somewhere to land.</h2>
 <p class="t-body-l secondary">I like writing because it gives me room to sit with an idea, ask better questions, and work out what I actually think. Sometimes that means explaining something I’ve been learning; other times, it means reflecting on an experience or noticing a connection I hadn’t seen before.</p>
 <p class="t-body-l secondary">That’s part of why I started <em>Ripples &amp; Reverie</em>, my newsletter about content, community, and clarity in motion. It’s a place to look at what’s happening around me and make sense of what it might mean.</p>
 <p class="t-body-l secondary"><strong>Ripples</strong> explores ideas and developments moving through tech, content, and community. <strong>Reverie</strong> turns inward, making room for reflection and the lessons that emerge along the way.</p>
 <a class="btn" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener" style="margin-top: var(--space-tight)">Subscribe on Substack <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
 </div>
+<div class="stack split-aside" style="gap: var(--space-stack)">
 <div><p class="t-label sub-head">Latest issues</p><ul class="rows"><li><div class="row"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">[Issue title]</span><span class="t-caption secondary">Issue 03 · [Date]</span></span><span class="t-caption secondary">[Link]</span></div></li><li><div class="row"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">[Issue title]</span><span class="t-caption secondary">Issue 02 · [Date]</span></span><span class="t-caption secondary">[Link]</span></div></li><li><div class="row"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">[Issue title]</span><span class="t-caption secondary">Issue 01 · [Date]</span></span><span class="t-caption secondary">[Link]</span></div></li></ul></div>
+<figure class="tab-figure is-art"><svg class="ripple-art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The ripple from my logo, a coral dot inside mint rings spreading outward"><circle class="ring" cx="200" cy="150" r="138" stroke-width="3" opacity="0.09"></circle><circle class="ring" cx="200" cy="150" r="108" stroke-width="4" opacity="0.16"></circle><circle class="ring" cx="200" cy="150" r="80" stroke-width="5" opacity="0.28"></circle><circle class="ring" cx="200" cy="150" r="52.8" stroke-width="7.2" opacity="0.45"></circle><circle class="ring" cx="200" cy="150" r="33.6" stroke-width="8.4"></circle><circle class="dot" cx="200" cy="150" r="14.4"></circle></svg></figure>
+</div>
 </div>
 <div class="section-next" style="margin-top: var(--space-group)">
 <a class="jump-link" href="#open-source"><span class="t-label" style="color: var(--color-text-primary)">Next tab: Open source</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span></a>
@@ -474,13 +499,14 @@ html{scroll-behavior:auto;}
 <div class="container stack" style="gap: var(--space-group)">
 <ul class="tab-rail" aria-hidden="true"><li><span class="tab"><span class="label-dot"></span><span class="t-label">Open source</span></span></li></ul>
 <div class="split reveal">
-<div class="stack" style="gap: var(--space-cluster)">
+<div class="stack split-text" style="gap: var(--space-cluster)">
 <h2 id="os-title" class="t-heading-s">I believe more people should get to be part of building things.</h2>
 <p class="t-body-l secondary">My interest in open source began when I was a software developer. I was drawn to the idea that people could learn from one another, contribute to shared projects, and build alongside people they might never meet in person.</p>
 <p class="t-body-l secondary">Over time, that interest grew beyond writing code. Through community work, volunteering, and helping beginners find their footing, I became just as interested in what makes open source welcoming and accessible as I was in the technology itself.</p>
 <p class="t-body-l secondary">I still care about helping people see that they don’t need to know everything before they begin. Sometimes, the first step is finding a project, asking a question, or making that first contribution.</p>
+<figure class="tab-figure"><img src="/_blob/db07139ed5d1bc7ef3f443b54b1c2635" alt="Me speaking on stage at OSCAFEST, in front of a screen that reads Open Source" loading="lazy"></figure>
 </div>
-<div class="stack" style="gap: var(--space-stack)">
+<div class="stack split-aside" style="gap: var(--space-stack)">
 <div><p class="t-label sub-head">A few milestones along the way</p><ul class="rows"><li><a class="row" href="https://www.linkedin.com/posts/aishat-muhammed_oscafest23-oscafest24-oscafest23-activity-7076480899957035008-W1F7" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">My first public talk at OSCafest</span><span class="t-caption secondary">Sharing the story of my first open-source contribution</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://www.linkedin.com/posts/aishat-muhammed_sustainafricasummit-opensource-communitymanagement-activity-7223659433275363328-U80O" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">Sustain Africa Summit</span><span class="t-caption secondary">Participating in conversations around open source and sustainability</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="row" href="https://podcast.chaoss.community/111" target="_blank" rel="noopener"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">CHAOSS podcast, Episode 111</span><span class="t-caption secondary">Joining a conversation about open source communities</span></span><span class="row-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span></a></li><li><div class="row"><span class="row-main"><span class="t-body" style="font-weight: var(--weight-ui)">CHAOSS course on popular open-source projects</span><span class="t-caption secondary">Currently unavailable</span></span></div></li></ul></div>
 <div><p class="t-label sub-head">Learning and certifications</p><ul class="card-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr))"><li><a class="card cert-card" href="https://www.credly.com/go/jOvClsyE" target="_blank" rel="noopener">
 <figure class="cert-media"><img src="/_blob/df2d3f84283470c427375611108dcebf" alt="GitHub Digital Public Goods Open Source Community Manager Program certificate, issued to Aishat Muhammed on 7 January 2025" loading="lazy"></figure>

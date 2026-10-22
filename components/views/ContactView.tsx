@@ -114,8 +114,8 @@ export default function ContactView() {
             Contact
           </p>
           <h1 id="contact-title" className="t-display" style={{maxWidth: "980px"} as React.CSSProperties}>
-            Let’s make your ideas{" "}
-            <span className="hl">easier to understand</span>
+            Let’s{" "}
+            <span className="hl">work together</span>
             .
           </h1>
           <p className="t-body-l" style={{maxWidth: "680px"} as React.CSSProperties}>
@@ -151,110 +151,83 @@ export default function ContactView() {
             </p>
             <h2 id="services-title" className="t-heading">Ways we can work together</h2>
           </div>
-          <ul className="service-grid reveal">
+          <ul className="service-list reveal">
             <li>
-              <div className="service attend">
-                <figure className="service-photo has-stats">
-                  <img src={`${BASE}/images/service-marketing.jpg`} alt="A Sereel LinkedIn post graphic on ABSA and Ripple, from my content marketing work" loading="lazy" />
-                  <figcaption className="post-stats">
-                    <span className="visually-hidden">Engagement on this LinkedIn post:</span>
-                    <span className="stat">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M7 10v12" />
-                        <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z" />
-                      </svg>
-                      <strong>115</strong>
-                      <span className="stat-word">reactions</span>
-                    </span>
-                    <span className="stat">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
-                      <strong>3</strong>
-                      <span className="stat-word">comments</span>
-                    </span>
-                    <span className="stat">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="m17 2 4 4-4 4" />
-                        <path d="M3 11v-1a4 4 0 0 1 4-4h14" />
-                        <path d="m7 22-4-4 4-4" />
-                        <path d="M21 13v1a4 4 0 0 1-4 4H3" />
-                      </svg>
-                      <strong>22</strong>
-                      <span className="stat-word">reposts</span>
-                    </span>
-                  </figcaption>
-                </figure>
-                <h3 className="t-title">Content marketing</h3>
+              <a className="service-row" href="mailto:m.aishat9890@gmail.com?subject=CV%20request">
+                <span className="service-name">
+                  <span className="service-mark is-dot" aria-hidden="true" />
+                  <span className="service-title">
+                    <h3 className="t-title">Content marketing</h3>
+                    <span className="t-caption secondary">(Content strategy, research-led thought leadership, educational content, short-form video)</span>
+                  </span>
+                </span>
                 <p className="t-body secondary">
                   Content strategy and campaigns that help your audience understand what you do, and why it matters to them.
                 </p>
-                {" "}
-                <a className="service-cta" href="mailto:m.aishat9890@gmail.com?subject=Content%20marketing">
-                  Ask about this{" "}
+                <span className="service-ask">
+                  Request CV{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
                   </svg>
-                  <span className="visually-hidden">(Content marketing, opens your email)</span>
-                </a>
-              </div>
+                </span>
+                <span className="visually-hidden">(opens your email)</span>
+              </a>
             </li>
             <li>
-              <div className="service attend">
-                <figure className="service-photo">
-                  <img src={`${BASE}/images/service-creation.jpg`} alt="Aishat in a yellow hijab working on her phone at an event" loading="lazy" />
-                </figure>
-                <h3 className="t-title">Content creation</h3>
+              <a className="service-row" href="mailto:m.aishat9890@gmail.com?subject=Content%20creation">
+                <span className="service-name">
+                  <span className="service-mark is-half" aria-hidden="true" />
+                  <h3 className="t-title">Content creation</h3>
+                </span>
                 <p className="t-body secondary">
                   Educational posts, articles and explainers that turn complex topics into something people can learn from and share.
                 </p>
-                {" "}
-                <a className="service-cta" href="mailto:m.aishat9890@gmail.com?subject=Content%20creation">
-                  Ask about this{" "}
+                <span className="service-ask">
+                  Send an email{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
                   </svg>
-                  <span className="visually-hidden">(Content creation, opens your email)</span>
-                </a>
-              </div>
+                </span>
+                <span className="visually-hidden">(opens your email)</span>
+              </a>
             </li>
             <li>
-              <div className="service attend">
-                <figure className="service-photo">
-                  <img src={`${BASE}/images/service-speaking.jpg`} alt="Aishat speaking into a microphone at the Code Africa Conference City Tour" loading="lazy" />
-                </figure>
-                <h3 className="t-title">Speaking gigs</h3>
+              <a className="service-row" href="mailto:m.aishat9890@gmail.com?subject=Speaking%20invitation">
+                <span className="service-name">
+                  <span className="service-mark is-ring" aria-hidden="true" />
+                  <h3 className="t-title">Speaking gigs</h3>
+                </span>
                 <p className="t-body secondary">
                   Talks, panels, workshops and X Spaces on community building, open source, Web3 and starting out in tech.
                 </p>
-                {" "}
-                <a className="service-cta" href="mailto:m.aishat9890@gmail.com?subject=Speaking%20invitation">
-                  Ask about this{" "}
+                <span className="service-ask">
+                  Send an email{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
                   </svg>
-                  <span className="visually-hidden">(Speaking gigs, opens your email)</span>
-                </a>
-              </div>
+                </span>
+                <span className="visually-hidden">(opens your email)</span>
+              </a>
             </li>
             <li>
-              <div className="service attend">
-                <figure className="service-photo">
-                  <img src={`${BASE}/images/service-collab.jpg`} alt="Six of Aishat’s Instagram reels, including collaborations with Devcareer x Coursera and HerVest" loading="lazy" />
-                </figure>
-                <h3 className="t-title">Collaboration {"&"} partnership</h3>
+              <a className="service-row" href="mailto:m.aishat9890@gmail.com?subject=Collaboration%20and%20partnership">
+                <span className="service-name">
+                  <span className="service-mark is-pill" aria-hidden="true" />
+                  <h3 className="t-title">Collaboration {"&"} partnership</h3>
+                </span>
                 <p className="t-body secondary">Co-created content, programmes and campaigns with brands and communities who share an audience.</p>
-                {" "}
-                <a className="service-cta" href="mailto:m.aishat9890@gmail.com?subject=Collaboration%20and%20partnership">
-                  Ask about this{" "}
+                <span className="service-ask">
+                  Send an email{" "}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
                   </svg>
-                  <span className="visually-hidden">(Collaboration {"&"} partnership, opens your email)</span>
-                </a>
-              </div>
+                </span>
+                <span className="visually-hidden">(opens your email)</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -271,9 +244,10 @@ export default function ContactView() {
             <a className="reach-email" href="mailto:m.aishat9890@gmail.com">m.aishat9890@gmail.com</a>
             {" "}
             <div className="reach-note">
-              <p className="t-body-l secondary">
-                Not sure which of these fits? Send me a few lines about what you’re working on, and we’ll figure out the best way to work together.
-              </p>
+              <div className="stack" style={{gap: "var(--space-related)"} as React.CSSProperties}>
+                <p className="t-label">My availability</p>
+                <p className="t-body-l">Full-time roles, freelance projects, or both.</p>
+              </div>
               <p className="t-label">
                 <span className="label-dot" aria-hidden="true" />
                 Based in Lagos, Nigeria · Working remotely with teams anywhere

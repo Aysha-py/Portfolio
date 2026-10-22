@@ -167,7 +167,7 @@ export default function OpenTabsView() {
             </li>
           </ul>
           <div className="split reveal">
-            <div className="stack" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
+            <div className="stack split-text" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
               <h2 id="cc-title" className="t-heading-s">I create for the person I used to be.</h2>
               <p className="t-body-l secondary">
                 When I was finding my way into tech, I had plenty of questions and often had to piece together the answers myself. That experience shaped the kind of content I want to create today: the kind that helps someone feel a little less lost at the beginning.
@@ -175,8 +175,11 @@ export default function OpenTabsView() {
               <p className="t-body-l secondary">
                 Whether I’m sharing something I’ve learned, documenting my journey, or breaking down an unfamiliar idea, I want people to leave with something useful and a clearer sense of what they can do next.
               </p>
+              <figure className="tab-figure is-natural">
+                <img src={`${BASE}/images/open-tabs-instagram.jpg`} alt="My Instagram bio, Tech CM and tech content creator sharing tech, remote work, skills and opportunities, with my highlights and latest videos" loading="lazy" />
+              </figure>
             </div>
-            <div className="stack" style={{gap: "var(--space-stack)"} as React.CSSProperties}>
+            <div className="stack split-aside" style={{gap: "var(--space-stack)"} as React.CSSProperties}>
               <div>
                 <p className="t-label sub-head">Where to find it</p>
                 <ul className="rows">
@@ -285,7 +288,7 @@ export default function OpenTabsView() {
             </li>
           </ul>
           <div className="split reveal">
-            <div className="stack" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
+            <div className="stack split-text" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
               <h2 id="rr-title" className="t-heading-s">Some thoughts need somewhere to land.</h2>
               <p className="t-body-l secondary">
                 I like writing because it gives me room to sit with an idea, ask better questions, and work out what I actually think. Sometimes that means explaining something I’ve been learning; other times, it means reflecting on an experience or noticing a connection I hadn’t seen before.
@@ -311,37 +314,49 @@ export default function OpenTabsView() {
                 <span className="visually-hidden">(opens in a new tab)</span>
               </a>
             </div>
-            <div>
-              <p className="t-label sub-head">Latest issues</p>
-              <ul className="rows">
-                <li>
-                  <div className="row">
-                    <span className="row-main">
-                      <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
-                      <span className="t-caption secondary">Issue 03 · [Date]</span>
-                    </span>
-                    <span className="t-caption secondary">[Link]</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="row">
-                    <span className="row-main">
-                      <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
-                      <span className="t-caption secondary">Issue 02 · [Date]</span>
-                    </span>
-                    <span className="t-caption secondary">[Link]</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="row">
-                    <span className="row-main">
-                      <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
-                      <span className="t-caption secondary">Issue 01 · [Date]</span>
-                    </span>
-                    <span className="t-caption secondary">[Link]</span>
-                  </div>
-                </li>
-              </ul>
+            <div className="stack split-aside" style={{gap: "var(--space-stack)"} as React.CSSProperties}>
+              <div>
+                <p className="t-label sub-head">Latest issues</p>
+                <ul className="rows">
+                  <li>
+                    <div className="row">
+                      <span className="row-main">
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
+                        <span className="t-caption secondary">Issue 03 · [Date]</span>
+                      </span>
+                      <span className="t-caption secondary">[Link]</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="row">
+                      <span className="row-main">
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
+                        <span className="t-caption secondary">Issue 02 · [Date]</span>
+                      </span>
+                      <span className="t-caption secondary">[Link]</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="row">
+                      <span className="row-main">
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
+                        <span className="t-caption secondary">Issue 01 · [Date]</span>
+                      </span>
+                      <span className="t-caption secondary">[Link]</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <figure className="tab-figure is-art">
+                <svg className="ripple-art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The ripple from my logo, a coral dot inside mint rings spreading outward">
+                  <circle className="ring" cx="200" cy="150" r="138" strokeWidth="3" opacity="0.09" />
+                  <circle className="ring" cx="200" cy="150" r="108" strokeWidth="4" opacity="0.16" />
+                  <circle className="ring" cx="200" cy="150" r="80" strokeWidth="5" opacity="0.28" />
+                  <circle className="ring" cx="200" cy="150" r="52.8" strokeWidth="7.2" opacity="0.45" />
+                  <circle className="ring" cx="200" cy="150" r="33.6" strokeWidth="8.4" />
+                  <circle className="dot" cx="200" cy="150" r="14.4" />
+                </svg>
+              </figure>
             </div>
           </div>
           <div className="section-next" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
@@ -368,7 +383,7 @@ export default function OpenTabsView() {
             </li>
           </ul>
           <div className="split reveal">
-            <div className="stack" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
+            <div className="stack split-text" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
               <h2 id="os-title" className="t-heading-s">I believe more people should get to be part of building things.</h2>
               <p className="t-body-l secondary">
                 My interest in open source began when I was a software developer. I was drawn to the idea that people could learn from one another, contribute to shared projects, and build alongside people they might never meet in person.
@@ -379,8 +394,11 @@ export default function OpenTabsView() {
               <p className="t-body-l secondary">
                 I still care about helping people see that they don’t need to know everything before they begin. Sometimes, the first step is finding a project, asking a question, or making that first contribution.
               </p>
+              <figure className="tab-figure">
+                <img src={`${BASE}/images/open-tabs-oscafest.jpg`} alt="Me speaking on stage at OSCAFEST, in front of a screen that reads Open Source" loading="lazy" />
+              </figure>
             </div>
-            <div className="stack" style={{gap: "var(--space-stack)"} as React.CSSProperties}>
+            <div className="stack split-aside" style={{gap: "var(--space-stack)"} as React.CSSProperties}>
               <div>
                 <p className="t-label sub-head">A few milestones along the way</p>
                 <ul className="rows">
