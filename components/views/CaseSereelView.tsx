@@ -453,10 +453,24 @@ export default function CaseSereelView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at Sereel about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at Sereel]</figcaption>
-            </figure>
+            <div className="case-feedback">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/sereel-feedback-video.jpg`} alt="Team chat. Aishat shares a short-form video titled Transfer Agents. Bunny replies: I like this videos compared to the AI ones, the audience will relate more. Lance Davis reacts with 100." loading="lazy" />
+                  <figcaption className="t-caption secondary">On my short-form video about transfer agents</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/sereel-feedback-piece.jpg`} alt="Chat message from Bunny about Aishat’s piece Tokenized Funds Explained: This is a great piece Aishat! Aishat replies: Thank you Bunny." loading="lazy" />
+                  <figcaption className="t-caption secondary">On my piece Tokenized Funds Explained</figcaption>
+                </figure>
+              </div>
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/sereel-feedback-short-form.jpg`} alt="Team chat. Aishat shares a short-form video on tokenized money market funds, captioned Short form content. Bunny replies: this is fire. Lance Davis replies: flaaaaames Aishat, g2g." loading="lazy" />
+                  <figcaption className="t-caption secondary">On my short-form video about tokenized money market funds</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </section>
