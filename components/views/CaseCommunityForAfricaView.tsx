@@ -178,7 +178,9 @@ export default function CaseCommunityForAfricaView() {
             About
           </h2>
           <div className="case-main">
-            <p className="t-body-l">Community for Africa supports people learning and connecting across the technology ecosystem.</p>
+            <p className="t-body-l">
+              Community for Africa supports people learning and connecting across the community management ecosystem.
+            </p>
             <p className="t-body">
               Its mission is to empower African community managers and creatives to learn, grow, and connect. When I joined, my job was to lead, grow, and nurture a community space that was not only active, but also welcoming, educative, and aligned with that mission.
             </p>

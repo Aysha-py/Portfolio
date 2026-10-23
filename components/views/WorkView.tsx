@@ -455,9 +455,12 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Turning community learning into practical resources</h3>
                 <div className="work-copy">
-                  <p className="t-body">Community for Africa supports people learning and connecting across the technology ecosystem.</p>
                   <p className="t-body">
-                    Supported community engagement through events, learning sessions, and written and video content. Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.
+                    Community for Africa supports people learning and connecting across the community management ecosystem.
+                  </p>
+                  <p className="t-body">Supported community engagement through events, learning sessions, and written and video content.</p>
+                  <p className="t-body">
+                    Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.
                   </p>
                   <p className="t-body">
                     The resource reached{" "}
