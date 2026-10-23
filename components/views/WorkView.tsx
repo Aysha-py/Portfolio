@@ -515,10 +515,13 @@ export default function WorkView() {
                 <div className="work-copy">
                   <p className="t-body">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
                   <p className="t-body">
-                    Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources. Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.
+                    Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources.
                   </p>
                   <p className="t-body">
-                    Also developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices to support consistent knowledge-sharing.
+                    Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.
+                  </p>
+                  <p className="t-body">
+                    Developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices.
                   </p>
                 </div>
                 <div className="t-caption work-list-line">
