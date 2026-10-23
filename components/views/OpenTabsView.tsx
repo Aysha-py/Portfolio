@@ -166,10 +166,10 @@ export default function OpenTabsView() {
             <div className="stack split-text" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
               <h2 id="cc-title" className="t-heading-s">I create for the person I used to be.</h2>
               <p className="t-body-l secondary">
-                When I was finding my way into tech, I had plenty of questions and often had to piece together the answers myself. That experience shaped the kind of content I want to create today: the kind that helps someone feel a little less lost at the beginning.
+                When I was finding my way into tech, I had plenty of questions and often had to piece together the answers myself. That experience shaped the kind of content I create today: the kind that helps someone feel a little less lost at the beginning.
               </p>
               <p className="t-body-l secondary">
-                Whether I’m sharing something I’ve learned, documenting my journey, or breaking down an unfamiliar idea, I want people to leave with something useful and a clearer sense of what they can do next.
+                Whether I’m sharing something I’ve learned, documenting my journey, or breaking down an unfamiliar idea, I leave people with something useful and a clearer sense of what they can do next.
               </p>
               <figure className="tab-figure is-natural">
                 <img src={`${BASE}/images/open-tabs-instagram.jpg`} alt="My Instagram profile, this_aishah_, with my photo, follower count, bio, highlights and latest videos" loading="lazy" />
