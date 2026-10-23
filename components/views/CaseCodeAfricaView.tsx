@@ -171,11 +171,11 @@ export default function CaseCodeAfricaView() {
           </dl>
         </div>
       </section>
-      <section id="about" className="case-section" aria-labelledby="about-title">
+      <section id="brief" className="case-section" aria-labelledby="brief-title">
         <div className="container case-grid reveal">
-          <h2 id="about-title" className="t-label case-label">
+          <h2 id="brief-title" className="t-label case-label">
             <span className="label-dot" aria-hidden="true" />
-            About
+            Brief
           </h2>
           <div className="case-main">
             <p className="t-body-l">Code Africa brought together people across the African Web3 ecosystem.</p>

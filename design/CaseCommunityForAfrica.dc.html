@@ -556,7 +556,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 /* end article list */
 /* ===== Case study ===== */
 /* component: a case study page. Intro (organisation, title, lead and the facts), then sections with the
-   label on the left and the content on the right: About, How I approached it, Results (figure tiles), Visuals
+   label above the content, all on the intro's left edge: Brief, How I approached it, Results (figure tiles), Visuals
    (photos, or marked frames for ones still to come), Selected pieces and Feedback */
 /* primitive */
 .home{--primitive-size-12:12px;--primitive-size-56:56px;--primitive-size-200:200px;}
@@ -566,9 +566,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .home{
 --case-intro-padding:var(--space-group);
 --case-section-padding:var(--space-group);
---case-col-label:minmax(0,4fr);
---case-col-main:minmax(0,8fr);
---case-col-gap:var(--space-group);
+--case-measure:var(--case-title-measure);
+--case-text-measure:var(--case-lead-measure);
 --case-lead-measure:760px;
 --case-title-measure:980px;
 --case-org-logo:var(--primitive-size-40);
@@ -600,10 +599,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-fact-list li{display:inline-flex;align-items:center;}
 .case-fact-list li:not(:last-child)::after{content:"";flex:none;width:var(--dot-list-dot-size);height:var(--dot-list-dot-size);margin-inline:var(--dot-list-gap);border-radius:var(--radius-round);background:var(--dot-list-dot-color);}
 .case-section{padding-block:var(--case-section-padding);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
-.case-grid{display:grid;grid-template-columns:var(--case-col-label) var(--case-col-main);gap:var(--space-element) var(--case-col-gap);align-items:start;}
+/* every section stacks on the same left edge as the intro: label, then content */
+.case-grid{display:flex;flex-direction:column;gap:var(--space-cluster);}
 .case-label{margin:0;padding-top:var(--space-hairline);}
-.case-main{display:flex;flex-direction:column;gap:var(--space-cluster);min-width:0;}
+.case-main{display:flex;flex-direction:column;gap:var(--space-cluster);min-width:0;width:100%;max-width:var(--case-measure);}
 .case-main p{margin:0;}
+.case-main > p,.case-steps,.case-quote{max-width:var(--case-text-measure);}
 .case-todo{color:var(--color-text-secondary);}
 .case-steps{display:flex;flex-direction:column;gap:var(--space-cluster);margin:0;padding:0;list-style:none;}
 .case-step{display:flex;align-items:flex-start;gap:var(--space-element);}
@@ -644,7 +645,6 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-quote blockquote{margin:0;}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
-.case-grid{grid-template-columns:minmax(0,1fr);}
 .case-fact{grid-template-columns:minmax(0,1fr);}
 .case-shots{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-pairs{grid-template-columns:minmax(0,1fr);}
@@ -761,9 +761,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </div>
 </section>
 
-<section id="about" class="case-section" aria-labelledby="about-title">
+<section id="brief" class="case-section" aria-labelledby="brief-title">
 <div class="container case-grid reveal">
-<h2 id="about-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>About</h2>
+<h2 id="brief-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Brief</h2>
 <div class="case-main">
 <p class="t-body-l">Community for Africa supports people learning and connecting across the community management ecosystem.</p>
 <p class="t-body">Its mission is to empower African community managers and creatives to learn, grow, and connect. When I joined, my job was to lead, grow, and nurture a community space that was not only active, but also welcoming, educative, and aligned with that mission.</p>
