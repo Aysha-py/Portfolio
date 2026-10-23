@@ -157,7 +157,7 @@ export default function HomeView() {
                 </div>
                 <p className="t-label">Step 1</p>
                 <h3 className="t-title">Understanding the audience</h3>
-                <p className="t-body">Identifying who they are and what they need to know.</p>
+                <p className="t-body">Identifying who they are, what they already know, and what they need to know.</p>
               </li>
               <li className="step">
                 <div className="step-mark" aria-hidden="true" style={{alignItems: "flex-end"} as React.CSSProperties}>
@@ -165,7 +165,7 @@ export default function HomeView() {
                 </div>
                 <p className="t-label">Step 2</p>
                 <h3 className="t-title">Finding the story</h3>
-                <p className="t-body">Then I find the story that makes an idea relevant to them.</p>
+                <p className="t-body">Then I find the story that makes an idea connect with them or feel relevant to them.</p>
               </li>
               <li className="step">
                 <div className="step-mark" aria-hidden="true">
