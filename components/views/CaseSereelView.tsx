@@ -219,7 +219,7 @@ export default function CaseSereelView() {
                     I started by researching the market, regulatory developments, and the challenges shaping the tokenization industry. I also explored the questions and information needs of Sereel’s intended audience to identify topics worth communicating.
                   </p>
                   <p className="t-body">
-                    This research helped me connect developments in the wider financial industry to Sereel’s positioning, creating a foundation for content that went beyond product promotion to explain why these developments mattered.
+                    This research helped me connect developments in the wider financial industry to Sereel’s positioning, creating a foundation for content that went beyond promotion to explain why these developments mattered.
                   </p>
                 </div>
               </li>
