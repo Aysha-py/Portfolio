@@ -644,6 +644,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-quote{display:flex;flex-direction:column;gap:var(--space-related);margin:0;padding-left:var(--space-cluster);border-left:var(--focus-width) solid var(--case-quote-rule);}
 .case-quote blockquote{margin:0;}
 /* five results: three across, then two across */
+/* tools and platforms: the facts list, with room for longer group names, and no gap above */
+.case-facts.is-tools{--case-fact-label:calc(var(--primitive-space-8) * 2 + var(--primitive-space-6));margin-top:0;}
 .case-tiles.is-five{grid-template-columns:repeat(6,minmax(0,1fr));}
 .case-tiles.is-five .tile{grid-column:span 2;}
 .case-tiles.is-five .tile:nth-child(n+4){grid-column:span 3;}

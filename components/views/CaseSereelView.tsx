@@ -228,6 +228,15 @@ export default function CaseSereelView() {
               <li className="case-step">
                 <span className="case-step-mark is-half" aria-hidden="true" />
                 <div className="case-step-body">
+                  <h3 className="t-title">SEO research</h3>
+                  <p className="t-body">
+                    I conducted SEO research for selected articles. I used Ahrefs to investigate keyword opportunities, search demand, and related questions around topics such as tokenized funds. I also used Semrush’s Keyword Overview and Site Audit to assess search opportunities and review aspects of Sereel’s search visibility and website health. This research helped inform article topics and identify opportunities to make content more discoverable through non-branded searches.
+                  </p>
+                </div>
+              </li>
+              <li className="case-step">
+                <span className="case-step-mark is-ring" aria-hidden="true" />
+                <div className="case-step-body">
                   <h3 className="t-title">Writing</h3>
                   <p className="t-body">
                     I took ownership of Sereel’s long-form blog content, establishing a more consistent publishing rhythm. I also developed educational and thought-leadership content for LinkedIn and contributed newsletter content to extend these ideas into different formats.
@@ -238,7 +247,7 @@ export default function CaseSereelView() {
                 </div>
               </li>
               <li className="case-step">
-                <span className="case-step-mark is-ring" aria-hidden="true" />
+                <span className="case-step-mark is-pill" aria-hidden="true" />
                 <div className="case-step-body">
                   <h3 className="t-title">Publishing</h3>
                   <p className="t-body">
@@ -247,7 +256,7 @@ export default function CaseSereelView() {
                 </div>
               </li>
               <li className="case-step">
-                <span className="case-step-mark is-pill" aria-hidden="true" />
+                <span className="case-step-mark is-dot" aria-hidden="true" />
                 <div className="case-step-body">
                   <h3 className="t-title">Video and distribution</h3>
                   <p className="t-body">
@@ -262,6 +271,58 @@ export default function CaseSereelView() {
                 </div>
               </li>
             </ol>
+          </div>
+        </div>
+      </section>
+      <section id="tools" className="case-section" aria-labelledby="tools-title">
+        <div className="container case-grid reveal">
+          <h2 id="tools-title" className="t-label case-label">
+            <span className="label-dot" aria-hidden="true" />
+            Tools and platforms
+          </h2>
+          <div className="case-main">
+            <dl className="case-facts is-tools">
+              <div className="case-fact">
+                <dt className="t-label">SEO and keyword research</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>Ahrefs</li>
+                    <li>Semrush Keyword Overview</li>
+                    <li>Semrush Site Audit</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Content publishing and formatting</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>GitHub</li>
+                    <li>Markdown</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Research</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>Google Search</li>
+                    <li>Primary-source research</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Content distribution</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>LinkedIn</li>
+                    <li>Substack/newsletter distribution</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                    <li>TikTok</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>
