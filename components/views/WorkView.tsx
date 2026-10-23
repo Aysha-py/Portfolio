@@ -118,8 +118,8 @@ export default function WorkView() {
             Work
           </p>
           <h1 id="work-title" className="t-display" style={{maxWidth: "980px"} as React.CSSProperties}>
-            Content that earns attention. Communities that{" "}
-            <span className="hl">keep people coming back</span>
+            Work shaped by{" "}
+            <span className="hl">people, stories, and ideas</span>
             .
           </h1>
           <p className="t-body-l" style={{maxWidth: "680px"} as React.CSSProperties}>
