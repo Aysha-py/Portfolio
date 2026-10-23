@@ -118,24 +118,13 @@ export default function WorkView() {
             Work
           </p>
           <h1 id="work-title" className="t-display" style={{maxWidth: "980px"} as React.CSSProperties}>
-            Content that earns attention. Communities that{" "}
-            <span className="hl">keep people coming back</span>
+            Work shaped by{" "}
+            <span className="hl">people, stories, and ideas</span>
             .
           </h1>
           <p className="t-body-l" style={{maxWidth: "680px"} as React.CSSProperties}>
-            From fintech and Web3 to developer education and open source, I create content that makes ideas easier to understand and build communities where people can learn, contribute, and grow.
+            A collection of projects where I’ve explored ideas, shaped messages, and created opportunities for people to learn, connect, and engage.
           </p>
-          {" "}
-          <a className="jump-link" href="#work-list" style={{alignSelf: "flex-start", marginTop: "var(--space-element)"} as React.CSSProperties}>
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Browse the work</span>
-            {" "}
-            <span className="icon-btn" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 5v14" />
-                <path d="m19 12-7 7-7-7" />
-              </svg>
-            </span>
-          </a>
         </div>
       </section>
       <section id="work-list" aria-label="Selected work" style={{paddingBlock: "var(--space-group) var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
@@ -182,7 +171,7 @@ export default function WorkView() {
                   </p>
                   <p className="t-body">
                     Grew Sereel’s LinkedIn audience by{" "}
-                    <strong>127.8%, from 245 to 558 followers</strong>
+                    <strong>100%+</strong>
                     , through consistent content that connected industry developments with the questions and challenges facing institutional audiences.
                   </p>
                 </div>
@@ -404,7 +393,9 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Turning community needs into opportunities to learn and grow</h3>
                 <div className="work-copy">
-                  <p className="t-body">Web3Ladies creates opportunities for women to learn, build, and grow within the Web3 ecosystem.</p>
+                  <p className="t-body">
+                    Web3Ladies creates opportunities for women to learn, build, and grow within the AI and Web3 ecosystem.
+                  </p>
                   <p className="t-body">
                     Having contributed to the community since 2023 and progressed to Community Lead in November 2025, I work across community operations, programme development, and ecosystem engagement. This includes managing member communications, hosting learning experiences, coordinating partnerships, and using member insights to shape initiatives around community needs.
                   </p>
@@ -414,7 +405,9 @@ export default function WorkView() {
                     , turning the programme concept into an executable plan that brought together four expert-led sessions and generated seven project submissions from 100+ registrations. Alongside programme delivery, I support community growth through event representation, programme promotion, and ongoing engagement across digital and in-person channels.
                   </p>
                   <p className="t-body">
-                    <strong>15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations</strong>
+                    <strong>
+                      15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations · 7+ projects submitted
+                    </strong>
                   </p>
                 </div>
                 <div className="t-caption work-list-line">
@@ -462,9 +455,12 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Turning community learning into practical resources</h3>
                 <div className="work-copy">
-                  <p className="t-body">Community for Africa supports people learning and connecting across the technology ecosystem.</p>
                   <p className="t-body">
-                    Supported community engagement through events, learning sessions, and written and video content. Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.
+                    Community for Africa supports people learning and connecting across the community management ecosystem.
+                  </p>
+                  <p className="t-body">Supported community engagement through events, learning sessions, and written and video content.</p>
+                  <p className="t-body">
+                    Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.
                   </p>
                   <p className="t-body">
                     The resource reached{" "}
@@ -519,10 +515,13 @@ export default function WorkView() {
                 <div className="work-copy">
                   <p className="t-body">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
                   <p className="t-body">
-                    Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources. Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.
+                    Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources.
                   </p>
                   <p className="t-body">
-                    Also developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices to support consistent knowledge-sharing.
+                    Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.
+                  </p>
+                  <p className="t-body">
+                    Developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices.
                   </p>
                 </div>
                 <div className="t-caption work-list-line">
@@ -545,18 +544,6 @@ export default function WorkView() {
               </article>
             </li>
           </ul>
-          <div className="section-next is-right">
-            <a className="jump-link" href="#selected">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See selected content</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
       <section id="selected" aria-labelledby="selected-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
@@ -566,8 +553,9 @@ export default function WorkView() {
               <span className="label-dot" aria-hidden="true" />
               Selected content and projects
             </p>
-            <h2 id="selected-title" className="t-heading-s">
-              A few pieces that show how I approach research, education, and storytelling across different audiences.
+            <h2 id="selected-title" className="t-heading">
+              Selected content across{" "}
+              <span className="hl">audiences</span>
             </h2>
           </div>
           <ul className="pick-list">
@@ -882,38 +870,7 @@ export default function WorkView() {
               </a>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
-        <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
-          <div className="stack reveal" style={{gap: "var(--space-cluster)", maxWidth: "760px"} as React.CSSProperties}>
-            <p className="t-label">
-              <span className="label-dot" aria-hidden="true" />
-              Let’s talk
-            </p>
-            <h2 id="lets-talk-title" className="t-heading-s">
-              Have a project that needs clearer content, a more engaged community, or both? I'd love to hear about it.
-            </h2>
-            <div className="lets-talk-links">
-              <a className="jump-link" href={`${BASE}/contact/`}>
-                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
-                <span className="icon-btn" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
-              </a>
-              {" "}
-              <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
-              {" "}
-              <a className="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
-                LinkedIn
-                <span className="visually-hidden">(opens in a new tab)</span>
-              </a>
-            </div>
-          </div>
-          <div className="section-next is-right">
+          <div className="section-next is-right" style={{marginTop: "var(--space-group)", paddingTop: "var(--space-group)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
             <a className="jump-link" href={`${BASE}/talk-shelf/`}>
               <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See my talk shelf</span>
               {" "}

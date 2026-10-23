@@ -555,8 +555,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 }
 /* end article list */
 /* ===== Case study ===== */
-/* component: a case study page. Intro (back link, organisation, title, lead and the facts), then sections with the
-   label on the left and the content on the right: About, How I approached it, Results (figure tiles), Visuals
+/* component: a case study page. Intro (organisation, title, lead and the facts), then sections with the
+   label above the content, all on the intro's left edge: Brief, How I approached it, Results (figure tiles), Visuals
    (photos, or marked frames for ones still to come), Selected pieces and Feedback */
 /* primitive */
 .home{--primitive-size-12:12px;--primitive-size-56:56px;--primitive-size-200:200px;}
@@ -566,16 +566,13 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .home{
 --case-intro-padding:var(--space-group);
 --case-section-padding:var(--space-group);
---case-col-label:minmax(0,4fr);
---case-col-main:minmax(0,8fr);
---case-col-gap:var(--space-group);
+--case-measure:var(--case-title-measure);
+--case-text-measure:var(--case-lead-measure);
 --case-lead-measure:760px;
 --case-title-measure:980px;
 --case-org-logo:var(--primitive-size-40);
 --case-org-name-color:var(--color-text-emphasis);
---case-back-color:var(--color-text-secondary);
---case-back-hover:var(--color-text-emphasis);
---case-facts-gap:var(--space-cluster);
+--case-fact-label:calc(var(--primitive-space-8) + var(--primitive-space-7));
 --case-step-mark:var(--primitive-size-12);
 --case-step-ring:var(--color-accent-stroke);
 --case-tile-shape:var(--primitive-size-56);
@@ -590,21 +587,24 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-intro-inner{gap:var(--space-cluster);}
 .case-title{max-width:var(--case-title-measure);}
 .case-lead{max-width:var(--case-lead-measure);}
-.back-link{display:inline-flex;align-items:center;gap:var(--space-tight);align-self:flex-start;margin-bottom:var(--space-element);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-ui);color:var(--case-back-color);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
-.back-link:hover{color:var(--case-back-hover);}
 .case-org{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-related) var(--space-element);}
 .case-org .org-link.is-mark img{height:var(--case-org-logo);}
 .case-org-name{font-size:var(--type-heading-s-size);line-height:var(--type-heading-s-leading);font-weight:var(--weight-heading);letter-spacing:var(--type-heading-s-tracking);color:var(--case-org-name-color);text-decoration:none;}
 .case-org-name:hover{color:var(--case-org-name-color);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
-.case-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--case-facts-gap);margin:var(--space-stack) 0 0;padding-top:var(--space-stack);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
-.case-fact{display:flex;flex-direction:column;gap:var(--space-tight);min-width:0;}
+/* the facts as a list: one row each, label on the left, value on the right, hairlines between */
+.case-facts{display:flex;flex-direction:column;max-width:var(--case-lead-measure);margin:var(--space-stack) 0 0;padding:0;border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.case-fact{display:grid;grid-template-columns:var(--case-fact-label) minmax(0,1fr);gap:var(--space-tight) var(--space-cluster);align-items:baseline;min-width:0;padding-block:var(--space-element);border-bottom:var(--border-width-hairline) solid var(--color-border-subtle);}
 .case-fact dd{margin:0;}
-.case-fact-list{margin:0;padding:0;list-style:none;}
+.case-fact-list{display:flex;flex-wrap:wrap;align-items:center;margin:0;padding:0;list-style:none;}
+.case-fact-list li{display:inline-flex;align-items:center;}
+.case-fact-list li:not(:last-child)::after{content:"";flex:none;width:var(--dot-list-dot-size);height:var(--dot-list-dot-size);margin-inline:var(--dot-list-gap);border-radius:var(--radius-round);background:var(--dot-list-dot-color);}
 .case-section{padding-block:var(--case-section-padding);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
-.case-grid{display:grid;grid-template-columns:var(--case-col-label) var(--case-col-main);gap:var(--space-element) var(--case-col-gap);align-items:start;}
+/* every section stacks on the same left edge as the intro: label, then content */
+.case-grid{display:flex;flex-direction:column;gap:var(--space-cluster);}
 .case-label{margin:0;padding-top:var(--space-hairline);}
-.case-main{display:flex;flex-direction:column;gap:var(--space-cluster);min-width:0;}
+.case-main{display:flex;flex-direction:column;gap:var(--space-cluster);min-width:0;width:100%;max-width:var(--case-measure);}
 .case-main p{margin:0;}
+.case-main > p,.case-steps,.case-quote{max-width:var(--case-text-measure);}
 .case-todo{color:var(--color-text-secondary);}
 .case-steps{display:flex;flex-direction:column;gap:var(--space-cluster);margin:0;padding:0;list-style:none;}
 .case-step{display:flex;align-items:flex-start;gap:var(--space-element);}
@@ -628,6 +628,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .always-lit .sh-secondary{background:var(--color-accent-secondary);}
 .always-lit .sh-ring{border-color:var(--shape-ring-color);}
 .t-figure{margin:0;font-size:var(--type-heading-size);line-height:var(--type-heading-leading);font-weight:var(--weight-heading);letter-spacing:var(--type-heading-tracking);font-variant-numeric:tabular-nums;}
+.t-figure.is-phrase{font-size:var(--type-heading-s-size);line-height:var(--type-heading-s-leading);letter-spacing:var(--type-heading-s-tracking);text-wrap:balance;}
+.case-step-body .t-body + .t-body{margin-top:var(--space-tight);}
 .case-strong{font-weight:var(--weight-strong);color:var(--color-text-primary);}
 .case-shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-element);}
 .case-shot{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;}
@@ -641,12 +643,25 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-main .pick-list{align-self:stretch;}
 .case-quote{display:flex;flex-direction:column;gap:var(--space-related);margin:0;padding-left:var(--space-cluster);border-left:var(--focus-width) solid var(--case-quote-rule);}
 .case-quote blockquote{margin:0;}
+/* five results: three across, then two across */
+.case-tiles.is-five{grid-template-columns:repeat(6,minmax(0,1fr));}
+.case-tiles.is-five .tile{grid-column:span 2;}
+.case-tiles.is-five .tile:nth-child(n+4){grid-column:span 3;}
+/* selected work still to come: the same row, without a link */
+.pick.is-todo:hover .pick-title{color:var(--color-text-primary);}
+/* feedback as screenshots, in two columns */
+.case-feedback{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-element);align-items:start;}
+.case-feedback-col{display:flex;flex-direction:column;gap:var(--space-element);min-width:0;}
+.case-feedback-shot{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;}
+.case-feedback-shot img{display:block;width:100%;height:auto;border-radius:var(--card-radius);border:var(--border-width-hairline) solid var(--card-border);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
-.case-grid{grid-template-columns:minmax(0,1fr);}
-.case-facts{grid-template-columns:repeat(2,minmax(0,1fr));}
+.case-fact{grid-template-columns:minmax(0,1fr);}
 .case-shots{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-pairs{grid-template-columns:minmax(0,1fr);}
+.case-tiles.is-five{grid-template-columns:minmax(0,1fr);}
+.case-tiles.is-five .tile,.case-tiles.is-five .tile:nth-child(n+4){grid-column:auto;}
+.case-feedback{grid-template-columns:minmax(0,1fr);}
 }
 /* end case study */
 /* ===== Work diaries and media ===== */
@@ -743,7 +758,6 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <section class="page-intro case-intro" aria-labelledby="case-title">
 <div class="container stack reveal case-intro-inner">
-<a class="back-link" href="Work.dc.html#work-list"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>All work</a>
 <p class="t-label"><span class="label-dot" aria-hidden="true"></span>Case study</p>
 <div class="case-org">
 <a class="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" tabindex="-1" aria-hidden="true"><img class="logo-light" src="/_blob/ba82c2d6cc5201262edf417fd5dea012" alt=""><img class="logo-dark" src="/_blob/2eea2ce27dc43a935a0588b786bfa290" alt=""></a>
@@ -761,9 +775,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </div>
 </section>
 
-<section id="about" class="case-section" aria-labelledby="about-title">
+<section id="brief" class="case-section" aria-labelledby="brief-title">
 <div class="container case-grid reveal">
-<h2 id="about-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>About</h2>
+<h2 id="brief-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Brief</h2>
 <div class="case-main">
 <p class="t-body-l">Code Africa brought together people across the African Web3 ecosystem.</p>
 <p class="t-body">In the run-up to the conference, One Dev ran a pre-event series, including a community AMA on X Spaces and a city tour in Nigeria.</p>

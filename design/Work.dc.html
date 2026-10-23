@@ -108,6 +108,9 @@
 --type-display-size:clamp(34px,3.6vw,52px);
 --type-display-leading:1.08;
 --type-display-tracking:-0.035em;
+--type-heading-size:clamp(28px,2.8vw,40px);
+--type-heading-leading:1.12;
+--type-heading-tracking:-0.03em;
 --type-heading-s-size:clamp(22px,2vw,28px);
 --type-heading-s-leading:1.22;
 --type-heading-s-tracking:-0.025em;
@@ -230,6 +233,7 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 
 /* ===== Type ===== */
 .t-display{margin:0;font-size:var(--type-display-size);line-height:var(--type-display-leading);font-weight:var(--weight-heading);letter-spacing:var(--type-display-tracking);text-wrap:balance;}
+.t-heading{margin:0;font-size:var(--type-heading-size);line-height:var(--type-heading-leading);font-weight:var(--weight-heading);letter-spacing:var(--type-heading-tracking);text-wrap:balance;}
 .t-heading-s{margin:0;font-size:var(--type-heading-s-size);line-height:var(--type-heading-s-leading);font-weight:var(--weight-heading);letter-spacing:var(--type-heading-s-tracking);text-wrap:balance;}
 .t-title{margin:0;font-size:var(--type-title-size);line-height:var(--type-title-leading);font-weight:var(--weight-title);letter-spacing:var(--type-title-tracking);}
 .t-body-l{margin:0;font-size:var(--type-body-l-size);line-height:var(--type-body-l-leading);}
@@ -463,7 +467,6 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .work-tags{margin:0;}
 .work-heading{margin-top:var(--space-tight);}
 .work-copy{display:flex;flex-direction:column;gap:var(--space-related);max-width:var(--work-copy-measure);}
-.lets-talk-links{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-element) var(--space-stack);margin-top:var(--space-tight);}
 /* screen-reader-only text, such as "(opens in a new tab)" */
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 /* end work copy */
@@ -559,7 +562,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .home{--moment-card-width:clamp(248px,24vw,320px);--moment-gap:var(--space-cluster);--moment-inset:max(var(--space-gutter),calc((100% - 1280px) / 2 + var(--space-gutter)));--moment-progress-height:var(--space-hairline);--moment-photo-radius:var(--radius-card);}
 .section-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:var(--space-cluster) var(--space-group);}
 .moments-scope{timeline-scope:--moments;}
-.moment-track{display:flex;align-items:flex-start;gap:var(--moment-gap);margin:var(--space-group) 0 0;padding:var(--space-tight) var(--moment-inset);list-style:none;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--moment-inset);scrollbar-width:none;overscroll-behavior-x:contain;scroll-timeline:--moments x;}
+.moment-track{position:relative;display:flex;align-items:flex-start;gap:var(--moment-gap);margin:var(--space-group) 0 0;padding:var(--space-tight) var(--moment-inset);list-style:none;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--moment-inset);scrollbar-width:none;overscroll-behavior-x:contain;scroll-timeline:--moments x;}
 .moment-track::-webkit-scrollbar{display:none;}
 .moment-track:focus-visible{outline:var(--focus-width) solid var(--color-focus-ring);outline-offset:calc(var(--focus-width) * -1);}
 .moment{flex:0 0 var(--moment-card-width);scroll-snap-align:start;display:flex;flex-direction:column;gap:var(--space-related);margin:0;}
@@ -649,12 +652,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <section class="page-intro" aria-labelledby="work-title" style="padding-block: var(--space-section) var(--space-group)">
 <div class="container stack reveal" style="gap: var(--space-cluster); max-width: 1280px">
 <p class="t-label"><span class="label-dot" aria-hidden="true"></span>Work</p>
-<h1 id="work-title" class="t-display" style="max-width: 980px">Content that earns attention. Communities that <span class="hl">keep people coming back</span>.</h1>
-<p class="t-body-l" style="max-width: 680px">From fintech and Web3 to developer education and open source, I create content that makes ideas easier to understand and build communities where people can learn, contribute, and grow.</p>
-<a class="jump-link" href="#work-list" style="align-self: flex-start; margin-top: var(--space-element)">
-<span class="t-label" style="color: var(--color-text-primary)">Browse the work</span>
-<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span>
-</a>
+<h1 id="work-title" class="t-display" style="max-width: 980px">Work shaped by <span class="hl">people, stories, and ideas</span>.</h1>
+<p class="t-body-l" style="max-width: 680px">A collection of projects where I’ve explored ideas, shaped messages, and created opportunities for people to learn, connect, and engage.</p>
 </div>
 </section>
 
@@ -677,7 +676,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
 <p class="t-body">Led content development across educational and thought-leadership content, helping institutional and financial services audiences understand tokenized assets, capital markets, and industry developments.</p>
 <p class="t-body">Researched regulatory changes and market challenges to identify relevant topics, then translated those insights into educational social posts, long-form articles, and a monthly newsletter. Extended these themes into short-form videos, adapting complex ideas for different formats and audience touchpoints.</p>
-<p class="t-body">Grew Sereel’s LinkedIn audience by <strong>127.8%, from 245 to 558 followers</strong>, through consistent content that connected industry developments with the questions and challenges facing institutional audiences.</p>
+<p class="t-body">Grew Sereel’s LinkedIn audience by <strong>100%+</strong>, through consistent content that connected industry developments with the questions and challenges facing institutional audiences.</p>
 </div>
 <div class="t-caption work-list-line"><span class="t-label">Content formats</span><ul class="dot-list"><li>LinkedIn</li><li>Blog</li><li>Newsletter</li><li>Short-form video</li></ul></div>
 <a class="work-cta" href="CaseSereel.dc.html">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
@@ -760,10 +759,10 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </div>
 <h3 class="t-title work-heading">Turning community needs into opportunities to learn and grow</h3>
 <div class="work-copy">
-<p class="t-body">Web3Ladies creates opportunities for women to learn, build, and grow within the Web3 ecosystem.</p>
+<p class="t-body">Web3Ladies creates opportunities for women to learn, build, and grow within the AI and Web3 ecosystem.</p>
 <p class="t-body">Having contributed to the community since 2023 and progressed to Community Lead in November 2025, I work across community operations, programme development, and ecosystem engagement. This includes managing member communications, hosting learning experiences, coordinating partnerships, and using member insights to shape initiatives around community needs.</p>
 <p class="t-body">I designed and led <strong>Build with AI</strong>, turning the programme concept into an executable plan that brought together four expert-led sessions and generated seven project submissions from 100+ registrations. Alongside programme delivery, I support community growth through event representation, programme promotion, and ongoing engagement across digital and in-person channels.</p>
-<p class="t-body"><strong>15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations</strong></p>
+<p class="t-body"><strong>15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations · 7+ projects submitted</strong></p>
 </div>
 <div class="t-caption work-list-line"><span class="t-label">Focus areas</span><ul class="dot-list"><li>Community programmes</li><li>Ecosystem partnerships</li><li>Member engagement</li><li>Community operations</li></ul></div>
 <a class="work-cta" href="CaseWeb3Ladies.dc.html">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
@@ -782,8 +781,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </div>
 <h3 class="t-title work-heading">Turning community learning into practical resources</h3>
 <div class="work-copy">
-<p class="t-body">Community for Africa supports people learning and connecting across the technology ecosystem.</p>
-<p class="t-body">Supported community engagement through events, learning sessions, and written and video content. Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.</p>
+<p class="t-body">Community for Africa supports people learning and connecting across the community management ecosystem.</p>
+<p class="t-body">Supported community engagement through events, learning sessions, and written and video content.</p>
+<p class="t-body">Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.</p>
 <p class="t-body">The resource reached <strong>100+ downloads</strong>, giving community members a practical tool they could use beyond individual sessions.</p>
 </div>
 <div class="t-caption work-list-line"><span class="t-label">Focus areas</span><ul class="dot-list"><li>Community engagement</li><li>Events</li><li>Educational content</li><li>Learning resources</li></ul></div>
@@ -804,21 +804,15 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <h3 class="t-title work-heading">Making it easier for contributors to find their way in</h3>
 <div class="work-copy">
 <p class="t-body">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
-<p class="t-body">Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources. Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.</p>
-<p class="t-body">Also developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices to support consistent knowledge-sharing.</p>
+<p class="t-body">Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources.</p>
+<p class="t-body">Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.</p>
+<p class="t-body">Developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices.</p>
 </div>
 <div class="t-caption work-list-line"><span class="t-label">Focus areas</span><ul class="dot-list"><li>Community migration</li><li>Contributor onboarding</li><li>Documentation</li><li>Community calls</li></ul></div>
 <a class="work-cta" href="CaseOpenTermsArchive.dc.html">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
 </article>
 </li>
 </ul>
-
-<div class="section-next is-right">
-<a class="jump-link" href="#selected">
-<span class="t-label" style="color: var(--color-text-primary)">See selected content</span>
-<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span>
-</a>
-</div>
 </div>
 </section>
 
@@ -826,7 +820,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container stack" style="gap: var(--space-group)">
 <div class="stack reveal" style="gap: var(--space-element); max-width: 760px">
 <p class="t-label"><span class="label-dot" aria-hidden="true"></span>Selected content and projects</p>
-<h2 id="selected-title" class="t-heading-s">A few pieces that show how I approach research, education, and storytelling across different audiences.</h2>
+<h2 id="selected-title" class="t-heading">Selected content across <span class="hl">audiences</span></h2>
 </div>
 <ul class="pick-list">
 <li>
@@ -912,21 +906,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <a class="email-link t-body" href="https://www.youtube.com/@onedevafrica/streams" target="_blank" rel="noopener" style="font-weight: var(--weight-ui); text-underline-offset: 6px">One Dev<span class="visually-hidden"> (opens in a new tab)</span></a>
 </div>
 </div>
-</div>
-</section>
-
-<section id="lets-talk" aria-labelledby="lets-talk-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
-<div class="container stack" style="gap: var(--space-group)">
-<div class="stack reveal" style="gap: var(--space-cluster); max-width: 760px">
-<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Let’s talk</p>
-<h2 id="lets-talk-title" class="t-heading-s">Have a project that needs clearer content, a more engaged community, or both? I&#x27;d love to hear about it.</h2>
-<div class="lets-talk-links">
-<a class="jump-link" href="Contact.dc.html"><span class="t-label" style="color: var(--color-text-primary)">Get in touch</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
-<a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: var(--weight-ui); text-underline-offset: 6px">m.aishat9890@gmail.com</a>
-<a class="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style="font-weight: var(--weight-ui); text-underline-offset: 6px">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
-</div>
-</div>
-<div class="section-next is-right">
+<div class="section-next is-right" style="margin-top: var(--space-group); padding-top: var(--space-group); border-top: 1px solid var(--color-border-subtle)">
 <a class="jump-link" href="TalkShelf.dc.html">
 <span class="t-label" style="color: var(--color-text-primary)">See my talk shelf</span>
 <span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>

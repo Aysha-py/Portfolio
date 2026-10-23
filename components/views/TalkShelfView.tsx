@@ -133,17 +133,6 @@ export default function TalkShelfView() {
               Since 2023, I’ve spoken at 17 events through a mix of in-person gatherings, online sessions, and X Spaces. Here’s where I’ve gathered some of those conversations.
             </p>
           </div>
-          {" "}
-          <a className="jump-link" href="#shelf" style={{alignSelf: "flex-start", marginTop: "var(--space-element)"} as React.CSSProperties}>
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Browse the shelf</span>
-            {" "}
-            <span className="icon-btn" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M12 5v14" />
-                <path d="m19 12-7 7-7-7" />
-              </svg>
-            </span>
-          </a>
         </div>
       </section>
       <section id="shelf" aria-labelledby="shelf-title" style={{paddingBlock: "var(--space-group) var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
@@ -338,18 +327,6 @@ export default function TalkShelfView() {
               </div>
             </div>
           </div>
-          <div className="section-next is-right" style={{marginTop: "var(--space-stack)"} as React.CSSProperties}>
-            <a className="jump-link" href="#topics">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>What I talk about</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
       <section id="topics" className="always-lit" aria-labelledby="topics-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
@@ -365,10 +342,26 @@ export default function TalkShelfView() {
             <li>
               <div className="topic attend">
                 <div className="topic-art" aria-hidden="true">
-                  <div className="shape round sh sh-secondary" style={{left: "0", top: "16px", width: "56px", height: "56px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-secondary" style={{left: "44px", top: "48px", width: "40px", height: "40px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-secondary" style={{left: "88px", top: "8px", width: "32px", height: "32px"} as React.CSSProperties} />
-                  <div className="shape sh-ring" style={{right: "0", top: "24px", width: "56px", height: "56px", borderWidth: "7px"} as React.CSSProperties} />
+                  <svg className="topic-sketch" viewBox="0 0 200 96" width="200" height="96" aria-hidden="true" focusable="false">
+                    <circle className="sk-mint" cx="47" cy="43" r="10" />
+                    <path className="sk-coral" d="M30 83 C30 51.8 64 51.8 64 83 Z" />
+                    <circle className="sk-coral" cx="103" cy="36" r="11" />
+                    <path className="sk-mint" d="M84 83 C84 44 122 44 122 83 Z" />
+                    <circle className="sk-mint" cx="159" cy="43" r="10" />
+                    <path className="sk-coral" d="M142 83 C142 51.8 176 51.8 176 83 Z" />
+                    <path className="sk-line" d="M39.7 48.6 C38.9 47.9 35.6 46.1 34.8 44.3 C34 42.4 34.2 39.8 34.7 37.7 C35.2 35.7 36.3 33.3 37.9 32.1 C39.4 30.8 42.1 30 44.2 30.1 C46.2 30.2 48.5 31.3 50.1 32.6 C51.7 33.9 53.4 36 53.8 37.9 C54.2 39.9 53.5 42.4 52.5 44.3 C51.6 46.1 50 48.2 48.2 49 C46.4 49.9 43.7 49.8 41.7 49.3 C39.8 48.8 37.3 46.4 36.4 45.9" />
+                    <path className="sk-line" d="M27 83 C27.2 80.9 27.3 73.8 28.2 70.4 C29.1 67 30.8 65.1 32.3 62.9 C33.8 60.7 35.2 58.5 37.1 57.3 C39 56.1 41.5 55.6 43.7 55.7 C46 55.8 48.5 56.6 50.6 57.8 C52.8 59 54.9 60.9 56.5 63 C58 65.1 59 67.2 59.8 70.6 C60.5 73.9 60.8 80.9 61 83" />
+                    <path className="sk-line" d="M90.8 40 C90.6 38.8 89.4 35.1 89.5 32.7 C89.6 30.4 89.9 27.4 91.3 25.7 C92.7 24 95.6 22.8 97.9 22.4 C100.1 22.1 102.9 22.5 104.8 23.6 C106.8 24.6 108.7 26.6 109.6 28.6 C110.6 30.7 110.9 33.4 110.5 35.7 C110 37.9 108.6 40.7 106.9 42 C105.1 43.4 102.1 43.7 99.7 43.6 C97.4 43.6 94.6 42.9 92.9 41.5 C91.1 40.1 89.7 36.3 89.1 35.2" />
+                    <path className="sk-line" d="M81 83 C81.2 80.4 81.4 71.7 82.3 67.6 C83.3 63.4 85 60.7 86.6 58 C88.3 55.4 90.1 53 92.3 51.6 C94.4 50.2 97.1 49.5 99.6 49.6 C102 49.6 104.6 50.3 107 51.7 C109.3 53.2 111.9 55.5 113.6 58.2 C115.4 60.8 116.6 63.5 117.5 67.6 C118.4 71.8 118.7 80.4 119 83" />
+                    <path className="sk-line" d="M152 49.3 C151.2 48.5 148.2 46.6 147.2 44.7 C146.3 42.9 146 40.3 146.4 38.3 C146.7 36.2 147.7 33.7 149.2 32.3 C150.8 30.8 153.5 29.8 155.5 29.8 C157.6 29.8 160 30.9 161.7 32.1 C163.4 33.4 165.1 35.3 165.7 37.3 C166.3 39.3 166 42 165.2 43.9 C164.4 45.9 162.8 48.1 160.9 49.1 C159.1 50.2 156.2 50.5 154.2 50.1 C152.1 49.6 149.6 47 148.6 46.4" />
+                    <path className="sk-line" d="M139 83 C139.3 81 140 74.4 140.8 71 C141.5 67.5 142.2 64.4 143.6 62.2 C145 59.9 147.3 58.6 149.4 57.6 C151.5 56.6 154.1 56.3 156.3 56.3 C158.4 56.2 160.2 56.3 162.2 57.3 C164.1 58.4 166.5 60.4 168 62.5 C169.5 64.6 170.4 66.6 171.2 70 C172.1 73.4 172.7 80.8 173 83" />
+                    <path className="sk-line sk-dash" d="M56 31 C57.2 30 60.8 27.1 63.1 25.1 C65.4 23.1 67.5 19.7 70 19 C72.5 18.3 75.3 20.2 78 20.7 C80.6 21.2 84.7 21.8 86 22" />
+                    <path className="sk-line sk-dash" d="M114 22 C115.3 21.8 119.3 21.1 122 20.6 C124.7 20.1 127.5 18.2 130 19 C132.5 19.8 134.5 23.2 136.8 25.2 C139.1 27.2 142.8 30 144 31" />
+                    <path className="sk-line" d="M14 84 C17.6 84.1 28.3 84.2 35.5 84.5 C42.7 84.8 49.8 85.5 57 85.8 C64.2 86.1 71.3 86.2 78.5 86.4 C85.7 86.6 92.8 87 100 87 C107.2 87 114.3 86.6 121.5 86.4 C128.7 86.1 135.8 85.6 143 85.4 C150.2 85.2 157.4 85.5 164.5 85.3 C171.7 85.1 182.4 84.2 186 84" />
+                    <path className="sk-line" d="M100 6 Q100 9.5 100 13" />
+                    <path className="sk-line" d="M88 10 Q89.5 12.5 91 15" />
+                    <path className="sk-line" d="M112 10 Q110.5 12.5 109 15" />
+                  </svg>
                 </div>
                 <h3 className="t-title">Community building</h3>
                 <p className="t-body secondary">Getting started in community management, and keeping members active and engaged.</p>
@@ -377,9 +370,22 @@ export default function TalkShelfView() {
             <li>
               <div className="topic attend">
                 <div className="topic-art" aria-hidden="true">
-                  <div className="shape sh-ring" style={{left: "0", top: "8px", width: "72px", height: "72px", borderWidth: "9px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{left: "88px", top: "32px", width: "40px", height: "40px"} as React.CSSProperties} />
-                  <div className="shape half-round sh sh-secondary" style={{right: "0", bottom: "0", width: "96px", height: "48px"} as React.CSSProperties} />
+                  <svg className="topic-sketch" viewBox="0 0 200 96" width="200" height="96" aria-hidden="true" focusable="false">
+                    <path className="sk-line" d="M22 12 Q18.1 16.6 14 21 Q18 25.5 22 30" />
+                    <path className="sk-line" d="M40 12 Q44 16.5 48 21 Q43.9 25.4 40 30" />
+                    <path className="sk-line" d="M34 10 Q30.8 20.9 28 32" />
+                    <path className="sk-line" d="M10 66 C13.8 66 25 65.9 32.5 66.1 C40 66.2 47.5 66.5 55 66.8 C62.5 67.1 70 67.6 77.5 67.8 C85 68 92.5 68.3 100 68 C107.5 67.7 115 66.6 122.5 66.3 C130 66 137.5 66.6 145 66.4 C152.5 66.2 160 65.3 167.5 65.1 C175 64.8 186.2 65 190 65" />
+                    <path className="sk-line" d="M58 67 C70 67 70 36 88 36 L120 36 C140 36 140 66 154 66" />
+                    <circle className="sk-mint" cx="103" cy="71" r="7.5" />
+                    <circle className="sk-coral" cx="93" cy="39" r="7.5" />
+                    <circle className="sk-coral" cx="179" cy="69" r="7.5" />
+                    <circle className="sk-mint" cx="127" cy="39" r="7" />
+                    <path className="sk-line sk-paper" d="M35 71 C34.4 71.5 32.6 73.3 31.2 73.5 C29.9 73.8 28 73.2 26.8 72.5 C25.5 71.8 24.3 70.6 23.7 69.3 C23.1 68 23 66.2 23.3 64.8 C23.6 63.4 24.5 61.7 25.6 60.8 C26.7 60 28.6 59.7 30 59.7 C31.5 59.8 33.2 60.2 34.3 61 C35.4 61.9 36.4 63.4 36.8 64.8 C37.2 66.2 37.2 68.1 36.6 69.5 C36 70.8 33.9 72.3 33.3 72.9" />
+                    <path className="sk-line sk-paper" d="M104.8 62.4 C105.2 63.1 107 65.1 107.3 66.6 C107.6 68.1 107.3 70 106.6 71.4 C105.9 72.8 104.7 74.3 103.3 75 C101.9 75.7 99.7 76 98.2 75.6 C96.8 75.2 95.3 73.8 94.3 72.6 C93.4 71.3 92.7 69.6 92.7 68.1 C92.7 66.6 93.2 64.8 94.1 63.6 C95 62.4 96.6 61.3 98.1 60.9 C99.6 60.5 101.5 60.5 102.9 61.1 C104.4 61.7 106 63.8 106.6 64.3" />
+                    <path className="sk-line sk-paper" d="M89.4 43.2 C88.7 42.9 86.1 42.5 85 41.5 C83.8 40.5 82.9 38.7 82.7 37.2 C82.4 35.7 82.7 33.8 83.4 32.4 C84.1 31 85.5 29.5 86.9 28.9 C88.3 28.2 90.4 28.2 91.9 28.6 C93.4 29.1 95 30.2 96 31.4 C96.9 32.7 97.6 34.5 97.6 36.1 C97.6 37.6 96.9 39.6 95.9 40.7 C95 41.9 93.2 42.7 91.7 43 C90.1 43.4 87.6 43 86.8 43" />
+                    <path className="sk-line sk-paper" d="M125.3 28.9 C126 29.3 128.5 30.2 129.4 31.3 C130.3 32.4 130.9 34.2 130.9 35.6 C131 37.1 130.5 38.8 129.7 40 C128.9 41.1 127.4 42 126 42.5 C124.6 42.9 122.8 43.1 121.5 42.6 C120.2 42.1 118.9 40.7 118.2 39.5 C117.5 38.3 117.1 36.6 117.3 35.2 C117.4 33.8 118.2 32.2 119.2 31.2 C120.1 30.2 121.8 29.4 123.2 29.2 C124.5 29.1 126.8 29.9 127.5 30.1" />
+                    <path className="sk-line sk-paper" d="M182.8 67.8 C182.3 68.5 181.2 70.8 180 71.6 C178.7 72.4 176.9 72.8 175.4 72.7 C173.9 72.6 172 71.9 170.9 70.9 C169.9 69.9 169.2 68.2 168.9 66.6 C168.6 65.1 168.5 63.1 169.2 61.8 C169.9 60.4 171.6 59.1 173 58.5 C174.5 58 176.4 58 177.9 58.5 C179.4 58.9 180.9 59.9 181.9 61.1 C182.8 62.3 183.4 64.1 183.4 65.6 C183.4 67.1 182 69.4 181.8 70.2" />
+                  </svg>
                 </div>
                 <h3 className="t-title">Open source</h3>
                 <p className="t-body secondary">Making open source approachable, so beginners and women can contribute with confidence.</p>
@@ -388,9 +394,29 @@ export default function TalkShelfView() {
             <li>
               <div className="topic attend">
                 <div className="topic-art" aria-hidden="true">
-                  <div className="shape round sh sh-primary" style={{left: "0", top: "8px", width: "80px", height: "80px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-secondary" style={{left: "96px", top: "56px", width: "96px", height: "24px"} as React.CSSProperties} />
-                  <div className="shape sh-ring" style={{right: "0", top: "8px", width: "40px", height: "40px", borderWidth: "5px"} as React.CSSProperties} />
+                  <svg className="topic-sketch" viewBox="0 0 200 96" width="200" height="96" aria-hidden="true" focusable="false">
+                    <path className="sk-line" d="M51 47 C53.5 46.9 61 46.7 66 46.7 C71 46.7 78.5 46.9 81 47" />
+                    <path className="sk-line" d="M51 53 C53.5 53 61 53.3 66 53.3 C71 53.3 78.5 53 81 53" />
+                    <path className="sk-line" d="M119 47 C121.2 47.1 127.7 47.4 132 47.4 C136.3 47.4 142.8 47.1 145 47" />
+                    <path className="sk-line" d="M119 53 C121.2 53 127.7 53 132 53 C136.3 53 142.8 53 145 53" />
+                    <rect className="sk-mint" x="18" y="34" width="36" height="36" rx="6" />
+                    <rect className="sk-mint" x="150" y="34" width="36" height="36" rx="6" />
+                    <path className="sk-coral" d="M103 13 L127 21 L103 29 L79 21 Z" />
+                    <path className="sk-line" d="M19 31 Q32 31.2 45 31.5 Q47.6 33.6 50 36 Q50.4 49 49.5 62 Q47.3 64.5 45 67 Q32 67.1 19 66.5 Q16.6 64.2 14 62 Q13.7 49 14.5 36 Q16.6 33.4 19 31" />
+                    <path className="sk-line" d="M23 45 Q32 45.2 41 45" />
+                    <path className="sk-line" d="M23 53 Q29 53 35 53" />
+                    <path className="sk-line" d="M87 31 Q100 30.7 113 31.5 Q115.5 33.8 118 36 Q118.5 49 117.5 62 Q115.2 64.5 113 67 Q100 66 87 66.5 Q84.6 64.1 82 62 Q82.6 49 82.5 36 Q84.7 33.4 87 31" />
+                    <path className="sk-line" d="M91 45 Q100 44.9 109 45" />
+                    <path className="sk-line" d="M91 53 Q97 52.9 103 53" />
+                    <path className="sk-line" d="M151 31 Q164 31.7 177 31.5 Q179.5 33.8 182 36 Q181.3 49 181.5 62 Q179.3 64.5 177 67 Q164 67.2 151 66.5 Q148.6 64.2 146 62 Q147 49 146.5 36 Q148.9 33.6 151 31" />
+                    <path className="sk-line" d="M155 45 Q164 45.1 173 45" />
+                    <path className="sk-line" d="M155 53 Q161 53.1 167 53" />
+                    <path className="sk-line" d="M100 10 Q111.9 14.2 124 18 Q112.1 22.2 100 26 Q88 22 76 18 Q88 13.9 100 10" />
+                    <path className="sk-line" d="M88 22 Q88.1 26 88 30" />
+                    <path className="sk-line" d="M112 22 Q112.1 26 112 30" />
+                    <path className="sk-line" d="M124 18 Q124.5 23 125 28" />
+                    <circle className="sk-dot" cx="125" cy="30" r="2" />
+                  </svg>
                 </div>
                 <h3 className="t-title">Web3 education</h3>
                 <p className="t-body secondary">Explaining Web3 in simple terms, and helping newcomers find their way in.</p>
@@ -399,27 +425,23 @@ export default function TalkShelfView() {
             <li>
               <div className="topic attend">
                 <div className="topic-art" aria-hidden="true">
-                  <div className="shape half-round sh sh-primary" style={{left: "0", bottom: "0", width: "96px", height: "48px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-secondary" style={{left: "112px", top: "24px", width: "32px", height: "32px"} as React.CSSProperties} />
-                  <div className="shape round sh sh-primary" style={{right: "0", top: "0", width: "64px", height: "24px"} as React.CSSProperties} />
+                  <svg className="topic-sketch" viewBox="0 0 200 96" width="200" height="96" aria-hidden="true" focusable="false">
+                    <path className="sk-mint" d="M66 89 L66 73 L98 73 L98 57 L130 57 L130 41 L162 41 L162 89 Z" />
+                    <path className="sk-coral" d="M147 9 L166 14 L147 20 Z" />
+                    <circle className="sk-coral" cx="37" cy="39" r="12" />
+                    <path className="sk-line" d="M33.3 48.2 C32 47.7 27.5 47 25.7 45.3 C23.8 43.6 22.6 40.5 22.2 38 C21.8 35.4 22 32.2 23.1 30 C24.3 27.7 26.9 25.5 29.3 24.5 C31.6 23.5 35.1 23.3 37.5 24.1 C39.9 24.8 42.3 27 43.7 29.2 C45.1 31.3 45.9 34.2 45.7 36.7 C45.6 39.1 44.4 42 42.7 43.8 C41.1 45.7 38.3 47.1 35.9 47.5 C33.5 47.9 29.6 46.5 28.3 46.2" />
+                    <path className="sk-line" d="M43 45 Q48 50 53 55" />
+                    <path className="sk-line" d="M62 86 Q62.4 78 62 70 Q78 70.6 94 70 Q94 62 94 54 Q110 54.3 126 54 Q126.3 46 126 38 Q142 37.3 158 38 Q157.7 62 158 86 Q110 85.3 62 86" />
+                    <path className="sk-line" d="M14 86 C17.6 86.1 28.3 86.5 35.5 86.6 C42.7 86.8 49.8 86.8 57 86.9 C64.2 86.9 71.3 86.7 78.5 86.7 C85.7 86.7 92.8 87.1 100 87 C107.2 86.9 114.3 86.1 121.5 86.1 C128.7 86 135.8 86.5 143 86.4 C150.2 86.3 157.3 85.5 164.5 85.3 C171.7 85 182.4 85 186 85" />
+                    <path className="sk-line" d="M144 38 Q144.2 22 144 6" />
+                    <path className="sk-line" d="M144 7 Q153.4 9.7 163 12 Q153.5 15.1 144 18" />
+                  </svg>
                 </div>
                 <h3 className="t-title">Career growth for beginners</h3>
                 <p className="t-body secondary">Practical steps for breaking into tech, with or without a computer science degree.</p>
               </div>
             </li>
           </ul>
-          <div className="section-next">
-            <a className="jump-link" href="#media-kit">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get the media kit</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
       <section id="media-kit" aria-labelledby="kit-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>

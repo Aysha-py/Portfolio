@@ -113,14 +113,6 @@ export default function CaseSereelView() {
       </header>
       <section className="page-intro case-intro" aria-labelledby="case-title">
         <div className="container stack reveal case-intro-inner">
-          <a className="back-link" href={`${BASE}/work/#work-list`}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="m12 19-7-7 7-7" />
-              <path d="M19 12H5" />
-            </svg>
-            All work
-          </a>
-          {" "}
           <p className="t-label">
             <span className="label-dot" aria-hidden="true" />
             Case study
@@ -136,7 +128,7 @@ export default function CaseSereelView() {
               <span className="visually-hidden">(opens in a new tab)</span>
             </a>
             {" "}
-            <span className="type-tag">Content</span>
+            <span className="type-tag">Content marketing</span>
           </div>
           <h1 id="case-title" className="t-display case-title">
             Making complex ideas{" "}
@@ -144,26 +136,32 @@ export default function CaseSereelView() {
             .
           </h1>
           <p className="t-body-l case-lead">
-            I led Sereel’s educational and thought-leadership content, helping institutional and financial services audiences understand tokenized assets, capital markets, and industry developments.
+            I led Sereel’s educational and thought-leadership content, turning market research and industry developments into articles, social content, newsletters, and short-form videos that helped explain tokenization and institutional capital markets.
+          </p>
+          <p className="t-body-l case-lead">
+            My work focused on building a more consistent content presence, growing brand awareness, and making complex financial ideas easier for the intended audience to understand.
           </p>
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
-              <dd className="t-body">[Your role, for example content marketer]</dd>
+              <dd className="t-body">Content marketer</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Timeline</dt>
-              <dd className="t-body">[Month and year you started to month and year you finished]</dd>
+              <dd className="t-body">[Start month and year] – [End month and year]</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Skills</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
-                  <li>Content marketing</li>
+                  <li>Content research and market intelligence</li>
+                  <li>Audience research</li>
                   <li>B2B thought leadership</li>
-                  <li>Newsletter</li>
+                  <li>Long-form content writing</li>
                   <li>Educational content</li>
-                  <li>Video</li>
+                  <li>Newsletter content</li>
+                  <li>Short-form video production</li>
+                  <li>Social media content</li>
                 </ul>
               </dd>
             </div>
@@ -174,23 +172,33 @@ export default function CaseSereelView() {
                   <li>LinkedIn</li>
                   <li>Blog</li>
                   <li>Newsletter</li>
-                  <li>Short-form video</li>
+                  <li>YouTube</li>
+                  <li>TikTok</li>
+                  <li>Instagram</li>
                 </ul>
               </dd>
             </div>
           </dl>
         </div>
       </section>
-      <section id="about" className="case-section" aria-labelledby="about-title">
+      <section id="brief" className="case-section" aria-labelledby="brief-title">
         <div className="container case-grid reveal">
-          <h2 id="about-title" className="t-label case-label">
+          <h2 id="brief-title" className="t-label case-label">
             <span className="label-dot" aria-hidden="true" />
-            About
+            Brief
           </h2>
           <div className="case-main">
-            <p className="t-body-l">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
-            <p className="t-body secondary case-todo">
-              [What did Sereel need from content when you joined? For example: awareness, education, or trust with institutional audiences.]
+            <p className="t-body-l">
+              Sereel is a compliance-first tokenization platform for institutional capital markets, connecting traditional finance with blockchain-based infrastructure.
+            </p>
+            <p className="t-body">
+              When I joined, Sereel was still preparing to bring its product to market. The founder had been writing long-form content, but publishing was inconsistent. LinkedIn, the company’s primary platform for building visibility, also lacked a consistent publishing rhythm, and audience growth had stalled.
+            </p>
+            <p className="t-body">
+              For a startup operating in a complex and evolving market, this presented an opportunity. Sereel needed to communicate its ideas more consistently, reach a wider audience, and help people understand the developments shaping tokenized capital markets.
+            </p>
+            <p className="t-body">
+              The challenge wasn’t simply to publish more. It was to build a sustainable content presence informed by market developments and audience needs, while extending the brand’s visibility beyond a single platform.
             </p>
           </div>
         </div>
@@ -207,7 +215,12 @@ export default function CaseSereelView() {
                 <span className="case-step-mark is-dot" aria-hidden="true" />
                 <div className="case-step-body">
                   <h3 className="t-title">Research</h3>
-                  <p className="t-body">I researched regulatory changes and market challenges to identify relevant topics.</p>
+                  <p className="t-body">
+                    I started by researching the market, regulatory developments, and the challenges shaping the tokenization industry. I also explored the questions and information needs of Sereel’s intended audience to identify topics worth communicating.
+                  </p>
+                  <p className="t-body">
+                    This research helped me connect developments in the wider financial industry to Sereel’s positioning, creating a foundation for content that went beyond product promotion to explain why these developments mattered.
+                  </p>
                 </div>
               </li>
               <li className="case-step">
@@ -215,16 +228,25 @@ export default function CaseSereelView() {
                 <div className="case-step-body">
                   <h3 className="t-title">Writing</h3>
                   <p className="t-body">
-                    I translated those insights into educational social posts, long-form articles, and a monthly newsletter.
+                    I took ownership of Sereel’s long-form blog content, establishing a more consistent publishing rhythm. I also developed educational and thought-leadership content for LinkedIn and contributed newsletter content to extend these ideas into different formats.
+                  </p>
+                  <p className="t-body">
+                    Rather than treating complex industry developments as information to report, I focused on explaining their implications. From regulatory changes to the infrastructure needed for tokenized assets to participate in financial markets, I worked to make technical subjects clearer and more relevant to the intended audience.
                   </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-ring" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Video</h3>
+                  <h3 className="t-title">Video and distribution</h3>
                   <p className="t-body">
-                    I extended the same themes into short-form videos, which I scripted, filmed and edited for social media, adapting complex ideas for different formats and audience touchpoints.
+                    I extended Sereel’s educational content into short-form video, scripting, filming, and editing videos that made complex financial concepts more accessible.
+                  </p>
+                  <p className="t-body">
+                    I also helped expand the brand’s digital presence across YouTube, TikTok, and Instagram, creating additional touchpoints for its ideas beyond LinkedIn.
+                  </p>
+                  <p className="t-body">
+                    This gave Sereel more ways to communicate with its audience and allowed research-led themes to reach people through different formats.
                   </p>
                 </div>
               </li>
@@ -239,29 +261,48 @@ export default function CaseSereelView() {
             Results
           </h2>
           <div className="case-main">
-            <div className="case-tiles">
+            <div className="case-tiles is-pairs">
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">LinkedIn</p>
+                  <p className="t-label">LinkedIn audience growth</p>
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
                 <p className="t-figure">127.8%</p>
+                <p className="t-body secondary">Grew Sereel’s LinkedIn following from 245 to 558 followers, an increase of 313 followers.</p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">Long-form and social publishing</p>
+                  <div className="sh-ring case-tile-ring" aria-hidden="true" />
+                </div>
+                <p className="t-figure is-phrase">A more consistent content presence</p>
                 <p className="t-body secondary">
-                  <strong className="case-strong">Audience growth</strong>
-                  , from 245 to 558 followers.
+                  Took ownership of long-form blog writing and established a more consistent approach to publishing educational and thought-leadership content on LinkedIn.
                 </p>
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">[Another result]</p>
-                  <div className="sh-ring case-tile-ring" aria-hidden="true" />
+                  <p className="t-label">Expanded digital presence</p>
+                  <div className="round sh sh-primary case-tile-pill" aria-hidden="true" />
                 </div>
-                <p className="t-figure">[Number]</p>
-                <p className="t-body secondary">[For example: newsletter subscribers, open rate, article reads or video views.]</p>
+                <p className="t-figure is-phrase">3 additional platforms</p>
+                <p className="t-body secondary">
+                  Extended Sereel’s content presence across YouTube, TikTok, and Instagram through short-form video and cross-platform content distribution.
+                </p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">From market developments to audience understanding</p>
+                  <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
+                </div>
+                <p className="t-figure is-phrase">Research-led content</p>
+                <p className="t-body secondary">
+                  Developed content around regulatory changes, tokenization, and institutional capital markets, helping explain complex developments in ways that made their relevance easier to understand.
+                </p>
               </div>
             </div>
             <p className="t-body-l">
-              I grew Sereel’s LinkedIn audience through consistent content that connected industry developments with the questions and challenges facing institutional audiences.
+              The most measurable outcome was LinkedIn audience growth. Alongside that, I helped build a more consistent content operation and expand Sereel’s presence across multiple digital channels before its product went to market.
             </p>
           </div>
         </div>
@@ -349,7 +390,7 @@ export default function CaseSereelView() {
                     </p>
                     <h3 className="t-title pick-title">What the IMF's Tokenization Note Reveals About the Future of Digital Finance</h3>
                     <p className="t-body secondary pick-note">
-                      An industry analysis of why tokenization needs more than the ability to put assets on-chain. The piece looks at the infrastructure and services needed to support real financial activity.
+                      An industry analysis exploring why tokenization requires more than putting assets on-chain, examining the infrastructure and services needed to support real financial activity.
                     </p>
                     {" "}
                     <span className="work-cta">
@@ -363,6 +404,31 @@ export default function CaseSereelView() {
                   </div>
                   {" "}
                   <span className="pick-mark" aria-hidden="true"><span className="shape half-round sh sh-primary mark-half" /></span>
+                </a>
+              </li>
+              <li>
+                <a className="pick attend" href="https://www.instagram.com/this_aishah_/" target="_blank" rel="noopener">
+                  <div className="pick-body">
+                    <p className="pick-meta">
+                      <span className="type-tag">Educational video</span>
+                      <span className="t-caption secondary">Instagram</span>
+                    </p>
+                    <h3 className="t-title pick-title">Explaining tokenized money market funds</h3>
+                    <p className="t-body secondary pick-note">
+                      I scripted, filmed, and edited a short-form educational video explaining tokenized money market funds, translating a complex financial concept into a more accessible format.
+                    </p>
+                    {" "}
+                    <span className="work-cta">
+                      Watch the video on Instagram{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </div>
+                  {" "}
+                  <span className="pick-mark" aria-hidden="true"><span className="shape sh-ring mark-ring" /></span>
                 </a>
               </li>
             </ul>
@@ -391,10 +457,11 @@ export default function CaseSereelView() {
               Let’s talk
             </p>
             <h2 id="lets-talk-title" className="t-heading-s">
-              Have a project that needs clearer content, a more engaged community, or both? I'd love to hear about it.
+              Have a project that needs clearer content, a stronger digital presence, or a more thoughtful approach to reaching its audience?
             </h2>
+            <p className="t-body-l">I’d love to hear about it.</p>
             <div className="lets-talk-links">
-              <a className="jump-link" href={`${BASE}/contact/`}>
+              <a className="jump-link" href="mailto:m.aishat9890@gmail.com">
                 <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
                 <span className="icon-btn" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -402,13 +469,6 @@ export default function CaseSereelView() {
                     <path d="m12 5 7 7-7 7" />
                   </svg>
                 </span>
-              </a>
-              {" "}
-              <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
-              {" "}
-              <a className="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
-                LinkedIn
-                <span className="visually-hidden">(opens in a new tab)</span>
               </a>
             </div>
           </div>

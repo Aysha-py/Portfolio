@@ -93,6 +93,7 @@
 --radius-card:var(--primitive-radius-md);
 --radius-round:var(--primitive-radius-full);
 --border-width-hairline:var(--primitive-stroke-1);
+--stroke-illustration:var(--primitive-stroke-2);
 --border-width-strong:var(--primitive-stroke-1-5);
 --focus-width:var(--primitive-stroke-2);
 --font-sans:var(--primitive-font-sans);
@@ -171,7 +172,7 @@
 --shelf-line-width:var(--focus-width);
 --book-radius:var(--radius-card) var(--radius-card) 0 0;
 --spotlight-dim:0.5;
---topic-art-height:calc(var(--primitive-space-8) + var(--primitive-space-2));
+--topic-art-height:var(--primitive-space-8);
 --sticky-top:calc(var(--header-height) + var(--space-cluster));
 --fact-key:calc(var(--primitive-space-8) + var(--primitive-space-6));
 --row-border:var(--color-border-subtle);
@@ -319,7 +320,18 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 .always-lit .sh-primary{background:var(--color-accent-primary);}
 .always-lit .sh-secondary{background:var(--color-accent-secondary);}
 .always-lit .sh-ring{border-color:var(--shape-ring-color);}
-.topic-art{position:relative;height:var(--topic-art-height);margin-bottom:var(--space-tight);}
+.topic-art{position:relative;height:var(--topic-art-height);margin-bottom:var(--space-cluster);}
+/* topic sketches: hand-drawn line work in the brand's shapes, fills set slightly off the lines */
+.home{--sketch-ink:var(--color-accent-stroke);--sketch-primary:var(--color-accent-primary);--sketch-secondary:var(--color-accent-secondary);--sketch-paper:var(--card-bg);--sketch-stroke:var(--stroke-illustration);--sketch-dash:var(--space-hairline) var(--space-tight);--topic-sketch-width:calc(var(--primitive-space-8) * 2);}
+.topic-art{display:flex;align-items:center;}
+.topic-sketch{display:block;width:min(100%,var(--topic-sketch-width));height:auto;max-height:100%;overflow:visible;}
+.sk-line{fill:none;stroke:var(--sketch-ink);stroke-width:var(--sketch-stroke);stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;}
+.sk-paper{fill:var(--sketch-paper);}
+.sk-dash{stroke-dasharray:var(--sketch-dash);}
+.sk-primary,.sk-coral{fill:var(--sketch-primary);}
+.sk-secondary,.sk-mint{fill:var(--sketch-secondary);}
+.sk-dot{fill:var(--sketch-ink);}
+/* end topic sketches */
 .year{display:grid;grid-template-columns:var(--year-col) minmax(0,1fr);gap:var(--space-stack);align-items:start;}
 .year + .year{margin-top:var(--space-section);}
 .year-head{position:sticky;top:var(--sticky-top);display:flex;flex-direction:column;gap:var(--space-hairline);}

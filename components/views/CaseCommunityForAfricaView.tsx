@@ -113,14 +113,6 @@ export default function CaseCommunityForAfricaView() {
       </header>
       <section className="page-intro case-intro" aria-labelledby="case-title">
         <div className="container stack reveal case-intro-inner">
-          <a className="back-link" href={`${BASE}/work/#work-list`}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="m12 19-7-7 7-7" />
-              <path d="M19 12H5" />
-            </svg>
-            All work
-          </a>
-          {" "}
           <p className="t-label">
             <span className="label-dot" aria-hidden="true" />
             Case study
@@ -179,14 +171,16 @@ export default function CaseCommunityForAfricaView() {
           </dl>
         </div>
       </section>
-      <section id="about" className="case-section" aria-labelledby="about-title">
+      <section id="brief" className="case-section" aria-labelledby="brief-title">
         <div className="container case-grid reveal">
-          <h2 id="about-title" className="t-label case-label">
+          <h2 id="brief-title" className="t-label case-label">
             <span className="label-dot" aria-hidden="true" />
-            About
+            Brief
           </h2>
           <div className="case-main">
-            <p className="t-body-l">Community for Africa supports people learning and connecting across the technology ecosystem.</p>
+            <p className="t-body-l">
+              Community for Africa supports people learning and connecting across the community management ecosystem.
+            </p>
             <p className="t-body">
               Its mission is to empower African community managers and creatives to learn, grow, and connect. When I joined, my job was to lead, grow, and nurture a community space that was not only active, but also welcoming, educative, and aligned with that mission.
             </p>

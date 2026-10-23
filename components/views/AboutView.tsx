@@ -140,37 +140,21 @@ export default function AboutView() {
                 <p className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>That’s where my belief, clarity happens in motion, comes from.</p>
               </blockquote>
               <p className="t-body-l">
-                Sometimes, you find clarity by taking the first step. Sometimes, it’s in asking a better question, trying something that doesn’t work, or realising that the path you imagined isn’t the one you want anymore. Progress isn’t always a straight line. Sometimes, you have to move in a different direction to understand where you were meant to go.
+                Sometimes, you find clarity by taking the first step. Sometimes, it comes from asking better questions, trying something that doesn’t work, or realising that the path you imagined isn’t the one you want anymore. Progress isn’t always a straight line. Sometimes, you have to move in a different direction to understand where you’re going.
               </p>
               <p className="t-body-l">
-                I’ve always loved the feeling of something that once seemed unclear finally clicking into place. I love finding clarity for myself, but I also love helping other people find it.
+                I’ve also always loved the moment when something that once seemed unclear finally clicks, when the pieces come together and what felt complicated begins to make sense.
               </p>
               <p className="t-body-l">
-                I believe understanding shouldn’t be reserved for a few people. Ideas become more meaningful when they’re shared, when people feel welcome enough to ask questions, and when there’s room for others to contribute.
+                But the feeling is only part of it. I believe understanding shouldn’t be reserved for a few people. As much as I enjoy finding clarity for myself, I also love helping others discover it, whether through a written piece of content, a video I’ve made, or a conversation that leaves us seeing something differently. At the end of the day, ideas become more meaningful when we share them, question them, and open them up to other perspectives.
               </p>
               <p className="t-body-l">
-                Perhaps that’s what draws me to content marketing, too. I get to explore ideas, make sense of them, and share them in ways that help other people understand. It’s another way to follow my curiosity while making room for someone else’s aha! moment.
+                Perhaps that’s what draws me to content marketing, too. It gives me room to follow my curiosity, make sense of what I learn, and share it in ways that help other people understand. It’s another way to explore the questions that interest me while creating space for someone else’s aha! moment.
               </p>
               <p className="t-body-l">
                 Beyond any particular role or title, I want to keep becoming someone who stays curious, makes room for others, and leaves a little more clarity and possibility behind her.
               </p>
-              <p className="t-body-l">
-                I’m not trying to become someone who has all the answers. I’d rather keep asking better questions, keep learning, and keep moving with intention.
-              </p>
               <p className="t-body-l">I’m still becoming. And that’s the point.</p>
-              <div style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-                <div className="section-next" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-                  <a className="jump-link" href="#writing">
-                    <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Selected writings</span>
-                    <span className="icon-btn" aria-hidden="true">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M12 5v14" />
-                        <path d="m19 12-7 7-7-7" />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
             </article>
             <div className="about-photos">
               <figure className="about-photo">
@@ -191,8 +175,8 @@ export default function AboutView() {
               Writing
             </p>
             <h2 id="writing-title" className="t-heading">
-              Selected{" "}
-              <span className="hl">writings</span>
+              Personal research and{" "}
+              <span className="hl">writing</span>
             </h2>
             <p className="t-body-l secondary">
               When a technical idea catches my attention, I research it until it makes sense, then write it down for the next person. Here are a few pieces on open source, Web3 and developer fundamentals.
@@ -366,17 +350,6 @@ export default function AboutView() {
                 <path d="M7 17 17 7" />
               </svg>
               <span className="visually-hidden">(opens in a new tab)</span>
-            </a>
-          </div>
-          <div className="section-next is-right" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-            <a className="jump-link" href="#moments">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Some favourite moments</span>
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
             </a>
           </div>
         </div>

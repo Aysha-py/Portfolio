@@ -123,17 +123,6 @@ export default function HomeView() {
               <span className="hl">earn attention</span>
               {" "}through content that audiences care about.
             </h1>
-            {" "}
-            <a className="jump-link" href="#workflow" style={{alignSelf: "flex-start", marginTop: "var(--space-element)"} as React.CSSProperties}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See how I work</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
           </div>
           <div className="hero-photo">
             <img src={`${BASE}/images/headshot.jpg`} alt="Aishat Muhammed smiling, in an orange hijab, glasses and a black abaya" />
@@ -149,8 +138,12 @@ export default function HomeView() {
             </p>
             <h2 id="workflow-title" className="t-heading">I start with the audience</h2>
             <p className="t-body-l">
-              Content can be accurate and still fail to connect. A post can explain a product, a video can cover every feature, and a campaign can fill a calendar, yet leave people wondering why any of it matters. That's why I believe good content begins before the writing does.
+              Content can be accurate and still fail to connect. A piece of content can explain a product, cover every feature, and still leave people wondering why it matters or, worse, miss the target audience entirely.
             </p>
+            <p className="t-body-l">
+              Years of community management taught me to look for that gap before it shows up. To pay attention to the questions people ask, understand an audience and what they already know, and recognise what they need to hear before a message can resonate.
+            </p>
+            <p className="t-body-l">That's why I believe good content begins before the writing does.</p>
           </div>
           <div className="flow">
             <p className="t-body-l lead-in">It starts with</p>
@@ -164,7 +157,7 @@ export default function HomeView() {
                 </div>
                 <p className="t-label">Step 1</p>
                 <h3 className="t-title">Understanding the audience</h3>
-                <p className="t-body">Identifying who they are and what they need to know.</p>
+                <p className="t-body">Identifying who they are, what they already know, and what they need to know.</p>
               </li>
               <li className="step">
                 <div className="step-mark" aria-hidden="true" style={{alignItems: "flex-end"} as React.CSSProperties}>
@@ -172,7 +165,7 @@ export default function HomeView() {
                 </div>
                 <p className="t-label">Step 2</p>
                 <h3 className="t-title">Finding the story</h3>
-                <p className="t-body">Then I find the story that makes an idea relevant to them.</p>
+                <p className="t-body">Then I find the story that makes an idea connect with them or feel relevant to them.</p>
               </li>
               <li className="step">
                 <div className="step-mark" aria-hidden="true">
@@ -185,18 +178,6 @@ export default function HomeView() {
                 </p>
               </li>
             </ol>
-          </div>
-          <div className="section-next is-right">
-            <a className="jump-link" href="#numbers">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See the results</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
           </div>
         </div>
       </section>
@@ -286,18 +267,6 @@ export default function HomeView() {
                 {" "}Contributed to content, onboarding, and programmes supporting a growing community of women exploring blockchain, AI, and emerging technologies.
               </p>
             </div>
-          </div>
-          <div className="section-next">
-            <a className="jump-link" href="#stories">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Read the stories behind them</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
           </div>
         </div>
       </section>
@@ -410,19 +379,6 @@ export default function HomeView() {
               </span>
             </div>
           </a>
-          {" "}
-          <div className="section-next is-right">
-            <a className="jump-link" href="#feedback">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See what they say</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
       <section id="feedback" className="feedback-scope" aria-labelledby="feedback-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
@@ -587,18 +543,6 @@ export default function HomeView() {
               </span>
             </div>
           </div>
-          <div className="section-next is-right" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-            <a className="jump-link" href="#before-beyond">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get to know me</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
       <section id="before-beyond" aria-labelledby="bb-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
@@ -624,10 +568,15 @@ export default function HomeView() {
                 <div className="shape round fill-stroke" style={{left: "22%", top: "172px", width: "32px", height: "32px"} as React.CSSProperties} />
               </div>
               <h3 className="t-title">Attention isn't the same as connection.</h3>
-              <p className="t-body">
-                <span className="em">Before</span>
-                {" "}content became my primary focus, I spent years working closely with communities: understanding their needs, creating opportunities for participation, and learning what makes people return.
-              </p>
+              <div className="stack" style={{gap: "var(--space-element)"} as React.CSSProperties}>
+                <p className="t-body">
+                  <span className="em">Before</span>
+                  {" "}content became my primary focus, I spent years working closely with communities. That experience taught me to listen for the questions people were asking, recognise what they needed to understand, and notice what made them care enough to participate and return.
+                </p>
+                <p className="t-body">
+                  I bring that same audience-first thinking to content marketing, using what I learn about an audience to shape relevant stories and make complex ideas easier to understand.
+                </p>
+              </div>
             </div>
             <div className="stack" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
               <div className="panel" aria-hidden="true" style={{height: "240px"} as React.CSSProperties}>
