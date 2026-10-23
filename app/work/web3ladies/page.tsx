@@ -4,7 +4,7 @@ import "./page.css";
 
 export const metadata: Metadata = {
   title: "Web3Ladies case study",
-  description: "Turning community needs into opportunities to learn and grow: community leadership, programmes and partnerships for Web3Ladies, a community of 15,000+ members.",
+  description: "Building the systems and programmes that help a community grow: community operations, educational programmes and ecosystem partnerships for Web3Ladies.",
 };
 
 export default function Page() {
