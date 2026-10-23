@@ -4,7 +4,7 @@ import "./page.css";
 
 export const metadata: Metadata = {
   title: "Invisible Garden case study",
-  description: "Turning a developer residency into a story people could follow: social media copy, content coverage, video and outreach for Invisible Garden’s Ethereum residency in Buenos Aires.",
+  description: "Building visibility before, during, and beyond the event: content marketing and event communications for Invisible Garden’s Ethereum developer residency in Buenos Aires.",
 };
 
 export default function Page() {
