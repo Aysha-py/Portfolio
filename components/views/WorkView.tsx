@@ -171,7 +171,7 @@ export default function WorkView() {
                   </p>
                   <p className="t-body">
                     Grew Sereel’s LinkedIn audience by{" "}
-                    <strong>127.8%, from 245 to 558 followers</strong>
+                    <strong>100%+</strong>
                     , through consistent content that connected industry developments with the questions and challenges facing institutional audiences.
                   </p>
                 </div>
