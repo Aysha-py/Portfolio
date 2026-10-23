@@ -4,7 +4,7 @@ import "./page.css";
 
 export const metadata: Metadata = {
   title: "Code Africa Conference case study",
-  description: "Connecting conference promotion with community participation: campaign content, community outreach and volunteer coordination for Code Africa Conference.",
+  description: "Building the communications and community operations behind a pan-African Web3 event: event marketing, ambassador and volunteer coordination, and stakeholder communications for Code Africa Conference.",
 };
 
 export default function Page() {
