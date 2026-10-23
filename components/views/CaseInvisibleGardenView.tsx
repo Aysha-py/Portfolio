@@ -125,33 +125,38 @@ export default function CaseInvisibleGardenView() {
               <span className="visually-hidden">(opens in a new tab)</span>
             </a>
             {" "}
-            <span className="type-tag">Content</span>
+            <span className="type-tag">Content marketing {"&"} event communications</span>
           </div>
           <h1 id="case-title" className="t-display case-title">
-            Turning a developer residency into a{" "}
-            <span className="hl">story people could follow</span>
+            Building visibility before, during, and{" "}
+            <span className="hl">beyond the event</span>
             .
           </h1>
           <p className="t-body-l case-lead">
-            I owned Invisible Garden’s social media copy and content coverage across its developer residency in Buenos Aires, turning technical programmes, partner activities and community milestones into stories audiences could follow.
+            I managed the content ecosystem for a three-week, Ethereum-focused developer residency in Buenos Aires, creating promotional content, covering the event, and extending its educational material across social media and YouTube. Beyond content, I coordinated mentor and judge communications to support the evaluation of projects developed during the residency.
           </p>
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
-              <dd className="t-body">[Your role, for example content and social media lead]</dd>
+              <dd className="t-body">Content marketer · Social media {"&"} event communications</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Timeline</dt>
-              <dd className="t-body">[Month and year you started to month and year you finished]</dd>
+              <dd className="t-body">July 2025 – December 2025</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Skills</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
                   <li>Content marketing</li>
-                  <li>Social media</li>
-                  <li>Video</li>
-                  <li>Outreach</li>
+                  <li>Social media management</li>
+                  <li>Technical content research</li>
+                  <li>Event promotion and live coverage</li>
+                  <li>Short-form video editing</li>
+                  <li>Long-form video editing</li>
+                  <li>YouTube content publishing</li>
+                  <li>Stakeholder communications</li>
+                  <li>Project evaluation coordination</li>
                 </ul>
               </dd>
             </div>
@@ -159,10 +164,9 @@ export default function CaseInvisibleGardenView() {
               <dt className="t-label">Channels</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
-                  <li>X</li>
+                  <li>X (Twitter)</li>
                   <li>Instagram</li>
                   <li>YouTube</li>
-                  <li>Short-form video</li>
                 </ul>
               </dd>
             </div>
@@ -176,11 +180,21 @@ export default function CaseInvisibleGardenView() {
             Brief
           </h2>
           <div className="case-main">
-            <p className="t-body-l">Invisible Garden hosted a three-week Ethereum-focused developer residency in Buenos Aires.</p>
-            <p className="t-body">
-              The residency, POP-UP dev city #1, ran from 27 October to 16 November 2025, with builders working across Ethereum, zero knowledge, artificial intelligence and cybersecurity.
+            <p className="t-body-l">
+              Invisible Garden was a three-week, Ethereum-focused developer residency in Buenos Aires, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.
             </p>
-            <p className="t-body secondary case-todo">[What Invisible Garden needed from content when you joined.]</p>
+            <p className="t-body">
+              The programme needed to reach its intended audience before the event, communicate its activities while it was underway, and extend the value of its educational content beyond the residency itself.
+            </p>
+            <p className="t-body">
+              That meant more than publishing occasional updates. Promotional content needed to reach developers who might want to participate, event coverage needed to capture the experience as it unfolded, and recordings from the programme needed to be edited and made accessible to a wider audience.
+            </p>
+            <p className="t-body">
+              There was also work to do after the residency. Projects developed during the programme needed to be evaluated, requiring ongoing communication with mentors and judges.
+            </p>
+            <p className="t-body">
+              I took ownership of this connected content workflow, helping build awareness around the event, distribute its educational material, and coordinate the communications needed to move the post-event evaluation process forward.
+            </p>
           </div>
         </div>
       </section>
@@ -195,42 +209,61 @@ export default function CaseInvisibleGardenView() {
               <li className="case-step">
                 <span className="case-step-mark is-dot" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Social copy and coverage</h3>
+                  <h3 className="t-title">Understanding the audience</h3>
                   <p className="t-body">
-                    I wrote the social media copy and covered the residency as it happened, translating technical programmes, partner activities and community milestones into stories that audiences could follow.
+                    Invisible Garden served a developer-focused audience, so creating relevant content required more than general event promotion.
+                  </p>
+                  <p className="t-body">
+                    I researched technical subjects within the Ethereum ecosystem, including zero-knowledge technology, to deepen my understanding of the topics being explored. This helped me communicate the programme’s activities and educational themes in ways that were more relevant to its intended audience.
                   </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-half" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Video</h3>
+                  <h3 className="t-title">Building awareness and covering the event</h3>
                   <p className="t-body">
-                    I captured and edited on-site footage into short- and long-form videos, extending the coverage across X and YouTube.
+                    I managed promotional content throughout the event’s promotion cycle, creating social media copy to communicate the programme and encourage developer registrations.
                   </p>
-                  <a className="work-cta case-step-link" href="https://www.youtube.com/watch?v=Op3Syvqt_f8" target="_blank" rel="noopener">
-                    Watch the recap{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                    <span className="visually-hidden">(opens in a new tab)</span>
-                  </a>
+                  <p className="t-body">
+                    During the residency, I continued managing the primary social media presence on X, publishing content that documented the programme and helped bring its activities to a wider audience. I also extended content distribution to Instagram, creating another channel through which people could discover the programme.
+                  </p>
+                  <p className="t-body">
+                    Across my time managing the content ecosystem, the X audience grew by 64%, while Instagram grew from 30 to 143 followers.
+                  </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-ring" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Instagram</h3>
-                  <p className="t-body">I launched Invisible Garden’s Instagram presence to extend the residency’s reach to a new channel.</p>
+                  <h3 className="t-title">Extending the life of the content</h3>
+                  <p className="t-body">
+                    The residency generated educational material and recordings that could continue to serve developers after the event ended.
+                  </p>
+                  <p className="t-body">
+                    I edited event footage into short-form videos and worked with longer-form recordings to prepare educational content for YouTube. My responsibilities included editing the videos, preparing cover artwork, and uploading the finished material.
+                  </p>
+                  <p className="t-body">
+                    Over the course of the project, I helped publish 10 educational courses on YouTube, produced one long-form event recap, and edited five short-form videos.
+                  </p>
+                  <p className="t-body">
+                    This meant the programme’s content could live beyond the residency itself, giving audiences additional opportunities to access its educational material and revisit what had taken place.
+                  </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-pill" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Outreach to mentors and judges</h3>
+                  <h3 className="t-title">Coordinating post-event project evaluation</h3>
+                  <p className="t-body">My responsibilities also extended beyond content publishing.</p>
                   <p className="t-body">
-                    I managed outreach to prospective mentors and project judges, drafting personalised messages, following up, and tracking responses and project evaluations in Excel to help secure judges for the projects.
+                    After the residency, projects developed during the programme needed to be evaluated by judges. I managed communications with mentors and prospective judges, drafting outreach messages and follow-ups to secure participation and keep the process moving.
+                  </p>
+                  <p className="t-body">
+                    I also maintained an Excel tracker to monitor project judging and follow up on outstanding evaluations. This helped me coordinate multiple conversations, keep track of project status, and support the evaluation process through to completion.
+                  </p>
+                  <p className="t-body">
+                    It was a different side of the role, but it drew on the same skills that supported my content work: clear communication, organisation, research, and consistent follow-through.
                   </p>
                 </div>
               </li>
@@ -245,32 +278,58 @@ export default function CaseInvisibleGardenView() {
             Results
           </h2>
           <div className="case-main">
-            <div className="case-tiles">
+            <div className="case-tiles is-five">
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">X</p>
+                  <p className="t-label">Event registrations</p>
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
-                <p className="t-figure">64%</p>
+                <p className="t-figure">900</p>
                 <p className="t-body secondary">
-                  <strong className="case-strong">Follower growth</strong>
-                  {" "}during the Devcon Buenos Aires period.
+                  Supported event promotion throughout the programme’s promotional cycle, contributing to awareness and registration efforts that reached 900 registrations.
                 </p>
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Instagram</p>
+                  <p className="t-label">Growth on X (Twitter)</p>
+                  <div className="sh-ring case-tile-ring" aria-hidden="true" />
+                </div>
+                <p className="t-figure">64%</p>
+                <p className="t-body secondary">
+                  Grew the primary social media audience by 64% through ongoing event promotion, programme updates, and content distribution.
+                </p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">Growth on Instagram</p>
                   <div className="round sh sh-primary case-tile-pill" aria-hidden="true" />
                 </div>
-                <p className="t-figure">New</p>
+                <p className="t-figure">377%</p>
+                <p className="t-body secondary">Grew the Instagram audience from 30 to 143 followers, an increase of 113 followers.</p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">Content beyond the event</p>
+                  <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
+                </div>
+                <p className="t-figure is-phrase">16 video and educational outputs</p>
                 <p className="t-body secondary">
-                  <strong className="case-strong">Channel launched</strong>
-                  {" "}for the residency.
+                  Published 10 educational courses on YouTube, produced one long-form event recap, and edited five short-form videos, extending the programme’s content across formats and platforms.
+                </p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">Mentor and judge communications</p>
+                  <div className="sh-ring case-tile-ring" aria-hidden="true" />
+                </div>
+                <p className="t-figure is-phrase">Structured post-event coordination</p>
+                <p className="t-body secondary">
+                  Managed outreach, follow-ups, and project tracking to support the evaluation of projects developed during the residency.
                 </p>
               </div>
             </div>
             <p className="t-body-l">
-              I grew Invisible Garden’s X following by 64% during the Devcon Buenos Aires period through consistent social copy and event coverage, while launching its Instagram presence to extend the residency’s reach to a new channel.
+              Together, these results reflect a role that connected multiple stages of the programme: building awareness and supporting registrations, documenting the residency, extending its educational material, and coordinating the communications required after the event.
             </p>
           </div>
         </div>
@@ -315,6 +374,92 @@ export default function CaseInvisibleGardenView() {
           </div>
         </div>
       </section>
+      <section id="pieces" className="case-section" aria-labelledby="pieces-title">
+        <div className="container case-grid reveal">
+          <h2 id="pieces-title" className="t-label case-label">
+            <span className="label-dot" aria-hidden="true" />
+            Selected work
+          </h2>
+          <div className="case-main">
+            <ul className="pick-list">
+              <li>
+                <div className="pick is-todo">
+                  <div className="pick-body">
+                    <p className="pick-meta"><span className="type-tag">Social media</span></p>
+                    <h3 className="t-title pick-title">Event promotion and social media</h3>
+                    <p className="t-body secondary pick-note">Promotional content created to communicate the programme and encourage developer registrations.</p>
+                    <p className="t-caption case-todo">[Add a link or screenshot of a pre-event promotional post.]</p>
+                  </div>
+                  {" "}
+                  <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-secondary mark-circle" /></span>
+                </div>
+              </li>
+              <li>
+                <div className="pick is-todo">
+                  <div className="pick-body">
+                    <p className="pick-meta"><span className="type-tag">Social media</span></p>
+                    <h3 className="t-title pick-title">Live event coverage</h3>
+                    <p className="t-body secondary pick-note">
+                      Social content documenting the residency and extending its visibility beyond the people attending in person.
+                    </p>
+                    <p className="t-caption case-todo">[Add a link or screenshot of an event update or live coverage.]</p>
+                  </div>
+                  {" "}
+                  <span className="pick-mark" aria-hidden="true"><span className="shape half-round sh sh-primary mark-half" /></span>
+                </div>
+              </li>
+              <li>
+                <a className="pick attend" href="https://www.instagram.com/reel/DRaHNILDCec/" target="_blank" rel="noopener">
+                  <div className="pick-body">
+                    <p className="pick-meta">
+                      <span className="type-tag">Short-form video</span>
+                      <span className="t-caption secondary">Instagram</span>
+                    </p>
+                    <h3 className="t-title pick-title">Educational video</h3>
+                    <p className="t-body secondary pick-note">Video editing and distribution that helped bring the programme’s activities to a wider audience.</p>
+                    {" "}
+                    <span className="work-cta">
+                      Watch the video on Instagram{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </div>
+                  {" "}
+                  <span className="pick-mark" aria-hidden="true"><span className="shape sh-ring mark-ring" /></span>
+                </a>
+              </li>
+              <li>
+                <a className="pick attend" href="https://www.youtube.com/watch?v=Op3Syvqt_f8" target="_blank" rel="noopener">
+                  <div className="pick-body">
+                    <p className="pick-meta">
+                      <span className="type-tag">Long-form video</span>
+                      <span className="t-caption secondary">YouTube</span>
+                    </p>
+                    <h3 className="t-title pick-title">YouTube educational content</h3>
+                    <p className="t-body secondary pick-note">
+                      Edited and published educational material that extended the accessibility and lifespan of the programme’s recordings.
+                    </p>
+                    {" "}
+                    <span className="work-cta">
+                      Watch the recap on YouTube{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </div>
+                  {" "}
+                  <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-pill" /></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section id="feedback" className="case-section" aria-labelledby="feedback-title">
         <div className="container case-grid reveal">
           <h2 id="feedback-title" className="t-label case-label">
@@ -322,10 +467,28 @@ export default function CaseInvisibleGardenView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at Invisible Garden about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at Invisible Garden]</figcaption>
-            </figure>
+            <div className="case-feedback">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ig-feedback-welcome.jpg`} alt="Chat messages. Koko: welcome @this_aishah who is joining to support with community management including social media. Aisha is awesome at crafting cool content. Excited for us to work together to transform the IG brand. Aishat: Thank you for the warm welcome, excited to be here. Leo Lara: Welcome Aisha!!" loading="lazy" />
+                  <figcaption className="t-caption secondary">Welcomed to the team to support community management and social media</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ig-feedback-xixi.jpg`} alt="Chat message from Xixi Odyssey: @this_aishah Hi, you’re doing mkt great!" loading="lazy" />
+                  <figcaption className="t-caption secondary">A note from Xixi Odyssey</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ig-feedback-x-followers.jpg`} alt="Invisible Garden’s X profile showing 2,007 followers, shared in the chat with the message: 2000+ followers strong!!" loading="lazy" />
+                  <figcaption className="t-caption secondary">Celebrating 2,000+ followers on X</figcaption>
+                </figure>
+              </div>
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ig-feedback-reel.jpg`} alt="Chat messages. Who made this? I love it, with a link to the Invisible Garden Moments reel on Instagram. Xixi Odyssey: I think it’s @this_aishah. Aishat: Yeah, I did." loading="lazy" />
+                  <figcaption className="t-caption secondary">The Invisible Garden Moments reel I made</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -337,10 +500,11 @@ export default function CaseInvisibleGardenView() {
               Let’s talk
             </p>
             <h2 id="lets-talk-title" className="t-heading-s">
-              Have a project that needs clearer content, a more engaged community, or both? I'd love to hear about it.
+              Have a project that needs thoughtful content, stronger audience engagement, or someone who can connect the moving parts behind the scenes?
             </h2>
+            <p className="t-body-l">I’d love to hear about it.</p>
             <div className="lets-talk-links">
-              <a className="jump-link" href={`${BASE}/contact/`}>
+              <a className="jump-link" href="mailto:m.aishat9890@gmail.com">
                 <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
                 <span className="icon-btn" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -348,13 +512,6 @@ export default function CaseInvisibleGardenView() {
                     <path d="m12 5 7 7-7 7" />
                   </svg>
                 </span>
-              </a>
-              {" "}
-              <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
-              {" "}
-              <a className="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
-                LinkedIn
-                <span className="visually-hidden">(opens in a new tab)</span>
               </a>
             </div>
           </div>
