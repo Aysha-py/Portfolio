@@ -356,12 +356,24 @@ export default function CaseOneDevView() {
             <div className="case-shots">
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
-                  <img src={`${BASE}/images/diary-onedev-aiml.jpg`} alt="A live class from One Dev’s AI/ML for Developers Bootcamp" loading="lazy" />
+                  <img src={`${BASE}/images/onedev-hosting-city-tour.jpg`} alt="Aishat speaking into a microphone at the Code Africa Conference City Tour in Nigeria, a developers and founders mixer, beside a One Dev and Code Africa banner" loading="lazy" />
+                </div>
+                <figcaption className="t-caption secondary"><span>Hosting the Code Africa City Tour in Nigeria</span></figcaption>
+              </figure>
+              <figure className="case-shot">
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/onedev-reset-or-repeat.jpg`} alt="Flyer for One Dev’s X Space Reset or Repeat? Setting Your Career Intentions For 2026, on Saturday 10 January 2026, with speakers KC Pele, Joan Jerop and Eugene Karewa, and Aishat Muhammed as host" loading="lazy" />
+                </div>
+                <figcaption className="t-caption secondary"><span>Reset or Repeat?, an X Space I hosted for One Dev</span></figcaption>
+              </figure>
+              <figure className="case-shot">
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/onedev-web3-developer-guide.jpg`} alt="Cover of the One Dev article How to become a Web3 developer, plus free resources, showing a developer coding on a laptop" loading="lazy" />
                 </div>
                 <figcaption className="t-caption secondary">
-                  <span>A live class from the AI/ML for Developers Bootcamp</span>
-                  <a className="case-shot-link" href={"https://www.youtube.com/watch?v=yqNm6mAvo0s&t=307s"} target="_blank" rel="noopener">
-                    Watch the recording{" "}
+                  <span>How to become a Web3 developer, on the One Dev blog</span>
+                  <a className="case-shot-link" href="https://onedev.club/blog/how-to-become-a-web3-developer-free-resources-included" target="_blank" rel="noopener">
+                    Read the article{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M7 7h10v10" />
                       <path d="M7 17 17 7" />
@@ -369,27 +381,6 @@ export default function CaseOneDevView() {
                     <span className="visually-hidden">(opens in a new tab)</span>
                   </a>
                 </figcaption>
-              </figure>
-              <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-                  </svg>
-                  <span className="t-caption">[Add a bootcamp flyer]</span>
-                </div>
-                <figcaption className="t-caption secondary"><span>A bootcamp flyer</span></figcaption>
-              </figure>
-              <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="20" height="16" x="2" y="4" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                  </svg>
-                  <span className="t-caption">[Add a screenshot]</span>
-                </div>
-                <figcaption className="t-caption secondary"><span>A newsletter issue</span></figcaption>
               </figure>
             </div>
             {" "}
@@ -490,10 +481,24 @@ export default function CaseOneDevView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at One Dev about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at One Dev]</figcaption>
-            </figure>
+            <div className="case-feedback">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/onedev-feedback-participant.jpg`} alt="Chat message replying to Aishat’s final-day announcement: Good evening Aysha, you see this lot of people here? Some of us are annoying but you have been very calm and patient with us. You have always kept that attitude of a teacher. Thank you so much. You are a great person. Looking forward to working with you in future. Keep up the good job you are doing." loading="lazy" />
+                  <figcaption className="t-caption secondary">From a bootcamp participant, on the final day</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/onedev-feedback-linkedin.jpg`} alt="LinkedIn post from a bootcamp graduate: January was incredible! I graduated from the JavaScript in Ethereum Bootcamp organized by One Dev. Shout-out to Aishat Muhammed and the team for the hands-on session. Transitioning to the Web3 space couldn’t have been smoother! Below it, their One Dev certificate of participation from January 2025." loading="lazy" />
+                  <figcaption className="t-caption secondary">From a bootcamp graduate, on LinkedIn</figcaption>
+                </figure>
+              </div>
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/onedev-feedback-cofounder.jpg`} alt="Chat with One Dev’s co-founder: Awesome work. You really have an effortless relationship with the community. I do see your work and passion. It won’t go unacknowledged. Aishat thanks her for the feedback. The co-founder adds: If you need a public review, do send the link, I’ll write a professional review for you." loading="lazy" />
+                  <figcaption className="t-caption secondary">From One Dev’s co-founder</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </section>

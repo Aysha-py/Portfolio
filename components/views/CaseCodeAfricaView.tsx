@@ -148,6 +148,7 @@ export default function CaseCodeAfricaView() {
               <dt className="t-label">Skills</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
+                  <li>Social media copywriting</li>
                   <li>Content distribution</li>
                   <li>Community operations</li>
                   <li>Volunteer management</li>
@@ -197,7 +198,7 @@ export default function CaseCodeAfricaView() {
                 <div className="case-step-body">
                   <h3 className="t-title">Led event communications and promotional content</h3>
                   <p className="t-body">
-                    I wrote social media copy and coordinated promotional activities throughout the event cycle. This included a profile-picture campaign encouraging people to show their intention to attend, as well as organizing pre-event sessions and moderating two sessions.
+                    I handled all of the event’s social media copy throughout, and coordinated promotional activities across the event cycle. This included a profile-picture campaign encouraging people to show their intention to attend, as well as organizing pre-event sessions and moderating two sessions.
                   </p>
                 </div>
               </li>
@@ -306,16 +307,20 @@ export default function CaseCodeAfricaView() {
                 <figcaption className="t-caption secondary"><span>Road to Code Africa Conference, on X Spaces</span></figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                    <circle cx="9" cy="7" r="4" />
-                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                  </svg>
-                  <span className="t-caption">[Add a photo]</span>
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/code-africa-backdrop.jpg`} alt="The Code Africa Conference backdrop: the Code Africa name on a white wall of sponsor logos, including Tether, Scroll, Stellar, Lisk and SafariDAO, above a blue carpet" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>Volunteers and ambassadors</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>The opening-day post I wrote for One Dev</span>
+                  <a className="case-shot-link" href="https://x.com/_one_dev/status/1925781681492853005" target="_blank" rel="noopener">
+                    See the post{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
             </div>
           </div>
