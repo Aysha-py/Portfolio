@@ -138,8 +138,12 @@ export default function HomeView() {
             </p>
             <h2 id="workflow-title" className="t-heading">I start with the audience</h2>
             <p className="t-body-l">
-              Content can be accurate and still fail to connect. A post can explain a product, a video can cover every feature, and a campaign can fill a calendar, yet leave people wondering why any of it matters. That's why I believe good content begins before the writing does.
+              Content can be accurate and still fail to connect. A piece of content can explain a product, cover every feature, and still leave people wondering why it matters or, worse, miss the target audience entirely.
             </p>
+            <p className="t-body-l">
+              Years of community management taught me to look for that gap before it shows up. To pay attention to the questions people ask, understand an audience and what they already know, and recognise what they need to hear before a message can resonate.
+            </p>
+            <p className="t-body-l">That's why I believe good content begins before the writing does.</p>
           </div>
           <div className="flow">
             <p className="t-body-l lead-in">It starts with</p>
