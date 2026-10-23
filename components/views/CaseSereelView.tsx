@@ -516,20 +516,50 @@ export default function CaseSereelView() {
           <div className="case-main">
             <div className="case-feedback">
               <div className="case-feedback-col">
-                <figure className="case-feedback-shot">
-                  <img src={`${BASE}/images/sereel-feedback-video.jpg`} alt="Team chat. Aishat shares a short-form video titled Transfer Agents. Bunny replies: I like this videos compared to the AI ones, the audience will relate more. Lance Davis reacts with 100." loading="lazy" />
-                  <figcaption className="t-caption secondary">On my short-form video about transfer agents</figcaption>
-                </figure>
-                <figure className="case-feedback-shot">
-                  <img src={`${BASE}/images/sereel-feedback-piece.jpg`} alt="Chat message from Bunny about Aishat’s piece Tokenized Funds Explained: This is a great piece Aishat! Aishat replies: Thank you Bunny." loading="lazy" />
-                  <figcaption className="t-caption secondary">On my piece Tokenized Funds Explained</figcaption>
-                </figure>
+                <a className="case-feedback-shot is-link" href="https://www.tiktok.com/@0xsereel/video/7677895572996558101" target="_blank" rel="noopener">
+                  <img src={`${BASE}/images/sereel-feedback-short-form.jpg`} alt="Team chat. Aishat shares a short-form video on tokenized money market funds, captioned Short form content. A teammate replies: this is fire. Another replies: flaaaaames Aishat, g2g." loading="lazy" />
+                  <span className="t-caption secondary case-feedback-cap">
+                    <span>On my short-form video about tokenized money market funds</span>
+                    <span className="case-shot-link">
+                      Watch the video on TikTok{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
               </div>
               <div className="case-feedback-col">
-                <figure className="case-feedback-shot">
-                  <img src={`${BASE}/images/sereel-feedback-short-form.jpg`} alt="Team chat. Aishat shares a short-form video on tokenized money market funds, captioned Short form content. Bunny replies: this is fire. Lance Davis replies: flaaaaames Aishat, g2g." loading="lazy" />
-                  <figcaption className="t-caption secondary">On my short-form video about tokenized money market funds</figcaption>
-                </figure>
+                <a className="case-feedback-shot is-link" href="https://lnkd.in/p/eDPg_Dwe" target="_blank" rel="noopener">
+                  <img src={`${BASE}/images/sereel-feedback-linkedin.jpg`} alt="A Sereel LinkedIn post with an illustration of the Absa and Ripple logos around a shield over a map of Africa, with 115 reactions, 3 comments and 22 reposts." loading="lazy" />
+                  <span className="t-caption secondary case-feedback-cap">
+                    <span>A LinkedIn post for Sereel: 115 reactions, 3 comments and 22 reposts</span>
+                    <span className="case-shot-link">
+                      See the post on LinkedIn{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
+                <a className="case-feedback-shot is-link" href="https://www.sereel.com/blog/23" target="_blank" rel="noopener">
+                  <img src={`${BASE}/images/sereel-feedback-piece.jpg`} alt="Chat message from a teammate about Aishat’s piece Tokenized Funds Explained: This is a great piece Aishat! Aishat replies: Thank you." loading="lazy" />
+                  <span className="t-caption secondary case-feedback-cap">
+                    <span>On my piece Tokenized Funds Explained</span>
+                    <span className="case-shot-link">
+                      Read the article{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
               </div>
             </div>
           </div>

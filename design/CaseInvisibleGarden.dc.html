@@ -656,6 +656,11 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-col{display:flex;flex-direction:column;gap:var(--space-element);min-width:0;}
 .case-feedback-shot{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;}
 .case-feedback-shot img{display:block;width:100%;height:auto;border-radius:var(--card-radius);border:var(--border-width-hairline) solid var(--card-border);}
+.case-feedback-shot.is-link{text-decoration:none;color:inherit;}
+.case-feedback-shot.is-link img{transition:border-color var(--motion-base) var(--motion-ease);}
+.case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
+.case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
@@ -915,8 +920,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <h2 id="feedback-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Feedback</h2>
 <div class="case-main">
 <div class="case-feedback">
-<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/e668cd91642f6c4cca3d5e92cb02d031" alt="Chat messages. Koko: welcome @this_aishah who is joining to support with community management including social media. Aisha is awesome at crafting cool content. Excited for us to work together to transform the IG brand. Aishat: Thank you for the warm welcome, excited to be here. Leo Lara: Welcome Aisha!!" loading="lazy"><figcaption class="t-caption secondary">Welcomed to the team to support community management and social media</figcaption></figure><figure class="case-feedback-shot"><img src="/_blob/8568bfe77284a8cec7a5b8142750ec92" alt="Chat message from Xixi Odyssey: @this_aishah Hi, you’re doing mkt great!" loading="lazy"><figcaption class="t-caption secondary">A note from Xixi Odyssey</figcaption></figure><figure class="case-feedback-shot"><img src="/_blob/398e6f72196897a25964b61f19608c90" alt="Invisible Garden’s X profile showing 2,007 followers, shared in the chat with the message: 2000+ followers strong!!" loading="lazy"><figcaption class="t-caption secondary">Celebrating 2,000+ followers on X</figcaption></figure></div>
-<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/54787fdccf0f6147452e72adbfe71a77" alt="Chat messages. Who made this? I love it, with a link to the Invisible Garden Moments reel on Instagram. Xixi Odyssey: I think it’s @this_aishah. Aishat: Yeah, I did." loading="lazy"><figcaption class="t-caption secondary">The Invisible Garden Moments reel I made</figcaption></figure></div>
+<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/82d644c97752957c83ac6524078aa7d6" alt="Chat messages. A teammate: welcome @this_aishah who is joining to support with community management including social media. Aisha is awesome at crafting cool content. Another: Excited for us to work together to transform the IG brand. Aishat: Thank you for the warm welcome, excited to be here. The owner: Welcome Aisha!!" loading="lazy"><figcaption class="t-caption secondary">Welcomed to the team to support community management and social media</figcaption></figure><figure class="case-feedback-shot"><img src="/_blob/bca7a7f8c11b113872bfb34a67e0fa99" alt="Chat message from a teammate: @this_aishah Hi, you’re doing mkt great!" loading="lazy"><figcaption class="t-caption secondary">A note from the team</figcaption></figure><figure class="case-feedback-shot"><img src="/_blob/398e6f72196897a25964b61f19608c90" alt="Invisible Garden’s X profile showing 2,007 followers, shared in the chat with the message: 2000+ followers strong!!" loading="lazy"><figcaption class="t-caption secondary">Celebrating 2,000+ followers on X</figcaption></figure></div>
+<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/83eedd4f311ded8bdb31981b6783f4eb" alt="Chat messages. Who made this? I love it, with a link to the Invisible Garden Moments reel on Instagram. A teammate: I think it’s @this_aishah. Aishat: Yeah, I did." loading="lazy"><figcaption class="t-caption secondary">The Invisible Garden Moments reel I made</figcaption></figure></div>
 </div>
 </div>
 </div>

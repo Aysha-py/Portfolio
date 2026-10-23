@@ -656,6 +656,11 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-col{display:flex;flex-direction:column;gap:var(--space-element);min-width:0;}
 .case-feedback-shot{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;}
 .case-feedback-shot img{display:block;width:100%;height:auto;border-radius:var(--card-radius);border:var(--border-width-hairline) solid var(--card-border);}
+.case-feedback-shot.is-link{text-decoration:none;color:inherit;}
+.case-feedback-shot.is-link img{transition:border-color var(--motion-base) var(--motion-ease);}
+.case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
+.case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}

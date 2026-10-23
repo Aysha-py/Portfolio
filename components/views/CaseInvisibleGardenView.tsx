@@ -470,12 +470,12 @@ export default function CaseInvisibleGardenView() {
             <div className="case-feedback">
               <div className="case-feedback-col">
                 <figure className="case-feedback-shot">
-                  <img src={`${BASE}/images/ig-feedback-welcome.jpg`} alt="Chat messages. Koko: welcome @this_aishah who is joining to support with community management including social media. Aisha is awesome at crafting cool content. Excited for us to work together to transform the IG brand. Aishat: Thank you for the warm welcome, excited to be here. Leo Lara: Welcome Aisha!!" loading="lazy" />
+                  <img src={`${BASE}/images/ig-feedback-welcome.jpg`} alt="Chat messages. A teammate: welcome @this_aishah who is joining to support with community management including social media. Aisha is awesome at crafting cool content. Another: Excited for us to work together to transform the IG brand. Aishat: Thank you for the warm welcome, excited to be here. The owner: Welcome Aisha!!" loading="lazy" />
                   <figcaption className="t-caption secondary">Welcomed to the team to support community management and social media</figcaption>
                 </figure>
                 <figure className="case-feedback-shot">
-                  <img src={`${BASE}/images/ig-feedback-xixi.jpg`} alt="Chat message from Xixi Odyssey: @this_aishah Hi, you’re doing mkt great!" loading="lazy" />
-                  <figcaption className="t-caption secondary">A note from Xixi Odyssey</figcaption>
+                  <img src={`${BASE}/images/ig-feedback-xixi.jpg`} alt="Chat message from a teammate: @this_aishah Hi, you’re doing mkt great!" loading="lazy" />
+                  <figcaption className="t-caption secondary">A note from the team</figcaption>
                 </figure>
                 <figure className="case-feedback-shot">
                   <img src={`${BASE}/images/ig-feedback-x-followers.jpg`} alt="Invisible Garden’s X profile showing 2,007 followers, shared in the chat with the message: 2000+ followers strong!!" loading="lazy" />
@@ -484,7 +484,7 @@ export default function CaseInvisibleGardenView() {
               </div>
               <div className="case-feedback-col">
                 <figure className="case-feedback-shot">
-                  <img src={`${BASE}/images/ig-feedback-reel.jpg`} alt="Chat messages. Who made this? I love it, with a link to the Invisible Garden Moments reel on Instagram. Xixi Odyssey: I think it’s @this_aishah. Aishat: Yeah, I did." loading="lazy" />
+                  <img src={`${BASE}/images/ig-feedback-reel.jpg`} alt="Chat messages. Who made this? I love it, with a link to the Invisible Garden Moments reel on Instagram. A teammate: I think it’s @this_aishah. Aishat: Yeah, I did." loading="lazy" />
                   <figcaption className="t-caption secondary">The Invisible Garden Moments reel I made</figcaption>
                 </figure>
               </div>
