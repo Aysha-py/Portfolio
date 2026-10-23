@@ -128,44 +128,53 @@ export default function CaseOneDevView() {
               <span className="visually-hidden">(opens in a new tab)</span>
             </a>
             {" "}
-            <span className="type-tag">Content + community</span>
+            <span className="type-tag">Community management {"&"} content</span>
           </div>
           <h1 id="case-title" className="t-display case-title">
-            Connecting developers with the knowledge and people they need to{" "}
-            <span className="hl">grow</span>
+            Turning community interest into{" "}
+            <span className="hl">participation</span>
             .
           </h1>
           <p className="t-body-l case-lead">
-            I grew One Dev’s Web3 EdTech community to 8,000+ members through end-to-end programme delivery, well-curated content, community events and meaningful engagement, and anchored developer bootcamps for 200+ learners.
+            I managed One Dev’s community and expanded my responsibilities into social media, content creation, and program marketing. By connecting educational content with bootcamp promotion, community engagement, and participant feedback, I helped create more opportunities for developers to discover the community, participate in its programs, and continue learning.
           </p>
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
-              <dd className="t-body">Community manager</dd>
+              <dd className="t-body">Developer community manager</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Timeline</dt>
-              <dd className="t-body">[Month and year you started to month and year you finished]</dd>
+              <dd className="t-body">January 2024 – present</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Skills</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
-                  <li>Community management</li>
-                  <li>Developer education</li>
-                  <li>Content</li>
-                  <li>Community programmes</li>
+                  <li>Community management and moderation</li>
+                  <li>Community growth and engagement</li>
+                  <li>Social media management</li>
+                  <li>Program and bootcamp marketing</li>
+                  <li>Content strategy and creation</li>
+                  <li>Educational content writing</li>
+                  <li>Newsletter and blog writing</li>
+                  <li>Event coordination</li>
+                  <li>Audience research</li>
+                  <li>Participant feedback and testimonials</li>
+                  <li>Community reporting</li>
                 </ul>
               </dd>
             </div>
             <div className="case-fact">
-              <dt className="t-label">Focus areas</dt>
+              <dt className="t-label">Channels</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
-                  <li>Community engagement</li>
-                  <li>Educational content</li>
-                  <li>Developer programmes</li>
+                  <li>X (Twitter)</li>
+                  <li>LinkedIn</li>
+                  <li>Instagram</li>
+                  <li>Telegram</li>
                   <li>Newsletter</li>
+                  <li>Blog</li>
                 </ul>
               </dd>
             </div>
@@ -179,12 +188,17 @@ export default function CaseOneDevView() {
             Brief
           </h2>
           <div className="case-main">
-            <p className="t-body-l">One Dev supports people learning and building in Web3.</p>
-            <p className="t-body">
-              When I joined, the goal was to lead and grow a community of African developers passionate about learning and upskilling in emerging technologies, including Web3, AI and ML. The community was still growing, and it needed structured programmes, better engagement, and clear impact pathways.
+            <p className="t-body-l">
+              One Dev is a Web3-focused developer community that creates opportunities for people to learn, develop technical skills, and participate in educational programs.
             </p>
             <p className="t-body">
-              My job was to run end-to-end bootcamps that could onboard and upskill developers across Africa, while curating content, increasing brand visibility, driving community engagement, and collecting feedback that could support both internal learning and marketing.
+              When I joined, my primary responsibility was community management. Over time, that role expanded to include social media management, content creation, and the marketing of community programs.
+            </p>
+            <p className="t-body">
+              The work connected several activities that needed to support one another. Bootcamps needed visibility to attract participants. Social media and educational content needed to give people reasons to follow the community. Existing members needed communication, moderation, and opportunities to stay engaged. And the organisation needed participant feedback and testimonials to communicate the value of its programs to prospective partners.
+            </p>
+            <p className="t-body">
+              My role grew beyond managing the community itself. I helped connect the content, communication, and program operations that supported its growth and engagement.
             </p>
           </div>
         </div>
@@ -200,53 +214,66 @@ export default function CaseOneDevView() {
               <li className="case-step">
                 <span className="case-step-mark is-dot" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Bootcamps, end to end</h3>
+                  <h3 className="t-title">Understanding the audience</h3>
                   <p className="t-body">
-                    I designed onboarding flows, coordinated with tutors, facilitated live classes, shared real-time programme updates, and handled all post-programme communication.
+                    One Dev served a Web3-focused audience, so keeping people interested required an understanding of the topics they cared about, the skills they wanted to develop, and the kinds of learning opportunities that would encourage participation.
                   </p>
-                  <a className="work-cta case-step-link" href={"https://www.youtube.com/watch?v=yqNm6mAvo0s&t=307s"} target="_blank" rel="noopener">
-                    Watch a live class{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                    <span className="visually-hidden">(opens in a new tab)</span>
-                  </a>
+                  <p className="t-body">
+                    I researched relevant topics and explored what content could educate, engage, and retain community members. I used these insights to inform social media copy, educational content, blog posts, and newsletter communications.
+                  </p>
+                  <p className="t-body">
+                    The aim was to make the community’s content useful beyond announcements, giving people more reasons to follow its activities and stay connected.
+                  </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-half" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Workshops from feedback</h3>
+                  <h3 className="t-title">Turning programs into opportunities for participation</h3>
                   <p className="t-body">
-                    I organised community-led workshops and events based on members’ feedback, to solve specific developer challenges.
+                    Bootcamps were an important part of One Dev’s community activities. My responsibilities included creating registration forms, developing promotional copy, and distributing program announcements across social media, community channels, and the newsletter.
+                  </p>
+                  <p className="t-body">
+                    I coordinated promotional efforts across platforms, including using Nads.io to help distribute program information. I also used the newsletter to communicate upcoming programs to existing subscribers.
+                  </p>
+                  <p className="t-body">
+                    Rather than treating each bootcamp as an isolated event, I connected its promotion to the wider community ecosystem, helping people discover opportunities to learn and take the next step towards participation.
                   </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-ring" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Content</h3>
+                  <h3 className="t-title">Building a connected content presence</h3>
                   <p className="t-body">
-                    I curated and managed short- and long-form social media content across platforms, driving brand visibility and awareness.
+                    My responsibilities expanded across X, LinkedIn, and Instagram, where I created and published content to support community visibility and program promotion.
+                  </p>
+                  <p className="t-body">
+                    I also wrote blog posts, educational content, and newsletter copy to keep members informed, support learning, and maintain engagement between programs.
+                  </p>
+                  <p className="t-body">
+                    When One Dev’s original Instagram account was lost, I established a new account and continued building its presence. This was part of maintaining the organisation’s visibility across multiple digital channels.
+                  </p>
+                  <p className="t-body">
+                    The different platforms served complementary purposes: social media helped people discover the community and its programs, while newsletters and community channels helped communicate opportunities to people already connected to One Dev.
                   </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-pill" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Feedback as stories</h3>
+                  <h3 className="t-title">Managing community operations and learning from participants</h3>
                   <p className="t-body">
-                    I gathered participant feedback in visual, video and audio formats to support testimonials and future marketing campaigns.
+                    Beyond content and promotion, I managed community moderation and communication, including supporting bootcamp activities and helping participants stay informed throughout the program experience.
                   </p>
-                </div>
-              </li>
-              <li className="case-step">
-                <span className="case-step-mark is-dot" aria-hidden="true" />
-                <div className="case-step-body">
-                  <h3 className="t-title">Working across teams</h3>
                   <p className="t-body">
-                    I worked closely with the marketing and design team to align community efforts with broader growth and impact goals.
+                    I collected participant feedback and testimonials after sessions and programs, creating material that could support future marketing and partnership conversations.
+                  </p>
+                  <p className="t-body">
+                    Although the planned paid programs did not take place during my time in the role, these testimonials and feedback provided evidence of participant experiences that could be used when presenting One Dev’s work to prospective partner organisations.
+                  </p>
+                  <p className="t-body">
+                    This connected community operations with future program development and partnership efforts: the experience of existing participants could help communicate the value of the community to people and organisations considering working with it.
                   </p>
                 </div>
               </li>
@@ -261,43 +288,60 @@ export default function CaseOneDevView() {
             Results
           </h2>
           <div className="case-main">
-            <div className="case-tiles">
+            <div className="case-tiles is-five">
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Community</p>
+                  <p className="t-label">Community members</p>
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
                 <p className="t-figure">8,000+</p>
                 <p className="t-body secondary">
-                  <strong className="case-strong">Members</strong>
-                  {" "}across the community.
+                  Supported One Dev’s wider community ecosystem, which reached more than 8,000 members across its community channels.
                 </p>
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Newsletter</p>
+                  <p className="t-label">Newsletter subscribers</p>
                   <div className="round sh sh-primary case-tile-pill" aria-hidden="true" />
                 </div>
                 <p className="t-figure">6,300+</p>
                 <p className="t-body secondary">
-                  <strong className="case-strong">Subscribers</strong>
-                  .
+                  Worked with the newsletter as a communication channel for sharing program announcements and learning opportunities with an established audience.
                 </p>
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Bootcamps</p>
+                  <p className="t-label">Bootcamp learners</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
                 <p className="t-figure">200+</p>
                 <p className="t-body secondary">
-                  <strong className="case-strong">Learners</strong>
-                  {" "}reached.
+                  Supported the promotion and delivery of educational programs serving more than 200 bootcamp learners.
+                </p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">Re-established Instagram presence</p>
+                  <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
+                </div>
+                <p className="t-figure">55 followers</p>
+                <p className="t-body secondary">
+                  Created a new Instagram presence after the original account was lost, building the replacement account to 55 followers.
+                </p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">From program promotion to participant feedback</p>
+                  <div className="sh-ring case-tile-ring" aria-hidden="true" />
+                </div>
+                <p className="t-figure is-phrase">A connected community and content operation</p>
+                <p className="t-body secondary">
+                  Managed community engagement, social content, bootcamp promotion, newsletters, and participant feedback as connected parts of One Dev’s wider community activities.
                 </p>
               </div>
             </div>
             <p className="t-body-l">
-              I contributed to a community of 8,000+ members, a newsletter with 6,300+ subscribers, and bootcamps that reached 200+ learners.
+              Together, this work brought community management and content operations closer together. I helped people discover One Dev’s learning opportunities, supported communication throughout the community experience, and collected participant feedback that could inform future program marketing and partnership conversations.
             </p>
           </div>
         </div>
@@ -364,45 +408,34 @@ export default function CaseOneDevView() {
         <div className="container case-grid reveal">
           <h2 id="pieces-title" className="t-label case-label">
             <span className="label-dot" aria-hidden="true" />
-            Selected pieces
+            Selected work
           </h2>
           <div className="case-main">
             <ul className="pick-list">
               <li>
-                <a className="pick attend" href="https://onedev.club/blog/20-women-inspiring-blockchain-development-in-africa" target="_blank" rel="noopener">
+                <div className="pick is-todo">
                   <div className="pick-body">
-                    <p className="pick-meta">
-                      <span className="type-tag">Community storytelling</span>
-                      <span className="t-caption secondary">One Dev</span>
-                    </p>
-                    <h3 className="t-title pick-title">20 Women Inspiring Blockchain Development in Africa</h3>
+                    <p className="pick-meta"><span className="type-tag">Social media</span></p>
+                    <h3 className="t-title pick-title">Bootcamp promotion</h3>
                     <p className="t-body secondary pick-note">
-                      A feature celebrating women building in African blockchain ecosystems. It shows how content can recognise community members, make their work visible, and give others people to learn from.
+                      Social media copy and program announcements created to communicate learning opportunities and encourage registrations.
                     </p>
-                    {" "}
-                    <span className="work-cta">
-                      Read the article{" "}
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M7 7h10v10" />
-                        <path d="M7 17 17 7" />
-                      </svg>
-                    </span>
-                    <span className="visually-hidden">(opens in a new tab)</span>
+                    <p className="t-caption case-todo">[Add a link or screenshot of a bootcamp promotional post.]</p>
                   </div>
                   {" "}
-                  <span className="pick-mark" aria-hidden="true"><span className="shape sh-ring mark-ring" /></span>
-                </a>
+                  <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-secondary mark-circle" /></span>
+                </div>
               </li>
               <li>
                 <a className="pick attend" href="https://onedev.club/blog/how-to-become-a-web3-developer-free-resources-included" target="_blank" rel="noopener">
                   <div className="pick-body">
                     <p className="pick-meta">
-                      <span className="type-tag">Educational content</span>
+                      <span className="type-tag">Blog post</span>
                       <span className="t-caption secondary">One Dev</span>
                     </p>
-                    <h3 className="t-title pick-title">How to Become a Web3 Developer: Free Resources Included</h3>
+                    <h3 className="t-title pick-title">Educational content</h3>
                     <p className="t-body secondary pick-note">
-                      A beginner-focused guide that breaks a broad learning goal into practical steps and resources, helping readers find a starting point in Web3 development.
+                      Content developed to help the Web3 community learn, explore relevant topics, and stay engaged beyond program announcements.
                     </p>
                     {" "}
                     <span className="work-cta">
@@ -415,8 +448,36 @@ export default function CaseOneDevView() {
                     <span className="visually-hidden">(opens in a new tab)</span>
                   </div>
                   {" "}
-                  <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-pill" /></span>
+                  <span className="pick-mark" aria-hidden="true"><span className="shape half-round sh sh-primary mark-half" /></span>
                 </a>
+              </li>
+              <li>
+                <div className="pick is-todo">
+                  <div className="pick-body">
+                    <p className="pick-meta"><span className="type-tag">Newsletter</span></p>
+                    <h3 className="t-title pick-title">Newsletter marketing</h3>
+                    <p className="t-body secondary pick-note">
+                      Newsletter copy used to communicate upcoming programs and mobilise One Dev’s existing subscriber base.
+                    </p>
+                    <p className="t-caption case-todo">[Add a screenshot of a newsletter promoting a bootcamp or community program.]</p>
+                  </div>
+                  {" "}
+                  <span className="pick-mark" aria-hidden="true"><span className="shape sh-ring mark-ring" /></span>
+                </div>
+              </li>
+              <li>
+                <div className="pick is-todo">
+                  <div className="pick-body">
+                    <p className="pick-meta"><span className="type-tag">Community</span></p>
+                    <h3 className="t-title pick-title">Community feedback and testimonials</h3>
+                    <p className="t-body secondary pick-note">
+                      Participant feedback collected to support program marketing and demonstrate the value of One Dev’s learning opportunities to prospective partners.
+                    </p>
+                    <p className="t-caption case-todo">[Add an anonymised feedback or testimonial example, with permission.]</p>
+                  </div>
+                  {" "}
+                  <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-pill" /></span>
+                </div>
               </li>
             </ul>
           </div>
@@ -443,11 +504,10 @@ export default function CaseOneDevView() {
               <span className="label-dot" aria-hidden="true" />
               Let’s talk
             </p>
-            <h2 id="lets-talk-title" className="t-heading-s">
-              Have a project that needs clearer content, a more engaged community, or both? I'd love to hear about it.
-            </h2>
+            <h2 id="lets-talk-title" className="t-heading-s">Have a project that needs a thoughtful approach to community, content, or program engagement?</h2>
+            <p className="t-body-l">I’d love to hear about it.</p>
             <div className="lets-talk-links">
-              <a className="jump-link" href={`${BASE}/contact/`}>
+              <a className="jump-link" href="mailto:m.aishat9890@gmail.com">
                 <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
                 <span className="icon-btn" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -455,13 +515,6 @@ export default function CaseOneDevView() {
                     <path d="m12 5 7 7-7 7" />
                   </svg>
                 </span>
-              </a>
-              {" "}
-              <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
-              {" "}
-              <a className="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
-                LinkedIn
-                <span className="visually-hidden">(opens in a new tab)</span>
               </a>
             </div>
           </div>
