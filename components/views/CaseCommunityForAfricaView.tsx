@@ -131,40 +131,28 @@ export default function CaseCommunityForAfricaView() {
             <span className="type-tag">Content + community</span>
           </div>
           <h1 id="case-title" className="t-display case-title">
-            Turning community learning into{" "}
-            <span className="hl">practical resources</span>
+            Helping community builders learn, connect, and{" "}
+            <span className="hl">grow</span>
             .
           </h1>
-          <p className="t-body-l case-lead">
-            I led, grew and nurtured Community for Africa’s online community of community managers and creatives, through meaningful engagement, events and a positive environment.
-          </p>
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
-              <dd className="t-body">Community manager</dd>
+              <dd className="t-body">Community moderator (volunteer)</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Timeline</dt>
-              <dd className="t-body">[Month and year you started to month and year you finished]</dd>
-            </div>
-            <div className="case-fact">
-              <dt className="t-label">Skills</dt>
-              <dd className="t-body">
-                <ul className="case-fact-list">
-                  <li>Community management</li>
-                  <li>Educational content</li>
-                  <li>Resource development</li>
-                </ul>
-              </dd>
+              <dd className="t-body">February 2024 – September 2025</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Focus areas</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
                   <li>Community engagement</li>
-                  <li>Events</li>
-                  <li>Educational content</li>
-                  <li>Learning resources</li>
+                  <li>Educational resources</li>
+                  <li>Event moderation</li>
+                  <li>Content</li>
+                  <li>Member acquisition</li>
                 </ul>
               </dd>
             </div>
@@ -179,10 +167,10 @@ export default function CaseCommunityForAfricaView() {
           </h2>
           <div className="case-main">
             <p className="t-body-l">
-              Community for Africa supports people learning and connecting across the community management ecosystem.
+              Community for Africa brings community builders together to exchange ideas, share practical experience, and learn how to build more effective communities.
             </p>
             <p className="t-body">
-              Its mission is to empower African community managers and creatives to learn, grow, and connect. When I joined, my job was to lead, grow, and nurture a community space that was not only active, but also welcoming, educative, and aligned with that mission.
+              As a volunteer moderator, my contribution extended beyond keeping conversations active. I supported community learning and engagement through discussions, educational resources, and activities designed to help members develop their skills and connect with one another.
             </p>
           </div>
         </div>
@@ -198,54 +186,36 @@ export default function CaseCommunityForAfricaView() {
               <li className="case-step">
                 <span className="case-step-mark is-dot" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Events</h3>
+                  <h3 className="t-title">Created a practical resource for community managers</h3>
                   <p className="t-body">
-                    I organised and moderated community events and learning sessions to equip community managers with the skills and knowledge they need.
+                    I designed and launched the Community Manager Skills Audit Sheet, giving community professionals a structured way to assess their skills and identify areas for development. The resource generated more than 100 downloads, extending its value beyond individual conversations in the community.
                   </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-half" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Skills Audit Sheet</h3>
+                  <h3 className="t-title">Facilitated conversations and knowledge-sharing</h3>
                   <p className="t-body">
-                    I created the Skills Audit Sheet, a downloadable resource that helps community managers evaluate their strengths, identify gaps, and track their growth.
+                    I hosted panel discussions and X Spaces that brought community builders together to exchange practical insights, discuss community-building challenges, and explore approaches to building sustainable communities.
                   </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-ring" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Content</h3>
+                  <h3 className="t-title">Developed content that encouraged participation</h3>
                   <p className="t-body">
-                    I created written and video content for members’ professional development, which sparked conversations and increased brand awareness and visibility.
+                    I created consistent community content and engagement activities to give members reasons to interact, contribute their perspectives, and remain involved in ongoing conversations.
                   </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-pill" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Masterclasses</h3>
+                  <h3 className="t-title">Supported community growth through events and onboarding</h3>
                   <p className="t-body">
-                    I carried out an upsell strategy for paid masterclasses, contributing directly to Community for Africa’s revenue.
-                  </p>
-                </div>
-              </li>
-              <li className="case-step">
-                <span className="case-step-mark is-dot" aria-hidden="true" />
-                <div className="case-step-body">
-                  <h3 className="t-title">Reporting</h3>
-                  <p className="t-body">
-                    I tracked community growth and engagement, shared regular reports, and worked with the team to keep the community calendar aligned.
-                  </p>
-                </div>
-              </li>
-              <li className="case-step">
-                <span className="case-step-mark is-half" aria-hidden="true" />
-                <div className="case-step-body">
-                  <h3 className="t-title">Everyday care</h3>
-                  <p className="t-body">
-                    I started conversations, answered questions, upheld the community guidelines and supported members within the community.
+                    I contributed to virtual events and integrated registration funnels designed to make it easier for prospective members to discover the community and join. I also aligned community operations, content, and reporting with measurable goals to support a more repeatable approach to future initiatives.
                   </p>
                 </div>
               </li>
@@ -260,29 +230,55 @@ export default function CaseCommunityForAfricaView() {
             Results
           </h2>
           <div className="case-main">
-            <div className="case-tiles">
+            <div className="case-tiles is-pairs">
               <div className="tile">
                 <div className="tile-head">
                   <p className="t-label">Skills Audit Sheet</p>
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
                 <p className="t-figure">100+</p>
-                <p className="t-body secondary">
-                  <strong className="case-strong">Downloads</strong>
-                  , with positive feedback from the community.
-                </p>
+                <p className="t-body secondary">Downloads of the Community Manager Skills Audit Sheet.</p>
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">[Another result]</p>
+                  <p className="t-label">Member acquisition</p>
+                  <div className="round sh sh-primary case-tile-pill" aria-hidden="true" />
+                </div>
+                <p className="t-figure">40%</p>
+                <p className="t-body secondary">Reported increase in member acquisition through virtual events and integrated registration funnels.</p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">Knowledge-sharing</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">[Number]</p>
-                <p className="t-body secondary">[For example: members, events hosted or masterclass sign-ups.]</p>
+                <p className="t-figure is-phrase">Ongoing knowledge-sharing and engagement</p>
+                <p className="t-body secondary">Through panel discussions, X Spaces, and consistent community content.</p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">Community initiatives</p>
+                  <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
+                </div>
+                <p className="t-figure is-phrase">A more repeatable approach to community initiatives</p>
+                <p className="t-body secondary">Through the alignment of operations, content, and reporting with measurable goals.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="reflection" className="case-section" aria-labelledby="reflection-title">
+        <div className="container case-grid reveal">
+          <h2 id="reflection-title" className="t-label case-label">
+            <span className="label-dot" aria-hidden="true" />
+            What this experience taught me
+          </h2>
+          <div className="case-main">
             <p className="t-body-l">
-              The Skills Audit Sheet reached 100+ downloads, giving community members a practical tool they could use beyond individual sessions.
+              Community engagement becomes more valuable when it gives people something they can use beyond the conversation itself. A useful resource can help someone identify a skill gap; a thoughtful discussion can introduce a new perspective; and a clear path into a community can turn initial interest into participation.
+            </p>
+            <p className="t-body-l">
+              My work with Community for Africa brought these elements together, combining moderation with practical education, content, and activities designed to help community builders grow.
             </p>
           </div>
         </div>

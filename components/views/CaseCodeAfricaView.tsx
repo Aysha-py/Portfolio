@@ -131,13 +131,10 @@ export default function CaseCodeAfricaView() {
             <span className="type-tag">Content + community</span>
           </div>
           <h1 id="case-title" className="t-display case-title">
-            Connecting conference promotion with{" "}
-            <span className="hl">community participation</span>
+            Building the communications and community operations behind a{" "}
+            <span className="hl">pan-African Web3 event</span>
             .
           </h1>
-          <p className="t-body-l case-lead">
-            I supported Code Africa Conference’s promotion and community operations, connecting promotional messaging with community outreach and on-the-ground coordination to help turn awareness into registrations.
-          </p>
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
@@ -178,11 +175,12 @@ export default function CaseCodeAfricaView() {
             Brief
           </h2>
           <div className="case-main">
-            <p className="t-body-l">Code Africa brought together people across the African Web3 ecosystem.</p>
-            <p className="t-body">
-              In the run-up to the conference, One Dev ran a pre-event series, including a community AMA on X Spaces and a city tour in Nigeria.
+            <p className="t-body-l">
+              Code Africa Conference was a pan-African Web3 event organized by One Dev, bringing together developers and other ecosystem participants. My work on the project extended beyond my regular community management responsibilities into event marketing, ambassador and volunteer coordination, and stakeholder communications.
             </p>
-            <p className="t-body secondary case-todo">[When and where the conference took place, and who it was for.]</p>
+            <p className="t-body">
+              The challenge was to coordinate several groups working toward the same event: prospective attendees, ambassadors promoting the conference to their networks, volunteers supporting delivery, and speakers and stakeholders who needed consistent communication.
+            </p>
           </div>
         </div>
       </section>
@@ -197,49 +195,45 @@ export default function CaseCodeAfricaView() {
               <li className="case-step">
                 <span className="case-step-mark is-dot" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Campaign content</h3>
-                  <p className="t-body">I wrote campaign copy and distributed content to promote the conference.</p>
+                  <h3 className="t-title">Led event communications and promotional content</h3>
+                  <p className="t-body">
+                    I wrote social media copy and coordinated promotional activities throughout the event cycle. This included a profile-picture campaign encouraging people to show their intention to attend, as well as organizing pre-event sessions and moderating two sessions.
+                  </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-half" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Pre-event series</h3>
+                  <h3 className="t-title">Managed the ambassador programme</h3>
                   <p className="t-body">
-                    I spoke at Road to Code Africa Conference, a community AMA on X Spaces about community potential and impact.
+                    I published the call for ambassadors, coordinated participants, and developed promotional copy they could share with their own audiences, particularly developers in the Web3 ecosystem. Because the programme included paid incentives tied to performance, I also maintained a Google Sheets tracker to monitor ambassador activity and the registrations they generated.
                   </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-ring" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">City tour</h3>
+                  <h3 className="t-title">Coordinated volunteers across locations</h3>
                   <p className="t-body">
-                    At the City Tour in Nigeria, I represented One Dev and shared its vision to help African builders upskill in emerging technologies like blockchain and AI.
+                    I led volunteers working remotely and in Kenya, assigned responsibilities, managed communications, and followed up to keep activities on track. During the conference, I coordinated this work remotely from Nigeria rather than being physically present at the venue.
                   </p>
-                  <a className="work-cta case-step-link" href="https://x.com/this_aishah_/status/1921856166339940569" target="_blank" rel="noopener">
-                    See the post{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                    <span className="visually-hidden">(opens in a new tab)</span>
-                  </a>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-pill" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Ambassadors</h3>
-                  <p className="t-body">I supported the ambassador campaign, connecting promotional messaging with community outreach.</p>
+                  <h3 className="t-title">Managed speaker and stakeholder communications</h3>
+                  <p className="t-body">
+                    I handled correspondence and follow-ups, gathered updates on outstanding tasks, and shared progress and debriefs with the co-founder to help keep the wider team aligned.
+                  </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-dot" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Volunteers</h3>
+                  <h3 className="t-title">Supported live event coverage</h3>
                   <p className="t-body">
-                    I coordinated volunteers across the conference effort, from outreach to on-the-ground coordination, to support conference delivery.
+                    While the conference was taking place in Kenya, I updated the event’s social media channels from Nigeria, helping extend the experience beyond the physical venue.
                   </p>
                 </div>
               </li>
@@ -257,26 +251,26 @@ export default function CaseCodeAfricaView() {
             <div className="case-tiles">
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Campaign</p>
+                  <p className="t-label">Registrations</p>
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
                 <p className="t-figure">3,000+</p>
-                <p className="t-body secondary">
-                  <strong className="case-strong">Registrations</strong>
-                  {" "}for the conference.
-                </p>
+                <p className="t-body secondary">Registrations for the conference.</p>
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">[Volunteers or ambassadors]</p>
+                  <p className="t-label">Attendees</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">[Number]</p>
-                <p className="t-body secondary">[How many volunteers or ambassadors you coordinated.]</p>
+                <p className="t-figure">1,500</p>
+                <p className="t-body secondary">Attendees at the conference.</p>
               </div>
             </div>
             <p className="t-body-l">
-              I contributed to a campaign that generated 3,000+ registrations, while coordinating volunteers and ambassadors across the conference effort.
+              The conference attracted 3,000+ registrations and 1,500 attendees. These were collective team outcomes, supported by coordinated marketing, ambassador-led promotion, and the work of volunteers and other contributors.
+            </p>
+            <p className="t-body-l">
+              My contribution connected the different parts of that effort, from creating promotional content and coordinating distribution to tracking ambassador activity and keeping people aligned throughout the event.
             </p>
           </div>
         </div>

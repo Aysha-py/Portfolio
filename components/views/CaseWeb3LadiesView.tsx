@@ -131,30 +131,17 @@ export default function CaseWeb3LadiesView() {
             <span className="type-tag">Community</span>
           </div>
           <h1 id="case-title" className="t-display case-title">
-            Turning community needs into opportunities to{" "}
-            <span className="hl">learn and grow</span>
+            Building the systems and programmes that help a{" "}
+            <span className="hl">community grow</span>
             .
           </h1>
-          <p className="t-body-l case-lead">
-            As Web3Ladies’ Community Lead, I work across community operations, programme development and ecosystem engagement, using member insights to shape initiatives around what the community needs.
-          </p>
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
-              <dd className="t-body">Community Lead</dd>
-            </div>
-            <div className="case-fact">
-              <dt className="t-label">Timeline</dt>
-              <dd className="t-body">Since 2023, Community Lead since November 2025</dd>
-            </div>
-            <div className="case-fact">
-              <dt className="t-label">Skills</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
-                  <li>Community leadership</li>
-                  <li>Programme development</li>
-                  <li>Ecosystem partnerships</li>
-                  <li>Community engagement</li>
+                  <li>Community contributor (2023 – October 2025)</li>
+                  <li>Community lead (November 2025 – present)</li>
                 </ul>
               </dd>
             </div>
@@ -162,10 +149,10 @@ export default function CaseWeb3LadiesView() {
               <dt className="t-label">Focus areas</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
-                  <li>Community programmes</li>
-                  <li>Ecosystem partnerships</li>
-                  <li>Member engagement</li>
                   <li>Community operations</li>
+                  <li>Educational programmes</li>
+                  <li>Ecosystem partnerships</li>
+                  <li>Content and engagement</li>
                 </ul>
               </dd>
             </div>
@@ -180,13 +167,13 @@ export default function CaseWeb3LadiesView() {
           </h2>
           <div className="case-main">
             <p className="t-body-l">
-              Web3Ladies creates opportunities for women to learn, build, and grow within the AI and Web3 ecosystem.
+              Web3Ladies is a community focused on helping women access learning opportunities, develop technical skills, and participate in the technology and Web3 ecosystem.
             </p>
             <p className="t-body">
-              It is a non-profit committed to onboarding, educating and empowering women with sought-after blockchain skills to thrive in the Web3 ecosystem. My passion for female empowerment, tech advocacy and Web3 found a perfect intersection there.
+              Contributing to a community of this scale requires more than keeping conversations active. Members need clear entry points, useful resources, opportunities to learn, and programmes that encourage them to move from simply being part of the community to actively participating in it.
             </p>
             <p className="t-body">
-              I have contributed to the community since 2023 and became Community Lead in November 2025. The goal is clear: foster a community of women ready to build in the Web3 space.
+              I began contributing to Web3Ladies in 2023 and later stepped into the Community Lead role in November 2025. Across these roles, my work has spanned community operations, educational programming, content, member onboarding, and relationships with ecosystem partners.
             </p>
           </div>
         </div>
@@ -202,84 +189,51 @@ export default function CaseWeb3LadiesView() {
               <li className="case-step">
                 <span className="case-step-mark is-dot" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Build with AI</h3>
+                  <h3 className="t-title">Made community participation easier to navigate</h3>
                   <p className="t-body">
-                    I designed and led Build with AI, turning the programme concept into an executable plan that brought together four expert-led sessions and generated seven project submissions from 100+ registrations.
+                    I supported day-to-day community operations across WhatsApp and Discord, including moderation, announcements, onboarding, and regular engagement. As the community transitioned from Slack to Discord, I helped document the transition, developed navigation resources, and supported onboarding calls so members could understand where to find information and participate.
+                  </p>
+                  <p className="t-body">
+                    I also worked on recurring content calendars, onboarding communications, and community updates to make information easier to access and keep members connected to ongoing activities.
                   </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-half" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Workshops and AMAs</h3>
+                  <h3 className="t-title">Turned learning opportunities into practical programmes</h3>
                   <p className="t-body">
-                    I curated technical workshops and hosted AMA sessions to equip women with relevant blockchain skills and education.
+                    I helped develop and lead Build with AI, a programme designed to give women opportunities to learn by building rather than only consuming educational content. My work included programme planning, speaker research and outreach, promotional communications, and coordinating the community-facing experience.
                   </p>
-                  <a className="work-cta case-step-link" href={"https://www.youtube.com/watch?v=klbOztg-Y9Q&t=5s"} target="_blank" rel="noopener">
-                    Watch a session{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                    <span className="visually-hidden">(opens in a new tab)</span>
-                  </a>
+                  <p className="t-body">
+                    The programme attracted more than 100 registrations and created an opportunity for participants to engage with AI through practical projects.
+                  </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-ring" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Web2block series</h3>
-                  <p className="t-body">I organised the Web2block series, a community event to bridge the entry gap for Web3 newcomers.</p>
-                  <a className="work-cta case-step-link" href="https://x.com/web3ladies/status/1831037172130209794" target="_blank" rel="noopener">
-                    See the series{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                    <span className="visually-hidden">(opens in a new tab)</span>
-                  </a>
+                  <h3 className="t-title">Built relationships that created opportunities for members</h3>
+                  <p className="t-body">
+                    I conducted outreach to ecosystem organisations, researched potential speakers and collaborators, and supported partnership conversations from initial contact through coordination.
+                  </p>
+                  <p className="t-body">
+                    This work included engaging Cursor AI Nigeria around Build with AI, pursuing a QA workshop collaboration with Scandium, and supporting a Polkadot-related scholarship opportunity for a community member.
+                  </p>
+                  <p className="t-body">
+                    These relationships served different purposes, from bringing expertise into educational programming to connecting members with opportunities beyond the community itself.
+                  </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-pill" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Partnerships</h3>
+                  <h3 className="t-title">Used content to connect members with opportunities</h3>
                   <p className="t-body">
-                    I coordinated key partnerships, including hackathons where members built on-chain projects, and launched a Layer 2 initiative to help women tap into different blockchain ecosystems. A collaboration with the Polkadot ecosystem opened up scholarships for members.
+                    I wrote and coordinated community-facing content, including educational pieces, announcements, programme promotions, and outreach communications. I also shared relevant content across external Slack communities, extending distribution beyond the community’s primary channels.
                   </p>
-                  <a className="work-cta case-step-link" href="https://x.com/Pazil24/status/1911789033195200670" target="_blank" rel="noopener">
-                    See the scholarships{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                    <span className="visually-hidden">(opens in a new tab)</span>
-                  </a>
-                </div>
-              </li>
-              <li className="case-step">
-                <span className="case-step-mark is-dot" aria-hidden="true" />
-                <div className="case-step-body">
-                  <h3 className="t-title">YouTube</h3>
                   <p className="t-body">
-                    I revived and managed the Web3Ladies YouTube channel, building a knowledge base members can come back to and learn from at their own pace.
-                  </p>
-                  <a className="work-cta case-step-link" href="https://www.youtube.com/@Web3Ladies" target="_blank" rel="noopener">
-                    Visit the channel{" "}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                    <span className="visually-hidden">(opens in a new tab)</span>
-                  </a>
-                </div>
-              </li>
-              <li className="case-step">
-                <span className="case-step-mark is-half" aria-hidden="true" />
-                <div className="case-step-body">
-                  <h3 className="t-title">Representing Web3Ladies</h3>
-                  <p className="t-body">
-                    I represent Web3Ladies at events, from GITEX Nigeria to the DSF x Stellar meetup, increasing brand visibility and trust.
+                    Rather than treating content as a separate activity, I used it to help members understand what was available, why it mattered, and how they could take part.
                   </p>
                 </div>
               </li>
@@ -294,54 +248,68 @@ export default function CaseWeb3LadiesView() {
             Results
           </h2>
           <div className="case-main">
-            <div className="case-tiles is-pairs">
+            <p className="t-body-l">
+              My work has contributed to a community ecosystem with substantial reach, while supporting more structured participation through programmes, onboarding, and partner engagement.
+            </p>
+            <div className="case-tiles is-five">
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Community</p>
+                  <p className="t-label">Community ecosystem</p>
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
-                <p className="t-figure">15,000+</p>
-                <p className="t-body secondary">
-                  <strong className="case-strong">Members</strong>
-                  {" "}across platforms.
-                </p>
+                <p className="t-figure">150,000+</p>
+                <p className="t-body secondary">Members across the broader Web3Ladies community ecosystem.</p>
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Events</p>
+                  <p className="t-label">Cross-platform growth</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">50+</p>
-                <p className="t-body secondary">
-                  <strong className="case-strong">Events</strong>
-                  {" "}hosted.
-                </p>
+                <p className="t-figure">16,000+</p>
+                <p className="t-body secondary">Cross-platform growth supported across social and community platforms.</p>
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Education</p>
+                  <p className="t-label">Content</p>
                   <div className="round sh sh-primary case-tile-pill" aria-hidden="true" />
                 </div>
-                <p className="t-figure">3,000+</p>
-                <p className="t-body secondary">
-                  <strong className="case-strong">Women trained</strong>
-                  {" "}across Africa in foundational and technical blockchain education.
-                </p>
+                <p className="t-figure">20+</p>
+                <p className="t-body secondary">Pieces of content written to support education, announcements, and programme participation.</p>
               </div>
               <div className="tile">
                 <div className="tile-head">
                   <p className="t-label">Build with AI</p>
-                  <div className="sh-ring case-tile-ring" aria-hidden="true" />
+                  <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
                 <p className="t-figure">100+</p>
+                <p className="t-body secondary">Registrations for Build with AI.</p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">Partner outreach</p>
+                  <div className="sh-ring case-tile-ring" aria-hidden="true" />
+                </div>
+                <p className="t-figure is-phrase">Cross-ecosystem opportunities</p>
                 <p className="t-body secondary">
-                  <strong className="case-strong">Registrations</strong>
-                  , and seven project submissions.
+                  Pursued through partner outreach, including educational programming and a scholarship opportunity for a member.
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="reflection" className="case-section" aria-labelledby="reflection-title">
+        <div className="container case-grid reveal">
+          <h2 id="reflection-title" className="t-label case-label">
+            <span className="label-dot" aria-hidden="true" />
+            What this experience taught me
+          </h2>
+          <div className="case-main">
             <p className="t-body-l">
-              I also grew the Web3Ladies YouTube audience by over 50%, driving content engagement and learning members can do at their own pace.
+              Community growth is only one part of building a useful community. The other part is creating the conditions for people to participate: making information accessible, connecting members to relevant opportunities, designing programmes around practical learning, and building relationships that bring new resources into the ecosystem.
+            </p>
+            <p className="t-body-l">
+              At Web3Ladies, my work brings those elements together. It sits at the intersection of community operations, content, programming, and ecosystem engagement, with a focus on helping members find clearer pathways from access to participation.
             </p>
           </div>
         </div>
