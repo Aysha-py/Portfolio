@@ -614,6 +614,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .always-lit .sh-secondary{background:var(--color-accent-secondary);}
 .always-lit .sh-ring{border-color:var(--shape-ring-color);}
 .t-figure{margin:0;font-size:var(--type-heading-size);line-height:var(--type-heading-leading);font-weight:var(--weight-heading);letter-spacing:var(--type-heading-tracking);font-variant-numeric:tabular-nums;}
+.t-figure.is-phrase{font-size:var(--type-heading-s-size);line-height:var(--type-heading-s-leading);letter-spacing:var(--type-heading-s-tracking);text-wrap:balance;}
+.case-step-body .t-body + .t-body{margin-top:var(--space-tight);}
 .case-strong{font-weight:var(--weight-strong);color:var(--color-text-primary);}
 .case-shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-element);}
 .case-shot{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;}
