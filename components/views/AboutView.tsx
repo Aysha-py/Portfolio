@@ -175,8 +175,8 @@ export default function AboutView() {
               Writing
             </p>
             <h2 id="writing-title" className="t-heading">
-              Selected{" "}
-              <span className="hl">writings</span>
+              Personal research and{" "}
+              <span className="hl">writing</span>
             </h2>
             <p className="t-body-l secondary">
               When a technical idea catches my attention, I research it until it makes sense, then write it down for the next person. Here are a few pieces on open source, Web3 and developer fundamentals.
