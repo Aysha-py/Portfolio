@@ -113,14 +113,6 @@ export default function CaseCommunityForAfricaView() {
       </header>
       <section className="page-intro case-intro" aria-labelledby="case-title">
         <div className="container stack reveal case-intro-inner">
-          <a className="back-link" href={`${BASE}/work/#work-list`}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="m12 19-7-7 7-7" />
-              <path d="M19 12H5" />
-            </svg>
-            All work
-          </a>
-          {" "}
           <p className="t-label">
             <span className="label-dot" aria-hidden="true" />
             Case study

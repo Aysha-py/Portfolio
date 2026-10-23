@@ -555,7 +555,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 }
 /* end article list */
 /* ===== Case study ===== */
-/* component: a case study page. Intro (back link, organisation, title, lead and the facts), then sections with the
+/* component: a case study page. Intro (organisation, title, lead and the facts), then sections with the
    label on the left and the content on the right: About, How I approached it, Results (figure tiles), Visuals
    (photos, or marked frames for ones still to come), Selected pieces and Feedback */
 /* primitive */
@@ -573,8 +573,6 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 --case-title-measure:980px;
 --case-org-logo:var(--primitive-size-40);
 --case-org-name-color:var(--color-text-emphasis);
---case-back-color:var(--color-text-secondary);
---case-back-hover:var(--color-text-emphasis);
 --case-facts-gap:var(--space-cluster);
 --case-step-mark:var(--primitive-size-12);
 --case-step-ring:var(--color-accent-stroke);
@@ -590,8 +588,6 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-intro-inner{gap:var(--space-cluster);}
 .case-title{max-width:var(--case-title-measure);}
 .case-lead{max-width:var(--case-lead-measure);}
-.back-link{display:inline-flex;align-items:center;gap:var(--space-tight);align-self:flex-start;margin-bottom:var(--space-element);font-size:var(--type-body-size);line-height:var(--type-body-leading);font-weight:var(--weight-ui);color:var(--case-back-color);text-decoration:none;transition:color var(--motion-fast) var(--motion-ease);}
-.back-link:hover{color:var(--case-back-hover);}
 .case-org{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-related) var(--space-element);}
 .case-org .org-link.is-mark img{height:var(--case-org-logo);}
 .case-org-name{font-size:var(--type-heading-s-size);line-height:var(--type-heading-s-leading);font-weight:var(--weight-heading);letter-spacing:var(--type-heading-s-tracking);color:var(--case-org-name-color);text-decoration:none;}
@@ -743,7 +739,6 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <section class="page-intro case-intro" aria-labelledby="case-title">
 <div class="container stack reveal case-intro-inner">
-<a class="back-link" href="Work.dc.html#work-list"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>All work</a>
 <p class="t-label"><span class="label-dot" aria-hidden="true"></span>Case study</p>
 <div class="case-org">
 <a class="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" tabindex="-1" aria-hidden="true"><img class="logo-light" src="/_blob/ba82c2d6cc5201262edf417fd5dea012" alt=""><img class="logo-dark" src="/_blob/2eea2ce27dc43a935a0588b786bfa290" alt=""></a>

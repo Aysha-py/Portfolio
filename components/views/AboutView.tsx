@@ -158,19 +158,6 @@ export default function AboutView() {
                 I’m not trying to become someone who has all the answers. I’d rather keep asking better questions, keep learning, and keep moving with intention.
               </p>
               <p className="t-body-l">I’m still becoming. And that’s the point.</p>
-              <div style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-                <div className="section-next" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-                  <a className="jump-link" href="#writing">
-                    <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Selected writings</span>
-                    <span className="icon-btn" aria-hidden="true">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M12 5v14" />
-                        <path d="m19 12-7 7-7-7" />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
             </article>
             <div className="about-photos">
               <figure className="about-photo">
@@ -366,17 +353,6 @@ export default function AboutView() {
                 <path d="M7 17 17 7" />
               </svg>
               <span className="visually-hidden">(opens in a new tab)</span>
-            </a>
-          </div>
-          <div className="section-next is-right" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-            <a className="jump-link" href="#moments">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Some favourite moments</span>
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
             </a>
           </div>
         </div>

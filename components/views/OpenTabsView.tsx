@@ -260,17 +260,6 @@ export default function OpenTabsView() {
               </a>
             </div>
           </div>
-          <div className="section-next is-right" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-            <a className="jump-link" href="#writing">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next tab: Writing</span>
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
       <section id="writing" className="tab-section" aria-labelledby="rr-title">
@@ -354,17 +343,6 @@ export default function OpenTabsView() {
                 </svg>
               </figure>
             </div>
-          </div>
-          <div className="section-next" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-            <a className="jump-link" href="#open-source">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next tab: Open source</span>
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
           </div>
         </div>
       </section>
@@ -477,17 +455,6 @@ export default function OpenTabsView() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="section-next is-right" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-            <a className="jump-link" href="#volunteering">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next tab: Volunteering</span>
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
           </div>
         </div>
       </section>

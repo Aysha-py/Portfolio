@@ -133,17 +133,6 @@ export default function TalkShelfView() {
               Since 2023, I’ve spoken at 17 events through a mix of in-person gatherings, online sessions, and X Spaces. Here’s where I’ve gathered some of those conversations.
             </p>
           </div>
-          {" "}
-          <a className="jump-link" href="#shelf" style={{alignSelf: "flex-start", marginTop: "var(--space-element)"} as React.CSSProperties}>
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Browse the shelf</span>
-            {" "}
-            <span className="icon-btn" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M12 5v14" />
-                <path d="m19 12-7 7-7-7" />
-              </svg>
-            </span>
-          </a>
         </div>
       </section>
       <section id="shelf" aria-labelledby="shelf-title" style={{paddingBlock: "var(--space-group) var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
@@ -338,18 +327,6 @@ export default function TalkShelfView() {
               </div>
             </div>
           </div>
-          <div className="section-next is-right" style={{marginTop: "var(--space-stack)"} as React.CSSProperties}>
-            <a className="jump-link" href="#topics">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>What I talk about</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
       <section id="topics" className="always-lit" aria-labelledby="topics-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
@@ -408,18 +385,6 @@ export default function TalkShelfView() {
               </div>
             </li>
           </ul>
-          <div className="section-next">
-            <a className="jump-link" href="#media-kit">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get the media kit</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
       <section id="media-kit" aria-labelledby="kit-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>

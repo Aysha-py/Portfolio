@@ -123,17 +123,6 @@ export default function HomeView() {
               <span className="hl">earn attention</span>
               {" "}through content that audiences care about.
             </h1>
-            {" "}
-            <a className="jump-link" href="#workflow" style={{alignSelf: "flex-start", marginTop: "var(--space-element)"} as React.CSSProperties}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See how I work</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
           </div>
           <div className="hero-photo">
             <img src={`${BASE}/images/headshot.jpg`} alt="Aishat Muhammed smiling, in an orange hijab, glasses and a black abaya" />
@@ -185,18 +174,6 @@ export default function HomeView() {
                 </p>
               </li>
             </ol>
-          </div>
-          <div className="section-next is-right">
-            <a className="jump-link" href="#numbers">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See the results</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
           </div>
         </div>
       </section>
@@ -286,18 +263,6 @@ export default function HomeView() {
                 {" "}Contributed to content, onboarding, and programmes supporting a growing community of women exploring blockchain, AI, and emerging technologies.
               </p>
             </div>
-          </div>
-          <div className="section-next">
-            <a className="jump-link" href="#stories">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Read the stories behind them</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
           </div>
         </div>
       </section>
@@ -410,19 +375,6 @@ export default function HomeView() {
               </span>
             </div>
           </a>
-          {" "}
-          <div className="section-next is-right">
-            <a className="jump-link" href="#feedback">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See what they say</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
       <section id="feedback" className="feedback-scope" aria-labelledby="feedback-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
@@ -586,18 +538,6 @@ export default function HomeView() {
                 </span>
               </span>
             </div>
-          </div>
-          <div className="section-next is-right" style={{marginTop: "var(--space-group)"} as React.CSSProperties}>
-            <a className="jump-link" href="#before-beyond">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get to know me</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
           </div>
         </div>
       </section>

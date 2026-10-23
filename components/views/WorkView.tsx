@@ -125,17 +125,6 @@ export default function WorkView() {
           <p className="t-body-l" style={{maxWidth: "680px"} as React.CSSProperties}>
             From fintech and Web3 to developer education and open source, I create content that makes ideas easier to understand and build communities where people can learn, contribute, and grow.
           </p>
-          {" "}
-          <a className="jump-link" href="#work-list" style={{alignSelf: "flex-start", marginTop: "var(--space-element)"} as React.CSSProperties}>
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Browse the work</span>
-            {" "}
-            <span className="icon-btn" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 5v14" />
-                <path d="m19 12-7 7-7-7" />
-              </svg>
-            </span>
-          </a>
         </div>
       </section>
       <section id="work-list" aria-label="Selected work" style={{paddingBlock: "var(--space-group) var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
@@ -545,18 +534,6 @@ export default function WorkView() {
               </article>
             </li>
           </ul>
-          <div className="section-next is-right">
-            <a className="jump-link" href="#selected">
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See selected content</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14" />
-                  <path d="m19 12-7 7-7-7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
       <section id="selected" aria-labelledby="selected-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
