@@ -568,10 +568,15 @@ export default function HomeView() {
                 <div className="shape round fill-stroke" style={{left: "22%", top: "172px", width: "32px", height: "32px"} as React.CSSProperties} />
               </div>
               <h3 className="t-title">Attention isn't the same as connection.</h3>
-              <p className="t-body">
-                <span className="em">Before</span>
-                {" "}content became my primary focus, I spent years working closely with communities: understanding their needs, creating opportunities for participation, and learning what makes people return.
-              </p>
+              <div className="stack" style={{gap: "var(--space-element)"} as React.CSSProperties}>
+                <p className="t-body">
+                  <span className="em">Before</span>
+                  {" "}content became my primary focus, I spent years working closely with communities. That experience taught me to listen for the questions people were asking, recognise what they needed to understand, and notice what made them care enough to participate and return.
+                </p>
+                <p className="t-body">
+                  I bring that same audience-first thinking to content marketing, using what I learn about an audience to shape relevant stories and make complex ideas easier to understand.
+                </p>
+              </div>
             </div>
             <div className="stack" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
               <div className="panel" aria-hidden="true" style={{height: "240px"} as React.CSSProperties}>
