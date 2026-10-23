@@ -553,8 +553,9 @@ export default function WorkView() {
               <span className="label-dot" aria-hidden="true" />
               Selected content and projects
             </p>
-            <h2 id="selected-title" className="t-heading-s">
-              A few pieces that show how I approach research, education, and storytelling across different audiences.
+            <h2 id="selected-title" className="t-heading">
+              Selected content across{" "}
+              <span className="hl">audiences</span>
             </h2>
           </div>
           <ul className="pick-list">
