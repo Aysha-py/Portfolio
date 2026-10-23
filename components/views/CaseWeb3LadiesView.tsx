@@ -179,7 +179,9 @@ export default function CaseWeb3LadiesView() {
             About
           </h2>
           <div className="case-main">
-            <p className="t-body-l">Web3Ladies creates opportunities for women to learn, build, and grow within the Web3 ecosystem.</p>
+            <p className="t-body-l">
+              Web3Ladies creates opportunities for women to learn, build, and grow within the AI and Web3 ecosystem.
+            </p>
             <p className="t-body">
               It is a non-profit committed to onboarding, educating and empowering women with sought-after blockchain skills to thrive in the Web3 ecosystem. My passion for female empowerment, tech advocacy and Web3 found a perfect intersection there.
             </p>

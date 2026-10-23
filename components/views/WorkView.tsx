@@ -393,7 +393,9 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Turning community needs into opportunities to learn and grow</h3>
                 <div className="work-copy">
-                  <p className="t-body">Web3Ladies creates opportunities for women to learn, build, and grow within the Web3 ecosystem.</p>
+                  <p className="t-body">
+                    Web3Ladies creates opportunities for women to learn, build, and grow within the AI and Web3 ecosystem.
+                  </p>
                   <p className="t-body">
                     Having contributed to the community since 2023 and progressed to Community Lead in November 2025, I work across community operations, programme development, and ecosystem engagement. This includes managing member communications, hosting learning experiences, coordinating partnerships, and using member insights to shape initiatives around community needs.
                   </p>
@@ -403,7 +405,9 @@ export default function WorkView() {
                     , turning the programme concept into an executable plan that brought together four expert-led sessions and generated seven project submissions from 100+ registrations. Alongside programme delivery, I support community growth through event representation, programme promotion, and ongoing engagement across digital and in-person channels.
                   </p>
                   <p className="t-body">
-                    <strong>15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations</strong>
+                    <strong>
+                      15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations · 7+ projects submitted
+                    </strong>
                   </p>
                 </div>
                 <div className="t-caption work-list-line">
