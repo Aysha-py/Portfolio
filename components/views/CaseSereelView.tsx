@@ -162,6 +162,8 @@ export default function CaseSereelView() {
                   <li>Newsletter content</li>
                   <li>Short-form video production</li>
                   <li>Social media content</li>
+                  <li>CMS publishing</li>
+                  <li>GitHub</li>
                 </ul>
               </dd>
             </div>
@@ -237,6 +239,15 @@ export default function CaseSereelView() {
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-ring" aria-hidden="true" />
+                <div className="case-step-body">
+                  <h3 className="t-title">Publishing</h3>
+                  <p className="t-body">
+                    I also handled publishing. I uploaded content to Sereel’s CMS and worked directly in GitHub to publish and update content on the website, bringing my background as a software developer into the content workflow.
+                  </p>
+                </div>
+              </li>
+              <li className="case-step">
+                <span className="case-step-mark is-pill" aria-hidden="true" />
                 <div className="case-step-body">
                   <h3 className="t-title">Video and distribution</h3>
                   <p className="t-body">
