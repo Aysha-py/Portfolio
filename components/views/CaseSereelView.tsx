@@ -388,15 +388,20 @@ export default function CaseSereelView() {
           <div className="case-main">
             <div className="case-shots">
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-                  </svg>
-                  <span className="t-caption">[Add a screenshot]</span>
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/sereel-feedback-linkedin.jpg`} alt="A Sereel LinkedIn post with an illustration of the Absa and Ripple logos around a shield over a map of Africa, with 115 reactions, 3 comments and 22 reposts" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>A LinkedIn post</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>A LinkedIn post for Sereel: 115 reactions, 3 comments and 22 reposts</span>
+                  <a className="case-shot-link" href="https://lnkd.in/p/eDPg_Dwe" target="_blank" rel="noopener">
+                    See the post on LinkedIn{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
@@ -538,20 +543,6 @@ export default function CaseSereelView() {
                 </a>
               </div>
               <div className="case-feedback-col">
-                <a className="case-feedback-shot is-link" href="https://lnkd.in/p/eDPg_Dwe" target="_blank" rel="noopener">
-                  <img src={`${BASE}/images/sereel-feedback-linkedin.jpg`} alt="A Sereel LinkedIn post with an illustration of the Absa and Ripple logos around a shield over a map of Africa, with 115 reactions, 3 comments and 22 reposts." loading="lazy" />
-                  <span className="t-caption secondary case-feedback-cap">
-                    <span>A LinkedIn post for Sereel: 115 reactions, 3 comments and 22 reposts</span>
-                    <span className="case-shot-link">
-                      See the post on LinkedIn{" "}
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M7 7h10v10" />
-                        <path d="M7 17 17 7" />
-                      </svg>
-                    </span>
-                  </span>
-                  <span className="visually-hidden">(opens in a new tab)</span>
-                </a>
                 <a className="case-feedback-shot is-link" href="https://www.sereel.com/blog/23" target="_blank" rel="noopener">
                   <img src={`${BASE}/images/sereel-feedback-piece.jpg`} alt="Chat message from a teammate about Aishat’s piece Tokenized Funds Explained: This is a great piece Aishat! Aishat replies: Thank you." loading="lazy" />
                   <span className="t-caption secondary case-feedback-cap">
