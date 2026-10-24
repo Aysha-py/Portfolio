@@ -162,6 +162,8 @@ export default function CaseSereelView() {
                   <li>Newsletter content</li>
                   <li>Short-form video production</li>
                   <li>Social media content</li>
+                  <li>CMS publishing</li>
+                  <li>GitHub</li>
                 </ul>
               </dd>
             </div>
@@ -219,12 +221,21 @@ export default function CaseSereelView() {
                     I started by researching the market, regulatory developments, and the challenges shaping the tokenization industry. I also explored the questions and information needs of Sereel’s intended audience to identify topics worth communicating.
                   </p>
                   <p className="t-body">
-                    This research helped me connect developments in the wider financial industry to Sereel’s positioning, creating a foundation for content that went beyond product promotion to explain why these developments mattered.
+                    This research helped me connect developments in the wider financial industry to Sereel’s positioning, creating a foundation for content that went beyond promotion to explain why these developments mattered.
                   </p>
                 </div>
               </li>
               <li className="case-step">
                 <span className="case-step-mark is-half" aria-hidden="true" />
+                <div className="case-step-body">
+                  <h3 className="t-title">SEO research</h3>
+                  <p className="t-body">
+                    I conducted SEO research for selected articles. I used Ahrefs to investigate keyword opportunities, search demand, and related questions around topics such as tokenized funds. I also used Semrush’s Keyword Overview and Site Audit to assess search opportunities and review aspects of Sereel’s search visibility and website health. This research helped inform article topics and identify opportunities to make content more discoverable through non-branded searches.
+                  </p>
+                </div>
+              </li>
+              <li className="case-step">
+                <span className="case-step-mark is-ring" aria-hidden="true" />
                 <div className="case-step-body">
                   <h3 className="t-title">Writing</h3>
                   <p className="t-body">
@@ -236,7 +247,16 @@ export default function CaseSereelView() {
                 </div>
               </li>
               <li className="case-step">
-                <span className="case-step-mark is-ring" aria-hidden="true" />
+                <span className="case-step-mark is-pill" aria-hidden="true" />
+                <div className="case-step-body">
+                  <h3 className="t-title">Publishing</h3>
+                  <p className="t-body">
+                    I also handled publishing. I uploaded content to Sereel’s CMS and worked directly in GitHub to publish and update content on the website, bringing my background as a software developer into the content workflow.
+                  </p>
+                </div>
+              </li>
+              <li className="case-step">
+                <span className="case-step-mark is-dot" aria-hidden="true" />
                 <div className="case-step-body">
                   <h3 className="t-title">Video and distribution</h3>
                   <p className="t-body">
@@ -251,6 +271,58 @@ export default function CaseSereelView() {
                 </div>
               </li>
             </ol>
+          </div>
+        </div>
+      </section>
+      <section id="tools" className="case-section" aria-labelledby="tools-title">
+        <div className="container case-grid reveal">
+          <h2 id="tools-title" className="t-label case-label">
+            <span className="label-dot" aria-hidden="true" />
+            Tools and platforms
+          </h2>
+          <div className="case-main">
+            <dl className="case-facts is-tools">
+              <div className="case-fact">
+                <dt className="t-label">SEO and keyword research</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>Ahrefs</li>
+                    <li>Semrush Keyword Overview</li>
+                    <li>Semrush Site Audit</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Content publishing and formatting</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>GitHub</li>
+                    <li>Markdown</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Research</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>Google Search</li>
+                    <li>Primary-source research</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Content distribution</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>LinkedIn</li>
+                    <li>Substack/newsletter distribution</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                    <li>TikTok</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>
@@ -316,25 +388,36 @@ export default function CaseSereelView() {
           <div className="case-main">
             <div className="case-shots">
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-                  </svg>
-                  <span className="t-caption">[Add a screenshot]</span>
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/sereel-feedback-linkedin.jpg`} alt="A Sereel LinkedIn post with an illustration of the Absa and Ripple logos around a shield over a map of Africa, with 115 reactions, 3 comments and 22 reposts" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>A LinkedIn post</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>A LinkedIn post for Sereel: 115 reactions, 3 comments and 22 reposts</span>
+                  <a className="case-shot-link" href="https://lnkd.in/p/eDPg_Dwe" target="_blank" rel="noopener">
+                    See the post on LinkedIn{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="20" height="16" x="2" y="4" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                  </svg>
-                  <span className="t-caption">[Add a screenshot]</span>
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/sereel-newsletter-19.jpg`} alt="Cover of Sereel Monthly Newsletter 19: a robot filling in a KYC / KYA form beside a globe and books on compliance, tokenization and global markets" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>A newsletter issue</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>Sereel Monthly Newsletter 19, on Substack</span>
+                  <a className="case-shot-link" href="https://0xseree.substack.com/p/sereel-monthly-newsletter-19" target="_blank" rel="noopener">
+                    Read the newsletter{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
@@ -442,10 +525,44 @@ export default function CaseSereelView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at Sereel about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at Sereel]</figcaption>
-            </figure>
+            <div className="case-feedback">
+              <div className="case-feedback-col">
+                <a className="case-feedback-shot is-link" href="https://www.tiktok.com/@0xsereel/video/7677895572996558101" target="_blank" rel="noopener">
+                  <img src={`${BASE}/images/sereel-feedback-short-form.jpg`} alt="Team chat. Aishat shares a short-form video on tokenized money market funds, captioned Short form content. A teammate replies: this is fire. Another replies: flaaaaames Aishat, g2g." loading="lazy" />
+                  <span className="t-caption secondary case-feedback-cap">
+                    <span>On my short-form video about tokenized money market funds</span>
+                    <span className="case-shot-link">
+                      Watch the video on TikTok{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+              <div className="case-feedback-col">
+                <a className="case-feedback-shot is-link" href="https://www.sereel.com/blog/23" target="_blank" rel="noopener">
+                  <img src={`${BASE}/images/sereel-feedback-piece.jpg`} alt="Chat message from a teammate about Aishat’s piece Tokenized Funds Explained: This is a great piece Aishat! Aishat replies: Thank you." loading="lazy" />
+                  <span className="t-caption secondary case-feedback-cap">
+                    <span>On my piece Tokenized Funds Explained</span>
+                    <span className="case-shot-link">
+                      Read the article{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/sereel-feedback-great-content.jpg`} alt="Two chat messages from a teammate: looks good! Then: great content this is actually good information, even we were confused about this at first. Aishat reacts with a fire emoji and OK." loading="lazy" />
+                  <figcaption className="t-caption secondary">From a teammate, in Sereel’s marketing chat</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </section>

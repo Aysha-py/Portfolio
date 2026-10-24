@@ -637,6 +637,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-shot-frame{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-tight);aspect-ratio:var(--case-shot-ratio);padding:var(--space-element);box-sizing:border-box;overflow:hidden;text-align:center;color:var(--case-shot-text);background:var(--case-shot-bg);border:var(--border-width-hairline) solid var(--case-shot-border);border-radius:var(--card-radius);}
 .case-shot-frame.has-image{padding:0;}
 .case-shot-frame img{display:block;width:100%;height:100%;object-fit:cover;}
+/* a landscape image shown whole in the portrait frame, centred on the frame's own background */
+.case-shot-frame.is-whole{padding:var(--space-element);}
+.case-shot-frame.is-whole img{height:auto;object-fit:contain;border-radius:var(--radius-control);}
 .case-shot-link{display:inline-flex;align-items:center;gap:var(--space-hairline);font-weight:var(--weight-strong);color:var(--link-color);text-decoration:none;}
 .case-shot-link:hover{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .case-shot-link svg{width:16px;height:16px;}
@@ -644,6 +647,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-quote{display:flex;flex-direction:column;gap:var(--space-related);margin:0;padding-left:var(--space-cluster);border-left:var(--focus-width) solid var(--case-quote-rule);}
 .case-quote blockquote{margin:0;}
 /* five results: three across, then two across */
+/* tools and platforms: the facts list, with room for longer group names, and no gap above */
+.case-facts.is-tools{--case-fact-label:calc(var(--primitive-space-8) * 2 + var(--primitive-space-6));margin-top:0;}
 .case-tiles.is-five{grid-template-columns:repeat(6,minmax(0,1fr));}
 .case-tiles.is-five .tile{grid-column:span 2;}
 .case-tiles.is-five .tile:nth-child(n+4){grid-column:span 3;}
@@ -654,6 +659,11 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-col{display:flex;flex-direction:column;gap:var(--space-element);min-width:0;}
 .case-feedback-shot{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;}
 .case-feedback-shot img{display:block;width:100%;height:auto;border-radius:var(--card-radius);border:var(--border-width-hairline) solid var(--card-border);}
+.case-feedback-shot.is-link{text-decoration:none;color:inherit;}
+.case-feedback-shot.is-link img{transition:border-color var(--motion-base) var(--motion-ease);}
+.case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
+.case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
@@ -770,7 +780,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <dl class="case-facts">
 <div class="case-fact"><dt class="t-label">Role</dt><dd class="t-body">Content marketer</dd></div>
 <div class="case-fact"><dt class="t-label">Timeline</dt><dd class="t-body">[Start month and year] – [End month and year]</dd></div>
-<div class="case-fact"><dt class="t-label">Skills</dt><dd class="t-body"><ul class="case-fact-list"><li>Content research and market intelligence</li><li>Audience research</li><li>B2B thought leadership</li><li>Long-form content writing</li><li>Educational content</li><li>Newsletter content</li><li>Short-form video production</li><li>Social media content</li></ul></dd></div>
+<div class="case-fact"><dt class="t-label">Skills</dt><dd class="t-body"><ul class="case-fact-list"><li>Content research and market intelligence</li><li>Audience research</li><li>B2B thought leadership</li><li>Long-form content writing</li><li>Educational content</li><li>Newsletter content</li><li>Short-form video production</li><li>Social media content</li><li>CMS publishing</li><li>GitHub</li></ul></dd></div>
 <div class="case-fact"><dt class="t-label">Channels</dt><dd class="t-body"><ul class="case-fact-list"><li>LinkedIn</li><li>Blog</li><li>Newsletter</li><li>YouTube</li><li>TikTok</li><li>Instagram</li></ul></dd></div>
 </dl>
 </div>
@@ -793,10 +803,26 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <h2 id="approach-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>How I approached it</h2>
 <div class="case-main">
 <ol class="case-steps">
-<li class="case-step"><span class="case-step-mark is-dot" aria-hidden="true"></span><div class="case-step-body"><h3 class="t-title">Research</h3><p class="t-body">I started by researching the market, regulatory developments, and the challenges shaping the tokenization industry. I also explored the questions and information needs of Sereel’s intended audience to identify topics worth communicating.</p><p class="t-body">This research helped me connect developments in the wider financial industry to Sereel’s positioning, creating a foundation for content that went beyond product promotion to explain why these developments mattered.</p></div></li>
-<li class="case-step"><span class="case-step-mark is-half" aria-hidden="true"></span><div class="case-step-body"><h3 class="t-title">Writing</h3><p class="t-body">I took ownership of Sereel’s long-form blog content, establishing a more consistent publishing rhythm. I also developed educational and thought-leadership content for LinkedIn and contributed newsletter content to extend these ideas into different formats.</p><p class="t-body">Rather than treating complex industry developments as information to report, I focused on explaining their implications. From regulatory changes to the infrastructure needed for tokenized assets to participate in financial markets, I worked to make technical subjects clearer and more relevant to the intended audience.</p></div></li>
-<li class="case-step"><span class="case-step-mark is-ring" aria-hidden="true"></span><div class="case-step-body"><h3 class="t-title">Video and distribution</h3><p class="t-body">I extended Sereel’s educational content into short-form video, scripting, filming, and editing videos that made complex financial concepts more accessible.</p><p class="t-body">I also helped expand the brand’s digital presence across YouTube, TikTok, and Instagram, creating additional touchpoints for its ideas beyond LinkedIn.</p><p class="t-body">This gave Sereel more ways to communicate with its audience and allowed research-led themes to reach people through different formats.</p></div></li>
+<li class="case-step"><span class="case-step-mark is-dot" aria-hidden="true"></span><div class="case-step-body"><h3 class="t-title">Research</h3><p class="t-body">I started by researching the market, regulatory developments, and the challenges shaping the tokenization industry. I also explored the questions and information needs of Sereel’s intended audience to identify topics worth communicating.</p><p class="t-body">This research helped me connect developments in the wider financial industry to Sereel’s positioning, creating a foundation for content that went beyond promotion to explain why these developments mattered.</p></div></li>
+<li class="case-step"><span class="case-step-mark is-half" aria-hidden="true"></span><div class="case-step-body"><h3 class="t-title">SEO research</h3><p class="t-body">I conducted SEO research for selected articles. I used Ahrefs to investigate keyword opportunities, search demand, and related questions around topics such as tokenized funds. I also used Semrush’s Keyword Overview and Site Audit to assess search opportunities and review aspects of Sereel’s search visibility and website health. This research helped inform article topics and identify opportunities to make content more discoverable through non-branded searches.</p></div></li>
+<li class="case-step"><span class="case-step-mark is-ring" aria-hidden="true"></span><div class="case-step-body"><h3 class="t-title">Writing</h3><p class="t-body">I took ownership of Sereel’s long-form blog content, establishing a more consistent publishing rhythm. I also developed educational and thought-leadership content for LinkedIn and contributed newsletter content to extend these ideas into different formats.</p><p class="t-body">Rather than treating complex industry developments as information to report, I focused on explaining their implications. From regulatory changes to the infrastructure needed for tokenized assets to participate in financial markets, I worked to make technical subjects clearer and more relevant to the intended audience.</p></div></li>
+<li class="case-step"><span class="case-step-mark is-pill" aria-hidden="true"></span><div class="case-step-body"><h3 class="t-title">Publishing</h3><p class="t-body">I also handled publishing. I uploaded content to Sereel’s CMS and worked directly in GitHub to publish and update content on the website, bringing my background as a software developer into the content workflow.</p></div></li>
+<li class="case-step"><span class="case-step-mark is-dot" aria-hidden="true"></span><div class="case-step-body"><h3 class="t-title">Video and distribution</h3><p class="t-body">I extended Sereel’s educational content into short-form video, scripting, filming, and editing videos that made complex financial concepts more accessible.</p><p class="t-body">I also helped expand the brand’s digital presence across YouTube, TikTok, and Instagram, creating additional touchpoints for its ideas beyond LinkedIn.</p><p class="t-body">This gave Sereel more ways to communicate with its audience and allowed research-led themes to reach people through different formats.</p></div></li>
 </ol>
+</div>
+</div>
+</section>
+
+<section id="tools" class="case-section" aria-labelledby="tools-title">
+<div class="container case-grid reveal">
+<h2 id="tools-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Tools and platforms</h2>
+<div class="case-main">
+<dl class="case-facts is-tools">
+<div class="case-fact"><dt class="t-label">SEO and keyword research</dt><dd class="t-body"><ul class="case-fact-list"><li>Ahrefs</li><li>Semrush Keyword Overview</li><li>Semrush Site Audit</li></ul></dd></div>
+<div class="case-fact"><dt class="t-label">Content publishing and formatting</dt><dd class="t-body"><ul class="case-fact-list"><li>GitHub</li><li>Markdown</li></ul></dd></div>
+<div class="case-fact"><dt class="t-label">Research</dt><dd class="t-body"><ul class="case-fact-list"><li>Google Search</li><li>Primary-source research</li></ul></dd></div>
+<div class="case-fact"><dt class="t-label">Content distribution</dt><dd class="t-body"><ul class="case-fact-list"><li>LinkedIn</li><li>Substack/newsletter distribution</li><li>Instagram</li><li>YouTube</li><li>TikTok</li></ul></dd></div>
+</dl>
 </div>
 </div>
 </section>
@@ -837,8 +863,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <h2 id="visuals-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Visuals</h2>
 <div class="case-main">
 <div class="case-shots">
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg><span class="t-caption">[Add a screenshot]</span></div><figcaption class="t-caption secondary"><span>A LinkedIn post</span></figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span class="t-caption">[Add a screenshot]</span></div><figcaption class="t-caption secondary"><span>A newsletter issue</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image is-whole"><img src="/_blob/cd28bd6614ba59310bc632a9593a6b10" alt="A Sereel LinkedIn post with an illustration of the Absa and Ripple logos around a shield over a map of Africa, with 115 reactions, 3 comments and 22 reposts" loading="lazy"></div><figcaption class="t-caption secondary"><span>A LinkedIn post for Sereel: 115 reactions, 3 comments and 22 reposts</span><a class="case-shot-link" href="https://lnkd.in/p/eDPg_Dwe" target="_blank" rel="noopener">See the post on LinkedIn <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/1adc8b8e0fc26dd536c2804f6d939a51" alt="Cover of Sereel Monthly Newsletter 19: a robot filling in a KYC / KYA form beside a globe and books on compliance, tokenization and global markets" loading="lazy"></div><figcaption class="t-caption secondary"><span>Sereel Monthly Newsletter 19, on Substack</span><a class="case-shot-link" href="https://0xseree.substack.com/p/sereel-monthly-newsletter-19" target="_blank" rel="noopener">Read the newsletter <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
 <figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/f54b67002399ac8d337e69f9c7482c1c" alt="Aishat explaining tokenized money market funds on camera, in a short-form video for Sereel" loading="lazy"></div><figcaption class="t-caption secondary"><span>A short-form video, on Instagram</span></figcaption></figure>
 </div>
 </div>
@@ -894,10 +920,10 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container case-grid reveal">
 <h2 id="feedback-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Feedback</h2>
 <div class="case-main">
-<figure class="case-quote">
-<blockquote class="t-heading-s">[A quote from someone at Sereel about this work]</blockquote>
-<figcaption class="t-caption secondary">[Their name, role at Sereel]</figcaption>
-</figure>
+<div class="case-feedback">
+<div class="case-feedback-col"><a class="case-feedback-shot is-link" href="https://www.tiktok.com/@0xsereel/video/7677895572996558101" target="_blank" rel="noopener"><img src="/_blob/12c6bf5a041ebf17dfa9a8bc09acd611" alt="Team chat. Aishat shares a short-form video on tokenized money market funds, captioned Short form content. A teammate replies: this is fire. Another replies: flaaaaames Aishat, g2g." loading="lazy"><span class="t-caption secondary case-feedback-cap"><span>On my short-form video about tokenized money market funds</span><span class="case-shot-link">Watch the video on TikTok <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span></span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+<div class="case-feedback-col"><a class="case-feedback-shot is-link" href="https://www.sereel.com/blog/23" target="_blank" rel="noopener"><img src="/_blob/1b0a92083b306de57f8ce51ce00fd215" alt="Chat message from a teammate about Aishat’s piece Tokenized Funds Explained: This is a great piece Aishat! Aishat replies: Thank you." loading="lazy"><span class="t-caption secondary case-feedback-cap"><span>On my piece Tokenized Funds Explained</span><span class="case-shot-link">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span></span><span class="visually-hidden"> (opens in a new tab)</span></a><figure class="case-feedback-shot"><img src="/_blob/94456c735f7805360819536831b73383" alt="Two chat messages from a teammate: looks good! Then: great content this is actually good information, even we were confused about this at first. Aishat reacts with a fire emoji and OK." loading="lazy"><figcaption class="t-caption secondary">From a teammate, in Sereel’s marketing chat</figcaption></figure></div>
+</div>
 </div>
 </div>
 </section>
@@ -944,7 +970,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4800}}'>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":7100}}'>
 class Component extends DCLogic {
   renderVals() {
     const s = this.state || {};

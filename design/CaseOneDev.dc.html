@@ -637,6 +637,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-shot-frame{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-tight);aspect-ratio:var(--case-shot-ratio);padding:var(--space-element);box-sizing:border-box;overflow:hidden;text-align:center;color:var(--case-shot-text);background:var(--case-shot-bg);border:var(--border-width-hairline) solid var(--case-shot-border);border-radius:var(--card-radius);}
 .case-shot-frame.has-image{padding:0;}
 .case-shot-frame img{display:block;width:100%;height:100%;object-fit:cover;}
+/* a landscape image shown whole in the portrait frame, centred on the frame's own background */
+.case-shot-frame.is-whole{padding:var(--space-element);}
+.case-shot-frame.is-whole img{height:auto;object-fit:contain;border-radius:var(--radius-control);}
 .case-shot-link{display:inline-flex;align-items:center;gap:var(--space-hairline);font-weight:var(--weight-strong);color:var(--link-color);text-decoration:none;}
 .case-shot-link:hover{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .case-shot-link svg{width:16px;height:16px;}
@@ -644,6 +647,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-quote{display:flex;flex-direction:column;gap:var(--space-related);margin:0;padding-left:var(--space-cluster);border-left:var(--focus-width) solid var(--case-quote-rule);}
 .case-quote blockquote{margin:0;}
 /* five results: three across, then two across */
+/* tools and platforms: the facts list, with room for longer group names, and no gap above */
+.case-facts.is-tools{--case-fact-label:calc(var(--primitive-space-8) * 2 + var(--primitive-space-6));margin-top:0;}
 .case-tiles.is-five{grid-template-columns:repeat(6,minmax(0,1fr));}
 .case-tiles.is-five .tile{grid-column:span 2;}
 .case-tiles.is-five .tile:nth-child(n+4){grid-column:span 3;}
@@ -654,6 +659,11 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-col{display:flex;flex-direction:column;gap:var(--space-element);min-width:0;}
 .case-feedback-shot{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;}
 .case-feedback-shot img{display:block;width:100%;height:auto;border-radius:var(--card-radius);border:var(--border-width-hairline) solid var(--card-border);}
+.case-feedback-shot.is-link{text-decoration:none;color:inherit;}
+.case-feedback-shot.is-link img{transition:border-color var(--motion-base) var(--motion-ease);}
+.case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
+.case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
@@ -842,9 +852,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <h2 id="visuals-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Visuals</h2>
 <div class="case-main">
 <div class="case-shots">
-<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/f37b5e15d552a0d5c8d2574fde0443b2" alt="A live class from One Dev’s AI/ML for Developers Bootcamp" loading="lazy"></div><figcaption class="t-caption secondary"><span>A live class from the AI/ML for Developers Bootcamp</span><a class="case-shot-link" href="https://www.youtube.com/watch?v=yqNm6mAvo0s&amp;t=307s" target="_blank" rel="noopener">Watch the recording <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg><span class="t-caption">[Add a bootcamp flyer]</span></div><figcaption class="t-caption secondary"><span>A bootcamp flyer</span></figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span class="t-caption">[Add a screenshot]</span></div><figcaption class="t-caption secondary"><span>A newsletter issue</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/d65851e2bec92dedb1802109cc71b77c" alt="Aishat speaking into a microphone at the Code Africa Conference City Tour in Nigeria, a developers and founders mixer, beside a One Dev and Code Africa banner" loading="lazy"></div><figcaption class="t-caption secondary"><span>Hosting the Code Africa City Tour in Nigeria</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/2d5620527f04f4d650dbf423e8be7539" alt="Flyer for One Dev’s X Space Reset or Repeat? Setting Your Career Intentions For 2026, on Saturday 10 January 2026, with speakers KC Pele, Joan Jerop and Eugene Karewa, and Aishat Muhammed as host" loading="lazy"></div><figcaption class="t-caption secondary"><span>Reset or Repeat?, an X Space I hosted for One Dev</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image is-whole"><img src="/_blob/f436e81acdad65c2fd95b6dba49e5387" alt="Cover of the One Dev article How to become a Web3 developer, plus free resources, showing a developer coding on a laptop" loading="lazy"></div><figcaption class="t-caption secondary"><span>How to become a Web3 developer, on the One Dev blog</span><a class="case-shot-link" href="https://onedev.club/blog/how-to-become-a-web3-developer-free-resources-included" target="_blank" rel="noopener">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
 </div>
 <a class="work-cta case-more-link" href="https://www.youtube.com/@onedevafrica/streams" target="_blank" rel="noopener">See more live bootcamp classes <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
 </div>
@@ -912,10 +922,10 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container case-grid reveal">
 <h2 id="feedback-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Feedback</h2>
 <div class="case-main">
-<figure class="case-quote">
-<blockquote class="t-heading-s">[A quote from someone at One Dev about this work]</blockquote>
-<figcaption class="t-caption secondary">[Their name, role at One Dev]</figcaption>
-</figure>
+<div class="case-feedback">
+<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/fd6c484e8682cded0daba17b627dcf85" alt="Chat message replying to Aishat’s final-day announcement: Good evening Aysha, you see this lot of people here? Some of us are annoying but you have been very calm and patient with us. You have always kept that attitude of a teacher. Thank you so much. You are a great person. Looking forward to working with you in future. Keep up the good job you are doing." loading="lazy"><figcaption class="t-caption secondary">From a bootcamp participant, on the final day</figcaption></figure><figure class="case-feedback-shot"><img src="/_blob/4da383f0629085ee5b99c101e190e902" alt="LinkedIn post from a bootcamp graduate: January was incredible! I graduated from the JavaScript in Ethereum Bootcamp organized by One Dev. Shout-out to Aishat Muhammed and the team for the hands-on session. Transitioning to the Web3 space couldn’t have been smoother! Below it, their One Dev certificate of participation from January 2025." loading="lazy"><figcaption class="t-caption secondary">From a bootcamp graduate, on LinkedIn</figcaption></figure></div>
+<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/c6be09cd5b515052698e3dca9e25dd35" alt="Chat with One Dev’s co-founder: Awesome work. You really have an effortless relationship with the community. I do see your work and passion. It won’t go unacknowledged. Aishat thanks her for the feedback. The co-founder adds: If you need a public review, do send the link, I’ll write a professional review for you." loading="lazy"><figcaption class="t-caption secondary">From One Dev’s co-founder</figcaption></figure></div>
+</div>
 </div>
 </div>
 </section>
@@ -962,7 +972,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4800}}'>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":7200}}'>
 class Component extends DCLogic {
   renderVals() {
     const s = this.state || {};

@@ -637,6 +637,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-shot-frame{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-tight);aspect-ratio:var(--case-shot-ratio);padding:var(--space-element);box-sizing:border-box;overflow:hidden;text-align:center;color:var(--case-shot-text);background:var(--case-shot-bg);border:var(--border-width-hairline) solid var(--case-shot-border);border-radius:var(--card-radius);}
 .case-shot-frame.has-image{padding:0;}
 .case-shot-frame img{display:block;width:100%;height:100%;object-fit:cover;}
+/* a landscape image shown whole in the portrait frame, centred on the frame's own background */
+.case-shot-frame.is-whole{padding:var(--space-element);}
+.case-shot-frame.is-whole img{height:auto;object-fit:contain;border-radius:var(--radius-control);}
 .case-shot-link{display:inline-flex;align-items:center;gap:var(--space-hairline);font-weight:var(--weight-strong);color:var(--link-color);text-decoration:none;}
 .case-shot-link:hover{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .case-shot-link svg{width:16px;height:16px;}
@@ -644,6 +647,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-quote{display:flex;flex-direction:column;gap:var(--space-related);margin:0;padding-left:var(--space-cluster);border-left:var(--focus-width) solid var(--case-quote-rule);}
 .case-quote blockquote{margin:0;}
 /* five results: three across, then two across */
+/* tools and platforms: the facts list, with room for longer group names, and no gap above */
+.case-facts.is-tools{--case-fact-label:calc(var(--primitive-space-8) * 2 + var(--primitive-space-6));margin-top:0;}
 .case-tiles.is-five{grid-template-columns:repeat(6,minmax(0,1fr));}
 .case-tiles.is-five .tile{grid-column:span 2;}
 .case-tiles.is-five .tile:nth-child(n+4){grid-column:span 3;}
@@ -654,6 +659,11 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-col{display:flex;flex-direction:column;gap:var(--space-element);min-width:0;}
 .case-feedback-shot{display:flex;flex-direction:column;gap:var(--space-tight);margin:0;}
 .case-feedback-shot img{display:block;width:100%;height:auto;border-radius:var(--card-radius);border:var(--border-width-hairline) solid var(--card-border);}
+.case-feedback-shot.is-link{text-decoration:none;color:inherit;}
+.case-feedback-shot.is-link img{transition:border-color var(--motion-base) var(--motion-ease);}
+.case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
+.case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
+.case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
@@ -843,9 +853,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <h2 id="visuals-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Visuals</h2>
 <div class="case-main">
 <div class="case-shots">
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg><span class="t-caption">[Add an event flyer]</span></div><figcaption class="t-caption secondary"><span>An event flyer</span></figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg><span class="t-caption">[Add a screenshot]</span></div><figcaption class="t-caption secondary"><span>The Skills Audit Sheet</span></figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg><span class="t-caption">[Add a video still]</span></div><figcaption class="t-caption secondary"><span>A learning session</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/951e3009bfb05f7c4872f0e34cd0d453" alt="Aishat standing beside a wall screen showing the Community Managers Skills Audit Sheet and how to use it" loading="lazy"></div><figcaption class="t-caption secondary"><span>Presenting a demo of the Skills Audit Sheet at the masterclass in Lagos</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image is-whole"><img src="/_blob/83e9e7c7577554c74acacebe9ef6faab" alt="Speaker card for CM Beginner Series 4.0, A Masterclass on Strategy and Engagement, by Community for Africa: Aishat Muhammed, Skills Audit Sheet" loading="lazy"></div><figcaption class="t-caption secondary"><span>Speaking on the Skills Audit Sheet at CM Beginner Series 4.0</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image is-whole"><img src="/_blob/2a7a14ade7025d3b04f562107b695ea3" alt="Flyer for a Community for Africa book review session of Buzzing Communities by Richard Millington, on Twitter Space on Saturday 28 September 2024 at 8pm WAT, with two community superstars as hosts" loading="lazy"></div><figcaption class="t-caption secondary"><span>A book review session for the community, on X Spaces</span></figcaption></figure>
 </div>
 </div>
 </div>
@@ -855,10 +865,10 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container case-grid reveal">
 <h2 id="feedback-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Feedback</h2>
 <div class="case-main">
-<figure class="case-quote">
-<blockquote class="t-heading-s">[A quote from someone at Community for Africa about this work]</blockquote>
-<figcaption class="t-caption secondary">[Their name, role at Community for Africa]</figcaption>
-</figure>
+<div class="case-feedback">
+<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/c5c47f8aaafc45dbc56e60c555ac69c9" alt="Chat message from the founder replying to Aishat’s announcement of the new resource: If you have gotten access to the audit sheet, kindly share your feedback with us. If you haven’t gotten it, please do get it. It’s free and we made it just for you. More resources and tools coming. Finally, huge shout out to @this_aishah our dear CM. She’s the lead creator of the CM audit sheet. She’s such a superstar and I absolutely love her growth. So, if you appreciate our CM, share the audit sheet with a fellow CM and ask them to join the community." loading="lazy"><figcaption class="t-caption secondary">From Community for Africa’s founder, on the Skills Audit Sheet</figcaption></figure></div>
+<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/6a8ddd50228a3e45e561e686d16496d9" alt="Chat message from a community member: Yess! I got the audit sheet last week. You know sometimes as a community manager, you get confused on what to learn and what not to learn and I will tell you for a fact that the audit sheet is a great pointer to the skills you will need as a community manager. And yes, it’s a tool I will keep going back to, so that I can know what to celebrate and what to do next. Thank you and well-done Aishah." loading="lazy"><figcaption class="t-caption secondary">From a community member, on the Skills Audit Sheet</figcaption></figure></div>
+</div>
 </div>
 </div>
 </section>
@@ -906,7 +916,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4800}}'>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4600}}'>
 class Component extends DCLogic {
   renderVals() {
     const s = this.state || {};

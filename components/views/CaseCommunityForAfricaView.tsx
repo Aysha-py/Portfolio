@@ -292,36 +292,22 @@ export default function CaseCommunityForAfricaView() {
           <div className="case-main">
             <div className="case-shots">
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-                  </svg>
-                  <span className="t-caption">[Add an event flyer]</span>
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/cfa-audit-sheet-demo.jpg`} alt="Aishat standing beside a wall screen showing the Community Managers Skills Audit Sheet and how to use it" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>An event flyer</span></figcaption>
+                <figcaption className="t-caption secondary"><span>Presenting a demo of the Skills Audit Sheet at the masterclass in Lagos</span></figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-                  </svg>
-                  <span className="t-caption">[Add a screenshot]</span>
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/cfa-masterclass-speaker.jpg`} alt="Speaker card for CM Beginner Series 4.0, A Masterclass on Strategy and Engagement, by Community for Africa: Aishat Muhammed, Skills Audit Sheet" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>The Skills Audit Sheet</span></figcaption>
+                <figcaption className="t-caption secondary"><span>Speaking on the Skills Audit Sheet at CM Beginner Series 4.0</span></figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
-                    <rect x="2" y="6" width="14" height="12" rx="2" />
-                  </svg>
-                  <span className="t-caption">[Add a video still]</span>
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/cfa-book-review.jpg`} alt="Flyer for a Community for Africa book review session of Buzzing Communities by Richard Millington, on Twitter Space on Saturday 28 September 2024 at 8pm WAT, with two community superstars as hosts" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>A learning session</span></figcaption>
+                <figcaption className="t-caption secondary"><span>A book review session for the community, on X Spaces</span></figcaption>
               </figure>
             </div>
           </div>
@@ -334,10 +320,20 @@ export default function CaseCommunityForAfricaView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at Community for Africa about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at Community for Africa]</figcaption>
-            </figure>
+            <div className="case-feedback">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/cfa-feedback-founder.jpg`} alt="Chat message from the founder replying to Aishat’s announcement of the new resource: If you have gotten access to the audit sheet, kindly share your feedback with us. If you haven’t gotten it, please do get it. It’s free and we made it just for you. More resources and tools coming. Finally, huge shout out to @this_aishah our dear CM. She’s the lead creator of the CM audit sheet. She’s such a superstar and I absolutely love her growth. So, if you appreciate our CM, share the audit sheet with a fellow CM and ask them to join the community." loading="lazy" />
+                  <figcaption className="t-caption secondary">From Community for Africa’s founder, on the Skills Audit Sheet</figcaption>
+                </figure>
+              </div>
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/cfa-feedback-member.jpg`} alt="Chat message from a community member: Yess! I got the audit sheet last week. You know sometimes as a community manager, you get confused on what to learn and what not to learn and I will tell you for a fact that the audit sheet is a great pointer to the skills you will need as a community manager. And yes, it’s a tool I will keep going back to, so that I can know what to celebrate and what to do next. Thank you and well-done Aishah." loading="lazy" />
+                  <figcaption className="t-caption secondary">From a community member, on the Skills Audit Sheet</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </section>
