@@ -557,6 +557,10 @@ export default function CaseSereelView() {
                   </span>
                   <span className="visually-hidden">(opens in a new tab)</span>
                 </a>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/sereel-feedback-great-content.jpg`} alt="Two chat messages from a teammate: looks good! Then: great content this is actually good information, even we were confused about this at first. Aishat reacts with a fire emoji and OK." loading="lazy" />
+                  <figcaption className="t-caption secondary">From a teammate, in Sereel’s marketing chat</figcaption>
+                </figure>
               </div>
             </div>
           </div>
