@@ -633,7 +633,10 @@ export default function HomeView() {
               <div className="stack" style={{gap: "var(--space-element)"} as React.CSSProperties}>
                 <p className="t-body">
                   <span className="em">Before</span>
-                  {" "}content became my primary focus, I spent years working closely with communities. That experience taught me to listen for the questions people were asking, recognise what they needed to understand, and notice what made them care enough to participate and return.
+                  {" "}content became my primary focus, I spent years working closely with communities.
+                </p>
+                <p className="t-body">
+                  That experience taught me to listen for questions people asked, recognise what they needed to understand, and notice what made them care enough to participate.
                 </p>
                 <p className="t-body">
                   I bring that same audience-first thinking to content marketing, using what I learn about an audience to shape relevant stories and make complex ideas easier to understand.
