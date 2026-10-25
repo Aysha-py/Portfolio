@@ -568,7 +568,7 @@ export default function CaseSereelView() {
       </section>
       <nav id="case-nav" className="case-nav" aria-label="Case studies">
         <div className="container case-nav-row">
-          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+          <a className="jump-link case-nav-prev" href={`${BASE}/work/#work-list`}>
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="m12 19-7-7 7-7" />
@@ -579,7 +579,10 @@ export default function CaseSereelView() {
           </a>
           {" "}
           <a className="jump-link case-nav-next" href={`${BASE}/work/invisible-garden/`} rel="next">
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: Invisible Garden</span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>
+              <span className="case-nav-kicker">Next:</span>
+              {" "}Invisible Garden
+            </span>
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12h14" />

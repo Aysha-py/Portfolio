@@ -685,10 +685,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
    next title wraps onto a second line, aligned right */
 .case-nav{padding-block:var(--space-group);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
 .case-nav-row{display:flex;align-items:center;justify-content:space-between;gap:var(--space-stack);}
-.case-nav-row > .jump-link{flex-shrink:0;}
-.case-nav-row > .case-nav-next{flex-shrink:1;min-width:0;margin-left:auto;text-align:right;}
-.case-nav-next .t-label{min-width:0;}
-.case-nav-next .icon-btn{flex-shrink:0;}
+.case-nav-row > .jump-link{flex:0 1 auto;min-width:0;}
+.case-nav-row > .case-nav-next{margin-left:auto;text-align:right;}
+.case-nav-row .t-label{display:block;min-width:0;}
+.case-nav-row .icon-btn{flex-shrink:0;}
+@media (max-width: 760px){.case-nav-row > .jump-link{flex:1 1 0;}.case-nav-row > .case-nav-next{justify-content:flex-end;}.case-nav-kicker{display:block;}}
+@media (max-width: 480px){.case-nav-row{flex-direction:column;align-items:stretch;gap:var(--space-element);}.case-nav-row > .jump-link{flex:none;}.case-nav-row > .case-nav-prev{align-self:flex-start;}.case-nav-row > .case-nav-next{align-self:flex-end;}}
 /* end case study */
 /* ===== Work diaries and media ===== */
 /* work diaries and media: one scrollable line, the same component as Favourite moments on About */
@@ -867,9 +869,10 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <section id="visuals" class="case-section" aria-labelledby="visuals-title">
 <div class="container case-grid reveal">
-<h2 id="visuals-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Visuals</h2>
+<h2 id="visuals-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Visuals / Selected work</h2>
 <div class="case-main">
-<div class="case-shots">
+<div class="case-shots is-four">
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/2201775e97efdfa109b046e0640ba0f1" alt="Invisible Garden Argentina, open applications: Buenos Aires, 27 October to 16 November 2025, over a pixel-art field of flowers under a blue sky" loading="lazy"></div><figcaption class="t-caption secondary"><span>Announcing applications for the Buenos Aires residency, on X</span><a class="case-shot-link" href="https://x.com/invisiblgarden/status/1943309193391620215" target="_blank" rel="noopener">See the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
 <figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/c2c07c1ba4144f6a51b7d34f60841806" alt="Cover of Invisible Garden’s closing ceremony recap reel, with speakers on stage" loading="lazy"></div><figcaption class="t-caption secondary"><span>The closing ceremony recap, on Instagram</span><a class="case-shot-link" href="https://www.instagram.com/reel/DSCj-CDjDbS/" target="_blank" rel="noopener">Watch the reel <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
 <figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/bf3b474844ee2ad1b1ae013571108c77" alt="Residents gathered around a table on a sunny terrace in Buenos Aires, working through a project together in week 2 of Invisible Garden" loading="lazy"></div><figcaption class="t-caption secondary"><span>Build mode in week 2 of the residency, on Instagram</span><a class="case-shot-link" href="https://www.instagram.com/p/DQonIp_DOTV/?img_index=2" target="_blank" rel="noopener">See the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
 <figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/dfed06c659b8a664723f9b1645e01cac" alt="Title card of the Invisible Garden Buenos Aires recap video" loading="lazy"></div><figcaption class="t-caption secondary"><span>The Buenos Aires recap I edited</span><a class="case-shot-link" href="https://www.youtube.com/watch?v=Op3Syvqt_f8" target="_blank" rel="noopener">Watch the video <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
@@ -892,8 +895,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <nav id="case-nav" class="case-nav" aria-label="Case studies">
 <div class="container case-nav-row">
-<a class="jump-link" href="Work.dc.html#work-list"><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg></span><span class="t-label" style="color: var(--color-text-primary)">All work</span></a>
-<a class="jump-link case-nav-next" href="CaseOneDev.dc.html" rel="next"><span class="t-label" style="color: var(--color-text-primary)">Next: One Dev</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
+<a class="jump-link case-nav-prev" href="CaseSereel.dc.html" rel="prev"><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg></span><span class="t-label" style="color: var(--color-text-primary)"><span class="case-nav-kicker">Previous:</span> Sereel</span></a>
+<a class="jump-link case-nav-next" href="CaseOneDev.dc.html" rel="next"><span class="t-label" style="color: var(--color-text-primary)"><span class="case-nav-kicker">Next:</span> One Dev</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
 </div>
 </nav>
 

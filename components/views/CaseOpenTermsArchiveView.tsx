@@ -377,18 +377,24 @@ export default function CaseOpenTermsArchiveView() {
       </section>
       <nav id="case-nav" className="case-nav" aria-label="Case studies">
         <div className="container case-nav-row">
-          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+          <a className="jump-link case-nav-prev" href={`${BASE}/work/community-for-africa/`} rel="prev">
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="m12 19-7-7 7-7" />
                 <path d="M19 12H5" />
               </svg>
             </span>
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>All work</span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>
+              <span className="case-nav-kicker">Previous:</span>
+              {" "}Community for Africa
+            </span>
           </a>
           {" "}
           <a className="jump-link case-nav-next" href={`${BASE}/contact/`} rel="next">
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: Contact me</span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>
+              <span className="case-nav-kicker">Next:</span>
+              {" "}Contact me
+            </span>
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12h14" />

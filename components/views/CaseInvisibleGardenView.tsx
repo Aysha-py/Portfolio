@@ -341,10 +341,26 @@ export default function CaseInvisibleGardenView() {
         <div className="container case-grid reveal">
           <h2 id="visuals-title" className="t-label case-label">
             <span className="label-dot" aria-hidden="true" />
-            Visuals
+            Visuals / Selected work
           </h2>
           <div className="case-main">
-            <div className="case-shots">
+            <div className="case-shots is-four">
+              <figure className="case-shot">
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/ig-ba-announcement.jpg`} alt="Invisible Garden Argentina, open applications: Buenos Aires, 27 October to 16 November 2025, over a pixel-art field of flowers under a blue sky" loading="lazy" />
+                </div>
+                <figcaption className="t-caption secondary">
+                  <span>Announcing applications for the Buenos Aires residency, on X</span>
+                  <a className="case-shot-link" href="https://x.com/invisiblgarden/status/1943309193391620215" target="_blank" rel="noopener">
+                    See the post{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
+              </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
                   <img src={`${BASE}/images/invisible-garden-closing.jpg`} alt="Cover of Invisible Garden’s closing ceremony recap reel, with speakers on stage" loading="lazy" />
@@ -441,18 +457,24 @@ export default function CaseInvisibleGardenView() {
       </section>
       <nav id="case-nav" className="case-nav" aria-label="Case studies">
         <div className="container case-nav-row">
-          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+          <a className="jump-link case-nav-prev" href={`${BASE}/work/sereel/`} rel="prev">
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="m12 19-7-7 7-7" />
                 <path d="M19 12H5" />
               </svg>
             </span>
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>All work</span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>
+              <span className="case-nav-kicker">Previous:</span>
+              {" "}Sereel
+            </span>
           </a>
           {" "}
           <a className="jump-link case-nav-next" href={`${BASE}/work/one-dev/`} rel="next">
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: One Dev</span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>
+              <span className="case-nav-kicker">Next:</span>
+              {" "}One Dev
+            </span>
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12h14" />
