@@ -488,7 +488,7 @@ export default function WorkView() {
                 <h3 className="t-title work-heading">Turning community learning into practical resources</h3>
                 <div className="work-copy">
                   <p className="t-body">
-                    Community for Africa supports people learning and connecting across the community management ecosystem.
+                    Community for Africa is a community for community managers across Africa, bringing them together to exchange ideas, share practical experience, and learn how to build more effective communities.
                   </p>
                   <ul className="work-points">
                     <li className="t-body">Supported community engagement through events, learning sessions, and written and video content.</li>
@@ -547,7 +547,9 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Making it easier for contributors to find their way in</h3>
                 <div className="work-copy">
-                  <p className="t-body">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
+                  <p className="t-body">
+                    Open Terms Archive is an open-source digital public good that publicly records every version of the terms of digital services, to enable democratic oversight.
+                  </p>
                   <ul className="work-points">
                     <li className="t-body">
                       Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources.
@@ -645,6 +647,31 @@ export default function WorkView() {
                 </div>
                 {" "}
                 <span className="pick-mark" aria-hidden="true"><span className="shape half-round sh sh-primary mark-half" /></span>
+              </a>
+            </li>
+            <li>
+              <a className="pick attend reveal" href="https://www.linkedin.com/feed/update/urn:li:activity:7500148589420171265" target="_blank" rel="noopener">
+                <div className="pick-body">
+                  <p className="pick-meta">
+                    <span className="type-tag">LinkedIn content</span>
+                    <span className="t-caption secondary">Sereel</span>
+                  </p>
+                  <h3 className="t-title pick-title">Africa Sees 52% Crypto Market Growth, Regulators Embrace Tokenization</h3>
+                  <p className="t-body secondary pick-note">
+                    A LinkedIn post on how African regulators are moving tokenization into formal capital markets, from Ghana’s regulatory sandbox to Nigeria’s approval of tokenized securities, and what that means for the infrastructure behind them.
+                  </p>
+                  {" "}
+                  <span className="work-cta">
+                    Read the post{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </div>
+                {" "}
+                <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-circle" /></span>
               </a>
             </li>
             <li>
@@ -855,6 +882,19 @@ export default function WorkView() {
           </li>
           <li className="moment">
             <figure className="moment-photo">
+              <img src={`${BASE}/images/w3l-live-coding-diary.jpg`} alt="Livestream of a Web3Ladies technical session: Aishat and a guest on camera beside VS Code with a web3 project open" loading="lazy" />
+            </figure>
+            <p className="t-label">Host</p>
+            <div className="diary-title">
+              <h3 className="t-title">Live coding session</h3>
+              <p className="t-caption secondary">Livestream · November 2024</p>
+            </div>
+            <p className="t-body">
+              I hosted this technical session for Web3Ladies, a hands-on walkthrough of connecting a web app to a smart contract.
+            </p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
               <img src={`${BASE}/images/diary-ota-community-call.jpg`} alt="Aishat with contributors on the first Open Terms Archive community call" loading="lazy" />
             </figure>
             <p className="t-label">Host</p>
@@ -865,6 +905,27 @@ export default function WorkView() {
             <p className="t-body">
               I anchored the first Open Terms Archive community call, following the structure I created for regular community calls.
             </p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo is-whole">
+              <img src={`${BASE}/images/ota-about-alumni.jpg`} alt="The Alumni section of the Open Terms Archive About page, Former team members, with Aysha Muhammed among four former team members" loading="lazy" />
+            </figure>
+            <p className="t-label">Team</p>
+            <div className="diary-title">
+              <h3 className="t-title">Open Terms Archive alumni</h3>
+              <p className="t-caption secondary">Open source community manager · October 2024 – March 2025</p>
+            </div>
+            <p className="t-body">
+              I’m listed among Open Terms Archive’s former team members, for my time as its open source community manager.
+            </p>
+            <a className="moment-link" href="https://opentermsarchive.org/en/about/" target="_blank" rel="noopener">
+              See the team page{" "}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+              <span className="visually-hidden">(opens in a new tab)</span>
+            </a>
           </li>
           <li className="moment">
             <figure className="moment-photo">

@@ -178,7 +178,9 @@ export default function CaseOpenTermsArchiveView() {
             Brief
           </h2>
           <div className="case-main">
-            <p className="t-body-l">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
+            <p className="t-body-l">
+              Open Terms Archive is an open-source digital public good that publicly records every version of the terms of digital services, to enable democratic oversight.
+            </p>
             <p className="t-body">
               When I joined, the goal was to manage the community of open source contributors, oversee the migration to a new Mattermost, and foster a collaborative and inclusive environment.
             </p>

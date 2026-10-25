@@ -573,6 +573,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .moment{flex:0 0 var(--moment-card-width);scroll-snap-align:start;display:flex;flex-direction:column;gap:var(--space-related);margin:0;}
 .moment-photo{position:relative;margin:0 0 var(--space-tight);aspect-ratio:4 / 5;overflow:hidden;border-radius:var(--moment-photo-radius);background:var(--color-bg-subtle);border:var(--border-width-hairline) solid var(--color-border-subtle);}
 .moment-photo img{display:block;width:100%;height:100%;object-fit:cover;}
+/* a wide screenshot shown whole in the portrait diary frame */
+.moment-photo.is-whole{display:flex;align-items:center;justify-content:center;padding:var(--space-element);box-sizing:border-box;}
+.moment-photo.is-whole img{height:auto;object-fit:contain;border-radius:var(--radius-control);}
 .moment-photo.is-empty{display:flex;align-items:center;justify-content:center;}
 .moment-photo .shape{position:absolute;}
 .moment-photo .ph{position:relative;color:var(--color-text-secondary);}
@@ -802,7 +805,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </div>
 <h3 class="t-title work-heading">Turning community learning into practical resources</h3>
 <div class="work-copy">
-<p class="t-body">Community for Africa supports people learning and connecting across the community management ecosystem.</p>
+<p class="t-body">Community for Africa is a community for community managers across Africa, bringing them together to exchange ideas, share practical experience, and learn how to build more effective communities.</p>
 <ul class="work-points">
 <li class="t-body">Supported community engagement through events, learning sessions, and written and video content.</li>
 <li class="t-body">Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.</li>
@@ -826,7 +829,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </div>
 <h3 class="t-title work-heading">Making it easier for contributors to find their way in</h3>
 <div class="work-copy">
-<p class="t-body">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
+<p class="t-body">Open Terms Archive is an open-source digital public good that publicly records every version of the terms of digital services, to enable democratic oversight.</p>
 <ul class="work-points">
 <li class="t-body">Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources.</li>
 <li class="t-body">Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.</li>
@@ -869,6 +872,17 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <span class="work-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
 </div>
 <span class="pick-mark" aria-hidden="true"><span class="shape half-round sh sh-primary mark-half"></span></span>
+</a>
+</li>
+<li>
+<a class="pick attend reveal" href="https://www.linkedin.com/feed/update/urn:li:activity:7500148589420171265" target="_blank" rel="noopener">
+<div class="pick-body">
+<p class="pick-meta"><span class="type-tag">LinkedIn content</span><span class="t-caption secondary">Sereel</span></p>
+<h3 class="t-title pick-title">Africa Sees 52% Crypto Market Growth, Regulators Embrace Tokenization</h3>
+<p class="t-body secondary pick-note">A LinkedIn post on how African regulators are moving tokenization into formal capital markets, from Ghana’s regulatory sandbox to Nigeria’s approval of tokenized securities, and what that means for the infrastructure behind them.</p>
+<span class="work-cta">Read the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
+</div>
+<span class="pick-mark" aria-hidden="true"><span class="shape round sh sh-primary mark-circle"></span></span>
 </a>
 </li>
 
@@ -919,7 +933,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <li class="moment"><figure class="moment-photo"><img src="/_blob/f7e54a99c66a988ebf0db8c39cefd4ad" alt="Flyer for One Dev’s community AMA, Road to Code Africa Conference, with Aishat among the speakers" loading="lazy"></figure><p class="t-label">Pre-event campaign</p><div class="diary-title"><h3 class="t-title">Road to Code Africa Conference</h3><p class="t-caption secondary">X Space · 2 May 2025</p></div><p class="t-body">A community AMA in One Dev’s pre-event series for Code Africa Conference, on community potential and impact. I spoke as One Dev’s community manager.</p></li>
 <li class="moment"><figure class="moment-photo"><img src="/_blob/f37b5e15d552a0d5c8d2574fde0443b2" alt="A live class from One Dev’s AI/ML for Developers Bootcamp" loading="lazy"></figure><p class="t-label">Facilitator</p><div class="diary-title"><h3 class="t-title">AI/ML for Developers Bootcamp</h3><p class="t-caption secondary">YouTube · 2025</p></div><p class="t-body">I facilitated the live class on day one of One Dev’s bootcamp, which introduced the fundamentals of AI and machine learning and Python for AI.</p><a class="moment-link" href="https://www.youtube.com/watch?v=yqNm6mAvo0s&amp;t=307s" target="_blank" rel="noopener">Watch the recording <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></li>
 <li class="moment"><figure class="moment-photo"><img src="/_blob/92438ae120d79b25855447dd7610547a" alt="Event flyer for Contributing to open source in Web3, with Aishat as host" loading="lazy"></figure><p class="t-label">Host</p><div class="diary-title"><h3 class="t-title">Contributing to open source in Web3</h3><p class="t-caption secondary">YouTube Live · 2024</p></div><p class="t-body">I hosted this Web3 Ladies workshop on how to contribute to open-source projects in Web3.</p><a class="moment-link" href="https://www.youtube.com/watch?v=klbOztg-Y9Q&amp;t=5s" target="_blank" rel="noopener">Watch the recording <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+<li class="moment"><figure class="moment-photo"><img src="/_blob/01ac400a2e820bcf88a047ac0909e469" alt="Livestream of a Web3Ladies technical session: Aishat and a guest on camera beside VS Code with a web3 project open" loading="lazy"></figure><p class="t-label">Host</p><div class="diary-title"><h3 class="t-title">Live coding session</h3><p class="t-caption secondary">Livestream · November 2024</p></div><p class="t-body">I hosted this technical session for Web3Ladies, a hands-on walkthrough of connecting a web app to a smart contract.</p></li>
 <li class="moment"><figure class="moment-photo"><img src="/_blob/13c9fb7385539f1ac1dae9cc3b2b9b85" alt="Aishat with contributors on the first Open Terms Archive community call" loading="lazy"></figure><p class="t-label">Host</p><div class="diary-title"><h3 class="t-title">Open Terms Archive community call</h3><p class="t-caption secondary">Online · [Year]</p></div><p class="t-body">I anchored the first Open Terms Archive community call, following the structure I created for regular community calls.</p></li>
+<li class="moment"><figure class="moment-photo is-whole"><img src="/_blob/af18f7205ea540ae90e7f68bf81083d2" alt="The Alumni section of the Open Terms Archive About page, Former team members, with Aysha Muhammed among four former team members" loading="lazy"></figure><p class="t-label">Team</p><div class="diary-title"><h3 class="t-title">Open Terms Archive alumni</h3><p class="t-caption secondary">Open source community manager · October 2024 – March 2025</p></div><p class="t-body">I’m listed among Open Terms Archive’s former team members, for my time as its open source community manager.</p><a class="moment-link" href="https://opentermsarchive.org/en/about/" target="_blank" rel="noopener">See the team page <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></li>
 <li class="moment"><figure class="moment-photo"><img src="/_blob/45e4ad114584bd05f6581f8c784797a1" alt="Aishat at the Web3Ladies booth, behind a table of Web3Ladies T-shirts, tote bags and bottles" loading="lazy"></figure><p class="t-label">Representing Web3Ladies</p><div class="diary-title"><h3 class="t-title">[Event name]</h3><p class="t-caption secondary">In person · [City] · [Year]</p></div><p class="t-body">I represented Web3Ladies at the community’s booth. [What you shared or who you met.]</p></li>
 </ul>
 <div class="container">
@@ -963,7 +979,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":7700}}'>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":8000}}'>
 class Component extends DCLogic {
   renderVals() {
     const s = this.state || {};
