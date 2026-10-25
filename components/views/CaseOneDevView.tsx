@@ -234,7 +234,7 @@ export default function CaseOneDevView() {
                     Bootcamps were an important part of One Dev’s community activities. My responsibilities included creating registration forms, developing promotional copy, and distributing program announcements across social media, community channels, and the newsletter.
                   </p>
                   <p className="t-body">
-                    I coordinated promotional efforts across platforms, including using Nads.io to help distribute program information. I also used the newsletter to communicate upcoming programs to existing subscribers.
+                    I coordinated promotional efforts across platforms, including using Nas.io to help distribute program information. I also used the newsletter to communicate upcoming programs to existing subscribers.
                   </p>
                   <p className="t-body">
                     Rather than treating each bootcamp as an isolated event, I connected its promotion to the wider community ecosystem, helping people discover opportunities to learn and take the next step towards participation.
@@ -278,6 +278,56 @@ export default function CaseOneDevView() {
                 </div>
               </li>
             </ol>
+          </div>
+        </div>
+      </section>
+      <section id="tools" className="case-section" aria-labelledby="tools-title">
+        <div className="container case-grid reveal">
+          <h2 id="tools-title" className="t-label case-label">
+            <span className="label-dot" aria-hidden="true" />
+            Tools and platforms
+          </h2>
+          <div className="case-main">
+            <dl className="case-facts is-tools">
+              <div className="case-fact">
+                <dt className="t-label">Content distribution</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>X (Twitter)</li>
+                    <li>LinkedIn</li>
+                    <li>Instagram</li>
+                    <li>Newsletter</li>
+                    <li>Blog</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Programme promotion</dt>
+                <dd className="t-body"><ul className="case-fact-list"><li>Nas.io</li></ul></dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Community channels</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>Telegram</li>
+                    <li>Discord</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Live sessions</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>X Spaces</li>
+                    <li>Jitsi</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Collaboration and planning</dt>
+                <dd className="t-body"><ul className="case-fact-list"><li>Google Workspace</li></ul></dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>

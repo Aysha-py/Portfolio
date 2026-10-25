@@ -194,7 +194,7 @@ export default function CaseSereelView() {
               Sereel is a compliance-first tokenization platform for institutional capital markets, connecting traditional finance with blockchain-based infrastructure.
             </p>
             <p className="t-body">
-              When I joined, Sereel was still preparing to bring its product to market. The founder had been writing long-form content, but publishing was inconsistent. LinkedIn, the company’s primary platform for building visibility, also lacked a consistent publishing rhythm, and audience growth had stalled.
+              When I joined, Sereel was still preparing to bring its product to market. Long-form content was already part of Sereel’s content strategy, but publishing lacked consistency. LinkedIn, the company’s primary platform for building visibility, also lacked a consistent publishing rhythm, and audience growth had stalled.
             </p>
             <p className="t-body">
               For a startup operating in a complex and evolving market, this presented an opportunity. Sereel needed to communicate its ideas more consistently, reach a wider audience, and help people understand the developments shaping tokenized capital markets.
@@ -302,15 +302,6 @@ export default function CaseSereelView() {
                 </dd>
               </div>
               <div className="case-fact">
-                <dt className="t-label">Research</dt>
-                <dd className="t-body">
-                  <ul className="case-fact-list">
-                    <li>Google Search</li>
-                    <li>Primary-source research</li>
-                  </ul>
-                </dd>
-              </div>
-              <div className="case-fact">
                 <dt className="t-label">Content distribution</dt>
                 <dd className="t-body">
                   <ul className="case-fact-list">
@@ -321,6 +312,10 @@ export default function CaseSereelView() {
                     <li>TikTok</li>
                   </ul>
                 </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Collaboration and planning</dt>
+                <dd className="t-body"><ul className="case-fact-list"><li>Lark</li></ul></dd>
               </div>
             </dl>
           </div>

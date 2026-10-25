@@ -241,6 +241,47 @@ export default function CaseWeb3LadiesView() {
           </div>
         </div>
       </section>
+      <section id="tools" className="case-section" aria-labelledby="tools-title">
+        <div className="container case-grid reveal">
+          <h2 id="tools-title" className="t-label case-label">
+            <span className="label-dot" aria-hidden="true" />
+            Tools and platforms
+          </h2>
+          <div className="case-main">
+            <dl className="case-facts is-tools">
+              <div className="case-fact">
+                <dt className="t-label">Community platforms</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>WhatsApp</li>
+                    <li>Discord</li>
+                    <li>Slack</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Live sessions</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>Google Meet</li>
+                    <li>StreamYard</li>
+                    <li>YouTube Live</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Collaboration and planning</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>Notion</li>
+                    <li>Luma</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
       <section id="results" className="case-section always-lit" aria-labelledby="results-title">
         <div className="container case-grid reveal">
           <h2 id="results-title" className="t-label case-label">

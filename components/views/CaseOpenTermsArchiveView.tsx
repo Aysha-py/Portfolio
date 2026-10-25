@@ -245,6 +245,35 @@ export default function CaseOpenTermsArchiveView() {
           </div>
         </div>
       </section>
+      <section id="tools" className="case-section" aria-labelledby="tools-title">
+        <div className="container case-grid reveal">
+          <h2 id="tools-title" className="t-label case-label">
+            <span className="label-dot" aria-hidden="true" />
+            Tools and platforms
+          </h2>
+          <div className="case-main">
+            <dl className="case-facts is-tools">
+              <div className="case-fact">
+                <dt className="t-label">Community platform</dt>
+                <dd className="t-body"><ul className="case-fact-list"><li>Mattermost</li></ul></dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Documentation</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>GitHub</li>
+                    <li>YAML</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Community calls</dt>
+                <dd className="t-body"><ul className="case-fact-list"><li>Jitsi</li></ul></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
       <section id="results" className="case-section always-lit" aria-labelledby="results-title">
         <div className="container case-grid reveal">
           <h2 id="results-title" className="t-label case-label">
