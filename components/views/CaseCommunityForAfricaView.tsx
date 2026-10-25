@@ -223,6 +223,30 @@ export default function CaseCommunityForAfricaView() {
           </div>
         </div>
       </section>
+      <section id="tools" className="case-section" aria-labelledby="tools-title">
+        <div className="container case-grid reveal">
+          <h2 id="tools-title" className="t-label case-label">
+            <span className="label-dot" aria-hidden="true" />
+            Tools and platforms
+          </h2>
+          <div className="case-main">
+            <dl className="case-facts is-tools">
+              <div className="case-fact">
+                <dt className="t-label">Live sessions</dt>
+                <dd className="t-body"><ul className="case-fact-list"><li>X Spaces</li></ul></dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">[Group]</dt>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>[Other tools you used, for example for the Skills Audit Sheet, events or registration funnels]</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
       <section id="results" className="case-section always-lit" aria-labelledby="results-title">
         <div className="container case-grid reveal">
           <h2 id="results-title" className="t-label case-label">
