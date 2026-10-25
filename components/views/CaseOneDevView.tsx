@@ -148,7 +148,7 @@ export default function CaseOneDevView() {
             </div>
             <div className="case-fact">
               <dt className="t-label">Timeline</dt>
-              <dd className="t-body">January 2024 – present</dd>
+              <dd className="t-body">January 2024 – June 2025</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Skills</dt>
