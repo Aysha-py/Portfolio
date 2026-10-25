@@ -228,10 +228,10 @@ export default function HomeView() {
                 <p className="t-label">X</p>
                 <div className="sh-ring" aria-hidden="true" style={{width: "56px", height: "56px", borderWidth: "6.9px", flex: "none"} as React.CSSProperties} />
               </div>
-              <p className="t-figure">2,000</p>
+              <p className="t-figure">70%+</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>X followers</strong>
-                {" "}reached during an Ethereum-focused developer residency, through targeted and audience-focused content.
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Growth in X audience</strong>
+                {" "}during an Ethereum-focused developer residency, through targeted and audience-focused content.
               </p>
             </div>
             <div className="tile attend">
