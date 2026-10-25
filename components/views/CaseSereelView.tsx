@@ -194,7 +194,7 @@ export default function CaseSereelView() {
               Sereel is a compliance-first tokenization platform for institutional capital markets, connecting traditional finance with blockchain-based infrastructure.
             </p>
             <p className="t-body">
-              When I joined, Sereel was still preparing to bring its product to market. The founder had been writing long-form content, but publishing was inconsistent. LinkedIn, the company’s primary platform for building visibility, also lacked a consistent publishing rhythm, and audience growth had stalled.
+              When I joined, Sereel was still preparing to bring its product to market. Long-form content was already part of Sereel’s content strategy, but publishing lacked consistency. LinkedIn, the company’s primary platform for building visibility, also lacked a consistent publishing rhythm, and audience growth had stalled.
             </p>
             <p className="t-body">
               For a startup operating in a complex and evolving market, this presented an opportunity. Sereel needed to communicate its ideas more consistently, reach a wider audience, and help people understand the developments shaping tokenized capital markets.
