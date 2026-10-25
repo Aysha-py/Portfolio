@@ -261,9 +261,9 @@ export default function HomeView() {
                 <p className="t-label">Community · Web3Ladies</p>
                 <div className="round sh sh-primary" aria-hidden="true" style={{width: "56px", height: "56px", flex: "none"} as React.CSSProperties} />
               </div>
-              <p className="t-figure">16K+</p>
+              <p className="t-figure">20K</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Web3Ladies community members across platforms.</strong>
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Web3Ladies community members across WhatsApp, Discord, Instagram, LinkedIn and X.</strong>
                 {" "}Contributed to content, onboarding, and programmes supporting a growing community of women exploring blockchain, AI, and emerging technologies.
               </p>
             </div>

@@ -404,7 +404,7 @@ export default function WorkView() {
                   </p>
                   <p className="t-body">
                     <strong>
-                      15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations · 7+ projects submitted
+                      20,000 community members across platforms · 50+ events hosted · 100+ Build with AI registrations · 7+ projects submitted
                     </strong>
                   </p>
                 </div>

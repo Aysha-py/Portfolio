@@ -254,11 +254,11 @@ export default function CaseWeb3LadiesView() {
             <div className="case-tiles">
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Cross-platform growth</p>
+                  <p className="t-label">Community members</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">16,000+</p>
-                <p className="t-body secondary">Cross-platform growth supported across social and community platforms.</p>
+                <p className="t-figure">20,000</p>
+                <p className="t-body secondary">Members across WhatsApp, Discord, Instagram, LinkedIn, and X.</p>
               </div>
               <div className="tile">
                 <div className="tile-head">
