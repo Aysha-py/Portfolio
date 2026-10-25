@@ -276,18 +276,14 @@ export default function OpenTabsView() {
             <div className="stack split-text" style={{gap: "var(--space-cluster)"} as React.CSSProperties}>
               <h2 id="rr-title" className="t-heading-s">Some thoughts need somewhere to land.</h2>
               <p className="t-body-l secondary">
-                I like writing because it gives me room to sit with an idea, ask better questions, and work out what I actually think. Sometimes that means explaining something I’ve been learning; other times, it means reflecting on an experience or noticing a connection I hadn’t seen before.
+                For a long time, my notes were the only place my thoughts could go. They held the questions I kept returning to, the experiences I was still making sense of, and the things I wanted to write but wasn’t quite ready to share.
               </p>
               <p className="t-body-l secondary">
-                That’s part of why I started{" "}
+                Eventually, I started wondering what might happen if I let someone else into that process. What if the things I’m figuring out could help someone else make sense of their own experiences, too?
+              </p>
+              <p className="t-body-l secondary">
                 <em>Ripples {"&"} Reverie</em>
-                , my newsletter about content, community, and clarity in motion. It’s a place to look at what’s happening around me and make sense of what it might mean.
-              </p>
-              <p className="t-body-l secondary">
-                <strong>Ripples</strong>
-                {" "}explores ideas and developments moving through tech, content, and community.{" "}
-                <strong>Reverie</strong>
-                {" "}turns inward, making room for reflection and the lessons that emerge along the way.
+                {" "}is my little corner of the internet for personal essays about identity, relationships, expectations, and the messy business of becoming. If you’re also figuring life out as you build, grow, and change, this is a place for us to find pieces of ourselves in each other’s stories and learn as we go.
               </p>
               {" "}
               <a className="btn" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>
