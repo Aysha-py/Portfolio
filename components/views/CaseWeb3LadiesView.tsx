@@ -257,7 +257,7 @@ export default function CaseWeb3LadiesView() {
                   <p className="t-label">Community members</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">20,000</p>
+                <p className="t-figure">20,000+</p>
                 <p className="t-body secondary">Members across WhatsApp, Discord, Instagram, LinkedIn, and X.</p>
               </div>
               <div className="tile">
