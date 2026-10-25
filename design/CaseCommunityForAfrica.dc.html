@@ -664,12 +664,17 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
 .case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
+/* component: four visuals sit four across, two across on tablets */
+.case-shots.is-four{grid-template-columns:repeat(4,minmax(0,1fr));}
+@media (max-width: 1100px){.case-shots.is-four{grid-template-columns:repeat(2,minmax(0,1fr));}}
+/* component: screenshots in Visuals or Results, at their own shape, under the photos or tiles */
+.case-gallery{margin-top:var(--space-element);}
 /* component: written feedback, short quotes in two columns (one on phones) */
 .case-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-group) var(--space-stack);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
-.case-shots{grid-template-columns:minmax(0,1fr);}
+.case-shots,.case-shots.is-four{grid-template-columns:minmax(0,1fr);}
 .case-quotes{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-pairs{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five{grid-template-columns:minmax(0,1fr);}
@@ -863,10 +868,11 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container case-grid reveal">
 <h2 id="visuals-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Visuals</h2>
 <div class="case-main">
-<div class="case-shots">
-<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/951e3009bfb05f7c4872f0e34cd0d453" alt="Aishat standing beside a wall screen showing the Community Managers Skills Audit Sheet and how to use it" loading="lazy"></div><figcaption class="t-caption secondary"><span>Presenting a demo of the Skills Audit Sheet at the masterclass in Lagos</span></figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame has-image is-whole"><img src="/_blob/83e9e7c7577554c74acacebe9ef6faab" alt="Speaker card for CM Beginner Series 4.0, A Masterclass on Strategy and Engagement, by Community for Africa: Aishat Muhammed, Skills Audit Sheet" loading="lazy"></div><figcaption class="t-caption secondary"><span>Speaking on the Skills Audit Sheet at CM Beginner Series 4.0</span></figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame has-image is-whole"><img src="/_blob/2a7a14ade7025d3b04f562107b695ea3" alt="Flyer for a Community for Africa book review session of Buzzing Communities by Richard Millington, on Twitter Space on Saturday 28 September 2024 at 8pm WAT, with two community superstars as hosts" loading="lazy"></div><figcaption class="t-caption secondary"><span>A book review session for the community, on X Spaces</span></figcaption></figure>
+<div class="case-shots is-four">
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/0ae23ea983ee71ccf0725ae335606727" alt="Aishat beside a wall screen showing the Skills Audit Sheet, with its skill categories, one-line explanations and proficiency levels" loading="lazy"></div><figcaption class="t-caption secondary"><span>Presenting a demo of the Skills Audit Sheet at the masterclass in Lagos</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/42f4f01fabe182f51c2fd28463784a01" alt="Community for Africa speaker card for CM Beginner Series 4.0, A Masterclass on Strategy and Engagement: Aishat Muhammed, Community Manager, with her biography" loading="lazy"></div><figcaption class="t-caption secondary"><span>Speaking at CM Beginner Series 4.0, A Masterclass on Strategy and Engagement</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/d4540c88f327bad32feb79f6da84c327" alt="Flyer for The AI-Powered CM, a Community for Africa fireside chat on 23 August 2025 at 8pm WAT on Cirlo, with Aishat Muhammed as host and Destiny Aimufia as speaker" loading="lazy"></div><figcaption class="t-caption secondary"><span>Hosting The AI-Powered CM, a Community for Africa fireside chat</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/f64568c8d684589be52646f2c05501c7" alt="Aishat with the Community for Africa team, posing together in a living room" loading="lazy"></div><figcaption class="t-caption secondary"><span>With the Community for Africa team</span></figcaption></figure>
 </div>
 </div>
 </div>

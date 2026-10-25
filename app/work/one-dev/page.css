@@ -654,12 +654,17 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
 .case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
+/* component: four visuals sit four across, two across on tablets */
+.case-shots.is-four{grid-template-columns:repeat(4,minmax(0,1fr));}
+@media (max-width: 1100px){.case-shots.is-four{grid-template-columns:repeat(2,minmax(0,1fr));}}
+/* component: screenshots in Visuals or Results, at their own shape, under the photos or tiles */
+.case-gallery{margin-top:var(--space-element);}
 /* component: written feedback, short quotes in two columns (one on phones) */
 .case-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-group) var(--space-stack);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
-.case-shots{grid-template-columns:minmax(0,1fr);}
+.case-shots,.case-shots.is-four{grid-template-columns:minmax(0,1fr);}
 .case-quotes{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-pairs{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five{grid-template-columns:minmax(0,1fr);}

@@ -314,6 +314,14 @@ export default function CaseOpenTermsArchiveView() {
                 <figcaption className="t-caption secondary"><span>The community page on GitHub</span></figcaption>
               </figure>
             </div>
+            <div className="case-feedback case-gallery">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ota-community-call-ten.jpg`} alt="Jitsi call titled Open Terms Archive Community Call with ten participants on camera, Aishat among them" loading="lazy" />
+                  <figcaption className="t-caption secondary">An Open Terms Archive community call, with ten people on the call</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </section>

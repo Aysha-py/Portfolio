@@ -267,6 +267,14 @@ export default function CaseCodeAfricaView() {
                 <p className="t-body secondary">Attendees at the conference.</p>
               </div>
             </div>
+            <div className="case-feedback case-gallery">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ca-x-analytics.jpg`} alt="One Dev’s X analytics: 11K impressions, up 279%; a 14.7% engagement rate; 1.6K engagements, up 384%; 187 profile visits, up 405%; 453 likes, up 529%; 164 reposts, up 556%; and 96 verified followers out of 5.2K" loading="lazy" />
+                  <figcaption className="t-caption secondary">One Dev’s X analytics during the Code Africa campaign</figcaption>
+                </figure>
+              </div>
+            </div>
             <p className="t-body-l">
               The conference attracted 3,000+ registrations and 1,500 attendees. These were collective team outcomes, supported by coordinated marketing, ambassador-led promotion, and the work of volunteers and other contributors.
             </p>
@@ -283,7 +291,7 @@ export default function CaseCodeAfricaView() {
             Visuals
           </h2>
           <div className="case-main">
-            <div className="case-shots">
+            <div className="case-shots is-four">
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
                   <img src={`${BASE}/images/diary-code-africa-onedev.jpg`} alt="Aishat speaking on stage at the Code Africa Conference City Tour in Nigeria" loading="lazy" />
@@ -299,6 +307,12 @@ export default function CaseCodeAfricaView() {
                     <span className="visually-hidden">(opens in a new tab)</span>
                   </a>
                 </figcaption>
+              </figure>
+              <figure className="case-shot">
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/ca-dp-campaign.jpg`} alt="Code Africa profile picture frame reading I will be attending #CodeAfrica, with an attendee’s photo, for 23 May 2025 at Jhain Bhavan, Nairobi" loading="lazy" />
+                </div>
+                <figcaption className="t-caption secondary"><span>The “I will be attending” profile-picture campaign</span></figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">

@@ -290,24 +290,30 @@ export default function CaseCommunityForAfricaView() {
             Visuals
           </h2>
           <div className="case-main">
-            <div className="case-shots">
+            <div className="case-shots is-four">
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
-                  <img src={`${BASE}/images/cfa-audit-sheet-demo.jpg`} alt="Aishat standing beside a wall screen showing the Community Managers Skills Audit Sheet and how to use it" loading="lazy" />
+                  <img src={`${BASE}/images/cfa-audit-sheet-demo-hd.jpg`} alt="Aishat beside a wall screen showing the Skills Audit Sheet, with its skill categories, one-line explanations and proficiency levels" loading="lazy" />
                 </div>
                 <figcaption className="t-caption secondary"><span>Presenting a demo of the Skills Audit Sheet at the masterclass in Lagos</span></figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame has-image is-whole">
-                  <img src={`${BASE}/images/cfa-masterclass-speaker.jpg`} alt="Speaker card for CM Beginner Series 4.0, A Masterclass on Strategy and Engagement, by Community for Africa: Aishat Muhammed, Skills Audit Sheet" loading="lazy" />
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/cfa-masterclass-speaker-bio.jpg`} alt="Community for Africa speaker card for CM Beginner Series 4.0, A Masterclass on Strategy and Engagement: Aishat Muhammed, Community Manager, with her biography" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>Speaking on the Skills Audit Sheet at CM Beginner Series 4.0</span></figcaption>
+                <figcaption className="t-caption secondary"><span>Speaking at CM Beginner Series 4.0, A Masterclass on Strategy and Engagement</span></figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame has-image is-whole">
-                  <img src={`${BASE}/images/cfa-book-review.jpg`} alt="Flyer for a Community for Africa book review session of Buzzing Communities by Richard Millington, on Twitter Space on Saturday 28 September 2024 at 8pm WAT, with two community superstars as hosts" loading="lazy" />
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/cfa-fireside-ai-powered-cm.jpg`} alt="Flyer for The AI-Powered CM, a Community for Africa fireside chat on 23 August 2025 at 8pm WAT on Cirlo, with Aishat Muhammed as host and Destiny Aimufia as speaker" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>A book review session for the community, on X Spaces</span></figcaption>
+                <figcaption className="t-caption secondary"><span>Hosting The AI-Powered CM, a Community for Africa fireside chat</span></figcaption>
+              </figure>
+              <figure className="case-shot">
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/cfa-team.jpg`} alt="Aishat with the Community for Africa team, posing together in a living room" loading="lazy" />
+                </div>
+                <figcaption className="t-caption secondary"><span>With the Community for Africa team</span></figcaption>
               </figure>
             </div>
           </div>

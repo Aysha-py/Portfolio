@@ -335,6 +335,28 @@ export default function CaseWeb3LadiesView() {
                 <figcaption className="t-caption secondary"><span>At MetaMask Community Builder Night, Lagos</span></figcaption>
               </figure>
             </div>
+            <div className="case-feedback case-gallery">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-polkadot-outreach.jpg`} alt="Discord message from Aishat to the Polkadot team asking if she can send a proposal for a speaking invitation with Web3Ladies, and a workshop on onboarding the ladies and contributing to the Polkadot ecosystem" loading="lazy" />
+                  <figcaption className="t-caption secondary">Reaching out to the Polkadot team to propose a workshop for Web3Ladies</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-polkadot-session.jpg`} alt="Google Meet call titled Introduction to Polkadot, with the Polkadot Africa page on screen, Web3Ladies on the call and 32 participants" loading="lazy" />
+                  <figcaption className="t-caption secondary">Introduction to Polkadot, a Web3Ladies session with the Polkadot Africa team, 32 people on the call</figcaption>
+                </figure>
+              </div>
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-open-source-live.jpg`} alt="StreamYard studio during the Contributing to open source in Web3 livestream, with live comments from viewers in Lagos and Benin" loading="lazy" />
+                  <figcaption className="t-caption secondary">Contributing to open source in Web3, live, with members joining from Lagos and Benin</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-technical-session.jpg`} alt="StreamYard livestream of a coding session for Web3Ladies, with a guest on camera and VS Code showing a web3 app that signs a message and calls a smart contract" loading="lazy" />
+                  <figcaption className="t-caption secondary">A live coding session I hosted for Web3Ladies</figcaption>
+                </figure>
+              </div>
+            </div>
             {" "}
             <a className="work-cta case-more-link" href="https://www.youtube.com/@Web3Ladies/streams" target="_blank" rel="noopener">
               See more sessions on YouTube{" "}
@@ -354,10 +376,28 @@ export default function CaseWeb3LadiesView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at Web3Ladies about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at Web3Ladies]</figcaption>
-            </figure>
+            <div className="case-feedback">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-feedback-osun-chapter.jpg`} alt="Post on X: We’d our first community meeting today, Web3Ladies Osun chapter. It was amazing onboarding ladies into the Web3 space! Thank you @this_aishah_, truly an impactful session. Managing a community seemed challenging at first, but I’m excited we’re making progress. With screenshots of the session, Unlocking opportunities in Web3, with Aisha, community manager at Web3Ladies." loading="lazy" />
+                  <figcaption className="t-caption secondary">From the Web3Ladies Osun chapter, after its first community meeting, on X</figcaption>
+                </figure>
+              </div>
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-feedback-session.jpg`} alt="Discord chat. Aishat asks how a member’s day is going. The member replies: Yes yes!! I started a writing project I absolutely love. Thank you for the session yesterday, really boosted my confidence and zeal. Aishat replies: I am absolutely glad to hear this. This made my day." loading="lazy" />
+                  <figcaption className="t-caption secondary">From a member, the day after a session</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-feedback-hackathons.jpg`} alt="WhatsApp message replying to Aishat’s photo of the session: Thanks so much Aisha. You’re a gem. Learnt a lot about hackathons." loading="lazy" />
+                  <figcaption className="t-caption secondary">From the Akwa Ibom chapter, after my session on hackathons</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-feedback-hackathons-lead.jpg`} alt="WhatsApp message: If you took a screenshot, please drop it here. @this_aishah_ thank you so much. I enjoyed learning about hackathons." loading="lazy" />
+                  <figcaption className="t-caption secondary">And another, from the same session</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </section>
