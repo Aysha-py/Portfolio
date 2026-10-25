@@ -184,7 +184,7 @@ export default function CaseInvisibleGardenView() {
           </h2>
           <div className="case-main">
             <p className="t-body-l">
-              Its Buenos Aires residency ran for three weeks, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.
+              Invisible Garden’s Buenos Aires residency ran for three weeks, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.
             </p>
             <p className="t-body">
               The programme needed to reach its intended audience before the event, communicate its activities while it was underway, and extend the value of its educational content beyond the residency itself.
@@ -284,12 +284,12 @@ export default function CaseInvisibleGardenView() {
             <div className="case-tiles is-five">
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Event registrations</p>
+                  <p className="t-label">Registrations</p>
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
-                <p className="t-figure">900</p>
+                <p className="t-figure">900+</p>
                 <p className="t-body secondary">
-                  Supported event promotion throughout the programme’s promotional cycle, contributing to awareness and registration efforts that reached 900 registrations.
+                  Supported event promotion throughout the programme’s promotional cycle, contributing to awareness and registration efforts that reached over 900 developer registrations for the residency.
                 </p>
               </div>
               <div className="tile">
@@ -353,9 +353,19 @@ export default function CaseInvisibleGardenView() {
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
-                  <img src={`${BASE}/images/invisible-garden-stage.jpg`} alt="A speaker on stage at the Invisible Garden residency" loading="lazy" />
+                  <img src={`${BASE}/images/ig-build-mode.jpg`} alt="Residents gathered around a table on a sunny terrace in Buenos Aires, working through a project together in week 2 of Invisible Garden" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>A talk on stage, on Instagram</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>Build mode in week 2 of the residency, on Instagram</span>
+                  <a className="case-shot-link" href="https://www.instagram.com/p/DQonIp_DOTV/?img_index=2" target="_blank" rel="noopener">
+                    See the post{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
