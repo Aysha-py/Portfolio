@@ -4,7 +4,7 @@ import "./page.css";
 
 export const metadata: Metadata = {
   title: "Open tabs",
-  description: "Content creation, writing, open source and volunteering: the tabs I keep open.",
+  description: "Content creation, personal essays, open source and volunteering: the tabs I keep open.",
 };
 
 export default function Page() {

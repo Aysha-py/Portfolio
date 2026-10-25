@@ -141,7 +141,7 @@ export default function OpenTabsView() {
               <li>
                 <a className="tab" href="#writing">
                   <span className="label-dot" aria-hidden="true" />
-                  <span className="t-label">Writing</span>
+                  <span className="t-label">Personal essay</span>
                 </a>
               </li>
               <li>
@@ -268,7 +268,7 @@ export default function OpenTabsView() {
             <li>
               <span className="tab">
                 <span className="label-dot" />
-                <span className="t-label">Writing</span>
+                <span className="t-label">Personal essay</span>
               </span>
             </li>
           </ul>
