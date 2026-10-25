@@ -124,7 +124,7 @@ export default function OpenTabsView() {
           </h1>
           <div className="stack" style={{maxWidth: "680px", gap: "var(--space-element)"} as React.CSSProperties}>
             <p className="t-body-l">
-              Not everything I’m curious about fits neatly into a job title. Some things I explore because I want to understand them, some because they catch my attention, and others simply because I enjoy them.
+              Not everything I’m curious about fits neatly into a job title. I explore some things because I want to understand them, some because they catch my attention, and others simply because I enjoy them.
             </p>
             <p className="t-body-l">
               This is where I keep those little rabbit holes, interesting finds, things I’m learning, and ideas I can’t quite leave alone. Think of it as a peek at the tabs I keep open, both in my browser and in my mind.
