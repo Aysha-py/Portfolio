@@ -342,10 +342,14 @@ export default function CaseOpenTermsArchiveView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at Open Terms Archive about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at Open Terms Archive]</figcaption>
-            </figure>
+            <div className="case-feedback">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ota-feedback-transition-plan.jpg`} alt="Chat thread. Aishat: The transition plan has been reworked on the same Google document. A teammate replies: Thanks Aishat for all this work! This plan looks solid." loading="lazy" />
+                  <figcaption className="t-caption secondary">From the team, on my transition plan for the move to the new Mattermost</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </section>
