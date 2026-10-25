@@ -389,10 +389,10 @@ export default function CaseSereelView() {
             <div className="case-shots">
               <figure className="case-shot">
                 <div className="case-shot-frame has-image is-whole">
-                  <img src={`${BASE}/images/sereel-feedback-linkedin.jpg`} alt="A Sereel LinkedIn post with an illustration of the Absa and Ripple logos around a shield over a map of Africa, with 115 reactions, 3 comments and 22 reposts" loading="lazy" />
+                  <img src={`${BASE}/images/sereel-feedback-linkedin.jpg`} alt="A Sereel LinkedIn post with an illustration of the Absa and Ripple logos around a shield over a map of Africa" loading="lazy" />
                 </div>
                 <figcaption className="t-caption secondary">
-                  <span>A LinkedIn post for Sereel: 115 reactions, 3 comments and 22 reposts</span>
+                  <span>A LinkedIn post for Sereel</span>
                   <a className="case-shot-link" href="https://lnkd.in/p/eDPg_Dwe" target="_blank" rel="noopener">
                     See the post on LinkedIn{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -405,10 +405,10 @@ export default function CaseSereelView() {
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
-                  <img src={`${BASE}/images/sereel-newsletter-19.jpg`} alt="Cover of Sereel Monthly Newsletter 19: a robot filling in a KYC / KYA form beside a globe and books on compliance, tokenization and global markets" loading="lazy" />
+                  <img src={`${BASE}/images/sereel-newsletter-19.jpg`} alt="Cover of an issue of Sereel Monthly Newsletter: a robot filling in a KYC / KYA form beside a globe and books on compliance, tokenization and global markets" loading="lazy" />
                 </div>
                 <figcaption className="t-caption secondary">
-                  <span>Sereel Monthly Newsletter 19, on Substack</span>
+                  <span>Sereel Monthly Newsletter, on Substack</span>
                   <a className="case-shot-link" href="https://0xseree.substack.com/p/sereel-monthly-newsletter-19" target="_blank" rel="noopener">
                     Read the newsletter{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
