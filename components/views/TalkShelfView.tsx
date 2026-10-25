@@ -437,7 +437,7 @@ export default function TalkShelfView() {
                     <path className="sk-line" d="M144 7 Q153.4 9.7 163 12 Q153.5 15.1 144 18" />
                   </svg>
                 </div>
-                <h3 className="t-title">Career growth for beginners</h3>
+                <h3 className="t-title">Career growth in tech</h3>
                 <p className="t-body secondary">Practical steps for breaking into tech, with or without a computer science degree.</p>
               </div>
             </li>
@@ -470,7 +470,7 @@ export default function TalkShelfView() {
                   </button>
                 </div>
                 <p className="t-body-l">
-                  Aishat Muhammed is a content marketer and community manager who helps brands make complex ideas easier to understand through audience-focused content, research, and storytelling. She has spoken at several events since 2023 on community building, open source, Web3 education, and career growth for beginners.
+                  Aishat Muhammed is a content marketer and community manager who helps brands make complex ideas easier to understand through audience-focused content, research, and storytelling. She has spoken at several events since 2023 on community building, open source, Web3 education, and career growth in tech.
                 </p>
               </div>
               <div className="bio-card">
@@ -503,7 +503,7 @@ export default function TalkShelfView() {
                   </li>
                   <li className="fact">
                     <span className="t-label">Speaks on</span>
-                    <span className="t-body">Community building, open source, Web3 education, and career growth for beginners</span>
+                    <span className="t-body">Community building, open source, Web3 education, and career growth in tech</span>
                   </li>
                   <li className="fact">
                     <span className="t-label">Formats</span>
