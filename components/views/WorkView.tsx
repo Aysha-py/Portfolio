@@ -228,13 +228,13 @@ export default function WorkView() {
                   </p>
                   <ul className="work-points">
                     <li className="t-body">
-                      Owned social media copy and content coverage across the residency, translating technical programmes, partner activities, and community milestones into stories that audiences could follow.
+                      Owned content copy and coverage across the residency, translating technical programmes, partner activities, and community milestones into stories that audiences could follow.
                     </li>
                     <li className="t-body">
                       Captured and edited on-site footage into short- and long-form videos, extending the coverage across X and YouTube.
                     </li>
                     <li className="t-body">
-                      Managed outreach to prospective mentors and project judges, drafting personalised messages, following up, and tracking responses and project evaluations in Excel to help secure judges for the projects.
+                      Managed outreach to stakeholders, drafting personalised messages, following up, and tracking responses and project evaluations in Excel to help secure judges for the projects.
                     </li>
                     <li className="t-body">
                       Grew Invisible Garden’s X following by{" "}
@@ -290,7 +290,9 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Connecting developers with the knowledge and people they need to grow</h3>
                 <div className="work-copy">
-                  <p className="t-body">One Dev supports people learning and building in Web3.</p>
+                  <p className="t-body">
+                    One Dev is a tech education community that upskills African developers in blockchain, AI, and other emerging technologies, preparing them for competitive careers through talent development and equal access to global opportunities.
+                  </p>
                   <ul className="work-points">
                     <li className="t-body">
                       Managed community engagement and supported developer learning through educational content, bootcamps, and community programmes.
@@ -299,9 +301,9 @@ export default function WorkView() {
                       Connected content and programme communications with the wider community experience, helping members discover learning opportunities and stay engaged.
                     </li>
                     <li className="t-body">
-                      Contributed to a community of{" "}
+                      Grew the community to{" "}
                       <strong>8,000+ members</strong>
-                      {" "}and bootcamps that reached{" "}
+                      {" "}across platforms, and supported bootcamps that reached{" "}
                       <strong>500+ learners</strong>
                       .
                     </li>
@@ -352,7 +354,9 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Connecting conference promotion with community participation</h3>
                 <div className="work-copy">
-                  <p className="t-body">Code Africa brought together people across the African Web3 ecosystem.</p>
+                  <p className="t-body">
+                    Code Africa Conference is a pan-African Web3 event organised by One Dev, bringing together developers and other ecosystem participants.
+                  </p>
                   <ul className="work-points">
                     <li className="t-body">
                       Supported conference promotion and community operations through campaign copy, content distribution, volunteer coordination, and the ambassador campaign.
@@ -414,7 +418,7 @@ export default function WorkView() {
                 <h3 className="t-title work-heading">Turning community needs into opportunities to learn and grow</h3>
                 <div className="work-copy">
                   <p className="t-body">
-                    Web3Ladies creates opportunities for women to learn, build, and grow within the AI and Web3 ecosystem.
+                    Web3Ladies is a community focused on helping women access learning opportunities, develop technical skills, and participate in the technology and Web3 ecosystem.
                   </p>
                   <ul className="work-points">
                     <li className="t-body">

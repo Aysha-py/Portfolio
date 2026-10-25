@@ -295,9 +295,7 @@ export default function CaseOneDevView() {
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
                 <p className="t-figure">8,000+</p>
-                <p className="t-body secondary">
-                  Supported One Dev’s wider community ecosystem, which reached more than 8,000 members across its community channels.
-                </p>
+                <p className="t-body secondary">Grew One Dev’s community to more than 8,000 members across platforms.</p>
               </div>
               <div className="tile">
                 <div className="tile-head">
