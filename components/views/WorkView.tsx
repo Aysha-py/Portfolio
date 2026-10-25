@@ -764,7 +764,7 @@ export default function WorkView() {
             <p className="t-label">Representing Web3Ladies</p>
             <div className="diary-title">
               <h3 className="t-title">MetaMask Community Builder Night</h3>
-              <p className="t-caption secondary">In person · Lagos · [Year]</p>
+              <p className="t-caption secondary">In person · Lagos</p>
             </div>
             <p className="t-body">I represented Web3Ladies at MetaMask’s Community Builder Night in Lagos.</p>
           </li>
@@ -775,7 +775,7 @@ export default function WorkView() {
             <p className="t-label">Video editing</p>
             <div className="diary-title">
               <h3 className="t-title">Invisible Garden Buenos Aires recap</h3>
-              <p className="t-caption secondary">YouTube · Residency, 2025</p>
+              <p className="t-caption secondary">YouTube</p>
             </div>
             <p className="t-body">I edited this long-form recap of Invisible Garden’s developer residency in Buenos Aires.</p>
             <a className="moment-link" href="https://www.youtube.com/watch?v=Op3Syvqt_f8" target="_blank" rel="noopener">
@@ -794,7 +794,7 @@ export default function WorkView() {
             <p className="t-label">Representing Web3Ladies</p>
             <div className="diary-title">
               <h3 className="t-title">GITEX Nigeria</h3>
-              <p className="t-caption secondary">In person · Lagos · 2025</p>
+              <p className="t-caption secondary">In person · Lagos</p>
             </div>
             <p className="t-body">
               I represented Web3Ladies at GITEX Nigeria in Lagos. [What you did there, for example who you met or what you shared.]
@@ -807,7 +807,7 @@ export default function WorkView() {
             <p className="t-label">Representing Web3Ladies</p>
             <div className="diary-title">
               <h3 className="t-title">DSF x Stellar meetup</h3>
-              <p className="t-caption secondary">In person · Lagos · 2025</p>
+              <p className="t-caption secondary">In person · Lagos</p>
             </div>
             <p className="t-body">I shared the Web3Ladies vision at the DSF x Stellar meetup in Lagos.</p>
           </li>
@@ -818,7 +818,7 @@ export default function WorkView() {
             <p className="t-label">Representing One Dev</p>
             <div className="diary-title">
               <h3 className="t-title">Code Africa Conference City Tour</h3>
-              <p className="t-caption secondary">In person · Nigeria · 2025</p>
+              <p className="t-caption secondary">In person · Nigeria</p>
             </div>
             <p className="t-body">
               I shared One Dev’s vision to help African builders upskill in emerging technologies like blockchain and AI.
@@ -839,7 +839,7 @@ export default function WorkView() {
             <p className="t-label">Pre-event campaign</p>
             <div className="diary-title">
               <h3 className="t-title">Road to Code Africa Conference</h3>
-              <p className="t-caption secondary">X Space · 2 May 2025</p>
+              <p className="t-caption secondary">X Space</p>
             </div>
             <p className="t-body">
               A community AMA in One Dev’s pre-event series for Code Africa Conference, on community potential and impact. I spoke as One Dev’s community manager.
@@ -852,7 +852,7 @@ export default function WorkView() {
             <p className="t-label">Facilitator</p>
             <div className="diary-title">
               <h3 className="t-title">AI/ML for Developers Bootcamp</h3>
-              <p className="t-caption secondary">YouTube · 2025</p>
+              <p className="t-caption secondary">YouTube</p>
             </div>
             <p className="t-body">
               I facilitated the live class on day one of One Dev’s bootcamp, which introduced the fundamentals of AI and machine learning and Python for AI.
@@ -873,7 +873,7 @@ export default function WorkView() {
             <p className="t-label">Host</p>
             <div className="diary-title">
               <h3 className="t-title">Contributing to open source in Web3</h3>
-              <p className="t-caption secondary">YouTube Live · 2024</p>
+              <p className="t-caption secondary">YouTube Live</p>
             </div>
             <p className="t-body">I hosted this Web3 Ladies workshop on how to contribute to open-source projects in Web3.</p>
             <a className="moment-link" href={"https://www.youtube.com/watch?v=klbOztg-Y9Q&t=5s"} target="_blank" rel="noopener">
@@ -892,7 +892,7 @@ export default function WorkView() {
             <p className="t-label">Host</p>
             <div className="diary-title">
               <h3 className="t-title">Live coding session</h3>
-              <p className="t-caption secondary">Livestream · November 2024</p>
+              <p className="t-caption secondary">Livestream</p>
             </div>
             <p className="t-body">
               I hosted this technical session for Web3Ladies, a hands-on walkthrough of connecting a web app to a smart contract.
@@ -905,7 +905,7 @@ export default function WorkView() {
             <p className="t-label">Presenter</p>
             <div className="diary-title">
               <h3 className="t-title">Skills Audit Sheet demo</h3>
-              <p className="t-caption secondary">In person · Lagos · [Year]</p>
+              <p className="t-caption secondary">In person · Lagos</p>
             </div>
             <p className="t-body">
               I presented a demo of the Skills Audit Sheet I created for Community for Africa at its masterclass in Lagos, showing community managers how to assess their skills and plan their growth.
@@ -918,7 +918,7 @@ export default function WorkView() {
             <p className="t-label">Host</p>
             <div className="diary-title">
               <h3 className="t-title">Open Terms Archive community call</h3>
-              <p className="t-caption secondary">Online · [Year]</p>
+              <p className="t-caption secondary">Online</p>
             </div>
             <p className="t-body">
               I anchored the first Open Terms Archive community call, following the structure I created for regular community calls.
@@ -931,7 +931,7 @@ export default function WorkView() {
             <p className="t-label">Team</p>
             <div className="diary-title">
               <h3 className="t-title">Open Terms Archive alumni</h3>
-              <p className="t-caption secondary">Open source community manager · October 2024 – March 2025</p>
+              <p className="t-caption secondary">Open source community manager</p>
             </div>
             <p className="t-body">
               I’m listed among Open Terms Archive’s former team members, for my time as its open source community manager.
@@ -952,7 +952,7 @@ export default function WorkView() {
             <p className="t-label">Representing Web3Ladies</p>
             <div className="diary-title">
               <h3 className="t-title">[Event name]</h3>
-              <p className="t-caption secondary">In person · [City] · [Year]</p>
+              <p className="t-caption secondary">In person · [City]</p>
             </div>
             <p className="t-body">I represented Web3Ladies at the community’s booth. [What you shared or who you met.]</p>
           </li>

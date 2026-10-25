@@ -182,6 +182,7 @@
 --story-art-bg:var(--color-bg-subtle);
 --story-art-shapes-height:180px;
 --story-padding:var(--space-group);
+--story-logo-height:var(--primitive-size-64);
 --panel-radius:var(--radius-card);
 --panel-bg:var(--color-bg-subtle);
 --step-rule:var(--color-border-strong);
@@ -323,6 +324,13 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 .reel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--reel-gap);}
 @media (max-width: 760px){.reel-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 .reel-grid img{display:block;width:100%;aspect-ratio:var(--reel-aspect);object-fit:cover;border-radius:var(--reel-radius);}
+/* selected work on phones: the organisation's logo stands in for the grid of videos and posts */
+.story-logo{display:none;}
+.story-logo img{display:block;width:auto;height:var(--story-logo-height);}
+.story-logo .logo-dark{display:none;}
+.home[data-theme="dark"] .story-logo .logo-light{display:none;}
+.home[data-theme="dark"] .story-logo .logo-dark{display:block;}
+@media (max-width: 760px){.story-art.is-reels .reel-grid{display:none;}.story-logo{display:flex;}}
 .story-head{display:flex;flex-direction:column;gap:var(--space-related);}
 .story-copy{display:flex;flex-direction:column;gap:var(--space-element);max-width:var(--story-measure);}
 .story-shapes{position:absolute;left:0;top:0;right:0;height:var(--story-art-shapes-height);}
