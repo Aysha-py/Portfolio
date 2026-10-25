@@ -223,7 +223,9 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Turning a developer residency into a story people could follow</h3>
                 <div className="work-copy">
-                  <p className="t-body">Invisible Garden hosted a three-week Ethereum-focused developer residency in Buenos Aires.</p>
+                  <p className="t-body">
+                    Invisible Garden is a travelling academy for developers, where they learn, build, and connect across Ethereum, zero-knowledge proofs, AI, and cybersecurity.
+                  </p>
                   <ul className="work-points">
                     <li className="t-body">
                       Owned social media copy and content coverage across the residency, translating technical programmes, partner activities, and community milestones into stories that audiences could follow.
