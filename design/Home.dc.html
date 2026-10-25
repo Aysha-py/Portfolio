@@ -192,6 +192,7 @@
 --story-art-bg:var(--color-bg-subtle);
 --story-art-shapes-height:180px;
 --story-padding:var(--space-group);
+--story-logo-height:var(--primitive-size-64);
 --panel-radius:var(--radius-card);
 --panel-bg:var(--color-bg-subtle);
 --step-rule:var(--color-border-strong);
@@ -333,6 +334,13 @@ a:focus-visible,button:focus-visible{outline:var(--focus-width) solid var(--colo
 .reel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--reel-gap);}
 @media (max-width: 760px){.reel-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 .reel-grid img{display:block;width:100%;aspect-ratio:var(--reel-aspect);object-fit:cover;border-radius:var(--reel-radius);}
+/* selected work on phones: the organisation's logo stands in for the grid of videos and posts */
+.story-logo{display:none;}
+.story-logo img{display:block;width:auto;height:var(--story-logo-height);}
+.story-logo .logo-dark{display:none;}
+.home[data-theme="dark"] .story-logo .logo-light{display:none;}
+.home[data-theme="dark"] .story-logo .logo-dark{display:block;}
+@media (max-width: 760px){.story-art.is-reels .reel-grid{display:none;}.story-logo{display:flex;}}
 .story-head{display:flex;flex-direction:column;gap:var(--space-related);}
 .story-copy{display:flex;flex-direction:column;gap:var(--space-element);max-width:var(--story-measure);}
 .story-shapes{position:absolute;left:0;top:0;right:0;height:var(--story-art-shapes-height);}
@@ -785,6 +793,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <img src="/_blob/777d056b47f1b5ea7d044dbe2ac79d0b" alt="" loading="lazy">
 <img src="/_blob/f54b67002399ac8d337e69f9c7482c1c" alt="" loading="lazy">
 </div>
+<span class="story-logo" aria-hidden="true"><img class="logo-light" src="/_blob/0486d7b3812853ba0c7eebc14a6c7d05" alt="" loading="lazy"><img class="logo-dark" src="/_blob/d924e943ed9ca826ccb5aa0a5a64542a" alt="" loading="lazy"></span>
 <p class="t-heading-s">Sereel Content Marketing</p>
 </div>
 <div class="story-body">
@@ -817,6 +826,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <img src="/_blob/c5137bc26de396ed902e038ab5fb49f3" alt="" loading="lazy">
 <img src="/_blob/0efb1a806b56d9fd08661ba265352f78" alt="" loading="lazy">
 </div>
+<span class="story-logo" aria-hidden="true"><img src="/_blob/96c3a7e516768e35abc365aeac405dd2" alt="" loading="lazy"></span>
 <p class="t-heading-s">Invisible Garden Content Marketing</p>
 </div>
 <div class="story-body">

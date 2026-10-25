@@ -305,6 +305,12 @@ export default function HomeView() {
                 {" "}
                 <img src={`${BASE}/images/sereel-blue.jpg`} alt="" loading="lazy" />
               </div>
+              {" "}
+              <span className="story-logo" aria-hidden="true">
+                <img className="logo-light" src={`${BASE}/images/logo-sereel-mark.png`} alt="" loading="lazy" />
+                <img className="logo-dark" src={`${BASE}/images/logo-sereel-mark-dark.png`} alt="" loading="lazy" />
+              </span>
+              {" "}
               <p className="t-heading-s">Sereel Content Marketing</p>
             </div>
             <div className="story-body">
@@ -350,6 +356,9 @@ export default function HomeView() {
                 {" "}
                 <img src={`${BASE}/images/invisible-garden-panel.jpg`} alt="" loading="lazy" />
               </div>
+              {" "}
+              <span className="story-logo" aria-hidden="true"><img src={`${BASE}/images/logo-invisible-garden.png`} alt="" loading="lazy" /></span>
+              {" "}
               <p className="t-heading-s">Invisible Garden Content Marketing</p>
             </div>
             <div className="story-body">
