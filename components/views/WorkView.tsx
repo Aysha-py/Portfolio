@@ -895,6 +895,19 @@ export default function WorkView() {
           </li>
           <li className="moment">
             <figure className="moment-photo">
+              <img src={`${BASE}/images/cfa-audit-sheet-demo-hd.jpg`} alt="Aishat presenting beside a wall screen showing the Skills Audit Sheet, with its skill categories, one-line explanations and proficiency levels" loading="lazy" />
+            </figure>
+            <p className="t-label">Presenter</p>
+            <div className="diary-title">
+              <h3 className="t-title">Skills Audit Sheet demo</h3>
+              <p className="t-caption secondary">In person · Lagos · [Year]</p>
+            </div>
+            <p className="t-body">
+              I presented a demo of the Skills Audit Sheet I created for Community for Africa at its masterclass in Lagos, showing community managers how to assess their skills and plan their growth.
+            </p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
               <img src={`${BASE}/images/diary-ota-community-call.jpg`} alt="Aishat with contributors on the first Open Terms Archive community call" loading="lazy" />
             </figure>
             <p className="t-label">Host</p>
