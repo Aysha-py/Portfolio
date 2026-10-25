@@ -234,7 +234,7 @@ export default function WorkView() {
                       Captured and edited on-site footage into short- and long-form videos, extending the coverage across X and YouTube.
                     </li>
                     <li className="t-body">
-                      Managed outreach to stakeholders, drafting personalised messages, following up, and tracking responses and project evaluations in Excel to help secure judges for the projects.
+                      Managed outreach to stakeholders, following up, and tracking responses and project evaluations, securing judges for the residency’s projects and seeing the evaluation process through to completion.
                     </li>
                     <li className="t-body">
                       Grew Invisible Garden’s X following by{" "}
