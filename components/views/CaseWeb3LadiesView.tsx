@@ -251,15 +251,7 @@ export default function CaseWeb3LadiesView() {
             <p className="t-body-l">
               My work has contributed to a community ecosystem with substantial reach, while supporting more structured participation through programmes, onboarding, and partner engagement.
             </p>
-            <div className="case-tiles is-five">
-              <div className="tile">
-                <div className="tile-head">
-                  <p className="t-label">Community ecosystem</p>
-                  <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
-                </div>
-                <p className="t-figure">150,000+</p>
-                <p className="t-body secondary">Members across the broader Web3Ladies community ecosystem.</p>
-              </div>
+            <div className="case-tiles">
               <div className="tile">
                 <div className="tile-head">
                   <p className="t-label">Cross-platform growth</p>
@@ -267,14 +259,6 @@ export default function CaseWeb3LadiesView() {
                 </div>
                 <p className="t-figure">16,000+</p>
                 <p className="t-body secondary">Cross-platform growth supported across social and community platforms.</p>
-              </div>
-              <div className="tile">
-                <div className="tile-head">
-                  <p className="t-label">Content</p>
-                  <div className="round sh sh-primary case-tile-pill" aria-hidden="true" />
-                </div>
-                <p className="t-figure">20+</p>
-                <p className="t-body secondary">Pieces of content written to support education, announcements, and programme participation.</p>
               </div>
               <div className="tile">
                 <div className="tile-head">

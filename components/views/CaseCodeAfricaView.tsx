@@ -138,11 +138,11 @@ export default function CaseCodeAfricaView() {
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
-              <dd className="t-body">[Your role on the conference]</dd>
+              <dd className="t-body">Content marketer</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Timeline</dt>
-              <dd className="t-body">[Month and year you started to month and year you finished]</dd>
+              <dd className="t-body">March 2025 – May 2025</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Skills</dt>
@@ -333,10 +333,37 @@ export default function CaseCodeAfricaView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at Code Africa Conference about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at Code Africa Conference]</figcaption>
-            </figure>
+            <div className="case-quotes">
+              <figure className="case-quote">
+                <blockquote className="t-body-l">
+                  “The conference was very insightful and it was great getting to be in the company of other great minds. A wonderful learning experience.”
+                </blockquote>
+                <figcaption className="t-caption secondary">Conference attendee</figcaption>
+              </figure>
+              <figure className="case-quote">
+                <blockquote className="t-body-l">
+                  “For starters it was an awesome, learning oriented experience. Kudos, looking forward for more hackathon events”
+                </blockquote>
+                <figcaption className="t-caption secondary">Conference attendee</figcaption>
+              </figure>
+              <figure className="case-quote">
+                <blockquote className="t-body-l">“Great insightful presentations by industry experts”</blockquote>
+                <figcaption className="t-caption secondary">Conference attendee</figcaption>
+              </figure>
+              <figure className="case-quote">
+                <blockquote className="t-body-l">“It was great to be part of the developers and engineers in the conference.”</blockquote>
+                <figcaption className="t-caption secondary">Conference attendee</figcaption>
+              </figure>
+            </div>
+            {" "}
+            <a className="work-cta case-more-link" href="https://www.codeafrica.onedev.club/" target="_blank" rel="noopener">
+              See all the feedback on the Code Africa site{" "}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+              <span className="visually-hidden">(opens in a new tab)</span>
+            </a>
           </div>
         </div>
       </section>

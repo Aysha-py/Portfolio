@@ -664,10 +664,13 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
 .case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
+/* component: written feedback, short quotes in two columns (one on phones) */
+.case-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-group) var(--space-stack);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
 .case-shots{grid-template-columns:minmax(0,1fr);}
+.case-quotes{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-pairs{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five .tile,.case-tiles.is-five .tile:nth-child(n+4){grid-column:auto;}
@@ -855,63 +858,6 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <figure class="case-shot"><div class="case-shot-frame has-image is-whole"><img src="/_blob/f436e81acdad65c2fd95b6dba49e5387" alt="Cover of the One Dev article How to become a Web3 developer, plus free resources, showing a developer coding on a laptop" loading="lazy"></div><figcaption class="t-caption secondary"><span>How to become a Web3 developer, on the One Dev blog</span><a class="case-shot-link" href="https://onedev.club/blog/how-to-become-a-web3-developer-free-resources-included" target="_blank" rel="noopener">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
 </div>
 <a class="work-cta case-more-link" href="https://www.youtube.com/@onedevafrica/streams" target="_blank" rel="noopener">See more live bootcamp classes <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
-</div>
-</div>
-</section>
-
-<section id="pieces" class="case-section" aria-labelledby="pieces-title">
-<div class="container case-grid reveal">
-<h2 id="pieces-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Selected work</h2>
-<div class="case-main">
-<ul class="pick-list">
-<li>
-<div class="pick is-todo">
-<div class="pick-body">
-<p class="pick-meta"><span class="type-tag">Social media</span></p>
-<h3 class="t-title pick-title">Bootcamp promotion</h3>
-<p class="t-body secondary pick-note">Social media copy and program announcements created to communicate learning opportunities and encourage registrations.</p>
-<p class="t-caption case-todo">[Add a link or screenshot of a bootcamp promotional post.]</p>
-</div>
-<span class="pick-mark" aria-hidden="true"><span class="shape round sh sh-secondary mark-circle"></span></span>
-</div>
-</li>
-
-<li>
-<a class="pick attend" href="https://onedev.club/blog/how-to-become-a-web3-developer-free-resources-included" target="_blank" rel="noopener">
-<div class="pick-body">
-<p class="pick-meta"><span class="type-tag">Blog post</span><span class="t-caption secondary">One Dev</span></p>
-<h3 class="t-title pick-title">Educational content</h3>
-<p class="t-body secondary pick-note">Content developed to help the Web3 community learn, explore relevant topics, and stay engaged beyond program announcements.</p>
-<span class="work-cta">Read the article <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
-</div>
-<span class="pick-mark" aria-hidden="true"><span class="shape half-round sh sh-primary mark-half"></span></span>
-</a>
-</li>
-
-<li>
-<div class="pick is-todo">
-<div class="pick-body">
-<p class="pick-meta"><span class="type-tag">Newsletter</span></p>
-<h3 class="t-title pick-title">Newsletter marketing</h3>
-<p class="t-body secondary pick-note">Newsletter copy used to communicate upcoming programs and mobilise One Dev’s existing subscriber base.</p>
-<p class="t-caption case-todo">[Add a screenshot of a newsletter promoting a bootcamp or community program.]</p>
-</div>
-<span class="pick-mark" aria-hidden="true"><span class="shape sh-ring mark-ring"></span></span>
-</div>
-</li>
-
-<li>
-<div class="pick is-todo">
-<div class="pick-body">
-<p class="pick-meta"><span class="type-tag">Community</span></p>
-<h3 class="t-title pick-title">Community feedback and testimonials</h3>
-<p class="t-body secondary pick-note">Participant feedback collected to support program marketing and demonstrate the value of One Dev’s learning opportunities.</p>
-<p class="t-caption case-todo">[Add an anonymised feedback or testimonial example, with permission.]</p>
-</div>
-<span class="pick-mark" aria-hidden="true"><span class="shape round sh sh-primary mark-pill"></span></span>
-</div>
-</li>
-</ul>
 </div>
 </div>
 </section>

@@ -664,10 +664,13 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
 .case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
+/* component: written feedback, short quotes in two columns (one on phones) */
+.case-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-group) var(--space-stack);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
 .case-shots{grid-template-columns:minmax(0,1fr);}
+.case-quotes{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-pairs{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five .tile,.case-tiles.is-five .tile:nth-child(n+4){grid-column:auto;}
@@ -820,21 +823,11 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <h2 id="results-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Results</h2>
 <div class="case-main">
 <p class="t-body-l">My work has contributed to a community ecosystem with substantial reach, while supporting more structured participation through programmes, onboarding, and partner engagement.</p>
-<div class="case-tiles is-five">
-<div class="tile">
-<div class="tile-head"><p class="t-label">Community ecosystem</p><div class="round sh sh-secondary case-tile-shape" aria-hidden="true"></div></div>
-<p class="t-figure">150,000+</p>
-<p class="t-body secondary">Members across the broader Web3Ladies community ecosystem.</p>
-</div>
+<div class="case-tiles">
 <div class="tile">
 <div class="tile-head"><p class="t-label">Cross-platform growth</p><div class="sh-ring case-tile-ring" aria-hidden="true"></div></div>
 <p class="t-figure">16,000+</p>
 <p class="t-body secondary">Cross-platform growth supported across social and community platforms.</p>
-</div>
-<div class="tile">
-<div class="tile-head"><p class="t-label">Content</p><div class="round sh sh-primary case-tile-pill" aria-hidden="true"></div></div>
-<p class="t-figure">20+</p>
-<p class="t-body secondary">Pieces of content written to support education, announcements, and programme participation.</p>
 </div>
 <div class="tile">
 <div class="tile-head"><p class="t-label">Build with AI</p><div class="round sh sh-secondary case-tile-shape" aria-hidden="true"></div></div>
