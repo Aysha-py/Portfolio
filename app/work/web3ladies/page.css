@@ -654,15 +654,31 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
 .case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
+/* component: four visuals sit four across, two across on tablets */
+.case-shots.is-four{grid-template-columns:repeat(4,minmax(0,1fr));}
+@media (max-width: 1100px){.case-shots.is-four{grid-template-columns:repeat(2,minmax(0,1fr));}}
+/* component: screenshots in Visuals or Results, at their own shape, under the photos or tiles */
+.case-gallery{margin-top:var(--space-element);}
+/* component: written feedback, short quotes in two columns (one on phones) */
+.case-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-group) var(--space-stack);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
-.case-shots{grid-template-columns:minmax(0,1fr);}
+.case-shots,.case-shots.is-four{grid-template-columns:minmax(0,1fr);}
+.case-quotes{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-pairs{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five .tile,.case-tiles.is-five .tile:nth-child(n+4){grid-column:auto;}
 .case-feedback{grid-template-columns:minmax(0,1fr);}
 }
+/* component: the closing links, All work on the left and Next on the right, always on one row; a long
+   next title wraps onto a second line, aligned right */
+.case-nav{padding-block:var(--space-group);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.case-nav-row{display:flex;align-items:center;justify-content:space-between;gap:var(--space-stack);}
+.case-nav-row > .jump-link{flex-shrink:0;}
+.case-nav-row > .case-nav-next{flex-shrink:1;min-width:0;margin-left:auto;text-align:right;}
+.case-nav-next .t-label{min-width:0;}
+.case-nav-next .icon-btn{flex-shrink:0;}
 /* end case study */
 /* ===== Work diaries and media ===== */
 /* work diaries and media: one scrollable line, the same component as Favourite moments on About */

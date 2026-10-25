@@ -290,24 +290,30 @@ export default function CaseCommunityForAfricaView() {
             Visuals
           </h2>
           <div className="case-main">
-            <div className="case-shots">
+            <div className="case-shots is-four">
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
-                  <img src={`${BASE}/images/cfa-audit-sheet-demo.jpg`} alt="Aishat standing beside a wall screen showing the Community Managers Skills Audit Sheet and how to use it" loading="lazy" />
+                  <img src={`${BASE}/images/cfa-audit-sheet-demo-hd.jpg`} alt="Aishat beside a wall screen showing the Skills Audit Sheet, with its skill categories, one-line explanations and proficiency levels" loading="lazy" />
                 </div>
                 <figcaption className="t-caption secondary"><span>Presenting a demo of the Skills Audit Sheet at the masterclass in Lagos</span></figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame has-image is-whole">
-                  <img src={`${BASE}/images/cfa-masterclass-speaker.jpg`} alt="Speaker card for CM Beginner Series 4.0, A Masterclass on Strategy and Engagement, by Community for Africa: Aishat Muhammed, Skills Audit Sheet" loading="lazy" />
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/cfa-masterclass-speaker-bio.jpg`} alt="Community for Africa speaker card for CM Beginner Series 4.0, A Masterclass on Strategy and Engagement: Aishat Muhammed, Community Manager, with her biography" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>Speaking on the Skills Audit Sheet at CM Beginner Series 4.0</span></figcaption>
+                <figcaption className="t-caption secondary"><span>Speaking at CM Beginner Series 4.0, A Masterclass on Strategy and Engagement</span></figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame has-image is-whole">
-                  <img src={`${BASE}/images/cfa-book-review.jpg`} alt="Flyer for a Community for Africa book review session of Buzzing Communities by Richard Millington, on Twitter Space on Saturday 28 September 2024 at 8pm WAT, with two community superstars as hosts" loading="lazy" />
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/cfa-fireside-ai-powered-cm.jpg`} alt="Flyer for The AI-Powered CM, a Community for Africa fireside chat on 23 August 2025 at 8pm WAT on Cirlo, with Aishat Muhammed as host and Destiny Aimufia as speaker" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>A book review session for the community, on X Spaces</span></figcaption>
+                <figcaption className="t-caption secondary"><span>Hosting The AI-Powered CM, a Community for Africa fireside chat</span></figcaption>
+              </figure>
+              <figure className="case-shot">
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/cfa-team.jpg`} alt="Aishat with the Community for Africa team, posing together in a living room" loading="lazy" />
+                </div>
+                <figcaption className="t-caption secondary"><span>With the Community for Africa team</span></figcaption>
               </figure>
             </div>
           </div>
@@ -337,49 +343,29 @@ export default function CaseCommunityForAfricaView() {
           </div>
         </div>
       </section>
-      <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
-        <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
-          <div className="stack reveal" style={{gap: "var(--space-cluster)", maxWidth: "760px"} as React.CSSProperties}>
-            <p className="t-label">
-              <span className="label-dot" aria-hidden="true" />
-              Let’s talk
-            </p>
-            <h2 id="lets-talk-title" className="t-heading-s">
-              Have a project that needs clearer content, a more engaged community, or both? I'd love to hear about it.
-            </h2>
-            <div className="lets-talk-links">
-              <a className="jump-link" href={`${BASE}/contact/`}>
-                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
-                <span className="icon-btn" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
-              </a>
-              {" "}
-              <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
-              {" "}
-              <a className="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
-                LinkedIn
-                <span className="visually-hidden">(opens in a new tab)</span>
-              </a>
-            </div>
-          </div>
-          <div className="section-next is-right">
-            <a className="jump-link" href={`${BASE}/work/#work-list`}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See all work</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
-            </a>
-          </div>
+      <nav id="case-nav" className="case-nav" aria-label="Case studies">
+        <div className="container case-nav-row">
+          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+            </span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>All work</span>
+          </a>
+          {" "}
+          <a className="jump-link case-nav-next" href={`${BASE}/work/open-terms-archive/`} rel="next">
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: Open Terms Archive</span>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </span>
+          </a>
         </div>
-      </section>
+      </nav>
       <footer id="contact" style={{background: "var(--footer-bg)", color: "var(--color-text-primary)", borderTop: "1px solid var(--color-border-subtle)", paddingBlock: "var(--space-group)"} as React.CSSProperties}>
         <div className="container footer-grid">
           <div className="stack" style={{gap: "var(--space-related)"} as React.CSSProperties}>

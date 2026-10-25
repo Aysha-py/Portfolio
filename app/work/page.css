@@ -495,6 +495,11 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .work-id{display:flex;flex-direction:column;gap:var(--work-gap-name);min-width:0;}
 .work-card .work-heading{margin:var(--work-gap-story) 0 var(--work-gap-heading);}
 .work-card .work-copy{gap:var(--work-gap-para);max-width:none;}
+/* component: a work card's points, one idea per bullet, so the copy reads in short steps */
+.home{--work-point-gap:var(--space-related);--work-point-indent:var(--space-element);--work-point-bullet-size:6px;--work-point-bullet-color:var(--color-accent-primary);}
+.work-points{display:flex;flex-direction:column;gap:var(--work-point-gap);margin:0;padding:0;list-style:none;}
+.work-points li{position:relative;padding-left:var(--work-point-indent);}
+.work-points li::before{content:"";position:absolute;left:0;top:calc((var(--type-body-leading) - var(--work-point-bullet-size)) / 2);width:var(--work-point-bullet-size);height:var(--work-point-bullet-size);border-radius:var(--radius-round);background:var(--work-point-bullet-color);}
 .work-card .work-cta{align-self:flex-start;margin-top:var(--work-gap-detail);padding-top:0;text-decoration:none;}
 .work-cta:hover{color:var(--link-color);text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .org-link{flex:none;display:inline-flex;align-items:center;transition:opacity var(--motion-fast) var(--motion-ease);}
@@ -558,6 +563,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .moment{flex:0 0 var(--moment-card-width);scroll-snap-align:start;display:flex;flex-direction:column;gap:var(--space-related);margin:0;}
 .moment-photo{position:relative;margin:0 0 var(--space-tight);aspect-ratio:4 / 5;overflow:hidden;border-radius:var(--moment-photo-radius);background:var(--color-bg-subtle);border:var(--border-width-hairline) solid var(--color-border-subtle);}
 .moment-photo img{display:block;width:100%;height:100%;object-fit:cover;}
+/* a wide screenshot shown whole in the portrait diary frame */
+.moment-photo.is-whole{display:flex;align-items:center;justify-content:center;padding:var(--space-element);box-sizing:border-box;}
+.moment-photo.is-whole img{height:auto;object-fit:contain;border-radius:var(--radius-control);}
 .moment-photo.is-empty{display:flex;align-items:center;justify-content:center;}
 .moment-photo .shape{position:absolute;}
 .moment-photo .ph{position:relative;color:var(--color-text-secondary);}

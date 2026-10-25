@@ -157,7 +157,7 @@ export default function HomeView() {
                 </div>
                 <p className="t-label">Step 1</p>
                 <h3 className="t-title">Understanding the audience</h3>
-                <p className="t-body">Identifying who they are, what they already know, and what they need to know.</p>
+                <p className="t-body">I start by identifying who they are, what they already know, and what they need to know.</p>
               </li>
               <li className="step">
                 <div className="step-mark" aria-hidden="true" style={{alignItems: "flex-end"} as React.CSSProperties}>
@@ -228,10 +228,10 @@ export default function HomeView() {
                 <p className="t-label">X</p>
                 <div className="sh-ring" aria-hidden="true" style={{width: "56px", height: "56px", borderWidth: "6.9px", flex: "none"} as React.CSSProperties} />
               </div>
-              <p className="t-figure">64%</p>
+              <p className="t-figure">70%+</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
                 <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Growth in X audience</strong>
-                {" "}during an Ethereum-focused developer residency through targeted and audience-focused content.
+                {" "}during an Ethereum-focused developer residency, through targeted and audience-focused content.
               </p>
             </div>
             <div className="tile attend">
@@ -261,9 +261,9 @@ export default function HomeView() {
                 <p className="t-label">Community · Web3Ladies</p>
                 <div className="round sh sh-primary" aria-hidden="true" style={{width: "56px", height: "56px", flex: "none"} as React.CSSProperties} />
               </div>
-              <p className="t-figure">16K+</p>
+              <p className="t-figure">20K+</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Web3Ladies community members across platforms.</strong>
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Web3Ladies community members across WhatsApp, Discord, Instagram, LinkedIn and X.</strong>
                 {" "}Contributed to content, onboarding, and programmes supporting a growing community of women exploring blockchain, AI, and emerging technologies.
               </p>
             </div>
@@ -439,6 +439,38 @@ export default function HomeView() {
           </li>
           <li className="quote-card attend">
             <div className="quote-art" aria-hidden="true">
+              <div className="shape half-round fill-secondary" style={{right: "28px", top: "36px", width: "100px", height: "50px"} as React.CSSProperties} />
+              <div className="shape ring" style={{right: "146px", top: "26px", width: "44px", height: "44px", borderWidth: "5.5px"} as React.CSSProperties} />
+            </div>
+            {" "}
+            <svg className="quote-mark" viewBox="0 0 56 40" aria-hidden="true">
+              <circle cx="11" cy="28" r="11" />
+              <path d="M2.5 27 C2.5 14 8.5 5.5 19 2" />
+              <circle cx="41" cy="28" r="11" />
+              <path d="M32.5 27 C32.5 14 38.5 5.5 49 2" />
+            </svg>
+            {" "}
+            <p className="quote-pull">
+              You have always kept that{" "}
+              <span className="quote-key">
+                <span className="quote-word" style={{"--i": "0"} as React.CSSProperties}>attitude</span>
+                {" "}
+                <span className="quote-word" style={{"--i": "1"} as React.CSSProperties}>of</span>
+                {" "}
+                <span className="quote-word" style={{"--i": "2"} as React.CSSProperties}>a</span>
+                {" "}
+                <span className="quote-word" style={{"--i": "3"} as React.CSSProperties}>teacher</span>
+              </span>
+              .
+            </p>
+            <figure className="quote-receipt">
+              <img src={`${BASE}/images/onedev-feedback-participant.jpg`} alt="Chat message replying to Aishat’s final-day announcement: Good evening Aysha, you see this lot of people here? Some of us are annoying but you have been very calm and patient with us. You have always kept that attitude of a teacher. Thank you so much. You are a great person." loading="lazy" />
+              {" "}
+              <figcaption className="t-caption secondary">From a One Dev bootcamp participant</figcaption>
+            </figure>
+          </li>
+          <li className="quote-card attend">
+            <div className="quote-art" aria-hidden="true">
               <div className="shape round fill-secondary" style={{right: "24px", top: "28px", width: "112px", height: "40px"} as React.CSSProperties} />
               <div className="shape ring" style={{right: "148px", top: "20px", width: "56px", height: "56px", borderWidth: "7px"} as React.CSSProperties} />
             </div>
@@ -463,6 +495,36 @@ export default function HomeView() {
               <img src={`${BASE}/images/feedback-production.jpg`} alt="Group chat message: I want to thank [name hidden] and @this_aishah for the amazing video they have made!! A lot of work goes into making such a great production." loading="lazy" />
               {" "}
               <figcaption className="t-caption secondary">On a video I co-produced</figcaption>
+            </figure>
+          </li>
+          <li className="quote-card attend">
+            <div className="quote-art" aria-hidden="true">
+              <div className="shape round fill-primary" style={{right: "-32px", top: "-40px", width: "124px", height: "124px"} as React.CSSProperties} />
+              <div className="shape half-round fill-secondary" style={{right: "112px", top: "52px", width: "40px", height: "20px"} as React.CSSProperties} />
+            </div>
+            {" "}
+            <svg className="quote-mark" viewBox="0 0 56 40" aria-hidden="true">
+              <circle cx="11" cy="28" r="11" />
+              <path d="M2.5 27 C2.5 14 8.5 5.5 19 2" />
+              <circle cx="41" cy="28" r="11" />
+              <path d="M32.5 27 C32.5 14 38.5 5.5 49 2" />
+            </svg>
+            {" "}
+            <p className="quote-pull">
+              Thanks so much Aisha.{" "}
+              <span className="quote-key">
+                <span className="quote-word" style={{"--i": "0"} as React.CSSProperties}>You’re</span>
+                {" "}
+                <span className="quote-word" style={{"--i": "1"} as React.CSSProperties}>a</span>
+                {" "}
+                <span className="quote-word" style={{"--i": "2"} as React.CSSProperties}>gem</span>
+              </span>
+              .
+            </p>
+            <figure className="quote-receipt">
+              <img src={`${BASE}/images/w3l-feedback-gem-home.jpg`} alt="WhatsApp message from a Web3Ladies member: Thanks so much Aisha. You’re a gem. Learnt a lot about hackathons." loading="lazy" />
+              {" "}
+              <figcaption className="t-caption secondary">From a Web3Ladies member, after my session on hackathons</figcaption>
             </figure>
           </li>
           <li className="quote-card attend">
@@ -571,7 +633,10 @@ export default function HomeView() {
               <div className="stack" style={{gap: "var(--space-element)"} as React.CSSProperties}>
                 <p className="t-body">
                   <span className="em">Before</span>
-                  {" "}content became my primary focus, I spent years working closely with communities. That experience taught me to listen for the questions people were asking, recognise what they needed to understand, and notice what made them care enough to participate and return.
+                  {" "}content became my primary focus, I spent years working closely with communities.
+                </p>
+                <p className="t-body">
+                  That experience taught me to listen for questions people asked, recognise what they needed to understand, and notice what made them care enough to participate.
                 </p>
                 <p className="t-body">
                   I bring that same audience-first thinking to content marketing, using what I learn about an audience to shape relevant stories and make complex ideas easier to understand.

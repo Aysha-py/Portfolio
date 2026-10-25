@@ -136,6 +136,9 @@ export default function CaseOneDevView() {
             .
           </h1>
           <p className="t-body-l case-lead">
+            One Dev is a tech education community that upskills African developers in blockchain, AI, and other emerging technologies, preparing them for competitive careers through talent development and equal access to global opportunities.
+          </p>
+          <p className="t-body-l case-lead">
             I managed One Dev’s community and expanded my responsibilities into social media, content creation, and program marketing. By connecting educational content with bootcamp promotion, community engagement, and participant feedback, I helped create more opportunities for developers to discover the community, participate in its programs, and continue learning.
           </p>
           <dl className="case-facts">
@@ -189,13 +192,10 @@ export default function CaseOneDevView() {
           </h2>
           <div className="case-main">
             <p className="t-body-l">
-              One Dev is a Web3-focused developer community that creates opportunities for people to learn, develop technical skills, and participate in educational programs.
-            </p>
-            <p className="t-body">
               When I joined, my primary responsibility was community management. Over time, that role expanded to include social media management, content creation, and the marketing of community programs.
             </p>
             <p className="t-body">
-              The work connected several activities that needed to support one another. Bootcamps needed visibility to attract participants. Social media and educational content needed to give people reasons to follow the community. Existing members needed communication, moderation, and opportunities to stay engaged. And the organisation needed participant feedback and testimonials to communicate the value of its programs to prospective partners.
+              The work connected several activities that needed to support one another. Bootcamps needed visibility to attract participants. Social media and educational content needed to give people reasons to follow the community. Existing members needed communication, moderation, and opportunities to stay engaged. And the organisation needed participant feedback and testimonials to communicate the value of its programs.
             </p>
             <p className="t-body">
               My role grew beyond managing the community itself. I helped connect the content, communication, and program operations that supported its growth and engagement.
@@ -288,45 +288,23 @@ export default function CaseOneDevView() {
             Results
           </h2>
           <div className="case-main">
-            <div className="case-tiles is-five">
+            <div className="case-tiles">
               <div className="tile">
                 <div className="tile-head">
                   <p className="t-label">Community members</p>
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
                 <p className="t-figure">8,000+</p>
-                <p className="t-body secondary">
-                  Supported One Dev’s wider community ecosystem, which reached more than 8,000 members across its community channels.
-                </p>
-              </div>
-              <div className="tile">
-                <div className="tile-head">
-                  <p className="t-label">Newsletter subscribers</p>
-                  <div className="round sh sh-primary case-tile-pill" aria-hidden="true" />
-                </div>
-                <p className="t-figure">6,300+</p>
-                <p className="t-body secondary">
-                  Worked with the newsletter as a communication channel for sharing program announcements and learning opportunities with an established audience.
-                </p>
+                <p className="t-body secondary">Grew One Dev’s community to more than 8,000 members across platforms.</p>
               </div>
               <div className="tile">
                 <div className="tile-head">
                   <p className="t-label">Bootcamp learners</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">200+</p>
+                <p className="t-figure">500+</p>
                 <p className="t-body secondary">
-                  Supported the promotion and delivery of educational programs serving more than 200 bootcamp learners.
-                </p>
-              </div>
-              <div className="tile">
-                <div className="tile-head">
-                  <p className="t-label">Re-established Instagram presence</p>
-                  <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
-                </div>
-                <p className="t-figure">55 followers</p>
-                <p className="t-body secondary">
-                  Created a new Instagram presence after the original account was lost, building the replacement account to 55 followers.
+                  Supported the promotion and delivery of educational programs serving more than 500 bootcamp learners.
                 </p>
               </div>
               <div className="tile">
@@ -356,9 +334,9 @@ export default function CaseOneDevView() {
             <div className="case-shots">
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
-                  <img src={`${BASE}/images/onedev-hosting-city-tour.jpg`} alt="Aishat speaking into a microphone at the Code Africa Conference City Tour in Nigeria, a developers and founders mixer, beside a One Dev and Code Africa banner" loading="lazy" />
+                  <img src={`${BASE}/images/onedev-40-women-developers.jpg`} alt="One Dev graphic, Celebrating 40 outstanding women developers across Africa, with portraits of the 40 developers and their names, roles and companies" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>Hosting the Code Africa City Tour in Nigeria</span></figcaption>
+                <figcaption className="t-caption secondary"><span>Celebrating 40 outstanding women developers across Africa, for One Dev</span></figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
@@ -395,85 +373,6 @@ export default function CaseOneDevView() {
           </div>
         </div>
       </section>
-      <section id="pieces" className="case-section" aria-labelledby="pieces-title">
-        <div className="container case-grid reveal">
-          <h2 id="pieces-title" className="t-label case-label">
-            <span className="label-dot" aria-hidden="true" />
-            Selected work
-          </h2>
-          <div className="case-main">
-            <ul className="pick-list">
-              <li>
-                <div className="pick is-todo">
-                  <div className="pick-body">
-                    <p className="pick-meta"><span className="type-tag">Social media</span></p>
-                    <h3 className="t-title pick-title">Bootcamp promotion</h3>
-                    <p className="t-body secondary pick-note">
-                      Social media copy and program announcements created to communicate learning opportunities and encourage registrations.
-                    </p>
-                    <p className="t-caption case-todo">[Add a link or screenshot of a bootcamp promotional post.]</p>
-                  </div>
-                  {" "}
-                  <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-secondary mark-circle" /></span>
-                </div>
-              </li>
-              <li>
-                <a className="pick attend" href="https://onedev.club/blog/how-to-become-a-web3-developer-free-resources-included" target="_blank" rel="noopener">
-                  <div className="pick-body">
-                    <p className="pick-meta">
-                      <span className="type-tag">Blog post</span>
-                      <span className="t-caption secondary">One Dev</span>
-                    </p>
-                    <h3 className="t-title pick-title">Educational content</h3>
-                    <p className="t-body secondary pick-note">
-                      Content developed to help the Web3 community learn, explore relevant topics, and stay engaged beyond program announcements.
-                    </p>
-                    {" "}
-                    <span className="work-cta">
-                      Read the article{" "}
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M7 7h10v10" />
-                        <path d="M7 17 17 7" />
-                      </svg>
-                    </span>
-                    <span className="visually-hidden">(opens in a new tab)</span>
-                  </div>
-                  {" "}
-                  <span className="pick-mark" aria-hidden="true"><span className="shape half-round sh sh-primary mark-half" /></span>
-                </a>
-              </li>
-              <li>
-                <div className="pick is-todo">
-                  <div className="pick-body">
-                    <p className="pick-meta"><span className="type-tag">Newsletter</span></p>
-                    <h3 className="t-title pick-title">Newsletter marketing</h3>
-                    <p className="t-body secondary pick-note">
-                      Newsletter copy used to communicate upcoming programs and mobilise One Dev’s existing subscriber base.
-                    </p>
-                    <p className="t-caption case-todo">[Add a screenshot of a newsletter promoting a bootcamp or community program.]</p>
-                  </div>
-                  {" "}
-                  <span className="pick-mark" aria-hidden="true"><span className="shape sh-ring mark-ring" /></span>
-                </div>
-              </li>
-              <li>
-                <div className="pick is-todo">
-                  <div className="pick-body">
-                    <p className="pick-meta"><span className="type-tag">Community</span></p>
-                    <h3 className="t-title pick-title">Community feedback and testimonials</h3>
-                    <p className="t-body secondary pick-note">
-                      Participant feedback collected to support program marketing and demonstrate the value of One Dev’s learning opportunities to prospective partners.
-                    </p>
-                    <p className="t-caption case-todo">[Add an anonymised feedback or testimonial example, with permission.]</p>
-                  </div>
-                  {" "}
-                  <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-pill" /></span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
       <section id="feedback" className="case-section" aria-labelledby="feedback-title">
         <div className="container case-grid reveal">
           <h2 id="feedback-title" className="t-label case-label">
@@ -502,41 +401,29 @@ export default function CaseOneDevView() {
           </div>
         </div>
       </section>
-      <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
-        <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
-          <div className="stack reveal" style={{gap: "var(--space-cluster)", maxWidth: "760px"} as React.CSSProperties}>
-            <p className="t-label">
-              <span className="label-dot" aria-hidden="true" />
-              Let’s talk
-            </p>
-            <h2 id="lets-talk-title" className="t-heading-s">Have a project that needs a thoughtful approach to community, content, or program engagement?</h2>
-            <p className="t-body-l">I’d love to hear about it.</p>
-            <div className="lets-talk-links">
-              <a className="jump-link" href="mailto:m.aishat9890@gmail.com">
-                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
-                <span className="icon-btn" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div className="section-next is-right">
-            <a className="jump-link" href={`${BASE}/work/#work-list`}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See all work</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
-            </a>
-          </div>
+      <nav id="case-nav" className="case-nav" aria-label="Case studies">
+        <div className="container case-nav-row">
+          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+            </span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>All work</span>
+          </a>
+          {" "}
+          <a className="jump-link case-nav-next" href={`${BASE}/work/code-africa/`} rel="next">
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: Code Africa Conference</span>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </span>
+          </a>
         </div>
-      </section>
+      </nav>
       <footer id="contact" style={{background: "var(--footer-bg)", color: "var(--color-text-primary)", borderTop: "1px solid var(--color-border-subtle)", paddingBlock: "var(--space-group)"} as React.CSSProperties}>
         <div className="container footer-grid">
           <div className="stack" style={{gap: "var(--space-related)"} as React.CSSProperties}>

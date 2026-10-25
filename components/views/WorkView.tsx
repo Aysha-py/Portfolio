@@ -163,17 +163,22 @@ export default function WorkView() {
                 <h3 className="t-title work-heading">Making complex ideas clearer</h3>
                 <div className="work-copy">
                   <p className="t-body">Sereel is a compliance-first tokenization platform for institutional capital markets.</p>
-                  <p className="t-body">
-                    Led content development across educational and thought-leadership content, helping institutional and financial services audiences understand tokenized assets, capital markets, and industry developments.
-                  </p>
-                  <p className="t-body">
-                    Researched regulatory changes and market challenges to identify relevant topics, then translated those insights into educational social posts, long-form articles, and a monthly newsletter. Extended these themes into short-form videos, adapting complex ideas for different formats and audience touchpoints.
-                  </p>
-                  <p className="t-body">
-                    Grew Sereel’s LinkedIn audience by{" "}
-                    <strong>100%+</strong>
-                    , through consistent content that connected industry developments with the questions and challenges facing institutional audiences.
-                  </p>
+                  <ul className="work-points">
+                    <li className="t-body">
+                      Led content development across educational and thought-leadership content, helping institutional and financial services audiences understand tokenized assets, capital markets, and industry developments.
+                    </li>
+                    <li className="t-body">
+                      Researched regulatory changes and market challenges to identify relevant topics, then translated those insights into educational social posts, long-form articles, and a monthly newsletter.
+                    </li>
+                    <li className="t-body">
+                      Extended these themes into short-form videos, adapting complex ideas for different formats and audience touchpoints.
+                    </li>
+                    <li className="t-body">
+                      Grew Sereel’s LinkedIn audience by{" "}
+                      <strong>100%+</strong>
+                      , through consistent content that connected industry developments with the questions and challenges facing institutional audiences.
+                    </li>
+                  </ul>
                 </div>
                 <div className="t-caption work-list-line">
                   <span className="t-label">Content formats</span>
@@ -218,18 +223,25 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Turning a developer residency into a story people could follow</h3>
                 <div className="work-copy">
-                  <p className="t-body">Invisible Garden hosted a three-week Ethereum-focused developer residency in Buenos Aires.</p>
                   <p className="t-body">
-                    Owned social media copy and content coverage across the residency, translating technical programmes, partner activities, and community milestones into stories that audiences could follow. Captured and edited on-site footage into short- and long-form videos, extending the coverage across X and YouTube.
+                    Invisible Garden is a travelling academy for developers, where they learn, build, and connect across Ethereum, zero-knowledge proofs, AI, and cybersecurity.
                   </p>
-                  <p className="t-body">
-                    Managed outreach to prospective mentors and project judges, drafting personalised messages, following up, and tracking responses and project evaluations in Excel to help secure judges for the projects.
-                  </p>
-                  <p className="t-body">
-                    Grew Invisible Garden’s X following by{" "}
-                    <strong>64%</strong>
-                    {" "}during the Devcon Buenos Aires period through consistent social copy and event coverage, while launching its Instagram presence to extend the residency’s reach to a new channel.
-                  </p>
+                  <ul className="work-points">
+                    <li className="t-body">
+                      Owned content copy and coverage across the residency, translating technical programmes, partner activities, and community milestones into stories that audiences could follow.
+                    </li>
+                    <li className="t-body">
+                      Captured and edited on-site footage into short- and long-form videos, extending the coverage across X and YouTube.
+                    </li>
+                    <li className="t-body">
+                      Managed outreach to stakeholders, following up, and tracking responses and project evaluations, securing judges for the residency’s projects and seeing the evaluation process through to completion.
+                    </li>
+                    <li className="t-body">
+                      Grew Invisible Garden’s X following by{" "}
+                      <strong>70%+</strong>
+                      {" "}during the Devcon Buenos Aires period through consistent social copy and event coverage, while launching its Instagram presence to extend the residency’s reach to a new channel.
+                    </li>
+                  </ul>
                 </div>
                 <div className="t-caption work-list-line">
                   <span className="t-label">Content formats</span>
@@ -278,19 +290,24 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Connecting developers with the knowledge and people they need to grow</h3>
                 <div className="work-copy">
-                  <p className="t-body">One Dev supports people learning and building in Web3.</p>
                   <p className="t-body">
-                    Managed community engagement and supported developer learning through educational content, bootcamps, and community programmes. Connected content and programme communications with the wider community experience, helping members discover learning opportunities and stay engaged.
+                    One Dev is a tech education community that upskills African developers in blockchain, AI, and other emerging technologies, preparing them for competitive careers through talent development and equal access to global opportunities.
                   </p>
-                  <p className="t-body">
-                    Contributed to a community of{" "}
-                    <strong>8,000+ members</strong>
-                    , a newsletter with{" "}
-                    <strong>6,300+ subscribers</strong>
-                    , and bootcamps that reached{" "}
-                    <strong>200+ learners</strong>
-                    .
-                  </p>
+                  <ul className="work-points">
+                    <li className="t-body">
+                      Managed community engagement and supported developer learning through educational content, bootcamps, and community programmes.
+                    </li>
+                    <li className="t-body">
+                      Connected content and programme communications with the wider community experience, helping members discover learning opportunities and stay engaged.
+                    </li>
+                    <li className="t-body">
+                      Grew the community to{" "}
+                      <strong>8,000+ members</strong>
+                      {" "}across platforms, and supported bootcamps that reached{" "}
+                      <strong>500+ learners</strong>
+                      .
+                    </li>
+                  </ul>
                 </div>
                 <div className="t-caption work-list-line">
                   <span className="t-label">Focus areas</span>
@@ -337,15 +354,22 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Connecting conference promotion with community participation</h3>
                 <div className="work-copy">
-                  <p className="t-body">Code Africa brought together people across the African Web3 ecosystem.</p>
                   <p className="t-body">
-                    Supported conference promotion and community operations through campaign copy, content distribution, volunteer coordination, and the ambassador campaign. Connected promotional messaging with community outreach and on-the-ground coordination to help turn awareness into registrations and support conference delivery.
+                    Code Africa Conference is a pan-African Web3 event organised by One Dev, bringing together developers and other ecosystem participants.
                   </p>
-                  <p className="t-body">
-                    Contributed to a campaign that generated{" "}
-                    <strong>3,000+ registrations</strong>
-                    , while coordinating volunteers and ambassadors across the conference effort.
-                  </p>
+                  <ul className="work-points">
+                    <li className="t-body">
+                      Supported conference promotion and community operations through campaign copy, content distribution, volunteer coordination, and the ambassador campaign.
+                    </li>
+                    <li className="t-body">
+                      Connected promotional messaging with community outreach and on-the-ground coordination to help turn awareness into registrations and support conference delivery.
+                    </li>
+                    <li className="t-body">
+                      Contributed to a campaign that generated{" "}
+                      <strong>3,000+ registrations</strong>
+                      , while coordinating volunteers and ambassadors across the conference effort.
+                    </li>
+                  </ul>
                 </div>
                 <div className="t-caption work-list-line">
                   <span className="t-label">Focus areas</span>
@@ -394,19 +418,27 @@ export default function WorkView() {
                 <h3 className="t-title work-heading">Turning community needs into opportunities to learn and grow</h3>
                 <div className="work-copy">
                   <p className="t-body">
-                    Web3Ladies creates opportunities for women to learn, build, and grow within the AI and Web3 ecosystem.
+                    Web3Ladies is a community focused on helping women access learning opportunities, develop technical skills, and participate in the technology and Web3 ecosystem.
                   </p>
-                  <p className="t-body">
-                    Having contributed to the community since 2023 and progressed to Community Lead in November 2025, I work across community operations, programme development, and ecosystem engagement. This includes managing member communications, hosting learning experiences, coordinating partnerships, and using member insights to shape initiatives around community needs.
-                  </p>
-                  <p className="t-body">
-                    I designed and led{" "}
-                    <strong>Build with AI</strong>
-                    , turning the programme concept into an executable plan that brought together four expert-led sessions and generated seven project submissions from 100+ registrations. Alongside programme delivery, I support community growth through event representation, programme promotion, and ongoing engagement across digital and in-person channels.
-                  </p>
+                  <ul className="work-points">
+                    <li className="t-body">
+                      Having contributed to the community since 2023 and progressed to Community Lead in November 2025, I work across community operations, programme development, and ecosystem engagement.
+                    </li>
+                    <li className="t-body">
+                      This includes managing member communications, hosting learning experiences, coordinating partnerships, and using member insights to shape initiatives around community needs.
+                    </li>
+                    <li className="t-body">
+                      I designed and led{" "}
+                      <strong>Build with AI</strong>
+                      , turning the programme concept into an executable plan that brought together four expert-led sessions and generated seven project submissions from 100+ registrations.
+                    </li>
+                    <li className="t-body">
+                      Alongside programme delivery, I support community growth through event representation, programme promotion, and ongoing engagement across digital and in-person channels.
+                    </li>
+                  </ul>
                   <p className="t-body">
                     <strong>
-                      15,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations · 7+ projects submitted
+                      20,000+ community members across platforms · 50+ events hosted · 100+ Build with AI registrations · 7+ projects submitted
                     </strong>
                   </p>
                 </div>
@@ -456,17 +488,19 @@ export default function WorkView() {
                 <h3 className="t-title work-heading">Turning community learning into practical resources</h3>
                 <div className="work-copy">
                   <p className="t-body">
-                    Community for Africa supports people learning and connecting across the community management ecosystem.
+                    Community for Africa is a community for community managers across Africa, bringing them together to exchange ideas, share practical experience, and learn how to build more effective communities.
                   </p>
-                  <p className="t-body">Supported community engagement through events, learning sessions, and written and video content.</p>
-                  <p className="t-body">
-                    Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.
-                  </p>
-                  <p className="t-body">
-                    The resource reached{" "}
-                    <strong>100+ downloads</strong>
-                    , giving community members a practical tool they could use beyond individual sessions.
-                  </p>
+                  <ul className="work-points">
+                    <li className="t-body">Supported community engagement through events, learning sessions, and written and video content.</li>
+                    <li className="t-body">
+                      Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.
+                    </li>
+                    <li className="t-body">
+                      The resource reached{" "}
+                      <strong>100+ downloads</strong>
+                      , giving community members a practical tool they could use beyond individual sessions.
+                    </li>
+                  </ul>
                 </div>
                 <div className="t-caption work-list-line">
                   <span className="t-label">Focus areas</span>
@@ -513,16 +547,20 @@ export default function WorkView() {
                 </div>
                 <h3 className="t-title work-heading">Making it easier for contributors to find their way in</h3>
                 <div className="work-copy">
-                  <p className="t-body">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
                   <p className="t-body">
-                    Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources.
+                    Open Terms Archive is an open-source digital public good that publicly records every version of the terms of digital services, to enable democratic oversight.
                   </p>
-                  <p className="t-body">
-                    Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.
-                  </p>
-                  <p className="t-body">
-                    Developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices.
-                  </p>
+                  <ul className="work-points">
+                    <li className="t-body">
+                      Led the community migration to Mattermost, supporting adoption through targeted communication and practical onboarding resources.
+                    </li>
+                    <li className="t-body">
+                      Created navigation guides and community guidelines to help members adapt to the new workspace, while documenting community and community-call pages in YAML on GitHub to make participation and event information easier to find.
+                    </li>
+                    <li className="t-body">
+                      Developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices.
+                    </li>
+                  </ul>
                 </div>
                 <div className="t-caption work-list-line">
                   <span className="t-label">Focus areas</span>
@@ -609,6 +647,31 @@ export default function WorkView() {
                 </div>
                 {" "}
                 <span className="pick-mark" aria-hidden="true"><span className="shape half-round sh sh-primary mark-half" /></span>
+              </a>
+            </li>
+            <li>
+              <a className="pick attend reveal" href="https://www.linkedin.com/feed/update/urn:li:activity:7500148589420171265" target="_blank" rel="noopener">
+                <div className="pick-body">
+                  <p className="pick-meta">
+                    <span className="type-tag">LinkedIn content</span>
+                    <span className="t-caption secondary">Sereel</span>
+                  </p>
+                  <h3 className="t-title pick-title">Africa Sees 52% Crypto Market Growth, Regulators Embrace Tokenization</h3>
+                  <p className="t-body secondary pick-note">
+                    A LinkedIn post on how African regulators are moving tokenization into formal capital markets, from Ghana’s regulatory sandbox to Nigeria’s approval of tokenized securities, and what that means for the infrastructure behind them.
+                  </p>
+                  {" "}
+                  <span className="work-cta">
+                    Read the post{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </div>
+                {" "}
+                <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-circle" /></span>
               </a>
             </li>
             <li>
@@ -819,6 +882,19 @@ export default function WorkView() {
           </li>
           <li className="moment">
             <figure className="moment-photo">
+              <img src={`${BASE}/images/w3l-live-coding-diary.jpg`} alt="Livestream of a Web3Ladies technical session: Aishat and a guest on camera beside VS Code with a web3 project open" loading="lazy" />
+            </figure>
+            <p className="t-label">Host</p>
+            <div className="diary-title">
+              <h3 className="t-title">Live coding session</h3>
+              <p className="t-caption secondary">Livestream · November 2024</p>
+            </div>
+            <p className="t-body">
+              I hosted this technical session for Web3Ladies, a hands-on walkthrough of connecting a web app to a smart contract.
+            </p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
               <img src={`${BASE}/images/diary-ota-community-call.jpg`} alt="Aishat with contributors on the first Open Terms Archive community call" loading="lazy" />
             </figure>
             <p className="t-label">Host</p>
@@ -829,6 +905,27 @@ export default function WorkView() {
             <p className="t-body">
               I anchored the first Open Terms Archive community call, following the structure I created for regular community calls.
             </p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo is-whole">
+              <img src={`${BASE}/images/ota-about-alumni.jpg`} alt="The Alumni section of the Open Terms Archive About page, Former team members, with Aysha Muhammed among four former team members" loading="lazy" />
+            </figure>
+            <p className="t-label">Team</p>
+            <div className="diary-title">
+              <h3 className="t-title">Open Terms Archive alumni</h3>
+              <p className="t-caption secondary">Open source community manager · October 2024 – March 2025</p>
+            </div>
+            <p className="t-body">
+              I’m listed among Open Terms Archive’s former team members, for my time as its open source community manager.
+            </p>
+            <a className="moment-link" href="https://opentermsarchive.org/en/about/" target="_blank" rel="noopener">
+              See the team page{" "}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+              <span className="visually-hidden">(opens in a new tab)</span>
+            </a>
           </li>
           <li className="moment">
             <figure className="moment-photo">

@@ -145,7 +145,7 @@ export default function CaseOpenTermsArchiveView() {
             </div>
             <div className="case-fact">
               <dt className="t-label">Timeline</dt>
-              <dd className="t-body">[Month and year you started to month and year you finished]</dd>
+              <dd className="t-body">October 2024 – March 2025</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Skills</dt>
@@ -178,7 +178,9 @@ export default function CaseOpenTermsArchiveView() {
             Brief
           </h2>
           <div className="case-main">
-            <p className="t-body-l">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
+            <p className="t-body-l">
+              Open Terms Archive is an open-source digital public good that publicly records every version of the terms of digital services, to enable democratic oversight.
+            </p>
             <p className="t-body">
               When I joined, the goal was to manage the community of open source contributors, oversee the migration to a new Mattermost, and foster a collaborative and inclusive environment.
             </p>
@@ -292,27 +294,65 @@ export default function CaseOpenTermsArchiveView() {
                 <figcaption className="t-caption secondary"><span>The first community call</span></figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-                  </svg>
-                  <span className="t-caption">[Add a screenshot]</span>
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/ota-docs-community-call.jpg`} alt="The Community call page of the Open Terms Archive documentation: a monthly online meeting for and by the community, with its ambitions and a photo of a call" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>The Mattermost navigation guide</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>The community call page I documented</span>
+                  <a className="case-shot-link" href="https://docs.opentermsarchive.org/community/reference/community-call/" target="_blank" rel="noopener">
+                    See the page{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-                  </svg>
-                  <span className="t-caption">[Add a screenshot]</span>
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/ota-docs-join-chat.jpg`} alt="The How to join the community chat page of the Open Terms Archive documentation, with steps to create an account and set up a profile" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>The community page on GitHub</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>How to join the community chat, a guide I documented</span>
+                  <a className="case-shot-link" href="https://docs.opentermsarchive.org/community/how-to/join/" target="_blank" rel="noopener">
+                    See the page{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
+            </div>
+            <div className="case-feedback case-gallery">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ota-community-call-ten.jpg`} alt="Jitsi call titled Open Terms Archive Community Call with ten participants on camera, Aishat among them" loading="lazy" />
+                  <figcaption className="t-caption secondary">An Open Terms Archive community call, with ten people on the call</figcaption>
+                </figure>
+              </div>
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ota-mattermost-welcome.jpg`} alt="Mattermost direct message, March 2025. Aishat: I am Aishat Muhammed, the community manager for Open Terms Archive. Excited to have you here! Kindly take 1 minute to update your profile by setting your username, email, and profile picture. You can check our code of conduct here. If you need help with anything, don’t hesitate to use the Help channel, or send me a direct message here. The contributor replies: thanks for your message! I should have done everything, let me know if something is still missing. Aishat: Everything is perfect now." loading="lazy" />
+                  <figcaption className="t-caption secondary">Welcoming a new contributor to the new Mattermost, and their reply</figcaption>
+                </figure>
+                <a className="case-feedback-shot is-link" href="https://opentermsarchive.org/en/about/" target="_blank" rel="noopener">
+                  <img src={`${BASE}/images/ota-about-alumni.jpg`} alt="The Alumni section of the Open Terms Archive About page, Former team members, with Aysha Muhammed among four former team members" loading="lazy" />
+                  <span className="t-caption secondary case-feedback-cap">
+                    <span>Listed among Open Terms Archive’s former team members</span>
+                    <span className="case-shot-link">
+                      See the team page{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -324,56 +364,40 @@ export default function CaseOpenTermsArchiveView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at Open Terms Archive about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at Open Terms Archive]</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
-        <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
-          <div className="stack reveal" style={{gap: "var(--space-cluster)", maxWidth: "760px"} as React.CSSProperties}>
-            <p className="t-label">
-              <span className="label-dot" aria-hidden="true" />
-              Let’s talk
-            </p>
-            <h2 id="lets-talk-title" className="t-heading-s">
-              Have a project that needs clearer content, a more engaged community, or both? I'd love to hear about it.
-            </h2>
-            <div className="lets-talk-links">
-              <a className="jump-link" href={`${BASE}/contact/`}>
-                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
-                <span className="icon-btn" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
-              </a>
-              {" "}
-              <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
-              {" "}
-              <a className="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
-                LinkedIn
-                <span className="visually-hidden">(opens in a new tab)</span>
-              </a>
+            <div className="case-feedback">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ota-feedback-transition-plan.jpg`} alt="Chat thread. Aishat: The transition plan has been reworked on the same Google document. A teammate replies: Thanks Aishat for all this work! This plan looks solid." loading="lazy" />
+                  <figcaption className="t-caption secondary">From the team, on my transition plan for the move to the new Mattermost</figcaption>
+                </figure>
+              </div>
             </div>
           </div>
-          <div className="section-next is-right">
-            <a className="jump-link" href={`${BASE}/work/#work-list`}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See all work</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
+      <nav id="case-nav" className="case-nav" aria-label="Case studies">
+        <div className="container case-nav-row">
+          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+            </span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>All work</span>
+          </a>
+          {" "}
+          <a className="jump-link case-nav-next" href={`${BASE}/contact/`} rel="next">
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: Contact me</span>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </nav>
       <footer id="contact" style={{background: "var(--footer-bg)", color: "var(--color-text-primary)", borderTop: "1px solid var(--color-border-subtle)", paddingBlock: "var(--space-group)"} as React.CSSProperties}>
         <div className="container footer-grid">
           <div className="stack" style={{gap: "var(--space-related)"} as React.CSSProperties}>

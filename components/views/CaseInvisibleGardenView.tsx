@@ -133,6 +133,9 @@ export default function CaseInvisibleGardenView() {
             .
           </h1>
           <p className="t-body-l case-lead">
+            Invisible Garden is a travelling academy for developers, where they learn, build, and connect across Ethereum, zero-knowledge proofs, AI, and cybersecurity.
+          </p>
+          <p className="t-body-l case-lead">
             I managed the content ecosystem for a three-week, Ethereum-focused developer residency in Buenos Aires, creating promotional content, covering the event, and extending its educational material across social media and YouTube. Beyond content, I coordinated mentor and judge communications to support the evaluation of projects developed during the residency.
           </p>
           <dl className="case-facts">
@@ -181,7 +184,7 @@ export default function CaseInvisibleGardenView() {
           </h2>
           <div className="case-main">
             <p className="t-body-l">
-              Invisible Garden was a three-week, Ethereum-focused developer residency in Buenos Aires, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.
+              Its Buenos Aires residency ran for three weeks, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.
             </p>
             <p className="t-body">
               The programme needed to reach its intended audience before the event, communicate its activities while it was underway, and extend the value of its educational content beyond the residency itself.
@@ -229,7 +232,7 @@ export default function CaseInvisibleGardenView() {
                     During the residency, I continued managing the primary social media presence on X, publishing content that documented the programme and helped bring its activities to a wider audience. I also extended content distribution to Instagram, creating another channel through which people could discover the programme.
                   </p>
                   <p className="t-body">
-                    Across my time managing the content ecosystem, the X audience grew by 64%, while Instagram grew from 30 to 143 followers.
+                    Across my time managing the content ecosystem, the X audience grew by more than 70%, while Instagram grew from 30 to 143 followers.
                   </p>
                 </div>
               </li>
@@ -294,9 +297,9 @@ export default function CaseInvisibleGardenView() {
                   <p className="t-label">Growth on X (Twitter)</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">64%</p>
+                <p className="t-figure">70%+</p>
                 <p className="t-body secondary">
-                  Grew the primary social media audience by 64% through ongoing event promotion, programme updates, and content distribution.
+                  Grew the primary social media audience by more than 70% through ongoing event promotion, programme updates, and content distribution.
                 </p>
               </div>
               <div className="tile">
@@ -492,43 +495,29 @@ export default function CaseInvisibleGardenView() {
           </div>
         </div>
       </section>
-      <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
-        <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
-          <div className="stack reveal" style={{gap: "var(--space-cluster)", maxWidth: "760px"} as React.CSSProperties}>
-            <p className="t-label">
-              <span className="label-dot" aria-hidden="true" />
-              Let’s talk
-            </p>
-            <h2 id="lets-talk-title" className="t-heading-s">
-              Have a project that needs thoughtful content, stronger audience engagement, or someone who can connect the moving parts behind the scenes?
-            </h2>
-            <p className="t-body-l">I’d love to hear about it.</p>
-            <div className="lets-talk-links">
-              <a className="jump-link" href="mailto:m.aishat9890@gmail.com">
-                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
-                <span className="icon-btn" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div className="section-next is-right">
-            <a className="jump-link" href={`${BASE}/work/#work-list`}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See all work</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
-            </a>
-          </div>
+      <nav id="case-nav" className="case-nav" aria-label="Case studies">
+        <div className="container case-nav-row">
+          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+            </span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>All work</span>
+          </a>
+          {" "}
+          <a className="jump-link case-nav-next" href={`${BASE}/work/one-dev/`} rel="next">
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: One Dev</span>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </span>
+          </a>
         </div>
-      </section>
+      </nav>
       <footer id="contact" style={{background: "var(--footer-bg)", color: "var(--color-text-primary)", borderTop: "1px solid var(--color-border-subtle)", paddingBlock: "var(--space-group)"} as React.CSSProperties}>
         <div className="container footer-grid">
           <div className="stack" style={{gap: "var(--space-related)"} as React.CSSProperties}>

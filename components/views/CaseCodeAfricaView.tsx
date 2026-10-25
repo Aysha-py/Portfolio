@@ -138,11 +138,11 @@ export default function CaseCodeAfricaView() {
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
-              <dd className="t-body">[Your role on the conference]</dd>
+              <dd className="t-body">Content marketer</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Timeline</dt>
-              <dd className="t-body">[Month and year you started to month and year you finished]</dd>
+              <dd className="t-body">March 2025 – May 2025</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Skills</dt>
@@ -267,6 +267,14 @@ export default function CaseCodeAfricaView() {
                 <p className="t-body secondary">Attendees at the conference.</p>
               </div>
             </div>
+            <div className="case-feedback case-gallery">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ca-x-analytics.jpg`} alt="One Dev’s X analytics: 11K impressions, up 279%; a 14.7% engagement rate; 1.6K engagements, up 384%; 187 profile visits, up 405%; 453 likes, up 529%; 164 reposts, up 556%; and 96 verified followers out of 5.2K" loading="lazy" />
+                  <figcaption className="t-caption secondary">One Dev’s X analytics during the Code Africa campaign</figcaption>
+                </figure>
+              </div>
+            </div>
             <p className="t-body-l">
               The conference attracted 3,000+ registrations and 1,500 attendees. These were collective team outcomes, supported by coordinated marketing, ambassador-led promotion, and the work of volunteers and other contributors.
             </p>
@@ -283,7 +291,7 @@ export default function CaseCodeAfricaView() {
             Visuals
           </h2>
           <div className="case-main">
-            <div className="case-shots">
+            <div className="case-shots is-four">
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
                   <img src={`${BASE}/images/diary-code-africa-onedev.jpg`} alt="Aishat speaking on stage at the Code Africa Conference City Tour in Nigeria" loading="lazy" />
@@ -299,6 +307,12 @@ export default function CaseCodeAfricaView() {
                     <span className="visually-hidden">(opens in a new tab)</span>
                   </a>
                 </figcaption>
+              </figure>
+              <figure className="case-shot">
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/ca-dp-campaign.jpg`} alt="Code Africa profile picture frame reading I will be attending #CodeAfrica, with an attendee’s photo, for 23 May 2025 at Jhain Bhavan, Nairobi" loading="lazy" />
+                </div>
+                <figcaption className="t-caption secondary"><span>The “I will be attending” profile-picture campaign</span></figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
@@ -333,56 +347,63 @@ export default function CaseCodeAfricaView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at Code Africa Conference about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at Code Africa Conference]</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
-        <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
-          <div className="stack reveal" style={{gap: "var(--space-cluster)", maxWidth: "760px"} as React.CSSProperties}>
-            <p className="t-label">
-              <span className="label-dot" aria-hidden="true" />
-              Let’s talk
-            </p>
-            <h2 id="lets-talk-title" className="t-heading-s">
-              Have a project that needs clearer content, a more engaged community, or both? I'd love to hear about it.
-            </h2>
-            <div className="lets-talk-links">
-              <a className="jump-link" href={`${BASE}/contact/`}>
-                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
-                <span className="icon-btn" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
-              </a>
-              {" "}
-              <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
-              {" "}
-              <a className="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
-                LinkedIn
-                <span className="visually-hidden">(opens in a new tab)</span>
-              </a>
+            <div className="case-quotes">
+              <figure className="case-quote">
+                <blockquote className="t-body-l">
+                  “The conference was very insightful and it was great getting to be in the company of other great minds. A wonderful learning experience.”
+                </blockquote>
+                <figcaption className="t-caption secondary">Conference attendee</figcaption>
+              </figure>
+              <figure className="case-quote">
+                <blockquote className="t-body-l">
+                  “For starters it was an awesome, learning oriented experience. Kudos, looking forward for more hackathon events”
+                </blockquote>
+                <figcaption className="t-caption secondary">Conference attendee</figcaption>
+              </figure>
+              <figure className="case-quote">
+                <blockquote className="t-body-l">“Great insightful presentations by industry experts”</blockquote>
+                <figcaption className="t-caption secondary">Conference attendee</figcaption>
+              </figure>
+              <figure className="case-quote">
+                <blockquote className="t-body-l">“It was great to be part of the developers and engineers in the conference.”</blockquote>
+                <figcaption className="t-caption secondary">Conference attendee</figcaption>
+              </figure>
             </div>
-          </div>
-          <div className="section-next is-right">
-            <a className="jump-link" href={`${BASE}/work/#work-list`}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See all work</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
+            {" "}
+            <a className="work-cta case-more-link" href="https://www.codeafrica.onedev.club/" target="_blank" rel="noopener">
+              See all the feedback on the Code Africa site{" "}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+              <span className="visually-hidden">(opens in a new tab)</span>
             </a>
           </div>
         </div>
       </section>
+      <nav id="case-nav" className="case-nav" aria-label="Case studies">
+        <div className="container case-nav-row">
+          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+            </span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>All work</span>
+          </a>
+          {" "}
+          <a className="jump-link case-nav-next" href={`${BASE}/work/web3ladies/`} rel="next">
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: Web3Ladies</span>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </nav>
       <footer id="contact" style={{background: "var(--footer-bg)", color: "var(--color-text-primary)", borderTop: "1px solid var(--color-border-subtle)", paddingBlock: "var(--space-group)"} as React.CSSProperties}>
         <div className="container footer-grid">
           <div className="stack" style={{gap: "var(--space-related)"} as React.CSSProperties}>

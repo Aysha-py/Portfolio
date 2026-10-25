@@ -251,30 +251,14 @@ export default function CaseWeb3LadiesView() {
             <p className="t-body-l">
               My work has contributed to a community ecosystem with substantial reach, while supporting more structured participation through programmes, onboarding, and partner engagement.
             </p>
-            <div className="case-tiles is-five">
+            <div className="case-tiles">
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Community ecosystem</p>
-                  <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
-                </div>
-                <p className="t-figure">150,000+</p>
-                <p className="t-body secondary">Members across the broader Web3Ladies community ecosystem.</p>
-              </div>
-              <div className="tile">
-                <div className="tile-head">
-                  <p className="t-label">Cross-platform growth</p>
+                  <p className="t-label">Community members</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">16,000+</p>
-                <p className="t-body secondary">Cross-platform growth supported across social and community platforms.</p>
-              </div>
-              <div className="tile">
-                <div className="tile-head">
-                  <p className="t-label">Content</p>
-                  <div className="round sh sh-primary case-tile-pill" aria-hidden="true" />
-                </div>
-                <p className="t-figure">20+</p>
-                <p className="t-body secondary">Pieces of content written to support education, announcements, and programme participation.</p>
+                <p className="t-figure">20,000+</p>
+                <p className="t-body secondary">Members across WhatsApp, Discord, Instagram, LinkedIn, and X.</p>
               </div>
               <div className="tile">
                 <div className="tile-head">
@@ -351,6 +335,28 @@ export default function CaseWeb3LadiesView() {
                 <figcaption className="t-caption secondary"><span>At MetaMask Community Builder Night, Lagos</span></figcaption>
               </figure>
             </div>
+            <div className="case-feedback case-gallery">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-polkadot-outreach.jpg`} alt="Discord message from Aishat to the Polkadot team asking if she can send a proposal for a speaking invitation with Web3Ladies, and a workshop on onboarding the ladies and contributing to the Polkadot ecosystem" loading="lazy" />
+                  <figcaption className="t-caption secondary">Reaching out to the Polkadot team to propose a workshop for Web3Ladies</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-polkadot-session.jpg`} alt="Google Meet call titled Introduction to Polkadot, with the Polkadot Africa page on screen, Web3Ladies on the call and 32 participants" loading="lazy" />
+                  <figcaption className="t-caption secondary">Introduction to Polkadot, a Web3Ladies session with the Polkadot Africa team, 32 people on the call</figcaption>
+                </figure>
+              </div>
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-open-source-live.jpg`} alt="StreamYard studio during the Contributing to open source in Web3 livestream, with live comments from viewers in Lagos and Benin" loading="lazy" />
+                  <figcaption className="t-caption secondary">Contributing to open source in Web3, live, with members joining from Lagos and Benin</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-technical-session.jpg`} alt="StreamYard livestream of a coding session for Web3Ladies, with a guest on camera and VS Code showing a web3 app that signs a message and calls a smart contract" loading="lazy" />
+                  <figcaption className="t-caption secondary">A live coding session I hosted for Web3Ladies</figcaption>
+                </figure>
+              </div>
+            </div>
             {" "}
             <a className="work-cta case-more-link" href="https://www.youtube.com/@Web3Ladies/streams" target="_blank" rel="noopener">
               See more sessions on YouTube{" "}
@@ -370,56 +376,54 @@ export default function CaseWeb3LadiesView() {
             Feedback
           </h2>
           <div className="case-main">
-            <figure className="case-quote">
-              <blockquote className="t-heading-s">[A quote from someone at Web3Ladies about this work]</blockquote>
-              <figcaption className="t-caption secondary">[Their name, role at Web3Ladies]</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <section id="lets-talk" aria-labelledby="lets-talk-title" style={{paddingBlock: "var(--space-section)", borderTop: "1px solid var(--color-border-subtle)"} as React.CSSProperties}>
-        <div className="container stack" style={{gap: "var(--space-group)"} as React.CSSProperties}>
-          <div className="stack reveal" style={{gap: "var(--space-cluster)", maxWidth: "760px"} as React.CSSProperties}>
-            <p className="t-label">
-              <span className="label-dot" aria-hidden="true" />
-              Let’s talk
-            </p>
-            <h2 id="lets-talk-title" className="t-heading-s">
-              Have a project that needs clearer content, a more engaged community, or both? I'd love to hear about it.
-            </h2>
-            <div className="lets-talk-links">
-              <a className="jump-link" href={`${BASE}/contact/`}>
-                <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Get in touch</span>
-                <span className="icon-btn" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
-              </a>
-              {" "}
-              <a className="email-link t-body" href="mailto:m.aishat9890@gmail.com" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>m.aishat9890@gmail.com</a>
-              {" "}
-              <a className="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
-                LinkedIn
-                <span className="visually-hidden">(opens in a new tab)</span>
-              </a>
+            <div className="case-feedback">
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-feedback-osun-chapter.jpg`} alt="Post on X: We’d our first community meeting today, Web3Ladies Osun chapter. It was amazing onboarding ladies into the Web3 space! Thank you @this_aishah_, truly an impactful session. Managing a community seemed challenging at first, but I’m excited we’re making progress. With screenshots of the session, Unlocking opportunities in Web3, with Aisha, community manager at Web3Ladies." loading="lazy" />
+                  <figcaption className="t-caption secondary">From the Web3Ladies Osun chapter, after its first community meeting, on X</figcaption>
+                </figure>
+              </div>
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-feedback-session.jpg`} alt="Discord chat. Aishat asks how a member’s day is going. The member replies: Yes yes!! I started a writing project I absolutely love. Thank you for the session yesterday, really boosted my confidence and zeal. Aishat replies: I am absolutely glad to hear this. This made my day." loading="lazy" />
+                  <figcaption className="t-caption secondary">From a member, the day after a session</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-feedback-hackathons.jpg`} alt="WhatsApp message replying to Aishat’s photo of the session: Thanks so much Aisha. You’re a gem. Learnt a lot about hackathons." loading="lazy" />
+                  <figcaption className="t-caption secondary">From the Akwa Ibom chapter, after my session on hackathons</figcaption>
+                </figure>
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/w3l-feedback-hackathons-lead.jpg`} alt="WhatsApp message: If you took a screenshot, please drop it here. @this_aishah_ thank you so much. I enjoyed learning about hackathons." loading="lazy" />
+                  <figcaption className="t-caption secondary">And another, from the same session</figcaption>
+                </figure>
+              </div>
             </div>
           </div>
-          <div className="section-next is-right">
-            <a className="jump-link" href={`${BASE}/work/#work-list`}>
-              <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>See all work</span>
-              {" "}
-              <span className="icon-btn" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </section>
+      <nav id="case-nav" className="case-nav" aria-label="Case studies">
+        <div className="container case-nav-row">
+          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+            </span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>All work</span>
+          </a>
+          {" "}
+          <a className="jump-link case-nav-next" href={`${BASE}/work/community-for-africa/`} rel="next">
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: Community for Africa</span>
+            <span className="icon-btn" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </nav>
       <footer id="contact" style={{background: "var(--footer-bg)", color: "var(--color-text-primary)", borderTop: "1px solid var(--color-border-subtle)", paddingBlock: "var(--space-group)"} as React.CSSProperties}>
         <div className="container footer-grid">
           <div className="stack" style={{gap: "var(--space-related)"} as React.CSSProperties}>

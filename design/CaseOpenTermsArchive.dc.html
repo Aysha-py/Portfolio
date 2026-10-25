@@ -664,15 +664,31 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
 .case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
+/* component: four visuals sit four across, two across on tablets */
+.case-shots.is-four{grid-template-columns:repeat(4,minmax(0,1fr));}
+@media (max-width: 1100px){.case-shots.is-four{grid-template-columns:repeat(2,minmax(0,1fr));}}
+/* component: screenshots in Visuals or Results, at their own shape, under the photos or tiles */
+.case-gallery{margin-top:var(--space-element);}
+/* component: written feedback, short quotes in two columns (one on phones) */
+.case-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-group) var(--space-stack);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
-.case-shots{grid-template-columns:minmax(0,1fr);}
+.case-shots,.case-shots.is-four{grid-template-columns:minmax(0,1fr);}
+.case-quotes{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-pairs{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five .tile,.case-tiles.is-five .tile:nth-child(n+4){grid-column:auto;}
 .case-feedback{grid-template-columns:minmax(0,1fr);}
 }
+/* component: the closing links, All work on the left and Next on the right, always on one row; a long
+   next title wraps onto a second line, aligned right */
+.case-nav{padding-block:var(--space-group);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.case-nav-row{display:flex;align-items:center;justify-content:space-between;gap:var(--space-stack);}
+.case-nav-row > .jump-link{flex-shrink:0;}
+.case-nav-row > .case-nav-next{flex-shrink:1;min-width:0;margin-left:auto;text-align:right;}
+.case-nav-next .t-label{min-width:0;}
+.case-nav-next .icon-btn{flex-shrink:0;}
 /* end case study */
 /* ===== Work diaries and media ===== */
 /* work diaries and media: one scrollable line, the same component as Favourite moments on About */
@@ -778,7 +794,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body-l case-lead">As Open Terms Archive’s open source community manager, I led the community’s migration to a new Mattermost and made it easier for contributors to find their way in.</p>
 <dl class="case-facts">
 <div class="case-fact"><dt class="t-label">Role</dt><dd class="t-body">Open source community manager</dd></div>
-<div class="case-fact"><dt class="t-label">Timeline</dt><dd class="t-body">[Month and year you started to month and year you finished]</dd></div>
+<div class="case-fact"><dt class="t-label">Timeline</dt><dd class="t-body">October 2024 – March 2025</dd></div>
 <div class="case-fact"><dt class="t-label">Skills</dt><dd class="t-body"><ul class="case-fact-list"><li>Open source community management</li><li>Contributor experience</li><li>Documentation</li></ul></dd></div>
 <div class="case-fact"><dt class="t-label">Focus areas</dt><dd class="t-body"><ul class="case-fact-list"><li>Community migration</li><li>Contributor onboarding</li><li>Documentation</li><li>Community calls</li></ul></dd></div>
 </dl>
@@ -789,7 +805,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container case-grid reveal">
 <h2 id="brief-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Brief</h2>
 <div class="case-main">
-<p class="t-body-l">Open Terms Archive is an open-source project that tracks changes to online terms and policies.</p>
+<p class="t-body-l">Open Terms Archive is an open-source digital public good that publicly records every version of the terms of digital services, to enable democratic oversight.</p>
 <p class="t-body">When I joined, the goal was to manage the community of open source contributors, oversee the migration to a new Mattermost, and foster a collaborative and inclusive environment.</p>
 <p class="t-body">I have loved open source since my days as a software developer, so managing an open source community let me bring both paths together.</p>
 </div>
@@ -838,8 +854,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="case-main">
 <div class="case-shots">
 <figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/13c9fb7385539f1ac1dae9cc3b2b9b85" alt="Aishat with contributors on the first Open Terms Archive community call" loading="lazy"></div><figcaption class="t-caption secondary"><span>The first community call</span></figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg><span class="t-caption">[Add a screenshot]</span></div><figcaption class="t-caption secondary"><span>The Mattermost navigation guide</span></figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg><span class="t-caption">[Add a screenshot]</span></div><figcaption class="t-caption secondary"><span>The community page on GitHub</span></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image is-whole"><img src="/_blob/2da8aac21eca2957345ae427798dde88" alt="The Community call page of the Open Terms Archive documentation: a monthly online meeting for and by the community, with its ambitions and a photo of a call" loading="lazy"></div><figcaption class="t-caption secondary"><span>The community call page I documented</span><a class="case-shot-link" href="https://docs.opentermsarchive.org/community/reference/community-call/" target="_blank" rel="noopener">See the page <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image is-whole"><img src="/_blob/b1bd13af57a5fae89783d39d71567068" alt="The How to join the community chat page of the Open Terms Archive documentation, with steps to create an account and set up a profile" loading="lazy"></div><figcaption class="t-caption secondary"><span>How to join the community chat, a guide I documented</span><a class="case-shot-link" href="https://docs.opentermsarchive.org/community/how-to/join/" target="_blank" rel="noopener">See the page <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
+</div>
+<div class="case-feedback case-gallery">
+<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/2408395cdce8c4eb45a99532b43281c8" alt="Jitsi call titled Open Terms Archive Community Call with ten participants on camera, Aishat among them" loading="lazy"><figcaption class="t-caption secondary">An Open Terms Archive community call, with ten people on the call</figcaption></figure></div>
+<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/fc6d94a994f5797946e06e30d1168db9" alt="Mattermost direct message, March 2025. Aishat: I am Aishat Muhammed, the community manager for Open Terms Archive. Excited to have you here! Kindly take 1 minute to update your profile by setting your username, email, and profile picture. You can check our code of conduct here. If you need help with anything, don’t hesitate to use the Help channel, or send me a direct message here. The contributor replies: thanks for your message! I should have done everything, let me know if something is still missing. Aishat: Everything is perfect now." loading="lazy"><figcaption class="t-caption secondary">Welcoming a new contributor to the new Mattermost, and their reply</figcaption></figure><a class="case-feedback-shot is-link" href="https://opentermsarchive.org/en/about/" target="_blank" rel="noopener"><img src="/_blob/af18f7205ea540ae90e7f68bf81083d2" alt="The Alumni section of the Open Terms Archive About page, Former team members, with Aysha Muhammed among four former team members" loading="lazy"><span class="t-caption secondary case-feedback-cap"><span>Listed among Open Terms Archive’s former team members</span><span class="case-shot-link">See the team page <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span></span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
 </div>
 </div>
 </div>
@@ -849,33 +869,19 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container case-grid reveal">
 <h2 id="feedback-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Feedback</h2>
 <div class="case-main">
-<figure class="case-quote">
-<blockquote class="t-heading-s">[A quote from someone at Open Terms Archive about this work]</blockquote>
-<figcaption class="t-caption secondary">[Their name, role at Open Terms Archive]</figcaption>
-</figure>
+<div class="case-feedback">
+<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/76954e889eabf2bafe66775dd66ed831" alt="Chat thread. Aishat: The transition plan has been reworked on the same Google document. A teammate replies: Thanks Aishat for all this work! This plan looks solid." loading="lazy"><figcaption class="t-caption secondary">From the team, on my transition plan for the move to the new Mattermost</figcaption></figure></div>
+</div>
 </div>
 </div>
 </section>
 
-<section id="lets-talk" aria-labelledby="lets-talk-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
-<div class="container stack" style="gap: var(--space-group)">
-<div class="stack reveal" style="gap: var(--space-cluster); max-width: 760px">
-<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Let’s talk</p>
-<h2 id="lets-talk-title" class="t-heading-s">Have a project that needs clearer content, a more engaged community, or both? I&#x27;d love to hear about it.</h2>
-<div class="lets-talk-links">
-<a class="jump-link" href="Contact.dc.html"><span class="t-label" style="color: var(--color-text-primary)">Get in touch</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
-<a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: var(--weight-ui); text-underline-offset: 6px">m.aishat9890@gmail.com</a>
-<a class="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style="font-weight: var(--weight-ui); text-underline-offset: 6px">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
+<nav id="case-nav" class="case-nav" aria-label="Case studies">
+<div class="container case-nav-row">
+<a class="jump-link" href="Work.dc.html#work-list"><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg></span><span class="t-label" style="color: var(--color-text-primary)">All work</span></a>
+<a class="jump-link case-nav-next" href="Contact.dc.html" rel="next"><span class="t-label" style="color: var(--color-text-primary)">Next: Contact me</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
 </div>
-</div>
-<div class="section-next is-right">
-<a class="jump-link" href="Work.dc.html#work-list">
-<span class="t-label" style="color: var(--color-text-primary)">See all work</span>
-<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
-</a>
-</div>
-</div>
-</section>
+</nav>
 
 <footer id="contact" style="background: var(--footer-bg); color: var(--color-text-primary); border-top: 1px solid var(--color-border-subtle); padding-block: var(--space-group)">
 <div class="container footer-grid">
@@ -900,7 +906,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":3900}}'>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4200}}'>
 class Component extends DCLogic {
   renderVals() {
     const s = this.state || {};

@@ -664,15 +664,31 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-feedback-shot.is-link:hover img,.case-feedback-shot.is-link:focus-visible img{border-color:var(--card-border-hover);}
 .case-feedback-shot.is-link:hover .case-shot-link{text-decoration:underline;text-underline-offset:var(--link-underline-offset);}
 .case-feedback-cap{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-hairline);}
+/* component: four visuals sit four across, two across on tablets */
+.case-shots.is-four{grid-template-columns:repeat(4,minmax(0,1fr));}
+@media (max-width: 1100px){.case-shots.is-four{grid-template-columns:repeat(2,minmax(0,1fr));}}
+/* component: screenshots in Visuals or Results, at their own shape, under the photos or tiles */
+.case-gallery{margin-top:var(--space-element);}
+/* component: written feedback, short quotes in two columns (one on phones) */
+.case-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-group) var(--space-stack);}
 @media (max-width: 760px){
 .home{--type-heading-size:26px;}
 .case-fact{grid-template-columns:minmax(0,1fr);}
-.case-shots{grid-template-columns:minmax(0,1fr);}
+.case-shots,.case-shots.is-four{grid-template-columns:minmax(0,1fr);}
+.case-quotes{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-pairs{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five{grid-template-columns:minmax(0,1fr);}
 .case-tiles.is-five .tile,.case-tiles.is-five .tile:nth-child(n+4){grid-column:auto;}
 .case-feedback{grid-template-columns:minmax(0,1fr);}
 }
+/* component: the closing links, All work on the left and Next on the right, always on one row; a long
+   next title wraps onto a second line, aligned right */
+.case-nav{padding-block:var(--space-group);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.case-nav-row{display:flex;align-items:center;justify-content:space-between;gap:var(--space-stack);}
+.case-nav-row > .jump-link{flex-shrink:0;}
+.case-nav-row > .case-nav-next{flex-shrink:1;min-width:0;margin-left:auto;text-align:right;}
+.case-nav-next .t-label{min-width:0;}
+.case-nav-next .icon-btn{flex-shrink:0;}
 /* end case study */
 /* ===== Work diaries and media ===== */
 /* work diaries and media: one scrollable line, the same component as Favourite moments on About */
@@ -776,8 +792,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </div>
 <h1 id="case-title" class="t-display case-title">Building the communications and community operations behind a <span class="hl">pan-African Web3 event</span>.</h1>
 <dl class="case-facts">
-<div class="case-fact"><dt class="t-label">Role</dt><dd class="t-body">[Your role on the conference]</dd></div>
-<div class="case-fact"><dt class="t-label">Timeline</dt><dd class="t-body">[Month and year you started to month and year you finished]</dd></div>
+<div class="case-fact"><dt class="t-label">Role</dt><dd class="t-body">Content marketer</dd></div>
+<div class="case-fact"><dt class="t-label">Timeline</dt><dd class="t-body">March 2025 – May 2025</dd></div>
 <div class="case-fact"><dt class="t-label">Skills</dt><dd class="t-body"><ul class="case-fact-list"><li>Social media copywriting</li><li>Content distribution</li><li>Community operations</li><li>Volunteer management</li></ul></dd></div>
 <div class="case-fact"><dt class="t-label">Focus areas</dt><dd class="t-body"><ul class="case-fact-list"><li>Campaign content</li><li>Community outreach</li><li>Volunteer coordination</li><li>Ambassador programmes</li></ul></dd></div>
 </dl>
@@ -825,6 +841,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body secondary">Attendees at the conference.</p>
 </div>
 </div>
+<div class="case-feedback case-gallery">
+<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/208d3735a3e0f790acb72df933524ab4" alt="One Dev’s X analytics: 11K impressions, up 279%; a 14.7% engagement rate; 1.6K engagements, up 384%; 187 profile visits, up 405%; 453 likes, up 529%; 164 reposts, up 556%; and 96 verified followers out of 5.2K" loading="lazy"><figcaption class="t-caption secondary">One Dev’s X analytics during the Code Africa campaign</figcaption></figure></div>
+</div>
 <p class="t-body-l">The conference attracted 3,000+ registrations and 1,500 attendees. These were collective team outcomes, supported by coordinated marketing, ambassador-led promotion, and the work of volunteers and other contributors.</p>
 <p class="t-body-l">My contribution connected the different parts of that effort, from creating promotional content and coordinating distribution to tracking ambassador activity and keeping people aligned throughout the event.</p>
 </div>
@@ -835,8 +854,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container case-grid reveal">
 <h2 id="visuals-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Visuals</h2>
 <div class="case-main">
-<div class="case-shots">
+<div class="case-shots is-four">
 <figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/e4759439aff7fe3eb32a393df9b1d317" alt="Aishat speaking on stage at the Code Africa Conference City Tour in Nigeria" loading="lazy"></div><figcaption class="t-caption secondary"><span>Representing One Dev at the City Tour</span><a class="case-shot-link" href="https://x.com/this_aishah_/status/1921856166339940569" target="_blank" rel="noopener">See the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image is-whole"><img src="/_blob/65e9478c5226379422f9e3025b99eb64" alt="Code Africa profile picture frame reading I will be attending #CodeAfrica, with an attendee’s photo, for 23 May 2025 at Jhain Bhavan, Nairobi" loading="lazy"></div><figcaption class="t-caption secondary"><span>The “I will be attending” profile-picture campaign</span></figcaption></figure>
 <figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/f7e54a99c66a988ebf0db8c39cefd4ad" alt="Flyer for One Dev’s community AMA, Road to Code Africa Conference, with Aishat among the speakers" loading="lazy"></div><figcaption class="t-caption secondary"><span>Road to Code Africa Conference, on X Spaces</span></figcaption></figure>
 <figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/833cdda0216b8c64a0bd945a803b9782" alt="The Code Africa Conference backdrop: the Code Africa name on a white wall of sponsor logos, including Tether, Scroll, Stellar, Lisk and SafariDAO, above a blue carpet" loading="lazy"></div><figcaption class="t-caption secondary"><span>The opening-day post I wrote for One Dev</span><a class="case-shot-link" href="https://x.com/_one_dev/status/1925781681492853005" target="_blank" rel="noopener">See the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
 </div>
@@ -848,33 +868,23 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container case-grid reveal">
 <h2 id="feedback-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Feedback</h2>
 <div class="case-main">
-<figure class="case-quote">
-<blockquote class="t-heading-s">[A quote from someone at Code Africa Conference about this work]</blockquote>
-<figcaption class="t-caption secondary">[Their name, role at Code Africa Conference]</figcaption>
-</figure>
+<div class="case-quotes">
+<figure class="case-quote"><blockquote class="t-body-l">“The conference was very insightful and it was great getting to be in the company of other great minds. A wonderful learning experience.”</blockquote><figcaption class="t-caption secondary">Conference attendee</figcaption></figure>
+<figure class="case-quote"><blockquote class="t-body-l">“For starters it was an awesome, learning oriented experience. Kudos, looking forward for more hackathon events”</blockquote><figcaption class="t-caption secondary">Conference attendee</figcaption></figure>
+<figure class="case-quote"><blockquote class="t-body-l">“Great insightful presentations by industry experts”</blockquote><figcaption class="t-caption secondary">Conference attendee</figcaption></figure>
+<figure class="case-quote"><blockquote class="t-body-l">“It was great to be part of the developers and engineers in the conference.”</blockquote><figcaption class="t-caption secondary">Conference attendee</figcaption></figure>
+</div>
+<a class="work-cta case-more-link" href="https://www.codeafrica.onedev.club/" target="_blank" rel="noopener">See all the feedback on the Code Africa site <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
 </div>
 </div>
 </section>
 
-<section id="lets-talk" aria-labelledby="lets-talk-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
-<div class="container stack" style="gap: var(--space-group)">
-<div class="stack reveal" style="gap: var(--space-cluster); max-width: 760px">
-<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Let’s talk</p>
-<h2 id="lets-talk-title" class="t-heading-s">Have a project that needs clearer content, a more engaged community, or both? I&#x27;d love to hear about it.</h2>
-<div class="lets-talk-links">
-<a class="jump-link" href="Contact.dc.html"><span class="t-label" style="color: var(--color-text-primary)">Get in touch</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
-<a class="email-link t-body" href="mailto:m.aishat9890@gmail.com" style="font-weight: var(--weight-ui); text-underline-offset: 6px">m.aishat9890@gmail.com</a>
-<a class="email-link t-body" href="https://www.linkedin.com/in/aishat-muhammed/" target="_blank" rel="noopener" style="font-weight: var(--weight-ui); text-underline-offset: 6px">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
+<nav id="case-nav" class="case-nav" aria-label="Case studies">
+<div class="container case-nav-row">
+<a class="jump-link" href="Work.dc.html#work-list"><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg></span><span class="t-label" style="color: var(--color-text-primary)">All work</span></a>
+<a class="jump-link case-nav-next" href="CaseWeb3Ladies.dc.html" rel="next"><span class="t-label" style="color: var(--color-text-primary)">Next: Web3Ladies</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
 </div>
-</div>
-<div class="section-next is-right">
-<a class="jump-link" href="Work.dc.html#work-list">
-<span class="t-label" style="color: var(--color-text-primary)">See all work</span>
-<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
-</a>
-</div>
-</div>
-</section>
+</nav>
 
 <footer id="contact" style="background: var(--footer-bg); color: var(--color-text-primary); border-top: 1px solid var(--color-border-subtle); padding-block: var(--space-group)">
 <div class="container footer-grid">
@@ -899,7 +909,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4100}}'>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light","section":"Theme"},"$preview":{"width":1440,"height":4200}}'>
 class Component extends DCLogic {
   renderVals() {
     const s = this.state || {};
