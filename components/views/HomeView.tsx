@@ -157,7 +157,7 @@ export default function HomeView() {
                 </div>
                 <p className="t-label">Step 1</p>
                 <h3 className="t-title">Understanding the audience</h3>
-                <p className="t-body">Identifying who they are, what they already know, and what they need to know.</p>
+                <p className="t-body">I start by identifying who they are, what they already know, and what they need to know.</p>
               </li>
               <li className="step">
                 <div className="step-mark" aria-hidden="true" style={{alignItems: "flex-end"} as React.CSSProperties}>
@@ -228,10 +228,10 @@ export default function HomeView() {
                 <p className="t-label">X</p>
                 <div className="sh-ring" aria-hidden="true" style={{width: "56px", height: "56px", borderWidth: "6.9px", flex: "none"} as React.CSSProperties} />
               </div>
-              <p className="t-figure">900%+</p>
+              <p className="t-figure">2,000</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
-                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Growth in X audience</strong>
-                {" "}during an Ethereum-focused developer residency through targeted and audience-focused content.
+                <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>X followers</strong>
+                {" "}reached during an Ethereum-focused developer residency, through targeted and audience-focused content.
               </p>
             </div>
             <div className="tile attend">

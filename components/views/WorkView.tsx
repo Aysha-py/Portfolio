@@ -226,8 +226,8 @@ export default function WorkView() {
                     Managed outreach to prospective mentors and project judges, drafting personalised messages, following up, and tracking responses and project evaluations in Excel to help secure judges for the projects.
                   </p>
                   <p className="t-body">
-                    Grew Invisible Garden’s X following from{" "}
-                    <strong>198 to 2,000</strong>
+                    Grew Invisible Garden’s X following to{" "}
+                    <strong>2,000</strong>
                     {" "}during the Devcon Buenos Aires period through consistent social copy and event coverage, while launching its Instagram presence to extend the residency’s reach to a new channel.
                   </p>
                 </div>

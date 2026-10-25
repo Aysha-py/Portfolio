@@ -232,7 +232,7 @@ export default function CaseInvisibleGardenView() {
                     During the residency, I continued managing the primary social media presence on X, publishing content that documented the programme and helped bring its activities to a wider audience. I also extended content distribution to Instagram, creating another channel through which people could discover the programme.
                   </p>
                   <p className="t-body">
-                    Across my time managing the content ecosystem, the X audience grew from 198 to 2,000 followers, while Instagram grew from 30 to 143 followers.
+                    Across my time managing the content ecosystem, the X audience grew to 2,000 followers, while Instagram grew from 30 to 143 followers.
                   </p>
                 </div>
               </li>
@@ -294,12 +294,12 @@ export default function CaseInvisibleGardenView() {
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Growth on X (Twitter)</p>
+                  <p className="t-label">X (Twitter) followers</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">900%+</p>
+                <p className="t-figure">2,000</p>
                 <p className="t-body secondary">
-                  Grew the primary social media audience from 198 to 2,000 followers through ongoing event promotion, programme updates, and content distribution.
+                  Grew the primary social media audience to 2,000 followers through ongoing event promotion, programme updates, and content distribution.
                 </p>
               </div>
               <div className="tile">
