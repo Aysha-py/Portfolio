@@ -596,7 +596,7 @@ export default function WorkView() {
               <span className="hl">audiences</span>
             </h2>
           </div>
-          <ul className="pick-list">
+          <ul className="pick-list always-lit">
             <li>
               <a className="pick attend reveal" href="https://sereel.com/blog/nigeria-investment-securities-act-2025-tokenized-securities" target="_blank" rel="noopener">
                 <div className="pick-body">
@@ -671,7 +671,7 @@ export default function WorkView() {
                   <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
                 {" "}
-                <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-circle" /></span>
+                <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-secondary mark-circle" /></span>
               </a>
             </li>
             <li>
