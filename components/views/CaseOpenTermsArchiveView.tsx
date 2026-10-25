@@ -145,7 +145,7 @@ export default function CaseOpenTermsArchiveView() {
             </div>
             <div className="case-fact">
               <dt className="t-label">Timeline</dt>
-              <dd className="t-body">[Month and year you started to month and year you finished]</dd>
+              <dd className="t-body">October 2024 – March 2025</dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Skills</dt>
@@ -292,26 +292,36 @@ export default function CaseOpenTermsArchiveView() {
                 <figcaption className="t-caption secondary"><span>The first community call</span></figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-                  </svg>
-                  <span className="t-caption">[Add a screenshot]</span>
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/ota-docs-community-call.jpg`} alt="The Community call page of the Open Terms Archive documentation: a monthly online meeting for and by the community, with its ambitions and a photo of a call" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>The Mattermost navigation guide</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>The community call page I documented</span>
+                  <a className="case-shot-link" href="https://docs.opentermsarchive.org/community/reference/community-call/" target="_blank" rel="noopener">
+                    See the page{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
               <figure className="case-shot">
-                <div className="case-shot-frame">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-                  </svg>
-                  <span className="t-caption">[Add a screenshot]</span>
+                <div className="case-shot-frame has-image is-whole">
+                  <img src={`${BASE}/images/ota-docs-join-chat.jpg`} alt="The How to join the community chat page of the Open Terms Archive documentation, with steps to create an account and set up a profile" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>The community page on GitHub</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>How to join the community chat, a guide I documented</span>
+                  <a className="case-shot-link" href="https://docs.opentermsarchive.org/community/how-to/join/" target="_blank" rel="noopener">
+                    See the page{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
             </div>
             <div className="case-feedback case-gallery">
@@ -351,8 +361,8 @@ export default function CaseOpenTermsArchiveView() {
             <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>All work</span>
           </a>
           {" "}
-          <a className="jump-link case-nav-next" href={`${BASE}/work/sereel/`} rel="next">
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: Sereel</span>
+          <a className="jump-link case-nav-next" href={`${BASE}/contact/`} rel="next">
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: Contact me</span>
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12h14" />
