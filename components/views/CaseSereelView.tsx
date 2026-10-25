@@ -302,15 +302,6 @@ export default function CaseSereelView() {
                 </dd>
               </div>
               <div className="case-fact">
-                <dt className="t-label">Research</dt>
-                <dd className="t-body">
-                  <ul className="case-fact-list">
-                    <li>Google Search</li>
-                    <li>Primary-source research</li>
-                  </ul>
-                </dd>
-              </div>
-              <div className="case-fact">
                 <dt className="t-label">Content distribution</dt>
                 <dd className="t-body">
                   <ul className="case-fact-list">

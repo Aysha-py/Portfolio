@@ -271,7 +271,12 @@ export default function CaseWeb3LadiesView() {
               </div>
               <div className="case-fact">
                 <dt className="t-label">Collaboration and planning</dt>
-                <dd className="t-body"><ul className="case-fact-list"><li>Notion</li></ul></dd>
+                <dd className="t-body">
+                  <ul className="case-fact-list">
+                    <li>Notion</li>
+                    <li>Luma</li>
+                  </ul>
+                </dd>
               </div>
             </dl>
           </div>

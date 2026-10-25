@@ -255,12 +255,8 @@ export default function CaseCodeAfricaView() {
                 <dd className="t-body"><ul className="case-fact-list"><li>X (Twitter)</li></ul></dd>
               </div>
               <div className="case-fact">
-                <dt className="t-label">Live sessions</dt>
-                <dd className="t-body"><ul className="case-fact-list"><li>X Spaces</li></ul></dd>
-              </div>
-              <div className="case-fact">
-                <dt className="t-label">Ambassador tracking</dt>
-                <dd className="t-body"><ul className="case-fact-list"><li>Google Sheets</li></ul></dd>
+                <dt className="t-label">Ambassador and volunteer management</dt>
+                <dd className="t-body"><ul className="case-fact-list"><li>Google Workspace</li></ul></dd>
               </div>
             </dl>
           </div>

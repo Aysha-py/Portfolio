@@ -232,16 +232,20 @@ export default function CaseCommunityForAfricaView() {
           <div className="case-main">
             <dl className="case-facts is-tools">
               <div className="case-fact">
+                <dt className="t-label">Community channels</dt>
+                <dd className="t-body"><ul className="case-fact-list"><li>Telegram</li></ul></dd>
+              </div>
+              <div className="case-fact">
                 <dt className="t-label">Live sessions</dt>
                 <dd className="t-body"><ul className="case-fact-list"><li>X Spaces</li></ul></dd>
               </div>
               <div className="case-fact">
-                <dt className="t-label">[Group]</dt>
-                <dd className="t-body">
-                  <ul className="case-fact-list">
-                    <li>[Other tools you used, for example for the Skills Audit Sheet, events or registration funnels]</li>
-                  </ul>
-                </dd>
+                <dt className="t-label">Community resources</dt>
+                <dd className="t-body"><ul className="case-fact-list"><li>Google Sheets</li></ul></dd>
+              </div>
+              <div className="case-fact">
+                <dt className="t-label">Events and registration</dt>
+                <dd className="t-body"><ul className="case-fact-list"><li>Luma</li></ul></dd>
               </div>
             </dl>
           </div>

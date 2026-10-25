@@ -292,12 +292,8 @@ export default function CaseInvisibleGardenView() {
                 </dd>
               </div>
               <div className="case-fact">
-                <dt className="t-label">Video publishing</dt>
+                <dt className="t-label">Content distribution</dt>
                 <dd className="t-body"><ul className="case-fact-list"><li>YouTube</li></ul></dd>
-              </div>
-              <div className="case-fact">
-                <dt className="t-label">Judging tracker</dt>
-                <dd className="t-body"><ul className="case-fact-list"><li>Excel</li></ul></dd>
               </div>
               <div className="case-fact">
                 <dt className="t-label">Collaboration and planning</dt>
