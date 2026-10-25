@@ -547,6 +547,10 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .pick-mark .shape{inset:0;}
 .pick-mark .mark-half,.pick-mark .mark-pill{inset:25% 0;}
 .pick-mark .mark-ring{border-width:calc(var(--pick-mark-size) * 0.125);}
+/* Selected content keeps its shapes in colour, not only on hover */
+.always-lit .sh-primary{background:var(--color-accent-primary);}
+.always-lit .sh-secondary{background:var(--color-accent-secondary);}
+.always-lit .sh-ring{border-color:var(--shape-ring-color);}
 @media (max-width: 760px){
 .home{--pick-mark-size:var(--size-shape-mark-sm);}
 .pick{align-items:flex-start;gap:var(--pick-row-gap-phone);padding-block:var(--pick-row-padding-phone);}

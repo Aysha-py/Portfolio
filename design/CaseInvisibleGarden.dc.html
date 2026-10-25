@@ -685,10 +685,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
    next title wraps onto a second line, aligned right */
 .case-nav{padding-block:var(--space-group);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
 .case-nav-row{display:flex;align-items:center;justify-content:space-between;gap:var(--space-stack);}
-.case-nav-row > .jump-link{flex-shrink:0;}
-.case-nav-row > .case-nav-next{flex-shrink:1;min-width:0;margin-left:auto;text-align:right;}
-.case-nav-next .t-label{min-width:0;}
-.case-nav-next .icon-btn{flex-shrink:0;}
+.case-nav-row > .jump-link{flex:0 1 auto;min-width:0;}
+.case-nav-row > .case-nav-next{margin-left:auto;text-align:right;}
+.case-nav-row .t-label{display:block;min-width:0;}
+.case-nav-row .icon-btn{flex-shrink:0;}
+@media (max-width: 760px){.case-nav-row > .jump-link{flex:1 1 0;}.case-nav-row > .case-nav-next{justify-content:flex-end;}.case-nav-kicker{display:block;}}
+@media (max-width: 480px){.case-nav-row{flex-direction:column;align-items:stretch;gap:var(--space-element);}.case-nav-row > .jump-link{flex:none;}.case-nav-row > .case-nav-prev{align-self:flex-start;}.case-nav-row > .case-nav-next{align-self:flex-end;}}
 /* end case study */
 /* ===== Work diaries and media ===== */
 /* work diaries and media: one scrollable line, the same component as Favourite moments on About */
@@ -806,7 +808,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="container case-grid reveal">
 <h2 id="brief-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Brief</h2>
 <div class="case-main">
-<p class="t-body-l">Its Buenos Aires residency ran for three weeks, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.</p>
+<p class="t-body-l">Invisible Garden’s Buenos Aires residency ran for three weeks, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.</p>
 <p class="t-body">The programme needed to reach its intended audience before the event, communicate its activities while it was underway, and extend the value of its educational content beyond the residency itself.</p>
 <p class="t-body">That meant more than publishing occasional updates. Promotional content needed to reach developers who might want to participate, event coverage needed to capture the experience as it unfolded, and recordings from the programme needed to be edited and made accessible to a wider audience.</p>
 <p class="t-body">There was also work to do after the residency. Projects developed during the programme needed to be evaluated, requiring ongoing communication with mentors and judges.</p>
@@ -835,9 +837,9 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="case-main">
 <div class="case-tiles is-five">
 <div class="tile">
-<div class="tile-head"><p class="t-label">Event registrations</p><div class="round sh sh-secondary case-tile-shape" aria-hidden="true"></div></div>
-<p class="t-figure">900</p>
-<p class="t-body secondary">Supported event promotion throughout the programme’s promotional cycle, contributing to awareness and registration efforts that reached 900 registrations.</p>
+<div class="tile-head"><p class="t-label">Developer applications</p><div class="round sh sh-secondary case-tile-shape" aria-hidden="true"></div></div>
+<p class="t-figure">800+</p>
+<p class="t-body secondary">Supported event promotion throughout the programme’s promotional cycle, contributing to awareness and registration efforts that reached over 800 developer applications for the residency.</p>
 </div>
 <div class="tile">
 <div class="tile-head"><p class="t-label">Growth on X (Twitter)</p><div class="sh-ring case-tile-ring" aria-hidden="true"></div></div>
@@ -867,70 +869,14 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <section id="visuals" class="case-section" aria-labelledby="visuals-title">
 <div class="container case-grid reveal">
-<h2 id="visuals-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Visuals</h2>
+<h2 id="visuals-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Visuals / Selected work</h2>
 <div class="case-main">
-<div class="case-shots">
-<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/c2c07c1ba4144f6a51b7d34f60841806" alt="Invisible Garden’s closing recap post, with speakers on stage" loading="lazy"></div><figcaption class="t-caption secondary"><span>The closing recap, on Instagram</span></figcaption></figure>
-<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/c5137bc26de396ed902e038ab5fb49f3" alt="A speaker on stage at the Invisible Garden residency" loading="lazy"></div><figcaption class="t-caption secondary"><span>A talk on stage, on Instagram</span></figcaption></figure>
+<div class="case-shots is-four">
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/2201775e97efdfa109b046e0640ba0f1" alt="Invisible Garden Argentina, open applications: Buenos Aires, 27 October to 16 November 2025, over a pixel-art field of flowers under a blue sky" loading="lazy"></div><figcaption class="t-caption secondary"><span>Announcing applications for the Buenos Aires residency, on X</span><a class="case-shot-link" href="https://x.com/invisiblgarden/status/1943309193391620215" target="_blank" rel="noopener">See the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/c2c07c1ba4144f6a51b7d34f60841806" alt="Cover of Invisible Garden’s closing ceremony recap reel, with speakers on stage" loading="lazy"></div><figcaption class="t-caption secondary"><span>The closing ceremony recap, on Instagram</span><a class="case-shot-link" href="https://www.instagram.com/reel/DSCj-CDjDbS/" target="_blank" rel="noopener">Watch the reel <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
+<figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/bf3b474844ee2ad1b1ae013571108c77" alt="Residents gathered around a table on a sunny terrace in Buenos Aires, working through a project together in week 2 of Invisible Garden" loading="lazy"></div><figcaption class="t-caption secondary"><span>Build mode in week 2 of the residency, on Instagram</span><a class="case-shot-link" href="https://www.instagram.com/p/DQonIp_DOTV/?img_index=2" target="_blank" rel="noopener">See the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
 <figure class="case-shot"><div class="case-shot-frame has-image"><img src="/_blob/dfed06c659b8a664723f9b1645e01cac" alt="Title card of the Invisible Garden Buenos Aires recap video" loading="lazy"></div><figcaption class="t-caption secondary"><span>The Buenos Aires recap I edited</span><a class="case-shot-link" href="https://www.youtube.com/watch?v=Op3Syvqt_f8" target="_blank" rel="noopener">Watch the video <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg><span class="visually-hidden"> (opens in a new tab)</span></a></figcaption></figure>
 </div>
-</div>
-</div>
-</section>
-
-<section id="pieces" class="case-section" aria-labelledby="pieces-title">
-<div class="container case-grid reveal">
-<h2 id="pieces-title" class="t-label case-label"><span class="label-dot" aria-hidden="true"></span>Selected work</h2>
-<div class="case-main">
-<ul class="pick-list">
-<li>
-<div class="pick is-todo">
-<div class="pick-body">
-<p class="pick-meta"><span class="type-tag">Social media</span></p>
-<h3 class="t-title pick-title">Event promotion and social media</h3>
-<p class="t-body secondary pick-note">Promotional content created to communicate the programme and encourage developer registrations.</p>
-<p class="t-caption case-todo">[Add a link or screenshot of a pre-event promotional post.]</p>
-</div>
-<span class="pick-mark" aria-hidden="true"><span class="shape round sh sh-secondary mark-circle"></span></span>
-</div>
-</li>
-
-<li>
-<div class="pick is-todo">
-<div class="pick-body">
-<p class="pick-meta"><span class="type-tag">Social media</span></p>
-<h3 class="t-title pick-title">Live event coverage</h3>
-<p class="t-body secondary pick-note">Social content documenting the residency and extending its visibility beyond the people attending in person.</p>
-<p class="t-caption case-todo">[Add a link or screenshot of an event update or live coverage.]</p>
-</div>
-<span class="pick-mark" aria-hidden="true"><span class="shape half-round sh sh-primary mark-half"></span></span>
-</div>
-</li>
-
-<li>
-<a class="pick attend" href="https://www.instagram.com/reel/DRaHNILDCec/" target="_blank" rel="noopener">
-<div class="pick-body">
-<p class="pick-meta"><span class="type-tag">Short-form video</span><span class="t-caption secondary">Instagram</span></p>
-<h3 class="t-title pick-title">Educational video</h3>
-<p class="t-body secondary pick-note">Video editing and distribution that helped bring the programme’s activities to a wider audience.</p>
-<span class="work-cta">Watch the video on Instagram <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
-</div>
-<span class="pick-mark" aria-hidden="true"><span class="shape sh-ring mark-ring"></span></span>
-</a>
-</li>
-
-<li>
-<a class="pick attend" href="https://www.youtube.com/watch?v=Op3Syvqt_f8" target="_blank" rel="noopener">
-<div class="pick-body">
-<p class="pick-meta"><span class="type-tag">Long-form video</span><span class="t-caption secondary">YouTube</span></p>
-<h3 class="t-title pick-title">YouTube educational content</h3>
-<p class="t-body secondary pick-note">Edited and published educational material that extended the accessibility and lifespan of the programme’s recordings.</p>
-<span class="work-cta">Watch the recap on YouTube <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><span class="visually-hidden"> (opens in a new tab)</span>
-</div>
-<span class="pick-mark" aria-hidden="true"><span class="shape round sh sh-primary mark-pill"></span></span>
-</a>
-</li>
-</ul>
 </div>
 </div>
 </section>
@@ -941,7 +887,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="case-main">
 <div class="case-feedback">
 <div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/82d644c97752957c83ac6524078aa7d6" alt="Chat messages. A teammate: welcome @this_aishah who is joining to support with community management including social media. Aisha is awesome at crafting cool content. Another: Excited for us to work together to transform the IG brand. Aishat: Thank you for the warm welcome, excited to be here. The owner: Welcome Aisha!!" loading="lazy"><figcaption class="t-caption secondary">Welcomed to the team to support community management and social media</figcaption></figure><figure class="case-feedback-shot"><img src="/_blob/bca7a7f8c11b113872bfb34a67e0fa99" alt="Chat message from a teammate: @this_aishah Hi, you’re doing mkt great!" loading="lazy"><figcaption class="t-caption secondary">A note from the team</figcaption></figure><figure class="case-feedback-shot"><img src="/_blob/398e6f72196897a25964b61f19608c90" alt="Invisible Garden’s X profile showing 2,007 followers, shared in the chat with the message: 2000+ followers strong!!" loading="lazy"><figcaption class="t-caption secondary">Celebrating 2,000+ followers on X</figcaption></figure></div>
-<div class="case-feedback-col"><figure class="case-feedback-shot"><img src="/_blob/83eedd4f311ded8bdb31981b6783f4eb" alt="Chat messages. Who made this? I love it, with a link to the Invisible Garden Moments reel on Instagram. A teammate: I think it’s @this_aishah. Aishat: Yeah, I did." loading="lazy"><figcaption class="t-caption secondary">The Invisible Garden Moments reel I made</figcaption></figure></div>
+<div class="case-feedback-col"><a class="case-feedback-shot is-link" href="https://www.instagram.com/reel/DRaHNILDCec/" target="_blank" rel="noopener"><img src="/_blob/83eedd4f311ded8bdb31981b6783f4eb" alt="Chat messages. Who made this? I love it, with a link to the Invisible Garden Moments reel on Instagram. A teammate: I think it’s @this_aishah. Aishat: Yeah, I did." loading="lazy"><span class="t-caption secondary case-feedback-cap"><span>The Invisible Garden Moments reel I made</span><span class="case-shot-link">Watch the reel <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span></span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
 </div>
 </div>
 </div>
@@ -949,8 +895,8 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 
 <nav id="case-nav" class="case-nav" aria-label="Case studies">
 <div class="container case-nav-row">
-<a class="jump-link" href="Work.dc.html#work-list"><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg></span><span class="t-label" style="color: var(--color-text-primary)">All work</span></a>
-<a class="jump-link case-nav-next" href="CaseOneDev.dc.html" rel="next"><span class="t-label" style="color: var(--color-text-primary)">Next: One Dev</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
+<a class="jump-link case-nav-prev" href="CaseSereel.dc.html" rel="prev"><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg></span><span class="t-label" style="color: var(--color-text-primary)"><span class="case-nav-kicker">Previous:</span> Sereel</span></a>
+<a class="jump-link case-nav-next" href="CaseOneDev.dc.html" rel="next"><span class="t-label" style="color: var(--color-text-primary)"><span class="case-nav-kicker">Next:</span> One Dev</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
 </div>
 </nav>
 

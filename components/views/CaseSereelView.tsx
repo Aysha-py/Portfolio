@@ -389,10 +389,10 @@ export default function CaseSereelView() {
             <div className="case-shots">
               <figure className="case-shot">
                 <div className="case-shot-frame has-image is-whole">
-                  <img src={`${BASE}/images/sereel-feedback-linkedin.jpg`} alt="A Sereel LinkedIn post with an illustration of the Absa and Ripple logos around a shield over a map of Africa, with 115 reactions, 3 comments and 22 reposts" loading="lazy" />
+                  <img src={`${BASE}/images/sereel-feedback-linkedin.jpg`} alt="A Sereel LinkedIn post with an illustration of the Absa and Ripple logos around a shield over a map of Africa" loading="lazy" />
                 </div>
                 <figcaption className="t-caption secondary">
-                  <span>A LinkedIn post for Sereel: 115 reactions, 3 comments and 22 reposts</span>
+                  <span>A LinkedIn post for Sereel</span>
                   <a className="case-shot-link" href="https://lnkd.in/p/eDPg_Dwe" target="_blank" rel="noopener">
                     See the post on LinkedIn{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -405,10 +405,10 @@ export default function CaseSereelView() {
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
-                  <img src={`${BASE}/images/sereel-newsletter-19.jpg`} alt="Cover of Sereel Monthly Newsletter 19: a robot filling in a KYC / KYA form beside a globe and books on compliance, tokenization and global markets" loading="lazy" />
+                  <img src={`${BASE}/images/sereel-newsletter-19.jpg`} alt="Cover of an issue of Sereel Monthly Newsletter: a robot filling in a KYC / KYA form beside a globe and books on compliance, tokenization and global markets" loading="lazy" />
                 </div>
                 <figcaption className="t-caption secondary">
-                  <span>Sereel Monthly Newsletter 19, on Substack</span>
+                  <span>Sereel Monthly Newsletter, on Substack</span>
                   <a className="case-shot-link" href="https://0xseree.substack.com/p/sereel-monthly-newsletter-19" target="_blank" rel="noopener">
                     Read the newsletter{" "}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -568,7 +568,7 @@ export default function CaseSereelView() {
       </section>
       <nav id="case-nav" className="case-nav" aria-label="Case studies">
         <div className="container case-nav-row">
-          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+          <a className="jump-link case-nav-prev" href={`${BASE}/work/#work-list`}>
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="m12 19-7-7 7-7" />
@@ -579,7 +579,10 @@ export default function CaseSereelView() {
           </a>
           {" "}
           <a className="jump-link case-nav-next" href={`${BASE}/work/invisible-garden/`} rel="next">
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: Invisible Garden</span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>
+              <span className="case-nav-kicker">Next:</span>
+              {" "}Invisible Garden
+            </span>
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12h14" />

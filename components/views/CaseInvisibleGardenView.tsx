@@ -184,7 +184,7 @@ export default function CaseInvisibleGardenView() {
           </h2>
           <div className="case-main">
             <p className="t-body-l">
-              Its Buenos Aires residency ran for three weeks, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.
+              Invisible Garden’s Buenos Aires residency ran for three weeks, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.
             </p>
             <p className="t-body">
               The programme needed to reach its intended audience before the event, communicate its activities while it was underway, and extend the value of its educational content beyond the residency itself.
@@ -284,12 +284,12 @@ export default function CaseInvisibleGardenView() {
             <div className="case-tiles is-five">
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Event registrations</p>
+                  <p className="t-label">Developer applications</p>
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
-                <p className="t-figure">900</p>
+                <p className="t-figure">800+</p>
                 <p className="t-body secondary">
-                  Supported event promotion throughout the programme’s promotional cycle, contributing to awareness and registration efforts that reached 900 registrations.
+                  Supported event promotion throughout the programme’s promotional cycle, contributing to awareness and registration efforts that reached over 800 developer applications for the residency.
                 </p>
               </div>
               <div className="tile">
@@ -341,21 +341,57 @@ export default function CaseInvisibleGardenView() {
         <div className="container case-grid reveal">
           <h2 id="visuals-title" className="t-label case-label">
             <span className="label-dot" aria-hidden="true" />
-            Visuals
+            Visuals / Selected work
           </h2>
           <div className="case-main">
-            <div className="case-shots">
+            <div className="case-shots is-four">
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
-                  <img src={`${BASE}/images/invisible-garden-closing.jpg`} alt="Invisible Garden’s closing recap post, with speakers on stage" loading="lazy" />
+                  <img src={`${BASE}/images/ig-ba-announcement.jpg`} alt="Invisible Garden Argentina, open applications: Buenos Aires, 27 October to 16 November 2025, over a pixel-art field of flowers under a blue sky" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>The closing recap, on Instagram</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>Announcing applications for the Buenos Aires residency, on X</span>
+                  <a className="case-shot-link" href="https://x.com/invisiblgarden/status/1943309193391620215" target="_blank" rel="noopener">
+                    See the post{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
-                  <img src={`${BASE}/images/invisible-garden-stage.jpg`} alt="A speaker on stage at the Invisible Garden residency" loading="lazy" />
+                  <img src={`${BASE}/images/invisible-garden-closing.jpg`} alt="Cover of Invisible Garden’s closing ceremony recap reel, with speakers on stage" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>A talk on stage, on Instagram</span></figcaption>
+                <figcaption className="t-caption secondary">
+                  <span>The closing ceremony recap, on Instagram</span>
+                  <a className="case-shot-link" href="https://www.instagram.com/reel/DSCj-CDjDbS/" target="_blank" rel="noopener">
+                    Watch the reel{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
+              </figure>
+              <figure className="case-shot">
+                <div className="case-shot-frame has-image">
+                  <img src={`${BASE}/images/ig-build-mode.jpg`} alt="Residents gathered around a table on a sunny terrace in Buenos Aires, working through a project together in week 2 of Invisible Garden" loading="lazy" />
+                </div>
+                <figcaption className="t-caption secondary">
+                  <span>Build mode in week 2 of the residency, on Instagram</span>
+                  <a className="case-shot-link" href="https://www.instagram.com/p/DQonIp_DOTV/?img_index=2" target="_blank" rel="noopener">
+                    See the post{" "}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                    <span className="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
@@ -374,92 +410,6 @@ export default function CaseInvisibleGardenView() {
                 </figcaption>
               </figure>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="pieces" className="case-section" aria-labelledby="pieces-title">
-        <div className="container case-grid reveal">
-          <h2 id="pieces-title" className="t-label case-label">
-            <span className="label-dot" aria-hidden="true" />
-            Selected work
-          </h2>
-          <div className="case-main">
-            <ul className="pick-list">
-              <li>
-                <div className="pick is-todo">
-                  <div className="pick-body">
-                    <p className="pick-meta"><span className="type-tag">Social media</span></p>
-                    <h3 className="t-title pick-title">Event promotion and social media</h3>
-                    <p className="t-body secondary pick-note">Promotional content created to communicate the programme and encourage developer registrations.</p>
-                    <p className="t-caption case-todo">[Add a link or screenshot of a pre-event promotional post.]</p>
-                  </div>
-                  {" "}
-                  <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-secondary mark-circle" /></span>
-                </div>
-              </li>
-              <li>
-                <div className="pick is-todo">
-                  <div className="pick-body">
-                    <p className="pick-meta"><span className="type-tag">Social media</span></p>
-                    <h3 className="t-title pick-title">Live event coverage</h3>
-                    <p className="t-body secondary pick-note">
-                      Social content documenting the residency and extending its visibility beyond the people attending in person.
-                    </p>
-                    <p className="t-caption case-todo">[Add a link or screenshot of an event update or live coverage.]</p>
-                  </div>
-                  {" "}
-                  <span className="pick-mark" aria-hidden="true"><span className="shape half-round sh sh-primary mark-half" /></span>
-                </div>
-              </li>
-              <li>
-                <a className="pick attend" href="https://www.instagram.com/reel/DRaHNILDCec/" target="_blank" rel="noopener">
-                  <div className="pick-body">
-                    <p className="pick-meta">
-                      <span className="type-tag">Short-form video</span>
-                      <span className="t-caption secondary">Instagram</span>
-                    </p>
-                    <h3 className="t-title pick-title">Educational video</h3>
-                    <p className="t-body secondary pick-note">Video editing and distribution that helped bring the programme’s activities to a wider audience.</p>
-                    {" "}
-                    <span className="work-cta">
-                      Watch the video on Instagram{" "}
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M7 7h10v10" />
-                        <path d="M7 17 17 7" />
-                      </svg>
-                    </span>
-                    <span className="visually-hidden">(opens in a new tab)</span>
-                  </div>
-                  {" "}
-                  <span className="pick-mark" aria-hidden="true"><span className="shape sh-ring mark-ring" /></span>
-                </a>
-              </li>
-              <li>
-                <a className="pick attend" href="https://www.youtube.com/watch?v=Op3Syvqt_f8" target="_blank" rel="noopener">
-                  <div className="pick-body">
-                    <p className="pick-meta">
-                      <span className="type-tag">Long-form video</span>
-                      <span className="t-caption secondary">YouTube</span>
-                    </p>
-                    <h3 className="t-title pick-title">YouTube educational content</h3>
-                    <p className="t-body secondary pick-note">
-                      Edited and published educational material that extended the accessibility and lifespan of the programme’s recordings.
-                    </p>
-                    {" "}
-                    <span className="work-cta">
-                      Watch the recap on YouTube{" "}
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M7 7h10v10" />
-                        <path d="M7 17 17 7" />
-                      </svg>
-                    </span>
-                    <span className="visually-hidden">(opens in a new tab)</span>
-                  </div>
-                  {" "}
-                  <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-pill" /></span>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -486,10 +436,20 @@ export default function CaseInvisibleGardenView() {
                 </figure>
               </div>
               <div className="case-feedback-col">
-                <figure className="case-feedback-shot">
+                <a className="case-feedback-shot is-link" href="https://www.instagram.com/reel/DRaHNILDCec/" target="_blank" rel="noopener">
                   <img src={`${BASE}/images/ig-feedback-reel.jpg`} alt="Chat messages. Who made this? I love it, with a link to the Invisible Garden Moments reel on Instagram. A teammate: I think it’s @this_aishah. Aishat: Yeah, I did." loading="lazy" />
-                  <figcaption className="t-caption secondary">The Invisible Garden Moments reel I made</figcaption>
-                </figure>
+                  <span className="t-caption secondary case-feedback-cap">
+                    <span>The Invisible Garden Moments reel I made</span>
+                    <span className="case-shot-link">
+                      Watch the reel{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
               </div>
             </div>
           </div>
@@ -497,18 +457,24 @@ export default function CaseInvisibleGardenView() {
       </section>
       <nav id="case-nav" className="case-nav" aria-label="Case studies">
         <div className="container case-nav-row">
-          <a className="jump-link" href={`${BASE}/work/#work-list`}>
+          <a className="jump-link case-nav-prev" href={`${BASE}/work/sereel/`} rel="prev">
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="m12 19-7-7 7-7" />
                 <path d="M19 12H5" />
               </svg>
             </span>
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>All work</span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>
+              <span className="case-nav-kicker">Previous:</span>
+              {" "}Sereel
+            </span>
           </a>
           {" "}
           <a className="jump-link case-nav-next" href={`${BASE}/work/one-dev/`} rel="next">
-            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>Next: One Dev</span>
+            <span className="t-label" style={{color: "var(--color-text-primary)"} as React.CSSProperties}>
+              <span className="case-nav-kicker">Next:</span>
+              {" "}One Dev
+            </span>
             <span className="icon-btn" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12h14" />

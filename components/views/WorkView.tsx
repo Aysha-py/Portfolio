@@ -596,7 +596,7 @@ export default function WorkView() {
               <span className="hl">audiences</span>
             </h2>
           </div>
-          <ul className="pick-list">
+          <ul className="pick-list always-lit">
             <li>
               <a className="pick attend reveal" href="https://sereel.com/blog/nigeria-investment-securities-act-2025-tokenized-securities" target="_blank" rel="noopener">
                 <div className="pick-body">
@@ -671,7 +671,7 @@ export default function WorkView() {
                   <span className="visually-hidden">(opens in a new tab)</span>
                 </div>
                 {" "}
-                <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-primary mark-circle" /></span>
+                <span className="pick-mark" aria-hidden="true"><span className="shape round sh sh-secondary mark-circle" /></span>
               </a>
             </li>
             <li>
@@ -891,6 +891,19 @@ export default function WorkView() {
             </div>
             <p className="t-body">
               I hosted this technical session for Web3Ladies, a hands-on walkthrough of connecting a web app to a smart contract.
+            </p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/cfa-audit-sheet-demo-hd.jpg`} alt="Aishat presenting beside a wall screen showing the Skills Audit Sheet, with its skill categories, one-line explanations and proficiency levels" loading="lazy" />
+            </figure>
+            <p className="t-label">Presenter</p>
+            <div className="diary-title">
+              <h3 className="t-title">Skills Audit Sheet demo</h3>
+              <p className="t-caption secondary">In person · Lagos · [Year]</p>
+            </div>
+            <p className="t-body">
+              I presented a demo of the Skills Audit Sheet I created for Community for Africa at its masterclass in Lagos, showing community managers how to assess their skills and plan their growth.
             </p>
           </li>
           <li className="moment">
