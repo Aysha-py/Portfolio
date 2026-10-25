@@ -560,6 +560,34 @@ export default function HomeView() {
           </li>
           <li className="quote-card attend">
             <div className="quote-art" aria-hidden="true">
+              <div className="shape round fill-secondary" style={{right: "30px", top: "30px", width: "60px", height: "60px"} as React.CSSProperties} />
+              <div className="shape half-round fill-primary" style={{right: "104px", top: "50px", width: "56px", height: "28px"} as React.CSSProperties} />
+            </div>
+            {" "}
+            <svg className="quote-mark" viewBox="0 0 56 40" aria-hidden="true">
+              <circle cx="11" cy="28" r="11" />
+              <path d="M2.5 27 C2.5 14 8.5 5.5 19 2" />
+              <circle cx="41" cy="28" r="11" />
+              <path d="M32.5 27 C32.5 14 38.5 5.5 49 2" />
+            </svg>
+            {" "}
+            <p className="quote-pull">
+              The audit sheet is a{" "}
+              <span className="quote-key">
+                <span className="quote-word" style={{"--i": "0"} as React.CSSProperties}>great</span>
+                {" "}
+                <span className="quote-word" style={{"--i": "1"} as React.CSSProperties}>pointer</span>
+              </span>
+              {" "}to the skills you will need.
+            </p>
+            <figure className="quote-receipt">
+              <img src={`${BASE}/images/cfa-feedback-member-home.jpg`} alt="Chat message from a Community for Africa member: You know sometimes as a community manager, you get confused on what to learn and what not to learn and I will tell you for a fact that the audit sheet is a great pointer to the skills you will need as a community manager." loading="lazy" />
+              {" "}
+              <figcaption className="t-caption secondary">From a Community for Africa member, on the Skills Audit Sheet</figcaption>
+            </figure>
+          </li>
+          <li className="quote-card attend">
+            <div className="quote-art" aria-hidden="true">
               <div className="shape ring" style={{right: "-20px", top: "-28px", width: "128px", height: "128px", borderWidth: "15.9px"} as React.CSSProperties} />
               <div className="shape round fill-primary" style={{right: "118px", top: "44px", width: "24px", height: "24px"} as React.CSSProperties} />
             </div>
