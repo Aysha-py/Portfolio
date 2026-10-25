@@ -136,6 +136,9 @@ export default function CaseOneDevView() {
             .
           </h1>
           <p className="t-body-l case-lead">
+            One Dev is a tech education community that upskills African developers in blockchain, AI, and other emerging technologies, preparing them for competitive careers through talent development and equal access to global opportunities.
+          </p>
+          <p className="t-body-l case-lead">
             I managed One Dev’s community and expanded my responsibilities into social media, content creation, and program marketing. By connecting educational content with bootcamp promotion, community engagement, and participant feedback, I helped create more opportunities for developers to discover the community, participate in its programs, and continue learning.
           </p>
           <dl className="case-facts">
@@ -189,13 +192,10 @@ export default function CaseOneDevView() {
           </h2>
           <div className="case-main">
             <p className="t-body-l">
-              One Dev is a Web3-focused developer community that creates opportunities for people to learn, develop technical skills, and participate in educational programs.
-            </p>
-            <p className="t-body">
               When I joined, my primary responsibility was community management. Over time, that role expanded to include social media management, content creation, and the marketing of community programs.
             </p>
             <p className="t-body">
-              The work connected several activities that needed to support one another. Bootcamps needed visibility to attract participants. Social media and educational content needed to give people reasons to follow the community. Existing members needed communication, moderation, and opportunities to stay engaged. And the organisation needed participant feedback and testimonials to communicate the value of its programs to prospective partners.
+              The work connected several activities that needed to support one another. Bootcamps needed visibility to attract participants. Social media and educational content needed to give people reasons to follow the community. Existing members needed communication, moderation, and opportunities to stay engaged. And the organisation needed participant feedback and testimonials to communicate the value of its programs.
             </p>
             <p className="t-body">
               My role grew beyond managing the community itself. I helped connect the content, communication, and program operations that supported its growth and engagement.
@@ -288,7 +288,7 @@ export default function CaseOneDevView() {
             Results
           </h2>
           <div className="case-main">
-            <div className="case-tiles is-five">
+            <div className="case-tiles">
               <div className="tile">
                 <div className="tile-head">
                   <p className="t-label">Community members</p>
@@ -301,32 +301,12 @@ export default function CaseOneDevView() {
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">Newsletter subscribers</p>
-                  <div className="round sh sh-primary case-tile-pill" aria-hidden="true" />
-                </div>
-                <p className="t-figure">6,300+</p>
-                <p className="t-body secondary">
-                  Worked with the newsletter as a communication channel for sharing program announcements and learning opportunities with an established audience.
-                </p>
-              </div>
-              <div className="tile">
-                <div className="tile-head">
                   <p className="t-label">Bootcamp learners</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">200+</p>
+                <p className="t-figure">500+</p>
                 <p className="t-body secondary">
-                  Supported the promotion and delivery of educational programs serving more than 200 bootcamp learners.
-                </p>
-              </div>
-              <div className="tile">
-                <div className="tile-head">
-                  <p className="t-label">Re-established Instagram presence</p>
-                  <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
-                </div>
-                <p className="t-figure">55 followers</p>
-                <p className="t-body secondary">
-                  Created a new Instagram presence after the original account was lost, building the replacement account to 55 followers.
+                  Supported the promotion and delivery of educational programs serving more than 500 bootcamp learners.
                 </p>
               </div>
               <div className="tile">
@@ -356,9 +336,9 @@ export default function CaseOneDevView() {
             <div className="case-shots">
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
-                  <img src={`${BASE}/images/onedev-hosting-city-tour.jpg`} alt="Aishat speaking into a microphone at the Code Africa Conference City Tour in Nigeria, a developers and founders mixer, beside a One Dev and Code Africa banner" loading="lazy" />
+                  <img src={`${BASE}/images/onedev-40-women-developers.jpg`} alt="One Dev graphic, Celebrating 40 outstanding women developers across Africa, with portraits of the 40 developers and their names, roles and companies" loading="lazy" />
                 </div>
-                <figcaption className="t-caption secondary"><span>Hosting the Code Africa City Tour in Nigeria</span></figcaption>
+                <figcaption className="t-caption secondary"><span>Celebrating 40 outstanding women developers across Africa, for One Dev</span></figcaption>
               </figure>
               <figure className="case-shot">
                 <div className="case-shot-frame has-image">
@@ -462,7 +442,7 @@ export default function CaseOneDevView() {
                     <p className="pick-meta"><span className="type-tag">Community</span></p>
                     <h3 className="t-title pick-title">Community feedback and testimonials</h3>
                     <p className="t-body secondary pick-note">
-                      Participant feedback collected to support program marketing and demonstrate the value of One Dev’s learning opportunities to prospective partners.
+                      Participant feedback collected to support program marketing and demonstrate the value of One Dev’s learning opportunities.
                     </p>
                     <p className="t-caption case-todo">[Add an anonymised feedback or testimonial example, with permission.]</p>
                   </div>

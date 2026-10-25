@@ -228,7 +228,7 @@ export default function HomeView() {
                 <p className="t-label">X</p>
                 <div className="sh-ring" aria-hidden="true" style={{width: "56px", height: "56px", borderWidth: "6.9px", flex: "none"} as React.CSSProperties} />
               </div>
-              <p className="t-figure">64%</p>
+              <p className="t-figure">900%+</p>
               <p className="t-body secondary" style={{maxWidth: "520px"} as React.CSSProperties}>
                 <strong style={{fontWeight: "var(--weight-strong)", color: "var(--color-text-primary)"} as React.CSSProperties}>Growth in X audience</strong>
                 {" "}during an Ethereum-focused developer residency through targeted and audience-focused content.

@@ -133,6 +133,9 @@ export default function CaseInvisibleGardenView() {
             .
           </h1>
           <p className="t-body-l case-lead">
+            Invisible Garden is a travelling academy for developers, where they learn, build, and connect across Ethereum, zero-knowledge proofs, AI, and cybersecurity.
+          </p>
+          <p className="t-body-l case-lead">
             I managed the content ecosystem for a three-week, Ethereum-focused developer residency in Buenos Aires, creating promotional content, covering the event, and extending its educational material across social media and YouTube. Beyond content, I coordinated mentor and judge communications to support the evaluation of projects developed during the residency.
           </p>
           <dl className="case-facts">
@@ -181,7 +184,7 @@ export default function CaseInvisibleGardenView() {
           </h2>
           <div className="case-main">
             <p className="t-body-l">
-              Invisible Garden was a three-week, Ethereum-focused developer residency in Buenos Aires, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.
+              Its Buenos Aires residency ran for three weeks, bringing developers together to learn, build, and work on projects within the Ethereum ecosystem.
             </p>
             <p className="t-body">
               The programme needed to reach its intended audience before the event, communicate its activities while it was underway, and extend the value of its educational content beyond the residency itself.
@@ -229,7 +232,7 @@ export default function CaseInvisibleGardenView() {
                     During the residency, I continued managing the primary social media presence on X, publishing content that documented the programme and helped bring its activities to a wider audience. I also extended content distribution to Instagram, creating another channel through which people could discover the programme.
                   </p>
                   <p className="t-body">
-                    Across my time managing the content ecosystem, the X audience grew by 64%, while Instagram grew from 30 to 143 followers.
+                    Across my time managing the content ecosystem, the X audience grew from 198 to 2,000 followers, while Instagram grew from 30 to 143 followers.
                   </p>
                 </div>
               </li>
@@ -294,9 +297,9 @@ export default function CaseInvisibleGardenView() {
                   <p className="t-label">Growth on X (Twitter)</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">64%</p>
+                <p className="t-figure">900%+</p>
                 <p className="t-body secondary">
-                  Grew the primary social media audience by 64% through ongoing event promotion, programme updates, and content distribution.
+                  Grew the primary social media audience from 198 to 2,000 followers through ongoing event promotion, programme updates, and content distribution.
                 </p>
               </div>
               <div className="tile">
