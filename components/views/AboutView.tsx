@@ -276,29 +276,6 @@ export default function AboutView() {
               </a>
             </li>
             <li>
-              <a className="writing-card" href="https://dev.to/aysha/javascript-before-framework-iterating-through-a-multidimensional-array-using-javascript-22gp" target="_blank" rel="noopener">
-                <div className="writing-art" aria-hidden="true">
-                  <span className="shape round sh sh-primary" aria-hidden="true" style={{left: "0", top: "8px", width: "36px", height: "36px"} as React.CSSProperties} />
-                  <span className="shape round sh sh-secondary" aria-hidden="true" style={{left: "44px", top: "14px", width: "72px", height: "24px"} as React.CSSProperties} />
-                </div>
-                <div className="writing-tags">
-                  <span className="tag">Tutorial</span>
-                  <span className="t-label">JavaScript</span>
-                </div>
-                <h3 className="t-title">Iterating through a multidimensional array in JavaScript</h3>
-                <p className="t-caption secondary">DEV · 4 min read</p>
-                {" "}
-                <span className="writing-cta">
-                  Read the article{" "}
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M7 7h10v10" />
-                    <path d="M7 17 17 7" />
-                  </svg>
-                </span>
-                <span className="visually-hidden">(opens in a new tab)</span>
-              </a>
-            </li>
-            <li>
               <a className="writing-card" href="https://dev.to/aysha/a-simple-guide-to-identifying-your-open-source-contributions-on-github-goj" target="_blank" rel="noopener">
                 <div className="writing-art" aria-hidden="true">
                   <span className="shape round sh sh-primary" aria-hidden="true" style={{left: "0", top: "0", width: "48px", height: "48px"} as React.CSSProperties} />
