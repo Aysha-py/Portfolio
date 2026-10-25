@@ -258,7 +258,7 @@ export default function CaseOpenTermsArchiveView() {
                   <p className="t-label">Migration</p>
                   <div className="round sh sh-secondary case-tile-shape" aria-hidden="true" />
                 </div>
-                <p className="t-figure">20%+</p>
+                <p className="t-figure">60%+</p>
                 <p className="t-body secondary">
                   <strong className="case-strong">Retention</strong>
                   {" "}through the move to the new Mattermost.
@@ -266,15 +266,25 @@ export default function CaseOpenTermsArchiveView() {
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">[Another result]</p>
+                  <p className="t-label">Community calls</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
-                <p className="t-figure">[Number]</p>
-                <p className="t-body secondary">[For example: contributors onboarded or community calls held.]</p>
+                <p className="t-figure is-phrase">Still running today</p>
+                <p className="t-body secondary">Created the framework for the community calls and hosted the first one.</p>
+              </div>
+              <div className="tile">
+                <div className="tile-head">
+                  <p className="t-label">Community documentation</p>
+                  <div className="round sh sh-primary case-tile-pill" aria-hidden="true" />
+                </div>
+                <p className="t-figure is-phrase">Authored the community docs</p>
+                <p className="t-body secondary">
+                  Wrote the community pages, including the community call page and the guide to joining the community chat.
+                </p>
               </div>
             </div>
             <p className="t-body-l">
-              My transition plan achieved a retention rate of over 20% through the migration, and the community-call framework supports consistent knowledge-sharing.
+              My transition plan achieved a retention rate of over 60% through the migration. The community call framework I created is still running today, and the community docs I authored help contributors find their way in.
             </p>
           </div>
         </div>

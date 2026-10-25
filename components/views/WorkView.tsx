@@ -560,6 +560,11 @@ export default function WorkView() {
                     <li className="t-body">
                       Developed a repeatable framework for community calls, covering agenda development, facilitation, and engagement practices.
                     </li>
+                    <li className="t-body">
+                      Achieved a retention rate of{" "}
+                      <strong>60%+</strong>
+                      {" "}through the migration to the new Mattermost.
+                    </li>
                   </ul>
                 </div>
                 <div className="t-caption work-list-line">
