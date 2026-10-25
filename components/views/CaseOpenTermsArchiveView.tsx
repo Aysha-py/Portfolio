@@ -331,6 +331,26 @@ export default function CaseOpenTermsArchiveView() {
                   <figcaption className="t-caption secondary">An Open Terms Archive community call, with ten people on the call</figcaption>
                 </figure>
               </div>
+              <div className="case-feedback-col">
+                <figure className="case-feedback-shot">
+                  <img src={`${BASE}/images/ota-mattermost-welcome.jpg`} alt="Mattermost direct message, March 2025. Aishat: I am Aishat Muhammed, the community manager for Open Terms Archive. Excited to have you here! Kindly take 1 minute to update your profile by setting your username, email, and profile picture. You can check our code of conduct here. If you need help with anything, don’t hesitate to use the Help channel, or send me a direct message here. The contributor replies: thanks for your message! I should have done everything, let me know if something is still missing. Aishat: Everything is perfect now." loading="lazy" />
+                  <figcaption className="t-caption secondary">Welcoming a new contributor to the new Mattermost, and their reply</figcaption>
+                </figure>
+                <a className="case-feedback-shot is-link" href="https://opentermsarchive.org/en/about/" target="_blank" rel="noopener">
+                  <img src={`${BASE}/images/ota-about-alumni.jpg`} alt="The Alumni section of the Open Terms Archive About page, Former team members, with Aysha Muhammed among four former team members" loading="lazy" />
+                  <span className="t-caption secondary case-feedback-cap">
+                    <span>Listed among Open Terms Archive’s former team members</span>
+                    <span className="case-shot-link">
+                      See the team page{" "}
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    </span>
+                  </span>
+                  <span className="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
