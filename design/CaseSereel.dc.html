@@ -673,6 +673,14 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 .case-tiles.is-five .tile,.case-tiles.is-five .tile:nth-child(n+4){grid-column:auto;}
 .case-feedback{grid-template-columns:minmax(0,1fr);}
 }
+/* component: the closing links, All work on the left and Next on the right, always on one row; a long
+   next title wraps onto a second line, aligned right */
+.case-nav{padding-block:var(--space-group);border-top:var(--border-width-hairline) solid var(--color-border-subtle);}
+.case-nav-row{display:flex;align-items:center;justify-content:space-between;gap:var(--space-stack);}
+.case-nav-row > .jump-link{flex-shrink:0;}
+.case-nav-row > .case-nav-next{flex-shrink:1;min-width:0;margin-left:auto;text-align:right;}
+.case-nav-next .t-label{min-width:0;}
+.case-nav-next .icon-btn{flex-shrink:0;}
 /* end case study */
 /* ===== Work diaries and media ===== */
 /* work diaries and media: one scrollable line, the same component as Favourite moments on About */
@@ -779,7 +787,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <p class="t-body-l case-lead">My work focused on building a more consistent content presence, growing brand awareness, and making complex financial ideas easier for the intended audience to understand.</p>
 <dl class="case-facts">
 <div class="case-fact"><dt class="t-label">Role</dt><dd class="t-body">Content marketer</dd></div>
-<div class="case-fact"><dt class="t-label">Timeline</dt><dd class="t-body">[Start month and year] – [End month and year]</dd></div>
+<div class="case-fact"><dt class="t-label">Timeline</dt><dd class="t-body">November 2025 – present</dd></div>
 <div class="case-fact"><dt class="t-label">Skills</dt><dd class="t-body"><ul class="case-fact-list"><li>Content research and market intelligence</li><li>Audience research</li><li>B2B thought leadership</li><li>Long-form content writing</li><li>Educational content</li><li>Newsletter content</li><li>Short-form video production</li><li>Social media content</li><li>CMS publishing</li><li>GitHub</li></ul></dd></div>
 <div class="case-fact"><dt class="t-label">Channels</dt><dd class="t-body"><ul class="case-fact-list"><li>LinkedIn</li><li>Blog</li><li>Newsletter</li><li>YouTube</li><li>TikTok</li><li>Instagram</li></ul></dd></div>
 </dl>
@@ -834,7 +842,7 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 <div class="case-tiles is-pairs">
 <div class="tile">
 <div class="tile-head"><p class="t-label">LinkedIn audience growth</p><div class="round sh sh-secondary case-tile-shape" aria-hidden="true"></div></div>
-<p class="t-figure">127.8%</p>
+<p class="t-figure">100%+</p>
 <p class="t-body secondary">Grew Sereel’s LinkedIn following from 245 to 558 followers, an increase of 313 followers.</p>
 </div>
 <div class="tile">
@@ -928,24 +936,12 @@ html.aishah-io .home :is(.quote-hint-text,.moment-hint-text){opacity:calc(1 - va
 </div>
 </section>
 
-<section id="lets-talk" aria-labelledby="lets-talk-title" style="padding-block: var(--space-section); border-top: 1px solid var(--color-border-subtle)">
-<div class="container stack" style="gap: var(--space-group)">
-<div class="stack reveal" style="gap: var(--space-cluster); max-width: 760px">
-<p class="t-label"><span class="label-dot" aria-hidden="true"></span>Let’s talk</p>
-<h2 id="lets-talk-title" class="t-heading-s">Have a project that needs clearer content, a stronger digital presence, or a more thoughtful approach to reaching its audience?</h2>
-<p class="t-body-l">I’d love to hear about it.</p>
-<div class="lets-talk-links">
-<a class="jump-link" href="mailto:m.aishat9890@gmail.com"><span class="t-label" style="color: var(--color-text-primary)">Get in touch</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
+<nav id="case-nav" class="case-nav" aria-label="Case studies">
+<div class="container case-nav-row">
+<a class="jump-link" href="Work.dc.html#work-list"><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg></span><span class="t-label" style="color: var(--color-text-primary)">All work</span></a>
+<a class="jump-link case-nav-next" href="CaseInvisibleGarden.dc.html" rel="next"><span class="t-label" style="color: var(--color-text-primary)">Next: Invisible Garden</span><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
 </div>
-</div>
-<div class="section-next is-right">
-<a class="jump-link" href="Work.dc.html#work-list">
-<span class="t-label" style="color: var(--color-text-primary)">See all work</span>
-<span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
-</a>
-</div>
-</div>
-</section>
+</nav>
 
 <footer id="contact" style="background: var(--footer-bg); color: var(--color-text-primary); border-top: 1px solid var(--color-border-subtle); padding-block: var(--space-group)">
 <div class="container footer-grid">
