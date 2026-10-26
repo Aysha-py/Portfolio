@@ -135,6 +135,9 @@ export default function CaseCommunityForAfricaView() {
             <span className="hl">grow</span>
             .
           </h1>
+          <p className="t-body-l case-lead">
+            I volunteered as a community moderator for Community for Africa, where I created the Community Manager Skills Audit Sheet, hosted panel discussions and X Spaces, and supported the events and content that help community builders learn and connect.
+          </p>
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
@@ -143,6 +146,20 @@ export default function CaseCommunityForAfricaView() {
             <div className="case-fact">
               <dt className="t-label">Timeline</dt>
               <dd className="t-body">February 2024 – September 2025</dd>
+            </div>
+            <div className="case-fact">
+              <dt className="t-label">Skills</dt>
+              <dd className="t-body">
+                <ul className="case-fact-list">
+                  <li>Community moderation</li>
+                  <li>Resource development</li>
+                  <li>Panel and X Space hosting</li>
+                  <li>Community content creation</li>
+                  <li>Virtual event support</li>
+                  <li>Registration funnels</li>
+                  <li>Community reporting</li>
+                </ul>
+              </dd>
             </div>
             <div className="case-fact">
               <dt className="t-label">Focus areas</dt>

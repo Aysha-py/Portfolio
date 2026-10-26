@@ -135,13 +135,35 @@ export default function CaseWeb3LadiesView() {
             <span className="hl">community grow</span>
             .
           </h1>
+          <p className="t-body-l case-lead">
+            I help Web3Ladies members move from joining the community to taking part in it, through community operations, educational programmes such as Build with AI, and partnerships that open up new opportunities.
+          </p>
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
               <dd className="t-body">
                 <ul className="case-fact-list">
                   <li>Community contributor (2023 – October 2025)</li>
-                  <li>Community lead (November 2025 – present)</li>
+                  <li>Community Lead (November 2025 – present)</li>
+                </ul>
+              </dd>
+            </div>
+            <div className="case-fact">
+              <dt className="t-label">Timeline</dt>
+              <dd className="t-body">2023 – present</dd>
+            </div>
+            <div className="case-fact">
+              <dt className="t-label">Skills</dt>
+              <dd className="t-body">
+                <ul className="case-fact-list">
+                  <li>Community operations and moderation</li>
+                  <li>Member onboarding</li>
+                  <li>Programme design and delivery</li>
+                  <li>Speaker research and outreach</li>
+                  <li>Partnership development</li>
+                  <li>Community content and announcements</li>
+                  <li>Content calendars</li>
+                  <li>Live session hosting</li>
                 </ul>
               </dd>
             </div>
@@ -203,7 +225,7 @@ export default function CaseWeb3LadiesView() {
                 <div className="case-step-body">
                   <h3 className="t-title">Turned learning opportunities into practical programmes</h3>
                   <p className="t-body">
-                    I helped develop and lead Build with AI, a programme designed to give women opportunities to learn by building rather than only consuming educational content. My work included programme planning, speaker research and outreach, promotional communications, and coordinating the community-facing experience.
+                    I designed and led Build with AI, a programme designed to give women opportunities to learn by building rather than only consuming educational content. My work included programme planning, speaker research and outreach, promotional communications, and coordinating the community-facing experience.
                   </p>
                   <p className="t-body">
                     The programme attracted more than 100 registrations and created an opportunity for participants to engage with AI through practical projects.
