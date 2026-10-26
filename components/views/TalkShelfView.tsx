@@ -499,7 +499,7 @@ export default function TalkShelfView() {
                   </li>
                   <li className="fact">
                     <span className="t-label">Pronouns</span>
-                    <span className="t-body">[She/her]</span>
+                    <span className="t-body">She/her</span>
                   </li>
                   <li className="fact">
                     <span className="t-label">Speaks on</span>
