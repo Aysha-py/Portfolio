@@ -217,7 +217,7 @@ export default function AboutView() {
                   <span className="t-label">Web3</span>
                 </div>
                 <h3 className="t-title">Layer 2 Solutions Explained</h3>
-                <p className="t-caption secondary">Medium</p>
+                <p className="t-caption secondary">Medium · 4 min read</p>
                 {" "}
                 <span className="writing-cta">
                   Read the article{" "}

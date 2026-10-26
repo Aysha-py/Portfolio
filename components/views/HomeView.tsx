@@ -372,7 +372,7 @@ export default function HomeView() {
               <div className="story-head"><h3 className="t-title story-title">Bringing an Ethereum builder community into the story</h3></div>
               <div className="story-copy">
                 <p className="t-body">
-                  Invisible Garden's is a focused residency for Ethereum developer building in Ethereum ZKP, AI {"&"} Cybersecurity.
+                  Invisible Garden is a travelling academy for developers, where they learn, build, and connect across Ethereum, zero-knowledge proofs, AI, and cybersecurity.
                 </p>
                 <p className="t-body">
                   I helped bring the programme to a wider audience through social media and on-the-ground content coverage. I translated programme activities, partner initiatives, and community milestones into stories people could follow throughout the residency.

@@ -158,7 +158,7 @@ export default function TalkShelfView() {
               {" "}
               <span className="spine-gap" style={{gridColumn: "3"} as React.CSSProperties} aria-hidden="true" />
               {" "}
-              <button type="button" className="spine" style={{gridColumn: "4", height: "200px", "--mix": "12%"} as React.CSSProperties} aria-pressed={h.s2} aria-label="Hack 51, 2024, Virtual" onClick={h.p2} onMouseEnter={h.p2} onFocus={h.p2}>
+              <button type="button" className="spine" style={{gridColumn: "4", height: "200px", "--mix": "12%"} as React.CSSProperties} aria-pressed={h.s2} aria-label="Hack 51, 2024, Online" onClick={h.p2} onMouseEnter={h.p2} onFocus={h.p2}>
                 <span className="spine-name" aria-hidden="true">Hack 51</span>
                 <span className="marker marker-ring" aria-hidden="true" />
               </button>
@@ -181,7 +181,7 @@ export default function TalkShelfView() {
                 </svg>
               </button>
               {" "}
-              <button type="button" className="spine" style={{gridColumn: "7", height: "355px", "--mix": "31%"} as React.CSSProperties} aria-pressed={h.s5} aria-label="LinkedIn event with GlobalDebby, 2024, LinkedIn event" onClick={h.p5} onMouseEnter={h.p5} onFocus={h.p5}>
+              <button type="button" className="spine" style={{gridColumn: "7", height: "355px", "--mix": "31%"} as React.CSSProperties} aria-pressed={h.s5} aria-label="LinkedIn event with GlobalDebby, 2024, Online" onClick={h.p5} onMouseEnter={h.p5} onFocus={h.p5}>
                 <span className="spine-name" aria-hidden="true">LinkedIn event with GlobalDebby</span>
                 <span className="marker marker-ring" aria-hidden="true" />
               </button>
@@ -226,17 +226,17 @@ export default function TalkShelfView() {
                 <span className="marker marker-dot" aria-hidden="true" />
               </button>
               {" "}
-              <button type="button" className="spine" style={{gridColumn: "15", height: "200px", "--mix": "75%"} as React.CSSProperties} aria-pressed={h.s12} aria-label="CMX Uyo, 2025, Virtual" onClick={h.p12} onMouseEnter={h.p12} onFocus={h.p12}>
+              <button type="button" className="spine" style={{gridColumn: "15", height: "200px", "--mix": "75%"} as React.CSSProperties} aria-pressed={h.s12} aria-label="CMX Uyo, 2025, Online" onClick={h.p12} onMouseEnter={h.p12} onFocus={h.p12}>
                 <span className="spine-name" aria-hidden="true">CMX Uyo</span>
                 <span className="marker marker-ring" aria-hidden="true" />
               </button>
               {" "}
-              <button type="button" className="spine" style={{gridColumn: "16", height: "200px", "--mix": "81%"} as React.CSSProperties} aria-pressed={h.s13} aria-label="CMX Enugu, 2025, Virtual" onClick={h.p13} onMouseEnter={h.p13} onFocus={h.p13}>
+              <button type="button" className="spine" style={{gridColumn: "16", height: "200px", "--mix": "81%"} as React.CSSProperties} aria-pressed={h.s13} aria-label="CMX Enugu, 2025, Online" onClick={h.p13} onMouseEnter={h.p13} onFocus={h.p13}>
                 <span className="spine-name" aria-hidden="true">CMX Enugu</span>
                 <span className="marker marker-ring" aria-hidden="true" />
               </button>
               {" "}
-              <button type="button" className="spine" style={{gridColumn: "17", height: "200px", "--mix": "88%"} as React.CSSProperties} aria-pressed={h.s14} aria-label="Stecs, 2025, Virtual" onClick={h.p14} onMouseEnter={h.p14} onFocus={h.p14}>
+              <button type="button" className="spine" style={{gridColumn: "17", height: "200px", "--mix": "88%"} as React.CSSProperties} aria-pressed={h.s14} aria-label="Stecs, 2025, Online" onClick={h.p14} onMouseEnter={h.p14} onFocus={h.p14}>
                 <span className="spine-name" aria-hidden="true">Stecs</span>
                 <span className="marker marker-ring" aria-hidden="true" />
               </button>

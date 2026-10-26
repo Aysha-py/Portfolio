@@ -239,7 +239,7 @@ export default function WorkView() {
                     <li className="t-body">
                       Grew Invisible Garden’s X following by{" "}
                       <strong>70%+</strong>
-                      {" "}during the Devcon Buenos Aires period through consistent social copy and event coverage, while launching its Instagram presence to extend the residency’s reach to a new channel.
+                      {" "}during the Devcon Buenos Aires period through consistent social copy and event coverage, while growing its Instagram audience from 30 to 143 followers to extend the residency’s reach to another channel.
                     </li>
                   </ul>
                 </div>
@@ -362,7 +362,7 @@ export default function WorkView() {
                       Supported conference promotion and community operations through campaign copy, content distribution, volunteer coordination, and the ambassador campaign.
                     </li>
                     <li className="t-body">
-                      Connected promotional messaging with community outreach and on-the-ground coordination to help turn awareness into registrations and support conference delivery.
+                      Connected promotional messaging with community outreach and remote coordination to help turn awareness into registrations and support conference delivery.
                     </li>
                     <li className="t-body">
                       Contributed to a campaign that generated{" "}
@@ -422,18 +422,18 @@ export default function WorkView() {
                   </p>
                   <ul className="work-points">
                     <li className="t-body">
-                      Having contributed to the community since 2023 and progressed to Community Lead in November 2025, I work across community operations, programme development, and ecosystem engagement.
+                      Progressed from community contributor in 2023 to Community Lead in November 2025, working across community operations, programme development, and ecosystem engagement.
                     </li>
                     <li className="t-body">
-                      This includes managing member communications, hosting learning experiences, coordinating partnerships, and using member insights to shape initiatives around community needs.
+                      Managed member communications, hosted learning experiences, coordinated partnerships, and used member insights to shape initiatives around community needs.
                     </li>
                     <li className="t-body">
-                      I designed and led{" "}
+                      Designed and led{" "}
                       <strong>Build with AI</strong>
                       , turning the programme concept into an executable plan that brought together four expert-led sessions and generated seven project submissions from 100+ registrations.
                     </li>
                     <li className="t-body">
-                      Alongside programme delivery, I support community growth through event representation, programme promotion, and ongoing engagement across digital and in-person channels.
+                      Supported community growth alongside programme delivery, through event representation, programme promotion, and ongoing engagement across digital and in-person channels.
                     </li>
                   </ul>
                   <p className="t-body">
@@ -496,9 +496,9 @@ export default function WorkView() {
                       Extended that learning beyond live sessions by creating a Skills Audit Sheet that members could use to assess their skills and identify areas for growth.
                     </li>
                     <li className="t-body">
-                      The resource reached{" "}
+                      Reached{" "}
                       <strong>100+ downloads</strong>
-                      , giving community members a practical tool they could use beyond individual sessions.
+                      {" "}with the resource, giving community members a practical tool they could use beyond individual sessions.
                     </li>
                   </ul>
                 </div>
@@ -603,7 +603,7 @@ export default function WorkView() {
           </div>
           <ul className="pick-list always-lit">
             <li>
-              <a className="pick attend reveal" href="https://sereel.com/blog/nigeria-investment-securities-act-2025-tokenized-securities" target="_blank" rel="noopener">
+              <a className="pick attend reveal" href="https://sereel.com/blog/22" target="_blank" rel="noopener">
                 <div className="pick-body">
                   <p className="pick-meta">
                     <span className="type-tag">Industry analysis</span>
@@ -796,9 +796,7 @@ export default function WorkView() {
               <h3 className="t-title">GITEX Nigeria</h3>
               <p className="t-caption secondary">In person · Lagos</p>
             </div>
-            <p className="t-body">
-              I represented Web3Ladies at GITEX Nigeria in Lagos. [What you did there, for example who you met or what you shared.]
-            </p>
+            <p className="t-body">I represented Web3Ladies at GITEX Nigeria in Lagos.</p>
           </li>
           <li className="moment">
             <figure className="moment-photo">
@@ -810,6 +808,19 @@ export default function WorkView() {
               <p className="t-caption secondary">In person · Lagos</p>
             </div>
             <p className="t-body">I shared the Web3Ladies vision at the DSF x Stellar meetup in Lagos.</p>
+          </li>
+          <li className="moment">
+            <figure className="moment-photo">
+              <img src={`${BASE}/images/diary-web3ladies-booth.jpg`} alt="Aishat at the Web3Ladies booth, behind a table of Web3Ladies T-shirts, tote bags and bottles" loading="lazy" />
+            </figure>
+            <p className="t-label">Representing Web3Ladies</p>
+            <div className="diary-title">
+              <h3 className="t-title">Web3Ladies booth at DSF x Stellar</h3>
+              <p className="t-caption secondary">In person · Lagos</p>
+            </div>
+            <p className="t-body">
+              I represented Web3Ladies at its booth at the DSF x Stellar meetup, advocating for the community and onboarding new members to grow its membership.
+            </p>
           </li>
           <li className="moment">
             <figure className="moment-photo">
@@ -875,7 +886,7 @@ export default function WorkView() {
               <h3 className="t-title">Contributing to open source in Web3</h3>
               <p className="t-caption secondary">YouTube Live</p>
             </div>
-            <p className="t-body">I hosted this Web3 Ladies workshop on how to contribute to open-source projects in Web3.</p>
+            <p className="t-body">I hosted this Web3Ladies workshop on how to contribute to open-source projects in Web3.</p>
             <a className="moment-link" href={"https://www.youtube.com/watch?v=klbOztg-Y9Q&t=5s"} target="_blank" rel="noopener">
               Watch the recording{" "}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -945,17 +956,6 @@ export default function WorkView() {
               <span className="visually-hidden">(opens in a new tab)</span>
             </a>
           </li>
-          <li className="moment">
-            <figure className="moment-photo">
-              <img src={`${BASE}/images/diary-web3ladies-booth.jpg`} alt="Aishat at the Web3Ladies booth, behind a table of Web3Ladies T-shirts, tote bags and bottles" loading="lazy" />
-            </figure>
-            <p className="t-label">Representing Web3Ladies</p>
-            <div className="diary-title">
-              <h3 className="t-title">[Event name]</h3>
-              <p className="t-caption secondary">In person · [City]</p>
-            </div>
-            <p className="t-body">I represented Web3Ladies at the community’s booth. [What you shared or who you met.]</p>
-          </li>
         </ul>
         <div className="container">
           <div className="moment-foot">
@@ -975,7 +975,7 @@ export default function WorkView() {
               <span className="t-label">More on YouTube</span>
               {" "}
               <a className="email-link t-body" href="https://www.youtube.com/@Web3Ladies/streams" target="_blank" rel="noopener" style={{fontWeight: "var(--weight-ui)", textUnderlineOffset: "6px"} as React.CSSProperties}>
-                Web3 Ladies
+                Web3Ladies
                 <span className="visually-hidden">(opens in a new tab)</span>
               </a>
               {" "}
