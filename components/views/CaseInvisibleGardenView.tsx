@@ -226,7 +226,7 @@ export default function CaseInvisibleGardenView() {
                 <div className="case-step-body">
                   <h3 className="t-title">Building awareness and covering the event</h3>
                   <p className="t-body">
-                    I managed promotional content throughout the event’s promotion cycle, creating social media copy to communicate the programme and encourage developer registrations.
+                    I managed promotional content throughout the event’s promotion cycle, creating social media copy to communicate the programme and encourage developer applications.
                   </p>
                   <p className="t-body">
                     During the residency, I continued managing the primary social media presence on X, publishing content that documented the programme and helped bring its activities to a wider audience. I also extended content distribution to Instagram, creating another channel through which people could discover the programme.
@@ -318,7 +318,7 @@ export default function CaseInvisibleGardenView() {
                 </div>
                 <p className="t-figure">800+</p>
                 <p className="t-body secondary">
-                  Supported event promotion throughout the programme’s promotional cycle, contributing to awareness and registration efforts that reached over 800 developer applications for the residency.
+                  Supported event promotion throughout the programme’s promotional cycle, contributing to the awareness that brought in over 800 developer applications for the residency.
                 </p>
               </div>
               <div className="tile">
@@ -361,7 +361,7 @@ export default function CaseInvisibleGardenView() {
               </div>
             </div>
             <p className="t-body-l">
-              Together, these results reflect a role that connected multiple stages of the programme: building awareness and supporting registrations, documenting the residency, extending its educational material, and coordinating the communications required after the event.
+              Together, these results reflect a role that connected multiple stages of the programme: building awareness and supporting applications, documenting the residency, extending its educational material, and coordinating the communications required after the event.
             </p>
           </div>
         </div>

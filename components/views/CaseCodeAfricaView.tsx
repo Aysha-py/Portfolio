@@ -118,12 +118,12 @@ export default function CaseCodeAfricaView() {
             Case study
           </p>
           <div className="case-org">
-            <a className="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" tabIndex={-1} aria-hidden="true">
+            <a className="org-link is-wordmark" href="https://www.codeafrica.onedev.club/" target="_blank" rel="noopener" title="Visit codeafrica.onedev.club" tabIndex={-1} aria-hidden="true">
               <img className="logo-light" src={`${BASE}/images/logo-code-africa.png`} alt="" />
               <img className="logo-dark" src={`${BASE}/images/logo-code-africa-dark.png`} alt="" />
             </a>
             {" "}
-            <a className="case-org-name" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io">
+            <a className="case-org-name" href="https://www.codeafrica.onedev.club/" target="_blank" rel="noopener" title="Visit codeafrica.onedev.club">
               Code Africa Conference
               <span className="visually-hidden">(opens in a new tab)</span>
             </a>
@@ -135,6 +135,9 @@ export default function CaseCodeAfricaView() {
             <span className="hl">pan-African Web3 event</span>
             .
           </h1>
+          <p className="t-body-l case-lead">
+            As Code Africa Conference’s content marketer, I handled the event’s social media copy, managed the ambassador programme, and coordinated volunteers, speakers, and stakeholders remotely from Nigeria, contributing to a campaign that generated 3,000+ registrations.
+          </p>
           <dl className="case-facts">
             <div className="case-fact">
               <dt className="t-label">Role</dt>
@@ -177,10 +180,10 @@ export default function CaseCodeAfricaView() {
           </h2>
           <div className="case-main">
             <p className="t-body-l">
-              Code Africa Conference was a pan-African Web3 event organized by One Dev, bringing together developers and other ecosystem participants. My work on the project extended beyond my regular community management responsibilities into event marketing, ambassador and volunteer coordination, and stakeholder communications.
+              Code Africa Conference was a pan-African Web3 event organised by One Dev, bringing together developers and other ecosystem participants. My work on the project extended beyond my regular community management responsibilities into event marketing, ambassador and volunteer coordination, and stakeholder communications.
             </p>
             <p className="t-body">
-              The challenge was to coordinate several groups working toward the same event: prospective attendees, ambassadors promoting the conference to their networks, volunteers supporting delivery, and speakers and stakeholders who needed consistent communication.
+              The challenge was to coordinate several groups working towards the same event: prospective attendees, ambassadors promoting the conference to their networks, volunteers supporting delivery, and speakers and stakeholders who needed consistent communication.
             </p>
           </div>
         </div>
@@ -198,7 +201,7 @@ export default function CaseCodeAfricaView() {
                 <div className="case-step-body">
                   <h3 className="t-title">Led event communications and promotional content</h3>
                   <p className="t-body">
-                    I handled all of the event’s social media copy throughout, and coordinated promotional activities across the event cycle. This included a profile-picture campaign encouraging people to show their intention to attend, as well as organizing pre-event sessions and moderating two sessions.
+                    I handled all of the event’s social media copy throughout, and coordinated promotional activities across the event cycle. This included a profile-picture campaign encouraging people to show their intention to attend, as well as organising pre-event sessions and moderating two sessions.
                   </p>
                 </div>
               </li>
@@ -389,15 +392,6 @@ export default function CaseCodeAfricaView() {
                 <figcaption className="t-caption secondary">Conference attendee</figcaption>
               </figure>
             </div>
-            {" "}
-            <a className="work-cta case-more-link" href="https://www.codeafrica.onedev.club/" target="_blank" rel="noopener">
-              See all the feedback on the Code Africa site{" "}
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M7 7h10v10" />
-                <path d="M7 17 17 7" />
-              </svg>
-              <span className="visually-hidden">(opens in a new tab)</span>
-            </a>
           </div>
         </div>
       </section>

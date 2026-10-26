@@ -433,7 +433,7 @@ export default function CaseSereelView() {
           <div className="case-main">
             <ul className="pick-list">
               <li>
-                <a className="pick attend" href="https://sereel.com/blog/nigeria-investment-securities-act-2025-tokenized-securities" target="_blank" rel="noopener">
+                <a className="pick attend" href="https://sereel.com/blog/22" target="_blank" rel="noopener">
                   <div className="pick-body">
                     <p className="pick-meta">
                       <span className="type-tag">Industry analysis</span>

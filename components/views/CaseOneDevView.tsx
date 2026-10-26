@@ -139,7 +139,7 @@ export default function CaseOneDevView() {
             One Dev is a tech education community that upskills African developers in blockchain, AI, and other emerging technologies, preparing them for competitive careers through talent development and equal access to global opportunities.
           </p>
           <p className="t-body-l case-lead">
-            I managed One Dev’s community and expanded my responsibilities into social media, content creation, and program marketing. By connecting educational content with bootcamp promotion, community engagement, and participant feedback, I helped create more opportunities for developers to discover the community, participate in its programs, and continue learning.
+            I managed One Dev’s community and expanded my responsibilities into social media, content creation, and programme marketing. By connecting educational content with bootcamp promotion, community engagement, and participant feedback, I helped create more opportunities for developers to discover the community, participate in its programmes, and continue learning.
           </p>
           <dl className="case-facts">
             <div className="case-fact">
@@ -157,7 +157,7 @@ export default function CaseOneDevView() {
                   <li>Community management and moderation</li>
                   <li>Community growth and engagement</li>
                   <li>Social media management</li>
-                  <li>Program and bootcamp marketing</li>
+                  <li>Programme and bootcamp marketing</li>
                   <li>Content strategy and creation</li>
                   <li>Educational content writing</li>
                   <li>Newsletter and blog writing</li>
@@ -192,13 +192,13 @@ export default function CaseOneDevView() {
           </h2>
           <div className="case-main">
             <p className="t-body-l">
-              When I joined, my primary responsibility was community management. Over time, that role expanded to include social media management, content creation, and the marketing of community programs.
+              When I joined, my primary responsibility was community management. Over time, that role expanded to include social media management, content creation, and the marketing of community programmes.
             </p>
             <p className="t-body">
-              The work connected several activities that needed to support one another. Bootcamps needed visibility to attract participants. Social media and educational content needed to give people reasons to follow the community. Existing members needed communication, moderation, and opportunities to stay engaged. And the organisation needed participant feedback and testimonials to communicate the value of its programs.
+              The work connected several activities that needed to support one another. Bootcamps needed visibility to attract participants. Social media and educational content needed to give people reasons to follow the community. Existing members needed communication, moderation, and opportunities to stay engaged. And the organisation needed participant feedback and testimonials to communicate the value of its programmes.
             </p>
             <p className="t-body">
-              My role grew beyond managing the community itself. I helped connect the content, communication, and program operations that supported its growth and engagement.
+              My role grew beyond managing the community itself. I helped connect the content, communication, and programme operations that supported its growth and engagement.
             </p>
           </div>
         </div>
@@ -229,12 +229,12 @@ export default function CaseOneDevView() {
               <li className="case-step">
                 <span className="case-step-mark is-half" aria-hidden="true" />
                 <div className="case-step-body">
-                  <h3 className="t-title">Turning programs into opportunities for participation</h3>
+                  <h3 className="t-title">Turning programmes into opportunities for participation</h3>
                   <p className="t-body">
-                    Bootcamps were an important part of One Dev’s community activities. My responsibilities included creating registration forms, developing promotional copy, and distributing program announcements across social media, community channels, and the newsletter.
+                    Bootcamps were an important part of One Dev’s community activities. My responsibilities included creating registration forms, developing promotional copy, and distributing programme announcements across social media, community channels, and the newsletter.
                   </p>
                   <p className="t-body">
-                    I coordinated promotional efforts across platforms, including using Nas.io to help distribute program information. I also used the newsletter to communicate upcoming programs to existing subscribers.
+                    I coordinated promotional efforts across platforms, including using Nas.io to help distribute programme information. I also used the newsletter to communicate upcoming programmes to existing subscribers.
                   </p>
                   <p className="t-body">
                     Rather than treating each bootcamp as an isolated event, I connected its promotion to the wider community ecosystem, helping people discover opportunities to learn and take the next step towards participation.
@@ -246,16 +246,16 @@ export default function CaseOneDevView() {
                 <div className="case-step-body">
                   <h3 className="t-title">Building a connected content presence</h3>
                   <p className="t-body">
-                    My responsibilities expanded across X, LinkedIn, and Instagram, where I created and published content to support community visibility and program promotion.
+                    My responsibilities expanded across X, LinkedIn, and Instagram, where I created and published content to support community visibility and programme promotion.
                   </p>
                   <p className="t-body">
-                    I also wrote blog posts, educational content, and newsletter copy to keep members informed, support learning, and maintain engagement between programs.
+                    I also wrote blog posts, educational content, and newsletter copy to keep members informed, support learning, and maintain engagement between programmes.
                   </p>
                   <p className="t-body">
                     When One Dev’s original Instagram account was lost, I established a new account and continued building its presence. This was part of maintaining the organisation’s visibility across multiple digital channels.
                   </p>
                   <p className="t-body">
-                    The different platforms served complementary purposes: social media helped people discover the community and its programs, while newsletters and community channels helped communicate opportunities to people already connected to One Dev.
+                    The different platforms served complementary purposes: social media helped people discover the community and its programmes, while newsletters and community channels helped communicate opportunities to people already connected to One Dev.
                   </p>
                 </div>
               </li>
@@ -264,16 +264,16 @@ export default function CaseOneDevView() {
                 <div className="case-step-body">
                   <h3 className="t-title">Managing community operations and learning from participants</h3>
                   <p className="t-body">
-                    Beyond content and promotion, I managed community moderation and communication, including supporting bootcamp activities and helping participants stay informed throughout the program experience.
+                    Beyond content and promotion, I managed community moderation and communication, including supporting bootcamp activities and helping participants stay informed throughout the programme experience.
                   </p>
                   <p className="t-body">
-                    I collected participant feedback and testimonials after sessions and programs, creating material that could support future marketing and partnership conversations.
+                    I collected participant feedback and testimonials after sessions and programmes, creating material that could support future marketing and partnership conversations.
                   </p>
                   <p className="t-body">
-                    Although the planned paid programs did not take place during my time in the role, these testimonials and feedback provided evidence of participant experiences that could be used when presenting One Dev’s work to prospective partner organisations.
+                    Although the planned paid programmes did not take place during my time in the role, these testimonials and feedback provided evidence of participant experiences that could be used when presenting One Dev’s work to prospective partner organisations.
                   </p>
                   <p className="t-body">
-                    This connected community operations with future program development and partnership efforts: the experience of existing participants could help communicate the value of the community to people and organisations considering working with it.
+                    This connected community operations with future programme development and partnership efforts: the experience of existing participants could help communicate the value of the community to people and organisations considering working with it.
                   </p>
                 </div>
               </li>
@@ -354,12 +354,12 @@ export default function CaseOneDevView() {
                 </div>
                 <p className="t-figure">500+</p>
                 <p className="t-body secondary">
-                  Supported the promotion and delivery of educational programs serving more than 500 bootcamp learners.
+                  Supported the promotion and delivery of educational programmes serving more than 500 bootcamp learners.
                 </p>
               </div>
               <div className="tile">
                 <div className="tile-head">
-                  <p className="t-label">From program promotion to participant feedback</p>
+                  <p className="t-label">From programme promotion to participant feedback</p>
                   <div className="sh-ring case-tile-ring" aria-hidden="true" />
                 </div>
                 <p className="t-figure is-phrase">A connected community and content operation</p>
@@ -369,7 +369,7 @@ export default function CaseOneDevView() {
               </div>
             </div>
             <p className="t-body-l">
-              Together, this work brought community management and content operations closer together. I helped people discover One Dev’s learning opportunities, supported communication throughout the community experience, and collected participant feedback that could inform future program marketing and partnership conversations.
+              Together, this work brought community management and content operations closer together. I helped people discover One Dev’s learning opportunities, supported communication throughout the community experience, and collected participant feedback that could inform future programme marketing and partnership conversations.
             </p>
           </div>
         </div>

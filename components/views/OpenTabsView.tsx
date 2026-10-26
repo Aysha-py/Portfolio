@@ -302,28 +302,9 @@ export default function OpenTabsView() {
                   <li>
                     <div className="row">
                       <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
-                        <span className="t-caption secondary">Issue 03 · [Date]</span>
+                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>The first essay is on its way</span>
+                        <span className="t-caption secondary">Subscribe to get it when it lands.</span>
                       </span>
-                      <span className="t-caption secondary">[Link]</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="row">
-                      <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
-                        <span className="t-caption secondary">Issue 02 · [Date]</span>
-                      </span>
-                      <span className="t-caption secondary">[Link]</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="row">
-                      <span className="row-main">
-                        <span className="t-body" style={{fontWeight: "var(--weight-ui)"} as React.CSSProperties}>[Issue title]</span>
-                        <span className="t-caption secondary">Issue 01 · [Date]</span>
-                      </span>
-                      <span className="t-caption secondary">[Link]</span>
                     </div>
                   </li>
                 </ul>
