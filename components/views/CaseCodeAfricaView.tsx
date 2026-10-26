@@ -118,12 +118,12 @@ export default function CaseCodeAfricaView() {
             Case study
           </p>
           <div className="case-org">
-            <a className="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" tabIndex={-1} aria-hidden="true">
+            <a className="org-link is-wordmark" href="https://www.codeafrica.onedev.club/" target="_blank" rel="noopener" title="Visit codeafrica.onedev.club" tabIndex={-1} aria-hidden="true">
               <img className="logo-light" src={`${BASE}/images/logo-code-africa.png`} alt="" />
               <img className="logo-dark" src={`${BASE}/images/logo-code-africa-dark.png`} alt="" />
             </a>
             {" "}
-            <a className="case-org-name" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io">
+            <a className="case-org-name" href="https://www.codeafrica.onedev.club/" target="_blank" rel="noopener" title="Visit codeafrica.onedev.club">
               Code Africa Conference
               <span className="visually-hidden">(opens in a new tab)</span>
             </a>

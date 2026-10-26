@@ -335,13 +335,13 @@ export default function WorkView() {
                 <div className="work-id">
                   <div className="work-head">
                     <h2 className="t-heading-s work-title">
-                      <a href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io">
+                      <a href="https://www.codeafrica.onedev.club/" target="_blank" rel="noopener" title="Visit codeafrica.onedev.club">
                         Code Africa Conference
                         <span className="visually-hidden">(opens in a new tab)</span>
                       </a>
                     </h2>
                     {" "}
-                    <a className="org-link is-wordmark" href="https://codeafrica.io/" target="_blank" rel="noopener" title="Visit codeafrica.io" tabIndex={-1} aria-hidden="true">
+                    <a className="org-link is-wordmark" href="https://www.codeafrica.onedev.club/" target="_blank" rel="noopener" title="Visit codeafrica.onedev.club" tabIndex={-1} aria-hidden="true">
                       <img className="logo-light" src={`${BASE}/images/logo-code-africa.png`} alt="" />
                       <img className="logo-dark" src={`${BASE}/images/logo-code-africa-dark.png`} alt="" />
                     </a>
