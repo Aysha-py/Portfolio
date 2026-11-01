@@ -286,7 +286,7 @@ export default function OpenTabsView() {
                 {" "}is my little corner of the internet for personal essays about identity, relationships, expectations, and the messy business of becoming. If you’re also figuring life out as you build, grow, and change, this is a place for us to find pieces of ourselves in each other’s stories and learn as we go.
               </p>
               {" "}
-              <a className="btn" href="https://ripplesandreverie.substack.com/" target="_blank" rel="noopener" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>
+              <a className="btn" href="https://ripplesandreverie.substack.com/about" target="_blank" rel="noopener" style={{marginTop: "var(--space-tight)"} as React.CSSProperties}>
                 Subscribe on Substack{" "}
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M7 7h10v10" />
